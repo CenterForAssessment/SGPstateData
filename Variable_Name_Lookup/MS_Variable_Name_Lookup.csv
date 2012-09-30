@@ -1,0 +1,34 @@
+names.provided,names.sgp,names.type,names.info,names.output
+ID,ID,individual,Unique student identifer,
+CONTENT_AREA,CONTENT_AREA,content,Content area,
+TEST_ADMINISTRATION,TEST_ADMINISTRATION,NA,Test type (MCT/SATP/SCI),
+YEAR,YEAR,time,Year (testing year) associated with record,
+GRADE,GRADE,institution_level,Grade level of test taken,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievment level associated with student score,
+LAST_NAME,LAST_NAME,label,Student last name,
+FIRST_NAME,FIRST_NAME,label,Student first name,
+INSTRUCTOR_NUMBER_1,INSTRUCTOR_NUMBER_1,institution_multiple_membership_1,Instructor 1 number with possible multiple membership,
+INSTRUCTOR_NUMBER_2,INSTRUCTOR_NUMBER_2,institution_multiple_membership_1,Instructor 2 number with possible multiple membership,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,District number,
+SCHOOL_NAME,SCHOOL_NAME,label,School name,
+DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
+DISTRICT_NAME,DISTRICT_NAME,label,District name,
+INSTRUCTOR_1_WEIGHT,INSTRUCTOR_1_WEIGHT,institution_multiple_membership_1_weight,Instructor 1 weight with possible multiple membership,
+INSTRUCTOR_2_WEIGHT,INSTRUCTOR_2_WEIGHT,institution_multiple_membership_1_weight,Instructor 2 weight with possible multiple membership,
+INSTRUCTOR_1_ENROLLMENT_STATUS,INSTRUCTOR_1_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 1 inclusion/accountability indicator,
+INSTRUCTOR_2_ENROLLMENT_STATUS,INSTRUCTOR_2_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 2 inclusion/accountability indicator,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+GENDER,GENDER,demographic,Student gender,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+FREE_REDUCED_LUNCH_STATUS,FREE_REDUCED_LUNCH_STATUS,demographic,Free/reduced lunch status indicator,TRUE
+IEP_STATUS,IEP_STATUS,demographic,Student IEP status indicator,TRUE
+ELL_STATUS,ELL_STATUS,demographic,ELL status indicator,TRUE
+PILOT_SIG_SCHOOL,PILOT_SIG_SCHOOL,institution_type,Flag indicating whether school is a SIG or PILOT school,TRUE
+INSTRUCTOR_1_LAST_NAME,INSTRUCTOR_1_LAST_NAME,label,Instructor 1 last name,
+INSTRUCTOR_2_LAST_NAME,INSTRUCTOR_2_LAST_NAME,label,Instructor 2 last name,
+INSTRUCTOR_1_FIRST_NAME,INSTRUCTOR_1_FIRST_NAME,label,Instructor 1 first name,
+INSTRUCTOR_2_FIRST_NAME,INSTRUCTOR_2_FIRST_NAME,label,Instructor 2 first name,

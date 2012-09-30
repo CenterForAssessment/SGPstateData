@@ -1,0 +1,29 @@
+names.provided,names.sgp,names.type,names.info,names.output
+YEAR,YEAR,time,Year (testing year) associated with record,
+Testing.Program,Testing.Program,NA,NJ ASK Testing program,
+CONTENT_AREA,CONTENT_AREA,content,Content area (Mathematics or ELA),
+GRADE,GRADE,institution_level,Grade level of test taken,
+ID,ID,individual,Unique student identifer,
+DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
+School.Code,School.Code,NA,School Code,
+County.Name,County.Name,NA,County Name,
+DISTRICT_NAME,DISTRICT_NAME,label,District name,
+SCHOOL_NAME,SCHOOL_NAME,label,School name,
+DFG,DFG,institution type,District group,NA,
+Gender,Gender,demographic,Student gender,TRUE
+Race.Ethnicity.Combined,Race.Ethnicity.Combined,demographic,Student Race/Ethnicity,TRUE
+Title.I.LAL,Title.I.LAL,demographic,Title I language arts,FALSE
+Title.I.Math,Title.I.Math,demographic,Title I Math,FALSE
+Special.Education..SE.,Special.Education..SE.,demographic,Special education indicator,TRUE
+General.ED,General.ED,demographic,General education indicator,TRUE
+Current.LEP,Current.LEP,demographic,LEP indicator,TRUE
+Time.in.District.Less.Than.1.Year,Time.in.District.Less.Than.1.Year,demographic,Time in district indicator,FALSE
+Economically.Disadvantaged,Economically.Disadvantaged,demographic,Economically disadvantaged indicator,TRUE
+Migrant,Migrant,demographic,Migrant status indicator,TRUE
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievment level associated with student score,
+VALID_CASE,VALID_CASE,individual inclusion,Valid case indicator,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number (teaching year),
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,

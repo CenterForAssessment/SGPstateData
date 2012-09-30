@@ -1,0 +1,29 @@
+names.provided,names.sgp,names.type,names.info,names.output
+SYEAR,SYEAR,NA,School year integer,
+SDIS,DISTRICT_NUMBER,institution,District number,
+SSCH,SSCH,NA,Non-unique school number,
+SSTU,ID,individual,Unique student identifer,
+STYP,EMH_LEVEL,institution_type,Elementary/Middle/Secondary school identifier,
+SCLS,GRADE,institution_level,Grade level of test taken,
+SRACE,ETHNICITY,demographic,Student ethnicity,TRUE
+SLEP1,LEP_STATUS,demographic,LEP status indicator,TRUE
+SSPED,SPED_STATUS,demographic,Special education status indicator,TRUE
+SDISA,DISABILITY_STATUS,demographic,Disability status indicator,TRUE
+SLSES1,SES_STATUS,demographic,Low SES status indicator,TRUE
+SSEX,GENDER,demographic,Student gender,TRUE
+SMIG,MIGRANT_STATUS,demographic,Migrant status indicator,TRUE
+SSCHA,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+SCTYA,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SSTAA,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+FORM_TYPE,FORM_TYPE,NA,Form type,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+PLEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,
+NAME,SCHOOL_NAME,label,School name,
+COUNTYNAME,DISTRICT_NAME,label,District name,
+WSFNAM,FIRST_NAME,label,First name of student
+WSLNAM,LAST_NAME,label,Last name of student
+SUBJECT,CONTENT_AREA,content,Content area (Mathematics or Reading),
+YEAR_LONG,YEAR,time,Year (testing year) associated with record,
+VREC,VREC,NA,VREC,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,

@@ -1,0 +1,27 @@
+names.provided,names.sgp,names.type,names.info,names.output
+SSID,ID,individual,Unique student identifier,
+StudentLastName,LAST_NAME,label,Student last name,
+StudentFirstName,FIRST_NAME,label,Student first name,
+Subject,CONTENT_AREA,content,Content area associated with record,
+SchoolYear,YEAR,time,Year associated with record,
+ReportingGrade,GRADE,institution_level,Grade/Test level associated with record,
+ScaleScore,SCALE_SCORE,measure,Scale score,
+LevelScore,ACHIEVEMENT_LEVEL,measure,Achievement level,
+Gender,Gender,demographic,Student gender,TRUE
+EthRace,EthRace,demographic,Student ethnicity,TRUE
+FRL,FRL,demographic,Student free and reduced lunch status,TRUE
+Bilingual,Bilingual,demographic,Student ELL status,TRUE
+SpecEd,SpecEd,demographic,Student IEP status,TRUE
+Gifted,Gifted,demographic,Student gifted and talented program status,TRUE
+Migrant,Migrant,demographic,Student Migrant Status,TRUE
+Homeless,Homeless,demographic,Student Homeless Status,TRUE
+MetStandard,MetStandard,demographic,Student Met Status,TRUE
+SchoolCode,SCHOOL_NUMBER,institution,School number,
+SchoolName,SCHOOL_NAME,label,School name,
+SchoolType,SchoolType,institution_type,School Type flag,
+DistrictCode,DISTRICT_NUMBER,institution,District number,
+DistrictName,DISTRICT_NAME,label,School name,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+ValidCase,VALID_CASE,individual_inclusion,Valid case indicator,

@@ -1,0 +1,36 @@
+names.provided,names.sgp,names.type,names.info,names.output
+Year,YEAR,time,Year (testing year) associated with record,
+IDNO,ID,individual,Unique student identifer,
+LName,LAST_NAME,label,Last name of student
+FName,FIRST_NAME,label,First name of student
+Gr,GRADE,institution_level,Grade level of test taken,
+Domain,CONTENT_AREA,content,Content area (Mathematics or Reading),
+Scale_Score,SCALE_SCORE,measure,Student scale score,
+Proficiency_Level,ACHIEVEMENT_LEVEL,measure,Achievment level associated with student score,
+SCode,SCHOOL_NUMBER,institution,School number,
+School,SCHOOL_NAME,label,School name,
+GradeRange,GRADE_RANGE,institution_type,Grade range of school,
+SchlType,SCHOOL_TYPE,institution_type,Type of School (Charter/DOE/Special),
+Type,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
+DCode,DISTRICT_NUMBER,institution,District number,
+District,DISTRICT_NAME,label,District name,
+CCode,COMPLEX_NUMBER,institution,Complex number
+Complex,COMPLEX_NAME,label,Complex name
+CACode,COMPLEX_AREA_NUMBER,institution,Complex area number
+CArea,COMPLEX_AREA_NAME,label,Complex area name
+DOE_Ethnic,ETHNICITY_DOE,demographic,Student ethnicity using DOE categories,TRUE
+Fed5_Ethnic,ETHNICITY_FED5,demographic,Student ethnicity using FED 5 categories,TRUE
+Fed7_Ethnic,ETHNICITY_FED7,demographic,Student ethnicity using FED 7 categories,TRUE
+Disadv,DISADVANTAGED_STATUS,demographic,Disadvantaed status,TRUE
+ELL,ELL_STATUS,demographic,Student ELL status indicator,TRUE
+SpEd,SPECIAL_EDUCATION_STATUS,demographic,Student special education status indicator,TRUE
+Sex,GENDER,demographic,Student gender,TRUE
+Source,TEST_ADMINISTRATION,type of test,HSA/HSAA/HLIP/HAPA/Linapuni,
+Migrant,MIGRANT_STATUS,demographic,Student migrant status,TRUE
+FSY,FULL_SCHOOL_YEAR_STATUS,demographic,Full school year status indicator,TRUE
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+COMPLEX_ENROLLMENT_STATUS,COMPLEX_ENROLLMENT_STATUS,institution_inclusion,Complex inclusion/accountability indicator,
+COMPLEX_AREA_ENROLLMENT_STATUS,COMPLEX_AREA_ENROLLMENT_STATUS,institution_inclusion,Complex Area inclusion/accountability indicator,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+VALID_CASE,VALID_CASE,individual inclusion,Valid case indicator,

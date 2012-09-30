@@ -1,0 +1,15 @@
+names.provided,names.sgp,names.type,names.info,names.output
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+YEAR,YEAR,time,Year (testing year) associated with record,
+CONTENT_AREA,CONTENT_AREA,content,Content area (Mathematics or Reading),
+ID,ID,individual,Unique student identifer,
+LAST_NAME,LAST_NAME,label,Last name of student
+FIRST_NAME,FIRST_NAME,label,First name of student
+GRADE,GRADE,institution_level,Grade level of test taken,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,
+SCHOOL_NAME,SCHOOL_NAME,label,School name,
+INSTRUCTOR_NAME,INSTRUCTOR_NAME,label,Instructor name,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+GENDER,GENDER,demographic,Student gender,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+PIE,PIE,demographic,Student PIE status,TRUE

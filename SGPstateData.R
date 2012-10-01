@@ -3411,12 +3411,12 @@ SGPstateData[["UT"]][["Achievement"]][["Levels"]] <-
 	Labels=c("BP", "P", "A"),
 	Proficient=c("Not Proficient", "Proficient", "Proficient"))
 	
-SGPstateData[["UT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High") #  Added in by Adam as a default - need to consult UT about 'official' levels
+SGPstateData[["UT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High") #  Based on 'official' school growth levels (60th p)
 
 SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <- 
 	list(
-	Cuts=c(35, 66), 
-	Labels=c("1st - 34th", "35th - 65th", "66th - 99th")) #  Added in by Adam as a default - need to consult UT about 'official' levels
+	Cuts=c(35, 60), 
+	Labels=c("1st - 34th", "35th - 59th", "60th - 99th")) #  Changed to 60th percentile cut per conversation with Elena and Chris D. 10/01/12
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
@@ -3428,7 +3428,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		Name="Utah State Office of Education",
 		Abbreviation="USOE",
 		URL="www.schools.utah.gov",
-		Contact="John Jesse (801)538-7811"),
+		Contact="(801) 538-7811"),
 	Content_Areas=c("ELA", "MATHEMATICS", "SCIENCE"),
 	Grades_Tested=3:12, # no grade 12 for ELA or grade 3 for science
         Test_Season="Spring",

@@ -1041,7 +1041,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 	Organization=list(
 		Name="Student Growth Percentiles",
 		Abbreviation="SGP",
-		URL="www.studentgrowthpercentiles.github.com/SGP/",
+		URL="www.schoolview.github.com/SGP/",
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
@@ -3428,9 +3428,9 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		Name="Utah State Office of Education",
 		Abbreviation="USOE",
 		URL="www.schools.utah.gov",
-		Contact="XXX-XXX-XXXX"),
+		Contact="John Jesse (801)538-7811"),
 	Content_Areas=c("ELA", "MATHEMATICS", "SCIENCE"),
-	Grades_Tested=3:12, # no grade 12 for ELA or grade 3 & 4 for science
+	Grades_Tested=3:12, # no grade 12 for ELA or grade 3 for science
         Test_Season="Spring",
 	Assessment_Years=2005:2012, # 2005:2012 is class INTEGER, c(2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012) is NUMERIC
 	Test_Vendor="Measured Progress")
@@ -3441,7 +3441,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(ELA=c(0,50,75,100), MATHEMATICS=c(0,50,75,100), SCIENCE=c(0,50,75,100)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math", SCIENCE="Science"),
-	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:12, SCIENCE=4:12), #c(3,4,5,6,7,8,9,10,11,12)
+	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:12, SCIENCE=4:12),
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",

@@ -1,0 +1,22 @@
+names.provided,names.sgp,names.type,names.info,names.output
+district_id,DISTRICT_NUMBER,institution,District number,
+school_id,SCHOOL_NUMBER,institution,School number,
+nys_performance_level,ACHIEVEMENT_LEVEL,measure,achievement level for student,
+student_unique_id,ID,individual,Unique student identifier,
+subject,CONTENT_AREA,content,Content area,
+year,YEAR,time,Year (testing year) associated with record,
+district_name,DISTRICT_NAME,label,District name,
+school_name,SCHOOL_NAME,label,School name,
+firstname,FIRST_NAME,label,Student first name,
+lastname,LAST_NAME,label,Student last name,
+s_race,ETHNICITY,demographic,Student ethnicity,TRUE
+s_gender,GENDER,demographic,Student gender,TRUE
+s_disability,IEP_STATUS,demographic,Student IEP/Special Education status,TRUE
+s_ell,ELL_STATUS,demographic,Student ELL status,TRUE
+poverty,FREE_REDUCED_LUNCH_STATUS,Student Free/Reduced Lunch status,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+district_in,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+school_in,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+testedgrade,GRADE,institution_level,Grade level of test taken,
+scalescore,SCALE_SCORE,measure,Student scale score,
+unadj_sgp,SGP_AIR,measure,SGP calculated using AIR procedure,

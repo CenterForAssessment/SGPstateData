@@ -3096,6 +3096,7 @@ SGPstateData[["NY"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
 load("Baseline_Coefficient_Matrices/NY_Baseline_Matrices.Rdata")
 SGPstateData[["NY"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NY_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["NY"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- NY_Baseline_Matrices[["ELA.BASELINE"]]
+SGPstateData[["NY"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NY_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 
 
 ### OREGON

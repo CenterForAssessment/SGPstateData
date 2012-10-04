@@ -7,7 +7,7 @@ YEAR,YEAR,time,Year associated with record,
 GRADE,GRADE,institution_level,Grade/Test level associated with record,
 SCALE_SCORE,SCALE_SCORE,measure,Scale score,
 VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
-TEST_NAME,,,,
+TEST_NAME,TEST_NAME,misc,Test name,
 ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,
 SCHOOL_LEVEL,SCHOOL_LEVEL,institution_type,Elementary/Middle/High School level flag,
 SCHOOL_NAME,SCHOOL_NAME,label,School name,
@@ -24,5 +24,5 @@ FRL_STATUS,FRL_STATUS,demographic,Student FRL status,TRUE
 IEP_STATUS,IEP_STATUS,demographic,Student IEP status,TRUE
 ELL_STATUS,ELL_STATUS,demographic,Student ELL status,TRUE
 GT_STATUS,GT_STATUS,demographic,Student Gifted Talented Status,TRUE
-TEST_MEDIUM,,,,
+TEST_MEDIUM,TEST_MEDIUM,misc,Test medium,
 HIGH_NEED_STATUS,HIGH_NEED_STATUS,demographic,High need status flag,TRUE

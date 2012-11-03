@@ -1832,6 +1832,9 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
 
+SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
+                                                max.order.for.projection=3)
+
 load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
 SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]

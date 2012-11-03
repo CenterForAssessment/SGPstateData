@@ -1832,6 +1832,11 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
 
+load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]
+
+
 ### KANSAS
 
 load("Knots_Boundaries/KS_Knots_Boundaries.Rdata")

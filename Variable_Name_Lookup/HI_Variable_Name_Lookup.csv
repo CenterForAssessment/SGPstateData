@@ -7,17 +7,28 @@ Gr,GRADE,institution_level,Grade level of test taken,
 Domain,CONTENT_AREA,content,Content area (Mathematics or Reading),
 Scale_Score,SCALE_SCORE,measure,Student scale score,
 Proficiency_Level,ACHIEVEMENT_LEVEL,measure,Achievment level associated with student score,
-SCode,SCHOOL_NUMBER,institution,School number,
-School,SCHOOL_NAME,label,School name,
+SCode_Admin_Rollup,SCHOOL_NUMBER,institution,School number rolled up for administration purposes possibly containing multiple SCHOOL_NUMBERs,
+School_Admin_Rollup,SCHOOL_NAME,label,School name rolled up for adminiatration purposes possibly containing multiple SCHOOL_NUMBERs,
 GradeRange,GRADE_RANGE,institution_type,Grade range of school,
 SchlType,SCHOOL_TYPE,institution_type,Type of School (Charter/DOE/Special),
-Type,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
+EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
+Type,SCHOOL_LEVEL,institution_type,Elementary/Elementary-Middle/Middle/Middle-High/High School designation,
 DCode,DISTRICT_NUMBER,institution,District number,
 District,DISTRICT_NAME,label,District name,
 CCode,COMPLEX_NUMBER,institution,Complex number
 Complex,COMPLEX_NAME,label,Complex name
 CACode,COMPLEX_AREA_NUMBER,institution,Complex area number
 CArea,COMPLEX_AREA_NAME,label,Complex area name
+INSTRUCTOR_NUMBER_1,INSTRUCTOR_NUMBER_1,institution_multiple_membership_1,Instructor 1 number with possible multiple membership,
+INSTRUCTOR_NUMBER_2,INSTRUCTOR_NUMBER_2,institution_multiple_membership_1,Instructor 2 number with possible multiple membership,
+INSTRUCTOR_NUMBER_3,INSTRUCTOR_NUMBER_3,institution_multiple_membership_1,Instructor 3 number with possible multiple membership,
+INSTRUCTOR_NUMBER_4,INSTRUCTOR_NUMBER_4,institution_multiple_membership_1,Instructor 4 number with possible multiple membership,
+INSTRUCTOR_NUMBER_5,INSTRUCTOR_NUMBER_5,institution_multiple_membership_1,Instructor 5 number with possible multiple membership,
+INSTRUCTOR_NUMBER_1_ENROLLMENT_STATUS,INSTRUCTOR_1_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 1 inclusion/accountability indicator,
+INSTRUCTOR_NUMBER_2_ENROLLMENT_STATUS,INSTRUCTOR_2_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 2 inclusion/accountability indicator,
+INSTRUCTOR_NUMBER_3_ENROLLMENT_STATUS,INSTRUCTOR_3_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 3 inclusion/accountability indicator,
+INSTRUCTOR_NUMBER_4_ENROLLMENT_STATUS,INSTRUCTOR_4_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 4 inclusion/accountability indicator,
+INSTRUCTOR_NUMBER_5_ENROLLMENT_STATUS,INSTRUCTOR_5_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 5 inclusion/accountability indicator,
 DOE_Ethnic,ETHNICITY_DOE,demographic,Student ethnicity using DOE categories,TRUE
 Fed5_Ethnic,ETHNICITY_FED5,demographic,Student ethnicity using FED 5 categories,TRUE
 Fed7_Ethnic,ETHNICITY_FED7,demographic,Student ethnicity using FED 7 categories,TRUE
@@ -27,6 +38,7 @@ SpEd,SPECIAL_EDUCATION_STATUS,demographic,Student special education status indic
 Sex,GENDER,demographic,Student gender,TRUE
 Source,TEST_ADMINISTRATION,type of test,HSA/HSAA/HLIP/HAPA/Linapuni,
 Migrant,MIGRANT_STATUS,demographic,Student migrant status,TRUE
+HIGH_NEED_STATUS,HIGH_NEED_STATUS,demographic,High need status flag,TRUE
 FSY,FULL_SCHOOL_YEAR_STATUS,demographic,Full school year status indicator,TRUE
 SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
 DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,

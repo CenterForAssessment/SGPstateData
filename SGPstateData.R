@@ -1833,8 +1833,10 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass +"="Pass +")) 
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
-                                                max.order.for.projection=3)
+                                                max.order.for.projection=3,
+						percentile.cuts=c(1,35,65,99))
 
+SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
 SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]

@@ -1184,73 +1184,37 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		loss.hoss_7=c(650, 980),
 		loss.hoss_8=c(667, 990)),
 	GRADE_9_LIT=list(
-		knots_9=c(393, 414, 432, 453),
-		knots_10=c(393, 414, 432, 453),
-		knots_11=c(393, 414, 432, 453),
-		boundaries_9=c(160, 640),
-		boundaries_10=c(160, 640),
-		boundaries_11=c(160, 640),
-		loss.hoss_9=c(200, 600),
-		loss.hoss_10=c(200, 600),
-		loss.hoss_11=c(200, 600)),
+		knots_EOCT=c(393, 414, 432, 453),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
 	AMERICAN_LIT=list(
-		knots_10=c(404, 422, 437, 456),
-		knots_11=c(404, 422, 437, 456),
-		boundaries_10=c(160, 640),
-		boundaries_11=c(160, 640),
-		loss.hoss_10=c(200, 600),
-		loss.hoss_11=c(200, 600)),
+		knots_EOCT=c(404, 422, 437, 456),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
 	BIOLOGY=list(
-		knots_9=c(381, 402, 424, 450),
-		knots_10=c(381, 402, 424, 450),
-		knots_11=c(381, 402, 424, 450),
-		boundaries_9=c(155, 695),
-		boundaries_10=c(155, 695),
-		boundaries_11=c(155, 695),
-		loss.hoss_9=c(200, 650),
-		loss.hoss_10=c(200, 650),
-		loss.hoss_11=c(200, 650)),
+		knots_EOCT=c(381, 402, 424, 450),
+		boundaries_EOCT=c(155, 695),
+		loss.hoss_EOCT=c(200, 650)),
 	PHYSICAL_SCIENCE=list(
-		knots_8=c(380, 407, 432, 464),
-		knots_9=c(380, 407, 432, 464),
-		knots_10=c(380, 407, 432, 464),
-		knots_11=c(380, 407, 432, 464),
-		boundaries_8=c(145, 805),
-		boundaries_9=c(145, 805),
-		boundaries_10=c(145, 805),
-		boundaries_11=c(145, 805),
-		loss.hoss_8=c(200, 600),
-		loss.hoss_9=c(200, 600),
-		loss.hoss_10=c(200, 600),
-		loss.hoss_11=c(200, 600)),
+		knots_EOCT=c(380, 407, 432, 464),
+		boundaries_EOCT=c(145, 805),
+		loss.hoss_EOCT=c(200, 600)),
 	US_HISTORY=list(
-		knots_10=c(370, 400, 425, 456),
-		knots_11=c(370, 400, 425, 456),
-		boundaries_10=c(155, 695),
-		boundaries_11=c(155, 695),
-		loss.hoss_10=c(200, 650),
-		loss.hoss_11=c(200, 650)),
+		knots_EOCT=c(370, 400, 425, 456),
+		boundaries_EOCT=c(155, 695),
+		loss.hoss_EOCT=c(200, 650)),
 	ECONOMICS=list(
-		knots_10=c(385, 410, 431, 460),
-		knots_11=c(385, 410, 431, 460),
-		boundaries_10=c(155, 695),
-		boundaries_11=c(155, 695),
-		loss.hoss_10=c(200, 650),
-		loss.hoss_11=c(200, 650)),
+		knots_EOCT=c(385, 410, 431, 460),
+		boundaries_EOCT=c(155, 695),
+		loss.hoss_EOCT=c(200, 650)),
 	MATHEMATICS_I=list(
-		knots_8=c(384, 400, 417, 436),
-		boundaries_8=c(160, 640),
-		loss.hoss_8=c(200, 600),
-		knots_9=c(384, 400, 417, 436),
-		boundaries_9=c(160, 640),
-		loss.hoss_9=c(200, 600),
-		knots_10=c(384, 400, 417, 436),
-		boundaries_10=c(160, 640),
-		loss.hoss_10=c(200, 600)),
+		knots_EOCT=c(384, 400, 417, 436),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
 	MATHEMATICS_II=list(
-		knots_10=c(382, 396, 409, 430),
-		boundaries_10=c(160, 640),
-		loss.hoss_10=c(200, 600)))
+		knots_EOCT=c(382, 396, 409, 430),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)))
 
 SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <- 
 	list(
@@ -1785,19 +1749,19 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <- 
 	list(ELA=list(
-		GRADE_3=c(404, 510),
-		GRADE_4=c(429, 532),
-		GRADE_5=c(447, 553),
-		GRADE_6=c(472, 570),
-		GRADE_7=c(497, 610),
-		GRADE_8=c(516, 611)),
+		GRADE_3=c(417, 521),
+		GRADE_4=c(437, 535),
+		GRADE_5=c(468, 548),
+		GRADE_6=c(478, 579),
+		GRADE_7=c(501, 584),
+		GRADE_8=c(508, 627)),
 	MATHEMATICS=list(
-		GRADE_3=c(393, 491),
-		GRADE_4=c(415, 510), 
-		GRADE_5=c(428, 524),
-		GRADE_6=c(464, 559),
-		GRADE_7=c(480, 585),
-		GRADE_8=c(517, 629)))
+		GRADE_3=c(413, 513),
+		GRADE_4=c(445, 541), 
+		GRADE_5=c(463, 556),
+		GRADE_6=c(487, 590),
+		GRADE_7=c(511, 603),
+		GRADE_8=c(537, 641)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -1831,6 +1795,16 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Did Not Pass"="Did Not Pass", 
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
+
+SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
+                                                max.order.for.projection=3,
+						percentile.cuts=c(1,35,65,99))
+
+SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]
+
 
 ### KANSAS
 

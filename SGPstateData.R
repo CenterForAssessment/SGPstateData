@@ -1749,19 +1749,19 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <- 
 	list(ELA=list(
-		GRADE_3=c(404, 510),
-		GRADE_4=c(429, 532),
-		GRADE_5=c(447, 553),
-		GRADE_6=c(472, 570),
-		GRADE_7=c(497, 610),
-		GRADE_8=c(516, 611)),
+		GRADE_3=c(417, 521),
+		GRADE_4=c(437, 535),
+		GRADE_5=c(468, 548),
+		GRADE_6=c(478, 579),
+		GRADE_7=c(501, 584),
+		GRADE_8=c(508, 627)),
 	MATHEMATICS=list(
-		GRADE_3=c(393, 491),
-		GRADE_4=c(415, 510), 
-		GRADE_5=c(428, 524),
-		GRADE_6=c(464, 559),
-		GRADE_7=c(480, 585),
-		GRADE_8=c(517, 629)))
+		GRADE_3=c(413, 513),
+		GRADE_4=c(445, 541), 
+		GRADE_5=c(463, 556),
+		GRADE_6=c(487, 590),
+		GRADE_7=c(511, 603),
+		GRADE_8=c(537, 641)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -1795,6 +1795,16 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Did Not Pass"="Did Not Pass", 
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
+
+SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
+                                                max.order.for.projection=3,
+						percentile.cuts=c(1,35,65,99))
+
+SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]
+
 
 ### KANSAS
 

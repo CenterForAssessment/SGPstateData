@@ -3763,7 +3763,7 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <-
     list(
     Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), SCIENCE=c(0,100,200,300,400), WRITING=c(0,100,200,300,400)), 
     Content_Areas_Labels=list(MATHEMATICS="Math", SCIENCE="Science", READING="Reading", WRITING="Writing"),
-    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), SCIENCE=c(5,8,10), READING=c(3,4,5,6,7,8,10), WRITING=c(4,7,10)),
+    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), SCIENCE=c(5,8), READING=c(3,4,5,6,7,8,10), WRITING=c(4,7,10)),
     Achievement_Level_Labels=list(
         "L1: Below Basic"="Below Basic",
         "L2: Basic"="Basic",

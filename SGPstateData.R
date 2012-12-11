@@ -1274,7 +1274,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 	Assessment_Abbreviation="GA-CRCT",
 	Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c(2007, 2008, 2009, 2010, 2011),
+	Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012'),
 	Test_Season="Spring",
 	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Georgia_CSEM)
@@ -1293,15 +1293,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- GA_Baseline_Matrices[["ELA.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- GA_Baseline_Matrices[["READING.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- GA_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["SCIENCE.BASELINE"]] <- GA_Baseline_Matrices[["SCIENCE.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["AMERICAN_LIT.BASELINE"]] <- GA_Baseline_Matrices[["AMERICAN_LIT.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["BIOLOGY.BASELINE"]] <- GA_Baseline_Matrices[["BIOLOGY.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRADE_9_LIT.BASELINE"]] <- GA_Baseline_Matrices[["GRADE_9_LIT.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["PHYSICAL_SCIENCE.BASELINE"]] <- GA_Baseline_Matrices[["PHYSICAL_SCIENCE.BASELINE"]]
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ECONOMICS.BASELINE"]] <- GA_Baseline_Matrices[["ECONOMICS.BASELINE"]]
+SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
 
 
 ### HAWAII

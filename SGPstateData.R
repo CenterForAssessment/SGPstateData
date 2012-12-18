@@ -3728,8 +3728,8 @@ SGPstateData[["WA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Refere
 
 SGPstateData[["WA"]][["Growth"]][["Cutscores"]] <-
     list(
-    Cuts=c(35, 66), 
-    Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+    Cuts=c(34, 67), 
+    Labels=c("1st - 33rd", "34th - 66th", "67th - 99th"))
 
 SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
     list(

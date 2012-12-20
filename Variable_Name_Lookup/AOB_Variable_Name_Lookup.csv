@@ -13,3 +13,4 @@ SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
 GENDER,GENDER,demographic,Student gender,TRUE
 ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
 PIE,PIE,demographic,Student PIE status,TRUE
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,

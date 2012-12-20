@@ -3068,40 +3068,26 @@ SGPstateData[["NY"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### OREGON
 
 SGPstateData[["OR"]][["Achievement"]][["Cutscores"]] <- list(
-                                                          READING=list(
-                                                                   GRADE_3=c(199, 204, 218),
-                                                                   GRADE_4=c(295, 211, 223),
-                                                                   GRADE_5=c(209, 218, 230),
-                                                                   GRADE_6=c(214, 222, 234),
-                                                                   GRADE_7=c(219, 227, 239),
-                                                                   GRADE_8=c(224, 231, 241)),
-                                                          MATHEMATICS=list(
-                                                                   GRADE_3=c(201, 205, 217),
-                                                                   GRADE_4=c(208, 212, 225),
-                                                                   GRADE_5=c(214, 218, 229),
-                                                                   GRADE_6=c(216, 221, 232),
-                                                                   GRADE_7=c(221, 226, 238),
-                                                                   GRADE_8=c(225, 230, 241)),
-                                                          READING.2012=list(
-                                                                   GRADE_3=c(204, 211, 224),
-                                                                   GRADE_4=c(210, 216, 226),
-                                                                   GRADE_5=c(215, 221, 230),
-                                                                   GRADE_6=c(217, 226, 237),
-                                                                   GRADE_7=c(222, 229, 241),
-                                                                   GRADE_8=c(226, 232, 242),
-                                                                   GRADE_11=c(232, 236, 247)),
-                                                          MATHEMATICS.2011=list(
-                                                                   GRADE_3=c(205, 212, 219),
-                                                                   GRADE_4=c(212, 219, 227),
-                                                                   GRADE_5=c(219, 225, 234),
-                                                                   GRADE_6=c(222, 227, 237),
-                                                                   GRADE_7=c(228, 232, 242),
-                                                                   GRADE_8=c(230, 234, 245),
-                                                                   GRADE_11=c(232, 236, 251)))
+								Reading=list(
+									GRADE_3=c(204,211,224),
+									GRADE_4=c(210,216,226),
+									GRADE_5=c(214,221,230),
+									GRADE_6=c(217,226,237),
+									GRADE_7=c(222,229,241),
+									GRADE_8=c(226,232,242),
+									GRADE_11=c(232,236,247)),
+								Math=list(
+									GRADE_3=c(205,212,219),
+									GRADE_4=c(212,219,227),
+									GRADE_5=c(219,225,234),
+									GRADE_6=c(222,227,237),
+									GRADE_7=c(228,232,242),
+									GRADE_8=c(230,234,245),
+									GRADE_11=c(232,236,251)))
 
 SGPstateData[["OR"]][["Achievement"]][["Levels"]] <- 
 	list(
-	Labels=c("Low Proficient", "Nearly Meets Proficient", "Meets Proficient", "Exceeds Proficient"),
+	Labels=c("Low", "Nearly Meets", "Meets", "Exceeds"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["OR"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -3124,18 +3110,18 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]] <-
 		Contact="503-947-5600"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
-	Test_Season="Fall",
+	Test_Season="Spring",
 	Test_Vendor="Oregon Department Education")
 
 SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
 	Achievement_Level_Labels=list(
-		"Low"="Low Proficient", 
-		"Near"="Near Proficient", 
-		"Proficient"="Meets Proficient", 
-		"Exceeds"="Exceeds Proficient"))
+		"Low"="Low", 
+		"Near"="Nearly Meets", 
+		"Proficient"="Meets", 
+		"Exceeds"="Exceeds"))
 
 
 ### RHODE ISLAND

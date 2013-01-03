@@ -3191,12 +3191,12 @@ SGPstateData[["RI"]][["Achievement"]][["Levels"]] <-
 	Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient with Distinction"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["RI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+SGPstateData[["RI"]][["Growth"]][["Levels"]] <- c("Low", "Low Typical", "Typical", "High Typical", "High")
 
 SGPstateData[["RI"]][["Growth"]][["Cutscores"]] <- 
 	list(
-	Cuts=c(35, 66), 
-	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+	Cuts=c(31, 46, 56, 71), 
+	Labels=c("1st - 30th", "31st - 45th", "46th to 55th", "56th to 70th", "71st - 99th"))
 
 SGPstateData[["RI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 

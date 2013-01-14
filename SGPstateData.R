@@ -2470,6 +2470,33 @@ SGPstateData[["MO"]][["Student_Report_Information"]] <-
 SGPstateData[["MO"]][["SGP_Configuration"]] <- list(state.multiple.year.summary=5)
 
 
+### AUSTRALIA/NAPLAN
+
+SGPstateData[["NAPLAN"]][["Achievement"]][["Cutscores"]] <- 
+	list(READING=list(
+		GRADE_3=c(270, 322),
+		GRADE_5=c(374, 426),
+		GRADE_7=c(426, 478),
+		GRADE_9=c(478, 530)),
+        WRITING=list(
+		GRADE_3=c(270, 322),
+		GRADE_5=c(374, 426),
+		GRADE_7=c(426, 478),
+		GRADE_9=c(478, 530)),
+	NUMERACY=list(GRADE_3=c(270, 322),
+		GRADE_5=c(374, 426),
+		GRADE_7=c(426, 478),
+		GRADE_9=c(478, 530)),
+	GRAMMAR=list(GRADE_3=c(270, 322),
+		GRADE_5=c(374, 426),
+		GRADE_7=c(426, 478),
+		GRADE_9=c(478, 530)),
+	SPELLING=list(GRADE_3=c(270, 322),
+		GRADE_5=c(374, 426),
+		GRADE_7=c(426, 478),
+		GRADE_9=c(478, 530)))
+
+
 ### NEVADA
 
 load("CSEM/Nevada/Nevada_CSEM.Rdata")
@@ -3196,7 +3223,7 @@ SGPstateData[["RI"]][["Growth"]][["Levels"]] <- c("Low", "Low Typical", "Typical
 SGPstateData[["RI"]][["Growth"]][["Cutscores"]] <- 
 	list(
 	Cuts=c(31, 46, 56, 71), 
-	Labels=c("1st - 30th", "31st - 45th", "46th to 55th", "56th to 70th", "71st - 99th"))
+	Labels=c("1st-30th", "31st-45th", "46th-55th", "56th-70th", "71st-99th"))
 
 SGPstateData[["RI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 

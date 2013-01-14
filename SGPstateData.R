@@ -3689,7 +3689,19 @@ SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <-
         boundaries_10=c(130, 670),
         loss.hoss_5=c(200, 550),
         loss.hoss_8=c(225, 550),
-        loss.hoss_10=c(175, 625)))
+        loss.hoss_10=c(175, 625)),
+	EOC_MATHEMATICS_1=list(
+		knots_EOCT=c(375, 400, 424, 456),
+		boundaries_EOCT=c(152.5, 722.5),
+		loss.hoss_EOCT=c(200, 675)),
+	EOC_MATHEMATICS_2=list(
+		knots_EOCT=c(387, 411, 436, 459),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
+	EOC_BIOLOGY=list(
+		knots_EOCT=c(387, 402, 414, 427),
+		boundaries_EOCT=c(250, 550),
+		loss.hoss_EOCT=c(275, 525)))
 
 SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <- 
     list(
@@ -3737,7 +3749,7 @@ SGPstateData[["WA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["WA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["WA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["WA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WA"]][["Growth"]][["Cutscores"]] <-
     list(

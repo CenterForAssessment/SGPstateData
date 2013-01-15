@@ -7,7 +7,8 @@
 ####
 ###################################################################################################
 
-SGPstateData=list()
+#SGPstateData <- list()
+SGPstateData <- new.env()
 
 ### Load NECAP CSEM data
 

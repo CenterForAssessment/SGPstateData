@@ -2353,6 +2353,73 @@ SGPstateData[["MO"]][["SGP_Configuration"]] <- list(state.multiple.year.summary=
 
 ### AUSTRALIA/NAPLAN
 
+SGPstateData[["NAPLAN"]][["Achievement"]][["Knots_Boundaries"]] <- 
+		list(READING=list(
+	  		knots_3=c(352.1, 399.5, 446.9, 493.5),
+			knots_5=c(431.5, 476.9, 520.2, 561.4),
+			knots_7=c(476.3, 514.8, 548.6, 591.9),
+			knots_9=c(516.6, 553.9, 590.4, 630.1),
+			boundaries_3=c(-72.340001, 835.340013),
+			boundaries_5=c(-6.169996, 918.669973),
+			boundaries_7=c(81.870006, 903.029973),
+			boundaries_9=c(115.189993, 969.710001),
+	                loss.hoss_3=c(186.4, 898.5),
+	                loss.hoss_5=c(150.3, 834.6),
+	                loss.hoss_7=c(70.9, 841.6), 
+	                loss.hoss_9=c(3.3, 759.7)), 
+	     	WRITING=list(
+	  		knots_3=c(371.1, 402.9, 440.9, 480.0),
+			knots_5=c(434.2, 480.0, 509.4, 546.2),
+			knots_7=c(464.9, 509.4, 538.5, 594.5),
+			knots_9=c(494.8, 538.5, 582.5, 639.1),
+			boundaries_3=c(23.450001, 811.249973),
+			boundaries_5=c(15.439997, 899.360014),
+			boundaries_7=c(10.189997, 957.110014),
+			boundaries_9=c(10.189997, 957.110014),
+	                loss.hoss_3=c(89.1, 878.2), 
+	                loss.hoss_5=c(89.1, 878.2), 
+	                loss.hoss_7=c(89.1, 825.7), 
+	                loss.hoss_9=c(89.1, 745.6)),
+		NUMERACY=list(
+	  		knots_3=c(351.2, 389.6, 427.8, 472.0),
+			knots_5=c(438.3, 473.1, 507.6, 551.0),       
+			knots_7=c(481.1, 515.0, 550.8, 597.0),
+			knots_9=c(524.6, 558.3, 592.6, 636.8),
+			boundaries_3=c(-76.329999, 839.629987),                                               
+			boundaries_5=c(45.440001, 901.760027),
+			boundaries_7=c(100.580008, 988.819986),   
+			boundaries_9=c(124.050005, 1021.049986),
+	                loss.hoss_3=c(198.8, 946.3),
+	                loss.hoss_5=c(174.6, 914.8),
+	                loss.hoss_7=c(116.8, 830.4),
+	                loss.hoss_9=c(0.0, 763.3)),  
+		GRAMMAR=list(
+	  		knots_3=c(357.3, 408.8, 453.7, 495.9), 
+			knots_5=c(437.1, 484.5, 522.4, 573.7),
+			knots_7=c(466.8, 503.3, 542.6, 585.0),
+			knots_9=c(506.5, 546.5, 578.1, 625.8),
+			boundaries_3=c(0.0, 758.120013),
+			boundaries_5=c(0.0, 917.259973),
+			boundaries_7=c(2.250000, 971.250000),
+			boundaries_9=c(94.190005, 921.110013),
+	                loss.hoss_3=c(163.1, 852.2),
+	                loss.hoss_5=c(83.0, 890.5), 
+			loss.hoss_7=c(52.0, 838.6), 
+			loss.hoss_9=c(0.0, 689.2)),  
+		SPELLING=list(
+	  		knots_3=c(350.8, 392.2, 432.9, 475.7),
+			knots_5=c(432.6, 469.2, 507.2, 548.9),
+			knots_7=c(472.9, 517.8, 552.0, 591.0),
+			knots_9=c(508.1, 553.0, 589.7, 634.5),
+			boundaries_3=c(142.680003, 660.120000),
+			boundaries_5=c(216.870013, 712.829999),
+			boundaries_7=c(255.899988, 842.6999880),
+			boundaries_9=c(287.219989, 882.179974),
+	                loss.hoss_3=c(336.8, 832.6), 
+	                loss.hoss_5=c(304.8, 793.8), 
+	                loss.hoss_7=c(258.2, 671.5), 
+	                loss.hoss_9=c(185.8, 617.0)))
+
 SGPstateData[["NAPLAN"]][["Achievement"]][["Cutscores"]] <- 
 	list(READING=list(
 		GRADE_3=c(270, 322),
@@ -2376,6 +2443,11 @@ SGPstateData[["NAPLAN"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(374, 426),
 		GRADE_7=c(426, 478),
 		GRADE_9=c(478, 530)))
+
+SGPstateData[["NAPLAN"]][["Achievement"]][["Levels"]] <- 
+		list(
+	     	Labels=c("Below Nat Min Std", "At Nat Min Std", "Above Nat Min Std"),
+		Proficient=c("Below Nat Min Std", "At Nat Min Std", "Above Nat Min Std"))
 
 
 ### NEVADA

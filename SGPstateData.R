@@ -1175,7 +1175,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
 SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
-
+load("SGP_NORM_GROUP_PREFERENCE/GA_SGP_NORM_GROUP_PREFERENCE.Rdata")
+SGPstateData[["GA"]][["SGP_NORM_GROUP_PREFERENCE"]] <- GA_SGP_NORM_GROUP_PREFERENCE
 
 ### HAWAII
 

@@ -946,6 +946,9 @@ load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["DEMO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/DEMO_Variable_Name_Lookup.csv", colClasses=c(rep("character",3), "logical"))
+load("SGP_Norm_Group_Preference/DEMO_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Preference
+
 
 ### GEORGIA
 
@@ -1175,7 +1178,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
 SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
-
+load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
 ### HAWAII
 

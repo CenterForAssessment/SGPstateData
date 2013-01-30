@@ -1347,7 +1347,9 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 			"Approaches"="Approaches Proficiency",
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"))
-                                                                       
+
+SGPstateData[["HI"]][["SGP_Configuration"]] <- list(output.groups=c("COMPLEX", "SCHOOL"))
+
 load("Baseline_Coefficient_Matrices/HI_Baseline_Matrices.Rdata")
 SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- HI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- HI_Baseline_Matrices[["READING.BASELINE"]]

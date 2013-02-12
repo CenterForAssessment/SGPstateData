@@ -22,7 +22,7 @@ INSTRUCTOR_NUMBER_9,INSTRUCTOR_NUMBER_9,institution_multiple_membership_1,Instru
 INSTRUCTOR_NUMBER_10,INSTRUCTOR_NUMBER_10,institution_multiple_membership_1,Instructor 10 number with possible multiple membership,
 INSTRUCTOR_NUMBER_11,INSTRUCTOR_NUMBER_11,institution_multiple_membership_1,Instructor 11 number with possible multiple membership,
 EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
-ETHNICITY,ETHICITY,demographic,Student ethnicity,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
 HIGH_ABILITY_STATUS_CATEGORY,HIGH_ABILITY_STATUS,demographic,Student high ability status indicator,TRUE
 SPECIAL_ED_STATUS,SPECIAL_EDUCATION_STATUS,demographic,Student special education status indicator,TRUE
 ENGLISH_LEARNER_STATUS,ENGLISH_LANGUAGE_LEARNER_STATUS,demographic,Student English language learner status indicator,TRUE

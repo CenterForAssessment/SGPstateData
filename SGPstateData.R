@@ -1091,6 +1091,14 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		knots_EOCT=c(385, 410, 431, 460),
 		boundaries_EOCT=c(155, 695),
 		loss.hoss_EOCT=c(200, 650)),
+	ALGEBRA=list(
+		knots_EOCT=c(382, 403, 420, 439),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
+	GEOMETRY=list(
+		knots_EOCT=c(391, 415, 436, 462),
+		boundaries_EOCT=c(270, 630),
+		loss.hoss_EOCT=c(300, 600)),
 	MATHEMATICS_I=list(
 		knots_EOCT=c(384, 400, 417, 436),
 		boundaries_EOCT=c(160, 640),

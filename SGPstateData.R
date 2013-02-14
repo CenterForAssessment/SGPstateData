@@ -1144,7 +1144,28 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(800, 850),
 		GRADE_6=c(800, 850),
 		GRADE_7=c(800, 850),
-		GRADE_8=c(800, 850)))
+		GRADE_8=c(800, 850)),
+	GRADE_9_LIT=list(
+		GRADE_EOCT=c(400, 450)),
+	AMERICAN_LIT=list(
+		GRADE_EOCT=c(400, 450)),
+	BIOLOGY=list(
+		GRADE_EOCT=c(400, 450)),
+	PHYSICAL_SCIENCE=list(
+		GRADE_EOCT=c(400, 450)),
+	US_HISTORY=list(
+		GRADE_EOCT=c(400, 450)),
+	ECONOMICS=list(
+		GRADE_EOCT=c(400, 450)),
+	ALGEBRA=list(
+		GRADE_EOCT=c(400, 450)),
+	GEOMETRY=list(
+		GRADE_EOCT=c(400, 450)),
+	MATHEMATICS_I=list(
+		GRADE_EOCT=c(400, 450)),
+	MATHEMATICS_II=list(
+		GRADE_EOCT=c(400, 450)))
+
 
 SGPstateData[["GA"]][["Achievement"]][["Levels"]] <- 
 	list(

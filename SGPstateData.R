@@ -2481,11 +2481,23 @@ SGPstateData[["NAPLAN"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(426, 478),
 		GRADE_9=c(478, 530)))
 
-SGPstateData[["NAPLAN"]][["Achievement"]][["Levels"]] <- 
-		list(
+SGPstateData[["NAPLAN"]][["Achievement"]][["Levels"]] <- list(
 	     	Labels=c("Below Nat Min Std", "At Nat Min Std", "Above Nat Min Std"),
-		Proficient=c("Below Nat Min Std", "At Nat Min Std", "Above Nat Min Std"))
+		Proficient=c("Not Proficient", "Proficient", "Proficient"))
 
+SGPstateData[["NAPLAN"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+SGPstateData[["NAPLAN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["NAPLAN"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 60, 80), Labels=list("1st-19th", "20th-39th", "40th-59th", "60th-79th", "80th-99th"))
+
+SGPstateData[["NAPLAN"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(3, 5, 7, 9)
+
+SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <- list(
+		Content_Areas_Labels=list(NUMERACY="Numeracy", READING="Reading", WRITING="Writing", GRAMMAR="Grammar", SPELLING="Spelling"),
+		Grades_Reported=list(NUMERACY=c(3,5,7,9), READING=c(3,5,7,9), WRITING=c(3,5,7,9), GRAMMAR=c(3,5,7,9), SPELLING=c(3,5,7,9)),
+		Achievement_Level_Labels=list(
+			"Below Standard"="Below Nat Min Std",
+			"At Standard"="At Nat Min Std",
+			"Above Standard"="Above Nat Min Std"))
 
 ### NEVADA
 

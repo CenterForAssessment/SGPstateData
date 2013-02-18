@@ -1091,6 +1091,14 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		knots_EOCT=c(385, 410, 431, 460),
 		boundaries_EOCT=c(155, 695),
 		loss.hoss_EOCT=c(200, 650)),
+	ALGEBRA=list(
+		knots_EOCT=c(382, 403, 420, 439),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
+	GEOMETRY=list(
+		knots_EOCT=c(391, 415, 436, 462),
+		boundaries_EOCT=c(270, 630),
+		loss.hoss_EOCT=c(300, 600)),
 	MATHEMATICS_I=list(
 		knots_EOCT=c(384, 400, 417, 436),
 		boundaries_EOCT=c(160, 640),
@@ -1136,7 +1144,28 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(800, 850),
 		GRADE_6=c(800, 850),
 		GRADE_7=c(800, 850),
-		GRADE_8=c(800, 850)))
+		GRADE_8=c(800, 850)),
+	GRADE_9_LIT=list(
+		GRADE_EOCT=c(400, 450)),
+	AMERICAN_LIT=list(
+		GRADE_EOCT=c(400, 450)),
+	BIOLOGY=list(
+		GRADE_EOCT=c(400, 450)),
+	PHYSICAL_SCIENCE=list(
+		GRADE_EOCT=c(400, 450)),
+	US_HISTORY=list(
+		GRADE_EOCT=c(400, 450)),
+	ECONOMICS=list(
+		GRADE_EOCT=c(400, 450)),
+	ALGEBRA=list(
+		GRADE_EOCT=c(400, 450)),
+	GEOMETRY=list(
+		GRADE_EOCT=c(400, 450)),
+	MATHEMATICS_I=list(
+		GRADE_EOCT=c(400, 450)),
+	MATHEMATICS_II=list(
+		GRADE_EOCT=c(400, 450)))
+
 
 SGPstateData[["GA"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -1856,7 +1885,9 @@ SGPstateData[["ME"]][["Student_Report_Information"]] <-
 		"Distinction"="Proficient with Distinction"))
 
 SGPstateData[["ME"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ME_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-
+load("Baseline_Coefficient_Matrices/ME_Baseline_Matrices.Rdata")
+SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- ME_Baseline_Matrices[["READING.BASELINE"]]
+SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- ME_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 
 ### MASSACHUSETTS
 

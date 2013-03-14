@@ -13,17 +13,11 @@ FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUE
 ELL_STATUS,demographic,Student ELL status,TRUE
 IEP_STATUS,demographic,Student IEP status,TRUE
 GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUE
-INSTRUCTOR_NUMBER_1,institution_multiple_membership_1,Instructor 1 number with possible multiple membership,
-INSTRUCTOR_NUMBER_2,institution_multiple_membership_1,Instructor 2 number with possible multiple membership,
 SCHOOL_NUMBER,institution,School number,
 SCHOOL_NAME,label,School name,
 EMH_LEVEL,institution_type,Elementary/Middle/High School level flag,
 DISTRICT_NUMBER,institution,District number,
 DISTRICT_NAME,label,School name,
-INSTRUCTOR_1_WEIGHT,institution_multiple_membership_1_weight,Instructor 1 weight with possible multiple membership,
-INSTRUCTOR_2_WEIGHT,institution_multiple_membership_1_weight,Instructor 2 weight with possible multiple membership,
-INSTRUCTOR_1_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 1 inclusion/accountability indicator,
-INSTRUCTOR_2_ENROLLMENT_STATUS,institution_multiple_membership_1_inclusion,Instructor 2 inclusion/accountability indicator,
 SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
 DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
 STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,

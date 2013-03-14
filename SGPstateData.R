@@ -74,7 +74,7 @@ SGPstateData[["AOB"]][["Assessment_Program_Information"]] <-
                 Contact="1-410-547-5515"),
         Content_Areas=c("Language", "Mathematics", "Reading", "Science"),
         Grades_Tested=c(3,4,5,6,7,8),
-        Assessment_Years=c(2007, 2008, 2009, 2010, 2011),
+        Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Spring",
 	Test_Vendor="Pearson/SAT10")
 
@@ -231,7 +231,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
         Content_Areas=c("Mathematics", "Reading"),
 	Scale_Change=list(MATHEMATICS=2010),
         Grades_Tested=c(3,4,5,6,7,8,10),
-        Assessment_Years=c(2006, 2007, 2008, 2009, 2010, 2011),
+        Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Spring",
 	Test_Vendor="CTB/McGraw Hill")
 
@@ -517,7 +517,7 @@ SGPstateData[["CA"]][["Assessment_Program_Information"]] <-
         Content_Areas=c("Mathematics", "ELA"),
         Grades_Tested=c(2,3,4,5,6,7,8,9,10,11),
         Test_Season="Spring",
-        Assessment_Years=c(2009, 2010, 2011, 2012))
+        Assessment_Years=c("2009", "2010", "2011", "2012", "2013"))
 
 SGPstateData[["CA"]][["Student_Report_Information"]] <-
         list(
@@ -619,7 +619,7 @@ SGPstateData[["CELA"]][["Assessment_Program_Information"]] <-
 		Abbreviation="CDE",
 		URL="www.schoolview.org",
 		Contact="303-866-6600"),
-	Assessment_Years=c(2007, 2008, 2009, 2010, 2011),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Content_Areas="CELA",
 	Grades_Tested= c(0,1,2,3,4,5,6,7,8,9,10,11,12),
 	Test_Season="Spring")
@@ -775,7 +775,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 		Contact="303-866-6600"),
 	Content_Areas=c("Mathematics", "Reading", "Writing"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c(2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011),
+	Assessment_Years=c("2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Spring",
 	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Colorado_CSEM)
@@ -926,7 +926,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012"),
+	Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)
@@ -1187,7 +1187,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 	Assessment_Abbreviation="GA-CRCT",
 	Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012'),
+	Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013'),
 	Test_Season="Spring",
 	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Georgia_CSEM)
@@ -1361,7 +1361,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			Contact="808-586-3230"), 
         Content_Areas=c("Mathematics", "Reading"),
         Grades_Tested=c(3,4,5,6,7,8,10),
-        Assessment_Years=c(2007, 2008, 2009, 2010, 2011),
+        Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Year_Round")
 
 SGPstateData[["HI"]][["Student_Report_Information"]] <-
@@ -1758,7 +1758,7 @@ SGPstateData[["KS"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
 	Test_Season="Spring",
-	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011"),
+	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
 	Test_Vendor="The Center for Educational Testing and Evaluation (CETE) at The University of Kansas")
 ######  Grades and Assessment Years need to be verified - based on Sheng's sample data
 
@@ -2071,7 +2071,7 @@ SGPstateData[["MN"]][["Assessment_Program_Information"]] <-
                                 Contact="651-582-8200"),
                 Content_Areas=c("Mathematics", "Reading", "Science"),
                 Grades_Tested=c(3,4,5,6,7,8,10,11),
-                Assessment_Years=c(2006, 2007, 2008, 2009, 2010, 2011),
+                Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 		Test_Season="Spring",
 		Test_Vendor="Pearson")
 #                CSEM=Minnesota_CSEM)
@@ -3070,7 +3070,7 @@ SGPstateData[["NY"]][["Assessment_Program_Information"]] <- list(Assessment_Name
                                                               Assessment_Abbreviation="NYSTP",
                                                               Content_Areas=c("Mathematics", "ELA"),
                                                               Grades_Tested=c(3,4,5,6,7,8),
-                                                              Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011"),
+                                                              Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
                                                               Test_Season="Spring",
                                                               Test_Vendor="CTB/McGraw Hill",
                                                               CSEM=New_York_CSEM)
@@ -3414,7 +3414,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("ELA", "MATHEMATICS", "SCIENCE"),
 	Grades_Tested=3:12, # no grade 12 for ELA or grade 3 for science
         Test_Season="Spring",
-	Assessment_Years=2005:2012, # 2005:2012 is class INTEGER, c(2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012) is NUMERIC
+	Assessment_Years=c("2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Vendor="Measured Progress")
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 
@@ -3603,7 +3603,7 @@ SGPstateData[["VA"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("Mathematics", "English-Reading"),
 	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
-	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011"),
+	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
 	Test_Vendor="Pearson")
 
 SGPstateData[["VA"]][["Student_Report_Information"]] <- 
@@ -3774,7 +3774,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
                       # READING="2009_2010",
                       # WRITING="2009_2010"),
     Grades_Tested=c(3,4,5,6,7,8,10),
-    Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011"),
+    Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
     Test_Season="Spring",
     Test_Vendor="ETS")
 
@@ -4053,7 +4053,7 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <-
                 Contact="800-441-4563"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011"),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Fall",
 	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Wisconsin_CSEM)

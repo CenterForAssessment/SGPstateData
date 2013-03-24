@@ -107,7 +107,5 @@ for (i in c("ELA", "MATHEMATICS")) {
 
 Massachusetts_CSEM <- do.call(rbind, tmp.list)
 rownames(Massachusetts_CSEM) <- NULL
-Massachusetts_CSEM$YEAR <- "BASELINE"
-Massachusetts_CSEM <- Massachusetts_CSEM[,c("YEAR", "CONTENT_AREA", "GRADE", "SCALE_SCORE", "SCALE_SCORE_CSEM")]
 
 save(Massachusetts_CSEM, file="../Massachusetts_CSEM.Rdata")

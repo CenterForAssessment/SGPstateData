@@ -16,6 +16,7 @@ MATH_CSEM_G6 <- read.delim("MATH_G6_2012.txt")
 MATH_CSEM_G7 <- read.delim("MATH_G7_2012.txt")
 MATH_CSEM_G8 <- read.delim("MATH_G8_2012.txt")
 MATH_CSEM_G10 <- read.delim("MATH_G10_2012.txt")
+Coef_Table <- read.delim("Coef_Table.txt")
 
 MATH_CSEM <- rbind(MATH_CSEM_G3, MATH_CSEM_G4, MATH_CSEM_G5, MATH_CSEM_G6, MATH_CSEM_G7, MATH_CSEM_G8, MATH_CSEM_G10)
 
@@ -30,7 +31,7 @@ names(MATH_CSEM) <- toupper(names(MATH_CSEM))
 my.variables <- c("GRADE", "SUBJECT", "GROWTHTHETA", "STANDARDERRORTHETA")
 ELA_CSEM <- subset(ELA_CSEM, !is.na(GRADE), select=my.variables)
 MATH_CSEM <- subset(MATH_CSEM, !is.na(GRADE), select=my.variables)
-
+SECONST <- 0.187
 
 ### Rename
 
@@ -40,21 +41,21 @@ MATH_CSEM$CONTENT_AREA <- "MATHEMATICS"
 
 ### Rescale CSEMs to Growth Theta Scale
 
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==3] <- 0.957*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==3]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==4] <- 0.676*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==4]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==5] <- 1*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==5]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==6] <- 1.191*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==6]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==7] <- 1.18*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==7]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==8] <- 1.201*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==8]/sqrt(2)
-MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==10] <- 2.014*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==10]/sqrt(2)
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==3] <- Coef_Table[Coef_Table$GRADE==3 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==3]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==4] <- Coef_Table[Coef_Table$GRADE==4 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==4]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==5] <- Coef_Table[Coef_Table$GRADE==5 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==5]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==6] <- Coef_Table[Coef_Table$GRADE==6 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==6]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==7] <- Coef_Table[Coef_Table$GRADE==7 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==7]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==8] <- Coef_Table[Coef_Table$GRADE==8 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==8]
+MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==10] <- Coef_Table[Coef_Table$GRADE==10 & Coef_Table$CONTENT_AREA=="MATH",]$SLOPE*MATH_CSEM$SCALE_SCORE_CSEM[MATH_CSEM$GRADE==10]
 
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==3] <- 0.885*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==3]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==4] <- 1.079*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==4]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==5] <- 1*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==5]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==6] <- 1.169*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==6]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==7] <- 1.13*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==7]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==8] <- 1.251*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==8]/sqrt(2)
-ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==10] <- 1.613*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==10]/sqrt(2)
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==3] <- Coef_Table[Coef_Table$GRADE==3 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==3]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==4] <- Coef_Table[Coef_Table$GRADE==4 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==4]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==5] <- Coef_Table[Coef_Table$GRADE==5 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==5]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==6] <- Coef_Table[Coef_Table$GRADE==6 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==6]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==7] <- Coef_Table[Coef_Table$GRADE==7 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==7]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==8] <- Coef_Table[Coef_Table$GRADE==8 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==8]
+ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==10] <- Coef_Table[Coef_Table$GRADE==10 & Coef_Table$CONTENT_AREA=="ELA",]$SLOPE*ELA_CSEM$SCALE_SCORE_CSEM[ELA_CSEM$GRADE==10]
 
 
 ### Combine into single file
@@ -79,19 +80,19 @@ plot.csem <- function(grade, content_area, my.data=MCAS_CSEM_2012) {
 
 baseline.csem <- function(data1, data2, content_area, grade) {
 	attach(data1)
-		min1 <- min(c(-10, SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area]), na.rm=TRUE)
-		max1 <- max(c(10, SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area]), na.rm=TRUE)
-		splinefun1 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area], method="natural")
+		min1 <- max(c(-10, min(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
+		max1 <- min(c(10, max(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
+		splinefun1 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area]*SECONST, method="natural")
 	detach(data1)
 	attach(data2)
-		min2 <- min(c(-10, SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area]), na.rm=TRUE)
-		max2 <- max(c(10, SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area]), na.rm=TRUE)
-		splinefun2 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area], method="natural")
+		min2 <- max(c(-10, min(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
+		max2 <- min(c(10, max(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
+		splinefun2 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area]*SECONST, method="natural")
 	detach(data2)
-	min.scale_score <- min(min1, min2)
-	max.scale_score <- max(max1, max2)
+	min.scale_score <- round(min(min1, min2), digits=1)
+	max.scale_score <- round(max(max1, max2), digits=1)
 	my.seq <- seq(min.scale_score, max.scale_score, by=0.1)
-	baseline.csems <- sqrt(pmin(splinefun1(my.seq), splinefun2(my.seq)))/2
+	baseline.csems <- pmin(splinefun1(my.seq), splinefun2(my.seq))
 	return(data.frame(CONTENT_AREA=content_area, GRADE=grade, SCALE_SCORE=my.seq, SCALE_SCORE_CSEM=baseline.csems))
 }
 

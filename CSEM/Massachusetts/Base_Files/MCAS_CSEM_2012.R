@@ -31,7 +31,6 @@ names(MATH_CSEM) <- toupper(names(MATH_CSEM))
 my.variables <- c("GRADE", "SUBJECT", "GROWTHTHETA", "STANDARDERRORTHETA")
 ELA_CSEM <- subset(ELA_CSEM, !is.na(GRADE), select=my.variables)
 MATH_CSEM <- subset(MATH_CSEM, !is.na(GRADE), select=my.variables)
-SECONST <- 0.187
 
 ### Rename
 
@@ -82,12 +81,12 @@ baseline.csem <- function(data1, data2, content_area, grade) {
 	attach(data1)
 		min1 <- max(c(-10, min(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
 		max1 <- min(c(10, max(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
-		splinefun1 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area]*SECONST, method="natural")
+		splinefun1 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area], method="natural")
 	detach(data1)
 	attach(data2)
 		min2 <- max(c(-10, min(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
 		max2 <- min(c(10, max(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], na.rm=TRUE)), na.rm=TRUE)
-		splinefun2 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area]*SECONST, method="natural")
+		splinefun2 <- splinefun(SCALE_SCORE[GRADE==grade & CONTENT_AREA==content_area], SCALE_SCORE_CSEM[GRADE==grade & CONTENT_AREA==content_area], method="natural")
 	detach(data2)
 	min.scale_score <- round(min(min1, min2), digits=1)
 	max.scale_score <- round(max(max1, max2), digits=1)

@@ -1,0 +1,12 @@
+names.provided,names.sgp,names.type,names.info,names.output
+ID,ID,individual,Unique student identifier,
+CONTENT_AREA,CONTENT_AREA,content,Content area associated with record,
+YEAR,YEAR,time,Year associated with record,
+GRADE,GRADE,institution_level,Grade/Test level associated with record,
+SCALE_SCORE,SCALE_SCORE,measure,Scale score,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+ACHIEVEMENT_LEVEL_OLD,ACHIEVEMENT_LEVEL_OLD,measure,Old achievement level,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Current achievement level,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,

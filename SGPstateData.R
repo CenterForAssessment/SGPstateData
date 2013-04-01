@@ -4072,6 +4072,7 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <-
 load("Baseline_Coefficient_Matrices/WI_Baseline_Matrices.Rdata")
 SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WI_Baseline_Matrices[["READING.BASELINE"]]
+SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ######################################################
 ###

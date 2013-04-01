@@ -3257,6 +3257,7 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Distinction"="Proficient with Distinction"))
 
+SGPstateData[["RI"]][["SGP_Configuration"]] <- list(null.output.string="")
 load("Baseline_Coefficient_Matrices/RI_Baseline_Matrices.Rdata")
 SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- RI_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- RI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -4068,6 +4069,11 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <-
  		"Basic"="Basic", 
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
+
+load("Baseline_Coefficient_Matrices/WI_Baseline_Matrices.Rdata")
+SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WI_Baseline_Matrices[["READING.BASELINE"]]
+SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ######################################################
 ###

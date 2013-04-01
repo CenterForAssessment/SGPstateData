@@ -3257,6 +3257,7 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Distinction"="Proficient with Distinction"))
 
+SGPstateData[["RI"]][["SGP_Configuration"]] <- list(null.output.string="")
 load("Baseline_Coefficient_Matrices/RI_Baseline_Matrices.Rdata")
 SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- RI_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- RI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

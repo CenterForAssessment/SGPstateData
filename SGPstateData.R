@@ -3765,7 +3765,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
     Assessment_Abbreviation="WCAP",
     Organization=list(
         Name="State of Washington Office of Superintendent of Public Instruction",
-	Abbreviation="VDOE",
+	Abbreviation="OSPI",
         URL="www.k12.wa.us",
         Contact="(360) 725-6000"),
     Content_Areas=c("Mathematics", "Science", "Reading", "Writing"),

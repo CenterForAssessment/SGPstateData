@@ -2280,6 +2280,9 @@ SGPstateData[["MS"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))
 
 SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MS_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/MS_Baseline_Matrices.Rdata")
+SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
 
 
 ### MISSOURI

@@ -1174,7 +1174,7 @@ SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <- 
 	list(

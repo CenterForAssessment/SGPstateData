@@ -2283,6 +2283,8 @@ SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 load("Baseline_Coefficient_Matrices/MS_Baseline_Matrices.Rdata")
 SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
+load("SGP_Norm_Group_Preference/MS_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["MS"]][["SGP_Norm_Group_Preference"]] <- MS_SGP_Norm_Group_Preference
 
 
 ### MISSOURI

@@ -1174,7 +1174,7 @@ SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <- 
 	list(
@@ -2280,6 +2280,11 @@ SGPstateData[["MS"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))
 
 SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MS_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/MS_Baseline_Matrices.Rdata")
+SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
+load("SGP_Norm_Group_Preference/MS_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["MS"]][["SGP_Norm_Group_Preference"]] <- MS_SGP_Norm_Group_Preference
 
 
 ### MISSOURI
@@ -3765,7 +3770,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
     Assessment_Abbreviation="WCAP",
     Organization=list(
         Name="State of Washington Office of Superintendent of Public Instruction",
-	Abbreviation="VDOE",
+	Abbreviation="OSPI",
         URL="www.k12.wa.us",
         Contact="(360) 725-6000"),
     Content_Areas=c("Mathematics", "Science", "Reading", "Writing"),

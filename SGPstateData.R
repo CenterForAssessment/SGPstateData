@@ -1709,6 +1709,8 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
 
+#SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
                                                 max.order.for.projection=3,
 						percentile.cuts=c(1,35,65,99))

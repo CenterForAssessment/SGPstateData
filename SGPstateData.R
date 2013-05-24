@@ -1689,6 +1689,11 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 	list(
 	Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
 	Assessment_Abbreviation="ISTEP+",
+        Organization=list(
+		Name="Indiana Department of Education",
+		Abbreviation="IDOE",
+		URL="www.doe.in.gov/",
+		Contact="webmaster@doe.in.gov"),
 	Content_Areas=c("English/Language Arts", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
@@ -1703,6 +1708,8 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Did Not Pass"="Did Not Pass", 
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
+
+#SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
                                                 max.order.for.projection=3,

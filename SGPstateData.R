@@ -942,6 +942,8 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))		
 
+SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(return.norm.group.scale.scores=TRUE)
+
 load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
@@ -1202,7 +1204,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Meets Expectations" = "Meets Expectations",
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
-SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE)
+SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE)
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
@@ -1692,7 +1694,7 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
         Organization=list(
 		Name="Indiana Department of Education",
 		Abbreviation="IDOE",
-		URL="www.doe.in.gov/",
+		URL="www.doe.in.gov",
 		Contact="webmaster@doe.in.gov"),
 	Content_Areas=c("English/Language Arts", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8),

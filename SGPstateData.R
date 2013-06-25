@@ -2005,7 +2005,9 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <-
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(projcuts.digits=2)
 
 load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices.Rdata")
-SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices[["ELA.BASELINE"]]
+load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013_ELA.Rdata")
+SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013_ELA[["ELA.BASELINE"]]
+#SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices[["ELA.BASELINE"]]
 SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 
 SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

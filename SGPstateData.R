@@ -4049,6 +4049,101 @@ SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WI_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
+
+### WY
+
+SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <- 
+  list(MATHEMATICS=list(
+         boundaries_3 = c(260.1, 894.9),
+         boundaries_4 = c(285.3, 917.7),
+         boundaries_5 = c(318.8, 957.2),
+         boundaries_6 = c(352.8, 967.2),
+         boundaries_7 = c(367.4, 998.6),
+         boundaries_8 = c(391.9, 1017.1),
+         knots_3 = c(608, 642, 667, 698),
+         knots_4 = c(618, 649, 675, 707),
+         knots_5 = c(637, 667, 697, 730),
+         knots_6 = c(661, 692, 720, 753),
+         knots_7 = c(674, 704, 732, 765),
+         knots_8 = c(686, 715, 742, 774),
+         loss.hoss_3 = c(313, 842),
+         loss.hoss_4 = c(338, 865),
+         loss.hoss_5 = c(372, 904),
+         loss.hoss_6 = c(404, 916),
+         loss.hoss_7 = c(420, 946),
+         loss.hoss_8 = c(444, 965)),
+       READING=list(
+         boundaries_3 = c(249, 861),
+         boundaries_4 = c(307.8, 922.2),
+         boundaries_5 = c(292.8, 931.2),
+         boundaries_6 = c(316.9, 966.1),
+         boundaries_7 = c(312.9, 962.1),
+         boundaries_8 = c(356, 992),
+         knots_3 = c(551, 584, 611, 639),
+         knots_4 = c(627, 659, 683, 710),
+         knots_5 = c(622, 653, 678, 706),
+         knots_6 = c(641, 674, 697, 724),
+         knots_7 = c(645, 674, 697, 722),
+         knots_8 = c(660, 690, 714, 740),
+         loss.hoss_3 = c(300, 810),
+         loss.hoss_4 = c(359, 871),
+         loss.hoss_5 = c(346, 878),
+         loss.hoss_6 = c(371, 912),
+         loss.hoss_7 = c(367, 908),
+         loss.hoss_8 = c(409, 939)))
+
+SGPstateData[["WY"]][["Achievement"]][["Cutscores"]] <- 
+  list(MATHEMATICS=list(
+         GRADE_3 = c(558, 600, 680),
+         GRADE_4 = c(584, 620, 698),
+         GRADE_5 = c(607, 645, 721),
+         GRADE_6 = c(632, 663, 741),
+         GRADE_7 = c(653, 687, 758),
+         GRADE_8 = c(676, 706, 777)),
+       READING=list(
+         GRADE_3 = c(520, 584, 661),
+         GRADE_4 = c(570, 634, 700),
+         GRADE_5 = c(587, 639, 707),
+         GRADE_6 = c(594, 650, 718),
+         GRADE_7 = c(610, 668, 746),
+         GRADE_8 = c(624, 676, 749)))
+
+SGPstateData[["WY"]][["Achievement"]][["Levels"]] <- 
+  list(
+       Labels = c("Below basic", "Basic", "Proficient", "Advanced", "No Score"),
+       Proficient = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
+
+SGPstateData[["WY"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WY"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" #is this ok?
+
+SGPstateData[["WY"]][["Growth"]][["Cutscores"]] <- 
+  list(
+       Cuts = c(35, 66),
+       Labels = c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["WY"]][["Assessment_Program_Information"]] <- 
+  list(
+       Assessment_Name="Wyoming PAWS",
+       Assessment_Abbreviation="PAWS",
+       Organization=list(
+         Name="Wyoming Department of Education",
+         Abbreviation="WY",
+         Content_Areas=c("Mathematics", "Reading"),
+         Grades_Tested=c(3,4,5,6,7,8),
+         Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013")))
+       
+SGPstateData[["WY"]][["Student_Report_Information"]] <- 
+  list(
+       Vertical_Scale="Yes",
+       Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
+       Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
+       Achievement_Level_Labels=list(
+          Below_Basic = "Below",
+          Basic = "Basic",
+          Proficient = "Proficient",
+          Advanced = "Advanced"))		
+
 ######################################################
 ###
 ### Save the result

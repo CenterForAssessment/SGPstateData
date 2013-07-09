@@ -11,14 +11,14 @@ SCode_Admin_Rollup,SCHOOL_NUMBER,institution,School number rolled up for adminis
 School_Admin_Rollup,SCHOOL_NAME,label,School name rolled up for adminiatration purposes possibly containing multiple SCHOOL_NUMBERs,
 GradeRange,GRADE_RANGE,institution_type,Grade range of school,
 SchlType,SCHOOL_TYPE,institution_type,Type of School (Charter/DOE/Special),
-EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
+EMH.Level,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
 Type,SCHOOL_LEVEL,institution_type,Elementary/Elementary-Middle/Middle/Middle-High/High School designation,
 DCode,DISTRICT_NUMBER,institution,District number,
 District,DISTRICT_NAME,label,District name,
 CCode,COMPLEX_NUMBER,institution,Complex number
 Complex,COMPLEX_NAME,label,Complex name
 CACode,COMPLEX_AREA_NUMBER,institution,Complex area number
-CArea,COMPLEX_AREA_NAME,label,Complex area name
+Complex.Area,COMPLEX_AREA_NAME,label,Complex area name
 ETHNICITY,ETHNICITY,demographic,Student ethnicity combining FED7 and DOE for Native Hawaiian,TRUE
 DOE_Ethnic,ETHNICITY_DOE,demographic,Student ethnicity using DOE categories,TRUE
 Fed5_Ethnic,ETHNICITY_FED5,demographic,Student ethnicity using FED 5 categories,FALSE

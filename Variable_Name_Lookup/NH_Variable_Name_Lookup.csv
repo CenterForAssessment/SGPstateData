@@ -25,3 +25,4 @@ EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School indicator,
 ELL_MULTI_CATEGORY_STATUS,ELL_MULTI_CATEGORY_STATUS,demographic,Student ELL status indicator with multiple ELL categories,FALSE
 ELL_STATUS,ELL_STATUS,demographic,Student ELL status indicator,TRUE
 STUDENT_GROUP,STUDENT_GROUP,demographic,Super subgroup ELL/IEP (not ELL)/Free Reduced Lunch (not ELL or IEP)/All Others,TRUE
+ESEA_WAIVER_SUBGROUPS,ESEA_WAIVER_SUBGROUPS,demographic,ESEA waiver subgroups,TRUE

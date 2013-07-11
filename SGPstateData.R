@@ -3599,6 +3599,7 @@ SGPstateData[["VA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 ### WASHINGTON
 
+load("CSEM/Washington/Washington_CSEM.Rdata")
 SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <-
     list(
     READING=list(
@@ -3749,7 +3750,8 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
     Grades_Tested=c(3,4,5,6,7,8,10),
     Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
     Test_Season="Spring",
-    Test_Vendor="ETS")
+    Test_Vendor="ETS",
+	CSEM=Washington_CSEM)
 
 SGPstateData[["WA"]][["Student_Report_Information"]] <-
     list(

@@ -25,6 +25,7 @@ Fed5_Ethnic,ETHNICITY_FED5,demographic,Student ethnicity using FED 5 categories,
 Fed7_Ethnic,ETHNICITY_FED7,demographic,Student ethnicity using FED 7 categories,FALSE
 Disadv,DISADVANTAGED_STATUS,demographic,Disadvantaed status,TRUE
 ELL,ELL_STATUS,demographic,Student ELL status indicator,TRUE
+ELL_STATUS_MULTILEVEL,ELL_STATUS_MULTILEVEL,demographic,Student ELL multi-level status indicator,TRUE
 SpEd,SPECIAL_EDUCATION_STATUS,demographic,Student special education status indicator,TRUE
 Sex,GENDER,demographic,Student gender,TRUE
 Source,TEST_ADMINISTRATION,type of test,HSA/HSAA/HLIP/HAPA/Linapuni,

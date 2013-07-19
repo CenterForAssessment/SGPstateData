@@ -958,7 +958,7 @@ SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 	list(READING=list(
 		GRADE_9=c(-0.387, 0.341,  0.823),
 		GRADE_12=c(-0.129, 0.469, 0.879)),
-	NUMERACY=list(
+	MATHEMATICS=list(
 	       GRADE_9=c(-0.089, 0.500, 1.365),
 		GRADE_12=c(0.019, 1.053, 1.427)))
 
@@ -973,8 +973,8 @@ SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81),
 SGPstateData[["GUA"]][["Información de Evaluaciones"]][["Grados Evaluados"]] <- c(9,12)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
-		Content_Areas_Labels=list(NUMERACY="Matemáticas", READING="Lectura"),
-		Grades_Reported=list(NUMERACY=c(9,12), READING=c(9,12)),
+		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
+		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
 			"Insatisfactorio"="Insatisfactorio",
 			"Necesita mejorar"="Necesita mejorar",

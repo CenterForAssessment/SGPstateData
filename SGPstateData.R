@@ -952,6 +952,36 @@ load("SGP_Norm_Group_Preference/DEMO_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Preference
 
 
+### GUATEMALA/GUA
+
+SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <- 
+	list(READING=list(
+		GRADE_9=c(-0.387, 0.341,  0.823),
+		GRADE_12=c(-0.129, 0.469, 0.879)),
+	MATHEMATICS=list(
+	       GRADE_9=c(-0.089, 0.500, 1.365),
+		GRADE_12=c(0.019, 1.053, 1.427)))
+
+SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <- list(
+	     	Labels=c("Insatisfactorio", "Necesita mejorar", "Satisfactorio", "Excelente"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "Típico", "Alto", "Muy alto")
+SGPstateData[["GUA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81), Labels=list("1st-19th", "20th-39th", "40th-60th", "61st-80th", "81st-99th"))
+
+SGPstateData[["GUA"]][["Información de Evaluaciones"]][["Grados Evaluados"]] <- c(9,12)
+
+SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
+		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
+		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
+		Achievement_Level_Labels=list(
+			"Insatisfactorio"="Insatisfactorio",
+			"Necesita mejorar"="Necesita mejorar",
+		      "Satisfactorio"="Satisfactorio",
+			"Excelente"="Excelente"))
+
+
 ### GEORGIA
 
 load("CSEM/Georgia/Georgia_CSEM.Rdata")

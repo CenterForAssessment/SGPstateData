@@ -3359,7 +3359,47 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(130, 199),
 		loss.hoss_10=c(130, 199),
 		loss.hoss_11=c(130, 199),
-		loss.hoss_12=c(130, 199)))
+		loss.hoss_12=c(130, 199)),
+		
+PRE_ALGEBRA=list(
+		knots_EOCT=c(156, 163, 168, 174),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+ALGEBRA_I=list(
+		knots_EOCT=c(153, 160, 165, 171),
+		boundaries_EOCT=c(117, 207),
+		loss.hoss_EOCT=c(125, 199)),
+
+ALGEBRA_II=list(
+		knots_EOCT=c(149, 155, 160, 166),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+GEOMETRY=list(
+		knots_EOCT=c(154, 161, 166, 172),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+EARTH_SCIENCE=list(
+		knots_EOCT=c(155, 161, 166, 172),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+BIOLOGY=list(
+		knots_EOCT=c(156, 162, 167, 173),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+CHEMISTRY=list(
+		knots_EOCT=c(151, 158, 163, 168),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)),
+
+PHYSICS=list(
+		knots_EOCT=c(155, 161, 166, 172),
+		boundaries_EOCT=c(123, 206),
+		loss.hoss_EOCT=c(130, 199)))
 
 SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <- 
 	list(

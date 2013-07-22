@@ -954,6 +954,7 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 
 ### GUATEMALA/GUA
 
+load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <- 
 	list(READING=list(
 		GRADE_9=c(-0.387, 0.341,  0.823),

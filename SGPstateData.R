@@ -3435,6 +3435,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		"Advanced"="A"))
 
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
+SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Preference
 
 
 ### VERMONT

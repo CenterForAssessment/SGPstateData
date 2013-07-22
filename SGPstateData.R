@@ -3405,6 +3405,8 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
+SGPstateData[["UT"]][["SGP_Configuration"]] <- list(sgp.cohort.size=3000)
+
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <- 
 	list(
 	Assessment_Name="Utah Criterion-Referenced Tests",

@@ -954,6 +954,9 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 
 ### GUATEMALA/GUA
 
+load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
+SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
+
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <- 
 	list(READING=list(
 		GRADE_9=c(-0.387, 0.341,  0.823),
@@ -970,7 +973,7 @@ SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "Típico"
 SGPstateData[["GUA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81), Labels=list("1st-19th", "20th-39th", "40th-60th", "61st-80th", "81st-99th"))
 
-SGPstateData[["GUA"]][["Información de Evaluaciones"]][["Grados Evaluados"]] <- c(9,12)
+SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
@@ -981,6 +984,7 @@ SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		      "Satisfactorio"="Satisfactorio",
 			"Excelente"="Excelente"))
 
+SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ### GEORGIA
 

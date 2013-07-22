@@ -3409,6 +3409,8 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
+SGPstateData[["UT"]][["SGP_Configuration"]] <- list(sgp.cohort.size=3000)
+
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <- 
 	list(
 	Assessment_Name="Utah Criterion-Referenced Tests",
@@ -3437,6 +3439,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		"Advanced"="A"))
 
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
+SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Preference
 
 
 ### VERMONT

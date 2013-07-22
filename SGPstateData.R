@@ -984,6 +984,7 @@ SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		      "Satisfactorio"="Satisfactorio",
 			"Excelente"="Excelente"))
 
+SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ### GEORGIA
 

@@ -1,0 +1,25 @@
+names.provided,names.sgp,names.type,names.info,names.output
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+YEAR,YEAR,time,Year (testing year) associated with record,
+CONTENT_AREA,CONTENT_AREA,content,Content area (Mathematics or Reading),
+ID,ID,individual,Unique student identifer,
+LAST_NAME_1,LAST_NAME_1,label,Last name (first) of student,
+LAST_NAME_2,LAST_NAME_2,label,Last name (second) of student,
+LAST_NAME,LAST_NAME,label,Last name (first and second) of student,
+FIRST_NAME,FIRST_NAME,label,First name of student,
+MIDDLE_NAME,MIDDLE_NAME,label,Middle name of student,
+GRADE,GRADE,institution_level,Grade level of test taken,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,
+DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
+DISTRICT_NAME,DISTRICT_NAME,label,District name,
+STATE_NUMBER,DISTRICT_NUMBER,institution,State number,
+STATE_NAME,DISTRICT_NAME,label,State name,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+SEX,SEX,demographic,Student sex,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+LANGUAGE,LANGUAGE,demographic,Student language,TRUE
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,performance,Achievement level of student,
+LOGRO,LOGRO,performance,Achievement level of student,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,

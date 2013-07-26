@@ -3270,6 +3270,67 @@ SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 SGPstateData[["RI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RI_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 
 
+### SOUTH DAKOTA
+
+SGPstateData[["SD"]][["Achievement"]][["Cutscores"]] <- 
+	list(MATHEMATICS=list(
+		GRADE_3=c(530, 600, 668),
+		GRADE_4=c(548, 618, 684),
+		GRADE_5=c(582, 637, 699),
+		GRADE_6=c(601, 661, 728),
+		GRADE_7=c(619, 678, 742),
+		GRADE_8=c(625, 687, 754),
+		GRADE_11=c(645, 715, 781)),
+	READING=list(
+		GRADE_3=c(544, 594, 644),
+		GRADE_4=c(539, 598, 644),
+		GRADE_5=c(540, 597, 648),
+		GRADE_6=c(552, 600, 656),
+		GRADE_7=c(553, 600, 651),
+		GRADE_8=c(554, 600, 650),
+		GRADE_11=c(566, 604, 656)))
+
+SGPstateData[["SD"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["SD"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+
+SGPstateData[["SD"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["SD"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(20, 40, 61, 81), 
+	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["SD"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="South Dakota State Test of Educational Progress",
+	Assessment_Abbreviation="STEP",
+	Organization=list(
+		Name="South Dakota Department of Education",
+		Abbreviation="SDDOE",
+		URL="www.doe.sd.gov",
+		Contact="betty.leidholt@state.sd.us"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,11),
+	Assessment_Years=c("2009", "2010", "2011", "2012", "2013"),
+	Test_Vendor="Pearson",
+	Test_Season="Spring")
+
+SGPstateData[["SD"]][["Student_Report_Information"]] <- 
+	list(
+	Vertical_Scale="No",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
+	Achievement_Level_Labels=list(
+		"Below Basic"="Below Basic", 
+		"Basic"="Basic", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))		
+
+
 ### UTAH
 
 SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
@@ -3479,6 +3540,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		"Advanced"="A"))
 
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
+load("SGP_Norm_Group_Preference/UT_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Preference
 
 

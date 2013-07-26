@@ -976,6 +976,7 @@ SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81),
 SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300), READING=c(100,200,300)),
 		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
@@ -984,6 +985,7 @@ SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		      "Satisfactorio"="Satisfactorio",
 			"Excelente"="Excelente"))
 
+SGPstateData[["GUA"]][["SGP_Configuration"]] <- list(highest.level.summary.grouping="COUNTRY")
 SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ### GEORGIA

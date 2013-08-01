@@ -976,7 +976,7 @@ SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81),
 SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300), READING=c(100,200,300)),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
@@ -2040,11 +2040,9 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <-
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(projcuts.digits=2)
 
-load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices.Rdata")
-load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013_ELA.Rdata")
-SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013_ELA[["ELA.BASELINE"]]
-#SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices[["ELA.BASELINE"]]
-SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013.Rdata")
+SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["ELA.BASELINE"]]
+SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["MATHEMATICS.BASELINE"]]
 
 SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 

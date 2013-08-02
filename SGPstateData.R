@@ -1,6 +1,6 @@
 ###################################################################################################
 ####
-#### File to produce SGPstateData containing state cutscoresand other assessment program information
+#### File to produce SGPstateData containing state cutscores and other assessment program information
 ####
 #### NOTE: All variables used for merges are in ALL CAPS. Otherwise camel case
 #### NOTE: Cutscores are the LOWER BOUND of the performance level
@@ -13,7 +13,7 @@ SGPstateData <- new.env()
 
 load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
-### ARCHDIOCSE OF BALTIMORE
+### ARCHDIOCESE OF BALTIMORE
 
 load("Knots_Boundaries/AOB_Knots_Boundaries.Rdata")
 SGPstateData[["AOB"]][["Achievement"]][["Knots_Boundaries"]] <- AOB_Knots_Boundaries
@@ -977,6 +977,7 @@ SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- 
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
@@ -4256,7 +4257,7 @@ SGPstateData[["WY"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["WY"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["WY"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" #is this ok?
+SGPstateData[["WY"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WY"]][["Growth"]][["Cutscores"]] <- 
   list(

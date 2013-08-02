@@ -1,6 +1,6 @@
 ###################################################################################################
 ####
-#### File to produce SGPstateData containing state cutscoresand other assessment program information
+#### File to produce SGPstateData containing state cutscores and other assessment program information
 ####
 #### NOTE: All variables used for merges are in ALL CAPS. Otherwise camel case
 #### NOTE: Cutscores are the LOWER BOUND of the performance level
@@ -13,7 +13,7 @@ SGPstateData <- new.env()
 
 load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
-### ARCHDIOCSE OF BALTIMORE
+### ARCHDIOCESE OF BALTIMORE
 
 load("Knots_Boundaries/AOB_Knots_Boundaries.Rdata")
 SGPstateData[["AOB"]][["Achievement"]][["Knots_Boundaries"]] <- AOB_Knots_Boundaries
@@ -976,6 +976,8 @@ SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81),
 SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
@@ -984,6 +986,7 @@ SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		      "Satisfactorio"="Satisfactorio",
 			"Excelente"="Excelente"))
 
+SGPstateData[["GUA"]][["SGP_Configuration"]] <- list(highest.level.summary.grouping="COUNTRY")
 SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ### GEORGIA
@@ -2038,11 +2041,9 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <-
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(projcuts.digits=2)
 
-load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices.Rdata")
-load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013_ELA.Rdata")
-SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013_ELA[["ELA.BASELINE"]]
-#SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices[["ELA.BASELINE"]]
-SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013.Rdata")
+SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["ELA.BASELINE"]]
+SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["MATHEMATICS.BASELINE"]]
 
 SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
@@ -4256,7 +4257,7 @@ SGPstateData[["WY"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["WY"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["WY"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" #is this ok?
+SGPstateData[["WY"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WY"]][["Growth"]][["Cutscores"]] <- 
   list(

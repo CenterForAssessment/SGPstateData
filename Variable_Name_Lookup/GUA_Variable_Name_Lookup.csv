@@ -12,8 +12,8 @@ GRADE,GRADE,institution_level,Grade level of test taken,
 SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,
 DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
 DISTRICT_NAME,DISTRICT_NAME,label,District name,
-STATE_NUMBER,DISTRICT_NUMBER,institution,State number,
-STATE_NAME,DISTRICT_NAME,label,State name,
+STATE_NUMBER,STATE_NUMBER,institution,State number,
+STATE_NAME,STATE_NAME,label,State name,
 SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
 SEX,SEX,demographic,Student sex,TRUE
 ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE

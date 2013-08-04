@@ -942,7 +942,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))		
 
-SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(return.norm.group.scale.scores=TRUE)
+SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(return.norm.group.scale.scores=TRUE, sgPlot.scale_score.targets=c("sgp.projections", "sgp.projections.lagged"))
 
 load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

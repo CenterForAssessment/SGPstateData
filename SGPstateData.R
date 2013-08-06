@@ -3480,22 +3480,29 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_4=c(160, 167),
 		GRADE_5=c(160, 166),
 		GRADE_6=c(160, 166),
-		GRADE_7=c(160, 169), 
-		GRADE_8=c(160, 168), 
-		GRADE_9=c(160, 168), 
-		GRADE_10=c(160, 168), 
-		GRADE_11=c(160, 168),
-		GRADE_12=c(160, 168)), 
+		GRADE_7=c(160, 169)), 
 	SCIENCE=list(
 		GRADE_4=c(160, 167),
 		GRADE_5=c(160, 168),
 		GRADE_6=c(160, 167),
 		GRADE_7=c(160, 167),
-		GRADE_8=c(160, 167), 
-		GRADE_9=c(160, 167),  #Use same advanced for all science?
-		GRADE_10=c(160, 167),
-		GRADE_11=c(160, 167), 
-		GRADE_12=c(160, 167))) 
+		GRADE_8=c(160, 167)),
+	PRE_ALGEBRA=list(
+		GRADE_EOCT=c(160, 168)),
+	ALGEBRA_I=list(
+		GRADE_EOCT=c(160, 168)),
+	ALGEBRA_II=list(
+		GRADE_EOCT=c(160, 168)),
+	GEOMETRY=list(
+		GRADE_EOCT=c(160, 168)),
+	EARTH_SCIENCE=list(
+		GRADE_EOCT=c(160, 167)),
+	BIOLOGY=list(
+		GRADE_EOCT=c(160, 167)),
+	CHEMISTRY=list(
+		GRADE_EOCT=c(160, 166)),
+	PHYSICS=list(
+		GRADE_EOCT=c(160, 169)))
 
 SGPstateData[["UT"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -3534,7 +3541,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(ELA=c(0,50,75,100), MATHEMATICS=c(0,50,75,100), SCIENCE=c(0,50,75,100)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math", SCIENCE="Science"),
-	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:12, SCIENCE=4:12),
+	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:7, SCIENCE=4:8),
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",
@@ -3881,7 +3888,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
 	Abbreviation="OSPI",
         URL="www.k12.wa.us",
         Contact="(360) 725-6000"),
-    Content_Areas=c("Mathematics", "Science", "Reading", "Writing"),
+    Content_Areas=c("Mathematics", "Reading", "Science"),
     # # The assessment changed from WASL to MSP/HSPE (WCAP), but the scale basically stayed the same...
     # Scale_Change=list(MATHEMATICS=c("2009_2010", "2010_2011"),
                       # SCIENCE="2009_2010",
@@ -3895,9 +3902,10 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["WA"]][["Student_Report_Information"]] <-
     list(
-    Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), SCIENCE=c(0,100,200,300,400), WRITING=c(0,100,200,300,400)), 
-    Content_Areas_Labels=list(MATHEMATICS="Math", SCIENCE="Science", READING="Reading", WRITING="Writing"),
-    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), SCIENCE=c(5,8), READING=c(3,4,5,6,7,8,10), WRITING=c(4,7,10)),
+    Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500), SCIENCE=c(100,200,300,400,500)), 
+    Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500), SCIENCE=c(100,200,300,400,500)),
+    Content_Areas_Labels=list(MATHEMATICS="Math", SCIENCE="Science", READING="Reading"),
+    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), SCIENCE=c(5,8), READING=c(3,4,5,6,7,8,10)),
     Achievement_Level_Labels=list(
         "L1: Below Basic"="Below Basic",
         "L2: Basic"="Basic",

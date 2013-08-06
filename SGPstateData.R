@@ -3530,15 +3530,15 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		URL="www.schools.utah.gov",
 		Contact="(801) 538-7811"),
 	Content_Areas=c("ELA", "MATHEMATICS", "SCIENCE"),
-	Grades_Tested=3:12, # no grade 12 for ELA or grade 3 for science
+	Grades_Tested=c(3,4,5,6,7,8,11),
         Test_Season="Spring",
-	Assessment_Years=c("2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+	Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013"), # 2005-2007 removed in 2013
 	Test_Vendor="Measured Progress")
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 
 	list(
-	Transformed_Achievement_Level_Cutscores=list(ELA=c(0,50,75,100), MATHEMATICS=c(0,50,75,100), SCIENCE=c(0,50,75,100)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(ELA=c(0,50,75,100), MATHEMATICS=c(0,50,75,100), SCIENCE=c(0,50,75,100)),
+    Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100, 150, 175, 200), ELA=c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)), 
+    Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100, 150, 175, 200), ELA =c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math", SCIENCE="Science"),
 	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:7, SCIENCE=4:8),

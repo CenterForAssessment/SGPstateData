@@ -238,6 +238,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 SGPstateData[["AZ"]][["Student_Report_Information"]] <-
         list(
 ##	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
+##	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
         Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
         Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	Earliest_Year_Reported=list(MATHEMATICS=2010),
@@ -933,6 +934,8 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["DEMO"]][["Student_Report_Information"]] <- 
 	list(
+#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)), ### FOR TESTING
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)), ### FOR TESTING
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
@@ -3082,7 +3085,8 @@ SGPstateData[["NY"]][["Assessment_Program_Information"]] <- list(Assessment_Name
                                                               Test_Vendor="CTB/McGraw Hill",
                                                               CSEM=New_York_CSEM)
 
-SGPstateData[["NY"]][["Student_Report_Information"]] <- list(Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+SGPstateData[["NY"]][["Student_Report_Information"]] <- list(
+							Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
 							Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
                                                           Vertical_Scale="No",
                                                           Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -3322,6 +3326,8 @@ SGPstateData[["SD"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["SD"]][["Student_Report_Information"]] <- 
 	list(
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,150,175,200), READING=c(100,150,175,200)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,150,175,200), READING=c(100,150,175,200)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
@@ -3537,8 +3543,8 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 
 	list(
-    Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100, 150, 175, 200), ELA=c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)), 
-    Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100, 150, 175, 200), ELA =c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100, 150, 175, 200), ELA=c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)), 
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100, 150, 175, 200), ELA =c(100, 150, 175, 200), SCIENCE=c(100, 150, 175, 200)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math", SCIENCE="Science"),
 	Grades_Reported=list(ELA=3:11, MATHEMATICS=3:7, SCIENCE=4:8),
@@ -4069,6 +4075,9 @@ SGPstateData[["WV"]][["Student_Report_Information"]] <-
 		"Distinguished"="Distinguished"))
 						 
 SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WV_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/WV_Baseline_Matrices.Rdata")
+SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WV_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WV_Baseline_Matrices[["READING.BASELINE"]]
 
 
 ### WISCONSIN

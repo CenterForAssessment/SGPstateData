@@ -4054,9 +4054,9 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]] <-
 	Assessment_Abbreviation="WESTEST 2",
         Organization=list(
                 Name="West Virginia Department of Education",
-		Abbreviation="WVDOE",
+		Abbreviation="WVDE",
                 URL="wvde.state.wv.us",
-                Contact="Juan D'Brot at 304-558-2546 "),
+                Contact="304-558-2546 "),
 	Content_Areas=c("Reading", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 	Test_Season="Spring",

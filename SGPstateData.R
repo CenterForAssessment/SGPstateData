@@ -3277,6 +3277,9 @@ SGPstateData[["RI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 ### SOUTH DAKOTA
 
+load("Knots_Boundaries/SD_Knots_Boundaries.Rdata")
+SGPstateData[["SD"]][["Achievement"]][["Knots_Boundaries"]] <- SD_Knots_Boundaries
+
 SGPstateData[["SD"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
 		GRADE_3=c(530, 600, 668),
@@ -3326,8 +3329,8 @@ SGPstateData[["SD"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["SD"]][["Student_Report_Information"]] <- 
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,150,175,200), READING=c(100,150,175,200)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,150,175,200), READING=c(100,150,175,200)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 

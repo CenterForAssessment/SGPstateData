@@ -880,8 +880,24 @@ SGPstateData[["DEMO"]][["Achievement"]][["Knots_Boundaries"]] <-
 		loss.hoss_7=c(300, 980),
 		loss.hoss_8=c(330, 990),
 		loss.hoss_9=c(350, 995),
-		loss.hoss_10=c(370, 999)))
-						  
+		loss.hoss_10=c(370, 999)),
+	ALGEBRA_I=list( #### Utilized for tests with analyses involving EOCTs. See, for example, testSGP(3)
+		boundaries_EOCT=c(340, 920),
+		knots_EOCT=c(515, 560, 595, 630),
+		loss.hoss_EOCT=c(340, 920)),
+	ALGEBRA_II=list(
+		boundaries_EOCT=c(370, 950),
+		knots_EOCT=c(530, 575, 610, 645),
+		loss.hoss_EOCT=c(370, 950)),
+	GRADE_9_LIT=list(
+		boundaries_EOCT=c(350, 995),
+		knots_EOCT=c(620, 655, 680, 706),
+		loss.hoss_EOCT=c(350, 995)),
+	AMERICAN_LIT=list(
+		boundaries_EOCT=c(370, 999),
+		knots_EOCT=c(642, 675, 700, 730),
+		loss.hoss_EOCT=c(370, 999)))
+
 SGPstateData[["DEMO"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
 		GRADE_3=c(335, 419, 510),

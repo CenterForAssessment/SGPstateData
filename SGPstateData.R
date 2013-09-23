@@ -248,6 +248,8 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
                 "Meets"="Meets",
                 "Exceeds"="Exceeds"))
 
+SGPstateData[["AZ"]][['SGP_Configuration']][['sgPlot.scale_score.targets']] <- "sgp.projections"
+
 SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
@@ -916,7 +918,15 @@ SGPstateData[["DEMO"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(567, 620, 716),
 		GRADE_8=c(578, 632, 724),
 		GRADE_9=c(585, 642, 739),
-		GRADE_10=c(607, 663, 747)))
+		GRADE_10=c(607, 663, 747)),
+	ALGEBRA_I=list(
+		GRADE_EOCT=c(548, 602, 652)),
+	ALGEBRA_II=list(
+		GRADE_EOCT=c(562, 627, 692)),
+	GRADE_9_LIT=list(
+		GRADE_EOCT=c(585, 642, 739)),
+	AMERICAN_LIT=list(
+		GRADE_EOCT=c(607, 663, 747)))
 
 SGPstateData[["DEMO"]][["Achievement"]][["Levels"]] <- 
 	list(

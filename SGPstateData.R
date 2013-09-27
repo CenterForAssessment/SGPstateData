@@ -976,6 +976,10 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(return.norm.group.scale.sc
 load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
+SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRADE_9_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["GRADE_9_LIT.BASELINE"]]
+SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["AMERICAN_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["AMERICAN_LIT.BASELINE"]]
+SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_I.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_I.BASELINE"]]
+SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_II.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_II.BASELINE"]]
 SGPstateData[["DEMO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/DEMO_Variable_Name_Lookup.csv", colClasses=c(rep("character",3), "logical"))
 load("SGP_Norm_Group_Preference/DEMO_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Preference

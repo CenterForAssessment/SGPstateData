@@ -3853,8 +3853,17 @@ SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <-
         loss.hoss_8=c(225, 550),
         loss.hoss_10=c(175, 625)),
 	EOC_MATHEMATICS_1=list(
+		knots_7=c(375, 400, 424, 456),
+		knots_8=c(375, 400, 424, 456),
+		knots_9=c(375, 400, 424, 456),
 		knots_EOCT=c(375, 400, 424, 456),
+		boundaries_8=c(152.5, 722.5),
+		boundaries_7=c(152.5, 722.5),
+		boundaries_9=c(152.5, 722.5),
 		boundaries_EOCT=c(152.5, 722.5),
+		loss.hoss_9=c(200, 675),
+		loss.hoss_7=c(200, 675),
+		loss.hoss_8=c(200, 675),
 		loss.hoss_EOCT=c(200, 675)),
 	EOC_MATHEMATICS_2=list(
 		knots_EOCT=c(387, 411, 436, 459),
@@ -3896,11 +3905,15 @@ SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <-
         GRADE_7=c(375, 400, 443),
         GRADE_8=c(375, 400, 443),
         GRADE_9=c(375, 400, 443),
-       GRADE_10=c(375, 400, 443)),
+       GRADE_10=c(375, 400, 443),
+       GRADE_EOCT=c(375, 400, 443)),
     EOC_MATHEMATICS_2=list(
         GRADE_8=c(375, 400, 436),
         GRADE_9=c(375, 400, 436),
-       GRADE_10=c(375, 400, 436)),
+       GRADE_10=c(375, 400, 436),
+       GRADE_EOCT=c(375, 400, 436)),
+	EOC_BIOLOGY=list(
+       GRADE_EOCT=c(375, 400, 458)),
     EOC_MATH_MAKEUP_1=list(
        GRADE_10=c(375, 400, 443)))
 

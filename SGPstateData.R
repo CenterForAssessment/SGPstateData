@@ -1781,10 +1781,10 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass"="Pass", 
 		"Pass +"="Pass +")) 
 
-#SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
-
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
                                                 max.order.for.projection=3,
+						sgp.projections.baseline.max.order=2,
+						sgp.projections.lagged.baseline.max.order=2,
 						percentile.cuts=c(1,35,65,99))
 
 SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

@@ -949,7 +949,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 	Organization=list(
 		Name="Student Growth Percentiles",
 		Abbreviation="SGP",
-		URL="www.schoolview.github.com/SGP/",
+		URL="centerforassessment.github.io/SGP/",
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),

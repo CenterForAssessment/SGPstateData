@@ -1171,6 +1171,10 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		knots_EOCT=c(391, 415, 436, 462),
 		boundaries_EOCT=c(270, 630),
 		loss.hoss_EOCT=c(300, 600)),
+	COORDINATE_ALGEBRA=list(
+		knots_EOCT=c(363, 381, 396, 414),
+		boundaries_EOCT=c(160, 640),
+		loss.hoss_EOCT=c(200, 600)),
 	MATHEMATICS_I=list(
 		knots_EOCT=c(384, 400, 417, 436),
 		boundaries_EOCT=c(160, 640),

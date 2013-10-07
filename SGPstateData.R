@@ -1758,8 +1758,8 @@ SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <- 
 	list(
-	Cuts=c(35, 66), 
-	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+	Cuts=c(35, 65), 
+	Labels=c("1st - 34th", "35th - 64th", "65th - 99th"))
 
 SGPstateData[["IN"]][["Assessment_Program_Information"]] <- 
 	list(

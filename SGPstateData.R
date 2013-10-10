@@ -3940,7 +3940,7 @@ SGPstateData[["WA"]][["Growth"]][["Cutscores"]] <-
 SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
     list(
     Assessment_Name="Washington Comprehensive Assessment Program",
-    Assessment_Abbreviation="WCAP",
+    Assessment_Abbreviation="MSP/HSPE",
     Organization=list(
         Name="State of Washington Office of Superintendent of Public Instruction",
 	Abbreviation="OSPI",

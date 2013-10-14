@@ -1975,7 +1975,6 @@ SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 ### MASSACHUSETTS
 
 load("CSEM/Massachusetts/Massachusetts_CSEM.Rdata")
-load("Scale_Score_Lookup/MA_Scale_Score_Lookup.Rdata")
 SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- 
 	list(MATHEMATICS=list(
 		boundaries_3=c(-6.904, 4.189),
@@ -2062,8 +2061,7 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	Grades_Tested=c(3,4,5,6,7,8,10),
 	Test_Season="Spring",
 	Test_Vendor="Measured Progress",
-	CSEM=Massachusetts_CSEM,
-	Scale_Score_Lookup=MA_Scale_Score_Lookup)
+	CSEM=Massachusetts_CSEM)
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- 
 	list(

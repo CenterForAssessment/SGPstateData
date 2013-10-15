@@ -2057,6 +2057,11 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	list(
 	Assessment_Name="Massachusetts Comprehensive Assessment System",
 	Assessment_Abbreviation="MCAS",
+        Organization=list(
+           Name="Massachusetts Department of Elementary and Secondary Education",
+           Abbreviation="ESE",
+           URL="http://www.doe.mass.edu/",
+           Contact="781-338-3000"),
 	Content_Areas=c("Mathematics", "English Language Arts"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
 	Test_Season="Spring",

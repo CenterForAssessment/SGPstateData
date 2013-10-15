@@ -1975,7 +1975,6 @@ SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 ### MASSACHUSETTS
 
 load("CSEM/Massachusetts/Massachusetts_CSEM.Rdata")
-load("Scale_Score_Lookup/MA_Scale_Score_Lookup.Rdata")
 SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- 
 	list(MATHEMATICS=list(
 		boundaries_3=c(-6.904, 4.189),
@@ -2062,8 +2061,7 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	Grades_Tested=c(3,4,5,6,7,8,10),
 	Test_Season="Spring",
 	Test_Vendor="Measured Progress",
-	CSEM=Massachusetts_CSEM,
-	Scale_Score_Lookup=MA_Scale_Score_Lookup)
+	CSEM=Massachusetts_CSEM)
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- 
 	list(
@@ -2544,6 +2542,67 @@ SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <- list(
 			"Below Standard"="Below Nat Min Std",
 			"At Standard"="At Nat Min Std",
 			"Above Standard"="Above Nat Min Std"))
+
+### NEBRASKA
+
+SGPstateData[["NE"]][["Achievement"]][["Cutscores"]] <- 
+	list(MATHEMATICS=list(
+		GRADE_3=c(85,135),
+		GRADE_4=c(85,135),
+		GRADE_5=c(85,135),
+		GRADE_6=c(85,135),
+		GRADE_7=c(85,135),
+		GRADE_8=c(85,135),
+		GRADE_11=c(85,135)),
+	READING=list(
+		GRADE_3=c(85,135),
+		GRADE_4=c(85,135),
+		GRADE_5=c(85,135),
+		GRADE_6=c(85,135),
+		GRADE_7=c(85,135),
+		GRADE_8=c(85,135),
+		GRADE_11=c(85,135)))
+
+SGPstateData[["NE"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Below the Standards", "Meets the Standards", "Exceeds the Standards"),
+	Proficient=c("Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NE"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NE"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NE"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NE"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Nebraska State Accountability: NeSA",
+	Assessment_Abbreviation="NeSA",
+	Organization=list(
+		Name="Nebraska Department of Education",
+		Abbreviation="NDOE",
+		URL="www.education.ne.gov",
+		Contact="402-471-2295"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,11),
+	Test_Season="Spring",
+	Test_Vendor="DRC")
+
+SGPstateData[["NE"]][["Student_Report_Information"]] <- 
+	list(
+        Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
+        Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
+	Vertical_Scale="No",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
+	Achievement_Level_Labels=list(
+		"Below"="Below the Standards", 
+		"Meets"="Meets the Standards", 
+		"Exceeds"="Exceeds the Standards"))
+
 
 ### NEVADA
 

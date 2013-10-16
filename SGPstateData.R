@@ -407,7 +407,8 @@ SGPstateData[["CA"]][["Achievement"]][["Cutscores"]] <-
         GRADE_7=c(257, 300, 350, 414)),     
     GENERAL_MATHEMATICS=list(
         GRADE_8=c(257, 300, 350, 414),
-        GRADE_9=c(257, 300, 350, 414)),
+        GRADE_9=c(257, 300, 350, 414),
+        GRADE_EOCT=c(257, 300, 350, 414)),
     ALGEBRA_I=list(
         GRADE_7=c(253, 300, 350, 428),    # ALGEBRA I
         GRADE_8=c(253, 300, 350, 428),
@@ -537,6 +538,8 @@ SGPstateData[["CA"]][["Student_Report_Information"]] <-
             "Advanced"="Advanced"))
 
 SGPstateData[["CA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("SGP_Norm_Group_Preference/TCRP_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["CA"]][["SGP_Norm_Group_Preference"]] <- TCRP_SGP_Norm_Group_Preference
 
 
 ### CELA

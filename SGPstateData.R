@@ -248,7 +248,9 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
                 "Meets"="Meets",
                 "Exceeds"="Exceeds"))
 
-SGPstateData[["AZ"]][['SGP_Configuration']][['sgPlot.scale_score.targets']] <- "sgp.projections"
+SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
+					sgPlot.sgp.targets="sgp.projections",
+					sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU"))
 
 SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 

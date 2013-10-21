@@ -451,7 +451,8 @@ SGPstateData[["CA"]][["Achievement"]][["Cutscores"]] <-
         GRADE_12=c(252, 300, 350, 428)),# INTEGRATED MATH 3
     SCIENCE=list(
         GRADE_5=c(268, 300, 350, 410),
-        GRADE_8=c(253, 300, 350, 403)),
+        GRADE_8=c(253, 300, 350, 403),
+        GRADE_EOCT=c(253, 300, 350, 403)),
     LIFE_SCIENCE=list(
         GRADE_9=c(269, 300, 350, 399),
         GRADE_10=c(269, 300, 350, 399),
@@ -482,10 +483,12 @@ SGPstateData[["CA"]][["Achievement"]][["Cutscores"]] <-
         GRADE_8=c(266, 300, 350, 395),
         GRADE_9=c(265, 300, 350, 397),
         GRADE_10=c(263, 300, 350, 392),
-        GRADE_11=c(259, 300, 350, 396)),
+        GRADE_11=c(259, 300, 350, 396),
+        GRADE_EOCT=c(263, 300, 350, 395)), #eyeball - just for GoFit Plots mosiac panel
     HISTORY=list(
         GRADE_8=c(271, 300, 350, 396),
-        GRADE_11=c(270, 300, 350, 401)),
+        GRADE_11=c(270, 300, 350, 401),
+        GRADE_EOCT=c(271, 300, 350, 396)), # for GoFit Plots mosiac panel
     WORLD_HISTORY=list(
         GRADE_9=c(275, 300, 350, 400),
         GRADE_10=c(275, 300, 350, 400),
@@ -504,7 +507,7 @@ SGPstateData[["CA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["CA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["CA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["CA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["CA"]][["Growth"]][["Cutscores"]] <-
         list(
@@ -542,6 +545,8 @@ SGPstateData[["CA"]][["Student_Report_Information"]] <-
 SGPstateData[["CA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/TCRP_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["CA"]][["SGP_Norm_Group_Preference"]] <- TCRP_SGP_Norm_Group_Preference
+load("Baseline_Coefficient_Matrices/CA_Baseline_Matrices.Rdata")
+SGPstateData[["CA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- CA_Baseline_Matrices
 
 
 ### CELA

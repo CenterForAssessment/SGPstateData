@@ -4044,6 +4044,10 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <-
         "L3: Proficient"="Proficient",
         "L4: Advanced"="Advanced"))
 
+SGPstateData[['WA']][['SGP_Configuration']] <- list(
+						max.sgp.target.years.forward=2,
+						gPlot.sgp.targets.timeframe=2)
+
 load("Baseline_Coefficient_Matrices/WA_Baseline_Matrices.Rdata")
 SGPstateData[["WA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WA_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["WA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WA_Baseline_Matrices[["READING.BASELINE"]]

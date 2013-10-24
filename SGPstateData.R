@@ -249,8 +249,8 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
                 "Exceeds"="Exceeds"))
 
 SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
-					sgPlot.sgp.targets="sgp.projections",
-					sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU"))
+					sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+					sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
@@ -981,7 +981,10 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))		
 
-SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(return.norm.group.scale.scores=TRUE, sgPlot.scale_score.targets=c("sgp.projections", "sgp.projections.lagged"))
+SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
+							return.norm.group.scale.scores=TRUE, 
+							sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+							sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -4339,7 +4342,7 @@ SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READ
 SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
-### WY
+### WYOMING
 
 SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <- 
   list(MATHEMATICS=list(

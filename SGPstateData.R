@@ -1291,7 +1291,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Meets Expectations" = "Meets Expectations",
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
-SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE)
+SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1)
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")

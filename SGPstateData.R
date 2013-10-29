@@ -1297,10 +1297,10 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
 	MATHEMATICS_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	MATHEMATICS_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT"),
 	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	BIOLOGY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	PHYSICAL_SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
@@ -1328,15 +1328,15 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 	GRADE_9_LIT=rep(1L, 7),
 	AMERICAN_LIT=rep(1L, 7),
 	MATHEMATICS=rep(1L, 6),
-	MATHEMATICS_I=rep(1L, 7),
-	MATHEMATICS_II=rep(1L, 7),
+	MATHEMATICS_I=as.integer(c(1,1,1,1,1,2,1)),
+	MATHEMATICS_II=as.integer(c(1,1,1,1,1,2,1)),
 	COORDINATE_ALGEBRA=rep(1L, 6),
 	SCIENCE=rep(1L, 7),
 	BIOLOGY=rep(1L, 7),
 	PHYSICAL_SCIENCE=rep(1L, 7),
-	SOCIAL_STUDIES=rep(1L, 7),
-	US_HISTORY=rep(1L, 7),
-	ECONOMICS=rep(1L, 7))
+	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
+	US_HISTORY=as.integer(c(1,1,1,1,1,3,1)),
+	ECONOMICS=as.integer(c(1,1,1,1,1,3,1)))
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")

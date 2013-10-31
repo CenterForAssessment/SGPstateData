@@ -1292,51 +1292,51 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
 SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1)
-SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
-	MATHEMATICS_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	MATHEMATICS_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT"),
-	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	BIOLOGY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	PHYSICAL_SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	US_HISTORY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	ECONOMICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
-SGPstateData[["GA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
-	GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-	AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
-	MATHEMATICS_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS_I", "MATHEMATICS_II"),
-	MATHEMATICS_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS_I", "MATHEMATICS_II"),
-	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
-	SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	BIOLOGY=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	PHYSICAL_SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-	US_HISTORY=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-	ECONOMICS=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"))
-SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	READING=rep(1L, 7),
-	ELA=rep(1L, 7),
-	GRADE_9_LIT=rep(1L, 7),
-	AMERICAN_LIT=rep(1L, 7),
-	MATHEMATICS=rep(1L, 6),
-	MATHEMATICS_I=as.integer(c(1,1,1,1,1,2,1)),
-	MATHEMATICS_II=as.integer(c(1,1,1,1,1,2,1)),
-	COORDINATE_ALGEBRA=rep(1L, 6),
-	SCIENCE=rep(1L, 7),
-	BIOLOGY=rep(1L, 7),
-	PHYSICAL_SCIENCE=rep(1L, 7),
-	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
-	US_HISTORY=as.integer(c(1,1,1,1,1,3,1)),
-	ECONOMICS=as.integer(c(1,1,1,1,1,3,1)))
+#SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+#	READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
+#	MATHEMATICS_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	MATHEMATICS_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT"),
+#	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	BIOLOGY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	PHYSICAL_SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	US_HISTORY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#	ECONOMICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+#SGPstateData[["GA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+#	READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+#	GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#	AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+#	MATHEMATICS_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS_I", "MATHEMATICS_II"),
+#	MATHEMATICS_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS_I", "MATHEMATICS_II"),
+#	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+#	SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+#	BIOLOGY=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+#	PHYSICAL_SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+#	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+#	US_HISTORY=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+#	ECONOMICS=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"))
+#SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+#	READING=rep(1L, 7),
+#	ELA=rep(1L, 7),
+#	GRADE_9_LIT=rep(1L, 7),
+#	AMERICAN_LIT=rep(1L, 7),
+#	MATHEMATICS=rep(1L, 6),
+#	MATHEMATICS_I=as.integer(c(1,1,1,1,1,2,1)),
+#	MATHEMATICS_II=as.integer(c(1,1,1,1,1,2,1)),
+#	COORDINATE_ALGEBRA=rep(1L, 6),
+#	SCIENCE=rep(1L, 7),
+#	BIOLOGY=rep(1L, 7),
+#	PHYSICAL_SCIENCE=rep(1L, 7),
+#	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
+#	US_HISTORY=as.integer(c(1,1,1,1,1,3,1)),
+#	ECONOMICS=as.integer(c(1,1,1,1,1,3,1)))
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")

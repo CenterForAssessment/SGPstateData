@@ -1812,7 +1812,7 @@ SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <- 
 	list(

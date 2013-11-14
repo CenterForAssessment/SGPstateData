@@ -36,7 +36,7 @@ SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <- list(
 
 SGPstateData[["ABQ"]][["Achievement"]][["Levels"]] <- 
 	list(
-	Labels=c("Beginning Step", "Nearing Proficiency", "Proficient", "Advanced"),
+	Labels=c("Beginning Step", "Nearing Proficient", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["ABQ"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -68,7 +68,7 @@ SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
 	Achievement_Level_Labels=list(
 		"Beginning"="Beginning Step", 
-		"Nearing"="Nearling Proficiency", 
+		"Nearing"="Nearing Proficient", 
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
@@ -3293,7 +3293,7 @@ SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- list(
 
 SGPstateData[["NM"]][["Achievement"]][["Levels"]] <- 
 	list(
-	Labels=c("Beginning Step", "Nearing Proficiency", "Proficient", "Advanced"),
+	Labels=c("Beginning Step", "Nearing Proficient", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -3325,7 +3325,7 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <- list(
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
 	Achievement_Level_Labels=list(
 		"Beginning"="Beginning Step", 
-		"Nearing"="Nearling Proficiency", 
+		"Nearing"="Nearing Proficient", 
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 

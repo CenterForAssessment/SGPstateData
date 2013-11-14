@@ -13,6 +13,66 @@ SGPstateData <- new.env()
 
 load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
+
+### ALBUQUERQUE
+
+SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <- list(
+								READING=list(
+									GRADE_3=c(332,340,356),
+									GRADE_4=c(426,440,452),
+									GRADE_5=c(528,540,552),
+									GRADE_6=c(628,640,652),
+									GRADE_7=c(730,740,754),
+									GRADE_8=c(831,840,858),
+									GRADE_11=c(1129,1140,1151)),
+								MATHEMATICS=list(
+									GRADE_3=c(328,340,359),
+									GRADE_4=c(429,440,453),
+									GRADE_5=c(529,540,551),
+									GRADE_6=c(630,640,653),
+									GRADE_7=c(730,740,753),
+									GRADE_8=c(827,840,855),
+									GRADE_11=c(1127,1140,1151)))
+
+SGPstateData[["ABQ"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Beginning Step", "Nearing Proficiency", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["ABQ"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["ABQ"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["ABQ"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["ABQ"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="New Mexico Standards Based Assessment",
+	Assessment_Abbreviation="NMSBA",
+	Organization=list(
+		Name="Albuquerque Public Schools",
+		Abbreviation="APS",
+		URL="http://www.aps.edu/",
+		Contact="505-880-3700"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,10),
+	Test_Season="Spring",
+	Test_Vendor="Measured Progress")
+
+SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
+	Achievement_Level_Labels=list(
+		"Beginning"="Beginning Step", 
+		"Nearing"="Nearling Proficiency", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))
+
+
 ### ARCHDIOCESE OF BALTIMORE
 
 load("Knots_Boundaries/AOB_Knots_Boundaries.Rdata")
@@ -2080,7 +2140,7 @@ SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		loss.hoss_10=c(-6.375, 5.67)))
 
 SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- 
-	list(ELA.2009=list(
+	list(ELA=list(
 		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
 		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),  
 		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
@@ -2120,7 +2180,7 @@ SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
 		GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
 		GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
-	MATHEMATICS.2009=list(
+	MATHEMATICS=list(
 		GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
 		GRADE_4=c(-0.818911094, 0.150419543, 0.745903854), 
 		GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
@@ -3210,7 +3270,68 @@ SGPstateData[["NJ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 SGPstateData[["NJ"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ")
 
+
+### NEW MEXICO
+
+SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- list(
+								READING=list(
+									GRADE_3=c(332,340,356),
+									GRADE_4=c(426,440,452),
+									GRADE_5=c(528,540,552),
+									GRADE_6=c(628,640,652),
+									GRADE_7=c(730,740,754),
+									GRADE_8=c(831,840,858),
+									GRADE_11=c(1129,1140,1151)),
+								MATHEMATICS=list(
+									GRADE_3=c(328,340,359),
+									GRADE_4=c(429,440,453),
+									GRADE_5=c(529,540,551),
+									GRADE_6=c(630,640,653),
+									GRADE_7=c(730,740,753),
+									GRADE_8=c(827,840,855),
+									GRADE_11=c(1127,1140,1151)))
+
+SGPstateData[["NM"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Beginning Step", "Nearing Proficiency", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NM"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NM"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NM"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="New Mexico Standards Based Assessment",
+	Assessment_Abbreviation="NMSBA",
+	Organization=list(
+		Name="New Mexico Public Education Department",
+		Abbreviation="NMPED",
+		URL="www.ped.state.nm.us",
+		Contact="505-827-7950"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,10),
+	Test_Season="Spring",
+	Test_Vendor="Measured Progress")
+
+SGPstateData[["NM"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
+	Achievement_Level_Labels=list(
+		"Beginning"="Beginning Step", 
+		"Nearing"="Nearling Proficiency", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))
+
+
 ### NEW YORK
+
 load("CSEM/New_York/New_York_CSEM.Rdata")
 
 SGPstateData[["NY"]][["Achievement"]][["Cutscores"]] <- list(

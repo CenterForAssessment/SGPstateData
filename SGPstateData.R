@@ -75,6 +75,8 @@ SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
+SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ABQ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
 
 ### ARCHDIOCESE OF BALTIMORE
 

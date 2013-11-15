@@ -61,7 +61,7 @@ SGPstateData[["ABQ"]][["Assessment_Program_Information"]] <-
 		URL="http://www.aps.edu/",
 		Contact="505-880-3700"),
 	Content_Areas=c("Mathematics", "Reading"),
-	Grades_Tested=c(3,4,5,6,7,8,10),
+	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
 	Test_Vendor="Measured Progress")
 
@@ -70,7 +70,7 @@ SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
 	Achievement_Level_Labels=list(
 		"Beginning"="Beginning Step", 
 		"Nearing"="Nearing Proficient", 
@@ -3325,7 +3325,7 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 		URL="www.ped.state.nm.us",
 		Contact="505-827-7950"),
 	Content_Areas=c("Mathematics", "Reading"),
-	Grades_Tested=c(3,4,5,6,7,8,10),
+	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
 	Test_Vendor="Measured Progress")
 
@@ -3334,7 +3334,7 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
 	Achievement_Level_Labels=list(
 		"Beginning"="Beginning Step", 
 		"Nearing"="Nearing Proficient", 

@@ -1,0 +1,25 @@
+names.provided,names.sgp,names.type,names.info,names.output
+ID,ID,individual,Unique student identifer,
+CONTENT_AREA,CONTENT_AREA,content,Content area,
+YEAR,YEAR,time,Year (testing year) associated with record,
+GRADE,GRADE,institution_level,Grade level of test taken,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievment level associated with student score,
+LAST_NAME,LAST_NAME,label,Student last name,
+FIRST_NAME,FIRST_NAME,label,Student first name,
+EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School designation,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,District number,
+SCHOOL_NAME,SCHOOL_NAME,label,School name,
+DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
+DISTRICT_NAME,DISTRICT_NAME,label,District name,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+GENDER,GENDER,demographic,Student gender,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+FREE_AND_REDUCED_LUNCH_STATUS,FREE_AND_REDUCED_LUNCH_STATUS,demographic,Free/reduced lunch status indicator,TRUE
+IEP_STATUS,IEP_STATUS,demographic,Student IEP status indicator,TRUE
+ELL_STATUS,ELL_STATUS,demographic,ELL status indicator,TRUE
+GIFTED_AND_TALENTED,GIFTED_AND_TALENTED,demographic,Gifted and Talented status indicator,TRUE
+HIGH_NEED_STATUS,HIGH_NEED_STATUS,demographic,High need status indicator,TRUE

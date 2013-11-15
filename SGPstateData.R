@@ -16,6 +16,9 @@ load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
 ### ALBUQUERQUE
 
+load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
+SGPstateData[["ABQ"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
+
 SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <- list(
 								READING=list(
 									GRADE_3=c(332,340,356),
@@ -71,6 +74,8 @@ SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
 		"Nearing"="Nearing Proficient", 
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
+
+SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ABQ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 ### ARCHDIOCESE OF BALTIMORE
@@ -3272,6 +3277,9 @@ SGPstateData[["NJ"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ
 
 
 ### NEW MEXICO
+
+load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
 
 SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- list(
 								READING=list(

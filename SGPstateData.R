@@ -66,7 +66,9 @@ SGPstateData[["ABQ"]][["Assessment_Program_Information"]] <-
 	Test_Vendor="Measured Progress")
 
 SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
-	Vertical_Scale="Yes",
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
 	Achievement_Level_Labels=list(
@@ -3328,7 +3330,9 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 	Test_Vendor="Measured Progress")
 
 SGPstateData[["NM"]][["Student_Report_Information"]] <- list(
-	Vertical_Scale="Yes",
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), 
 	Achievement_Level_Labels=list(

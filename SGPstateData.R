@@ -16,6 +16,9 @@ load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
 ### ALBUQUERQUE
 
+load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
+SGPstateData[["ABQ"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
+
 SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <- list(
 								READING=list(
 									GRADE_3=c(332,340,356),
@@ -3272,6 +3275,9 @@ SGPstateData[["NJ"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ
 
 
 ### NEW MEXICO
+
+load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
 
 SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- list(
 								READING=list(

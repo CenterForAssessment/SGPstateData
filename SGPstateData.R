@@ -905,6 +905,48 @@ SGPstateData[["CT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(481, 510, 544, 593),
 		GRADE_8=c(497, 523, 558, 607)))
 
+SGPstateData[["CT"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Below Basic", "Basic", "Proficient", "Goal", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["CT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["CT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["CT"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["CT"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Connecticut Mastery Test",
+	Assessment_Abbreviation="CMT",
+	Organization=list(
+		Name="Connecticut State Department of Education",
+		Abbreviation="CSDE",
+		URL="www.sde.ct.gov",
+		Contact="860-713-6543"),
+	Content_Areas=c("Mathematics", "Reading", "Writing"),
+	Grades_Tested=c(3,4,5,6,7,8),
+	Test_Season="Spring",
+	Test_Vendor="Measurement Incorporated")
+
+SGPstateData[["CT"]][["Student_Report_Information"]] <- 
+	list(
+	Transformed_Achievement_Level_Cutscores=list(WRITING=c(0,100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(WRITING=c(0,100,200,300,400,500)),
+	Vertical_Scale="No",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", WRITING="Writing"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), WRITING=c(3,4,5,6,7,8)), 
+	Achievement_Level_Labels=list(
+		"Below Basic"="Below Basic", 
+		"Basic"="Basic", 
+		"Proficient"="Proficient", 
+		"Goal"="Goal", 
+		"Advanced"="Advanced"))
+
 
 ### DEMO
 

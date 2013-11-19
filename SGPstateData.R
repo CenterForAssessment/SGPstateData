@@ -158,6 +158,65 @@ SGPstateData[["AOB"]][["Student_Report_Information"]] <-
 SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AOB_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
+### ARKANSAS
+
+SGPstateData[["AR"]][["Achievement"]][["Cutscores"]] <- list(
+							MATHEMATICS=list(
+								GRADE_3=c(409,500,586),
+								GRADE_4=c(495,559,640),
+								GRADE_5=c(544,604,697),
+								GRADE_6=c(569,641,722),
+								GRADE_7=c(622,673,764),
+								GRADE_8=c(655,700,802)),
+							LITERACY=list(
+								GRADE_3=c(330,500,654),
+								GRADE_4=c(354,559,748),
+								GRADE_5=c(382,604,799),
+								GRADE_6=c(417,641,823),
+								GRADE_7=c(426,673,867),
+								GRADE_8=c(507,700,914)))
+
+SGPstateData[["AR"]][["Achievement"]][["Levels"]] <-
+	list(
+	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["AR"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["AR"]][["Growth"]][["Cutscores"]] <-
+	list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["AR"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["AR"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="Arkansas Comprehensive Testing, Assessment, and Accountability Program",
+	Assessment_Abbreviation="ACTAAP",
+		Organization=list(
+		Name="State of Arkansas",
+		Abbreviation="AR",
+		URL="http://www.arkansased.org/",
+		Contact="501-682-4475"),
+		Content_Areas=c("Mathematics", "Literacy"),
+		Grades_Tested=c(3,4,5,6,7,8),
+		Test_Season="Spring",
+		Test_Vendor="Riverside Publishing")
+
+SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), LITERACY=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), LITERACY=c(0,20,40,60,80)),
+	Vertical_Scale="No",
+	Content_Areas_Labels=list(MATHEMATICS="Math", LITERACY="Lit"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), LITERACY=c(3,4,5,6,7,8)),
+	Achievement_Level_Labels=list(
+		"Beginning"="Below Basic",
+		"Nearing"="Basic",
+		"Proficient"="Proficient",
+		"Advanced"="Advanced"))
+
+
 ### ARIZONA
 
 SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <-

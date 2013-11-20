@@ -160,6 +160,9 @@ SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 ### ARKANSAS
 
+load("Knots_Boundaries/AR_Knots_Boundaries.Rdata")
+SGPstateData[["AR"]][["Achievement"]][["Knots_Boundaries"]] <- AR_Knots_Boundaries
+
 SGPstateData[["AR"]][["Achievement"]][["Cutscores"]] <- list(
 							MATHEMATICS=list(
 								GRADE_3=c(409,500,586),

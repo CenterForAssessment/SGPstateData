@@ -211,8 +211,8 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(MATHEMATICS="Math", LITERACY="Lit"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), LITERACY=c(3,4,5,6,7,8)),
 	Achievement_Level_Labels=list(
-		"Beginning"="Below Basic",
-		"Nearing"="Basic",
+		"Below Basic"="Below Basic",
+		"Basic"="Basic",
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))
 

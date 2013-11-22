@@ -219,6 +219,8 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))
 
+load("Baseline_Coefficient_Matrices/AR_Baseline_Matrices.Rdata")
+SGPstateData[["AR"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- AR_Baseline_Matrices
 
 ### ARIZONA
 

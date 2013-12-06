@@ -1281,7 +1281,7 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
  		boundaries_8=c(620, 980),
 		loss.hoss_1=c(650, 910),
 		loss.hoss_2=c(694, 910),
-		loss.hoss_3=c(690, 930),
+		loss.hoss_3=c(650, 930),
 		loss.hoss_4=c(650, 930),
 		loss.hoss_5=c(650, 930),
 		loss.hoss_6=c(650, 930),

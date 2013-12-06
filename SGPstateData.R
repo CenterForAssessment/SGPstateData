@@ -1421,6 +1421,8 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_EOCT=c(400, 450)),
 	ALGEBRA=list(
 		GRADE_EOCT=c(400, 450)),
+	COORDINATE_ALGEBRA=list(
+		GRADE_EOCT=c(400, 450)),
 	GEOMETRY=list(
 		GRADE_EOCT=c(400, 450)),
 	MATHEMATICS_I=list(

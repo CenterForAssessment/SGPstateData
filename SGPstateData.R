@@ -1340,7 +1340,7 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 	PHYSICAL_SCIENCE=list(
 		knots_EOCT=c(380, 407, 432, 464),
 		boundaries_EOCT=c(145, 805),
-		loss.hoss_EOCT=c(200, 600)),
+		loss.hoss_EOCT=c(200, 750)),
 	US_HISTORY=list(
 		knots_EOCT=c(370, 400, 425, 456),
 		boundaries_EOCT=c(155, 695),

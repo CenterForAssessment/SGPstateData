@@ -1155,6 +1155,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))		
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
+							sgp.minimum.default.panel.years=2,
 							return.norm.group.scale.scores=TRUE, 
 							sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.baseline", "sgp.projections.lagged", "sgp.projections.lagged.baseline"),
 							sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))

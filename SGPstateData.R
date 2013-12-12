@@ -2578,7 +2578,18 @@ SGPstateData[["MS"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(141, 150, 164),
 		GRADE_6=c(142, 150, 164),
 		GRADE_7=c(142, 150, 164),
-		GRADE_8=c(142, 150, 164)))
+		GRADE_8=c(142, 150, 164)),
+	  SCIENCE=list(
+		GRADE_5=c(140, 150, 160),
+		GRADE_8=c(141, 150, 162)),
+	  ALGEBRA=list(
+		GRADE_EOCT=c(642, 650, 661)),
+	  BIOLOGY=list(
+		GRADE_EOCT=c(640, 650, 665)),
+	  ENGLISH=list(
+		GRADE_EOCT=c(642, 650, 661)),
+	  HISTORY=list(
+		GRADE_EOCT=c(641, 647, 658)))
 
 SGPstateData[["MS"]][["Achievement"]][["Levels"]] <- 
 	list(

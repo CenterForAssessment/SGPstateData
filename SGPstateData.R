@@ -2634,7 +2634,7 @@ SGPstateData[["MS"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
-SGPstateData[["IN"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="MS")
+SGPstateData[["MS"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="MS")
 
 SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MS_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/MS_Baseline_Matrices.Rdata")

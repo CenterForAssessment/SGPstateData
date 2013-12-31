@@ -1146,7 +1146,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 #	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400, GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
 #	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400, GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", GRADE_9_LIT="9th Grade Lit", AMERICAN_LIT="American Lit", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
 	Achievement_Level_Labels=list(
 		"Unsatisfactory"="Unsatisfactory", 
@@ -1158,28 +1158,28 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
 				return.norm.group.scale.scores=TRUE, 
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
-				grade.projection.sequence <- list(
-					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-					MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-					GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-					AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-					ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-					ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
-				content_area.projection.sequence <- list(
-					READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-					GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-					AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-					MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
-					ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
-					ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II")),
-				year_lags.projection.sequence <- list(
-					READING=rep(1L, 7),
-					MATHEMATICS=rep(1L, 7),
-					GRADE_9_LIT=rep(1L, 7),
-					AMERICAN_LIT=rep(1L, 7),
-					ALGEBRA_I=rep(1L, 7),
-					ALGEBRA_II=rep(1L, 7)))
+				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
+#				grade.projection.sequence <- list(
+#					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#					MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#					GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#					AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#					ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#					ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
+#				content_area.projection.sequence <- list(
+#					READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#					GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#					AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+#					MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
+#					ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
+#					ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II")),
+#				year_lags.projection.sequence <- list(
+#					READING=rep(1L, 7),
+#					MATHEMATICS=rep(1L, 7),
+#					GRADE_9_LIT=rep(1L, 7),
+#					AMERICAN_LIT=rep(1L, 7),
+#					ALGEBRA_I=rep(1L, 7),
+#					ALGEBRA_II=rep(1L, 7)))
 
 load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

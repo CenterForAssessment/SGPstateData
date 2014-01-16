@@ -1159,6 +1159,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				return.norm.group.scale.scores=TRUE, 
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
+#				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(
 #					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 #					MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),

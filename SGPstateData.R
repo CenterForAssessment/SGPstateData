@@ -2404,7 +2404,9 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
-SGPstateData[["MA"]][["SGP_Configuration"]] <- list(projcuts.digits=2)
+SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
+						projcuts.digits=2,
+						sgp.projections.max.forward.progression.grades=8)
 
 load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013.Rdata")
 SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["ELA.BASELINE"]]

@@ -2394,6 +2394,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <-
 	list(
 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)), 

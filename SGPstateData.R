@@ -1938,6 +1938,129 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 			"Proficient"="Proficient", 
 			"Advanced"="Advanced"))
 
+### ILLINOIS
+
+load("CSEM/Illinois/ILLINOIS_CSEM.Rdata")
+
+SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <- 
+	list(MATHEMATICS=list(
+		boundaries_3=c(108.95, 352.05),
+		boundaries_4=c(108.25, 366.75),
+		boundaries_5=c(107.55, 381.45),
+		boundaries_6=c(107.05, 391.95),
+		boundaries_7=c(106.4, 405.6),
+		boundaries_8=c(105.5, 424.5),
+
+		#knots_3=c(392, 440, 481, 529),
+		#knots_4=c(425, 470, 506, 546),
+		#knots_5=c(452, 495, 530, 569),
+		#knots_6=c(465, 509, 546, 588),
+		#knots_7=c(490, 530, 565, 600),
+		#knots_8=c(500, 545, 580, 620),
+
+		loss.hoss_3=c(120, 341),
+		loss.hoss_4=c(120, 355),
+		loss.hoss_5=c(120, 369),
+		loss.hoss_6=c(120, 379),
+		loss.hoss_7=c(120, 392),
+		loss.hoss_8=c(120, 410)
+		),
+	READING=list(
+		boundaries_3=c(120, 329),
+		boundaries_4=c(120, 341),
+		boundaries_5=c(120, 351),
+		boundaries_6=c(120, 360),
+		boundaries_7=c(120, 369),
+		boundaries_8=c(120, 367),
+
+		#knots_3=c(510, 550, 580, 615),
+		#knots_4=c(542, 580, 606, 635),
+		#knots_5=c(562, 602, 632, 665),
+		#knots_6=c(575, 615, 645, 675),
+		#knots_7=c(586, 625, 655, 690),
+		#knots_8=c(605, 642, 670, 702),
+
+		loss.hoss_3=c(109.55, 339.45),
+		loss.hoss_4=c(108.95, 352.05),
+		loss.hoss_5=c(108.45, 362.55),
+		loss.hoss_6=c(108.00, 372.00),
+		loss.hoss_7=c(107.55, 381.45),
+		loss.hoss_8=c(107.65, 379.35)
+		),
+	SCIENCE=list(
+		boundaries_4=c(107.95, 373.05),
+		boundaries_7=c(106.50, 403.50),
+
+		#knots_4=c(445, 475, 500, 530),
+		#knots_7=c(495, 533, 565, 605),
+
+		loss.hoss_4=c(120, 361),
+		loss.hoss_7=c(120, 390)
+		))
+
+SGPstateData[["IL"]][["Achievement"]][["Cutscores"]] <- 
+	list(MATHEMATICS=list(
+		GRADE_3=c(173, 214, 255),
+		GRADE_4=c(191, 224, 267),
+		GRADE_5=c(201, 235, 280),
+		GRADE_6=c(214, 247, 292),
+		GRADE_7=c(221, 257, 302),
+		GRADE_8=c(234, 267, 310)
+		),
+	READING=list(
+		GRADE_3=c(160, 207, 236),
+		GRADE_4=c(175, 217, 249),
+		GRADE_5=c(193, 228, 261),
+		GRADE_6=c(202, 237, 267),
+		GRADE_7=c(203, 239, 271),
+		GRADE_8=c(218, 248, 271)
+		),
+	SCIENCE=list(
+		GRADE_4=c(158, 187, 237),
+		GRADE_7=c(197, 214, 260)
+		))
+
+SGPstateData[["IL"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Warning", "Below", "Meets", "Exceeds"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["IL"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["IL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["IL"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["IL"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Illinois Standards Achievement Test",
+	Assessment_Abbreviation="ISAT",
+	Organization=list(
+		Name="Illinois State Board of Education",
+		Abbreviation="ISBE",
+		URL="www.isbe.state.il.us",
+		Contact="866-262-6663"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8),
+	Assessment_Years=c("1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+	Test_Season="Spring",
+	Test_Vendor="ISBE Division of Assessment",
+	CSEM=Illinois_CSEM)
+
+SGPstateData[["IL"]][["Student_Report_Information"]] <- 
+	list(
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
+	Achievement_Level_Labels=list(
+		"Warning"="Warning", 
+		"Below"="Below", 
+		"Meets"="Meets", 
+		"Exceeds"="Exceeds"))	
+
  
 ### INDIANA
 

@@ -1143,8 +1143,8 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["DEMO"]][["Student_Report_Information"]] <- 
 	list(
-#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400, GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
-#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400, GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
+#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
@@ -1951,12 +1951,12 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <-
 		boundaries_7=c(106.4, 405.6),
 		boundaries_8=c(105.5, 424.5),
 
-		#knots_3=c(392, 440, 481, 529),
-		#knots_4=c(425, 470, 506, 546),
-		#knots_5=c(452, 495, 530, 569),
-		#knots_6=c(465, 509, 546, 588),
-		#knots_7=c(490, 530, 565, 600),
-		#knots_8=c(500, 545, 580, 620),
+		knots_3=c(191, 210, 224, 243),
+		knots_4=c(206, 223, 238, 255),
+		knots_5=c(217, 235, 250, 270),
+		knots_6=c(231, 248, 264, 281),
+		knots_7=c(239, 258, 274, 292),
+		knots_8=c(250, 266, 281, 298),
 
 		loss.hoss_3=c(120, 341),
 		loss.hoss_4=c(120, 355),
@@ -1973,12 +1973,12 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <-
 		boundaries_7=c(120, 369),
 		boundaries_8=c(120, 367),
 
-		#knots_3=c(510, 550, 580, 615),
-		#knots_4=c(542, 580, 606, 635),
-		#knots_5=c(562, 602, 632, 665),
-		#knots_6=c(575, 615, 645, 675),
-		#knots_7=c(586, 625, 655, 690),
-		#knots_8=c(605, 642, 670, 702),
+		knots_3=c(176, 197, 212, 227),
+		knots_4=c(192, 209, 220, 237),
+		knots_5=c(206, 222, 235, 247),
+		knots_6=c(220, 233, 244, 257),
+		knots_7=c(220, 235, 247, 263),
+		knots_8=c(232, 244, 254, 266),
 
 		loss.hoss_3=c(109.55, 339.45),
 		loss.hoss_4=c(108.95, 352.05),
@@ -1991,8 +1991,8 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <-
 		boundaries_4=c(107.95, 373.05),
 		boundaries_7=c(106.50, 403.50),
 
-		#knots_4=c(445, 475, 500, 530),
-		#knots_7=c(495, 533, 565, 605),
+		knots_4=c(181, 197, 211, 227),
+		knots_7=c(210, 226, 240, 256),
 
 		loss.hoss_4=c(120, 361),
 		loss.hoss_7=c(120, 390)
@@ -2000,6 +2000,14 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 SGPstateData[["IL"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
+		GRADE_3=c(163, 184, 224),
+		GRADE_4=c(172, 200, 247),
+		GRADE_5=c(180, 214, 271),
+		GRADE_6=c(194, 225, 276),
+		GRADE_7=c(207, 235, 281),
+		GRADE_8=c(221, 246, 288)
+		),
+	MATHEMATICS.2013=list(
 		GRADE_3=c(173, 214, 255),
 		GRADE_4=c(191, 224, 267),
 		GRADE_5=c(201, 235, 280),
@@ -2008,6 +2016,14 @@ SGPstateData[["IL"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(234, 267, 310)
 		),
 	READING=list(
+		GRADE_3=c(156, 191, 227),
+		GRADE_4=c(158, 203, 237),
+		GRADE_5=c(161, 215, 247),
+		GRADE_6=c(167, 220, 257),
+		GRADE_7=c(174, 226, 267),
+		GRADE_8=c(180, 261, 278)
+		),
+	READING.2013=list(
 		GRADE_3=c(160, 207, 236),
 		GRADE_4=c(175, 217, 249),
 		GRADE_5=c(193, 228, 261),
@@ -2016,6 +2032,10 @@ SGPstateData[["IL"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(218, 248, 271)
 		),
 	SCIENCE=list(
+		GRADE_4=c(158, 187, 237),
+		GRADE_7=c(197, 214, 260)
+		),
+	SCIENCE.2013=list(
 		GRADE_4=c(158, 187, 237),
 		GRADE_7=c(197, 214, 260)
 		))

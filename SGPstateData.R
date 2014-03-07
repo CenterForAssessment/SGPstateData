@@ -3159,6 +3159,14 @@ SGPstateData[["NV"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(250, 300, 389),
 		GRADE_8=c(250, 300, 375),
 		GRADE_10=c(250, 300, 344)),
+	MATHEMATICS.2013_2014=list(
+		GRADE_3=c(250, 300, 349),
+		GRADE_4=c(250, 300, 376),
+		GRADE_5=c(250, 300, 474),
+		GRADE_6=c(250, 300, 406),
+		GRADE_7=c(250, 300, 389),
+		GRADE_8=c(250, 300, 375),
+		GRADE_10=c(105, 242, 323)),
 	READING=list(
 		GRADE_3=c(200, 300, 356),
 		GRADE_4=c(200, 300, 380),

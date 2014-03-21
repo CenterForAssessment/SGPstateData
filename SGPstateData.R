@@ -3819,6 +3819,140 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 		"Exceeds"="Exceeds"))
 
 
+### RENAISSANCE LEARNING 
+
+load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
+SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- 
+	list(MATHEMATICS=list(
+		boundaries_3=c(150, 700),
+		boundaries_4=c(180, 780),
+		boundaries_5=c(220, 800),
+		boundaries_6=c(240, 830),
+		boundaries_7=c(280, 860),
+		boundaries_8=c(310, 890),
+		boundaries_9=c(340, 920),
+		boundaries_10=c(370, 950),
+		knots_3=c(392, 440, 481, 529),
+		knots_4=c(425, 470, 506, 546),
+		knots_5=c(452, 495, 530, 569),
+		knots_6=c(465, 509, 546, 588),
+		knots_7=c(490, 530, 565, 600),
+		knots_8=c(500, 545, 580, 620),
+		knots_9=c(515, 560, 595, 630),
+		knots_10=c(530, 575, 610, 645),
+		loss.hoss_3=c(150, 700),
+		loss.hoss_4=c(180, 780),
+		loss.hoss_5=c(220, 800),
+		loss.hoss_6=c(240, 830),
+		loss.hoss_7=c(280, 860),
+		loss.hoss_8=c(310, 890),
+		loss.hoss_9=c(340, 920),
+		loss.hoss_10=c(370, 950)),
+	READING=list(
+		boundaries_3=c(150, 795),
+		boundaries_4=c(180, 940),
+		boundaries_5=c(220, 955),
+		boundaries_6=c(260, 970),
+		boundaries_7=c(300, 980),
+		boundaries_8=c(330, 990),
+		boundaries_9=c(350, 995),
+		boundaries_10=c(370, 999),
+		knots_3=c(510, 550, 580, 615),
+		knots_4=c(542, 580, 606, 635),
+		knots_5=c(562, 602, 632, 665),
+		knots_6=c(575, 615, 645, 675),
+		knots_7=c(586, 625, 655, 690),
+		knots_8=c(605, 642, 670, 702),
+		knots_9=c(620, 655, 680, 706),
+		knots_10=c(642, 675, 700, 730),
+		loss.hoss_3=c(150, 795),
+		loss.hoss_4=c(180, 940),
+		loss.hoss_5=c(220, 955),
+		loss.hoss_6=c(260, 970),
+		loss.hoss_7=c(300, 980),
+		loss.hoss_8=c(330, 990),
+		loss.hoss_9=c(350, 995),
+		loss.hoss_10=c(370, 999)))
+
+SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- 
+	list(MATHEMATICS=list(
+		GRADE_3=c(335, 419, 510),
+		GRADE_4=c(383, 455, 538),
+		GRADE_5=c(422, 494, 562),
+		GRADE_6=c(454, 520, 589),
+		GRADE_7=c(487, 559, 614),
+		GRADE_8=c(521, 577, 628),
+		GRADE_9=c(548, 602, 652),
+		GRADE_10=c(562, 627, 692)),
+	READING=list(
+		GRADE_3=c(466, 526, 656),
+		GRADE_4=c(517, 572, 671),
+		GRADE_5=c(538, 588, 691),
+		GRADE_6=c(543, 600, 696),
+		GRADE_7=c(567, 620, 716),
+		GRADE_8=c(578, 632, 724),
+		GRADE_9=c(585, 642, 739),
+		GRADE_10=c(607, 663, 747)))
+
+SGPstateData[["RLI"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced", "No Score"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
+
+SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+
+SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+
+SGPstateData[["RLI"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(20, 40, 61, 81), 
+	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["RLI"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Demonstration Student Assessment Program",
+	Assessment_Abbreviation="RLI",
+	Organization=list(
+		Name="Student Growth Percentiles Package",
+		Abbreviation="SGP Package",
+		URL="centerforassessment.github.io/SGP/",
+		Contact="dbetebenner@nciea.org"),
+	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
+	Grades_Tested=c(3,4,5,6,7,8,9,10),
+	Assessment_Years=c("2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Test_Vendor="Renaissance Learning",
+	Test_Season="Fall/Winter/Spring",
+	CSEM=Demonstration_CSEM)
+
+SGPstateData[["RLI"]][["Student_Report_Information"]] <- 
+	list(
+#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+	Achievement_Level_Labels=list(
+		"Unsatisfactory"="Unsatisfactory", 
+		"Part Proficient"="Partially Proficient", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))		
+
+SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
+				sgp.minimum.default.panel.years=3,
+				return.norm.group.scale.scores=TRUE, 
+				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+
+load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRADE_9_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["GRADE_9_LIT.BASELINE"]]
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["AMERICAN_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["AMERICAN_LIT.BASELINE"]]
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_I.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_I.BASELINE"]]
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_II.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_II.BASELINE"]]
+SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/DEMO_Variable_Name_Lookup.csv", colClasses=c(rep("character",3), "logical"))
+
+
 ### RHODE ISLAND
 
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- 

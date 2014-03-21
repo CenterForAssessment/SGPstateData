@@ -3823,6 +3823,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 
 load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
+SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
 SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
@@ -3900,7 +3901,7 @@ SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRA
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["AMERICAN_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["AMERICAN_LIT.BASELINE"]]
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_I.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_I.BASELINE"]]
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_II.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_II.BASELINE"]]
-SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/DEMO_Variable_Name_Lookup.csv", colClasses=c(rep("character",3), "logical"))
+SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 ### RHODE ISLAND

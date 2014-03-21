@@ -3822,57 +3822,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 ### RENAISSANCE LEARNING 
 
 load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
-SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- 
-	list(MATHEMATICS=list(
-		boundaries_3=c(150, 700),
-		boundaries_4=c(180, 780),
-		boundaries_5=c(220, 800),
-		boundaries_6=c(240, 830),
-		boundaries_7=c(280, 860),
-		boundaries_8=c(310, 890),
-		boundaries_9=c(340, 920),
-		boundaries_10=c(370, 950),
-		knots_3=c(392, 440, 481, 529),
-		knots_4=c(425, 470, 506, 546),
-		knots_5=c(452, 495, 530, 569),
-		knots_6=c(465, 509, 546, 588),
-		knots_7=c(490, 530, 565, 600),
-		knots_8=c(500, 545, 580, 620),
-		knots_9=c(515, 560, 595, 630),
-		knots_10=c(530, 575, 610, 645),
-		loss.hoss_3=c(150, 700),
-		loss.hoss_4=c(180, 780),
-		loss.hoss_5=c(220, 800),
-		loss.hoss_6=c(240, 830),
-		loss.hoss_7=c(280, 860),
-		loss.hoss_8=c(310, 890),
-		loss.hoss_9=c(340, 920),
-		loss.hoss_10=c(370, 950)),
-	READING=list(
-		boundaries_3=c(150, 795),
-		boundaries_4=c(180, 940),
-		boundaries_5=c(220, 955),
-		boundaries_6=c(260, 970),
-		boundaries_7=c(300, 980),
-		boundaries_8=c(330, 990),
-		boundaries_9=c(350, 995),
-		boundaries_10=c(370, 999),
-		knots_3=c(510, 550, 580, 615),
-		knots_4=c(542, 580, 606, 635),
-		knots_5=c(562, 602, 632, 665),
-		knots_6=c(575, 615, 645, 675),
-		knots_7=c(586, 625, 655, 690),
-		knots_8=c(605, 642, 670, 702),
-		knots_9=c(620, 655, 680, 706),
-		knots_10=c(642, 675, 700, 730),
-		loss.hoss_3=c(150, 795),
-		loss.hoss_4=c(180, 940),
-		loss.hoss_5=c(220, 955),
-		loss.hoss_6=c(260, 970),
-		loss.hoss_7=c(300, 980),
-		loss.hoss_8=c(330, 990),
-		loss.hoss_9=c(350, 995),
-		loss.hoss_10=c(370, 999)))
+load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 
 SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(

@@ -3889,19 +3889,9 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))		
 
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
-				sgp.minimum.default.panel.years=3,
-				return.norm.group.scale.scores=TRUE, 
+				print.other.gp=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
-
-load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRADE_9_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["GRADE_9_LIT.BASELINE"]]
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["AMERICAN_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["AMERICAN_LIT.BASELINE"]]
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_I.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_I.BASELINE"]]
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ALGEBRA_II.BASELINE"]] <- DEMO_Baseline_Matrices[["ALGEBRA_II.BASELINE"]]
-SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 ### RHODE ISLAND

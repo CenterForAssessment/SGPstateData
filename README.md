@@ -11,3 +11,9 @@ at the state level. The cutscores, in particular, are used to calculate growth-t
 Colorado (CO), Connecticut (CT), Georgia (GA), Hawaii (HI), Idaho (ID), Illinois (IL), Indiana (IN), Kansas (KS), Maine (ME), Massachusetts (MA), Minnesota (MN), Mississippi (MS),
 Missouri (MO), Nevada (NV), New Hampshire (NH), New Jersey (NJ), New York (NY), Oregon (OR), Rhode Island (RI), South Dakota (SD), Utah (UT), Vermont (VT), Virginia (VA), Washington (WA),
 West Virginia (WV), Wisconsin (WI), Archdiocese of Baltimore (AOB), Colorado English Language Assessment (CELA), Demonstration (DEMO), Australia NAPLAN (NAPLAN), Guatemala (GUA) and New Haven (NEW\_HAVEN).
+
+**SGPstateData** is supported and maintained by two very nice people with the assistance of dozens of [state developers](/Users/damian/Documents/Github/SGP/DEVELOPERS). We'd be happy
+to add in your data and love feedback and are happy to answer questions. Just make sure to show us some :heart:.
+
+* [Damian Betebenner](https://github.com/dbetebenner)
+* [Adam VanIwaarden](https://github.com/adamvi)

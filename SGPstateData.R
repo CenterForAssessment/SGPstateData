@@ -1489,7 +1489,8 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Meets Expectations" = "Meets Expectations",
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
-SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1)
+SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
+	use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1, sgp.projections.baseline.max.order=4)
 SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
 	ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
@@ -4269,27 +4270,27 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 		ELA = as.character(3:11),
 		MATHEMATICS=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
 		PRE_ALGEBRA=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
-		ALGEBRA_I= c("EOCT", "EOCT", "EOCT", "EOCT"),
-		GEOMETRY = c("EOCT", "EOCT", "EOCT", "EOCT"),
-		ALGEBRA_II=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
+		ALGEBRA_I= c("EOCT", "EOCT", "EOCT", "EOCT"), # No rep('MATHEMATICS', 4), for 2013.  There are almost no kids in the data
+		GEOMETRY = c("EOCT", "EOCT", "EOCT", "EOCT"), 
+		ALGEBRA_II=c("6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
 
 		SCIENCE = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		EARTH_SCIENCE=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
-		BIOLOGY = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
-		CHEMISTRY=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
-		PHYSICS = c("EOCT", "EOCT", "EOCT"))
+		BIOLOGY = c("5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
+		CHEMISTRY=c("6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
+		PHYSICS = c("EOCT", "EOCT", "EOCT"))  # Only Enough students with BIO and CHEM priors available
 SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
 		ELA = rep("ELA", 9),
 		MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 		PRE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 		ALGEBRA_I= c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 		GEOMETRY = c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-		ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+		ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 		SCIENCE = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		EARTH_SCIENCE=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
-		BIOLOGY = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
-		CHEMISTRY=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
-		PHYSICS = c('BIOLOGY', 'CHEMISTRY', 'PHYSICS'))
+		BIOLOGY = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
+		CHEMISTRY=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
+		PHYSICS = c('BIOLOGY', 'CHEMISTRY', 'PHYSICS')) 
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
 		ELA=rep(1L, 8),
@@ -4297,11 +4298,11 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 		PRE_ALGEBRA=rep(1L, 8),
 		ALGEBRA_I= rep(1L, 3),
 		GEOMETRY = rep(1L, 3),
-		ALGEBRA_II=rep(1L, 8),
+		ALGEBRA_II=rep(1L, 5),
 		SCIENCE = rep(1L, 8),
 		EARTH_SCIENCE =rep(1L, 8),
-		BIOLOGY = rep(1L, 8),
-		CHEMISTRY=rep(1L, 8),
+		BIOLOGY = rep(1L, 7),
+		CHEMISTRY=rep(1L, 6),
 		PHYSICS = rep(1L, 2))
 
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <- 

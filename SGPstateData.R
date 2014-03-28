@@ -1489,7 +1489,8 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Meets Expectations" = "Meets Expectations",
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
-SGPstateData[["GA"]][["SGP_Configuration"]] <- list(use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1)
+SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
+	use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1, sgp.projections.baseline.max.order=4)
 SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
 	ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.

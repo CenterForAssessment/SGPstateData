@@ -3890,7 +3890,16 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				grade.projection.sequence <- list(
+					READING=rep(as.character(3:10), each=3),
+					MATHEMATICS=rep(as.character(3:10), each=3)),
+				content_area.projection.sequence <- list(
+					READING=rep("READING", length(3:10)*3),
+					MATHEMATICS=rep("MATHEMATICS", length(3:10)*3)),
+				year_lags.projection.sequence <- list(
+					READING=c(rep(c(0.1, 0.1, 0.8), 7), c(0.1, 0.1)),
+					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 7), c(0.1, 0.1))))
 
 
 ### RHODE ISLAND
@@ -4259,7 +4268,6 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(sgp.cohort.size=3000)
 SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 		ELA = as.character(3:11),
-		
 		MATHEMATICS=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
 		PRE_ALGEBRA=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
 		ALGEBRA_I= c("EOCT", "EOCT", "EOCT", "EOCT"),

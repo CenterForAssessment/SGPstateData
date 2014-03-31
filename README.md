@@ -13,7 +13,7 @@ Missouri (MO), Nevada (NV), New Hampshire (NH), New Jersey (NJ), New York (NY), 
 West Virginia (WV), Wisconsin (WI), Archdiocese of Baltimore (AOB), Colorado English Language Assessment (CELA), Demonstration (DEMO), Australia NAPLAN (NAPLAN), Guatemala (GUA) and New Haven (NEW\_HAVEN).
 
 **SGPstateData** is supported and maintained by two very nice people with the assistance of dozens of [state developers](http://cran.r-project.org/web/packages/SGP/). We'd be happy
-to add in your organization's data, are happy to answer questions and love feedback. Just make sure to show us some :heart:.
+to add in your organization's data, answer questions and love feedback. Just make sure to show us some :heart:.
 
 * [Damian Betebenner](https://github.com/dbetebenner)
 * [Adam VanIwaarden](https://github.com/adamvi)

@@ -5015,6 +5015,52 @@ SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READ
 SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA)
+
+load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
+SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["WIDA"]][["Growth"]][["Cutscores"]] <-
+        list(
+        Cuts=c(35, 66),
+        Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["WIDA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
+	Organization=list(
+                Name="World Class Instructional Design and Assessment",
+		Abbreviation="WIDA",
+                URL="http://www.wida.us/",
+                Contact="1-866-276-7735"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,10),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+	Test_Season="Fall",
+	Test_Vendor="WIDA")
+
+SGPstateData[["WIDA"]][["Student_Report_Information"]] <- 
+	list(
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+	Achievement_Level_Labels=list(
+		"Minimal"="Minimal Performance", 
+ 		"Basic"="Basic", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))
+
+
 ### WYOMING
 
 SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <- 

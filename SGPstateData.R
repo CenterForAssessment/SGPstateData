@@ -5020,6 +5020,22 @@ SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
+SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]] <- 
+	list(READING=list(
+		GRADE_0=c(394, 430, 466),
+		GRADE_1=c(394, 430, 466),
+		GRADE_2=c(394, 430, 466),
+		GRADE_3=c(394, 430, 466),
+		GRADE_4=c(396, 440, 489),
+		GRADE_5=c(401, 444, 497),
+		GRADE_6=c(418, 457, 514),
+		GRADE_7=c(434, 467, 523),
+		GRADE_8=c(445, 480, 539),
+		GRADE_9=c(445, 480, 539),
+		GRADE_10=c(456, 503, 555),
+		GRADE_11=c(456, 503, 555),
+		GRADE_12=c(456, 503, 555)))
+
 SGPstateData[["WIDA"]][["Achievement"]][["Levels"]] <- 
 	list(
 	Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
@@ -5043,8 +5059,8 @@ SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <-
 		Abbreviation="WIDA",
                 URL="http://www.wida.us/",
                 Contact="1-866-276-7735"),
-	Content_Areas=c("Mathematics", "Reading"),
-	Grades_Tested=c(3,4,5,6,7,8,10),
+	Content_Areas="Reading",
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
 	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
 	Test_Season="Fall",
 	Test_Vendor="WIDA")
@@ -5052,8 +5068,8 @@ SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <-
 SGPstateData[["WIDA"]][["Student_Report_Information"]] <- 
 	list(
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+	Content_Areas_Labels=list(READING="Reading"),
+	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
 	Achievement_Level_Labels=list(
 		"Minimal"="Minimal Performance", 
  		"Basic"="Basic", 

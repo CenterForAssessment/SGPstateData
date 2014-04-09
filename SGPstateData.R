@@ -1132,7 +1132,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 	Organization=list(
 		Name="Student Growth Percentiles Package",
 		Abbreviation="SGP Package",
-		URL="centerforassessment.github.io/SGP/",
+		URL="www.sgp.io",
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
@@ -3816,7 +3816,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 
 ### RENAISSANCE LEARNING 
 
-load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
+#load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
@@ -3842,41 +3842,40 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <-
 
 SGPstateData[["RLI"]][["Achievement"]][["Levels"]] <- 
 	list(
-	Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced", "No Score"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
+	Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["RLI"]][["Growth"]][["Cutscores"]] <- 
 	list(
-	Cuts=c(20, 40, 61, 81), 
-	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
 SGPstateData[["RLI"]][["Assessment_Program_Information"]] <- 
 	list(
-	Assessment_Name="Demonstration Student Assessment Program",
+	Assessment_Name="Renaissance Learning Incorporated",
 	Assessment_Abbreviation="RLI",
 	Organization=list(
-		Name="Student Growth Percentiles Package",
-		Abbreviation="SGP Package",
-		URL="centerforassessment.github.io/SGP/",
-		Contact="dbetebenner@nciea.org"),
-	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
-	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
-	Test_Vendor="Renaissance Learning",
-	Test_Season="Fall/Winter/Spring",
-	CSEM=Demonstration_CSEM)
+		Name="Renaissance Learning Incorporated",
+		Abbreviation="RLI",
+		URL="www.renaissance.com",
+		Contact="(800) 338-4204"),
+	Content_Areas=c("Mathematics", "Reading", "Early Lit"),
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Test_Vendor="Renaissance Learning Incorporated",
+	Test_Season="Fall/Winter/Spring")#,
+#	CSEM=Demonstration_CSEM)
 
 SGPstateData[["RLI"]][["Student_Report_Information"]] <- 
 	list(
-#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
-#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+	Projection_Fan_Limits=c(5, 95),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LIT="Early Lit"),
+	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LIT=c(0,1,2,3)), 
 	Achievement_Level_Labels=list(
 		"Unsatisfactory"="Unsatisfactory", 
 		"Part Proficient"="Partially Proficient", 
@@ -3888,14 +3887,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence <- list(
-					READING=rep(as.character(3:10), each=3),
-					MATHEMATICS=rep(as.character(3:10), each=3)),
+					READING=rep(as.character(1:12), each=3),
+					MATHEMATICS=rep(as.character(1:12), each=3),
+					EARLY_LIT=rep(as.character(0:3), each=3)),
 				content_area.projection.sequence <- list(
-					READING=rep("READING", length(3:10)*3),
-					MATHEMATICS=rep("MATHEMATICS", length(3:10)*3)),
+					READING=rep("READING", length(1:12)*3),
+					MATHEMATICS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT=rep("EARLY_LIT", length(0:3)*3)),
 				year_lags.projection.sequence <- list(
-					READING=c(rep(c(0.1, 0.1, 0.8), 7), c(0.1, 0.1)),
-					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 7), c(0.1, 0.1))))
+					READING=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
 
 
 ### RHODE ISLAND

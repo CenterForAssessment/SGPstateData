@@ -3900,6 +3900,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
 
 
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices
+
+
 ### RHODE ISLAND
 
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- 

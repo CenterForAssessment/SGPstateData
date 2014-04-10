@@ -1500,7 +1500,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 	COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
 	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	BIOLOGY=c("7", "8", "EOCT", "EOCT"),
-	PHYSICAL_SCIENCE=c("7", "8", "EOCT", "EOCT"),
+	PHYSICAL_SCIENCE=c("8", "EOCT", "EOCT"),
 	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	US_HISTORY=c("8", "EOCT", "EOCT"),
 	ECONOMICS=c("EOCT", "EOCT"))
@@ -1513,7 +1513,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
 	SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 	BIOLOGY= c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	PHYSICAL_SCIENCE=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+	PHYSICAL_SCIENCE=c("SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 	US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 	ECONOMICS=c("US_HISTORY", "ECONOMICS"))
@@ -1526,7 +1526,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 	COORDINATE_ALGEBRA=rep(1L, 2),
 	SCIENCE=rep(1L, 7),
 	BIOLOGY=rep(1L, 3),
-	PHYSICAL_SCIENCE=rep(1L, 3),
+	PHYSICAL_SCIENCE=rep(1L, 2),
 	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
 	US_HISTORY=as.integer(c(3,1)),
 	ECONOMICS=1L)

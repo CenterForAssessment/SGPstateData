@@ -3886,15 +3886,15 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
-				grade.projection.sequence <- list(
+				grade.projection.sequence=list(
 					READING=rep(as.character(1:12), each=3),
 					MATHEMATICS=rep(as.character(1:12), each=3),
 					EARLY_LIT=rep(as.character(0:3), each=3)),
-				content_area.projection.sequence <- list(
+				content_area.projection.sequence=list(
 					READING=rep("READING", length(1:12)*3),
 					MATHEMATICS=rep("MATHEMATICS", length(1:12)*3),
 					EARLY_LIT=rep("EARLY_LIT", length(0:3)*3)),
-				year_lags.projection.sequence <- list(
+				year_lags.projection.sequence=list(
 					READING=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))

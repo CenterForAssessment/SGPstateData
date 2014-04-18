@@ -3816,7 +3816,6 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 
 ### RENAISSANCE LEARNING 
 
-#load("CSEM/Demonstration/Demonstration_CSEM.Rdata")
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
@@ -3955,6 +3954,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				sgp.projections.max.forward.progression.years=FALSE,
 				sgp.projections.projection.unit="GRADE",
+				return.prior.scale.score.standardized=FALSE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
@@ -3971,8 +3971,8 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
 
 
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices_2013_2014
 
 
 ### RHODE ISLAND

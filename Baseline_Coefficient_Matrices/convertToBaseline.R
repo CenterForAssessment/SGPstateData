@@ -5,12 +5,16 @@
 ###################################################################################
 
 convertToBaseline <- function(baseline_matrices) {
-	tmp.year <- unlist(strsplit(names(baseline_matrices)[1], "[.]"))[2]
-	names(baseline_matrices) <- gsub(tmp.year, "BASELINE", names(baseline_matrices))
+	tmp.list <- list()
 	for (i in names(baseline_matrices)) {
 		for (j in seq_along(baseline_matrices[[i]])) {
 			baseline_matrices[[i]][[j]]@Time <- list(rep("BASELINE", length(unlist(baseline_matrices[[i]][[j]]@Time))))
 		}	
 	}
-	return(baseline_matrices)
+
+	tmp.content_areas <- unique(sapply(strsplit(names(baseline_matrices), "[.]"), '[', 1))
+	for (i in tmp.content_areas) {
+		tmp.list[[paste(i, "BASELINE", sep=".")]] <- unlist(baseline_matrices[grep(i, names(baseline_matrices))], recursive=FALSE)
+	}
+	return(tmp.list)
 }

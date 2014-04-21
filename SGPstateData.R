@@ -3971,8 +3971,9 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
 
 
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices_2013_2014
+SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2012_2013.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices_2012_2013
 
 
 ### RHODE ISLAND

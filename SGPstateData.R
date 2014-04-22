@@ -3221,7 +3221,8 @@ SGPstateData[["NV"]][["Student_Report_Information"]] <-
 		"Meets"="Meets Standard", 
 		"Exceeds"="Exceeds Standard"))
 
-SGPstateData[["NV"]][["SGP_Configuration"]] <- list(max.order.for.percentile=4,
+SGPstateData[["NV"]][["SGP_Configuration"]] <- list(
+						max.order.for.percentile=4,
                                                 max.order.for.projection=4)
 						 
 load("Baseline_Coefficient_Matrices/NV_Baseline_Matrices.Rdata")
@@ -5069,6 +5070,9 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
+SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
+						max.order.for.percentile=2,
+                                                max.order.for.projection=2)
 
 ### WYOMING
 

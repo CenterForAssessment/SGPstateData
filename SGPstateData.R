@@ -3867,7 +3867,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
-				sgp.projections.max.forward.progression.years=FALSE,
+				sgp.projections.max.forward.progression.years=9,
 				sgp.projections.projection.unit="GRADE",
 				return.prior.scale.score.standardized=FALSE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

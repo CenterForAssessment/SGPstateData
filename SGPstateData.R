@@ -3895,9 +3895,9 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					MATHEMATICS=rep("MATHEMATICS", length(1:12)*2),
 					EARLY_LIT=rep("EARLY_LIT", length(0:3)*2)),
 				year_lags.projection.sequence=list(
-					READING=c(rep(c(0.2, 0.8), 11), 0.1),
-					MATHEMATICS=c(rep(c(0.2, 0.8), 11), 0.1),
-					EARLY_LIT=c(rep(c(0.2, 0.8), 3), 0.1)))
+					READING=c(rep(c(0.2, 0.8), 11), 0.2),
+					MATHEMATICS=c(rep(c(0.2, 0.8), 11), 0.2),
+					EARLY_LIT=c(rep(c(0.2, 0.8), 3), 0.2)))
 
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

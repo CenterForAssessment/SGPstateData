@@ -3823,11 +3823,23 @@ SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Bounda
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
 source("Cutscores/RLI_Cutscores.R")
 
-# Generic Achievement Levels.  These need to be determined by RLI if desired/needed:
-SGPstateData[["RLI"]][["Achievement"]][["Levels"]] <- 
-	list(
-	Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use `<-` assignment rather than = for `if` test below.
+	Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
+	Three_Level_States <- c("GA", "IA", "IN", "NE", "NJ", "SC", "TX", "VA"),
+	Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DE", "ID", "IL", "KY", "MA", "MI", "MN", "MO", "MS", "MT", "ND", 
+		"NM", "NV", "NY", "OK", "PA", "SD", "TN", "UT", "WA", "WI", "WY", "NC"),
+	Five_Level_States <- c("CA", "CT", "FL", "KS", "LA", "OH", "WV"))
+
+# Make sure we have all state cutscore information updated in levels:
+if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")
+if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States) %in% Cutscore_States)) message("NOTE: Some states included in 3 - 5 Level list that do not have Cutscores!")
+
+##  Generic Achievement Levels.  These need to be determined by RLI if desired/needed:
+##  No Generic cuts per Lindsay Hass (4/22/14 email).  Only states with linked cutscores are to be used.
+# SGPstateData[["RLI"]][["Achievement"]][["Levels"]] <- 
+	# list(
+	# Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced"),
+	# Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

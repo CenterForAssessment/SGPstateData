@@ -3881,22 +3881,23 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				sgp.projections.max.forward.progression.years=9,
-				sgp.projections.projection.unit="GRADE",
+				sgp.projections.projection.unit="YEAR",
+				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
-					READING=paste(rep(as.character(1:12), each=3), 1:3, sep="."),
-					MATHEMATICS=paste(rep(as.character(1:12), each=3), 1:3, sep="."),
-					EARLY_LIT=paste(rep(as.character(0:3), each=3), 1:3, sep=".")),
+					READING=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					MATHEMATICS=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					EARLY_LIT=paste(rep(as.character(0:3), each=2), c(1,3), sep=".")),
 				content_area.projection.sequence=list(
-					READING=rep("READING", length(1:12)*3),
-					MATHEMATICS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LIT=rep("EARLY_LIT", length(0:3)*3)),
+					READING=rep("READING", length(1:12)*2),
+					MATHEMATICS=rep("MATHEMATICS", length(1:12)*2),
+					EARLY_LIT=rep("EARLY_LIT", length(0:3)*2)),
 				year_lags.projection.sequence=list(
-					READING=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
+					READING=c(rep(c(0.2, 0.8), 11), 0.1),
+					MATHEMATICS=c(rep(c(0.2, 0.8), 11), 0.1),
+					EARLY_LIT=c(rep(c(0.2, 0.8), 3), 0.1)))
 
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

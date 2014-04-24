@@ -3834,17 +3834,17 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use 
 				"MO", "MS", "MT", "ND", "NM", "NV", "NY", "OK", "PA", "SD", "TN", "UT", "WA", "WI", "WY", "NC"),
 			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Five_Level_States_A = list(
-			States = Four_Level_States <- c("CT", "FL", "KS", "OH", "WV"),
+			States = Five_Level_States_A <- c("CT", "FL", "KS", "OH", "WV"),
 			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),			
 		Five_Level_States_B = list(
-			States = Four_Level_States <- c("CA", "LA"),
+			States = Five_Level_States_B <- c("CA", "LA"),
 			Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 		)
 	)
 
 # Make sure we have all state cutscore information updated in levels:
-if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")
-if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States) %in% Cutscore_States)) message("NOTE: Some states included in 3 - 5 Level list that do not have Cutscores!")
+if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")
+if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B) %in% Cutscore_States)) message("NOTE: Some states included in 3 - 5 Level list that do not have Cutscores!")
 
 ##  Generic Achievement Levels.  These need to be determined by RLI if desired/needed:
 ##  No Generic cuts per Lindsay Hass (4/22/14 email).  Only states with linked cutscores are to be used.
@@ -3893,22 +3893,23 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				sgp.projections.max.forward.progression.years=9,
-				sgp.projections.projection.unit="GRADE",
+				sgp.projections.projection.unit="YEAR",
+				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
-					READING=paste(rep(as.character(1:12), each=3), 1:3, sep="."),
-					MATHEMATICS=paste(rep(as.character(1:12), each=3), 1:3, sep="."),
-					EARLY_LIT=paste(rep(as.character(0:3), each=3), 1:3, sep=".")),
+					READING=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					MATHEMATICS=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					EARLY_LIT=paste(rep(as.character(0:3), each=2), c(1,3), sep=".")),
 				content_area.projection.sequence=list(
-					READING=rep("READING", length(1:12)*3),
-					MATHEMATICS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LIT=rep("EARLY_LIT", length(0:3)*3)),
+					READING=rep("READING", length(1:12)*2),
+					MATHEMATICS=rep("MATHEMATICS", length(1:12)*2),
+					EARLY_LIT=rep("EARLY_LIT", length(0:3)*2)),
 				year_lags.projection.sequence=list(
-					READING=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					MATHEMATICS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LIT=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
+					READING=c(rep(c(0.2, 0.8), 11), 0.2),
+					MATHEMATICS=c(rep(c(0.2, 0.8), 11), 0.2),
+					EARLY_LIT=c(rep(c(0.2, 0.8), 3), 0.2)))
 
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

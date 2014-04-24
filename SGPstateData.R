@@ -3823,12 +3823,24 @@ SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Bounda
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
 source("Cutscores/RLI_Cutscores.R")
 
-SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use `<-` assignment rather than = for `if` test below.
-	Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
-	Three_Level_States <- c("GA", "IA", "IN", "NE", "NJ", "SC", "TX", "VA"),
-	Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DE", "ID", "IL", "KY", "MA", "MI", "MN", "MO", "MS", "MT", "ND", 
-		"NM", "NV", "NY", "OK", "PA", "SD", "TN", "UT", "WA", "WI", "WY", "NC"),
-	Five_Level_States <- c("CA", "CT", "FL", "KS", "LA", "OH", "WV"))
+SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use `<-` assignment for `if` test below and = to give list names.
+	Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
+	State_Levels = list(
+		Three_Level_States = list(
+			States = Three_Level_States <- c("GA", "IA", "IN", "NE", "NJ", "SC", "TX", "VA"),
+			Levels = c("Not Proficient", "Proficient", "Proficient")),
+		Four_Level_States = list(
+			States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DE", "ID", "IL", "KY", "MA", "MI", "MN", 
+				"MO", "MS", "MT", "ND", "NM", "NV", "NY", "OK", "PA", "SD", "TN", "UT", "WA", "WI", "WY", "NC"),
+			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Five_Level_States_A = list(
+			States = Four_Level_States <- c("CT", "FL", "KS", "OH", "WV"),
+			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),			
+		Five_Level_States_B = list(
+			States = Four_Level_States <- c("CA", "LA"),
+			Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+		)
+	)
 
 # Make sure we have all state cutscore information updated in levels:
 if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")

@@ -3896,8 +3896,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,
-				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
 					READING=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

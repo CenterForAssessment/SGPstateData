@@ -3855,7 +3855,7 @@ if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Leve
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
 
 SGPstateData[["RLI"]][["Growth"]][["Cutscores"]] <- 
 	list(

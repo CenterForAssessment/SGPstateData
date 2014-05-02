@@ -3885,12 +3885,11 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
-				sgp.projections.max.forward.progression.years=9,
+				max.sgp.target.years.forward=6,
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,
-#				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
-				sgp.target.types=c("Scale_Score_Targets_Current_CUKU"),
+				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
 					READING=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

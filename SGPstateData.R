@@ -3846,16 +3846,9 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use 
 if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")
 if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B) %in% Cutscore_States)) message("NOTE: Some states included in 3 - 5 Level list that do not have Cutscores!")
 
-##  Generic Achievement Levels.  These need to be determined by RLI if desired/needed:
-##  No Generic cuts per Lindsay Hass (4/22/14 email).  Only states with linked cutscores are to be used.
-# SGPstateData[["RLI"]][["Achievement"]][["Levels"]] <- 
-	# list(
-	# Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced"),
-	# Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
-
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["RLI"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
 
 SGPstateData[["RLI"]][["Growth"]][["Cutscores"]] <- 
 	list(
@@ -3896,8 +3889,8 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,
-				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+#				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.target.types=c("Scale_Score_Targets_Current_CUKU"),
 				grade.projection.sequence=list(
 					READING=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

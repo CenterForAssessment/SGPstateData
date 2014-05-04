@@ -3823,6 +3823,8 @@ SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Bounda
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
 source("Cutscores/RLI_Cutscores.R")
 
+SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
+
 SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use `<-` assignment for `if` test below and = to give list names.
 	Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 	State_Levels = list(
@@ -3885,6 +3887,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				max.sgp.target.years.forward=6,
+				sgp.projections.max.forward.progression.years=6,
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=FALSE,

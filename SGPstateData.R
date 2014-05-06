@@ -5102,6 +5102,13 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 						max.order.for.percentile=2,
                                                 max.order.for.projection=2)
 
+
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
+
+load("Knots_Boundaries/WIDA_MA_Knots_Boundaries.Rdata")
+SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knots_Boundaries
+
+
 ### WYOMING
 
 SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <- 

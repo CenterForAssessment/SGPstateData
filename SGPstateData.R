@@ -3897,9 +3897,9 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					EARLY_LIT_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
-					READING_FWS=paste(rep(as.character(1:12), each=2), c(1,2,3), sep="."),
-					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=2), c(1,2,3), sep="."),
-					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=2), c(1,2,3), sep=".")),
+					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep=".")),
 				content_area.projection.sequence=list(
 					READING_FSF=rep("READING", length(1:12)*2),
 					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),

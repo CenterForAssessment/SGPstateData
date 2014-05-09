@@ -1,18 +1,29 @@
+setwd('~/Dropbox (CenterforAssessment)/SGP/Renaissance_Learning_Incorporated/Data/Base_Files')
+
 library(data.table)
 
 ###  Read in the cutscore long data file
 rli.cs.long <- data.table(read.table('cutscores_including_unlinked_grades.txt', header=T, sep='\t', stringsAsFactors=FALSE))
 
 ###  Read in the North Carolina updated/revised cutscores, and modify names to match original file above
-nc.long <- data.table(read.table('~/New NC cutscores.txt', header=T, sep='\t', stringsAsFactors=FALSE))
+nc.long <- data.table(read.table('New NC cutscores.txt', header=T, sep='\t', stringsAsFactors=FALSE))
 setnames(nc.long, c("State", "iGradeLevelID", "iMinSS", "iMaxSS", "iProficiencyLevel", "vchProficiencyLevelName"), c("StateTest", "Grade", "MinSS", "MaxSS", "ProficiencyLevel", "ProficiencyLevelName"))
 nc.long <- nc.long[,names(rli.cs.long), with=FALSE]
 
 ###  Remove the outdated NC cutscores
 rli.cs.long <- rli.cs.long[-grep("NC", StateTest),]
 
-###  Merge two cutscore data files
-rli.cs.long <- rbind(rli.cs.long, nc.long)
+###  Read in the North Carolina updated/revised cutscores, and modify names to match original file above
+ok.long <- data.table(read.table('New OK cutscores.txt', header=T, sep='\t', stringsAsFactors=FALSE))
+setnames(ok.long, c("State", "iGradeLevelID", "iMinSS", "iMaxSS", "iProficiencyLevel", "vchProficiencyLevelName"), c("StateTest", "Grade", "MinSS", "MaxSS", "ProficiencyLevel", "ProficiencyLevelName"))
+ok.long <- ok.long[,names(rli.cs.long), with=FALSE]
+
+###  Remove the outdated NC cutscores
+rli.cs.long <- rli.cs.long[-grep("OK", StateTest),]
+
+
+###  Merge all cutscore data files
+rli.cs.long <- rbind(rli.cs.long, nc.long, ok.long)
 
 ###  Reshape the long file into a wide file
 rli.cs <- reshape(rli.cs.long, timevar= 'ProficiencyLevel', idvar=c('StateTest', 'Subject', 'Grade'), direction='wide', drop=c("vchRegionCode", "MaxSS", "Linked"))#, "ProficiencyLevelName"
@@ -62,7 +73,7 @@ final.list <- gsub(", NA", "", unlist(tmp.list.state))
 simpleMessage(c("\n\n\nSGPstateData[[\"RLI\"]][[\"Achievement\"]][[\"Cutscores\"]] <- list(", final.list, ")\n\n\n"))
 
 ####
-##  Copy and paste output (evertying between "<simpleMessage:" and the final ">") into proper list: SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list( ...  )
+##  Copy and paste output (everything between "<simpleMessage:" and the final ">") into proper list: SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list( ...  )
 ##  Consolidate entry for States with "Spring" still in the state name (all grade = *.3) -- Add the second entry content to the first entry list
 ####
 

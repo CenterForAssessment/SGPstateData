@@ -3890,7 +3890,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.max.forward.progression.years=6,
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
-				return.prior.scale.score.standardized=FALSE,
+				return.prior.scale.score.standardized=TRUE,
 				return.percentile.trajectory.values=TRUE,
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
@@ -3899,21 +3899,30 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
-					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep=".")),
+					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
+					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					EARLY_LIT_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
 				content_area.projection.sequence=list(
 					READING_FSF=rep("READING", length(1:12)*2),
 					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
 					EARLY_LIT_FSF=rep("EARLY_LIT", length(0:3)*2),
 					READING_FWS=rep("READING", length(1:12)*3),
 					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LIT_FWS=rep("EARLY_LIT", length(0:3)*3)),
+					EARLY_LIT_FWS=rep("EARLY_LIT", length(0:3)*3),
+					READING_WSS=rep("READING", length(1:12)*3),
+					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT_WSS=rep("EARLY_LIT", length(0:3)*3)),
 				year_lags.projection.sequence=list(
 					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
 					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
 					EARLY_LIT_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
 					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LIT_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
+					EARLY_LIT_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
+					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2012_2013.Rdata")

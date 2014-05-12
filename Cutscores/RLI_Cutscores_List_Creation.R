@@ -59,7 +59,8 @@ for (state in unique(rli.cs$STATE)) {
 			tmp.list.grd <- c(tmp.list.grd, 
 				if (fall.tf) paste("\t\tGRADE_", g, ".1=c(", x[GRADE==g]$MinSS.2, ", ", x[GRADE==g]$MinSS.3, ", ", x[GRADE==g]$MinSS.4, ", ", x[GRADE==g]$MinSS.5, ")", sep=""),
 				if (fall.tf) paste("\t\tGRADE_", g, ".2=c(", x[GRADE==g]$MinSS.2, ", ", x[GRADE==g]$MinSS.3, ", ", x[GRADE==g]$MinSS.4, ", ", x[GRADE==g]$MinSS.5, ")", sep=""),
-				if (spring.tf) paste("\t\tGRADE_", g, ".3=c(", x[GRADE==g]$MinSS.2, ", ", x[GRADE==g]$MinSS.3, ", ", x[GRADE==g]$MinSS.4, ", ", x[GRADE==g]$MinSS.5, ")", sep=""))
+				if (spring.tf) paste("\t\tGRADE_", g, ".3=c(", x[GRADE==g]$MinSS.2, ", ", x[GRADE==g]$MinSS.3, ", ", x[GRADE==g]$MinSS.4, ", ", x[GRADE==g]$MinSS.5, ")", sep=""),
+				if (spring.tf) paste("\t\tGRADE_", g, ".4=c(", x[GRADE==g]$MinSS.2, ", ", x[GRADE==g]$MinSS.3, ", ", x[GRADE==g]$MinSS.4, ", ", x[GRADE==g]$MinSS.5, ")", sep=""))
 		}
 		tmp.list.ca <- c(tmp.list.ca, paste("\n\t", tmp.list.name, "=list(\n", paste(unlist(tmp.list.grd), collapse = ",\n "), ")", sep=""))
 	}

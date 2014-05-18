@@ -3922,7 +3922,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
 					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LIT_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))))
+					EARLY_LIT_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
+				max.forward.projection.sequence=list(
+					READING_FSF=6,
+					MATHEMATICS_FSF=6,
+					EARLY_LIT_FSF=6,
+					READING_FWS=9,
+					MATHEMATICS_FWS=9,
+					EARLY_LIT_FWS=9,
+					READING_WSS=1,
+					MATHEMATICS_WSS=1,
+					EARLY_LIT_WSS=1))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.Rdata")

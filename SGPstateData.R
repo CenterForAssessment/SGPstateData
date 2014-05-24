@@ -351,20 +351,20 @@ SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
 SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
-        list(
-        Assessment_Name="Arizona's Instrument to Measure Standards",
-        Assessment_Abbreviation="AIMS",
-        Organization=list(
-                Name="Arizona Department of Education",
-		Abbreviation="ADE",
-                URL="www.azed.gov",
-                Contact="1-800-352-4558"),
-        Content_Areas=c("Mathematics", "Reading"),
-	Scale_Change=list(MATHEMATICS=2010),
-        Grades_Tested=c(3,4,5,6,7,8,10),
-        Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
-	Test_Season="Spring",
-	Test_Vendor="CTB/McGraw Hill")
+	list(
+		Assessment_Name="Arizona's Instrument to Measure Standards",
+		Assessment_Abbreviation="AIMS",
+		Organization=list(
+			Name="Arizona Department of Education",
+			Abbreviation="ADE",
+			URL="www.azed.gov",
+			Contact="1-800-352-4558"),
+		Content_Areas=c("Mathematics", "Reading"),
+		Scale_Change=list(MATHEMATICS=2010),
+		Grades_Tested=c(3,4,5,6,7,8,10),
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+		Test_Season="Spring",
+		Test_Vendor="CTB/McGraw Hill")
 
 SGPstateData[["AZ"]][["Student_Report_Information"]] <-
         list(
@@ -5122,10 +5122,80 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
                                                 max.order.for.projection=2)
 
 
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT Colorado (ACCESS)
+# load("Knots_Boundaries/WIDA_CO_Knots_Boundaries.Rdata")
+
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]	
+# SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- WIDA_CO_Knots_Boundaries[["READING"]]
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
+
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING.2013"]] <-
+	list(
+		GRADE_0=c(145, 237, 263, 288, 307, 329),
+		GRADE_1=c(162, 249, 277, 303, 321, 344),
+		GRADE_2=c(168, 261, 290, 316, 335, 357),
+		GRADE_3=c(174, 272, 303, 328, 347, 369),
+		GRADE_4=c(179, 283, 314, 340, 359, 380),
+		GRADE_5=c(185, 293, 324, 350, 369, 390),
+		GRADE_6=c(191, 302, 334, 359, 379, 399),
+		GRADE_7=c(197, 311, 342, 368, 386, 407),
+		GRADE_8=c(203, 319, 350, 375, 394, 414),
+		GRADE_9=c(208, 327, 357, 382, 400, 419),
+		GRADE_10=c(214, 333, 363, 387, 405, 424),
+		GRADE_11=c(220, 340, 368, 391, 409, 427),
+		GRADE_12=c(226, 346, 372, 395, 413, 430))
+
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <-
+	list(
+	Labels=c("ACCESS L1","ACCESS L2","ACCESS L3","ACCESS L4","ACCESS L5","ACCESS L6","NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+
+SGPstateData[["WIDA_CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_CO"]][["Growth"]][["Cutscores"]] <-
+	list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_CO"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="WIDA ACCESS",
+	Assessment_Abbreviation="ACCESS",
+	Organization=list(
+		Name="Colorado Department of Education",
+		Abbreviation="CDE",
+		URL="www.schoolview.org",
+		Contact="303-866-6600"),
+	Scale_Change=list(READING="2013"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
+	Content_Areas="READING",
+	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Test_Season="Spring")
+
+SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- 
+	list(
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(READING ="Overall"),
+	Achievement_Level_Labels=list(
+		"ACCESS Level 1"="ACCESS L1",
+		"ACCESS Level 2"="ACCESS L2",
+		"ACCESS Level 3"="ACCESS L3",
+		"ACCESS Level 4"="ACCESS L4",
+		"ACCESS Level 5"="ACCESS L5",
+		"ACCESS Level 6"="ACCESS L6"))
+
+SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
+
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
 
 load("Knots_Boundaries/WIDA_MA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knots_Boundaries
+SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013"))
 
 
 ### WYOMING

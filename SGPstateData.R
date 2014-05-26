@@ -5123,10 +5123,12 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT Colorado (ACCESS)
-# load("Knots_Boundaries/WIDA_CO_Knots_Boundaries.Rdata")
+
+SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
+					sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+					sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]	
-# SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- WIDA_CO_Knots_Boundaries[["READING"]]
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
@@ -5148,7 +5150,8 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING.2013"]] <-
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <-
 	list(
-	Labels=c("ACCESS L1","ACCESS L2","ACCESS L3","ACCESS L4","ACCESS L5","ACCESS L6","NO SCORE"),
+	# Labels=c("ACCESS L1","ACCESS L2","ACCESS L3","ACCESS L4","ACCESS L5","ACCESS L6","NO SCORE"),
+	Labels=c("L1","L2","L3","L4","L5","L6","NO SCORE"),
 	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -5181,12 +5184,12 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <-
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(READING ="Overall"),
 	Achievement_Level_Labels=list(
-		"ACCESS Level 1"="ACCESS L1",
-		"ACCESS Level 2"="ACCESS L2",
-		"ACCESS Level 3"="ACCESS L3",
-		"ACCESS Level 4"="ACCESS L4",
-		"ACCESS Level 5"="ACCESS L5",
-		"ACCESS Level 6"="ACCESS L6"))
+		"ACCESS Level 1"="L1",
+		"ACCESS Level 2"="L2",
+		"ACCESS Level 3"="L3",
+		"ACCESS Level 4"="L4",
+		"ACCESS Level 5"="L5",
+		"ACCESS Level 6"="L6"))
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 

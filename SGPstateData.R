@@ -5132,7 +5132,6 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <-
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
 
 # SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
-# SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING.2013"]] <-
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- 	list(
 		GRADE_0=c(237, 263, 288, 307, 329),
 		GRADE_1=c(249, 277, 303, 321, 344),
@@ -5150,8 +5149,7 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- 	list(
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <-
 	list(
-	# Labels=c("ACCESS L1","ACCESS L2","ACCESS L3","ACCESS L4","ACCESS L5","ACCESS L6","NO SCORE"),
-	Labels=c("L1","L2","L3","L4","L5","L6","NO SCORE"),
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
 	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -5185,12 +5183,12 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <-
 	Content_Areas_Labels=list(READING = "Overall"),
 	Earliest_Year_Reported=list(READING = '2013'),
 	Achievement_Level_Labels=list(
-		"ACCESS Level 1"="L1",
-		"ACCESS Level 2"="L2",
-		"ACCESS Level 3"="L3",
-		"ACCESS Level 4"="L4",
-		"ACCESS Level 5"="L5",
-		"ACCESS Level 6"="L6"))
+		"Entering"="L1",
+		"Emerging"="L2",
+		"Developing"="L3",
+		"Expanding"="L4",
+		"Bridging"="L5",
+		"Reaching"="L6"))
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 

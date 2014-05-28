@@ -5131,22 +5131,22 @@ SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]	
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
 
-SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
-SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING.2013"]] <-
-	list(
-		GRADE_0=c(145, 237, 263, 288, 307, 329),
-		GRADE_1=c(162, 249, 277, 303, 321, 344),
-		GRADE_2=c(168, 261, 290, 316, 335, 357),
-		GRADE_3=c(174, 272, 303, 328, 347, 369),
-		GRADE_4=c(179, 283, 314, 340, 359, 380),
-		GRADE_5=c(185, 293, 324, 350, 369, 390),
-		GRADE_6=c(191, 302, 334, 359, 379, 399),
-		GRADE_7=c(197, 311, 342, 368, 386, 407),
-		GRADE_8=c(203, 319, 350, 375, 394, 414),
-		GRADE_9=c(208, 327, 357, 382, 400, 419),
-		GRADE_10=c(214, 333, 363, 387, 405, 424),
-		GRADE_11=c(220, 340, 368, 391, 409, 427),
-		GRADE_12=c(226, 346, 372, 395, 413, 430))
+# SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
+# SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING.2013"]] <-
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- 	list(
+		GRADE_0=c(237, 263, 288, 307, 329),
+		GRADE_1=c(249, 277, 303, 321, 344),
+		GRADE_2=c(261, 290, 316, 335, 357),
+		GRADE_3=c(272, 303, 328, 347, 369),
+		GRADE_4=c(283, 314, 340, 359, 380),
+		GRADE_5=c(293, 324, 350, 369, 390),
+		GRADE_6=c(302, 334, 359, 379, 399),
+		GRADE_7=c(311, 342, 368, 386, 407),
+		GRADE_8=c(319, 350, 375, 394, 414),
+		GRADE_9=c(327, 357, 382, 400, 419),
+		GRADE_10=c(333, 363, 387, 405, 424),
+		GRADE_11=c(340, 368, 391, 409, 427),
+		GRADE_12=c(346, 372, 395, 413, 430))
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -5182,7 +5182,8 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <-
 	list(
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(READING ="Overall"),
+	Content_Areas_Labels=list(READING = "Overall"),
+	Earliest_Year_Reported=list(READING = '2013'),
 	Achievement_Level_Labels=list(
 		"ACCESS Level 1"="L1",
 		"ACCESS Level 2"="L2",

@@ -1532,8 +1532,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 	ECONOMICS=1L)
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
-SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
+#load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
+#SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
 load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 

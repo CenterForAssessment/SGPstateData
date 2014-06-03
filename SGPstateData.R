@@ -5121,6 +5121,7 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT Colorado (ACCESS)
 
 SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
+	max.order.for.percentile = 3,
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
@@ -5184,6 +5185,78 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		"Reaching"="L6"))
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
+##  Custom ISR Meta Data
+source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
+WIDA_CO_Custom_ISR_Function <-source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
+
+require(png)
+CDE.img <- readPNG("Custom_ISR/WIDA_CO/CDE.png")
+
+require(grid)
+SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
+	report.width=8.5,
+	report.height= 11,
+
+	Custom_ISR_Function = WIDA_CO_Custom_ISR_Function,
+	Report_Text = Report_Text,
+	Report_Text_SPANISH = Report_Text_SPANISH,
+	Report_Logo = CDE.img,
+	Grid_Objects = list(
+		report.vp = viewport(layout = grid.layout(13, 8, widths = unit(c(0.55, 0.1, 1.1, 0.85, 1.25, 1.0, 3.3, 0.35), rep("inches", 8)), 
+			heights = unit(c(0.2, 0.3, 0.15, 0.45, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+
+		top.student.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:4),
+		top.student.id.vp = viewport(layout.pos.row=2, layout.pos.col=5),
+		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7),
+		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
+		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
+		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
+		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
+		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:4),
+		report.school.name.vp = viewport(layout.pos.row=10, layout.pos.col=5:7),
+		
+		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=4:7),
+		
+		left.legend.vp = viewport(layout.pos.row=12, layout.pos.col=3),
+		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
+		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
+	)
+)
+
+#  Spanish ISR Version Info:
+
+SGPstateData[["WIDA_CO_SPAN"]] <- SGPstateData[["WIDA_CO"]]
+SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", "Común", "Alto")
+
+SGPstateData[["WIDA_CO_SPAN"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="WIDA ACCESS",
+	Assessment_Abbreviation="ACCESS",
+	Organization=list(
+		Name="El Departamento de Educación de Colorado",
+		Abbreviation="CDE",
+		URL="www.schoolview.org",
+		Contact="303-866-6600"),
+	Scale_Change=list(READING="2013"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
+	Content_Areas="READING",
+	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Test_Season="Spring")
+
+SGPstateData[["WIDA_CO_SPAN"]][["Student_Report_Information"]] <- 
+	list(
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(READING = "Calificación General"),
+	Earliest_Year_Reported=list(READING = '2013'),
+	Achievement_Level_Labels=list(
+		"Inicial"="L1",
+		"En Transición"="L2",
+		"Desarrollado"="L3",
+		"Elevado"="L4",
+		"Apto"="L5",
+		"Avanzado"="L6"))
 
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS

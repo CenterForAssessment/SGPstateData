@@ -5188,7 +5188,7 @@ SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_L
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
-WIDA_CO_Custom_ISR_Function <-source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
+WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 
 require(png)
 CDE.img <- readPNG("Custom_ISR/WIDA_CO/CDE.png")
@@ -5216,9 +5216,9 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:4),
 		report.school.name.vp = viewport(layout.pos.row=10, layout.pos.col=5:7),
 		
-		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=4:7),
+		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
 		
-		left.legend.vp = viewport(layout.pos.row=12, layout.pos.col=3),
+		# left.legend.vp = viewport(layout.pos.row=12, layout.pos.col=3),
 		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
 		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
 	)

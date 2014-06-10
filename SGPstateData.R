@@ -1482,8 +1482,18 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 SGPstateData[["GA"]][["Student_Report_Information"]] <- 
 	list(
 	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+	Transformed_Achievement_Level_Cutscores=list(GRADE_9_LIT = c(800, 850), AMERICAN_LIT = c(800, 850), 
+		BIOLOGY = c(800, 850), PHYSICAL_SCIENCE = c(800, 850), US_HISTORY = c(800, 850), ECONOMICS = c(800, 850), 
+		COORDINATE_ALGEBRA = c(800, 850), MATHEMATICS_I = c(800, 850), MATHEMATICS_II = c(800, 850)), 
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
+		GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics", 
+		BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
+	Content_Areas_Domains=list(ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
+		SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
+		MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", MATHEMATICS_I = "MATHEMATICS", MATHEMATICS_II = "MATHEMATICS",
+		SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), SCIENCE=c(3,4,5,6,7,8), SOCIAL_STUDIES=c(3,4,5,6,7,8)), 
+	Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
 	Achievement_Level_Labels=list(
 		"Does Not Meet"="Does Not Meet Expectations",
 		"Meets Expectations" = "Meets Expectations",
@@ -1494,7 +1504,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
 	ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
-	GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"), # can't use "7", "7" priors
+	GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
 	AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
 	COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors

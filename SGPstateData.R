@@ -1500,52 +1500,85 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
 SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
-	use.cohort.for.baseline.when.missing=TRUE, return.norm.group.scale.scores=TRUE, goodness.of.fit.minimum.n=1, sgp.projections.baseline.max.order=4)
-SGPstateData[["GA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
-	ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
-	GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
-	AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
-	COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
-	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	BIOLOGY=c("7", "8", "EOCT", "EOCT"),
-	PHYSICAL_SCIENCE=c("8", "EOCT", "EOCT"),
-	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-	US_HISTORY=c("8", "EOCT", "EOCT"),
-	ECONOMICS=c("EOCT", "EOCT"))
-SGPstateData[["GA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	READING=c("READING", "READING", "READING", "READING", "READING", "READING"),
-	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"), # "GRADE_9_LIT", "AMERICAN_LIT"
-	GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"), 
-	AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
-	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
-	SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	BIOLOGY= c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	PHYSICAL_SCIENCE=c("SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-	US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-	ECONOMICS=c("US_HISTORY", "ECONOMICS"))
-SGPstateData[["GA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	READING=as.integer(c(1,1,1,1,1)),
-	ELA = as.integer(c(1,1,1,1,1)),# c(1,1,1,1,1,0,1,2)
-	GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
-	AMERICAN_LIT=as.integer(c(0, 1, 2)),
-	MATHEMATICS=rep(1L, 6),
-	COORDINATE_ALGEBRA=rep(1L, 2),
-	SCIENCE=rep(1L, 7),
-	BIOLOGY=rep(1L, 3),
-	PHYSICAL_SCIENCE=rep(1L, 2),
-	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
-	US_HISTORY=as.integer(c(3,1)),
-	ECONOMICS=1L)
+	use.cohort.for.baseline.when.missing=TRUE,
+	return.norm.group.scale.scores=TRUE,
+	goodness.of.fit.minimum.n=1,
+	sgp.projections.baseline.max.order=4,
+	grade.projection.sequence = list(
+		READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
+		ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
+		GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
+		AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
+		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
+		COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
+		SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
+		BIOLOGY_END=c("8", "EOCT", "EOCT"),
+		PHYSICAL_SCIENCE_END=c("8", "EOCT", "EOCT"),
+		PHYSICAL_SCIENCE_BIO=c("7", "8", "EOCT", "EOCT"),
+		SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		US_HISTORY=c("8", "EOCT", "EOCT"),
+		ECONOMICS=c("EOCT", "EOCT")),
+	content_area.projection.sequence = list(
+		READING=c("READING", "READING", "READING", "READING", "READING", "READING"),
+		ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+		GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"), 
+		AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+		MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+		COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+		SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+		SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+		BIOLOGY_PHYSCI= c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+		BIOLOGY_END= c("SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+		PHYSICAL_SCIENCE_END=c("SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+		PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+		SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+		US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+		ECONOMICS=c("US_HISTORY", "ECONOMICS")),
+	year_lags.projection.sequence = list(
+		READING=rep(1L, 5),
+		ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
+		GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
+		AMERICAN_LIT=as.integer(c(0, 1, 2)),
+		MATHEMATICS=rep(1L, 6),
+		COORDINATE_ALGEBRA=rep(1L, 2),
+		SCIENCE_PHYSCI=rep(1L, 7),
+		SCIENCE_BIO=rep(1L, 7),
+		BIOLOGY_PHYSCI=rep(1L, 3),
+		BIOLOGY_END=rep(1L, 2),
+		PHYSICAL_SCIENCE_END=rep(1L, 2),
+		PHYSICAL_SCIENCE_BIO=rep(1L, 3),
+		SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
+		US_HISTORY=as.integer(c(3,1)),
+		ECONOMICS=1L),
+	max.forward.projection.sequence = list(
+		READING = 3,
+		ELA = 3,
+		GRADE_9_LIT = 3,
+		AMERICAN_LIT = 3,
+		MATHEMATICS=3,
+		COORDINATE_ALGEBRA=3,
+		SCIENCE_BIO=3,
+		SCIENCE_PHYSCI=3,
+		BIOLOGY_PHYSCI=3,
+		BIOLOGY_END=3,
+		PHYSICAL_SCIENCE_BIO=3,
+		PHYSICAL_SCIENCE_END=3,
+		SOCIAL_STUDIES=3,
+		US_HISTORY=3,
+		ECONOMICS=3))
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
 #SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
 load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
+
+require(data.table)
+SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "BIOLOGY_END", "PHYSICAL_SCIENCE_END", "PHYSICAL_SCIENCE_BIO"), 
+	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 ### HAWAII
 
@@ -5132,8 +5165,9 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
 	max.order.for.percentile = 3,
-	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
+	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+	# sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]	
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
@@ -5174,7 +5208,7 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		Name="Colorado Department of Education",
 		Abbreviation="CDE",
 		URL="www.schoolview.org",
-		Contact="303-866-6600"),
+		Contact="303-866-6763"),
 	Scale_Change=list(READING="2013"),
 	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
 	Content_Areas="READING",
@@ -5203,28 +5237,34 @@ WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-fun
 require(png)
 CDE.img <- readPNG("Custom_ISR/WIDA_CO/CDE.png")
 
+# Report_Text_Img_ENGLISH <- readPNG("Custom_ISR/WIDA_CO/ACCESS_English_Text.png")
+# Report_Text_Img_SPANISH <- readPNG("Custom_ISR/WIDA_CO/ACCESS_Spanish_Text.png") 
+
 require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 	report.width=8.5,
 	report.height= 11,
 
 	Custom_ISR_Function = WIDA_CO_Custom_ISR_Function,
-	Report_Text = Report_Text,
-	Report_Text_SPANISH = Report_Text_SPANISH,
+	Report_Text_ENGLISH = Report_Text_ENGLISH, #
+	Report_Text_SPANISH = Report_Text_SPANISH, #
+	# Report_Text_ENGLISH = Report_Text_Img_ENGLISH, #
+	# Report_Text_SPANISH = Report_Text_Img_SPANISH, #
 	Report_Logo = CDE.img,
 	Grid_Objects = list(
-		report.vp = viewport(layout = grid.layout(13, 8, widths = unit(c(0.55, 0.1, 1.1, 0.85, 1.25, 1.0, 3.3, 0.35), rep("inches", 8)), 
-			heights = unit(c(0.2, 0.3, 0.15, 0.45, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+		report.vp = viewport(layout = grid.layout(13, 8, widths = unit(c(0.55, 0.1, 1.1, 1.25, 1.1, 0.5, 3.3, 0.35), rep("inches", 8)), 
+			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
 
-		top.student.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:4),
-		top.student.id.vp = viewport(layout.pos.row=2, layout.pos.col=5),
+		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
+		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
+		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
 		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7),
 		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
 		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
 		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
 		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
-		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:4),
-		report.school.name.vp = viewport(layout.pos.row=10, layout.pos.col=5:7),
+		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
+		# report.school.name.vp = viewport(layout.pos.row=10, layout.pos.col=5:7),
 		
 		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
 		
@@ -5238,21 +5278,6 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 
 SGPstateData[["WIDA_CO_SPAN"]] <- SGPstateData[["WIDA_CO"]]
 SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", "Común", "Alto")
-
-SGPstateData[["WIDA_CO_SPAN"]][["Assessment_Program_Information"]] <-
-	list(
-	Assessment_Name="WIDA ACCESS",
-	Assessment_Abbreviation="ACCESS",
-	Organization=list(
-		Name="El Departamento de Educación de Colorado",
-		Abbreviation="CDE",
-		URL="www.schoolview.org",
-		Contact="303-866-6600"),
-	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
-	Content_Areas="READING",
-	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Test_Season="Spring")
 
 SGPstateData[["WIDA_CO_SPAN"]][["Student_Report_Information"]] <- 
 	list(

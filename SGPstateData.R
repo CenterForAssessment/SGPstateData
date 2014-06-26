@@ -3892,6 +3892,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
 				return.percentile.trajectory.values=TRUE,
+				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

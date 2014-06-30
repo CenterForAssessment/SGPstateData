@@ -22,7 +22,7 @@ We hope that this report will help you understand your child's language developm
 your child's school and teachers, to discuss questions such as:
       *  What steps can we take since my son's growth wasn't good enough to reach English Language Proficiency?
       *  Is my daughter's academic growth enough to move her to \"bridging\" level next year?
-      *  What will it take for my son to move up to the \"Reaching\" level next year?
+      *  What will it take for my son to move up to the \"reaching\" level next year?
 
 For more information about the Colorado growth model visit: www.schoolview.org."
 

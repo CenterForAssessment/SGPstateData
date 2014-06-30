@@ -6,7 +6,7 @@ make.custom.isr <- function() {
 		for (vp in seq_along(content_areas)) {
 			tmp_student_data <- as.data.frame(tmp_grade_data[ID==n & CONTENT_AREA==content_areas[vp]])
 			if (tmp_student_data[[paste("ACHIEVEMENT_LEVEL", last.year, sep=".")]] == "L6") {
-				print(paste(tmp_student_data$GRADE.2014, tmp_student_data$LAST_NAME.2014))
+				# print(paste(tmp_student_data$GRADE.2014, tmp_student_data$LAST_NAME.2014)) # test - identify L6 students
 				tmp_student_data[, grep("PROJ_YEAR", names(tmp_student_data))] <- NA
 			}
 			pushViewport(eval(parse(text=paste("custom.isr$Grid_Objects$content_area_", vp, ".vp", sep=""))))

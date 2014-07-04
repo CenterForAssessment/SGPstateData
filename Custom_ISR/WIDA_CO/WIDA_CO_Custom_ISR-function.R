@@ -5,6 +5,10 @@ make.custom.isr <- function() {
 		##  Push/pop content area report blocks
 		for (vp in seq_along(content_areas)) {
 			tmp_student_data <- as.data.frame(tmp_grade_data[ID==n & CONTENT_AREA==content_areas[vp]])
+			if (tmp_student_data[[paste("ACHIEVEMENT_LEVEL", last.year, sep=".")]] == "L6") {
+				# print(paste(tmp_student_data$GRADE.2014, tmp_student_data$LAST_NAME.2014)) # test - identify L6 students
+				tmp_student_data[, grep("PROJ_YEAR", names(tmp_student_data))] <- NA
+			}
 			pushViewport(eval(parse(text=paste("custom.isr$Grid_Objects$content_area_", vp, ".vp", sep=""))))
 			studentGrowthPlot(
 				Scale_Scores=as.numeric(subset(tmp_student_data, select=paste("SCALE_SCORE", rev(sgPlot.years), sep="."))),
@@ -67,22 +71,29 @@ make.custom.isr <- function() {
 				Cutscores=Cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO", SGP_Targets=sgPlot.sgp.targets,
-					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Font_Size="Small_1")))
+					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Font_Size="Small_1")))
+					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Font_Size=list(
+						title.ca.size = 1.6, legend.size = 0.6, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.6))))
 	
 			popViewport()
 		} ## END loop over content_areas
 
 
 		## Top Border/Banner
+		pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
+		grid.rect(gp=gpar(fill="#006666", col="#006666"))
+		grid.text(x=0.05, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.2), just="left", default.units="native")
+		popViewport()
+
 		pushViewport(custom.isr$Grid_Objects$top.student.name.vp)
 		grid.rect(gp=gpar(fill="#8FC9C1", col="#8FC9C1"))
-		grid.text(x=0.975, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1), just="right", default.units="native")
+		grid.text(x=0.075, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.1), just="left", default.units="native")
 		popViewport()
 		pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
 		grid.rect(gp=gpar(fill="#339933", col="#339933"))
-		grid.text(x=0.125, y=0.5, paste("(", student_number, ")", sep=""),
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1), just="left", default.units="native")
+		grid.text(x=0.09, y=0.5, paste("(", student_number, ")", sep=""),
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.1), just="left", default.units="native")
 		popViewport()
 
 		pushViewport(custom.isr$Grid_Objects$top.border.cde.vp)
@@ -92,7 +103,7 @@ make.custom.isr <- function() {
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("English Language Proficiency and Student Growth Report",
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.25), just="top", default.units="native")
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
 		popViewport()
 		
 		##  Color block 1		
@@ -101,8 +112,11 @@ make.custom.isr <- function() {
 		popViewport()
 
 		##  Report Text
+		# pushViewport(custom.isr$Grid_Objects$report_text.vp)
+		# grid.raster(custom.isr$Report_Text_ENGLISH)
+		# popViewport()
 		pushViewport(custom.isr$Grid_Objects$report_text.vp)
-		grid.text(x=0.025, y=0.5, custom.isr$Report_Text, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
+		grid.text(x=0.025, y=0.5, custom.isr$Report_Text_ENGLISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
 		popViewport()
 
 		##  Color block 2		
@@ -112,13 +126,13 @@ make.custom.isr <- function() {
 
 		pushViewport(custom.isr$Grid_Objects$report.student.name.vp)
 		grid.rect(gp=gpar(fill="#8FC9C1", col="#8FC9C1"))
-		grid.text(x= 0.125, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
+		grid.text(x= 0.05, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.15), just="left", default.units="native")
 		popViewport()
-		pushViewport(custom.isr$Grid_Objects$report.school.name.vp)
-		grid.rect(gp=gpar(fill="#339933", col="#339933"))
-		grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
-		popViewport()
+		# pushViewport(custom.isr$Grid_Objects$report.school.name.vp)
+		# grid.rect(gp=gpar(fill="#339933", col="#339933"))
+		# grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
+		# popViewport()
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
@@ -149,6 +163,9 @@ make.custom.isr <- function() {
 		##  Push/pop content area report blocks
 		for (vp in seq_along(content_areas)) {
 			tmp_student_data <- as.data.frame(tmp_grade_data[ID==n & CONTENT_AREA==content_areas[vp]])
+			if (tmp_student_data[[paste("ACHIEVEMENT_LEVEL", last.year, sep=".")]] == "L6") {
+				tmp_student_data[, grep("PROJ_YEAR", names(tmp_student_data))] <- NA
+			}
 			pushViewport(eval(parse(text=paste("custom.isr$Grid_Objects$content_area_", vp, ".vp", sep=""))))
 			studentGrowthPlot(
 				Scale_Scores=as.numeric(subset(tmp_student_data, select=paste("SCALE_SCORE", rev(sgPlot.years), sep="."))),
@@ -211,22 +228,29 @@ make.custom.isr <- function() {
 				Cutscores=Cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO_SPAN", SGP_Targets=sgPlot.sgp.targets,
-					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size="Small_1")))
+					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size="Small_1")))
+					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size=list(
+						title.ca.size = 1.6, legend.size = 0.6, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.5))))
 	
 			popViewport()
 		} ## END loop over content_areas
 
 
 		## Top Border/Banner
+		pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
+		grid.rect(gp=gpar(fill="#006666", col="#006666"))
+		grid.text(x= 0.05, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.2), just="left", default.units="native")
+		popViewport()
+
 		pushViewport(custom.isr$Grid_Objects$top.student.name.vp)
 		grid.rect(gp=gpar(fill="#8FC9C1", col="#8FC9C1"))
-		grid.text(x=0.975, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1), just="right", default.units="native")
+		grid.text(x= 0.075, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.1), just="left", default.units="native")
 		popViewport()
 		pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
 		grid.rect(gp=gpar(fill="#339933", col="#339933"))
-		grid.text(x=0.125, y=0.5, paste("(", student_number, ")", sep=""),
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1), just="left", default.units="native")
+		grid.text(x= 0.09, y=0.5, paste("(", student_number, ")", sep=""),
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.1), just="left", default.units="native")
 		popViewport()
 
 		pushViewport(custom.isr$Grid_Objects$top.border.cde.vp)
@@ -236,7 +260,7 @@ make.custom.isr <- function() {
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.25), just="top", default.units="native")
+			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
 		popViewport()
 	
 		##  Color block 1		
@@ -245,9 +269,12 @@ make.custom.isr <- function() {
 		popViewport()
 
 		##  Report Text
+		# pushViewport(custom.isr$Grid_Objects$report_text.vp)
+		# grid.raster(custom.isr$Report_Text_SPANISH)
+		# popViewport()
 		pushViewport(custom.isr$Grid_Objects$report_text.vp)
 		# grid.draw(splitTextGrob(custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.75), hjust="top", vjust="left", default.units="native"))
-		grid.text(x=0.025, y=0.5, custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
+		grid.text(x=0.015, y=0.5, custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
 		popViewport()
 
 		##  Color block 2		
@@ -257,13 +284,13 @@ make.custom.isr <- function() {
 
 		pushViewport(custom.isr$Grid_Objects$report.student.name.vp)
 		grid.rect(gp=gpar(fill="#8FC9C1", col="#8FC9C1"))
-		grid.text(x= 0.125, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
+		grid.text(x= 0.05, y=0.5, paste(FIRST_NAME, " ", LAST_NAME, sep=""),
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
 		popViewport()
-		pushViewport(custom.isr$Grid_Objects$report.school.name.vp)
-		grid.rect(gp=gpar(fill="#339933", col="#339933"))
-		grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
-		popViewport()
+		# pushViewport(custom.isr$Grid_Objects$report.school.name.vp)
+		# grid.rect(gp=gpar(fill="#339933", col="#339933"))
+		# grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
+		# popViewport()
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
@@ -273,7 +300,7 @@ make.custom.isr <- function() {
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, "Para obtener más información visite www.schoolview.org o llamar El Departamento de Educación de Colorado (CDE): 303-866-6600",
+		grid.text(x=0.02, y=0.65, "Para obtener más información visite www.schoolview.org o llamar El Departamento de Educación de Colorado (CDE): 303-866-6763",
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		copyright.text <- "Producido por El Departamento de Educación de Colorado y El Center for Assessment, Inc."
 		grid.text(x=0.02, y=0.30, copyright.text, 

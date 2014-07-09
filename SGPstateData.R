@@ -5213,11 +5213,11 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 	Scale_Change=list(READING="2013"),
 	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
 	Content_Areas="READING",
-	Grades_Tested= c("K", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")
 
 SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
-	Grades_Reported=list(READING=c("K", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(READING = "Overall"),
 	Earliest_Year_Reported=list(READING = '2013'),
@@ -5282,7 +5282,7 @@ SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", "Común", "A
 
 SGPstateData[["WIDA_CO_SPAN"]][["Student_Report_Information"]] <- 
 	list(
-	Grades_Reported=list(READING=c("K", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(READING = "Calificación General"),
 	Earliest_Year_Reported=list(READING = '2013'),

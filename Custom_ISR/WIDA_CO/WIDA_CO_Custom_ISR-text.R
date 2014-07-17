@@ -13,11 +13,6 @@ other students with similar previous ACCESS for ELLs scores.  These student grow
 Percentiles are not percent correct scores, and do not reflect students' achievement levels.  Even students with low test scores can get high student growth
 percentiles, if they make substantial progress since the previous year's assessment, compared to their peers.
 
-Additionally, data regarding a student's adequate growth percentile is included. This number (also on a scale of 1 to 99) tells how much growth is needed for 
-the student to reach goals for English language proficiency. If the student's growth percentile is equal to or greater than their adequate growth percentile, their 
-growth is on track for proficiency in English. If the adequate growth percentile is greater than the student's growth percentile, the student may be off track for
-proficiency in English.
-
 We hope that this report will help you understand your child's language development. This academic growth report can form the basis of conversations with
 your child's school and teachers, to discuss questions such as:
       *  What steps can we take since my son's growth wasn't good enough to reach English Language Proficiency?
@@ -44,11 +39,6 @@ con el de estudiantes en los años anteriores que alcanzaron similar puntuación
 estudiantil oscilan entre 1 (bajo crecimiento) y 99 (alto crecimiento). Los porcentajes no son porcentajes de calificaciones, y no reflejan los niveles de 
 logro de los estudiantes. Aún los estudiantes con bajas calificaciones en sus exámenes pueden obtener altos porcentajes de crecimiento estudiantil, si 
 comparados con sus compañeros, han progresado sustancialmente en su dominio del idioma inglés desde la evaluación del año anterior. 
-
-Además, incluye datos acerca del porcentaje adecuado de crecimiento del estudiante. Este número (también en una escala del 1 al 99) dice cuánto crecimiento 
-es necesario para que el estudiante alcance su objetivo de dominar el idioma inglés. Si el porcentaje de crecimiento del estudiante es igual o mayor que su
-porcentaje adecuado de crecimiento, su crecimiento está en camino de alcanzar su competencia en inglés. Si el porcentaje adecuado de crecimiento es mayor
-que el porcentaje de crecimiento del estudiante, puede ser que el estudiante esté fuera del camino adecuado que lo llevará a alcanzar competencia en inglés.
 
 Esperamos que este reporte le ayude a entender mejor el desarrollo de su hijo en el idioma Inglés. Este reporte de crecimiento académico le podría servir 
 para discutir con los maestros de su hijo preguntas como las siguientes:

@@ -5282,10 +5282,10 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 
 #  Spanish ISR Version Info:
 
-SGPstateData[["WIDA_CO_SPAN"]] <- SGPstateData[["WIDA_CO"]]
-SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", " Típico", "Alto")
+SGPstateData[["WIDA_CO_SPANISH"]] <- SGPstateData[["WIDA_CO"]]
+SGPstateData[["WIDA_CO_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "Típico", "Alto")
 
-SGPstateData[["WIDA_CO_SPAN"]][["Student_Report_Information"]] <- 
+SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- 
 	list(
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale="Yes",

@@ -116,7 +116,7 @@ make.custom.isr <- function() {
 		# grid.raster(custom.isr$Report_Text_ENGLISH)
 		# popViewport()
 		pushViewport(custom.isr$Grid_Objects$report_text.vp)
-		grid.text(x=0.025, y=0.5, custom.isr$Report_Text_ENGLISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
+		grid.text(x=0.025, y=0.5, custom.isr$Report_Text_ENGLISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.825), just="left", default.units="native")
 		popViewport()
 
 		##  Color block 2		
@@ -274,7 +274,7 @@ make.custom.isr <- function() {
 		# popViewport()
 		pushViewport(custom.isr$Grid_Objects$report_text.vp)
 		# grid.draw(splitTextGrob(custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.75), hjust="top", vjust="left", default.units="native"))
-		grid.text(x=0.015, y=0.5, custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.775), just="left", default.units="native")
+		grid.text(x=0.015, y=0.5, custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.825), just="left", default.units="native")
 		popViewport()
 
 		##  Color block 2		
@@ -302,7 +302,7 @@ make.custom.isr <- function() {
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
 		grid.text(x=0.02, y=0.65, "Para obtener más información visite www.schoolview.org o llamar El Departamento de Educación de Colorado (CDE): 303-866-6763",
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- "Producido por El Departamento de Educación de Colorado y El Center for Assessment, Inc."
+		copyright.text <- "Producido por El Departamento de Educación de Colorado y El Centro de Evaluación, Inc."
 		grid.text(x=0.02, y=0.30, copyright.text, 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()

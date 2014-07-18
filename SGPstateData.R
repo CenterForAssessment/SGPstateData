@@ -3979,9 +3979,14 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT_WSS=1))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices_2013_2014
-
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
+)
 
 ### RHODE ISLAND
 
@@ -5253,13 +5258,13 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 	# Report_Text_SPANISH = Report_Text_Img_SPANISH, #
 	Report_Logo = CDE.img,
 	Grid_Objects = list(
-		report.vp = viewport(layout = grid.layout(13, 8, widths = unit(c(0.55, 0.1, 1.1, 1.25, 1.1, 0.5, 3.3, 0.35), rep("inches", 8)), 
+		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)), 
 			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
 
 		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
 		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
 		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
-		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7),
+		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
 		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
 		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
 		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
@@ -5278,7 +5283,7 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 #  Spanish ISR Version Info:
 
 SGPstateData[["WIDA_CO_SPAN"]] <- SGPstateData[["WIDA_CO"]]
-SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", "Común", "Alto")
+SGPstateData[["WIDA_CO_SPAN"]][["Growth"]][["Levels"]] <- c("Bajo", " Típico", "Alto")
 
 SGPstateData[["WIDA_CO_SPAN"]][["Student_Report_Information"]] <- 
 	list(

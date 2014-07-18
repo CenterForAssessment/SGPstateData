@@ -3979,9 +3979,14 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					EARLY_LIT_WSS=1))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- RLI_Baseline_Matrices_2013_2014
-
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
+SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
+)
 
 ### RHODE ISLAND
 

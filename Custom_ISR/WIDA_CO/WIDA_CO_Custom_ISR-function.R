@@ -227,7 +227,7 @@ make.custom.isr <- function() {
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT_TRANSFORMED", sep="_")]]))),
 				Cutscores=Cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
-				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO_SPAN", SGP_Targets=sgPlot.sgp.targets,
+				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO_SPANISH", SGP_Targets=sgPlot.sgp.targets,
 					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size="Small_1")))
 					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Zero_to_K =TRUE, Font_Size=list(
 						title.ca.size = 1.6, legend.size = 0.6, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.5))))

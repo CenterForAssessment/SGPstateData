@@ -65,7 +65,7 @@ function(year,
 	} ### END EARLY_LIT/SPRING
 
 
-	if (content_area=="EARLY_LIT" & testing.window=="SPRING_SPRING") {### EARLY_LIT/SPRING_SPRING
+	if (content_area=="EARLY_LIT" & testing.window=="EARLY_SPRING") {### EARLY_LIT/EARLY_SPRING
 		tmp.list <- list(
 			EARLY_LIT.WSS.config=list(
 				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
@@ -77,7 +77,7 @@ function(year,
 				sgp.projection.sequence="EARLY_LIT_WSS",
 				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
-	} ### END EARLY_LIT/SPRING_SPRING
+	} ### END EARLY_LIT/EARLY_SPRING
 
 
 	###
@@ -141,7 +141,7 @@ function(year,
 	} ### END MATHEMATICS/SPRING
 
 
-	if (content_area=="MATHEMATICS" & testing.window=="SPRING_SPRING") {### MATHEMATICS/SPRING_SPRING
+	if (content_area=="MATHEMATICS" & testing.window=="EARLY_SPRING") {### MATHEMATICS/EARLY_SPRING
 		tmp.list <- list(
 			MATHEMATICS.WSS.config=list(
 				sgp.content.areas=c('MATHEMATICS', 'MATHEMATICS', 'MATHEMATICS'),
@@ -153,7 +153,7 @@ function(year,
 				sgp.projection.sequence="MATHEMATICS_WSS",
 				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
-	} ### END MATHEMATICS/SPRING_SPRING
+	} ### END MATHEMATICS/EARLY_SPRING
 
 
 	###
@@ -217,7 +217,7 @@ function(year,
 	} ### END READING/SPRING
 
 
-	if (content_area=="READING" & testing.window=="SPRING_SPRING") {### READING/SPRING_SPRING
+	if (content_area=="READING" & testing.window=="EARLY_SPRING") {### READING/EARLY_SPRING
 		tmp.list <- list(
 			READING.WSS.config=list(
 				sgp.content.areas=c('READING', 'READING', 'READING'),
@@ -229,5 +229,5 @@ function(year,
 				sgp.projection.sequence="READING_WSS",
 				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
-	} ### END READING/SPRING_SPRING
+	} ### END READING/EARLY_SPRING
 } ### END configSGP

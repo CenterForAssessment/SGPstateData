@@ -3860,6 +3860,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 
 ### RENAISSANCE LEARNING 
 
+RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
@@ -3937,7 +3938,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				return.percentile.trajectory.values=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
-				sgp.config.function=source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R'),
+				sgp.config.function=RLI_SGP_Config_Function,
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

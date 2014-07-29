@@ -1,5 +1,5 @@
-make.custom.isr <- function() {
-
+`make.custom.isr` <- 
+function() {
 		##  Push full report layout viewport
 		pushViewport(custom.isr$Grid_Objects$report.vp)
 		##  Push/pop content area report blocks

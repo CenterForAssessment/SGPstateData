@@ -3860,6 +3860,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 
 ### RENAISSANCE LEARNING 
 
+RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
@@ -3937,6 +3938,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				return.percentile.trajectory.values=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.config.function=RLI_SGP_Config_Function,
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
@@ -3980,12 +3982,13 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2013_2014.4[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2013_2014.4[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2013_2014.4[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
 )
 
 ### RHODE ISLAND

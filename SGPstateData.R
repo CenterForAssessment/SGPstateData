@@ -3939,6 +3939,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_SGP_Config_Function,
+				max.n.for.coefficient.matrices=200000,
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

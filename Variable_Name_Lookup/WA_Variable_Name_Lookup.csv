@@ -10,7 +10,8 @@ AchievementLevel,ACHIEVEMENT_LEVEL,measure,Achievement level,
 Gender,GENDER,demographic,Student gender,TRUE
 EthRace,ETHNICITY,demographic,Student ethnicity,TRUE
 FRL,FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUE
-CurrentEll,ELL_STATUS,demographic,Student ELL status,TRUE
+CurrentEll,ELL_STATUS,demographic,Student Current ELL status,TRUE
+ELL_Category,ELL_CATEGORY,demographic,Student ELL status,TRUE
 SpecEd,IEP_STATUS,demographic,Student IEP status,TRUE
 Gifted,GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUE
 Migrant,MIGRANT,demographic,Student Migrant Status,TRUE

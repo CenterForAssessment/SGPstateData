@@ -1,1 +1,40 @@
-names.provided,names.sgp,names.type,names.info,names.outputSSID,ID,individual,Unique student identifier,StudentLastName,LAST_NAME,label,Student last name,StudentFirstName,FIRST_NAME,label,Student first name,Subject,CONTENT_AREA,content,Content area associated with record,SchoolYear,YEAR,time,Year associated with record,ReportingGrade,GRADE,institution_level,Grade/Test level associated with record,ScaleScore,SCALE_SCORE,measure,Scale score,LevelScore,ACHIEVEMENT_LEVEL,measure,Achievement level,Gender,GENDER,demographic,Student gender,TRUEEthRace,ETHNICITY,demographic,Student ethnicity,TRUEFRL,FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUEBilingual,ELL_STATUS,demographic,Student ELL status,TRUESpecEd,IEP_STATUS,demographic,Student IEP status,TRUEGifted,GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUEMigrant,MIGRANT,demographic,Student Migrant Status,TRUEHomeless,HOMELESS,demographic,Student Homeless Status,TRUEHomeBased,HomeBased,demographic,Home school indicator,TRUEPrivate,Private,demographic,Private school student indicator,TRUEF1Visa,F1VISA,demographic,Student F1 Visa Status,TRUEFosterCare,FOSTER_CARE,demographic,Student Foster Car Status,TRUEPlan_504,PLAN_504,demographic,Student Status,TRUELAPReading,LAP_READING,demographic,Student Status,TRUELAPLanguageArts,LAP_LANGARTS,demographic,Student Status,TRUELAPMath,LAP_MATH,demographic,Student Status,TRUETitle1TASReading,T1_TAS_READING,demographic,Student Status,TRUETitle1TASLanguangeArts,T1_TAS_LANGARTS,demographic,Student Status,TRUETitle1TASMath,T1_TAS_MATH,demographic,Student Status,TRUENCLBSupplementalServices,NCLB_SUPPLEMENTAL_SERVICES,demographic,Student Status,TRUETwentyFirstCentury,TWENTY_FIRST_CENTURY,demographic,Student Status,TRUEMetStandard,MetStandard,demographic,Student Met Standard status,TRUESchoolCode,SCHOOL_NUMBER,institution,School number,SchoolName,SCHOOL_NAME,label,School name,SchoolType,SchoolType,institution_type,School Type flag,DistrictCode,DISTRICT_NUMBER,institution,District number,DistrictName,DISTRICT_NAME,label,School name,SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,ValidCase,VALID_CASE,individual_inclusion,Valid case indicator,
+names.provided,names.sgp,names.type,names.info,names.output
+SSID,ID,individual,Unique student identifier,
+StudentLastName,LAST_NAME,label,Student last name,
+StudentFirstName,FIRST_NAME,label,Student first name,
+Subject,CONTENT_AREA,content,Content area associated with record,
+SchoolYear,YEAR,time,Year associated with record,
+ReportingGrade,GRADE,institution_level,Grade/Test level associated with record,
+ScaleScore,SCALE_SCORE,measure,Scale score,
+AchievementLevel,ACHIEVEMENT_LEVEL,measure,Achievement level,
+Gender,GENDER,demographic,Student gender,TRUE
+EthRace,ETHNICITY,demographic,Student ethnicity,TRUE
+FRL,FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUE
+CurrentEll,ELL_STATUS,demographic,Student ELL status,TRUE
+SpecEd,IEP_STATUS,demographic,Student IEP status,TRUE
+Gifted,GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUE
+Migrant,MIGRANT,demographic,Student Migrant Status,TRUE
+Homeless,HOMELESS,demographic,Student Homeless Status,TRUE
+HomeBased,HomeBased,demographic,Home school indicator,TRUE
+Private,Private,demographic,Private school student indicator,TRUE
+F1Visa,F1VISA,demographic,Student F1 Visa Status,TRUE
+FosterCare,FOSTER_CARE,demographic,Student Foster Car Status,TRUE
+Plan_504,PLAN_504,demographic,Student Status,TRUE
+LAPReading,LAP_READING,demographic,Student Status,TRUE
+LAPLanguageArts,LAP_LANGARTS,demographic,Student Status,TRUE
+LAPMath,LAP_MATH,demographic,Student Status,TRUE
+Title1TASReading,T1_TAS_READING,demographic,Student Status,TRUE
+Title1TASLanguangeArts,T1_TAS_LANGARTS,demographic,Student Status,TRUE
+Title1TASMath,T1_TAS_MATH,demographic,Student Status,TRUE
+NCLBSupplementalServices,NCLB_SUPPLEMENTAL_SERVICES,demographic,Student Status,TRUE
+TwentyFirstCentury,TWENTY_FIRST_CENTURY,demographic,Student Status,TRUE
+MetStandard,MetStandard,demographic,Student Met Standard status,TRUE
+SchoolCode,SCHOOL_NUMBER,institution,School number,
+SchoolName,SCHOOL_NAME,label,School name,
+SchoolType,SchoolType,institution_type,School Type flag,
+DistrictCode,DISTRICT_NUMBER,institution,District number,
+DistrictName,DISTRICT_NAME,label,School name,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+ValidCase,VALID_CASE,individual_inclusion,Valid case indicator,

@@ -673,6 +673,8 @@ SGPstateData[["CA"]][["Student_Report_Information"]] <-
             "Proficient"="Proficient",
             "Advanced"="Advanced"))
 
+SGPstateData[["CA"]][["SGP_Configuration"]] <- list(goodness.of.fit.minimum.n=25)
+
 SGPstateData[["CA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/TCRP_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["CA"]][["SGP_Norm_Group_Preference"]] <- TCRP_SGP_Norm_Group_Preference

@@ -1749,7 +1749,19 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"))
 
-SGPstateData[["HI"]][["SGP_Configuration"]] <- list(output.groups=c("COMPLEX", "SCHOOL"))
+SGPstateData[["HI"]][["SGP_Configuration"]] <- list(output.groups=c("COMPLEX", "SCHOOL"),
+						    outputSGP.translate.names=FALSE,
+						    output.column.order=list(SGP_Data_LONG=
+									c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
+									  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER", 
+									  "DISTRICT_NAME", "COMPLEX_NUMBER", "COMPLEX_NAME", "COMPLEX_AREA_NUMBER", "COMPLEX_AREA_NAME", "ETHNICITY_DOE",
+									  "ETHNICITY_FED5", "ETHNICITY_FED7", "DISADVANTAGED_STATUS", "ELL_STATUS", "SPECIAL_EDUCATION_STATUS", 
+									  "GENDER", "TEST_ADMINISTRATION", "MIGRANT_STATUS", "HIGH_NEED_STATUS", "FULL_SCHOOL_YEAR_STATUS", "SCHOOL_ENROLLMENT_STATUS",
+									  "DISTRICT_ENROLLMENT_STATUS", "COMPLEX_ENROLLMENT_STATUS", "COMPLEX_AREA_ENROLLMENT_STATUS", "STATE_ENROLLMENT_STATUS",
+									  "SGP", "SGP_LEVEL", "SCALE_SCORE_PRIOR", "SGP_BASELINE", "SGP_LEVEL_BASELINE", "ACHIEVEMENT_LEVEL_PRIOR", 
+									  "CATCH_UP_KEEP_UP_STATUS", "MOVE_UP_STAY_UP_STATUS", "ETHNICITY", "HIGH_NEEDS_STATUS_DEMOGRAPHIC", 
+									  "SCALE_SCORE_PRIOR_STANDARDIZED", "SGP_NORM_GROUP", "SGP_NORM_GROUP_BASELINE", "SGP_TARGET_3_YEAR",
+									  "SGP_TARGET_MOVE_UP_STAY_UP_3_YEAR", "ELL_STATUS_MULTILEVEL")))
 
 load("Baseline_Coefficient_Matrices/HI_Baseline_Matrices.Rdata")
 SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- HI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

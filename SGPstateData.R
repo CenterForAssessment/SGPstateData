@@ -4861,14 +4861,14 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <-
 
 SGPstateData[['WA']][['SGP_Configuration']] <- list(
 						max.sgp.target.years.forward=2,
-						gPlot.sgp.targets.timeframe=2)
+						gPlot.sgp.targets.timeframe=2,
+						sgPlot.use.student.school.name=TRUE)
 
 load("Baseline_Coefficient_Matrices/WA_Baseline_Matrices.Rdata")
 SGPstateData[["WA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WA_Baseline_Matrices
 SGPstateData[["WA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/WA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["WA"]][["SGP_Norm_Group_Preference"]] <- WA_SGP_Norm_Group_Preference
-
 
 ### WEST VIRGINIA
 

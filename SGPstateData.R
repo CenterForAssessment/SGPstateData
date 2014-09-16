@@ -5361,6 +5361,48 @@ load("Knots_Boundaries/WIDA_MI_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MI_Knots_Boundaries
 SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013_2014"))
 
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(237, 263, 288, 307, 329),
+		GRADE_1=c(249, 277, 303, 321, 344),
+		GRADE_2=c(261, 290, 316, 335, 357),
+		GRADE_3=c(272, 303, 328, 347, 369),
+		GRADE_4=c(283, 314, 340, 359, 380),
+		GRADE_5=c(293, 324, 350, 369, 390),
+		GRADE_6=c(302, 334, 359, 379, 399),
+		GRADE_7=c(311, 342, 368, 386, 407),
+		GRADE_8=c(319, 350, 375, 394, 414),
+		GRADE_9=c(327, 357, 382, 400, 419),
+		GRADE_10=c(333, 363, 387, 405, 424),
+		GRADE_11=c(340, 368, 391, 409, 427),
+		GRADE_12=c(346, 372, 395, 413, 430)))
+
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="WIDA ACCESS",
+	Assessment_Abbreviation="ACCESS",
+	Organization=list(
+		Name="Michigan Department of Education",
+		Abbreviation="MDE",
+		URL="www.michigan.gov/mde",
+		Contact="517-373-3324"),
+	Scale_Change=list(READING="2013_2014"),
+	Assessment_Years=c("2011_2012", "2012_2013", "2013_2014"),
+	Content_Areas="READING",
+	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Test_Season="Spring")
+
 
 ### WYOMING
 

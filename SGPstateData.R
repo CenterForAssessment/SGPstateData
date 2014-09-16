@@ -5355,6 +5355,13 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knot
 SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013"))
 
 
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
+
+load("Knots_Boundaries/WIDA_MI_Knots_Boundaries.Rdata")
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MI_Knots_Boundaries
+SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013_2014"))
+
+
 ### WYOMING
 
 SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <- 

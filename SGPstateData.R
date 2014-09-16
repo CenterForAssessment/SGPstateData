@@ -5363,6 +5363,20 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(Scale_Chan
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
+		GRADE_0=c(493, 517, 531, 552),
+		GRADE_1=c(519, 542, 575, 595),
+		GRADE_2=c(527, 556, 595, 617),
+		GRADE_3=c(531, 572, 620, 639),
+		GRADE_4=c(536, 579, 626, 647),
+		GRADE_5=c(545, 585, 633, 653),
+		GRADE_6=c(554, 598, 635, 657),
+		GRADE_7=c(557, 607, 641, 662),
+		GRADE_8=c(564, 609, 648, 671),
+		GRADE_9=c(586, 620, 658, 681),
+		GRADE_10=c(588, 622, 662, 681),
+		GRADE_11=c(590, 632, 665, 685),
+		GRADE_12=c(593, 639, 673, 693)),
+	READING.2013_2014=list(
 		GRADE_0=c(237, 263, 288, 307, 329),
 		GRADE_1=c(249, 277, 303, 321, 344),
 		GRADE_2=c(261, 290, 316, 335, 357),

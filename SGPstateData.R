@@ -4031,10 +4031,148 @@ load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2013_2014.4[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2013_2014.4[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2013_2014.4[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']])
 )
+
+
+### RENAISSANCE LEARNING (UNITED KINGDOM)
+
+RLI_UK_SGP_Config_Function <- source('Custom_SGP_Config/RLI_UK/RLI_UK_Custom_SGP_Config-function.R')
+load("Knots_Boundaries/RLI_UK_Knots_Boundaries.Rdata")
+SGPstateData[["RLI_UK"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_UK_Knots_Boundaries
+
+SGPstateData[["RLI_UK"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["RLI_UK"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+
+SGPstateData[["RLI_UK"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["RLI_UK"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Renaissance Learning Incorporated",
+	Assessment_Abbreviation="RLI_UK",
+	Organization=list(
+		Name="Renaissance Learning Incorporated",
+		Abbreviation="RLI_UK",
+		URL="www.renaissance.com",
+		Contact="(800) 338-4204"),
+	Content_Areas=c("Mathematics", "Reading", "Early Lit"),
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Test_Vendor="Renaissance Learning Incorporated",
+	Test_Season="Fall/Winter/Spring")
+
+SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <- 
+	list(
+	Vertical_Scale="Yes",
+	Projection_Fan_Limits=c(5, 95),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LIT="Early Lit"),
+	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LIT=c(0,1,2,3)), 
+	Achievement_Level_Labels=list(
+		"Unsatisfactory"="Unsatisfactory", 
+		"Part Proficient"="Partially Proficient", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))		
+
+SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
+				print.other.gp=TRUE,
+				max.sgp.target.years.forward=6,
+				sgp.projections.max.forward.progression.years=6,
+				sgp.projections.projection.unit="YEAR",
+				sgp.projections.projection.unit.label="TIME",
+				return.prior.scale.score.standardized=TRUE,
+				return.percentile.trajectory.values=TRUE,
+				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
+				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.config.function=RLI_UK_SGP_Config_Function,
+				max.n.for.coefficient.matrices=200000,
+				grade.projection.sequence=list(
+					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					EARLY_LIT_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
+					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
+					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					EARLY_LIT_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
+				content_area.projection.sequence=list(
+					READING_FSF=rep("READING", length(1:12)*2),
+					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
+					EARLY_LIT_FSF=rep("EARLY_LIT", length(0:3)*2),
+					READING_FWS=rep("READING", length(1:12)*3),
+					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT_FWS=rep("EARLY_LIT", length(0:3)*3),
+					READING_WSS=rep("READING", length(1:12)*3),
+					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT_WSS=rep("EARLY_LIT", length(0:3)*3)),
+				year_lags.projection.sequence=list(
+					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
+					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
+					EARLY_LIT_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
+					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
+					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
+				max.forward.projection.sequence=list(
+					READING_FSF=6,
+					MATHEMATICS_FSF=6,
+					EARLY_LIT_FSF=6,
+					READING_FWS=9,
+					MATHEMATICS_FWS=9,
+					EARLY_LIT_FWS=9,
+					READING_WSS=1,
+					MATHEMATICS_WSS=1,
+					EARLY_LIT_WSS=1),
+				output.column.order=list(
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+					SGProjection=c('ID','STATE',
+						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_3_CURRENT','LEVEL_2_SGP_TARGET_TIME_3_CURRENT','LEVEL_3_SGP_TARGET_TIME_3_CURRENT','LEVEL_4_SGP_TARGET_TIME_3_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_4_CURRENT','LEVEL_2_SGP_TARGET_TIME_4_CURRENT','LEVEL_3_SGP_TARGET_TIME_4_CURRENT','LEVEL_4_SGP_TARGET_TIME_4_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_5_CURRENT','LEVEL_2_SGP_TARGET_TIME_5_CURRENT','LEVEL_3_SGP_TARGET_TIME_5_CURRENT','LEVEL_4_SGP_TARGET_TIME_5_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_6_CURRENT','LEVEL_2_SGP_TARGET_TIME_6_CURRENT','LEVEL_3_SGP_TARGET_TIME_6_CURRENT','LEVEL_4_SGP_TARGET_TIME_6_CURRENT',
+						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT',
+						'P1_PROJ_TIME_5_CURRENT','P1_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT',
+						'P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT','P5_PROJ_TIME_6_CURRENT',
+						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT',
+						'P35_PROJ_TIME_5_CURRENT','P35_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT',
+						'P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT','P50_PROJ_TIME_6_CURRENT',
+						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT',
+						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
+						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
+						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
+						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
+						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
+					SGProjection_Target=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_6_CURRENT',
+						'SGP_PROJECTION_GROUP','GROUP')))
+
+SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.2.Rdata")
+SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+	EARLY_LIT.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']])
+)
+
 
 ### RHODE ISLAND
 

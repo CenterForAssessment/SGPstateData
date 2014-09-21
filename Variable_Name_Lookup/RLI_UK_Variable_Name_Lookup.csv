@@ -1,0 +1,10 @@
+names.provided,names.sgp,names.type,names.info,names.output
+COUNTRY,COUNTRY,institution,Country abbreviation associted with test,
+STATE,STATE,institution,State abbreviation associted with test,
+VALID_CASE,VALID_CASE,individual inclusion,Valid case indicator,
+CONTENT_AREA,CONTENT_AREA,content,Content area (Mathematics or Reading),
+YEAR,YEAR,time,Year (testing year) associated with record,
+ID,ID,individual,Unique student identifer,
+GRADE,GRADE,institution_level,Grade level of test taken,
+SCALE_SCORE,SCALE_SCORE,measure,Student scale score,
+SEM,SEM,measure,standard error of measurement associated with student scale score,

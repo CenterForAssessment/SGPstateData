@@ -2609,7 +2609,87 @@ SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 
 SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-### Minnesota
+
+### MICHIGAN
+
+load("Knots_Boundaries/MI_Knots_Boundaries.Rdata")
+SGPstateData[["MI"]][["Achievement"]][["Knots_Boundaries"]] <- MI_Knots_Boundaries
+
+SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- 
+	list(
+	MATHEMATICS=list(
+		GRADE_3=c(322, 336, 371),
+		GRADE_4=c(423, 434, 470),
+		GRADE_5=c(516, 531, 584),
+		GRADE_6=c(614, 629, 675),
+		GRADE_7=c(714, 731, 776),
+		GRADE_8=c(809, 830, 865),
+		GRADE_EOCT=c(1093, 1116, 1138)),
+	READING=list(
+		GRADE_3=c(301, 324, 364),
+		GRADE_4=c(395, 419, 478),
+		GRADE_5=c(501, 521, 565),
+		GRADE_6=c(602, 619, 653),
+		GRADE_7=c(698, 721, 760),
+		GRADE_8=c(796, 818, 853),
+		GRADE_EOCT=c(1081, 1108, 1141)),
+	SCIENCE=list(
+		GRADE_5=c(526, 553, 567),
+		GRADE_8=c(826, 845, 863),
+		GRADE_EOCT=c(1106, 1126, 1144)),
+	SOCIAL_STUDIES=list(
+		GRADE_6=c(593, 625, 649),
+		GRADE_9=c(899, 928, 960),
+		GRADE_EOCT=c(1097, 1129, 1158)),
+	WRITING=list(
+		GRADE_4=c(362, 400, 429),
+		GRADE_7=c(666, 700, 733),
+		GRADE_EOCT=c(1097, 1129, 1158))) ### THIS ROW NEEDS TO BE CHECKED
+
+SGPstateData[["MI"]][["Achievement"]][["Levels"]] <-
+                list(
+                Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+                Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["MI"]][["Growth"]][["Levels"]] <- c("Low", "Medium", "High")
+
+SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["MI"]][["Growth"]][["Cutscores"]] <-
+                list(
+                Cuts=c(35, 66),
+                Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["MI"]][["Assessment_Program_Information"]] <-
+                list(
+                Assessment_Name="Michigan Educational Assessment Program",
+                Assessment_Abbreviation="MEAP/MME",
+                Organization=list(
+                                Name="Michigan Department of Education",
+				Abbreviation="MDE",
+                                URL="http://www.michigan.gov/mde",
+                                Contact="651-582-8200"),
+                Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
+                Grades_Tested=c(3,4,5,6,7,8,9,11),
+                Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+		Test_Season="Spring",
+		Test_Vendor="DRC")
+
+SGPstateData[["MI"]][["Student_Report_Information"]] <-
+                list(
+                Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
+                Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
+                Vertical_Scale="No",
+                Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+                Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11), SCIENCE=c(5,8,11), SOCIAL_STUDIES=c(6,9,11), WRITING=c(4,7,11)),
+                Achievement_Level_Labels=list(
+                                "Not Proficient" = "Not Proficient",
+                                "Partially Proficient" = "Part Proficient",
+                                "Proficient" = "Proficient",
+                                "Advanced" = "Advanced"))
+                                
+
+### MINNESOTA
 
 SGPstateData[["MN"]][["Achievement"]][["Knots_Boundaries"]] <-
           list(MATHEMATICS=list(
@@ -2654,6 +2734,7 @@ SGPstateData[["MN"]][["Achievement"]][["Cutscores"]] <-
                                 GRADE_5=c(540, 550, 567),
                                 GRADE_8=c(840, 850, 860),
                                 GRADE_10=c(1040, 1050, 1063)))
+
 SGPstateData[["MN"]][["Achievement"]][["Levels"]] <-
                 list(
                 Labels=c("Does Not Meet", "Partially Meets", "Meets", "Exceeds", "No Score"),

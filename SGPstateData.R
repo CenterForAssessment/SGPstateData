@@ -1476,7 +1476,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 	Assessment_Abbreviation="GA-CRCT",
 	Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013'),
+	Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'),
 	Test_Season="Spring",
 	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Georgia_CSEM)
@@ -1486,13 +1486,13 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	Vertical_Scale="No",
 	Transformed_Achievement_Level_Cutscores=list(GRADE_9_LIT = c(800, 850), AMERICAN_LIT = c(800, 850), 
 		BIOLOGY = c(800, 850), PHYSICAL_SCIENCE = c(800, 850), US_HISTORY = c(800, 850), ECONOMICS = c(800, 850), 
-		COORDINATE_ALGEBRA = c(800, 850), MATHEMATICS_I = c(800, 850), MATHEMATICS_II = c(800, 850)), 
+		COORDINATE_ALGEBRA = c(800, 850), ANALYTIC_GEOMETRY = c(800, 850), MATHEMATICS_I = c(800, 850), MATHEMATICS_II = c(800, 850)), 
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 		GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics", 
-		BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
+		BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom", MATHEMATICS_II = "Math II"), #MATHEMATICS_I = "Math I", 
 	Content_Areas_Domains=list(ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
 		SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
-		MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", MATHEMATICS_I = "MATHEMATICS", MATHEMATICS_II = "MATHEMATICS",
+		MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", MATHEMATICS_II = "MATHEMATICS", #MATHEMATICS_I = "MATHEMATICS", 
 		SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), SCIENCE=c(3,4,5,6,7,8), SOCIAL_STUDIES=c(3,4,5,6,7,8)), 
 	Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
@@ -1513,6 +1513,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
 		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
 		COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
+		ANALYTIC_GEOMETRY =c("8", "EOCT", "EOCT"),  # 2014 Cohort referenced configs only use max 2 priors
 		SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
@@ -1529,6 +1530,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
 		MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
 		COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+		ANALYTIC_GEOMETRY=c("MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 		SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 		SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
 		BIOLOGY_PHYSCI= c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
@@ -1545,6 +1547,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		AMERICAN_LIT=as.integer(c(0, 1, 2)),
 		MATHEMATICS=rep(1L, 6),
 		COORDINATE_ALGEBRA=rep(1L, 2),
+		ANALYTIC_GEOMETRY =rep(1L, 2),
 		SCIENCE_PHYSCI=rep(1L, 7),
 		SCIENCE_BIO=rep(1L, 7),
 		BIOLOGY_PHYSCI=rep(1L, 3),
@@ -1561,6 +1564,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		AMERICAN_LIT = 3,
 		MATHEMATICS=3,
 		COORDINATE_ALGEBRA=3,
+		ANALYTIC_GEOMETRY=3,
 		SCIENCE_BIO=3,
 		SCIENCE_PHYSCI=3,
 		BIOLOGY_PHYSCI=3,
@@ -5060,28 +5064,49 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <-
                       # SCIENCE="2009_2010",
                       # READING="2009_2010",
                       # WRITING="2009_2010"),
-    Grades_Tested=c(3,4,5,6,7,8,10),
-    Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013"),
+    Grades_Tested=c(3,4,5,6,7,8,9,10),
+    Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
     Test_Season="Spring",
     Test_Vendor="ETS",
 	CSEM=Washington_CSEM)
-
-SGPstateData[["WA"]][["Student_Report_Information"]] <-
-    list(
-    Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500), SCIENCE=c(100,200,300,400,500)), 
-    Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500), SCIENCE=c(100,200,300,400,500)),
-    Content_Areas_Labels=list(MATHEMATICS="Math", SCIENCE="Science", READING="Reading"),
-    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), SCIENCE=c(5,8), READING=c(3,4,5,6,7,8,10)),
-    Achievement_Level_Labels=list(
-        "L1: Below Basic"="Below Basic",
-        "L2: Basic"="Basic",
-        "L3: Proficient"="Proficient",
-        "L4: Advanced"="Advanced"))
 
 SGPstateData[['WA']][['SGP_Configuration']] <- list(
 						max.sgp.target.years.forward=2,
 						gPlot.sgp.targets.timeframe=2,
 						sgPlot.use.student.school.name=TRUE)
+
+SGPstateData[["WA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+		READING = as.character(c(3:8,10)),
+		MATHEMATICS = as.character(3:10),
+		EOC_MATHEMATICS_1 = as.character(3:10),
+		EOC_MATHEMATICS_2 = as.character(3:10))
+SGPstateData[["WA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+		READING = rep("READING", 7),
+		MATHEMATICS = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
+		EOC_MATHEMATICS_1 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
+		EOC_MATHEMATICS_2 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2")) 
+
+SGPstateData[["WA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+		READING=c(rep(1L, 5), 2L),
+		MATHEMATICS=rep(1L, 7), 
+		EOC_MATHEMATICS_1=rep(1L, 7),
+		EOC_MATHEMATICS_2= rep(1L, 7))
+
+SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
+    Transformed_Achievement_Level_Cutscores=list( READING=c(100,200,300,400,500),
+    	MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)), 
+    Transformed_Achievement_Level_Cutscores_gaPlot=list( READING=c(100,200,300,400,500),
+    	MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+
+	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+	Content_Areas_Domains=list(READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
+
+    Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
+    Achievement_Level_Labels=list(
+        "L1: Below Basic"="Below Basic",
+        "L2: Basic"="Basic",
+        "L3: Proficient"="Proficient",
+        "L4: Advanced"="Advanced"))
 
 load("Baseline_Coefficient_Matrices/WA_Baseline_Matrices.Rdata")
 SGPstateData[["WA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WA_Baseline_Matrices

@@ -1,5 +1,14 @@
 `make.custom.isr` <- 
 function() {
+
+		## Start pdf device
+
+		report.width= custom.isr$report.width
+		report.height= custom.isr$report.height
+
+		pdf(file.path(path.to.pdfs, file_name), 
+			width=report.width, height=report.height, version="1.4", onefile=TRUE)
+
 		##  Push full report layout viewport
 		pushViewport(custom.isr$Grid_Objects$report.vp)
 		##  Push/pop content area report blocks
@@ -306,4 +315,6 @@ function() {
 		grid.text(x=0.02, y=0.30, copyright.text, 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
+		
+		dev.off()
 }

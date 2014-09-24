@@ -686,61 +686,61 @@ SGPstateData[["CA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- CA_
 
 SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(CELA =list(
-		boundaries_0=c(260,585),
-		boundaries_1=c(260,590),
-		boundaries_2=c(260,592),
-		boundaries_3=c(260,651),
-		boundaries_4=c(260,651),
-		boundaries_5=c(260,651),
-		boundaries_6=c(260,666),
-		boundaries_7=c(260,666),
-		boundaries_8=c(260,666),
-		boundaries_9=c(260,675),
-		boundaries_10=c(260,675),
-		boundaries_11=c(260,675),
-		boundaries_12=c(260,675),
-		knots_0=c(355,376,395,414),
-		knots_1=c(410,434,452,472),
-		knots_2=c(453,474,491,509),
-		knots_3=c(467,490,508,528),
-		knots_4=c(489,513,531,551),
-		knots_5=c(505,529,547,567),
-		knots_6=c(507,531,549,568),
-		knots_7=c(514,541,560,579),
-		knots_8=c(520,548,568,588),
-		knots_9=c(507,534,551,570),
-		knots_10=c(512,541,560,581),
-		knots_11=c(516,546,567.6,588),
-		knots_12=c(513,548,571,594),
-		loss.hoss_0=c(260,585),
-		loss.hoss_1=c(260,590),
-		loss.hoss_2=c(260,592),
-		loss.hoss_3=c(260,651),
-		loss.hoss_4=c(260,651),
-		loss.hoss_5=c(260,651),
-		loss.hoss_6=c(260,666),
-		loss.hoss_7=c(260,666),
-		loss.hoss_8=c(260,666),
-		loss.hoss_9=c(260,675),
-		loss.hoss_10=c(260,675),
-		loss.hoss_11=c(260,675),
-		loss.hoss_12=c(260,675)))
+		boundaries_0=c(260, 585), 
+		boundaries_1=c(260, 590), 
+		boundaries_2=c(260, 592), 
+		boundaries_3=c(260, 651), 
+		boundaries_4=c(260, 651), 
+		boundaries_5=c(260, 651), 
+		boundaries_6=c(260, 666), 
+		boundaries_7=c(260, 666), 
+		boundaries_8=c(260, 666), 
+		boundaries_9=c(260, 675), 
+		boundaries_10=c(260, 675), 
+		boundaries_11=c(260, 675), 
+		boundaries_12=c(260, 675), 
+		knots_0=c(355, 376, 395, 414), 
+		knots_1=c(410, 434, 452, 472), 
+		knots_2=c(453, 474, 491, 509), 
+		knots_3=c(467, 490, 508, 528), 
+		knots_4=c(489, 513, 531, 551), 
+		knots_5=c(505, 529, 547, 567), 
+		knots_6=c(507, 531, 549, 568), 
+		knots_7=c(514, 541, 560, 579), 
+		knots_8=c(520, 548, 568, 588), 
+		knots_9=c(507, 534, 551, 570), 
+		knots_10=c(512, 541, 560, 581), 
+		knots_11=c(516, 546, 567.6, 588), 
+		knots_12=c(513, 548, 571, 594), 
+		loss.hoss_0=c(260, 585), 
+		loss.hoss_1=c(260, 590), 
+		loss.hoss_2=c(260, 592), 
+		loss.hoss_3=c(260, 651), 
+		loss.hoss_4=c(260, 651), 
+		loss.hoss_5=c(260, 651), 
+		loss.hoss_6=c(260, 666), 
+		loss.hoss_7=c(260, 666), 
+		loss.hoss_8=c(260, 666), 
+		loss.hoss_9=c(260, 675), 
+		loss.hoss_10=c(260, 675), 
+		loss.hoss_11=c(260, 675), 
+		loss.hoss_12=c(260, 675)))
 
 SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]] <- 
 	list(CELA=list(
-		GRADE_0=c(382,426,451,515),
-		GRADE_1=c(411,435,469,522),
-		GRADE_2=c(431,465,491,546),
-		GRADE_3=c(445,478,509,562),
-		GRADE_4=c(458,490,526,578),
-		GRADE_5=c(460,493,533,584),
-		GRADE_6=c(463,496,539,590),
-		GRADE_7=c(465,499,546,596),
-		GRADE_8=c(469,503,549,598),
-		GRADE_9=c(473,507,551,600),
-		GRADE_10=c(477,510,553,603),
-		GRADE_11=c(481,514,556,605),
-		GRADE_12=c(485,518,559,607)))
+		GRADE_0=c(382, 426, 451, 515), 
+		GRADE_1=c(411, 435, 469, 522), 
+		GRADE_2=c(431, 465, 491, 546), 
+		GRADE_3=c(445, 478, 509, 562), 
+		GRADE_4=c(458, 490, 526, 578), 
+		GRADE_5=c(460, 493, 533, 584), 
+		GRADE_6=c(463, 496, 539, 590), 
+		GRADE_7=c(465, 499, 546, 596), 
+		GRADE_8=c(469, 503, 549, 598), 
+		GRADE_9=c(473, 507, 551, 600), 
+		GRADE_10=c(477, 510, 553, 603), 
+		GRADE_11=c(481, 514, 556, 605), 
+		GRADE_12=c(485, 518, 559, 607)))
 
 SGPstateData[["CELA"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -2613,7 +2613,87 @@ SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATH
 
 SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-### Minnesota
+
+### MICHIGAN
+
+load("Knots_Boundaries/MI_Knots_Boundaries.Rdata")
+SGPstateData[["MI"]][["Achievement"]][["Knots_Boundaries"]] <- MI_Knots_Boundaries
+
+SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- 
+	list(
+	MATHEMATICS=list(
+		GRADE_3=c(322, 336, 371),
+		GRADE_4=c(423, 434, 470),
+		GRADE_5=c(516, 531, 584),
+		GRADE_6=c(614, 629, 675),
+		GRADE_7=c(714, 731, 776),
+		GRADE_8=c(809, 830, 865),
+		GRADE_EOCT=c(1093, 1116, 1138)),
+	READING=list(
+		GRADE_3=c(301, 324, 364),
+		GRADE_4=c(395, 419, 478),
+		GRADE_5=c(501, 521, 565),
+		GRADE_6=c(602, 619, 653),
+		GRADE_7=c(698, 721, 760),
+		GRADE_8=c(796, 818, 853),
+		GRADE_EOCT=c(1081, 1108, 1141)),
+	SCIENCE=list(
+		GRADE_5=c(526, 553, 567),
+		GRADE_8=c(826, 845, 863),
+		GRADE_EOCT=c(1106, 1126, 1144)),
+	SOCIAL_STUDIES=list(
+		GRADE_6=c(593, 625, 649),
+		GRADE_9=c(899, 928, 960),
+		GRADE_EOCT=c(1097, 1129, 1158)),
+	WRITING=list(
+		GRADE_4=c(362, 400, 429),
+		GRADE_7=c(666, 700, 733),
+		GRADE_EOCT=c(1097, 1129, 1158))) ### THIS ROW NEEDS TO BE CHECKED
+
+SGPstateData[["MI"]][["Achievement"]][["Levels"]] <-
+                list(
+                Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+                Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["MI"]][["Growth"]][["Levels"]] <- c("Low", "Medium", "High")
+
+SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["MI"]][["Growth"]][["Cutscores"]] <-
+                list(
+                Cuts=c(35, 66),
+                Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["MI"]][["Assessment_Program_Information"]] <-
+                list(
+                Assessment_Name="Michigan Educational Assessment Program",
+                Assessment_Abbreviation="MEAP/MME",
+                Organization=list(
+                                Name="Michigan Department of Education",
+				Abbreviation="MDE",
+                                URL="http://www.michigan.gov/mde",
+                                Contact="651-582-8200"),
+                Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
+                Grades_Tested=c(3,4,5,6,7,8,9,11),
+                Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+		Test_Season="Spring",
+		Test_Vendor="DRC")
+
+SGPstateData[["MI"]][["Student_Report_Information"]] <-
+                list(
+                Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
+                Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
+                Vertical_Scale="No",
+                Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+                Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11), SCIENCE=c(5,8,11), SOCIAL_STUDIES=c(6,9,11), WRITING=c(4,7,11)),
+                Achievement_Level_Labels=list(
+                                "Not Proficient" = "Not Proficient",
+                                "Partially Proficient" = "Part Proficient",
+                                "Proficient" = "Proficient",
+                                "Advanced" = "Advanced"))
+                                
+
+### MINNESOTA
 
 SGPstateData[["MN"]][["Achievement"]][["Knots_Boundaries"]] <-
           list(MATHEMATICS=list(
@@ -2658,6 +2738,7 @@ SGPstateData[["MN"]][["Achievement"]][["Cutscores"]] <-
                                 GRADE_5=c(540, 550, 567),
                                 GRADE_8=c(840, 850, 860),
                                 GRADE_10=c(1040, 1050, 1063)))
+
 SGPstateData[["MN"]][["Achievement"]][["Levels"]] <-
                 list(
                 Labels=c("Does Not Meet", "Partially Meets", "Meets", "Exceeds", "No Score"),
@@ -4035,10 +4116,148 @@ load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[1]], RLI_Baseline_Matrices_2013_2014.4[[1]], RLI_Baseline_Matrices_2014_2015.1[[1]], RLI_Baseline_Matrices_2014_2015.2[[1]]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[2]], RLI_Baseline_Matrices_2013_2014.4[[2]], RLI_Baseline_Matrices_2014_2015.1[[2]], RLI_Baseline_Matrices_2014_2015.2[[2]]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[[3]], RLI_Baseline_Matrices_2013_2014.4[[3]], RLI_Baseline_Matrices_2014_2015.1[[3]], RLI_Baseline_Matrices_2014_2015.2[[3]])
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2013_2014.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']])
 )
+
+
+### RENAISSANCE LEARNING (UNITED KINGDOM)
+
+RLI_UK_SGP_Config_Function <- source('Custom_SGP_Config/RLI_UK/RLI_UK_Custom_SGP_Config-function.R')
+load("Knots_Boundaries/RLI_UK_Knots_Boundaries.Rdata")
+SGPstateData[["RLI_UK"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_UK_Knots_Boundaries
+
+SGPstateData[["RLI_UK"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["RLI_UK"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+
+SGPstateData[["RLI_UK"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(35, 66), 
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["RLI_UK"]][["Assessment_Program_Information"]] <- 
+	list(
+	Assessment_Name="Renaissance Learning Incorporated",
+	Assessment_Abbreviation="RLI_UK",
+	Organization=list(
+		Name="Renaissance Learning Incorporated",
+		Abbreviation="RLI_UK",
+		URL="www.renaissance.com",
+		Contact="(800) 338-4204"),
+	Content_Areas=c("Mathematics", "Reading", "Early Lit"),
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Test_Vendor="Renaissance Learning Incorporated",
+	Test_Season="Fall/Winter/Spring")
+
+SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <- 
+	list(
+	Vertical_Scale="Yes",
+	Projection_Fan_Limits=c(5, 95),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LIT="Early Lit"),
+	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LIT=c(0,1,2,3)), 
+	Achievement_Level_Labels=list(
+		"Unsatisfactory"="Unsatisfactory", 
+		"Part Proficient"="Partially Proficient", 
+		"Proficient"="Proficient", 
+		"Advanced"="Advanced"))		
+
+SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
+				print.other.gp=TRUE,
+				max.sgp.target.years.forward=6,
+				sgp.projections.max.forward.progression.years=6,
+				sgp.projections.projection.unit="YEAR",
+				sgp.projections.projection.unit.label="TIME",
+				return.prior.scale.score.standardized=TRUE,
+				return.percentile.trajectory.values=TRUE,
+				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
+				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.config.function=RLI_UK_SGP_Config_Function,
+				max.n.for.coefficient.matrices=200000,
+				grade.projection.sequence=list(
+					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
+					EARLY_LIT_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
+					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+					EARLY_LIT_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
+					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
+					EARLY_LIT_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
+				content_area.projection.sequence=list(
+					READING_FSF=rep("READING", length(1:12)*2),
+					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
+					EARLY_LIT_FSF=rep("EARLY_LIT", length(0:3)*2),
+					READING_FWS=rep("READING", length(1:12)*3),
+					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT_FWS=rep("EARLY_LIT", length(0:3)*3),
+					READING_WSS=rep("READING", length(1:12)*3),
+					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
+					EARLY_LIT_WSS=rep("EARLY_LIT", length(0:3)*3)),
+				year_lags.projection.sequence=list(
+					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
+					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
+					EARLY_LIT_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
+					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
+					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+					EARLY_LIT_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
+				max.forward.projection.sequence=list(
+					READING_FSF=6,
+					MATHEMATICS_FSF=6,
+					EARLY_LIT_FSF=6,
+					READING_FWS=9,
+					MATHEMATICS_FWS=9,
+					EARLY_LIT_FWS=9,
+					READING_WSS=1,
+					MATHEMATICS_WSS=1,
+					EARLY_LIT_WSS=1),
+				output.column.order=list(
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+					SGProjection=c('ID','STATE',
+						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_3_CURRENT','LEVEL_2_SGP_TARGET_TIME_3_CURRENT','LEVEL_3_SGP_TARGET_TIME_3_CURRENT','LEVEL_4_SGP_TARGET_TIME_3_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_4_CURRENT','LEVEL_2_SGP_TARGET_TIME_4_CURRENT','LEVEL_3_SGP_TARGET_TIME_4_CURRENT','LEVEL_4_SGP_TARGET_TIME_4_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_5_CURRENT','LEVEL_2_SGP_TARGET_TIME_5_CURRENT','LEVEL_3_SGP_TARGET_TIME_5_CURRENT','LEVEL_4_SGP_TARGET_TIME_5_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_6_CURRENT','LEVEL_2_SGP_TARGET_TIME_6_CURRENT','LEVEL_3_SGP_TARGET_TIME_6_CURRENT','LEVEL_4_SGP_TARGET_TIME_6_CURRENT',
+						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT',
+						'P1_PROJ_TIME_5_CURRENT','P1_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT',
+						'P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT','P5_PROJ_TIME_6_CURRENT',
+						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT',
+						'P35_PROJ_TIME_5_CURRENT','P35_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT',
+						'P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT','P50_PROJ_TIME_6_CURRENT',
+						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT',
+						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
+						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
+						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
+						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
+						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
+					SGProjection_Target=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_6_CURRENT',
+						'SGP_PROJECTION_GROUP','GROUP')))
+
+SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.2.Rdata")
+SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+	EARLY_LIT.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']])
+)
+
 
 ### RHODE ISLAND
 
@@ -5254,6 +5473,20 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"
 # SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Cutscores"]][["CELA"]]
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
+		GRADE_0=c(382, 426, 451, 515), 
+		GRADE_1=c(411, 435, 469, 522), 
+		GRADE_2=c(431, 465, 491, 546), 
+		GRADE_3=c(445, 478, 509, 562), 
+		GRADE_4=c(458, 490, 526, 578), 
+		GRADE_5=c(460, 493, 533, 584), 
+		GRADE_6=c(463, 496, 539, 590), 
+		GRADE_7=c(465, 499, 546, 596), 
+		GRADE_8=c(469, 503, 549, 598), 
+		GRADE_9=c(473, 507, 551, 600), 
+		GRADE_10=c(477, 510, 553, 603), 
+		GRADE_11=c(481, 514, 556, 605), 
+		GRADE_12=c(485, 518, 559, 607)),
+	READING.2013=list(
 		GRADE_0=c(237, 263, 288, 307, 329),
 		GRADE_1=c(249, 277, 303, 321, 344),
 		GRADE_2=c(261, 290, 316, 335, 357),
@@ -5378,6 +5611,81 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <-
 load("Knots_Boundaries/WIDA_MA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knots_Boundaries
 SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013"))
+
+
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
+
+load("Knots_Boundaries/WIDA_MI_Knots_Boundaries.Rdata")
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MI_Knots_Boundaries
+SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013_2014"))
+
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(493, 517, 531, 552),
+		GRADE_1=c(519, 542, 575, 595),
+		GRADE_2=c(527, 556, 595, 617),
+		GRADE_3=c(531, 572, 620, 639),
+		GRADE_4=c(536, 579, 626, 647),
+		GRADE_5=c(545, 585, 633, 653),
+		GRADE_6=c(554, 598, 635, 657),
+		GRADE_7=c(557, 607, 641, 662),
+		GRADE_8=c(564, 609, 648, 671),
+		GRADE_9=c(586, 620, 658, 681),
+		GRADE_10=c(588, 622, 662, 681),
+		GRADE_11=c(590, 632, 665, 685),
+		GRADE_12=c(593, 639, 673, 693)),
+	READING.2013_2014=list(
+		GRADE_0=c(237, 263, 288, 307, 329),
+		GRADE_1=c(249, 277, 303, 321, 344),
+		GRADE_2=c(261, 290, 316, 335, 357),
+		GRADE_3=c(272, 303, 328, 347, 369),
+		GRADE_4=c(283, 314, 340, 359, 380),
+		GRADE_5=c(293, 324, 350, 369, 390),
+		GRADE_6=c(302, 334, 359, 379, 399),
+		GRADE_7=c(311, 342, 368, 386, 407),
+		GRADE_8=c(319, 350, 375, 394, 414),
+		GRADE_9=c(327, 357, 382, 400, 419),
+		GRADE_10=c(333, 363, 387, 405, 424),
+		GRADE_11=c(340, 368, 391, 409, 427),
+		GRADE_12=c(346, 372, 395, 413, 430)))
+
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="WIDA ACCESS",
+	Assessment_Abbreviation="ACCESS",
+	Organization=list(
+		Name="Michigan Department of Education",
+		Abbreviation="MDE",
+		URL="www.michigan.gov/mde",
+		Contact="517-373-3324"),
+	Scale_Change=list(READING="2013_2014"),
+	Assessment_Years=c("2011_2012", "2012_2013", "2013_2014"),
+	Content_Areas="READING",
+	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Test_Season="Spring")
+
+SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale="Yes",
+	Content_Areas_Labels=list(READING = "Overall"),
+	Achievement_Level_Labels=list(
+		"Level 1"="L1",
+		"Level 2"="L2",
+		"Level 3"="L3",
+		"Level 4"="L4",
+		"Level 5"="L5",
+		"Level 6"="L6"))
 
 
 ### WYOMING

@@ -1508,7 +1508,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		"Exceeds Expectations" = "Exceeds Expectations"))
 
 SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
-	use.cohort.for.baseline.when.missing=TRUE,
+	# use.cohort.for.baseline.when.missing=TRUE,
 	return.norm.group.scale.scores=TRUE,
 	goodness.of.fit.minimum.n=1,
 	sgp.projections.baseline.max.order=4,
@@ -1517,8 +1517,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
 		GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
 		AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
-		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
-		COORDINATE_ALGEBRA=c("7", "8", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
+		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		COORDINATE_ALGEBRA=c("7", "8", "EOCT", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
 		ANALYTIC_GEOMETRY =c("8", "EOCT", "EOCT"),  # 2014 Cohort referenced configs only use max 2 priors
 		SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
@@ -1534,8 +1534,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
 		GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"), 
 		AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-		MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
-		COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA"),
+		MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+		COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 		ANALYTIC_GEOMETRY=c("MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 		SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 		SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
@@ -1551,9 +1551,9 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
 		GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
 		AMERICAN_LIT=as.integer(c(0, 1, 2)),
-		MATHEMATICS=rep(1L, 6),
-		COORDINATE_ALGEBRA=rep(1L, 2),
-		ANALYTIC_GEOMETRY =rep(1L, 2),
+		MATHEMATICS=rep(1L, 7),
+		COORDINATE_ALGEBRA=rep(1L, 3),
+		ANALYTIC_GEOMETRY =rep(1L, 3),
 		SCIENCE_PHYSCI=rep(1L, 7),
 		SCIENCE_BIO=rep(1L, 7),
 		BIOLOGY_PHYSCI=rep(1L, 3),

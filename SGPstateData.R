@@ -4693,10 +4693,8 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		MATHEMATICS="MATHEMATICS", PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 		SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
 
-	Grades_Reported=list(ELA=as.character(3:11), 
-	# Grades_Reported=list( 
-		MATHEMATICS= as.character(3:7), PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
-		SCIENCE= as.character(4:8), EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"), #, ELA=as.character(3:11)),
+	Grades_Reported=list(ELA=as.character(3:11), MATHEMATICS= as.character(3:7), PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
+		SCIENCE= as.character(4:8), EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 	Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:7, "EOCT"), SCIENCE= c(4:8, "EOCT")),
 
 	Achievement_Level_Labels=list(
@@ -5097,10 +5095,8 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
     	MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)), 
     Transformed_Achievement_Level_Cutscores_gaPlot=list( READING=c(100,200,300,400,500),
     	MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
-
-	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-	Content_Areas_Domains=list(READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
-
+    Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+    Content_Areas_Domains=list(READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
     Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
     Achievement_Level_Labels=list(
         "L1: Below Basic"="Below Basic",

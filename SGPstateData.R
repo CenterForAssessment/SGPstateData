@@ -3174,6 +3174,9 @@ SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <- list(
 
 ### NEBRASKA
 
+load("Knots_Boundaries/NE_Knots_Boundaries.Rdata")
+SGPstateData[["NE"]][["Achievement"]][["Knots_Boundaries"]] <- NE_Knots_Boundaries
+
 SGPstateData[["NE"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
 		GRADE_3=c(85,135),

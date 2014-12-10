@@ -3231,7 +3231,7 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
         Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
 	Achievement_Level_Labels=list(
 		"Below"="Below the Standards", 
 		"Meets"="Meets the Standards", 
@@ -4122,14 +4122,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata") ### For EARLY_LIT
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata") ### For EARLY_LIT
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata") ### For EARLY_LIT
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.3.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata") ### For MATHEMATICS and READING
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LIT.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
 )
 
 

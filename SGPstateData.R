@@ -1759,19 +1759,21 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"))
 
-SGPstateData[["HI"]][["SGP_Configuration"]] <- list(output.groups=c("COMPLEX", "SCHOOL"),
-						    outputSGP.translate.names=FALSE,
-						    output.column.order=list(SGP_Data_LONG=
-									c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
-									  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER", 
-									  "DISTRICT_NAME", "COMPLEX_NUMBER", "COMPLEX_NAME", "COMPLEX_AREA_NUMBER", "COMPLEX_AREA_NAME", "ETHNICITY_DOE",
-									  "ETHNICITY_FED5", "ETHNICITY_FED7", "DISADVANTAGED_STATUS", "ELL_STATUS", "SPECIAL_EDUCATION_STATUS", 
-									  "GENDER", "TEST_ADMINISTRATION", "MIGRANT_STATUS", "HIGH_NEED_STATUS", "FULL_SCHOOL_YEAR_STATUS", "SCHOOL_ENROLLMENT_STATUS",
-									  "DISTRICT_ENROLLMENT_STATUS", "COMPLEX_ENROLLMENT_STATUS", "COMPLEX_AREA_ENROLLMENT_STATUS", "STATE_ENROLLMENT_STATUS",
-									  "SGP", "SGP_LEVEL", "SCALE_SCORE_PRIOR", "SGP_BASELINE", "SGP_LEVEL_BASELINE", "ACHIEVEMENT_LEVEL_PRIOR", 
-									  "CATCH_UP_KEEP_UP_STATUS", "MOVE_UP_STAY_UP_STATUS", "ETHNICITY", "HIGH_NEEDS_STATUS_DEMOGRAPHIC", 
-									  "SCALE_SCORE_PRIOR_STANDARDIZED", "SGP_NORM_GROUP", "SGP_NORM_GROUP_BASELINE", "SGP_TARGET_3_YEAR",
-									  "SGP_TARGET_MOVE_UP_STAY_UP_3_YEAR", "ELL_STATUS_MULTILEVEL")))
+SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
+						sgPlot.fan=FALSE,
+						output.groups=c("COMPLEX", "SCHOOL"),
+						outputSGP.translate.names=FALSE,
+						output.column.order=list(SGP_Data_LONG=
+							c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
+							  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER", 
+							  "DISTRICT_NAME", "COMPLEX_NUMBER", "COMPLEX_NAME", "COMPLEX_AREA_NUMBER", "COMPLEX_AREA_NAME", "ETHNICITY_DOE",
+							  "ETHNICITY_FED5", "ETHNICITY_FED7", "DISADVANTAGED_STATUS", "ELL_STATUS", "SPECIAL_EDUCATION_STATUS", 
+							  "GENDER", "TEST_ADMINISTRATION", "MIGRANT_STATUS", "HIGH_NEED_STATUS", "FULL_SCHOOL_YEAR_STATUS", "SCHOOL_ENROLLMENT_STATUS",
+							  "DISTRICT_ENROLLMENT_STATUS", "COMPLEX_ENROLLMENT_STATUS", "COMPLEX_AREA_ENROLLMENT_STATUS", "STATE_ENROLLMENT_STATUS",
+							  "SGP", "SGP_LEVEL", "SCALE_SCORE_PRIOR", "SGP_BASELINE", "SGP_LEVEL_BASELINE", "ACHIEVEMENT_LEVEL_PRIOR", 
+							  "CATCH_UP_KEEP_UP_STATUS", "MOVE_UP_STAY_UP_STATUS", "ETHNICITY", "HIGH_NEEDS_STATUS_DEMOGRAPHIC", 
+							  "SCALE_SCORE_PRIOR_STANDARDIZED", "SGP_NORM_GROUP", "SGP_NORM_GROUP_BASELINE", "SGP_TARGET_3_YEAR",
+							  "SGP_TARGET_MOVE_UP_STAY_UP_3_YEAR", "ELL_STATUS_MULTILEVEL")))
 
 load("Baseline_Coefficient_Matrices/HI_Baseline_Matrices.Rdata")
 SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- HI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -3174,6 +3176,9 @@ SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <- list(
 
 ### NEBRASKA
 
+load("Knots_Boundaries/NE_Knots_Boundaries.Rdata")
+SGPstateData[["NE"]][["Achievement"]][["Knots_Boundaries"]] <- NE_Knots_Boundaries
+
 SGPstateData[["NE"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
 		GRADE_3=c(85,135),
@@ -3226,7 +3231,7 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
         Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
 	Achievement_Level_Labels=list(
 		"Below"="Below the Standards", 
 		"Meets"="Meets the Standards", 
@@ -4117,14 +4122,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata") ### For EARLY_LIT
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata") ### For EARLY_LIT
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata") ### For EARLY_LIT
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.3.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata") ### For MATHEMATICS and READING
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LIT.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
+	EARLY_LIT.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.3[['EARLY_LIT.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LIT.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
 )
 
 

@@ -1,7 +1,7 @@
 names.provided,names.sgp,names.type,names.info,names.output
 ID,ID,individual,unique student identifier,
 LAST_NAME,LAST_NAME, student last name, for this I used the ID# as text,
-FIRST_NAME,FIRST_NAME, student first name, I used "First" as a dummy name,
+FIRST_NAME,FIRST_NAME, student first name, I used First as a dummy name,
 CONTENT_AREA,CONTENT_AREA,content,Content area,
 YEAR,YEAR,time,year of administration using a single year format (i.e. 2011 for the 2010-11 school year),
 GRADE,GRADE,institution_level,grade level of student at time of assessment (for this study 3-8),

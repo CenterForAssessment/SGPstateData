@@ -3237,6 +3237,7 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
 		"Meets"="Meets the Standards", 
 		"Exceeds"="Exceeds the Standards"))
 
+SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NE_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 ### NEVADA
 

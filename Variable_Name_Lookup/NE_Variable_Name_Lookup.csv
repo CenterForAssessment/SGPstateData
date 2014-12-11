@@ -12,7 +12,7 @@ ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
 FREE_REDUCED_LUNCH_STATUS,FREE_REDUCED_LUNCH_STATUS,not_available,I couldn't obtain this. I have it as a column in the data file but no values,
 ELL_STATUS,ELL_STATUS,demographic,Student ELL status indicator,TRUE
 IEP_STATUS,IEP_STATUS,demographic,student IEP status indicator,TRUE
-GIFTED_AND_TALENTED_PROGAM_STATUS,GIFTED_AND_TALENTED_PROGRAM_STATUS,I have this as a column in the data file but don't have any data to report,FALSE
+GIFTED_AND_TALENTED_PROGAM_STATUS,GIFTED_AND_TALENTED_PROGRAM_STATUS,not_available,I have this as a column in the data file but don't have any data to report,
 SCHOOL_NUMBER,SCHOOL_NUMBER,institution,Unique school identifier of where the student was located when assessed,
 EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High school level associated the school -- ELEMENTARY or MIDDLE (for this project),
 SCHOOL_NAME,SCHOOL_NAME,label,A column in my data file but no data to report,

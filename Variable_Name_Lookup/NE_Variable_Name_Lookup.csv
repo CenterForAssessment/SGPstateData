@@ -1,0 +1,24 @@
+names.provided,names.sgp,names.type,names.info,names.output
+ID,ID,individual,unique student identifier,
+LAST_NAME,LAST_NAME, student last name, for this I used the ID# as text,
+FIRST_NAME,FIRST_NAME, student first name, I used "First" as a dummy name,
+CONTENT_AREA,CONTENT_AREA,content,Content area,
+YEAR,YEAR,time,year of administration using a single year format (i.e. 2011 for the 2010-11 school year),
+GRADE,GRADE,institution_level,grade level of student at time of assessment (for this study 3-8),
+SCALE_SCORE,SCALE_SCORE,measure,student scale score (0-200 metric),
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,performance level for the assessment -- Below the Standards/Meets the Standards/Exceeds the Standards,
+GENDER,GENDER,demographic,Student gender,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+FREE_REDUCED_LUNCH_STATUS,FREE_REDUCED_LUNCH_STATUS,not_available,I couldn't obtain this. I have it as a column in the data file but no values,
+ELL_STATUS,ELL_STATUS,demographic,Student ELL status indicator,TRUE
+IEP_STATUS,IEP_STATUS,demographic,student IEP status indicator,TRUE
+GIFTED_AND_TALENTED_PROGAM_STATUS,GIFTED_AND_TALENTED_PROGRAM_STATUS,I have this as a column in the data file but don't have any data to report,FALSE
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,Unique school identifier of where the student was located when assessed,
+EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High school level associated the school -- ELEMENTARY or MIDDLE (for this project),
+SCHOOL_NAME,SCHOOL_NAME,label,A column in my data file but no data to report,
+DISTRICT_NUMBER,DISTRICT_NUMBER,not_available,A column in my data file but no data to report (I could not get the data),
+DISTRICT_NAME,DISTRICT_NAME,not_available,A column in my data file but no data to report,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,Yes or No -- if it is a VALID_CASE or not,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,not_available,I have a column in the data file but left it blank since I don't have this level of data,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,A column in my data file. I have YES for all VALID_CASE and NO for INVALID_CASE,
+VALID_CASE,VALID_CASE,individual inclusion,INVALID_CASE for those to exclude and VALID_CASE for those records to include,

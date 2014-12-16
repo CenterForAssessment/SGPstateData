@@ -3239,6 +3239,9 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
 
 SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NE_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
+load("Baseline_Coefficient_Matrices/NE_Baseline_Matrices.Rdata")
+SGPstateData[["NE"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NE_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+
 ### NEVADA
 
 load("CSEM/Nevada/Nevada_CSEM.Rdata")

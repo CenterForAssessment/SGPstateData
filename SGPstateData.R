@@ -386,6 +386,18 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
+### ATI
+
+SGPstateData[["ATI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["ATI"]][["Growth"]][["Cutscores"]] <-
+	list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["ATI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+
 ### CALIFORNIA
 
 SGPstateData[["CA"]][["Achievement"]][["Knots_Boundaries"]] <-

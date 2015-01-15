@@ -160,6 +160,7 @@ SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 ### ARKANSAS
 
+load("CSEM/Arkansas/Arkansas_CSEM.Rdata")
 load("Knots_Boundaries/AR_Knots_Boundaries.Rdata")
 SGPstateData[["AR"]][["Achievement"]][["Knots_Boundaries"]] <- AR_Knots_Boundaries
 
@@ -205,7 +206,8 @@ SGPstateData[["AR"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Literacy"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Spring",
-		Test_Vendor="Riverside Publishing")
+		Test_Vendor="Riverside Publishing",
+		CSEM=Arkansas_CSEM)
 
 SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), LITERACY=c(0,20,40,60,80)),
@@ -221,6 +223,7 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 
 load("Baseline_Coefficient_Matrices/AR_Baseline_Matrices.Rdata")
 SGPstateData[["AR"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- AR_Baseline_Matrices
+
 
 ### ARIZONA
 

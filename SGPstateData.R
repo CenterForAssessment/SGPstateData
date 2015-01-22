@@ -4484,6 +4484,16 @@ SGPstateData[["SD"]][["Student_Report_Information"]] <-
 ### UTAH
 
 SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+	ELA.2014=list(
+		loss.hoss_3=c(100, 999),
+		loss.hoss_4=c(100, 999),
+		loss.hoss_5=c(100, 999),
+		loss.hoss_6=c(100, 999),
+		loss.hoss_7=c(100, 999),
+		loss.hoss_8=c(100, 999),
+		loss.hoss_9=c(100, 999),
+		loss.hoss_10=c(100, 999),
+		loss.hoss_11=c(100, 999)),
 	ELA=list(
 		boundaries_3=c(123.1, 205.9),
 		boundaries_4=c(123.1, 205.9),
@@ -4512,6 +4522,13 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(130, 199),
 		loss.hoss_10=c(130, 199),
 		loss.hoss_11=c(130, 199)),
+	MATHEMATICS.2014=list(
+		loss.hoss_3=c(150, 900),
+		loss.hoss_4=c(150, 900),
+		loss.hoss_5=c(150, 900),
+		loss.hoss_6=c(150, 900),
+		loss.hoss_7=c(150, 900),
+		loss.hoss_8=c(150, 900)),
 	MATHEMATICS=list(
 		boundaries_3=c(123.1, 205.9),
 		boundaries_4=c(123.1, 205.9),
@@ -4519,58 +4536,40 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		boundaries_6=c(123.1, 205.9),
 		boundaries_7=c(123.1, 205.9),
 		boundaries_8=c(123.1, 205.9),
-		boundaries_9=c(123.1, 205.9),
-		boundaries_10=c(123.1, 205.9),
-		boundaries_11=c(123.1, 205.9),
-		boundaries_12=c(123.1, 205.9),
 		knots_3=c(157, 164, 169, 175),
 		knots_4=c(158, 164, 170, 176),
 		knots_5=c(157, 164, 169, 175),
 		knots_6=c(157, 164, 169, 175),
 		knots_7=c(160, 165, 170, 175),
 		knots_8=c(157, 163, 168, 173),
-		knots_9=c(155, 161, 166, 172),
-		knots_10=c(151, 156, 161, 166),
-		knots_11=c(145, 151, 156, 162),
-		knots_12=c(143, 150, 155, 161),
 		loss.hoss_3=c(130, 199),
 		loss.hoss_4=c(130, 207),
 		loss.hoss_5=c(130, 199),
 		loss.hoss_6=c(130, 199),
 		loss.hoss_7=c(130, 199),
-		loss.hoss_8=c(130, 199),
-		loss.hoss_9=c(125, 199),
-		loss.hoss_10=c(128, 199),
-		loss.hoss_11=c(130, 199),
-		loss.hoss_12=c(130, 199)),
+		loss.hoss_8=c(130, 199)),
+	SCIENCE.2014=list(
+		loss.hoss_4=c(150, 999),
+		loss.hoss_5=c(150, 999),
+		loss.hoss_6=c(150, 999),
+		loss.hoss_7=c(150, 999),
+		loss.hoss_8=c(150, 999)),
 	SCIENCE=list(
 		boundaries_4=c(123.1, 205.9),
 		boundaries_5=c(123.1, 205.9),
 		boundaries_6=c(123.1, 205.9),
 		boundaries_7=c(123.1, 205.9),
 		boundaries_8=c(123.1, 205.9),
-		boundaries_9=c(123.1, 205.9),
-		boundaries_10=c(123.1, 205.9),
-		boundaries_11=c(123.1, 205.9),
-		boundaries_12=c(123.1, 205.9),
 		knots_4=c(154, 160, 166, 171),
 		knots_5=c(156, 162, 167, 172),
 		knots_6=c(156, 162, 168, 173),
 		knots_7=c(156, 162, 168, 173),
 		knots_8=c(155, 162, 167, 173),
-		knots_9=c(156, 163, 168, 173),
-		knots_10=c(155, 160, 165, 170),
-		knots_11=c(151, 158, 163, 169),
-		knots_12=c(154, 161, 166, 172),
 		loss.hoss_4=c(130, 199),
 		loss.hoss_5=c(130, 199),
 		loss.hoss_6=c(130, 199),
 		loss.hoss_7=c(130, 199),
-		loss.hoss_8=c(130, 199),
-		loss.hoss_9=c(130, 199),
-		loss.hoss_10=c(130, 199),
-		loss.hoss_11=c(130, 199),
-		loss.hoss_12=c(130, 199)),
+		loss.hoss_8=c(130, 199)),
 		
 PRE_ALGEBRA=list(
 		knots_EOCT=c(156, 163, 168, 174),
@@ -4582,31 +4581,38 @@ ALGEBRA_I=list(
 		boundaries_EOCT=c(117, 207),
 		loss.hoss_EOCT=c(125, 199)),
 
-ALGEBRA_II=list(
-		knots_EOCT=c(149, 155, 160, 166),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+SEC_MATH_I=list(
+		loss.hoss_EOCT=c(150, 900)),
 
-GEOMETRY=list(
-		knots_EOCT=c(154, 161, 166, 172),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+SEC_MATH_II=list(
+		loss.hoss_EOCT=c(150, 900)),
 
+SEC_MATH_III=list(
+		loss.hoss_EOCT=c(150, 900)),
+
+EARTH_SCIENCE.2014=list(
+		loss.hoss_EOCT=c(650, 999)),
 EARTH_SCIENCE=list(
 		knots_EOCT=c(155, 161, 166, 172),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
+BIOLOGY.2014=list(
+		loss.hoss_EOCT=c(650, 999)),
 BIOLOGY=list(
 		knots_EOCT=c(156, 162, 167, 173),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
+CHEMISTRY.2014=list(
+		loss.hoss_EOCT=c(650, 999)),
 CHEMISTRY=list(
 		knots_EOCT=c(151, 158, 163, 168),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
+PHYSICS.2014=list(
+		loss.hoss_EOCT=c(650, 999)))
 PHYSICS=list(
 		knots_EOCT=c(155, 161, 166, 172),
 		boundaries_EOCT=c(123, 206),

@@ -4612,7 +4612,7 @@ CHEMISTRY=list(
 		loss.hoss_EOCT=c(130, 199)),
 
 PHYSICS.2014=list(
-		loss.hoss_EOCT=c(650, 999)))
+		loss.hoss_EOCT=c(650, 999)),
 PHYSICS=list(
 		knots_EOCT=c(155, 161, 166, 172),
 		boundaries_EOCT=c(123, 206),

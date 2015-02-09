@@ -5579,12 +5579,6 @@ SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- W
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT Colorado (ACCESS)
 
-SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
-	max.order.for.percentile = 3,
-	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
-	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-	# sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
-
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]	
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
 
@@ -5659,6 +5653,12 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		"Reaching"="L6"))
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
+SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
+	max.order.for.percentile=3,
+	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
+	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+	# sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
@@ -5805,6 +5805,9 @@ SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 		"Level 5"="L5",
 		"Level 6"="L6"))
 
+SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
+        max.order.for.percentile=2,
+        max.order.for.projection=2)
 
 ### WYOMING
 

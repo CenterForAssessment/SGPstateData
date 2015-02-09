@@ -5735,7 +5735,6 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Chan
 
 load("Knots_Boundaries/WIDA_MI_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MI_Knots_Boundaries
-SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013_2014"))
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(

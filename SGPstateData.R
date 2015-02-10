@@ -5571,7 +5571,9 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
-	max.order.for.projection=2)
+	max.order.for.projection=2,
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
 
 load("Baseline_Coefficient_Matrices/WIDA_Baseline_Matrices.Rdata")
 SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
@@ -5656,9 +5658,8 @@ SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_L
 
 SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
 	max.order.for.percentile=3,
-	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
-	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-	# sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
@@ -5723,12 +5724,17 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <-
 		"Apto"="L5",
 		"Avanzado"="L6"))
 
+SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
 
 load("Knots_Boundaries/WIDA_MA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knots_Boundaries
 SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013"))
+
+SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
@@ -5806,7 +5812,9 @@ SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
         max.order.for.percentile=2,
-        max.order.for.projection=2)
+        max.order.for.projection=2,
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
 
 ### WYOMING
 

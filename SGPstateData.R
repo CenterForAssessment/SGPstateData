@@ -5813,6 +5813,7 @@ SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
         max.order.for.percentile=2,
         max.order.for.projection=2,
+	max.sgp.target.years.forward=5,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 

@@ -219,11 +219,14 @@ SGPstateData[["AR"]][["Assessment_Program_Information"]] <-
 		CSEM=Arkansas_CSEM)
 
 SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), LITERACY=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), LITERACY=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list( LITERACY=c(100,200,300,400,500),
+		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list( LITERACY=c(100,200,300,400,500),
+		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+	Content_Areas_Labels =list(LITERACY = "Literacy", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+	Content_Areas_Domains=list(LITERACY = "LITERACY", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
+	Grades_Reported=list(LITERACY=c(1,2,3,4,5,6,7,8,10), MATHEMATICS=c(1,2,3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
 	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", LITERACY="Lit"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), LITERACY=c(3,4,5,6,7,8)),
 	Achievement_Level_Labels=list(
 		"Below Basic"="Below Basic",
 		"Basic"="Basic",

@@ -5546,7 +5546,7 @@ SGPstateData[["WIDA"]][["Growth"]][["Cutscores"]] <- list(
 
 SGPstateData[["WIDA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["WIDA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["WIDA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="World Class Instructional Design and Assessment",

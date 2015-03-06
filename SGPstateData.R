@@ -5522,23 +5522,23 @@ SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boun
 
 SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
-		GRADE_0=c(394, 430, 466),
-		GRADE_1=c(394, 430, 466),
-		GRADE_2=c(394, 430, 466),
-		GRADE_3=c(394, 430, 466),
-		GRADE_4=c(396, 440, 489),
-		GRADE_5=c(401, 444, 497),
-		GRADE_6=c(418, 457, 514),
-		GRADE_7=c(434, 467, 523),
-		GRADE_8=c(445, 480, 539),
-		GRADE_9=c(445, 480, 539),
-		GRADE_10=c(456, 503, 555),
-		GRADE_11=c(456, 503, 555),
-		GRADE_12=c(456, 503, 555)))
+		GRADE_0=c(237, 263, 288, 307, 329),
+		GRADE_1=c(249, 277, 303, 321, 344),
+		GRADE_2=c(261, 290, 316, 335, 357),
+		GRADE_3=c(272, 303, 328, 347, 369),
+		GRADE_4=c(283, 314, 340, 359, 380),
+		GRADE_5=c(293, 324, 350, 369, 390),
+		GRADE_6=c(302, 334, 359, 379, 399),
+		GRADE_7=c(311, 342, 368, 386, 407),
+		GRADE_8=c(319, 350, 375, 394, 414),
+		GRADE_9=c(327, 357, 382, 400, 419),
+		GRADE_10=c(333, 363, 387, 405, 424),
+		GRADE_11=c(340, 368, 391, 409, 427),
+		GRADE_12=c(346, 372, 395, 413, 430)))
 
 SGPstateData[["WIDA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient"))
 
 SGPstateData[["WIDA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
@@ -5546,7 +5546,7 @@ SGPstateData[["WIDA"]][["Growth"]][["Cutscores"]] <- list(
 
 SGPstateData[["WIDA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["WIDA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["WIDA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="World Class Instructional Design and Assessment",
@@ -5567,10 +5567,12 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(READING="Reading"),
 	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
 	Achievement_Level_Labels=list(
-		"Minimal"="Minimal Performance", 
- 		"Basic"="Basic", 
-		"Proficient"="Proficient", 
-		"Advanced"="Advanced"))
+		"Entering"="L1",
+		"Emerging"="L2",
+		"Developing"="L3",
+		"Expanding"="L4",
+		"Bridging"="L5",
+		"Reaching"="L6"))
 
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,

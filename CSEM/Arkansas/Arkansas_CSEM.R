@@ -11,22 +11,7 @@ require(data.table)
 
 ### Load data
 
-Arkansas_Benchmark_CSEMs <- as.data.table(read.csv("Base_Files/Arkansas_Benchmark_CSEM_2009_2014.csv"))
-ITBS_CSEMs_TEMP <- as.data.table(read.csv("Base_Files/ITBS_CSEMs.csv"))
-
-
-### Tidy up tables
-
-Arkansas_Benchmark_CSEMs[['X']] <- NULL
-
-ITBS_CSEMs <- rbindlist(list(ITBS_CSEMs_TEMP, ITBS_CSEMs_TEMP, ITBS_CSEMs_TEMP, ITBS_CSEMs_TEMP, ITBS_CSEMs_TEMP, ITBS_CSEMs_TEMP))
-ITBS_CSEMs[,YEAR:=rep(as.character(2009:2014), each=dim(ITBS_CSEMs_TEMP)[1])]
-setcolorder(ITBS_CSEMs, names(Arkansas_Benchmark_CSEMs))
-
-
-### Stack CSEMs
-
-Arkansas_CSEM <- rbindlist(list(ITBS_CSEMs, Arkansas_Benchmark_CSEMs))
+Arkansas_CSEM <- as.data.table(read.csv("Base_Files/Arkansas_CSEMs_2009_2014.csv"))
 
 
 ### Final tidying up

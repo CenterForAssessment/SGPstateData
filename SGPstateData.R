@@ -5537,8 +5537,8 @@ SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_12=c(346, 372, 395, 413, 430)))
 
 SGPstateData[["WIDA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient"))
 
 SGPstateData[["WIDA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
@@ -5567,10 +5567,12 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(READING="Reading"),
 	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
 	Achievement_Level_Labels=list(
-		"Minimal"="Minimal Performance", 
- 		"Basic"="Basic", 
-		"Proficient"="Proficient", 
-		"Advanced"="Advanced"))
+		"Entering"="L1",
+		"Emerging"="L2",
+		"Developing"="L3",
+		"Expanding"="L4",
+		"Bridging"="L5",
+		"Reaching"="L6"))
 
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,

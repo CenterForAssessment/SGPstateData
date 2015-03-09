@@ -5577,8 +5577,8 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
+        max.sgp.target.years.forward=5,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
-
 
 load("Baseline_Coefficient_Matrices/WIDA_Baseline_Matrices.Rdata")
 SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
@@ -5739,7 +5739,10 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MA_Knot
 SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(Scale_Change=list(READING="2013"))
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+        max.order.for.percentile=2,
+        max.order.for.projection=2,
+        max.sgp.target.years.forward=5,
+        sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
@@ -5762,7 +5765,7 @@ SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_10=c(588, 622, 662, 681),
 		GRADE_11=c(590, 632, 665, 685),
 		GRADE_12=c(593, 639, 673, 693)),
-	READING.2013_2014=list(
+	READING.2014=list(
 		GRADE_0=c(237, 263, 288, 307, 329),
 		GRADE_1=c(249, 277, 303, 321, 344),
 		GRADE_2=c(261, 290, 316, 335, 357),
@@ -5797,8 +5800,8 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="MDE",
 		URL="www.michigan.gov/mde",
 		Contact="517-373-3324"),
-	Scale_Change=list(READING="2013_2014"),
-	Assessment_Years=c("2011_2012", "2012_2013", "2013_2014"),
+	Scale_Change=list(READING="2014"),
+	Assessment_Years=c("2012", "2013", "2014"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")

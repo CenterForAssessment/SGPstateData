@@ -5732,6 +5732,7 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <-
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
+
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
 
 load("Knots_Boundaries/WIDA_MA_Knots_Boundaries.Rdata")
@@ -5743,6 +5744,8 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
         max.order.for.projection=2,
         max.sgp.target.years.forward=5,
         sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
@@ -5823,6 +5826,8 @@ SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
         max.order.for.projection=2,
 	max.sgp.target.years.forward=5,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ### WYOMING

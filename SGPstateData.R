@@ -5863,8 +5863,8 @@ SGPstateData[["WIDA_MI"]][["Growth"]][["Cutscores"]] <- list(
 SGPstateData[["WIDA_MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="WIDA ACCESS",
-	Assessment_Abbreviation="ACCESS",
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
 	Organization=list(
 		Name="Michigan Department of Education",
 		Abbreviation="MDE",
@@ -5887,6 +5887,38 @@ SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 		"Level 4"="L4",
 		"Level 5"="L5",
 		"Level 6"="L6"))
+
+SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+        list(
+                Assessment_Abbreviation="ELPA",
+                Assessment_Abbreviation.2013_2014="ACCESS",
+                Assessment_Name="Michigan English Language Proficiency Exam",
+                Assessment_Name.2013_2014="Michigan ACCESS English Language Proficiency Exam",
+                Achievement_Levels=list(
+                        Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced", "No Score"),
+                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+                Achievement_Levels.2014=list(
+                        Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+                        Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+                Achievement_Level_Labels=list(
+                        "Below Basic"="Below Basic",
+                        "Basic"="Basic",
+                        "Proficient"="Proficient",
+                        "Advanced"="Advanced"),
+                Achievement_Level_Labels.2013_2014=list(
+                        "Level 1"="Level 1",
+                        "Level 2"="Level 2",
+                        "Level 3"="Level 3",
+                        "Level 4"="Level 4",
+                        "Level 5"="Level 5"),
+                Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+                Content_Areas_Labels.2013_2014=list(MATHEMATICS="Math", READING="Reading"),
+#               Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+#               Transformed_Achievement_Level_Cutscores.2013_2014=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
+                Vertical_Scale="Yes",
+                Vertical_Scale.2013_2014="Yes",
+                Year="2013_2014"
+        )
 
 SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
         max.order.for.percentile=2,

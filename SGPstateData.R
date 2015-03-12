@@ -5851,7 +5851,7 @@ SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_12=c(346, 372, 395, 413, 430)))
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "NO SCORE"),
 	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_MI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")

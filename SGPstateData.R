@@ -5832,6 +5832,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Trans
 			"WIDA L6"="WIDA Level 6"),
                 Content_Areas_Labels=list(READING="Reading"),
                 Content_Areas_Labels.2013=list(READING="Reading"),
+		Transformed_Achievement_Level_Cutscores=list(READING=c(100,200,300,400,500,600)),
                 Vertical_Scale="No",
                 Vertical_Scale.2013="Yes",
                 Year="2013",

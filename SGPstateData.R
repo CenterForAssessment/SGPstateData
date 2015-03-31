@@ -5779,6 +5779,8 @@ SGPstateData[["WIDA_MA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st-34th","35th-65th","66th-99th"))
 
+SGPstateData[["WIDA_MA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+
 SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="WIDA",
 	Assessment_Abbreviation="WIDA",
@@ -5787,7 +5789,6 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
            Abbreviation="ESE",
            URL="http://www.doe.mass.edu/",
            Contact="781-338-3000"),
-	Scale_Change=list(READING="2013"),
 	Assessment_Years=c("2011", "2012", "2013", "2014"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
@@ -5896,7 +5897,7 @@ SGPstateData[["WIDA_MI"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st-34th","35th-65th","66th-99th"))
 
-SGPstateData[["WIDA_MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["WIDA_MI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="World Class Instructional Design and Assessment",

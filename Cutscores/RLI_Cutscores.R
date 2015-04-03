@@ -9,7 +9,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
 ###  Generic Cutscores.  NOTE:  These are arbitrary dummies set up for testing.
 ###  Per Lindsay Hass (4/22/14 email) only states with linked cutscores are to be used.  No Generic.
 
-	# EARLY_LITERATURE=list(
+	# EARLY_LITERACY=list(
 		# GRADE_0.1=c(466, 526, 656),
 		# GRADE_0.2=c(466, 526, 656),
 		# GRADE_0.3=c(466, 526, 656),

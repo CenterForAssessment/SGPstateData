@@ -20,80 +20,80 @@ function(year,
 
 
 	###
-	### EARLY_LIT
+	### EARLY_LITERACY
 	###
 
-	if (content_area=="EARLY_LIT" & testing.window=="FALL") {### EARLY_LIT/FALL
+	if (content_area=="EARLY_LITERACY" & testing.window=="FALL") {### EARLY_LITERACY/FALL
 		tmp.list <- list(
-			EARLY_LIT.FF.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.FF.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "1", sep="."), paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('PK.1', '0.1'), c('PK.1', '0.1', '1.1'), c('0.1', '1.1', '2.1'), c('1.1', '2.1', '3.1')),
 				sgp.projection.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
-			EARLY_LIT.SF.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
-				sgp.projection.content.areas=c('EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.SF.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
+				sgp.projection.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('PK.1', 'PK.3', '0.1'), c('0.1', '0.3', '1.1'), c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1')),
 				sgp.projection.grade.sequences=list(c('PK.3', '0.1'), c('0.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1')),
-				sgp.projection.sequence="EARLY_LIT_FSF"))
+				sgp.projection.sequence="EARLY_LITERACY_FSF"))
 
 		return(tmp.list)
-	} ### END EARLY_LIT/FALL
+	} ### END EARLY_LITERACY/FALL
 
 
-	if (content_area=="EARLY_LIT" & testing.window=="WINTER") {### EARLY_LIT/WINTER
+	if (content_area=="EARLY_LITERACY" & testing.window=="WINTER") {### EARLY_LITERACY/WINTER
 		tmp.list <- list(
-			EARLY_LIT.FW.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
-				sgp.projection.content.areas=c('EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.FW.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
+				sgp.projection.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.projection.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.grade.sequences=list(c('PK.1', 'PK.2'), c('PK.3', '0.1', '0.2'), c('0.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
 				sgp.projection.grade.sequences=list(c('PK.1', 'PK.2'), c('0.1', '0.2'), c('1.1', '1.2'), c('2.1', '2.2'), c('3.1', '3.2')),
-				sgp.projection.sequence="EARLY_LIT_FWS"))
+				sgp.projection.sequence="EARLY_LITERACY_FWS"))
 		return(tmp.list)
-	} ### END EARLY_LIT/WINTER
+	} ### END EARLY_LITERACY/WINTER
 
 
-	if (content_area=="EARLY_LIT" & testing.window=="SPRING") {### EARLY_LIT/SPRING
+	if (content_area=="EARLY_LITERACY" & testing.window=="SPRING") {### EARLY_LITERACY/SPRING
 		tmp.list <- list(
-			EARLY_LIT.SS.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.SS.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "3", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
 				sgp.grade.sequences=list(c('PK.3', '0.3'), c('PK.3', '0.3', '1.3'), c('0.3', '1.3', '2.3'), c('1.3', '2.3', '3.3')),
 				sgp.projection.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
-			EARLY_LIT.FS.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
-				sgp.projection.content.areas=c('EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.FS.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
+				sgp.projection.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
 				sgp.projection.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
 				sgp.grade.sequences=list(c('PK.1', 'PK.3'), c('PK.3', '0.1', '0.3'), c('0.3', '1.1', '1.3'), c('1.3', '2.1', '2.3'), c('2.3', '3.1', '3.3')),
 				sgp.projection.grade.sequences=list(c('PK.1', 'PK.3'), c('0.1', '0.3'), c('1.1', '1.3'), c('2.1', '2.3'), "NO_PROJECTIONS"),
-				sgp.projection.sequence="EARLY_LIT_FSF"),
-			EARLY_LIT.WS.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
-				sgp.projection.content.areas=c('EARLY_LIT', 'EARLY_LIT'),
+				sgp.projection.sequence="EARLY_LITERACY_FSF"),
+			EARLY_LITERACY.WS.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
+				sgp.projection.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
 				sgp.projection.panel.years=c(paste(yearIncrement(year, 0), "2", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
 				sgp.grade.sequences=list(c('PK.1', 'PK.2', 'PK.3'), c('0.1', '0.2', '0.3'), c('1.1', '1.2', '1.3'), c('2.1', '2.2', '2.3'), c('3.1', '3.2', '3.3')),
 				sgp.projection.grade.sequences=list(c('PK.2', 'PK.3'), c('0.2', '0.3'), c('1.2', '1.3'), c('2.2', '2.3'), c('3.2', '3.3')),
-				sgp.projection.sequence="EARLY_LIT_WSS",
+				sgp.projection.sequence="EARLY_LITERACY_WSS",
 				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
-	} ### END EARLY_LIT/SPRING
+	} ### END EARLY_LITERACY/SPRING
 
 
-	if (content_area=="EARLY_LIT" & testing.window=="EARLY_SPRING") {### EARLY_LIT/EARLY_SPRING
+	if (content_area=="EARLY_LITERACY" & testing.window=="EARLY_SPRING") {### EARLY_LITERACY/EARLY_SPRING
 		tmp.list <- list(
-			EARLY_LIT.WSS.config=list(
-				sgp.content.areas=c('EARLY_LIT', 'EARLY_LIT', 'EARLY_LIT'),
+			EARLY_LITERACY.WSS.config=list(
+				sgp.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, 0), "2", sep="."), paste(yearIncrement(year, 0), "3", sep="."), paste(yearIncrement(year, 0), "4", sep=".")),
 				sgp.grade.sequences=list(c('PK.2', 'PK.3', 'PK.4'), c('0.2', '0.3', '0.4'), c('1.2', '1.3', '1.4'), c('2.2', '2.3', '2.4'), c('3.2', '3.3', '3.4')),
 				sgp.projection.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))))
 		return(tmp.list)
-	} ### END EARLY_LIT/EARLY_SPRING
+	} ### END EARLY_LITERACY/EARLY_SPRING
 
 
 	###

@@ -4063,8 +4063,8 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale="Yes",
 	Projection_Fan_Limits=c(5, 95),
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERATURE="Early Lit"),
-	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERATURE=c(0,1,2,3)), 
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERACY="Early Lit"),
+	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERACY=c(0,1,2,3)), 
 	Achievement_Level_Labels=list(
 		"Unsatisfactory"="Unsatisfactory", 
 		"Part Proficient"="Partially Proficient", 
@@ -4086,43 +4086,43 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					EARLY_LITERATURE_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
+					EARLY_LITERACY_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
-					EARLY_LITERATURE_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
+					EARLY_LITERACY_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
 					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
 					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					EARLY_LITERATURE_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
+					EARLY_LITERACY_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
 				content_area.projection.sequence=list(
 					READING_FSF=rep("READING", length(1:12)*2),
 					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
-					EARLY_LITERATURE_FSF=rep("EARLY_LITERATURE", length(0:3)*2),
+					EARLY_LITERACY_FSF=rep("EARLY_LITERACY", length(0:3)*2),
 					READING_FWS=rep("READING", length(1:12)*3),
 					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERATURE_FWS=rep("EARLY_LITERATURE", length(0:3)*3),
+					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(0:3)*3),
 					READING_WSS=rep("READING", length(1:12)*3),
 					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERATURE_WSS=rep("EARLY_LITERATURE", length(0:3)*3)),
+					EARLY_LITERACY_WSS=rep("EARLY_LITERACY", length(0:3)*3)),
 				year_lags.projection.sequence=list(
 					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
 					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					EARLY_LITERATURE_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
+					EARLY_LITERACY_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
 					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERATURE_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
+					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
 					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERATURE_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
+					EARLY_LITERACY_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
 				max.forward.projection.sequence=list(
 					READING_FSF=6,
 					MATHEMATICS_FSF=6,
-					EARLY_LITERATURE_FSF=6,
+					EARLY_LITERACY_FSF=6,
 					READING_FWS=9,
 					MATHEMATICS_FWS=9,
-					EARLY_LITERATURE_FWS=9,
+					EARLY_LITERACY_FWS=9,
 					READING_WSS=1,
 					MATHEMATICS_WSS=1,
-					EARLY_LITERATURE_WSS=1),
+					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
 					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
 						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
@@ -4167,15 +4167,15 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata") ### For EARLY_LITERATURE
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata") ### For EARLY_LITERATURE
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata") ### For EARLY_LITERATURE
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata") ### For EARLY_LITERACY
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata") ### For EARLY_LITERACY
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata") ### For EARLY_LITERACY
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.3.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.4.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata") ### For MATHEMATICS and READING
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERATURE.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LITERATURE.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LITERATURE.BASELINE']], RLI_Baseline_Matrices_2013_2014.3[['EARLY_LITERATURE.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LITERATURE.BASELINE']]),
+	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2013_2014.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
 	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
 )
@@ -4215,8 +4215,8 @@ SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale="Yes",
 	Projection_Fan_Limits=c(5, 95),
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERATURE="Early Lit"),
-	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERATURE=c(0,1,2,3)), 
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERACY="Early Lit"),
+	Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERACY=c(0,1,2,3)), 
 	Achievement_Level_Labels=list(
 		"Unsatisfactory"="Unsatisfactory", 
 		"Part Proficient"="Partially Proficient", 
@@ -4238,43 +4238,43 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					EARLY_LITERATURE_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
+					EARLY_LITERACY_FSF=paste(rep(as.character(0:3), each=2), c(1,3), sep="."),
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
-					EARLY_LITERATURE_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
+					EARLY_LITERACY_FWS=paste(rep(as.character(0:3), each=3), c(1,2,3), sep="."),
 					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
 					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					EARLY_LITERATURE_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
+					EARLY_LITERACY_WSS=paste(rep(as.character(0:3), each=3), c(2,3,4), sep=".")),
 				content_area.projection.sequence=list(
 					READING_FSF=rep("READING", length(1:12)*2),
 					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
-					EARLY_LITERATURE_FSF=rep("EARLY_LITERATURE", length(0:3)*2),
+					EARLY_LITERACY_FSF=rep("EARLY_LITERACY", length(0:3)*2),
 					READING_FWS=rep("READING", length(1:12)*3),
 					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERATURE_FWS=rep("EARLY_LITERATURE", length(0:3)*3),
+					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(0:3)*3),
 					READING_WSS=rep("READING", length(1:12)*3),
 					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERATURE_WSS=rep("EARLY_LITERATURE", length(0:3)*3)),
+					EARLY_LITERACY_WSS=rep("EARLY_LITERACY", length(0:3)*3)),
 				year_lags.projection.sequence=list(
 					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
 					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					EARLY_LITERATURE_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
+					EARLY_LITERACY_FSF=c(rep(c(0.2, 0.8), 3), 0.2),
 					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERATURE_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
+					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
 					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERATURE_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
+					EARLY_LITERACY_WSS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1))),
 				max.forward.projection.sequence=list(
 					READING_FSF=6,
 					MATHEMATICS_FSF=6,
-					EARLY_LITERATURE_FSF=6,
+					EARLY_LITERACY_FSF=6,
 					READING_FWS=9,
 					MATHEMATICS_FWS=9,
-					EARLY_LITERATURE_FWS=9,
+					EARLY_LITERACY_FWS=9,
 					READING_WSS=1,
 					MATHEMATICS_WSS=1,
-					EARLY_LITERATURE_WSS=1),
+					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
 					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
 						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
@@ -4312,7 +4312,7 @@ load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.4.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.1.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.2.Rdata")
 SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERATURE.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['EARLY_LITERATURE.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['EARLY_LITERATURE.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['EARLY_LITERATURE.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['EARLY_LITERATURE.BASELINE']]),
+	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
 	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']])
 )

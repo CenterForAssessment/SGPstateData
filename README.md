@@ -15,7 +15,7 @@ Colorado English Language Assessment (CELA), Demonstration (DEMO), Australia NAP
 **SGPstateData** is supported and maintained by two very nice people with the assistance of dozens of [state developers](http://cran.r-project.org/web/packages/SGP/). We'd be happy
 to add in your organization's data, answer questions and respond to feedback. Just make sure to show us some :heart:.
 
-[![Join the chat at https://gitter.im/CenterForAssessment/SGPstateData](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPstateData?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](http://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPstateData/blob/master/LICENSE.md)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active) [![Join the chat at https://gitter.im/CenterForAssessment/SGPstateData](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPstateData?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](http://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPstateData/blob/master/LICENSE.md)
 
 * [Damian Betebenner](https://github.com/dbetebenner)
 * [Adam VanIwaarden](https://github.com/adamvi)

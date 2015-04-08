@@ -80,7 +80,7 @@ function(year,
 				sgp.grade.sequences=list(c('PK.1', 'PK.2', 'PK.3'), c('K.1', 'K.2', 'K.3'), c('1.1', '1.2', '1.3'), c('2.1', '2.2', '2.3'), c('3.1', '3.2', '3.3')),
 				sgp.projection.baseline.grade.sequences=list(c('PK.2', 'PK.3'), c('K.2', 'K.3'), c('1.2', '1.3'), c('2.2', '2.3'), c('3.2', '3.3')),
 				sgp.projection.sequence="EARLY_LITERACY_WSS",
-				sgp.projection.max.forward.progression.years=1))
+				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
 	} ### END EARLY_LITERACY/SPRING
 
@@ -156,7 +156,7 @@ function(year,
 				sgp.grade.sequences=list(c('1.1', '1.2', '1.3'), c('2.1', '2.2', '2.3'), c('3.1', '3.2', '3.3'), c('4.1', '4.2', '4.3'), c('5.1', '5.2', '5.3'), c('6.1', '6.2', '6.3'), c('7.1', '7.2', '7.3'), c('8.1', '8.2', '8.3'), c('9.1', '9.2', '9.3'), c('10.1', '10.2', '10.3'), c('11.1', '11.2', '11.3'), c('12.1', '12.2', '12.3')),
 				sgp.projection.baseline.grade.sequences=list(c('1.2', '1.3'), c('2.2', '2.3'), c('3.2', '3.3'), c('4.2', '4.3'), c('5.2', '5.3'), c('6.2', '6.3'), c('7.2', '7.3'), c('8.2', '8.3'), c('9.2', '9.3'), c('10.2', '10.3'), c('11.2', '11.3'), c('12.2', '12.3')),
 				sgp.projection.sequence="MATHEMATICS_WSS",
-				sgp.projection.max.forward.progression.years=1))
+				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
 	} ### END MATHEMATICS/SPRING
 
@@ -232,7 +232,7 @@ function(year,
 				sgp.grade.sequences=list(c('1.1', '1.2', '1.3'), c('2.1', '2.2', '2.3'), c('3.1', '3.2', '3.3'), c('4.1', '4.2', '4.3'), c('5.1', '5.2', '5.3'), c('6.1', '6.2', '6.3'), c('7.1', '7.2', '7.3'), c('8.1', '8.2', '8.3'), c('9.1', '9.2', '9.3'), c('10.1', '10.2', '10.3'), c('11.1', '11.2', '11.3'), c('12.1', '12.2', '12.3')),
 				sgp.projection.baseline.grade.sequences=list(c('1.2', '1.3'), c('2.2', '2.3'), c('3.2', '3.3'), c('4.2', '4.3'), c('5.2', '5.3'), c('6.2', '6.3'), c('7.2', '7.3'), c('8.2', '8.3'), c('9.2', '9.3'), c('10.2', '10.3'), c('11.2', '11.3'), c('12.2', '12.3')),
 				sgp.projection.sequence="READING_WSS",
-				sgp.projection.max.forward.progression.years=1))
+				sgp.projections.max.forward.progression.years=1))
 		return(tmp.list)
 	} ### END READING/SPRING
 

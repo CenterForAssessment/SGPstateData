@@ -4167,15 +4167,12 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.3.Rdata") ### For EARLY_LITERACY
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2013_2014.4.Rdata") ### For EARLY_LITERACY
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.1.Rdata") ### For EARLY_LITERACY
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.2.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.3.Rdata")
 load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata") ### For MATHEMATICS and READING
+load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2014_2015.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2013_2014.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2013_2014.4[['EARLY_LITERACY.BASELINE']]),
+	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
 	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
 )

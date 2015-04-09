@@ -1,8 +1,8 @@
 SGPstateData
 ============
 
-State assessment program data from large scale state assessments for use with SGP package
------------------------------------------------------------------------------------------
+State assessment program meta-data from large scale state assessments for use with SGP package
+----------------------------------------------------------------------------------------------
 
 SGPstateData is an environment (an object of class environment) containing information on state assessment programs, organized by state. Currently the list contains achievement level 
 cutscores and labels for the state assessments, assessment name and abbreviation, growth cutscores and labels, information on vertical scaling, and knots and boundaries currently being 

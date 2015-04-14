@@ -235,7 +235,7 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 
 #SGPstateData[["AR"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AR_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-load("Baseline_Coefficient_Matrices/AR_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/AR/AR_Baseline_Matrices.Rdata")
 SGPstateData[["AR"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- AR_Baseline_Matrices
 
 
@@ -707,7 +707,7 @@ SGPstateData[["CA"]][["SGP_Configuration"]] <- list(goodness.of.fit.minimum.n=25
 SGPstateData[["CA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/TCRP_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["CA"]][["SGP_Norm_Group_Preference"]] <- TCRP_SGP_Norm_Group_Preference
-load("Baseline_Coefficient_Matrices/CA_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/CA/CA_Baseline_Matrices.Rdata")
 SGPstateData[["CA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- CA_Baseline_Matrices
 
 
@@ -811,7 +811,7 @@ SGPstateData[["CELA"]][["Student_Report_Information"]] <-
 		"CELA Level 4"="CELA L4",
 		"CELA Level 5"="CELA L5"))
 
-load("Baseline_Coefficient_Matrices/CELA_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/CELA/CELA_Baseline_Matrices.Rdata")
 SGPstateData[["CELA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["CELA.BASELINE"]] <- CELA_Baseline_Matrices[["CELA.BASELINE"]]
 
 
@@ -968,7 +968,7 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <-
 
 SGPstateData[["CO"]][["SGP_Configuration"]] <- list(arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
 
-#load("Baseline_Coefficient_Matrices/CO_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/CO/CO_Baseline_Matrices.Rdata")
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- CO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- CO_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["WRITING.BASELINE"]] <- CO_Baseline_Matrices[["WRITING.BASELINE"]]
@@ -1213,7 +1213,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 #					ALGEBRA_I=rep(1L, 7),
 #					ALGEBRA_II=rep(1L, 7)))
 
-load("Baseline_Coefficient_Matrices/DEMO_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/DEMO/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- DEMO_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["GRADE_9_LIT.BASELINE"]] <- DEMO_Baseline_Matrices[["GRADE_9_LIT.BASELINE"]]
@@ -1611,7 +1611,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <- list(
 		ECONOMICS=3))
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/GA_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/GA/GA_Baseline_Matrices.Rdata")
 #SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
 load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
@@ -1804,7 +1804,7 @@ SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 							  "SCALE_SCORE_PRIOR_STANDARDIZED", "SGP_NORM_GROUP", "SGP_NORM_GROUP_BASELINE", "SGP_TARGET_3_YEAR",
 							  "SGP_TARGET_MOVE_UP_STAY_UP_3_YEAR", "ELL_STATUS_MULTILEVEL")))
 
-#load("Baseline_Coefficient_Matrices/HI_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/HI/HI_Baseline_Matrices.Rdata")
 #SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- HI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- HI_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["HI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/HI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -2462,7 +2462,7 @@ SGPstateData[["ME"]][["Student_Report_Information"]] <-
 		"Distinction"="Proficient with Distinction"))
 
 SGPstateData[["ME"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ME_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/ME_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/ME/ME_Baseline_Matrices.Rdata")
 #SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- ME_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["ME"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- ME_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 
@@ -2644,7 +2644,7 @@ SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 						projcuts.digits=2,
 						sgp.projections.max.forward.progression.grade=8)
 
-#load("Baseline_Coefficient_Matrices/MA_Baseline_Matrices_2009_2013.Rdata")
+#load("Baseline_Coefficient_Matrices/MA/MA_Baseline_Matrices_2009_2013.Rdata")
 #SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["ELA.BASELINE"]]
 #SGPstateData[["MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["MATHEMATICS.BASELINE"]]
 
@@ -2979,7 +2979,7 @@ SGPstateData[["MS"]][["Student_Report_Information"]] <-
 SGPstateData[["MS"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="MS")
 
 SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MS_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/MS_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/MS/MS_Baseline_Matrices.Rdata")
 SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
 load("SGP_Norm_Group_Preference/MS_SGP_Norm_Group_Preference.Rdata")
@@ -3268,7 +3268,7 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
 
 SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NE_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-load("Baseline_Coefficient_Matrices/NE_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/NE/NE_Baseline_Matrices.Rdata")
 SGPstateData[["NE"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NE_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 
 ### NEVADA
@@ -3411,7 +3411,7 @@ SGPstateData[["NV"]][["SGP_Configuration"]] <- list(
 						max.order.for.percentile=4,
                                                 max.order.for.projection=4)
 						 
-#load("Baseline_Coefficient_Matrices/NV_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/NV/NV_Baseline_Matrices.Rdata")
 #SGPstateData[["NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NV_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- NV_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["NV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NV_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -3524,7 +3524,7 @@ SGPstateData[["NH"]][["Student_Report_Information"]] <-
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(state.multiple.year.summary=5)
 
 SGPstateData[["NH"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NH_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/NH_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/NH/NH_Baseline_Matrices.Rdata")
 #SGPstateData[["NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NH_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- NH_Baseline_Matrices[["READING.BASELINE"]]
 
@@ -3752,7 +3752,7 @@ SGPstateData[["NJ"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced Proficient"))
 
-#load("Baseline_Coefficient_Matrices/NJ_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/NJ/NJ_Baseline_Matrices.Rdata")
 #SGPstateData[["NJ"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- NJ_Baseline_Matrices[["ELA.BASELINE"]]
 #SGPstateData[["NJ"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NJ_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["NJ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NJ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -3936,7 +3936,7 @@ SGPstateData[["NY"]][["Student_Report_Information"]] <- list(
 SGPstateData[["NY"]][["SGP_Configuration"]] <- list(max.order.for.percentile=3,
 						max.order.for.projection=3)
 
-#load("Baseline_Coefficient_Matrices/NY_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/NY/NY_Baseline_Matrices.Rdata")
 #SGPstateData[["NY"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NY_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["NY"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- NY_Baseline_Matrices[["ELA.BASELINE"]]
 SGPstateData[["NY"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NY_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
@@ -4167,10 +4167,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_Baseline_Matrices_2015_2016.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
 	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
@@ -4304,10 +4304,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2013_2014.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK_Baseline_Matrices_2014_2015.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2013_2014.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2013_2014.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.2.Rdata")
 SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
 	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2013_2014.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2013_2014.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.2[['READING.BASELINE']]),
@@ -4420,7 +4420,7 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 		"Distinction"="Proficient with Distinction"))
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <- list(null.output.string="")
-#load("Baseline_Coefficient_Matrices/RI_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/RI/RI_Baseline_Matrices.Rdata")
 #SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- RI_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- RI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["RI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RI_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
@@ -5223,7 +5223,7 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
         "L3: Proficient"="Proficient",
         "L4: Advanced"="Advanced"))
 
-load("Baseline_Coefficient_Matrices/WA_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/WA/WA_Baseline_Matrices.Rdata")
 SGPstateData[["WA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WA_Baseline_Matrices
 SGPstateData[["WA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/WA_SGP_Norm_Group_Preference.Rdata")
@@ -5378,7 +5378,7 @@ SGPstateData[["WV"]][["Student_Report_Information"]] <-
 		"Distinguished"="Distinguished"))
 						 
 SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WV_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/WV_Baseline_Matrices.Rdata")
+#load("Baseline_Coefficient_Matrices/WV/WV_Baseline_Matrices.Rdata")
 #SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WV_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WV_Baseline_Matrices[["READING.BASELINE"]]
 
@@ -5506,7 +5506,7 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient", 
 		"Advanced"="Advanced"))
 
-load("Baseline_Coefficient_Matrices/WI_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/WI/WI_Baseline_Matrices.Rdata")
 SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WI_Baseline_Matrices[["READING.BASELINE"]]
 SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -5578,7 +5578,7 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	sgp.projections.max.forward.progression.years=7,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA_Baseline_Matrices.Rdata")
+load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
 SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 

@@ -36,6 +36,7 @@ combine_RLI_UK_with_RLI <- function(base_matrices, additional_matrices, name.ite
 
 	base_matrices <- convertToBaseline(base_matrices, content_area)
 	names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]) <- sub("[.][1234]_", "_", names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]))
+	names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]) <- paste(name.iter, names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]), sep=".")
 
 	tmp.year <- SGP:::yearIncrement(head(tail(unlist(strsplit(name.iter, "[.]")), -1), 1), 1)
 	tmp.suffix <- paste(tmp.year, tail(unlist(strsplit(name.iter, "[.]")), 1), sep=".")

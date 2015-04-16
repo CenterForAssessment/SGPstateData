@@ -31,8 +31,9 @@ combine_RLI_UK_with_RLI <- function(base_matrices, additional_matrices, name.ite
 	### Add in WHOLE bunches of matrices that weren't included
 
 	content_area <- unique(sapply(strsplit(name.iter, "[.]"), '[', 1))
-	diff.names <- setdiff(names(additional_matrices), names(base_matrices))
-	base_matrices <- c(base_matrices, additional_matrices[diff.names])
+	tmp.names.base_matrices <- names(base_matrices)[sapply(base_matrices, function(x) x@Version$Matrix_Information$N > 2000)]
+	diff.names <- setdiff(names(additional_matrices), tmp.names.base_matrices)
+	base_matrices <- c(base_matrices[sapply(base_matrices, function(x) x@Version$Matrix_Information$N > 2000)], additional_matrices[diff.names])
 
 	base_matrices <- convertToBaseline(base_matrices, content_area)
 	names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]) <- sub("[.][1234]_", "_", names(base_matrices[[paste(content_area, "BASELINE", sep=".")]]))

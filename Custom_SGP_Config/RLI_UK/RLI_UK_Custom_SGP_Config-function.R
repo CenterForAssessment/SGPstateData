@@ -35,7 +35,7 @@ function(year,
 				sgp.projection.baseline.content.areas=c('EARLY_LITERACY', 'EARLY_LITERACY'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
-				sgp.grade.sequences=list(c('PK.1', 'PK.3', 'K.1'), c('K.1', 'K.3', '1.1'), c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1')),
+				sgp.grade.sequences=list(c('PK.1', 'PK.3', 'K.1'), c('K.1', 'K.3', '1.1'), c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1'), "NO_PERCENTILES"),
 				sgp.projection.baseline.grade.sequences=list('PK.1', c('PK.3', 'K.1'), c('K.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1')),
 				sgp.projection.sequence="EARLY_LITERACY_FSF"))
 
@@ -112,7 +112,7 @@ function(year,
 				sgp.projection.baseline.content.areas=c('MATHEMATICS', 'MATHEMATICS'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
-				sgp.grade.sequences=list(c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1'), c('3.1', '3.3', '4.1'), c('4.1', '4.3', '5.1'), c('5.1', '5.3', '6.1'), c('6.1', '6.3', '7.1'), c('7.1', '7.3', '8.1'), c('8.1', '8.3', '9.1'), c('9.1', '9.3', '10.1'), c('10.1', '10.3', '11.1'), c('11.1', '11.3', '12.1')),
+				sgp.grade.sequences=list(c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1'), c('3.1', '3.3', '4.1'), c('4.1', '4.3', '5.1'), c('5.1', '5.3', '6.1'), c('6.1', '6.3', '7.1'), c('7.1', '7.3', '8.1'), c('8.1', '8.3', '9.1'), c('9.1', '9.3', '10.1'), c('10.1', '10.3', '11.1'), c('11.1', '11.3', '12.1'), "NO_PERCENTILES"),
 				sgp.projection.baseline.grade.sequences=list('1.1', c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
 				sgp.projection.sequence="MATHEMATICS_FSF"))
 		return(tmp.list)
@@ -188,7 +188,7 @@ function(year,
 				sgp.projection.baseline.content.areas=c('READING', 'READING'),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
-				sgp.grade.sequences=list(c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1'), c('3.1', '3.3', '4.1'), c('4.1', '4.3', '5.1'), c('5.1', '5.3', '6.1'), c('6.1', '6.3', '7.1'), c('7.1', '7.3', '8.1'), c('8.1', '8.3', '9.1'), c('9.1', '9.3', '10.1'), c('10.1', '10.3', '11.1'), c('11.1', '11.3', '12.1')),
+				sgp.grade.sequences=list(c('1.1', '1.3', '2.1'), c('2.1', '2.3', '3.1'), c('3.1', '3.3', '4.1'), c('4.1', '4.3', '5.1'), c('5.1', '5.3', '6.1'), c('6.1', '6.3', '7.1'), c('7.1', '7.3', '8.1'), c('8.1', '8.3', '9.1'), c('9.1', '9.3', '10.1'), c('10.1', '10.3', '11.1'), c('11.1', '11.3', '12.1'), "NO_PERCENTILES"),
 				sgp.projection.baseline.grade.sequences=list('1.1', c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
 				sgp.projection.sequence="READING_FSF"))
 		return(tmp.list)

@@ -1190,6 +1190,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
 				return.norm.group.scale.scores=TRUE, 
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(

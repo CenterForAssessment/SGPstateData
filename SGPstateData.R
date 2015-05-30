@@ -1188,6 +1188,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
+				return.norm.group.scale.scores=TRUE,
 				return.norm.group.scale.scores=TRUE, 
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
@@ -4081,6 +4082,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
 				return.percentile.trajectory.values=TRUE,
+				return.norm.group.scale.scores=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_SGP_Config_Function,
@@ -4229,6 +4231,7 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
+				return.norm.group.scale.scores=TRUE,
 				return.percentile.trajectory.values=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),

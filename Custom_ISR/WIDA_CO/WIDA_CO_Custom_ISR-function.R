@@ -145,7 +145,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2014 English Language Proficiency and Student Growth Report",
+		grid.text("2015 English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
@@ -303,7 +303,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2014 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
+		grid.text("2015 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 

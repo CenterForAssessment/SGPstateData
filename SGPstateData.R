@@ -1188,8 +1188,12 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
-				return.norm.group.scale.scores=TRUE, 
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(
@@ -4080,6 +4084,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
 				return.percentile.trajectory.values=TRUE,
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_SGP_Config_Function,
@@ -4125,8 +4133,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					MATHEMATICS_WSS=1,
 					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
-					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
-						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+#					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                   ## OLD
+#						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                          ## OLD
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                   ## NEW
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED', 'SGP_NORM_GROUP_BASELINE_SCALE_SCORES', 'SGP_NORM_GROUP_BASELINE_DATES'), ## NEW
 					SGProjection=c('ID','STATE',
 						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
@@ -4144,8 +4154,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
 						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
 						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
-						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
-						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
+						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT', 'GROUP',
+#						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'SGP_PROJECTION_GROUP'),    ## OLD
+						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'SGP_PROJECTION_GROUP',     ## NEW
+						'SGP_PROJECTION_GROUP_SCALE_SCORES', 'SGP_PROJECTION_GROUP_DATES'),                                             ## NEW
 					SGProjection_Target_6_TIME=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',
@@ -4228,6 +4240,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				return.percentile.trajectory.values=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
@@ -4274,8 +4290,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 					MATHEMATICS_WSS=1,
 					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
-					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
-						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+#					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                    ## OLD
+#						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                           ## OLD
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                    ## NEW
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED', 'SGP_NORM_GROUP_BASELINE_SCALE_SCORES', 'SGP_NORM_GROUP_BASELINE_DATES'),  ## NEW
 					SGProjection=c('ID','STATE',
 						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
@@ -4293,8 +4311,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
 						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
 						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
-						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
-						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
+						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','GROUP',
+#						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','SGP_PROJECTION_GROUP'), ## OLD
+						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','SGP_PROJECTION_GROUP',  ## NEW
+						'SGP_PROJECTION_GROUP_SCALE_SCORES', 'SGP_PROJECTION_GROUP_DATES'),                                         ## NEW
 					SGProjection_Target=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',

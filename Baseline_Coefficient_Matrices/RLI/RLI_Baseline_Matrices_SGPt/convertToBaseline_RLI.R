@@ -4,6 +4,11 @@
 ###
 ###################################################################################
 
+### Load SGP Package
+
+require(SGP)
+
+
 ### Utility functions
 
 convertToBaseline <- function(baseline_matrices) {
@@ -34,6 +39,8 @@ for (i in tmp.years) {
 	tmp.files <- grep(i, all.files, value=TRUE)
 	tmp.names <- gsub(".Rdata", "", tmp.files)
 	file.name <- gsub("_EARLY_LITERACY|_MATHEMATICS|_READING", "", tmp.names[1])
+	new.year <-  paste(SGP:::yearIncrement(unlist(strsplit(gsub("RLI_Baseline_Matrices_", "", file.name), "[.]"))[1], 1), unlist(strsplit(gsub("RLI_Baseline_Matrices_", "", file.name), "[.]"))[2], sep=".")
+	file.name <- paste("RLI_Baseline_Matrices_", new.year, sep="")
 	for (j in seq_along(tmp.files)) {
 		load(tmp.files[j])
 		tmp.list[[j]] <- get(tmp.names[j])

@@ -4187,14 +4187,15 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2014_2015.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
+	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], 
+		RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']], 
+		RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']])
 )
 
 
@@ -4351,10 +4352,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_non_SGPt/RLI_UK_Baseline_Matrices_2014_2015.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_non_SGPt/RLI_UK_Baseline_Matrices_2014_2015.4.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_non_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_non_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
 SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
 	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']]),
 	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']]),

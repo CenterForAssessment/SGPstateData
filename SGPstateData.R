@@ -1167,7 +1167,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Assessment_Years=c("2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)

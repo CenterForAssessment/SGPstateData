@@ -5759,7 +5759,7 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-SGPstateData[["WIDA_CO"]][['SGP_Configuration']] <- list(
+SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
@@ -5812,6 +5812,7 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 
 SGPstateData[["WIDA_CO_SPANISH"]] <- SGPstateData[["WIDA_CO"]]
 SGPstateData[["WIDA_CO_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "Típico", "Alto")
+SGPstateData[["WIDA_CO_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_CO"]][["SGP_Configuration"]]
 
 SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- 
 	list(
@@ -5826,10 +5827,6 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <-
 		"Elevado"="L4",
 		"Apto"="L5",
 		"Avanzado"="L6"))
-
-SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
-
 
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
 

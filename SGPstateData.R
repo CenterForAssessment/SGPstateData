@@ -1988,6 +1988,16 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(220, 229, 243),
 		GRADE_9=c(230, 238, 251),
 		GRADE_10=c(230, 238, 251)),
+	MATHEMATICS_2013.2014=list(
+		GRADE_3=c(2381, 2436, 2501),
+		GRADE_4=c(2411, 2485, 2549),
+		GRADE_5=c(2455, 2528, 2579),
+		GRADE_6=c(2473, 2552, 2610),
+		GRADE_7=c(2484, 2567, 2635),
+		GRADE_8=c(2504, 2586, 2653),
+		GRADE_9=c(2515, 2599, 2676),
+		GRADE_10=c(2529, 2614, 2697),
+		GRADE_11=c(2543, 2628, 2718)),
 	READING=list(
 		GRADE_3=c(187, 192, 208),
 		GRADE_4=c(193, 198, 214),
@@ -1996,7 +2006,17 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(204, 212, 227),
 		GRADE_8=c(207, 214, 229),
 		GRADE_9=c(211, 220, 235),
-		GRADE_10=c(211, 220, 235)))
+		GRADE_10=c(211, 220, 235)),
+	READING.2013_2014=list(
+		GRADE_3=c(2367, 2432, 2490),
+		GRADE_4=c(2416, 2473, 2533),
+		GRADE_5=c(2442, 2502, 2582),
+		GRADE_6=c(2457, 2531, 2618),
+		GRADE_7=c(2479, 2552, 2649),
+		GRADE_8=c(2487, 2567, 2668),
+		GRADE_9=c(2488, 2571, 2670),
+		GRADE_10=c(2491, 2577, 2677),
+		GRADE_11=c(2493, 2583, 2682)))
 
 SGPstateData[["ID"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -2035,6 +2055,37 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 			"Basic"="Basic", 
 			"Proficient"="Proficient", 
 			"Advanced"="Advanced"))
+
+SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+        list(
+                Assessment_Abbreviation="ISAT",
+                Assessment_Abbreviation.2014_2015="ISAT by SB",
+                Assessment_Name="Idaho Standards Achievement Test",
+                Assessment_Name.2014_2015="Idaho Standards Achievement Test by Smarter Balanced",
+                Achievement_Levels=list(
+                        Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+                Achievement_Levels.2014_2015=list(
+			      Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),  
+                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+                Achievement_Level_Labels=list(
+                        "Below Basic"="Below Basic",
+                        "Basic"="Basic",
+                        "Proficient"="Proficient",
+                        "Advanced"="Advanced"),
+                Achievement_Level_Labels.2014_2015=list(
+                        "Below Basic"="Below Basic",
+                        "Basic"="Basic",
+                        "Proficient"="Proficient",
+                        "Advanced"="Advanced"),
+                Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+                Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+                Vertical_Scale="No",
+                Vertical_Scale.2014_2015="Yes",
+                Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+                Year="2014_2015"
+        )
+
 
 ### ILLINOIS
 

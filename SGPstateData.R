@@ -6055,7 +6055,45 @@ SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <-
          loss.hoss_5 = c(346, 878),
          loss.hoss_6 = c(371, 912),
          loss.hoss_7 = c(367, 908),
-         loss.hoss_8 = c(409, 939)))
+         loss.hoss_8 = c(409, 939)),
+       MATHEMATICS.2013_2014=list(
+         boundaries_3 = c(332.8, 839.2), 
+         boundaries_4 = c(398.1, 876.9), 
+         boundaries_5 = c(495.3, 887.7), 
+         boundaries_6 = c(513.8, 912.2), 
+         boundaries_7 = c(516.8, 951.2), 
+         boundaries_8 = c(518.7, 954.3), 
+         knots_3 = c(559, 586, 608, 640), 
+         knots_4 = c(596, 620, 641, 668), 
+         knots_5 = c(616, 642, 669, 700), 
+         knots_6 = c(636, 660, 687, 718), 
+         knots_7 = c(653, 675, 697, 726), 
+         knots_8 = c(667, 692, 716, 746),
+         loss.hoss_3 = c(375, 797), 
+         loss.hoss_4 = c(438, 837), 
+         loss.hoss_5 = c(528, 855), 
+         loss.hoss_6 = c(547, 879), 
+         loss.hoss_7 = c(553, 915), 
+         loss.hoss_8 = c(555, 918)), 
+       READING.2013_2014 = list(
+         boundaries_3 = c(365.5, 803.5), 
+         boundaries_4 = c(409.7, 821.3), 
+         boundaries_5 = c(438.6, 827.4), 
+         boundaries_6 = c(453.8, 852.2),
+         boundaries_7 = c(440.6, 865.4), 
+         boundaries_8 = c(467.3, 859.7), 
+         knots_3 = c(557, 590, 615, 641), 
+         knots_4 = c(579, 606, 632, 652), 
+         knots_5 = c(590, 616, 641, 668), 
+         knots_6 = c(593, 622, 650, 675), 
+         knots_7 = c(609, 638, 662, 687), 
+         loss.hoss_3 = c(402, 767), 
+         knots_8 = c(623, 652, 677, 702),
+         loss.hoss_4 = c(444, 787), 
+         loss.hoss_5 = c(471, 795), 
+         loss.hoss_6 = c(487, 819), 
+         loss.hoss_7 = c(476, 830), 
+         loss.hoss_8 = c(500, 827)))
 
 SGPstateData[["WY"]][["Achievement"]][["Cutscores"]] <- 
   list(MATHEMATICS=list(
@@ -6071,7 +6109,22 @@ SGPstateData[["WY"]][["Achievement"]][["Cutscores"]] <-
          GRADE_5 = c(587, 639, 707),
          GRADE_6 = c(594, 650, 718),
          GRADE_7 = c(610, 668, 746),
-         GRADE_8 = c(624, 676, 749)))
+         GRADE_8 = c(624, 676, 749)),
+       
+       MATHEMATICS.2013_2014=list(
+         GRADE_3 = c(550, 599, 660),
+         GRADE_4 = c(584, 637, 697),
+         GRADE_5 = c(609, 652, 727),
+         GRADE_6 = c(629, 677, 743),
+         GRADE_7 = c(653, 697, 753),
+         GRADE_8 = c(664, 707, 763)),
+       READING.2013_2014=list(
+         GRADE_3 = c(553, 590, 641),
+         GRADE_4 = c(566, 606, 660),
+         GRADE_5 = c(578, 620, 668),
+         GRADE_6 = c(589, 630, 681),
+         GRADE_7 = c(606, 642, 693),
+         GRADE_8 = c(616, 656, 711)))
 
 SGPstateData[["WY"]][["Achievement"]][["Levels"]] <- 
   list(
@@ -6094,20 +6147,54 @@ SGPstateData[["WY"]][["Assessment_Program_Information"]] <-
        Organization=list(
          Name="Wyoming Department of Education",
          Abbreviation="WY",
+         URL="http://edu.wyoming.gov/educators/assessment/paws/",
+         Contact="deb.lindsey@wyo.gov",
          Content_Areas=c("Mathematics", "Reading"),
          Grades_Tested=c(3,4,5,6,7,8),
-         Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013")))
+         Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015")
+         )
+       )
        
 SGPstateData[["WY"]][["Student_Report_Information"]] <- 
   list(
        Vertical_Scale="Yes",
        Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
        Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
-       Achievement_Level_Labels=list(
-          Below_Basic = "Below",
+  	Achievement_Level_Labels=list(
+          `Below basic` = "Below", 
           Basic = "Basic",
           Proficient = "Proficient",
           Advanced = "Advanced"))		
+
+SGPstateData[["WY"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+  list(
+    Assessment_Abbreviation="PAWS Pre",
+    Assessment_Abbreviation.2013_2014="PAWS",
+    Assessment_Name="Public Assessment of Wyoming Students (pre- 2013-14 Standards)",
+    Assessment_Name.2013_2014="Public Assessment of Wyoming Students (2013-14 Standards)",
+    Achievement_Levels=list(
+      Labels=c("Below Basic", "Basic", "Proficient", "Advanced", "No Score"),
+      Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+    Achievement_Levels.2013_2014=list(
+      Labels=c("Below Basic", "Basic", "Proficient", "Advanced", "No Score"),
+      Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+    Achievement_Level_Labels=list(
+      "Below Basic"="Below Basic",
+      "Basic"="Basic",
+      "Proficient"="Proficient",
+      "Advanced"="Advanced"),
+    Achievement_Level_Labels.2013_2014=list(
+      "Below Basic"="Below Basic",
+      "Basic"="Basic",
+      "Proficient"="Proficient",
+      "Advanced"="Advanced"),
+    Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+    Content_Areas_Labels.2013_2014=list(MATHEMATICS="Math", READING="Reading"),
+    Vertical_Scale = "Yes",
+    Vertical_Scale.2013_2014 = "Yes",
+    Year="2013_2014"  
+  )
+
 
 ######################################################
 ###

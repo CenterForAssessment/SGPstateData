@@ -153,8 +153,8 @@ function() {
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
 		grid.text(x=0.02, y=0.65, paste("For more information please visit the", tmp.organization$Name, paste("(", tmp.organization$Abbreviation, ")", sep=""),
 			"at", tmp.organization$URL, "or contact", tmp.organization$Contact), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- paste("Cooperatively developed by the ", tmp.organization$Abbreviation, " & the Center for Assessment, Inc.", sep="")
-		grid.text(x=0.02, y=0.30, paste(copyright.text, " Distributed by the ", tmp.organization$Abbreviation, ".", sep=""), 
+		copyright.text <- paste("Cooperatively developed by ", tmp.organization$Abbreviation, " & the Center for Assessment, Inc.", sep="")
+		grid.text(x=0.02, y=0.30, paste(copyright.text, " Distributed by ", tmp.organization$Abbreviation, ".", sep=""), 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
 

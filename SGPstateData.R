@@ -1167,7 +1167,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014"),
+	Assessment_Years=c("2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)
@@ -1188,8 +1188,12 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
-				return.norm.group.scale.scores=TRUE, 
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(
@@ -1984,6 +1988,16 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(220, 229, 243),
 		GRADE_9=c(230, 238, 251),
 		GRADE_10=c(230, 238, 251)),
+	MATHEMATICS_2013.2014=list(
+		GRADE_3=c(2381, 2436, 2501),
+		GRADE_4=c(2411, 2485, 2549),
+		GRADE_5=c(2455, 2528, 2579),
+		GRADE_6=c(2473, 2552, 2610),
+		GRADE_7=c(2484, 2567, 2635),
+		GRADE_8=c(2504, 2586, 2653),
+		GRADE_9=c(2515, 2599, 2676),
+		GRADE_10=c(2529, 2614, 2697),
+		GRADE_11=c(2543, 2628, 2718)),
 	READING=list(
 		GRADE_3=c(187, 192, 208),
 		GRADE_4=c(193, 198, 214),
@@ -1992,7 +2006,17 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(204, 212, 227),
 		GRADE_8=c(207, 214, 229),
 		GRADE_9=c(211, 220, 235),
-		GRADE_10=c(211, 220, 235)))
+		GRADE_10=c(211, 220, 235)),
+	READING.2013_2014=list(
+		GRADE_3=c(2367, 2432, 2490),
+		GRADE_4=c(2416, 2473, 2533),
+		GRADE_5=c(2442, 2502, 2582),
+		GRADE_6=c(2457, 2531, 2618),
+		GRADE_7=c(2479, 2552, 2649),
+		GRADE_8=c(2487, 2567, 2668),
+		GRADE_9=c(2488, 2571, 2670),
+		GRADE_10=c(2491, 2577, 2677),
+		GRADE_11=c(2493, 2583, 2682)))
 
 SGPstateData[["ID"]][["Achievement"]][["Levels"]] <- 
 	list(
@@ -2031,6 +2055,37 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 			"Basic"="Basic", 
 			"Proficient"="Proficient", 
 			"Advanced"="Advanced"))
+
+SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+        list(
+                Assessment_Abbreviation="ISAT",
+                Assessment_Abbreviation.2014_2015="ISAT by SB",
+                Assessment_Name="Idaho Standards Achievement Test",
+                Assessment_Name.2014_2015="Idaho Standards Achievement Test by Smarter Balanced",
+                Achievement_Levels=list(
+                        Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+                Achievement_Levels.2014_2015=list(
+			      Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),  
+                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+                Achievement_Level_Labels=list(
+                        "Below Basic"="Below Basic",
+                        "Basic"="Basic",
+                        "Proficient"="Proficient",
+                        "Advanced"="Advanced"),
+                Achievement_Level_Labels.2014_2015=list(
+                        "Below Basic"="Below Basic",
+                        "Basic"="Basic",
+                        "Proficient"="Proficient",
+                        "Advanced"="Advanced"),
+                Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+                Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+                Vertical_Scale="No",
+                Vertical_Scale.2014_2015="Yes",
+                Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+                Year="2014_2015"
+        )
+
 
 ### ILLINOIS
 
@@ -4074,12 +4129,16 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
-				max.sgp.target.years.forward=6,
-				sgp.projections.max.forward.progression.years=6,
+				max.sgp.target.years.forward=9,
+				sgp.projections.max.forward.progression.years=9,
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
 				return.percentile.trajectory.values=TRUE,
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_SGP_Config_Function,
@@ -4118,15 +4177,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 					READING_FSF=6,
 					MATHEMATICS_FSF=6,
 					EARLY_LITERACY_FSF=6,
-					READING_FWS=9,
-					MATHEMATICS_FWS=9,
-					EARLY_LITERACY_FWS=9,
+					READING_FWS=10,
+					MATHEMATICS_FWS=10,
+					EARLY_LITERACY_FWS=10,
 					READING_WSS=1,
 					MATHEMATICS_WSS=1,
 					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
-					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
-						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+#					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                   ## OLD
+#						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                          ## OLD
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                   ## NEW
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED', 'SGP_NORM_GROUP_BASELINE_SCALE_SCORES', 'SGP_NORM_GROUP_BASELINE_DATES'), ## NEW
 					SGProjection=c('ID','STATE',
 						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
@@ -4134,18 +4195,27 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'LEVEL_1_SGP_TARGET_TIME_4_CURRENT','LEVEL_2_SGP_TARGET_TIME_4_CURRENT','LEVEL_3_SGP_TARGET_TIME_4_CURRENT','LEVEL_4_SGP_TARGET_TIME_4_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_5_CURRENT','LEVEL_2_SGP_TARGET_TIME_5_CURRENT','LEVEL_3_SGP_TARGET_TIME_5_CURRENT','LEVEL_4_SGP_TARGET_TIME_5_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_6_CURRENT','LEVEL_2_SGP_TARGET_TIME_6_CURRENT','LEVEL_3_SGP_TARGET_TIME_6_CURRENT','LEVEL_4_SGP_TARGET_TIME_6_CURRENT',
-						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT',
-						'P1_PROJ_TIME_5_CURRENT','P1_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT',
-						'P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT','P5_PROJ_TIME_6_CURRENT',
-						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT',
-						'P35_PROJ_TIME_5_CURRENT','P35_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT',
-						'P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT','P50_PROJ_TIME_6_CURRENT',
-						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT',
-						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
-						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
-						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
-						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
-						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
+						'LEVEL_1_SGP_TARGET_TIME_7_CURRENT','LEVEL_2_SGP_TARGET_TIME_7_CURRENT','LEVEL_3_SGP_TARGET_TIME_7_CURRENT','LEVEL_4_SGP_TARGET_TIME_7_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_8_CURRENT','LEVEL_2_SGP_TARGET_TIME_8_CURRENT','LEVEL_3_SGP_TARGET_TIME_8_CURRENT','LEVEL_4_SGP_TARGET_TIME_8_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_9_CURRENT','LEVEL_2_SGP_TARGET_TIME_9_CURRENT','LEVEL_3_SGP_TARGET_TIME_9_CURRENT','LEVEL_4_SGP_TARGET_TIME_9_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_10_CURRENT','LEVEL_2_SGP_TARGET_TIME_10_CURRENT','LEVEL_3_SGP_TARGET_TIME_10_CURRENT','LEVEL_4_SGP_TARGET_TIME_10_CURRENT',## NEW
+						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT', 'P1_PROJ_TIME_5_CURRENT',
+						'P1_PROJ_TIME_6_CURRENT','P1_PROJ_TIME_7_CURRENT','P1_PROJ_TIME_8_CURRENT','P1_PROJ_TIME_9_CURRENT', 'P1_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT','P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT',
+						'P5_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_7_CURRENT','P5_PROJ_TIME_8_CURRENT','P5_PROJ_TIME_9_CURRENT','P5_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT','P35_PROJ_TIME_5_CURRENT',
+						'P35_PROJ_TIME_6_CURRENT','P35_PROJ_TIME_7_CURRENT','P35_PROJ_TIME_8_CURRENT','P35_PROJ_TIME_9_CURRENT','P35_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT','P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT',
+						'P50_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_7_CURRENT','P50_PROJ_TIME_8_CURRENT','P50_PROJ_TIME_9_CURRENT','P50_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT','P66_PROJ_TIME_5_CURRENT',
+						'P66_PROJ_TIME_6_CURRENT','P66_PROJ_TIME_7_CURRENT','P66_PROJ_TIME_8_CURRENT','P66_PROJ_TIME_9_CURRENT','P66_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT','P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT',
+						'P95_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_7_CURRENT','P95_PROJ_TIME_8_CURRENT','P95_PROJ_TIME_9_CURRENT','P95_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT','P99_PROJ_TIME_5_CURRENT',
+						'P99_PROJ_TIME_6_CURRENT','P99_PROJ_TIME_7_CURRENT','P99_PROJ_TIME_8_CURRENT','P99_PROJ_TIME_9_CURRENT','P99_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+#						'SGP_PROJECTION_GROUP', 'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'GROUP'),    ## OLD
+						'SGP_PROJECTION_GROUP', 'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'GROUP',     ## NEW
+						'SGP_PROJECTION_GROUP_SCALE_SCORES', 'SGP_PROJECTION_GROUP_DATES'),                                             ## NEW
 					SGProjection_Target_6_TIME=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',
@@ -4154,28 +4224,29 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_4_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_6_CURRENT',
 						'SGP_PROJECTION_GROUP','GROUP'),
-					SGProjection_Target_9_TIME=c('ID','SGP_TARGET_BASELINE_9_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_2_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_4_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_6_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_8_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_9_TIME_PROJ_YEAR_9_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_2_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_4_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_6_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_8_CURRENT',
-						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_9_TIME_PROJ_YEAR_9_CURRENT',
+					SGProjection_Target_10_TIME=c('ID','SGP_TARGET_BASELINE_10_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_8_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_9_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_10_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_8_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_9_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_10_CURRENT',
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_2015_2016.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2014_2015.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']])
+	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], 
+		RLI_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2014_2015.3[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']], 
+		RLI_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']])
 )
 
 
@@ -4223,11 +4294,15 @@ SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 
 SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
-				max.sgp.target.years.forward=6,
-				sgp.projections.max.forward.progression.years=6,
+				max.sgp.target.years.forward=9,
+				sgp.projections.max.forward.progression.years=9,
 				sgp.projections.projection.unit="YEAR",
 				sgp.projections.projection.unit.label="TIME",
 				return.prior.scale.score.standardized=TRUE,
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
 				return.percentile.trajectory.values=TRUE,
 				outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
@@ -4267,15 +4342,17 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 					READING_FSF=6,
 					MATHEMATICS_FSF=6,
 					EARLY_LITERACY_FSF=6,
-					READING_FWS=9,
-					MATHEMATICS_FWS=9,
-					EARLY_LITERACY_FWS=9,
+					READING_FWS=10,
+					MATHEMATICS_FWS=10,
+					EARLY_LITERACY_FWS=10,
 					READING_WSS=1,
 					MATHEMATICS_WSS=1,
 					EARLY_LITERACY_WSS=1),
 				output.column.order=list(
-					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',
-						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),
+#					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                    ## OLD
+#						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                           ## OLD
+					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                    ## NEW
+						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED', 'SGP_NORM_GROUP_BASELINE_SCALE_SCORES', 'SGP_NORM_GROUP_BASELINE_DATES'),  ## NEW
 					SGProjection=c('ID','STATE',
 						'LEVEL_1_SGP_TARGET_TIME_1_CURRENT','LEVEL_2_SGP_TARGET_TIME_1_CURRENT','LEVEL_3_SGP_TARGET_TIME_1_CURRENT','LEVEL_4_SGP_TARGET_TIME_1_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_2_CURRENT','LEVEL_2_SGP_TARGET_TIME_2_CURRENT','LEVEL_3_SGP_TARGET_TIME_2_CURRENT','LEVEL_4_SGP_TARGET_TIME_2_CURRENT',
@@ -4283,36 +4360,58 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 						'LEVEL_1_SGP_TARGET_TIME_4_CURRENT','LEVEL_2_SGP_TARGET_TIME_4_CURRENT','LEVEL_3_SGP_TARGET_TIME_4_CURRENT','LEVEL_4_SGP_TARGET_TIME_4_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_5_CURRENT','LEVEL_2_SGP_TARGET_TIME_5_CURRENT','LEVEL_3_SGP_TARGET_TIME_5_CURRENT','LEVEL_4_SGP_TARGET_TIME_5_CURRENT',
 						'LEVEL_1_SGP_TARGET_TIME_6_CURRENT','LEVEL_2_SGP_TARGET_TIME_6_CURRENT','LEVEL_3_SGP_TARGET_TIME_6_CURRENT','LEVEL_4_SGP_TARGET_TIME_6_CURRENT',
-						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT',
-						'P1_PROJ_TIME_5_CURRENT','P1_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT',
-						'P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT','P5_PROJ_TIME_6_CURRENT',
-						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT',
-						'P35_PROJ_TIME_5_CURRENT','P35_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT',
-						'P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT','P50_PROJ_TIME_6_CURRENT',
-						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT',
-						'P66_PROJ_TIME_5_CURRENT','P66_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT',
-						'P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT','P95_PROJ_TIME_6_CURRENT',
-						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT',
-						'P99_PROJ_TIME_5_CURRENT','P99_PROJ_TIME_6_CURRENT','SGP_PROJECTION_GROUP',
-						'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT','GROUP'),
-					SGProjection_Target=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
+						'LEVEL_1_SGP_TARGET_TIME_7_CURRENT','LEVEL_2_SGP_TARGET_TIME_7_CURRENT','LEVEL_3_SGP_TARGET_TIME_7_CURRENT','LEVEL_4_SGP_TARGET_TIME_7_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_8_CURRENT','LEVEL_2_SGP_TARGET_TIME_8_CURRENT','LEVEL_3_SGP_TARGET_TIME_8_CURRENT','LEVEL_4_SGP_TARGET_TIME_8_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_9_CURRENT','LEVEL_2_SGP_TARGET_TIME_9_CURRENT','LEVEL_3_SGP_TARGET_TIME_9_CURRENT','LEVEL_4_SGP_TARGET_TIME_9_CURRENT',## NEW
+						'LEVEL_1_SGP_TARGET_TIME_10_CURRENT','LEVEL_2_SGP_TARGET_TIME_10_CURRENT','LEVEL_3_SGP_TARGET_TIME_10_CURRENT','LEVEL_4_SGP_TARGET_TIME_10_CURRENT',## NEW
+						'P1_PROJ_TIME_1_CURRENT','P1_PROJ_TIME_2_CURRENT','P1_PROJ_TIME_3_CURRENT','P1_PROJ_TIME_4_CURRENT', 'P1_PROJ_TIME_5_CURRENT',
+						'P1_PROJ_TIME_6_CURRENT','P1_PROJ_TIME_7_CURRENT','P1_PROJ_TIME_8_CURRENT','P1_PROJ_TIME_9_CURRENT', 'P1_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P5_PROJ_TIME_1_CURRENT','P5_PROJ_TIME_2_CURRENT','P5_PROJ_TIME_3_CURRENT','P5_PROJ_TIME_4_CURRENT','P5_PROJ_TIME_5_CURRENT',
+						'P5_PROJ_TIME_6_CURRENT','P5_PROJ_TIME_7_CURRENT','P5_PROJ_TIME_8_CURRENT','P5_PROJ_TIME_9_CURRENT','P5_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P35_PROJ_TIME_1_CURRENT','P35_PROJ_TIME_2_CURRENT','P35_PROJ_TIME_3_CURRENT','P35_PROJ_TIME_4_CURRENT','P35_PROJ_TIME_5_CURRENT',
+						'P35_PROJ_TIME_6_CURRENT','P35_PROJ_TIME_7_CURRENT','P35_PROJ_TIME_8_CURRENT','P35_PROJ_TIME_9_CURRENT','P35_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P50_PROJ_TIME_1_CURRENT','P50_PROJ_TIME_2_CURRENT','P50_PROJ_TIME_3_CURRENT','P50_PROJ_TIME_4_CURRENT','P50_PROJ_TIME_5_CURRENT',
+						'P50_PROJ_TIME_6_CURRENT','P50_PROJ_TIME_7_CURRENT','P50_PROJ_TIME_8_CURRENT','P50_PROJ_TIME_9_CURRENT','P50_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P66_PROJ_TIME_1_CURRENT','P66_PROJ_TIME_2_CURRENT','P66_PROJ_TIME_3_CURRENT','P66_PROJ_TIME_4_CURRENT','P66_PROJ_TIME_5_CURRENT',
+						'P66_PROJ_TIME_6_CURRENT','P66_PROJ_TIME_7_CURRENT','P66_PROJ_TIME_8_CURRENT','P66_PROJ_TIME_9_CURRENT','P66_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P95_PROJ_TIME_1_CURRENT','P95_PROJ_TIME_2_CURRENT','P95_PROJ_TIME_3_CURRENT','P95_PROJ_TIME_4_CURRENT','P95_PROJ_TIME_5_CURRENT',
+						'P95_PROJ_TIME_6_CURRENT','P95_PROJ_TIME_7_CURRENT','P95_PROJ_TIME_8_CURRENT','P95_PROJ_TIME_9_CURRENT','P95_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+						'P99_PROJ_TIME_1_CURRENT','P99_PROJ_TIME_2_CURRENT','P99_PROJ_TIME_3_CURRENT','P99_PROJ_TIME_4_CURRENT','P99_PROJ_TIME_5_CURRENT',
+						'P99_PROJ_TIME_6_CURRENT','P99_PROJ_TIME_7_CURRENT','P99_PROJ_TIME_8_CURRENT','P99_PROJ_TIME_9_CURRENT','P99_PROJ_TIME_10_CURRENT', ## 7-10 NEW
+#						'GROUP', 'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'SGP_PROJECTION_GROUP'),    ## OLD
+						'GROUP', 'CATCH_UP_KEEP_UP_STATUS_INITIAL_CURRENT','MOVE_UP_STAY_UP_STATUS_INITIAL_CURRENT', 'SGP_PROJECTION_GROUP',     ## NEW
+						'SGP_PROJECTION_GROUP_SCALE_SCORES', 'SGP_PROJECTION_GROUP_DATES'),                                             ## NEW
+					SGProjection_Target_6_TIME=c('ID','SGP_TARGET_BASELINE_6_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_2_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_4_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_6_TIME_PROJ_YEAR_6_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_2_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_4_CURRENT',
 						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_6_TIME_PROJ_YEAR_6_CURRENT',
+						'SGP_PROJECTION_GROUP','GROUP'),
+					SGProjection_Target_10_TIME=c('ID','SGP_TARGET_BASELINE_10_TIME_CURRENT','SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_8_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_9_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_10_TIME_PROJ_YEAR_10_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_1_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_2_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_3_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_4_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_5_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_6_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_7_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_8_CURRENT',
+						'SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_9_CURRENT','SCALE_SCORE_SGP_TARGET_BASELINE_MOVE_UP_STAY_UP_10_TIME_PROJ_YEAR_10_CURRENT',
 						'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.3.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2014_2015.4.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2014_2015.3.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
+load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
 SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.4[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2014_2015.3[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.4[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.4[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']])
+	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']], 
+		RLI_UK_Baseline_Matrices_2014_2015.3[['EARLY_LITERACY.BASELINE']]),
+	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2014_2015.3[['READING.BASELINE']]),
+	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']], 
+		RLI_UK_Baseline_Matrices_2014_2015.3[['MATHEMATICS.BASELINE']])
 )
 
 
@@ -6004,7 +6103,45 @@ SGPstateData[["WY"]][["Achievement"]][["Knots_Boundaries"]] <-
          loss.hoss_5 = c(346, 878),
          loss.hoss_6 = c(371, 912),
          loss.hoss_7 = c(367, 908),
-         loss.hoss_8 = c(409, 939)))
+         loss.hoss_8 = c(409, 939)),
+       MATHEMATICS.2013_2014=list(
+         boundaries_3 = c(332.8, 839.2), 
+         boundaries_4 = c(398.1, 876.9), 
+         boundaries_5 = c(495.3, 887.7), 
+         boundaries_6 = c(513.8, 912.2), 
+         boundaries_7 = c(516.8, 951.2), 
+         boundaries_8 = c(518.7, 954.3), 
+         knots_3 = c(559, 586, 608, 640), 
+         knots_4 = c(596, 620, 641, 668), 
+         knots_5 = c(616, 642, 669, 700), 
+         knots_6 = c(636, 660, 687, 718), 
+         knots_7 = c(653, 675, 697, 726), 
+         knots_8 = c(667, 692, 716, 746),
+         loss.hoss_3 = c(375, 797), 
+         loss.hoss_4 = c(438, 837), 
+         loss.hoss_5 = c(528, 855), 
+         loss.hoss_6 = c(547, 879), 
+         loss.hoss_7 = c(553, 915), 
+         loss.hoss_8 = c(555, 918)), 
+       READING.2013_2014 = list(
+         boundaries_3 = c(365.5, 803.5), 
+         boundaries_4 = c(409.7, 821.3), 
+         boundaries_5 = c(438.6, 827.4), 
+         boundaries_6 = c(453.8, 852.2),
+         boundaries_7 = c(440.6, 865.4), 
+         boundaries_8 = c(467.3, 859.7), 
+         knots_3 = c(557, 590, 615, 641), 
+         knots_4 = c(579, 606, 632, 652), 
+         knots_5 = c(590, 616, 641, 668), 
+         knots_6 = c(593, 622, 650, 675), 
+         knots_7 = c(609, 638, 662, 687), 
+         loss.hoss_3 = c(402, 767), 
+         knots_8 = c(623, 652, 677, 702),
+         loss.hoss_4 = c(444, 787), 
+         loss.hoss_5 = c(471, 795), 
+         loss.hoss_6 = c(487, 819), 
+         loss.hoss_7 = c(476, 830), 
+         loss.hoss_8 = c(500, 827)))
 
 SGPstateData[["WY"]][["Achievement"]][["Cutscores"]] <- 
   list(MATHEMATICS=list(
@@ -6020,7 +6157,22 @@ SGPstateData[["WY"]][["Achievement"]][["Cutscores"]] <-
          GRADE_5 = c(587, 639, 707),
          GRADE_6 = c(594, 650, 718),
          GRADE_7 = c(610, 668, 746),
-         GRADE_8 = c(624, 676, 749)))
+         GRADE_8 = c(624, 676, 749)),
+       
+       MATHEMATICS.2013_2014=list(
+         GRADE_3 = c(550, 599, 660),
+         GRADE_4 = c(584, 637, 697),
+         GRADE_5 = c(609, 652, 727),
+         GRADE_6 = c(629, 677, 743),
+         GRADE_7 = c(653, 697, 753),
+         GRADE_8 = c(664, 707, 763)),
+       READING.2013_2014=list(
+         GRADE_3 = c(553, 590, 641),
+         GRADE_4 = c(566, 606, 660),
+         GRADE_5 = c(578, 620, 668),
+         GRADE_6 = c(589, 630, 681),
+         GRADE_7 = c(606, 642, 693),
+         GRADE_8 = c(616, 656, 711)))
 
 SGPstateData[["WY"]][["Achievement"]][["Levels"]] <- 
   list(
@@ -6043,20 +6195,54 @@ SGPstateData[["WY"]][["Assessment_Program_Information"]] <-
        Organization=list(
          Name="Wyoming Department of Education",
          Abbreviation="WY",
+         URL="http://edu.wyoming.gov/educators/assessment/paws/",
+         Contact="deb.lindsey@wyo.gov",
          Content_Areas=c("Mathematics", "Reading"),
          Grades_Tested=c(3,4,5,6,7,8),
-         Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013")))
+         Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015")
+         )
+       )
        
 SGPstateData[["WY"]][["Student_Report_Information"]] <- 
   list(
        Vertical_Scale="Yes",
        Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
        Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)), 
-       Achievement_Level_Labels=list(
-          Below_Basic = "Below",
+  	Achievement_Level_Labels=list(
+          `Below basic` = "Below", 
           Basic = "Basic",
           Proficient = "Proficient",
           Advanced = "Advanced"))		
+
+SGPstateData[["WY"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+  list(
+    Assessment_Abbreviation="PAWS Pre",
+    Assessment_Abbreviation.2013_2014="PAWS",
+    Assessment_Name="Public Assessment of Wyoming Students (pre- 2013-14 Standards)",
+    Assessment_Name.2013_2014="Public Assessment of Wyoming Students (2013-14 Standards)",
+    Achievement_Levels=list(
+      Labels=c("Below Basic", "Basic", "Proficient", "Advanced", "No Score"),
+      Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+    Achievement_Levels.2013_2014=list(
+      Labels=c("Below Basic", "Basic", "Proficient", "Advanced", "No Score"),
+      Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+    Achievement_Level_Labels=list(
+      "Below Basic"="Below Basic",
+      "Basic"="Basic",
+      "Proficient"="Proficient",
+      "Advanced"="Advanced"),
+    Achievement_Level_Labels.2013_2014=list(
+      "Below Basic"="Below Basic",
+      "Basic"="Basic",
+      "Proficient"="Proficient",
+      "Advanced"="Advanced"),
+    Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+    Content_Areas_Labels.2013_2014=list(MATHEMATICS="Math", READING="Reading"),
+    Vertical_Scale = "Yes",
+    Vertical_Scale.2013_2014 = "Yes",
+    Year="2013_2014"  
+  )
+
 
 ######################################################
 ###

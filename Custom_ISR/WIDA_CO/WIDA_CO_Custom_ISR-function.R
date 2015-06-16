@@ -77,7 +77,7 @@ function() {
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT_TRANSFORMED", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT_TRANSFORMED", sep="_")]]))),
-				Cutscores=Cutscores[[content_areas[vp]]],
+				Cutscores=sgPlot.cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO", SGP_Targets=sgPlot.sgp.targets,
 					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Font_Size="Small_1")))
@@ -145,7 +145,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2014 English Language Proficiency and Student Growth Report",
+		grid.text("2015 English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
@@ -153,8 +153,8 @@ function() {
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
 		grid.text(x=0.02, y=0.65, paste("For more information please visit the", tmp.organization$Name, paste("(", tmp.organization$Abbreviation, ")", sep=""),
 			"at", tmp.organization$URL, "or contact", tmp.organization$Contact), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- paste("Cooperatively developed by the ", tmp.organization$Abbreviation, " & the Center for Assessment, Inc.", sep="")
-		grid.text(x=0.02, y=0.30, paste(copyright.text, " Distributed by the ", tmp.organization$Abbreviation, ".", sep=""), 
+		copyright.text <- paste("Cooperatively developed by ", tmp.organization$Abbreviation, " & the Center for Assessment, Inc.", sep="")
+		grid.text(x=0.02, y=0.30, paste(copyright.text, " Distributed by ", tmp.organization$Abbreviation, ".", sep=""), 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
 
@@ -234,7 +234,7 @@ function() {
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT_TRANSFORMED", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT_TRANSFORMED", sep="_")]]))),
-				Cutscores=Cutscores[[content_areas[vp]]],
+				Cutscores=sgPlot.cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO_SPANISH", SGP_Targets=sgPlot.sgp.targets,
 					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size="Small_1")))
@@ -303,7 +303,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2014 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
+		grid.text("2015 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 

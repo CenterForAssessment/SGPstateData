@@ -4143,6 +4143,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_SGP_Config_Function,
 				max.n.for.coefficient.matrices=200000,
+				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
@@ -4308,6 +4309,7 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.config.function=RLI_UK_SGP_Config_Function,
 				max.n.for.coefficient.matrices=200000,
+				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 				grade.projection.sequence=list(
 					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
 					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),

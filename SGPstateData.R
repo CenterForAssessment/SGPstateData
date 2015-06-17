@@ -1988,7 +1988,7 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(220, 229, 243),
 		GRADE_9=c(230, 238, 251),
 		GRADE_10=c(230, 238, 251)),
-	MATHEMATICS_2013.2014=list(
+	MATHEMATICS_2015=list(
 		GRADE_3=c(2381, 2436, 2501),
 		GRADE_4=c(2411, 2485, 2549),
 		GRADE_5=c(2455, 2528, 2579),
@@ -2007,7 +2007,7 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(207, 214, 229),
 		GRADE_9=c(211, 220, 235),
 		GRADE_10=c(211, 220, 235)),
-	READING.2013_2014=list(
+	READING.2015=list(
 		GRADE_3=c(2367, 2432, 2490),
 		GRADE_4=c(2416, 2473, 2533),
 		GRADE_5=c(2442, 2502, 2582),
@@ -2059,13 +2059,13 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
                 Assessment_Abbreviation="ISAT",
-                Assessment_Abbreviation.2014_2015="ISAT by SB",
+                Assessment_Abbreviation.2015="ISAT by SB",
                 Assessment_Name="Idaho Standards Achievement Test",
-                Assessment_Name.2014_2015="Idaho Standards Achievement Test by Smarter Balanced",
+                Assessment_Name.2015="Idaho Standards Achievement Test by Smarter Balanced",
                 Achievement_Levels=list(
                         Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-                Achievement_Levels.2014_2015=list(
+                Achievement_Levels.2015=list(
 			      Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),  
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Level_Labels=list(
@@ -2073,17 +2073,17 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
                         "Basic"="Basic",
                         "Proficient"="Proficient",
                         "Advanced"="Advanced"),
-                Achievement_Level_Labels.2014_2015=list(
+                Achievement_Level_Labels.2015=list(
                         "Below Basic"="Below Basic",
                         "Basic"="Basic",
                         "Proficient"="Proficient",
                         "Advanced"="Advanced"),
                 Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-                Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+                Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",
-                Vertical_Scale.2014_2015="Yes",
+                Vertical_Scale.2015="Yes",
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
-                Year="2014_2015"
+                Year="2015"
         )
 
 
@@ -4145,45 +4145,21 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				max.n.for.coefficient.matrices=200000,
 				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 				grade.projection.sequence=list(
-					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					EARLY_LITERACY_FSF=paste(rep(as.character(c('PK','K',1:3)), each=2), c(1,3), sep="."),
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
-					EARLY_LITERACY_FWS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(1,2,3), sep="."),
-					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					EARLY_LITERACY_WSS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(2,3,4), sep=".")),
+					EARLY_LITERACY_FWS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(1,2,3), sep=".")),
 				content_area.projection.sequence=list(
-					READING_FSF=rep("READING", length(1:12)*2),
-					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
-					EARLY_LITERACY_FSF=rep("EARLY_LITERACY", length(c('PK','K',1:3))*2),
 					READING_FWS=rep("READING", length(1:12)*3),
 					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3),
-					READING_WSS=rep("READING", length(1:12)*3),
-					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERACY_WSS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3)),
+					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3)),
 				year_lags.projection.sequence=list(
-					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					EARLY_LITERACY_FSF=c(rep(c(0.2, 0.8), 4), 0.2),
 					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1)),
-					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERACY_WSS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1))),
+					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1))),
 				max.forward.projection.sequence=list(
-					READING_FSF=6,
-					MATHEMATICS_FSF=6,
-					EARLY_LITERACY_FSF=6,
 					READING_FWS=10,
 					MATHEMATICS_FWS=10,
-					EARLY_LITERACY_FWS=10,
-					READING_WSS=1,
-					MATHEMATICS_WSS=1,
-					EARLY_LITERACY_WSS=1),
+					EARLY_LITERACY_FWS=10),
 				output.column.order=list(
 #					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                   ## OLD
 #						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                          ## OLD
@@ -4311,45 +4287,21 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				max.n.for.coefficient.matrices=200000,
 				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 				grade.projection.sequence=list(
-					READING_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					MATHEMATICS_FSF=paste(rep(as.character(1:12), each=2), c(1,3), sep="."),
-					EARLY_LITERACY_FSF=paste(rep(as.character(c('PK','K',1:3)), each=2), c(1,3), sep="."),
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
-					EARLY_LITERACY_FWS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(1,2,3), sep="."),
-					READING_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					MATHEMATICS_WSS=paste(rep(as.character(1:12), each=3), c(2,3,4), sep="."),
-					EARLY_LITERACY_WSS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(2,3,4), sep=".")),
+					EARLY_LITERACY_FWS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(1,2,3), sep=".")),
 				content_area.projection.sequence=list(
-					READING_FSF=rep("READING", length(1:12)*2),
-					MATHEMATICS_FSF=rep("MATHEMATICS", length(1:12)*2),
-					EARLY_LITERACY_FSF=rep("EARLY_LITERACY", length(c('PK','K',1:3))*2),
 					READING_FWS=rep("READING", length(1:12)*3),
 					MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3),
-					READING_WSS=rep("READING", length(1:12)*3),
-					MATHEMATICS_WSS=rep("MATHEMATICS", length(1:12)*3),
-					EARLY_LITERACY_WSS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3)),
+					EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3)),
 				year_lags.projection.sequence=list(
-					READING_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					MATHEMATICS_FSF=c(rep(c(0.2, 0.8), 11), 0.2),
-					EARLY_LITERACY_FSF=c(rep(c(0.2, 0.8), 4), 0.2),
 					READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 					MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1)),
-					READING_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					MATHEMATICS_WSS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
-					EARLY_LITERACY_WSS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1))),
+					EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1))),
 				max.forward.projection.sequence=list(
-					READING_FSF=6,
-					MATHEMATICS_FSF=6,
-					EARLY_LITERACY_FSF=6,
 					READING_FWS=10,
 					MATHEMATICS_FWS=10,
-					EARLY_LITERACY_FWS=10,
-					READING_WSS=1,
-					MATHEMATICS_WSS=1,
-					EARLY_LITERACY_WSS=1),
+					EARLY_LITERACY_FWS=10),
 				output.column.order=list(
 #					SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',                    ## OLD
 #						'SGP_NORM_GROUP_BASELINE','SCALE_SCORE_PRIOR_STANDARDIZED'),                                                                           ## OLD

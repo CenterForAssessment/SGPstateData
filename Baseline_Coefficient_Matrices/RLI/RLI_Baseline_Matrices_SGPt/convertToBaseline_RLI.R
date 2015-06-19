@@ -50,7 +50,3 @@ for (i in tmp.years) {
 	assign(file.name, tmp.list.2)
 	save(list=file.name, file=paste(file.name, ".Rdata", sep=""))
 }
-
-
-
-

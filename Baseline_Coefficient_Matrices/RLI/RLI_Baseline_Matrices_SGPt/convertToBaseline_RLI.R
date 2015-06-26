@@ -31,7 +31,7 @@ convertToBaseline <- function(baseline_matrices) {
 
 ### Create vector of years to loop over
 
-tmp.years <- c("2011_2012.3", "2012_2013.1", "2012_2013.2", "2012_2013.3", "2013_2014.1", "2013_2014.2", "2013_2014.3", "2014_2015.1", "2014_2015.2")
+tmp.years <- c("2012_2013.1", "2012_2013.2", "2012_2013.3", "2013_2014.1", "2013_2014.2", "2013_2014.3", "2014_2015.1", "2014_2015.2")
 all.files <- list.files(pattern="Rdata")
 
 for (i in tmp.years) {
@@ -50,7 +50,3 @@ for (i in tmp.years) {
 	assign(file.name, tmp.list.2)
 	save(list=file.name, file=paste(file.name, ".Rdata", sep=""))
 }
-
-
-
-

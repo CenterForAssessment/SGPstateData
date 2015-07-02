@@ -1,6 +1,6 @@
 ###################################################################################
 ###
-### Script to convert RLI annual matrix to baseline
+### Script to convert RLI_UK annual matrix to baseline
 ###
 ###################################################################################
 
@@ -31,8 +31,8 @@ convertToBaseline <- function(baseline_matrices) {
 
 ### Create vector of years to loop over
 
-tmp.years <- c("2011_2012.3", "2012_2013.1", "2012_2013.2", "2012_2013.3", "2013_2014.1", "2013_2014.2", "2013_2014.3", "2014_2015.1", "2014_2015.2")
-all.files <- list.files(pattern="Rdata")
+tmp.years <- c("2012_2013.1", "2012_2013.2", "2012_2013.3", "2013_2014.1", "2013_2014.2", "2013_2014.3", "2014_2015.1", "2014_2015.2")
+all.files <- list.files(pattern="NEW_MATRICES/Rdata")
 
 for (i in tmp.years) {
 	tmp.list <- list()
@@ -42,17 +42,11 @@ for (i in tmp.years) {
 	new.year <-  paste(SGP:::yearIncrement(unlist(strsplit(gsub("RLI_UK_Baseline_Matrices_", "", file.name), "[.]"))[1], 1), unlist(strsplit(gsub("RLI_UK_Baseline_Matrices_", "", file.name), "[.]"))[2], sep=".")
 	file.name <- paste("RLI_UK_Baseline_Matrices_", new.year, sep="")
 	for (j in seq_along(tmp.files)) {
-		load(tmp.files[j])
+		load(file.path("NEW_MATRICES", tmp.files[j]))
 		tmp.list[[j]] <- get(tmp.names[j])
 	}
 	tmp.list.1 <- unlist(tmp.list, recursive=FALSE)
 	tmp.list.2 <- convertToBaseline(tmp.list.1)
 	assign(file.name, tmp.list.2)
-	load(file.path("../../RLI/RLI_Baseline_Matrices_SGPt", paste(gsub("_UK", "", file.name), ".Rdata", sep="")))
-	names.diff <- setdiff(names(get(gsub("_UK", "", file.name))$READING.BASELINE), names(get(file.name)$READING.BASELINE))
-	print(paste("EXTRA NAMES ADDED TO ", file.name, ": ", paste(names.diff, collapse=", ")))
-	if (length(names.diff) > 0) {
-		assign(file.name, list(READING.BASELINE=c(tmp.list.2$READING.BASELINE, get(gsub("_UK", "", file.name))$READING.BASELINE[match(names.diff, names(get(gsub("_UK", "", file.name))$READING.BASELINE))])))
-	}
 	save(list=file.name, file=paste(file.name, ".Rdata", sep=""))
 }

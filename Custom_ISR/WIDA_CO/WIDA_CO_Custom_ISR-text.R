@@ -30,7 +30,7 @@ For more information about the Colorado Growth Model visit: www.schoolview.org."
 Report_Text_SPANISH <- 
 "El prop\u{F3}sito de la evaluaci\u{F3}n \"ACCESS for ELLs\u{AE}\" para los estudiantes ELL, o sea los aprendices del Idioma Ingl\u{E9}s; es el de medir anualmente
 su progreso en el dominio del idioma ingl\u{E9}s. La evaluaci\u{F3}n sirve como un indicador que determina cuando los estudiantes ELL han alcanzado el
-nivel de competencia comparable con el nivel de sus compañeros proficientes en el idioma ingl\u{E9}s.  Este informe indica el nivel actual de
+nivel de competencia comparable con el nivel de sus compa\u{F1}eros proficientes en el idioma ingl\u{E9}s.  Este informe indica el nivel actual de
 conocimiento y el progreso del estudiante y determina si el nivel de estudio en el que se encuentra es el adecuado para llegar a ser proficiente
 en el idioma ingl\u{E9}s.
 
@@ -39,17 +39,17 @@ del idioma.  La calificaci\u{F3}n general consiste en escuchar, hablar, leer y e
 competencia.  Comenzando de menor a mayor rendimiento, los niveles son: inicial, transici\u{F3}n, desarrollado, elevado, apto y avanzado.
 
 Crecimiento: El modelo de crecimiento de Colorado mide el progreso anual de cada estudiante. Nos dice c\u{F3}mo el progreso del estudiante ELL se
-compara con el de estudiantes en los años anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes de
+compara con el de estudiantes en los a\u{F1}os anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes de
 crecimiento estudiantil oscilan entre 1 (bajo crecimiento) y 99 (alto crecimiento). Los porcentajes no son porcentajes de calificaciones, y no
 reflejan los niveles de logro de los estudiantes. A\u{FA}n los estudiantes con bajas calificaciones en sus ex\u{E1}menes pueden obtener altos porcentajes
-de crecimiento estudiantil, si comparados con sus compañeros, han progresado sustancialmente en su dominio del idioma ingl\u{E9}s desde la evaluaci\u{F3}n
-del año anterior. 
+de crecimiento estudiantil, si comparados con sus compa\u{F1}eros, han progresado sustancialmente en su dominio del idioma ingl\u{E9}s desde la evaluaci\u{F3}n
+del a\u{F1}o anterior. 
 
 Esperamos que este reporte le ayude a entender mejor el desarrollo de su hijo en el idioma Ingl\u{E9}s. Este reporte de crecimiento acad\u{E9}mico le
-podría servir para discutir con los maestros de su hijo preguntas como las siguientes:
+podr\u{ED}a servir para discutir con los maestros de su hijo preguntas como las siguientes:
     *  El crecimiento de mi hijo no ha sido suficiente para poder alcanzar dominio del idioma ingl\u{E9}s. \u{BF}Qu\u{E9} pasos debemos seguir para conseguir
        su mejoramiento? 
-    *  \u{BF}Es el crecimiento acad\u{E9}mico de mi hija suficiente para poder alcanzar el siguiente nivel el pr\u{F3}ximo año? 
-    *  \u{BF}Qu\u{E9} necesita hacer mi hijo para llegar al \u{FA}ltimo nivel el otro año? 
+    *  \u{BF}Es el crecimiento acad\u{E9}mico de mi hija suficiente para poder alcanzar el siguiente nivel el pr\u{F3}ximo a\u{F1}o? 
+    *  \u{BF}Qu\u{E9} necesita hacer mi hijo para llegar al \u{FA}ltimo nivel el otro a\u{F1}o? 
 
 Para obtener m\u{E1}s informaci\u{F3}n del Modelo de Crecimiento de Colorado visite:  www.schoolview.org."

@@ -1247,7 +1247,7 @@ SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <- list(
 	     	Labels=c("Insatisfactorio", "Necesita mejorar", "Satisfactorio", "Excelente"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "Típico", "Alto", "Muy alto")
+SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "T\u{ED}pico", "Alto", "Muy alto")
 SGPstateData[["GUA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81), Labels=list("1st-19th", "20th-39th", "40th-60th", "61st-80th", "81st-99th"))
 
@@ -1256,7 +1256,7 @@ SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <- list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
-		Content_Areas_Labels=list(MATHEMATICS="Matemáticas", READING="Lectura"),
+		Content_Areas_Labels=list(MATHEMATICS="Matem\u{E1}ticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
 		Achievement_Level_Labels=list(
 			"Insatisfactorio"="Insatisfactorio",
@@ -5743,18 +5743,18 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 #  Spanish ISR Version Info:
 
 SGPstateData[["WIDA_CO_SPANISH"]] <- SGPstateData[["WIDA_CO"]]
-SGPstateData[["WIDA_CO_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "Típico", "Alto")
+SGPstateData[["WIDA_CO_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
 SGPstateData[["WIDA_CO_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_CO"]][["SGP_Configuration"]]
 
 SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- 
 	list(
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(READING = "Calificación General"),
+	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),
 	Earliest_Year_Reported=list(READING = '2013'),
 	Achievement_Level_Labels=list(
 		"Inicial"="L1",
-		"En Transición"="L2",
+		"En Transici\u{F3}n"="L2",
 		"Desarrollado"="L3",
 		"Elevado"="L4",
 		"Apto"="L5",

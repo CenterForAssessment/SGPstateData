@@ -268,7 +268,7 @@ function() {
 		
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
-		grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
+		grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
 		popViewport()
 	
@@ -303,15 +303,15 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2015 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Inglés",
+		grid.text("2015 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, "Para obtener más información visite www.schoolview.org o llamar El Departamento de Educación de Colorado (CDE): 303-866-6763",
+		grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.schoolview.org o llamar El Departamento de Educaci\u{F3}n de Colorado (CDE): 303-866-6763",
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- "Producido por El Departamento de Educación de Colorado y El Centro de Evaluación, Inc."
+		copyright.text <- "Producido por El Departamento de Educaci\u{F3}n de Colorado y El Centro de Evaluaci\u{F3}n, Inc."
 		grid.text(x=0.02, y=0.30, copyright.text, 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()

@@ -1,5 +1,5 @@
 Report_Text_ENGLISH <- 
-"The purpose of the ACCESS for ELLs® assessment is to measure student progress toward English Language Proficiency on a yearly basis.  The
+"The purpose of the ACCESS for ELLs\u{AE} assessment is to measure student progress toward English Language Proficiency on a yearly basis.  The
 assessment serves as an indicator of when English Learners (ELs) reach language proficiency levels comparable to that of non-EL students.
 The report addresses your child's English proficiency level, how much your student progressed in their development of English and if they
 are on track to be proficient in English.
@@ -25,31 +25,31 @@ conversations with your child's school and teachers, to discuss questions such a
 For more information about the Colorado Growth Model visit: www.schoolview.org."
 
 
-"Reporte del Crecimiento Estudiantil en el Dominio del idioma Inglés"
+"Reporte del Crecimiento Estudiantil en el Dominio del idioma Ingl\u{E9}s"
 
 Report_Text_SPANISH <- 
-"El propósito de la evaluación \"ACCESS for ELLs®\" para los estudiantes ELL, o sea los aprendices del Idioma Inglés; es el de medir anualmente
-su progreso en el dominio del idioma inglés. La evaluación sirve como un indicador que determina cuando los estudiantes ELL han alcanzado el
-nivel de competencia comparable con el nivel de sus compañeros proficientes en el idioma inglés.  Este informe indica el nivel actual de
+"El prop\u{F3}sito de la evaluaci\u{F3}n \"ACCESS for ELLs\u{AE}\" para los estudiantes ELL, o sea los aprendices del Idioma Ingl\u{E9}s; es el de medir anualmente
+su progreso en el dominio del idioma ingl\u{E9}s. La evaluaci\u{F3}n sirve como un indicador que determina cuando los estudiantes ELL han alcanzado el
+nivel de competencia comparable con el nivel de sus compa\u{F1}eros proficientes en el idioma ingl\u{E9}s.  Este informe indica el nivel actual de
 conocimiento y el progreso del estudiante y determina si el nivel de estudio en el que se encuentra es el adecuado para llegar a ser proficiente
-en el idioma inglés.
+en el idioma ingl\u{E9}s.
 
-Resultado: La evaluación ACCESS for ELLs® proporciona una medida compuesta por la calificación general y el nivel de capacitación en el uso
-del idioma.  La calificación general consiste en escuchar, hablar, leer y escribir.  El grado de capacitación comprende seis niveles de
-competencia.  Comenzando de menor a mayor rendimiento, los niveles son: inicial, transición, desarrollado, elevado, apto y avanzado.
+Resultado: La evaluaci\u{F3}n ACCESS for ELLs\u{AE} proporciona una medida compuesta por la calificaci\u{F3}n general y el nivel de capacitaci\u{F3}n en el uso
+del idioma.  La calificaci\u{F3}n general consiste en escuchar, hablar, leer y escribir.  El grado de capacitaci\u{F3}n comprende seis niveles de
+competencia.  Comenzando de menor a mayor rendimiento, los niveles son: inicial, transici\u{F3}n, desarrollado, elevado, apto y avanzado.
 
-Crecimiento: El modelo de crecimiento de Colorado mide el progreso anual de cada estudiante. Nos dice cómo el progreso del estudiante ELL se
-compara con el de estudiantes en los años anteriores que alcanzaron similar puntuación en su evaluación ACCESS for ELL. Estos porcentajes de
+Crecimiento: El modelo de crecimiento de Colorado mide el progreso anual de cada estudiante. Nos dice c\u{F3}mo el progreso del estudiante ELL se
+compara con el de estudiantes en los a\u{F1}os anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes de
 crecimiento estudiantil oscilan entre 1 (bajo crecimiento) y 99 (alto crecimiento). Los porcentajes no son porcentajes de calificaciones, y no
-reflejan los niveles de logro de los estudiantes. Aún los estudiantes con bajas calificaciones en sus exámenes pueden obtener altos porcentajes
-de crecimiento estudiantil, si comparados con sus compañeros, han progresado sustancialmente en su dominio del idioma inglés desde la evaluación
-del año anterior. 
+reflejan los niveles de logro de los estudiantes. A\u{FA}n los estudiantes con bajas calificaciones en sus ex\u{E1}menes pueden obtener altos porcentajes
+de crecimiento estudiantil, si comparados con sus compa\u{F1}eros, han progresado sustancialmente en su dominio del idioma ingl\u{E9}s desde la evaluaci\u{F3}n
+del a\u{F1}o anterior. 
 
-Esperamos que este reporte le ayude a entender mejor el desarrollo de su hijo en el idioma Inglés. Este reporte de crecimiento académico le
-podría servir para discutir con los maestros de su hijo preguntas como las siguientes:
-    *  El crecimiento de mi hijo no ha sido suficiente para poder alcanzar dominio del idioma inglés. ¿Qué pasos debemos seguir para conseguir
+Esperamos que este reporte le ayude a entender mejor el desarrollo de su hijo en el idioma Ingl\u{E9}s. Este reporte de crecimiento acad\u{E9}mico le
+podr\u{ED}a servir para discutir con los maestros de su hijo preguntas como las siguientes:
+    *  El crecimiento de mi hijo no ha sido suficiente para poder alcanzar dominio del idioma ingl\u{E9}s. \u{BF}Qu\u{E9} pasos debemos seguir para conseguir
        su mejoramiento? 
-    *  ¿Es el crecimiento académico de mi hija suficiente para poder alcanzar el siguiente nivel el próximo año? 
-    *  ¿Qué necesita hacer mi hijo para llegar al último nivel el otro año? 
+    *  \u{BF}Es el crecimiento acad\u{E9}mico de mi hija suficiente para poder alcanzar el siguiente nivel el pr\u{F3}ximo a\u{F1}o? 
+    *  \u{BF}Qu\u{E9} necesita hacer mi hijo para llegar al \u{FA}ltimo nivel el otro a\u{F1}o? 
 
-Para obtener más información del Modelo de Crecimiento de Colorado visite:  www.schoolview.org."
+Para obtener m\u{E1}s informaci\u{F3}n del Modelo de Crecimiento de Colorado visite:  www.schoolview.org."

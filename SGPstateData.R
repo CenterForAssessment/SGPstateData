@@ -4528,6 +4528,24 @@ SGPstateData[["SD"]][["Student_Report_Information"]] <-
 
 SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 	ELA.2014=list(
+		boundaries_3=c(10, 1080),
+		boundaries_4=c(10, 1080),
+		boundaries_5=c(10, 1080),
+		boundaries_6=c(10, 1080),
+		boundaries_7=c(10, 1080),
+		boundaries_8=c(10, 1080),
+		boundaries_9=c(10, 1080),
+		boundaries_10=c(10, 1080),
+		boundaries_11=c(10, 1080),
+		knots_3=c(263, 307, 343, 383),
+		knots_4=c(293, 343, 382, 425),
+		knots_5=c(330, 379, 417, 457),
+		knots_6=c(357, 404, 442, 484),
+		knots_7=c(366, 415, 456, 500),
+		knots_8=c(375, 430, 476, 521),
+		knots_9=c(385, 446, 492, 541),
+		knots_10=c(394, 459, 507, 558),
+		knots_11=c(398, 462, 514, 567),
 		loss.hoss_3=c(100, 999),
 		loss.hoss_4=c(100, 999),
 		loss.hoss_5=c(100, 999),
@@ -4565,7 +4583,21 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(130, 199),
 		loss.hoss_10=c(130, 199),
 		loss.hoss_11=c(130, 199)),
+	
 	MATHEMATICS.2014=list(
+		boundaries_3=c(75, 975),
+		boundaries_4=c(75, 975),
+		boundaries_5=c(75, 975),
+		boundaries_6=c(75, 975),
+		boundaries_7=c(75, 975),
+		boundaries_8=c(75, 975),
+		knots_3=c(285, 306, 323, 341),
+		knots_4=c(312, 338, 358, 380),
+		knots_5=c(338, 368, 391, 416),
+		knots_6=c(367, 401, 428, 457),
+		knots_7=c(392, 427, 456, 487),
+		knots_8=c(422, 464, 498, 536),
+		#knots_8=c(420, 462, 496, 533),
 		loss.hoss_3=c(150, 900),
 		loss.hoss_4=c(150, 900),
 		loss.hoss_5=c(150, 900),
@@ -4591,7 +4623,18 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_6=c(130, 199),
 		loss.hoss_7=c(130, 199),
 		loss.hoss_8=c(130, 199)),
+
 	SCIENCE.2014=list(
+		boundaries_4=c(65, 1080),
+		boundaries_5=c(65, 1080),
+		boundaries_6=c(65, 1080),
+		boundaries_7=c(65, 1080),
+		boundaries_8=c(65, 1080),
+		knots_4=c(811, 829, 843, 858),
+		knots_5=c(817, 832, 845, 858),
+		knots_6=c(806, 828, 846, 867),
+		knots_7=c(810, 828, 842, 858),
+		knots_8=c(813, 830, 845, 861),
 		loss.hoss_4=c(150, 999),
 		loss.hoss_5=c(150, 999),
 		loss.hoss_6=c(150, 999),
@@ -4625,37 +4668,51 @@ ALGEBRA_I=list(
 		loss.hoss_EOCT=c(125, 199)),
 
 SEC_MATH_I=list(
-		loss.hoss_EOCT=c(150, 900)),
+	knots_EOCT=c(431, 486, 528, 571),
+	boundaries_EOCT=c(75, 975),
+	loss.hoss_EOCT=c(150, 900)),
 
 SEC_MATH_II=list(
-		loss.hoss_EOCT=c(150, 900)),
+	knots_EOCT=c(462, 518, 565, 619),
+	boundaries_EOCT=c(75, 975),
+	loss.hoss_EOCT=c(150, 900)),
 
 SEC_MATH_III=list(
-		loss.hoss_EOCT=c(150, 900)),
+	knots_EOCT=c(502, 565, 614, 666),
+	boundaries_EOCT=c(75, 975),
+	loss.hoss_EOCT=c(150, 900)),
 
 EARTH_SCIENCE.2014=list(
-		loss.hoss_EOCT=c(650, 999)),
+	knots_EOCT=c(805, 826, 843, 862),
+	boundaries_EOCT=c(615, 1030),
+	loss.hoss_EOCT=c(650, 999)),
 EARTH_SCIENCE=list(
 		knots_EOCT=c(155, 161, 166, 172),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
 BIOLOGY.2014=list(
-		loss.hoss_EOCT=c(650, 999)),
+	knots_EOCT=c(806, 826, 840, 857),
+	boundaries_EOCT=c(615, 1030),
+	loss.hoss_EOCT=c(650, 999)),
 BIOLOGY=list(
 		knots_EOCT=c(156, 162, 167, 173),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
 CHEMISTRY.2014=list(
-		loss.hoss_EOCT=c(650, 999)),
+	knots_EOCT=c(804, 829, 847, 869),
+	boundaries_EOCT=c(615, 1030),
+	loss.hoss_EOCT=c(650, 999)),
 CHEMISTRY=list(
 		knots_EOCT=c(151, 158, 163, 168),
 		boundaries_EOCT=c(123, 206),
 		loss.hoss_EOCT=c(130, 199)),
 
 PHYSICS.2014=list(
-		loss.hoss_EOCT=c(650, 999)),
+	knots_EOCT=c(804, 827, 847, 869),
+	boundaries_EOCT=c(615, 1030),
+	loss.hoss_EOCT=c(650, 999)),
 PHYSICS=list(
 		knots_EOCT=c(155, 161, 166, 172),
 		boundaries_EOCT=c(123, 206),
@@ -4755,18 +4812,18 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
-SGPstateData[["UT"]][["SGP_Configuration"]] <- list(sgp.cohort.size=3000)
+SGPstateData[["UT"]][["SGP_Configuration"]] <- list(sgp.cohort.size=3000, max.order.for.percentile=5)
 SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 		ELA = as.character(3:11),
-		MATHEMATICS= c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
-		SEC_MATH_I = c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
-		SEC_MATH_II= c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
-		SEC_MATH_III=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
+		MATHEMATICS= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+		SEC_MATH_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+		SEC_MATH_II= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+		SEC_MATH_III=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 
-		PRE_ALGEBRA=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
-		ALGEBRA_I= c("EOCT", "EOCT", "EOCT", "EOCT"), # No rep('MATHEMATICS', 4), for 2013.  There are almost no kids in the data
-		GEOMETRY = c("EOCT", "EOCT", "EOCT", "EOCT"), 
-		ALGEBRA_II=c("6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
+# 		PRE_ALGEBRA=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
+# 		ALGEBRA_I= c("EOCT", "EOCT", "EOCT", "EOCT"), # No rep('MATHEMATICS', 4), for 2013.  There are almost no kids in the data
+# 		GEOMETRY = c("EOCT", "EOCT", "EOCT", "EOCT"), 
+# 		ALGEBRA_II=c("6", "7", "EOCT", "EOCT", "EOCT", "EOCT"),
 
 		SCIENCE = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		EARTH_SCIENCE=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
@@ -4775,15 +4832,16 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 		PHYSICS = c("EOCT", "EOCT", "EOCT"))  # Only Enough students with BIO and CHEM priors available
 SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
 		ELA = rep("ELA", 9),
-		MATHEMATICS= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
-		SEC_MATH_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
-		SEC_MATH_II= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
-		SEC_MATH_III=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
+		MATHEMATICS= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
+		SEC_MATH_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
+		SEC_MATH_II= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
+		SEC_MATH_III=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
 
-		PRE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-		ALGEBRA_I= c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-		GEOMETRY = c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-		ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+# 		PRE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+# 		ALGEBRA_I= c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+# 		GEOMETRY = c("PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+# 		ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "PRE_ALGEBRA", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+
 		SCIENCE = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		EARTH_SCIENCE=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		BIOLOGY = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
@@ -4792,15 +4850,16 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
 		ELA=rep(1L, 8),
-		MATHEMATICS= rep(1L, 7), # 7 is one fewer than the length of content_area.projection.sequence and grade.projection.sequence
-		SEC_MATH_I = rep(1L, 7),
-		SEC_MATH_II= rep(1L, 7),
-		SEC_MATH_III=rep(1L, 7),
+		MATHEMATICS= rep(1L, 8), # 8 is one fewer than the length of content_area.projection.sequence and grade.projection.sequence
+		SEC_MATH_I = rep(1L, 8),
+		SEC_MATH_II= rep(1L, 8),
+		SEC_MATH_III=rep(1L, 8),
 
-		PRE_ALGEBRA=rep(1L, 8),
-		ALGEBRA_I= rep(1L, 3),
-		GEOMETRY = rep(1L, 3),
-		ALGEBRA_II=rep(1L, 5),
+# 		PRE_ALGEBRA=rep(1L, 8),
+# 		ALGEBRA_I= rep(1L, 3),
+# 		GEOMETRY = rep(1L, 3),
+# 		ALGEBRA_II=rep(1L, 5),
+
 		SCIENCE = rep(1L, 8),
 		EARTH_SCIENCE =rep(1L, 8),
 		BIOLOGY = rep(1L, 7),
@@ -4819,7 +4878,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("ELA", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III", "SCIENCE", "EARTH_SCIENCE", "BIOLOGY", "CHEMISTRY", "PHYSICS"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
         Test_Season="Spring",
-	Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014"), # 2005-2007 removed in 2013
+	Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"), # 2005-2007 removed in 2013
 	Test_Vendor="AIR")
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 

@@ -1645,7 +1645,7 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(271, 300, 339),
 		GRADE_8=c(272, 300, 342),
 		GRADE_10=c(277, 300, 336)),
-	MATHEMATICS_2015=list(
+	MATHEMATICS.2015=list(
 		GRADE_3=c(2381, 2436, 2501),
 		GRADE_4=c(2411, 2485, 2549),
 		GRADE_5=c(2455, 2528, 2579),
@@ -1800,9 +1800,9 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
                 Assessment_Abbreviation="HSA",
-                Assessment_Abbreviation.2015="",
+                Assessment_Abbreviation.2015="SBA",
                 Assessment_Name="Hawaii State Assesment",
-                Assessment_Name.2015="",
+                Assessment_Name.2015="Smarter Balanced Assessment",
                 Achievement_Levels=list(
                         Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
@@ -5448,6 +5448,14 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_9=c(642, 668, 686, 707),
 		GRADE_10=c(645, 670, 690, 714),
 		GRADE_11=c(661, 680, 702, 723)),
+	MATHEMATICS.2014_2015=list(
+		GRADE_3=c(2381, 2436, 2501),
+		GRADE_4=c(2411, 2485, 2549),
+		GRADE_5=c(2455, 2528, 2579),
+		GRADE_6=c(2473, 2552, 2610),
+		GRADE_7=c(2484, 2567, 2635),
+		GRADE_8=c(2504, 2586, 2653),
+		GRADE_11=c(2543, 2628, 2718)),
 	READING=list(
 		GRADE_3=c(353, 413, 466, 502),
 		GRADE_4=c(356, 427, 467, 512),
@@ -5467,7 +5475,16 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(448, 481, 508, 539),
 		GRADE_9=c(449, 484, 517, 550),
 		GRADE_10=c(453, 492, 527, 560),
-		GRADE_11=c(454, 501, 528, 563)))
+		GRADE_11=c(454, 501, 528, 563)),
+	READING.2014_2015=list(
+		GRADE_3=c(2367, 2432, 2490),
+		GRADE_4=c(2416, 2473, 2533),
+		GRADE_5=c(2442, 2502, 2582),
+		GRADE_6=c(2457, 2531, 2618),
+		GRADE_7=c(2479, 2552, 2649),
+		GRADE_8=c(2487, 2567, 2668),
+		GRADE_11=c(2493, 2583, 2682)))
+
 
 SGPstateData[["WV"]][["Achievement"]][["College_Readiness_Cutscores"]] <- 
 	list(MATHEMATICS=list(
@@ -5506,9 +5523,9 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]] <-
 SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
                 Assessment_Abbreviation="WESTEST 2",
-                Assessment_Abbreviation.2015="",
+                Assessment_Abbreviation.2014_2015="SBA",
                 Assessment_Name="West Virginia Educational Standards Tests",
-                Assessment_Name.2015="",
+                Assessment_Name.2014_2015="Smarter Balanced Assessment",
                 Achievement_Levels=list(
 			Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
@@ -5527,11 +5544,11 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
                         "Level 3"="Level 3",
                         "Level 4"="Level 4"),
                 Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-                Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
+                Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",
-                Vertical_Scale.2015="Yes",
+                Vertical_Scale.2014_2015="Yes",
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
-                Year="2015"
+                Year="2014_2015"
         )
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- 

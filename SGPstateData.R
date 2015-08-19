@@ -4876,6 +4876,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		URL="www.schools.utah.gov",
 		Contact="(801) 538-7811"),
 	Content_Areas=c("ELA", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III", "SCIENCE", "EARTH_SCIENCE", "BIOLOGY", "CHEMISTRY", "PHYSICS"),
+	Scale_Change=list(READING="2014"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
         Test_Season="Spring",
 	Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"), # 2005-2007 removed in 2013

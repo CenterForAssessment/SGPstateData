@@ -4111,7 +4111,8 @@ load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
-source("Cutscores/RLI_Cutscores.R")
+#source("Cutscores/RLI/RLI_Cutscores.R")
+source("Cutscores/RLI/RLI_Cutscores_08152015.R")
 
 SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
 
@@ -4119,24 +4120,28 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- list( # use 
 	Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 	State_Levels = list(
 		Three_Level_States = list(
-			States = Three_Level_States <- c("GA", "IA", "IN", "NE", "NJ", "SC", "TX", "VA"),
+			States = Three_Level_States <- c("AB", "GA", "IA", "IN", "MD", "NE", "NJ", "TX", "VA"),
 			Levels = c("Not Proficient", "Proficient", "Proficient")),
 		Four_Level_States = list(
-			States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DE", "ID", "IL", "KY", "MA", "MI", "MN", 
-				"MO", "MS", "MT", "ND", "NM", "NV", "NY", "OK", "PA", "SD", "TN", "UT", "WA", "WI", "WY", "NC"),
+			States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DC", "DE", "HI", "ID", "IL", "KY", "MA", "ME", "MI", "MN", 
+				"MO", "MS", "MT", "ND", "NH", "NM", "NV", "NY", "OK", "PA", "RI", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WY"),
 			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Five_Level_States_A = list(
 			States = Five_Level_States_A <- c("CT", "FL", "KS", "OH", "WV"),
 			Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),			
 		Five_Level_States_B = list(
-			States = Five_Level_States_B <- c("CA", "LA"),
+			States = Five_Level_States_B <- c("CA", "LA", "NC", "OR"),
 			Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 		)
 	)
 
 # Make sure we have all state cutscore information updated in levels:
-if (!all(Cutscore_States %in% c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B))) message("NOTE: Not all RLI Cutscore states included in 3 - 5 Level list!")
-if (!all(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B) %in% Cutscore_States)) message("NOTE: Some states included in 3 - 5 Level list that do not have Cutscores!")
+if (length(tmp <- setdiff(Cutscore_States, c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
+	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 3 - 5 Level list!", sep=""))
+}
+if (length(tmp <- setdiff(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
+	message(paste("NOTE: Some states included in 3 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
+}
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

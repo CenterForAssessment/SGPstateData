@@ -4995,9 +4995,6 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Grades_Reported_Domains.20014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
 	)
 
-
-
-
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 
 	list( # Might need to change when number of prof levels are finalized for new SAGE test
 	Transformed_Achievement_Level_Cutscores=list(ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200), #0, 250, 500, 750, 1000 

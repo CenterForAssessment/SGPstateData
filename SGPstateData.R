@@ -188,7 +188,6 @@ SGPstateData[["AR"]][["Achievement"]][["Cutscores"]] <- list(
 								GRADE_9=c(154,200,250),
 								GRADE_10=c(154,200,250)))
 
-
 SGPstateData[["AR"]][["Achievement"]][["Levels"]] <-
 	list(
 	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),

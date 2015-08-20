@@ -1807,7 +1807,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
                         Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Levels.2015=list(
-			      Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),  
+			      Labels=c("Not Met (Level 1)", "Nearly Met (Level 2)", "Met (Level 3)", "Exceeded (Level 4)"),  
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	        Achievement_Level_Labels=list(
 			"Well Below"="Well Below Proficiency",
@@ -1815,10 +1815,10 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"),
                 Achievement_Level_Labels.2015=list(
-                        "Level 1"="Level 1",
-                        "Level 2"="Level 2",
-                        "Level 3"="Level 3",
-                        "Level 4"="Level 4"),
+                        "Not Met"="Not Met (Level 1)",
+                        "Nearly Met"="Nearly Met (Level 2)",
+                        "Met"="Met (Level 3)",
+                        "Exceeded"="Exceeded (Level 4)"),
                 Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
                 Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",

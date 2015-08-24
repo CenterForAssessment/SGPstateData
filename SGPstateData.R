@@ -1806,7 +1806,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
                         Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Levels.2015=list(
-			      Labels=c("Not Met (Level 1)", "Nearly Met (Level 2)", "Met (Level 3)", "Exceeded (Level 4)"),  
+			      Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),  
                         Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	        Achievement_Level_Labels=list(
 			"Well Below"="Well Below Proficiency",
@@ -1822,6 +1822,8 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",
                 Vertical_Scale.2015="Yes",
+		Grades_Tested=c(3,4,5,6,7,8,10),
+		Grades_Tested.2015=c(3,4,5,6,7,8,11),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
                 Year="2015"
         )
@@ -2128,6 +2130,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",
                 Vertical_Scale.2015="Yes",
+		Grades_Tested=c(3,4,5,6,7,8,9,10),
+		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
                 Year="2015"
         )
@@ -4974,6 +4978,8 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition
 			SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
 		Vertical_Scale="No",
 		Vertical_Scale.2014="No",
+		Grades_Tested=c(3,4,5,6,7,8,11),
+		Grades_Tested.2014=c(3,4,5,6,7,8,11),
 		Transformed_Achievement_Level_Cutscores=list(
 			ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
 			PRE_ALGEBRA=c(130, 160, 170, 200), ALGEBRA_I=c(130, 160, 170, 200), GEOMETRY=c(130, 160, 170, 200), ALGEBRA_II=c(130, 160, 170, 200),
@@ -5521,6 +5527,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_6=c(2473, 2552, 2610),
 		GRADE_7=c(2484, 2567, 2635),
 		GRADE_8=c(2504, 2586, 2653),
+		GRADE_9=c(2515, 2599, 2676),
+		GRADE_10=c(2529, 2614, 2697),
 		GRADE_11=c(2543, 2628, 2718)),
 	READING=list(
 		GRADE_3=c(353, 413, 466, 502),
@@ -5549,6 +5557,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_6=c(2457, 2531, 2618),
 		GRADE_7=c(2479, 2552, 2649),
 		GRADE_8=c(2487, 2567, 2668),
+		GRADE_9=c(2488, 2571, 2670),
+		GRADE_10=c(2491, 2577, 2677),
 		GRADE_11=c(2493, 2583, 2682)))
 
 
@@ -5589,9 +5599,9 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]] <-
 SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
                 Assessment_Abbreviation="WESTEST 2",
-                Assessment_Abbreviation.2014_2015="SBA",
+                Assessment_Abbreviation.2014_2015="WVGSA",
                 Assessment_Name="West Virginia Educational Standards Tests",
-                Assessment_Name.2014_2015="Smarter Balanced Assessment",
+                Assessment_Name.2014_2015="West Virginia General Summative Assessment",
                 Achievement_Levels=list(
 			Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
@@ -5613,6 +5623,8 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
                 Vertical_Scale="No",
                 Vertical_Scale.2014_2015="Yes",
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
                 Year="2014_2015"
         )
@@ -6082,6 +6094,8 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Trans
 		Transformed_Achievement_Level_Cutscores=list(READING=c(100,200,300,400,500,600)),
                 Vertical_Scale="No",
                 Vertical_Scale.2013="Yes",
+		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
                 Year="2013",
 		Baseline_Projections_in_Transition_Year=TRUE
         )
@@ -6199,6 +6213,8 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]][["Assessment_Trans
                 Content_Areas_Labels.2014=list(READING="Reading"),
                 Vertical_Scale="Yes",
                 Vertical_Scale.2014="Yes",
+		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+		Grades_Tested.2014=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
                 Year="2014",
 		Baseline_Projections_in_Transition_Year=TRUE
         )

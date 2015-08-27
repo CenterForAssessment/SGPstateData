@@ -1836,9 +1836,10 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			URL="www.doe.k12.hi.us", 
 			Contact="808-586-3230"), 
         Content_Areas=c("Mathematics", "Reading"),
-        Grades_Tested=c(3,4,5,6,7,8,10),
-        Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013"),
-	Test_Season="Year_Round")
+        Grades_Tested=c(3,4,5,6,7,8,11),
+        Grades_Tested.2015=c(3,4,5,6,7,8,10),
+        Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
+	Test_Season="Spring")
 
 SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
@@ -1869,6 +1870,8 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Grades_Tested.2015=c(3,4,5,6,7,8,11),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
+		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
                 Year="2015"
         )
 
@@ -1879,6 +1882,7 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
+		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	        Achievement_Level_Labels=list(
 			"Well Below"="Well Below Proficiency",
 			"Approaches"="Approaches Proficiency",
@@ -2198,6 +2202,7 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 	list(Vertical_Scale="Yes",
 		Content_Areas_Labels=list(LANGUAGE_USAGE="Language", MATHEMATICS="Math", READING="Read"),
 		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Achievement_Level_Labels=list(
 			"Below Basic"="Below Basic", 
 			"Basic"="Basic", 
@@ -2232,6 +2237,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Vertical_Scale.2015="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,9,10),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
+		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
                 Year="2015"
         )
@@ -5097,7 +5104,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition
 			SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
 			EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 		Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:7, "EOCT"), SCIENCE= c(4:8, "EOCT")),
-		Grades_Reported_Domains.20014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
+		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
 	)
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- 
@@ -5125,7 +5132,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
 		EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 	Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT")),
-
+	Earliest_Year_Reported=list(ELA="2014", MATHEMATICS="2014", SEC_MATH_I="2014", SEC_MATH_II="2014", SEC_MATH_III="2014", EARTH_SCIENCE="2014", BIOLOGY="2014", CHEMISTRY="2014", PHYSICS="2014"),
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",
@@ -5781,6 +5788,8 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Vertical_Scale.2014_2015="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), 
+		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
                 Year="2014_2015"
         )
@@ -5790,6 +5799,7 @@ SGPstateData[["WV"]][["Student_Report_Information"]] <-
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="R/LA"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
+	Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(
 		"Novice"="Novice",
 		"Partial Mastery"="Partial Mastery", 

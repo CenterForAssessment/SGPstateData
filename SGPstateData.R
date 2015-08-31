@@ -6332,7 +6332,8 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="MDE",
 		URL="www.michigan.gov/mde",
 		Contact="517-373-3324"),
-	Assessment_Years=c("2012", "2013", "2014"),
+	Scale_Change=list(READING="2014"),
+	Assessment_Years=c("2012", "2013", "2014", "2015"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")

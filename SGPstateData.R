@@ -1870,8 +1870,6 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Grades_Tested.2015=c(3,4,5,6,7,8,11),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
-		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
                 Year="2015"
         )
 
@@ -1881,8 +1879,8 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
-		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), ### 2014 and prior
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	        Achievement_Level_Labels=list(
 			"Well Below"="Well Below Proficiency",
 			"Approaches"="Approaches Proficiency",
@@ -2186,23 +2184,26 @@ SGPstateData[["ID"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["ID"]][["Assessment_Program_Information"]] <- 
 	list(
-	Assessment_Name="Idaho Standards Achievement Tests",
+	Assessment_Name="Idaho Standards Achievement Tests by SB",
 	Assessment_Abbreviation="ISAT",
         Organization=list(
 		Name="Idaho Department of Education",
 		Abbreviation="IDOE",
 		URL="www.sde.idaho.gov/",
 		Contact="support@sde.idaho.gov"),
+	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 	Content_Areas=c("Language Usage", "Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
 	Test_Season="Spring",
-	Test_Vendor="Data Recognition Corporation (DRC)")
+	Test_Vendor="SBAC/AIR")
 
 SGPstateData[["ID"]][["Student_Report_Information"]] <- 
-	list(Vertical_Scale="Yes",
-		Content_Areas_Labels=list(LANGUAGE_USAGE="Language", MATHEMATICS="Math", READING="Read"),
-		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
-		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
+	list(
+		Vertical_Scale="Yes",
+#		Content_Areas_Labels=list(LANGUAGE_USAGE="Language", MATHEMATICS="Math", READING="Read"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Read"),
+#		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Achievement_Level_Labels=list(
 			"Below Basic"="Below Basic", 
 			"Basic"="Basic", 
@@ -2237,8 +2238,6 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Vertical_Scale.2015="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,9,10),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
-		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
-		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
                 Year="2015"
         )
@@ -5748,16 +5747,17 @@ SGPstateData[["WV"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["WV"]][["Assessment_Program_Information"]] <- 
 	list(
 	Assessment_Name="West Virginia Educational Standards Tests",
-	Assessment_Abbreviation="WESTEST 2",
+	Assessment_Abbreviation="West Virginia General Summative Assessment",
         Organization=list(
                 Name="West Virginia Department of Education",
 		Abbreviation="WVDE",
                 URL="wvde.state.wv.us",
                 Contact="304-558-2546 "),
+	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 	Content_Areas=c("Reading", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 	Test_Season="Spring",
-	Test_Vendor="CTB/McGraw Hill")
+	Test_Vendor="SBAC/AIR")
 
 SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
         list(
@@ -5788,8 +5788,6 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Vertical_Scale.2014_2015="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), 
-		Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
                 Year="2014_2015"
         )
@@ -5798,8 +5796,8 @@ SGPstateData[["WV"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="R/LA"),
+#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
-	Grades_Reported.2015=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(
 		"Novice"="Novice",
 		"Partial Mastery"="Partial Mastery", 
@@ -6213,6 +6211,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
            Abbreviation="ESE",
            URL="http://www.doe.mass.edu/",
            Contact="781-338-3000"),
+	Scale_Change=list(READING="2013"),
 	Assessment_Years=c("2011", "2012", "2013", "2014"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),

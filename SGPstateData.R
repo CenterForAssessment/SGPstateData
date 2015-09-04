@@ -388,7 +388,7 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 ##	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
         Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
         Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
-	Earliest_Year_Reported=list(MATHEMATICS=2010),
+				Earliest_Year_Reported=list(MATHEMATICS=2010),
         Achievement_Level_Labels=list(
                 "Falls Far Below"="Falls Far Below",
                 "Approaches"="Approaches",
@@ -403,6 +403,9 @@ SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 
 ### ATI
+
+load("Knots_Boundaries/ATI_Knots_Boundaries.Rdata")
+SGPstateData[["ATI"]][["Achievement"]][["Knots_Boundaries"]] <- ATI_Knots_Boundaries
 
 SGPstateData[["ATI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -4977,6 +4980,7 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000, 
 	max.order.for.percentile=5,
+	sgPlot.use.alternate.student.id="SSID", 
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
@@ -5131,7 +5135,8 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <-
 		PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
 		EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 	Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT")),
-	Earliest_Year_Reported=list(ELA="2014", MATHEMATICS="2014", SEC_MATH_I="2014", SEC_MATH_II="2014", SEC_MATH_III="2014", EARTH_SCIENCE="2014", BIOLOGY="2014", CHEMISTRY="2014", PHYSICS="2014"),
+	Earliest_Year_Reported=list(ELA='2014', MATHEMATICS='2014', SEC_MATH_I = "2014", SEC_MATH_II = "2014", SEC_MATH_III = "2014",
+				SCIENCE='2014', EARTH_SCIENCE = "2014", BIOLOGY = "2014", CHEMISTRY="2014", PHYSICS = "2014"),
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",

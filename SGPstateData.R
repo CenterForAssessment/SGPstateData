@@ -405,6 +405,9 @@ SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 ### ATI
 
+load("Knots_Boundaries/ATI_Knots_Boundaries.Rda")
+SGPstateData[["ATI"]][["Achievement"]][["Knots_Boundaries"]] <- ATI_Knots_Boundaries
+
 SGPstateData[["ATI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["ATI"]][["Growth"]][["Cutscores"]] <-

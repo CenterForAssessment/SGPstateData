@@ -1891,7 +1891,7 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 			"Exceeds"="Exceeds Proficiency"))
 
 SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
-						sgPlot.fan=FALSE,
+						sgPlot.fan=TRUE,
 						output.groups=c("COMPLEX", "SCHOOL"),
 						outputSGP.translate.names=FALSE,
 						output.column.order=list(SGP_Data_LONG=

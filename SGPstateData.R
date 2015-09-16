@@ -1817,8 +1817,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 SGPstateData[["HI"]][["Achievement"]][["Levels"]] <-
         list(
-        Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
-        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+		Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["HI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -1850,16 +1850,16 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Assessment_Name="Hawaii State Assesment",
                 Assessment_Name.2015="Smarter Balanced Assessment",
                 Achievement_Levels=list(
-                        Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
-                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+			Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Levels.2015=list(
-			      Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
-                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-	        	Achievement_Level_Labels=list(
-					"Well Below"="Well Below Proficiency",
-					"Approaches"="Approaches Proficiency",
-					"Meets"="Meets Proficiency",
-					"Exceeds"="Exceeds Proficiency"),
+			Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Well Below"="Well Below Proficiency",
+			"Approaches"="Approaches Proficiency",
+			"Meets"="Meets Proficiency",
+			"Exceeds"="Exceeds Proficiency"),
                 Achievement_Level_Labels.2015=list(
                         "Not Met"="Not Met (Level 1)",
                         "Nearly Met"="Nearly Met (Level 2)",
@@ -2178,8 +2178,8 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 
 SGPstateData[["ID"]][["Achievement"]][["Levels"]] <-
 	list(
-	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+		Labels=c("1", "2", "3", "4"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["ID"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -2226,11 +2226,11 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Assessment_Name="Idaho Standards Achievement Test",
                 Assessment_Name.2015="Idaho Standards Achievement Test by Smarter Balanced",
                 Achievement_Levels=list(
-                        Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
-                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+			Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Levels.2015=list(
-			      Labels=c("1", "2", "3", "4"),
-                        Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+			Labels=c("1", "2", "3", "4"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
                 Achievement_Level_Labels=list(
                         "Below Basic"="Below Basic",
                         "Basic"="Basic",
@@ -5743,8 +5743,8 @@ SGPstateData[["WV"]][["Achievement"]][["College_Readiness_Cutscores"]] <-
 
 SGPstateData[["WV"]][["Achievement"]][["Levels"]] <-
 	list(
-	Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient"))
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["WV"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -5777,17 +5777,17 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
                 Assessment_Name="West Virginia Educational Standards Tests",
                 Assessment_Name.2014_2015="West Virginia General Summative Assessment",
                 Achievement_Levels=list(
-					Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
-					Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
+			Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
                 Achievement_Levels.2014_2015=list(
-			    	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
-                    Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-				Achievement_Level_Labels=list(
-					"Novice"="Novice",
-					"Partial Mastery"="Partial Mastery",
-					"Mastery"="Mastery",
-					"Above Mastery"="Above Mastery",
-					"Distinguished"="Distinguished"),
+			Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Novice"="Novice",
+			"Partial Mastery"="Partial Mastery",
+			"Mastery"="Mastery",
+			"Above Mastery"="Above Mastery",
+			"Distinguished"="Distinguished"),
                 Achievement_Level_Labels.2014_2015=list(
                         "Level 1"="Level 1",
                         "Level 2"="Level 2",

@@ -1,8 +1,7 @@
 `configSGP` <- 
 function(year,
 	 content_area,
-	 testing.window,
-         SGPt=NULL) {
+	 testing.window) {
 
 	### Utility function
 

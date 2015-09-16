@@ -1176,17 +1176,17 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["DEMO"]][["Student_Report_Information"]] <- 
 	list(
-#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
-#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400))), ### FOR TESTING
+# 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400)), ### FOR TESTING
+# 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400)), ### FOR TESTING
 	Vertical_Scale="Yes",
 	Projection_Fan_Limits=c(5, 95),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)), 
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 	Achievement_Level_Labels=list(
-		"Unsatisfactory"="Unsatisfactory", 
-		"Part Proficient"="Partially Proficient", 
+		"Unsatisfactory"="Unsatisfactory",
+		"Part Proficient"="Partially Proficient",
 		"Proficient"="Proficient", 
-		"Advanced"="Advanced"))		
+		"Advanced"="Advanced"))
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
@@ -4831,6 +4831,10 @@ ALGEBRA_I=list(
 		boundaries_EOCT=c(117, 207),
 		loss.hoss_EOCT=c(125, 199)),
 
+ALGEBRA_II=list(loss.hoss_EOCT=c(130, 199)),
+
+GEOMETRY=list(loss.hoss_EOCT=c(130, 199)),
+
 SEC_MATH_I=list(
 	knots_EOCT=c(431, 486, 528, 571),
 	boundaries_EOCT=c(75, 975),
@@ -4884,17 +4888,17 @@ PHYSICS=list(
 
 SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <- 
 	list(
+# 	ELA=list(
+# 		GRADE_3=c(160, 168),
+# 		GRADE_4=c(160, 168),
+# 		GRADE_5=c(160, 168),
+# 		GRADE_6=c(160, 168),
+# 		GRADE_7=c(160, 170),
+# 		GRADE_8=c(160, 168),
+# 		GRADE_9=c(160, 170),
+# 		GRADE_10=c(160, 169),
+# 		GRADE_11=c(160, 168)),
 	ELA=list(
-		GRADE_3=c(160, 168),
-		GRADE_4=c(160, 168),
-		GRADE_5=c(160, 168),
-		GRADE_6=c(160, 168),
-		GRADE_7=c(160, 170),
-		GRADE_8=c(160, 168),
-		GRADE_9=c(160, 170),
-		GRADE_10=c(160, 169),
-		GRADE_11=c(160, 168)),
-	ELA.2014=list(
 		 GRADE_3=c(334, 406),
 		 GRADE_4=c(378, 442),
 		 GRADE_5=c(410, 465),
@@ -4904,27 +4908,27 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		 GRADE_9=c(487, 559),
 		GRADE_10=c(498, 574),
 		GRADE_11=c(513, 591)),
+# 	MATHEMATICS=list(
+# 		GRADE_3=c(160, 168),
+# 		GRADE_4=c(160, 167),
+# 		GRADE_5=c(160, 166),
+# 		GRADE_6=c(160, 166),
+# 		GRADE_7=c(160, 169), 
+# 		GRADE_8=c(160, 168)),
 	MATHEMATICS=list(
-		GRADE_3=c(160, 168),
-		GRADE_4=c(160, 167),
-		GRADE_5=c(160, 166),
-		GRADE_6=c(160, 166),
-		GRADE_7=c(160, 169), 
-		GRADE_8=c(160, 168)),
-MATHEMATICS.2014=list(
 		GRADE_3=c(317, 337),
 		GRADE_4=c(349, 376),
 		GRADE_5=c(384, 416),
 		GRADE_6=c(432, 464),
 		GRADE_7=c(450, 499), 
 		GRADE_8=c(499, 554)),
+# 	SCIENCE=list(
+# 		GRADE_4=c(160, 167),
+# 		GRADE_5=c(160, 168),
+# 		GRADE_6=c(160, 167),
+# 		GRADE_7=c(160, 167),
+# 		GRADE_8=c(160, 167)),
 	SCIENCE=list(
-		GRADE_4=c(160, 167),
-		GRADE_5=c(160, 168),
-		GRADE_6=c(160, 167),
-		GRADE_7=c(160, 167),
-		GRADE_8=c(160, 167)),
-	SCIENCE.2014=list(
 		GRADE_4=c(840, 856),
 		GRADE_5=c(840, 856),
 		GRADE_6=c(840, 864),
@@ -4946,21 +4950,21 @@ MATHEMATICS.2014=list(
 	SEC_MATH_III=list(
 		GRADE_EOCT=c(611, 680)),
 
+# 	EARTH_SCIENCE=list(
+# 		GRADE_EOCT=c(160, 167)),
 	EARTH_SCIENCE=list(
-		GRADE_EOCT=c(160, 167)),
-	EARTH_SCIENCE.2014=list(
 		GRADE_EOCT=c(840, 866)),
+# 	BIOLOGY=list(
+# 		GRADE_EOCT=c(160, 167)),
 	BIOLOGY=list(
-		GRADE_EOCT=c(160, 167)),
-	BIOLOGY.2014=list(
 		GRADE_EOCT=c(840, 858)),
+# 	CHEMISTRY=list(
+# 		GRADE_EOCT=c(160, 166)),
 	CHEMISTRY=list(
-		GRADE_EOCT=c(160, 166)),
-	CHEMISTRY.2014=list(
 		GRADE_EOCT=c(840, 865)),
+# 	PHYSICS=list(
+# 		GRADE_EOCT=c(160, 169)),
 	PHYSICS=list(
-		GRADE_EOCT=c(160, 169)),
-	PHYSICS.2014=list(
 		GRADE_EOCT=c(840, 878)))
 
 SGPstateData[["UT"]][["Achievement"]][["Levels"]] <- 
@@ -4980,9 +4984,9 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000, 
 	max.order.for.percentile=5,
-	sgPlot.use.alternate.student.id="SSID", 
-	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+	sgPlot.use.alternate.student.id="SSID")
+# 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+# 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 		ELA = as.character(3:11),
@@ -5025,7 +5029,6 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 		SEC_MATH_I = rep(1L, 8),
 		SEC_MATH_II= rep(1L, 8),
 		SEC_MATH_III=rep(1L, 8),
-
 # 		PRE_ALGEBRA=rep(1L, 8),
 # 		ALGEBRA_I= rep(1L, 3),
 # 		GEOMETRY = rep(1L, 3),
@@ -5053,86 +5056,81 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"), # 2005-2007 removed in 2013
 	Test_Vendor="AIR")
 
-SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		# Year="2014",  # This controls when/if Target scale scores are equated.
-		Assessment_Abbreviation="CRT",
-		Assessment_Abbreviation.2014="SAGE",
-		Assessment_Name="Criterion Referenced Tests",
-		Assessment_Name.2014_2015="Student Assessment of Growth and Excellence",
-		Achievement_Levels=list(
-			Labels=c("BP", "P", "A"),  
-			Proficient=c("Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2014=list(
-			Labels=c("BP", "P", "A"),  
-			Proficient=c("Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Below Proficient"="BP",
-			"Proficient"="P",
-			"Advanced"="A"),
-		Achievement_Level_Labels.2014=list(
-			"Below Proficient"="BP",
-			"Proficient"="P",
-			"Advanced"="A"),
-		Content_Areas_Labels=list(ELA = "ELA", 
-			MATHEMATICS = "Math", PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
-			SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
-		Content_Areas_Labels.2014=list(ELA = "ELA", 
-			MATHEMATICS = "Math", SEC_MATH_I = "Secondary Math I", SEC_MATH_II = "Secondary Math II", SEC_MATH_III = "Secondary Math III",
-			SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
-		Content_Areas_Domains=list(ELA="ELA", 
-			MATHEMATICS="MATHEMATICS", PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
-			SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
-		Content_Areas_Domains.2014=list(ELA="ELA", 
-			MATHEMATICS="MATHEMATICS", SEC_MATH_I = "MATHEMATICS", SEC_MATH_II = "MATHEMATICS", SEC_MATH_III = "MATHEMATICS",
-			SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
-		Vertical_Scale="No",
-		Vertical_Scale.2014="No",
-		Grades_Tested=c(3,4,5,6,7,8,11),
-		Grades_Tested.2014=c(3,4,5,6,7,8,11),
-		Transformed_Achievement_Level_Cutscores=list(
-			ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
-			PRE_ALGEBRA=c(130, 160, 170, 200), ALGEBRA_I=c(130, 160, 170, 200), GEOMETRY=c(130, 160, 170, 200), ALGEBRA_II=c(130, 160, 170, 200),
-			EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)), 
-		Transformed_Achievement_Level_Cutscores.2014=list(
-			ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
-			SEC_MATH_I =c(130, 160, 170, 200), SEC_MATH_II =c(130, 160, 170, 200), SEC_MATH_III=c(130, 160, 170, 200),
-			EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)), 
-		Grades_Reported=list(
-			ELA=as.character(3:11), MATHEMATICS= as.character(3:7), SCIENCE= as.character(4:8),
-			PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
-			EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
-		Grades_Reported.2014=list(
-			ELA=as.character(3:11), MATHEMATICS= as.character(3:8), SCIENCE= as.character(4:8),
-			SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
-			EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
-		Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:7, "EOCT"), SCIENCE= c(4:8, "EOCT")),
-		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
-	)
+# SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+# 	list(
+# 		# Year="2014",  # This controls when/if Target scale scores are equated.
+# 		Assessment_Abbreviation="CRT",
+# 		Assessment_Abbreviation.2014="SAGE",
+# 		Assessment_Name="Criterion Referenced Tests",
+# 		Assessment_Name.2014_2015="Student Assessment of Growth and Excellence",
+# 		Achievement_Levels=list(
+# 			Labels=c("BP", "P", "A"),  
+# 			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+# 		Achievement_Levels.2014=list(
+# 			Labels=c("BP", "P", "A"),  
+# 			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+# 		Achievement_Level_Labels=list(
+# 			"Below Proficient"="BP",
+# 			"Proficient"="P",
+# 			"Advanced"="A"),
+# 		Achievement_Level_Labels.2014=list(
+# 			"Below Proficient"="BP",
+# 			"Proficient"="P",
+# 			"Advanced"="A"),
+# 		Content_Areas_Labels=list(ELA = "ELA", 
+# 			MATHEMATICS = "Math", PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
+# 			SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
+# 		Content_Areas_Labels.2014=list(ELA = "ELA", 
+# 			MATHEMATICS = "Math", SEC_MATH_I = "Secondary Math I", SEC_MATH_II = "Secondary Math II", SEC_MATH_III = "Secondary Math III",
+# 			SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
+# 		Content_Areas_Domains=list(ELA="ELA", 
+# 			MATHEMATICS="MATHEMATICS", PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
+# 			SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
+# 		Content_Areas_Domains.2014=list(ELA="ELA", 
+# 			MATHEMATICS="MATHEMATICS", SEC_MATH_I = "MATHEMATICS", SEC_MATH_II = "MATHEMATICS", SEC_MATH_III = "MATHEMATICS",
+# 			SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
+# 		Vertical_Scale="No",
+# 		Vertical_Scale.2014="No",
+# 		Grades_Tested=c(3,4,5,6,7,8,11),
+# 		Grades_Tested.2014=c(3,4,5,6,7,8,11),
+# 		Transformed_Achievement_Level_Cutscores=list(
+# 			ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
+# 			PRE_ALGEBRA=c(130, 160, 170, 200), ALGEBRA_I=c(130, 160, 170, 200), GEOMETRY=c(130, 160, 170, 200), ALGEBRA_II=c(130, 160, 170, 200),
+# 			EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)), 
+# 		Transformed_Achievement_Level_Cutscores.2014=list(
+# 			ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
+# 			SEC_MATH_I =c(130, 160, 170, 200), SEC_MATH_II =c(130, 160, 170, 200), SEC_MATH_III=c(130, 160, 170, 200),
+# 			EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)), 
+# 		Grades_Reported=list(
+# 			ELA=as.character(3:11), MATHEMATICS= as.character(3:7), SCIENCE= as.character(4:8),
+# 			PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
+# 			EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
+# 		Grades_Reported.2014=list(
+# 			ELA=as.character(3:11), MATHEMATICS= as.character(3:8), SCIENCE= as.character(4:8),
+# 			SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
+# 			EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
+# 		Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:7, "EOCT"), SCIENCE= c(4:8, "EOCT")),
+# 		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
+# 	)
 
-SGPstateData[["UT"]][["Student_Report_Information"]] <- 
-	list( # Might need to change when number of prof levels are finalized for new SAGE test
-	Transformed_Achievement_Level_Cutscores=list(ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200), #0, 250, 500, 750, 1000 
-		SEC_MATH_I =c(130, 160, 170, 200), SEC_MATH_II =c(130, 160, 170, 200), SEC_MATH_III=c(130, 160, 170, 200),
-		PRE_ALGEBRA=c(130, 160, 170, 200), ALGEBRA_I=c(130, 160, 170, 200), GEOMETRY=c(130, 160, 170, 200), ALGEBRA_II=c(130, 160, 170, 200), 
+SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(SCIENCE=c(130, 160, 170, 200),
 		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)), 
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(ELA=c(130, 160, 170, 200), MATHEMATICS=c(130, 160, 170, 200), SCIENCE=c(130, 160, 170, 200),
-		SEC_MATH_I =c(130, 160, 170, 200), SEC_MATH_II =c(130, 160, 170, 200), SEC_MATH_III=c(130, 160, 170, 200), 
-		PRE_ALGEBRA=c(130, 160, 170, 200), ALGEBRA_I=c(130, 160, 170, 200), GEOMETRY=c(130, 160, 170, 200), ALGEBRA_II=c(130, 160, 170, 200), 
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(SCIENCE=c(130, 160, 170, 200),
 		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)),
-	Vertical_Scale="No",
+	Vertical_Scale="Yes", # Math and ELA - not Science
 	Content_Areas_Labels=list(ELA = "ELA", 
-		MATHEMATICS = "Math", SEC_MATH_I = "Secondary Math I", SEC_MATH_II = "Secondary Math II", SEC_MATH_III = "Secondary Math III",
-		PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
+		MATHEMATICS = "Math", SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",
+		# PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
 		SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
 	Content_Areas_Domains=list(ELA="ELA", 
 		MATHEMATICS="MATHEMATICS", SEC_MATH_I = "MATHEMATICS", SEC_MATH_II = "MATHEMATICS", SEC_MATH_III = "MATHEMATICS",
-		PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
+		# PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 		SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
 
 	Grades_Reported=list(ELA=as.character(3:11), MATHEMATICS= as.character(3:8), SCIENCE= as.character(4:8), 
 		SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
-		PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
+		# PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
 		EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 	Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT")),
 	Earliest_Year_Reported=list(ELA='2014', MATHEMATICS='2014', SEC_MATH_I = "2014", SEC_MATH_II = "2014", SEC_MATH_III = "2014",

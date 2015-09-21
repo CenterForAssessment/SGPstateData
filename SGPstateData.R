@@ -4380,7 +4380,8 @@ load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_
 SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
 	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
 		RLI_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
+	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']],
+		RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
 	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
 		RLI_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
 )

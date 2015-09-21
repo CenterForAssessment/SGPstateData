@@ -5144,7 +5144,35 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",
-		"Advanced"="A"))
+		"Advanced"="A"),
+	sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5
+	Two_Page_Layout=list(
+		Four_Charts=list(
+			report.vp = viewport(layout = grid.layout(7, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+													 heights = unit(c(0.4, 0.75, 4, 0.5, 4, 0.85, 0.5), rep("inches", 7)))),
+			page.content_areas = list(1:2, 3:4),
+			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),
+			content_area_2.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			content_area_3.vp = viewport(layout.pos.row=3, layout.pos.col=2),
+			content_area_4.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			top.border.vp = viewport(layout.pos.row=1, layout.pos.col=1:3),
+			bottom.border.vp = viewport(layout.pos.row=7, layout.pos.col=1:3)
+			# left.legend.vp <- viewport(layout.pos.row=2:6, layout.pos.col=1) # No left legend for UT, but it is an option.
+		),
+		Five_Charts=list(
+			report.vp = viewport(layout = grid.layout(9, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+													 heights = unit(c(0.35, 0.1, 3.256, 0.14, 3.256, 0.14, 3.256, 0.1, 0.4), rep("inches", 9)))),
+			page.content_areas = list(1:3, 4:5),
+			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),  # 1st Page
+			content_area_2.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			content_area_3.vp = viewport(layout.pos.row=7, layout.pos.col=2),
+			content_area_4.vp = viewport(layout.pos.row=3, layout.pos.col=2),  # 2nd Page
+			content_area_5.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			top.border.vp = viewport(layout.pos.row=1, layout.pos.col=1:3),
+			bottom.border.vp = viewport(layout.pos.row=9, layout.pos.col=1:3)
+			# left.legend.vp <- viewport(layout.pos.row=2:6, layout.pos.col=1) # No left legend for UT, but it is an option.
+		)
+	))
 
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 load("SGP_Norm_Group_Preference/UT_SGP_Norm_Group_Preference.Rdata")

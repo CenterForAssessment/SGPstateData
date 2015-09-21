@@ -5120,6 +5120,8 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 # 		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
 # 	)
 
+require(grid)
+
 SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(SCIENCE=c(130, 160, 170, 200),
 		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)),

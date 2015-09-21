@@ -22,7 +22,7 @@ groupMatrices <- function(year) {
 			READING.BASELINE=c(tmp.1[['READING.BASELINE']], tmp.2[['READING.BASELINE']], tmp.3[['READING.BASELINE']]),
 			MATHEMATICS.BASELINE=c(tmp.1[['MATHEMATICS.BASELINE']], tmp.2[['MATHEMATICS.BASELINE']], tmp.3[['MATHEMATICS.BASELINE']])))
 		save(list=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, sep="."), sep=""),
-			file=paste("RLI_SGPt_Baseline_matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
+			file=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
 	}
 
 	if (tmp.window==2) {
@@ -39,7 +39,7 @@ groupMatrices <- function(year) {
 			READING.BASELINE=c(tmp.1[['READING.BASELINE']], tmp.2[['READING.BASELINE']], tmp.3[['READING.BASELINE']]),
 			MATHEMATICS.BASELINE=c(tmp.1[['MATHEMATICS.BASELINE']], tmp.2[['MATHEMATICS.BASELINE']], tmp.3[['MATHEMATICS.BASELINE']])))
 		save(list=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, sep="."), sep=""),
-			file=paste("RLI_SGPt_Baseline_matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
+			file=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
 	}
 
 	if (tmp.window==3) {
@@ -56,6 +56,6 @@ groupMatrices <- function(year) {
 			READING.BASELINE=c(tmp.1[['READING.BASELINE']], tmp.2[['READING.BASELINE']], tmp.3[['READING.BASELINE']]),
 			MATHEMATICS.BASELINE=c(tmp.1[['MATHEMATICS.BASELINE']], tmp.2[['MATHEMATICS.BASELINE']], tmp.3[['MATHEMATICS.BASELINE']])))
 		save(list=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, sep="."), sep=""),
-			file=paste("RLI_SGPt_Baseline_matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
+			file=paste("RLI_SGPt_Baseline_Matrices_", paste(tmp.year, tmp.window, "Rdata", sep="."), sep=""))
 	}
 } ### END groupMatrices

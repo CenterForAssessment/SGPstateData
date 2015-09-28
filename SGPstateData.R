@@ -223,7 +223,8 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores_gaPlot=list( LITERACY=c(100,200,300,400,500),
 		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
 	Content_Areas_Labels =list(LITERACY = "Literacy", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-	Content_Areas_Domains=list(LITERACY = "LITERACY", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
+	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
+		LITERACY = "LITERACY", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
 	Grades_Reported=list(LITERACY=c(1,2,3,4,5,6,7,8,10), MATHEMATICS=c(1,2,3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
 	Vertical_Scale="No",
 	Achievement_Level_Labels=list(
@@ -1532,7 +1533,8 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 		GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
 		BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom", MATHEMATICS_II = "Math II"), #MATHEMATICS_I = "Math I",
-	Content_Areas_Domains=list(ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
+	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
+		ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
 		SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
 		MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", MATHEMATICS_II = "MATHEMATICS", #MATHEMATICS_I = "MATHEMATICS",
 		SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
@@ -5120,6 +5122,8 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 # 		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
 # 	)
 
+require(grid)
+
 SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(SCIENCE=c(130, 160, 170, 200),
 		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)),
@@ -5130,22 +5134,50 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 		MATHEMATICS = "Math", SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",
 		# PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
 		SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
-	Content_Areas_Domains=list(ELA="ELA",
+	Content_Areas_Domains=list(ELA="ELA",  ## Each Domain should be in CANONICAL PROGRESSION ORDER
 		MATHEMATICS="MATHEMATICS", SEC_MATH_I = "MATHEMATICS", SEC_MATH_II = "MATHEMATICS", SEC_MATH_III = "MATHEMATICS",
 		# PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 		SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
 
-	Grades_Reported=list(ELA=as.character(3:11), MATHEMATICS= as.character(3:8), SCIENCE= as.character(4:8),
-		SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
+	Grades_Reported=list(ELA=as.character(3:11), 
+		MATHEMATICS= as.character(3:8), SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
 		# PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
-		EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
+		SCIENCE= as.character(4:8), EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
 	Grades_Reported_Domains=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT")),
 	Earliest_Year_Reported=list(ELA='2014', MATHEMATICS='2014', SEC_MATH_I = "2014", SEC_MATH_II = "2014", SEC_MATH_III = "2014",
 				SCIENCE='2014', EARTH_SCIENCE = "2014", BIOLOGY = "2014", CHEMISTRY="2014", PHYSICS = "2014"),
 	Achievement_Level_Labels=list(
 		"Below Proficient"="BP",
 		"Proficient"="P",
-		"Advanced"="A"))
+		"Advanced"="A"),
+	sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5
+	Two_Page_Layout=list(
+		Four_Charts=list(
+			report.vp = viewport(layout = grid.layout(7, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+													 heights = unit(c(0.4, 0.75, 4, 0.5, 4, 0.85, 0.5), rep("inches", 7)))),
+			page.content_areas = list(1:2, 3:4),
+			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),
+			content_area_2.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			content_area_3.vp = viewport(layout.pos.row=3, layout.pos.col=2),
+			content_area_4.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			top.border.vp = viewport(layout.pos.row=1, layout.pos.col=1:3),
+			bottom.border.vp = viewport(layout.pos.row=7, layout.pos.col=1:3)
+			# left.legend.vp <- viewport(layout.pos.row=2:6, layout.pos.col=1) # No left legend for UT, but it is an option.
+		),
+		Five_Charts=list(
+			report.vp = viewport(layout = grid.layout(9, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+													 heights = unit(c(0.35, 0.1, 3.256, 0.14, 3.256, 0.14, 3.256, 0.1, 0.4), rep("inches", 9)))),
+			page.content_areas = list(1:3, 4:5),
+			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),  # 1st Page
+			content_area_2.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			content_area_3.vp = viewport(layout.pos.row=7, layout.pos.col=2),
+			content_area_4.vp = viewport(layout.pos.row=3, layout.pos.col=2),  # 2nd Page
+			content_area_5.vp = viewport(layout.pos.row=5, layout.pos.col=2),
+			top.border.vp = viewport(layout.pos.row=1, layout.pos.col=1:3),
+			bottom.border.vp = viewport(layout.pos.row=9, layout.pos.col=1:3)
+			# left.legend.vp <- viewport(layout.pos.row=2:6, layout.pos.col=1) # No left legend for UT, but it is an option.
+		)
+	))
 
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 load("SGP_Norm_Group_Preference/UT_SGP_Norm_Group_Preference.Rdata")
@@ -5541,7 +5573,8 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
     Transformed_Achievement_Level_Cutscores_gaPlot=list( READING=c(100,200,300,400,500),
     	MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
     Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-    Content_Areas_Domains=list(READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
+    Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
+    	READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
     Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
     Achievement_Level_Labels=list(
         "L1: Below Basic"="Below Basic",

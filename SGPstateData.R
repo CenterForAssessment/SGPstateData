@@ -5791,8 +5791,8 @@ SGPstateData[["WV"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WV"]][["Assessment_Program_Information"]] <-
 	list(
-	Assessment_Name="West Virginia Educational Standards Tests",
-	Assessment_Abbreviation="West Virginia General Summative Assessment",
+	Assessment_Name="West Virginia General Summative Assessment",
+	Assessment_Abbreviation="WVGSA",
         Organization=list(
                 Name="West Virginia Department of Education",
 		Abbreviation="WVDE",
@@ -5840,7 +5840,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["WV"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="R/LA"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(

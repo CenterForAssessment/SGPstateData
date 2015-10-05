@@ -4302,6 +4302,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				percentile.cuts=50, ### For within window projections
+				SGPt.max.time=TRUE,
 				max.sgp.target.years.forward=9,
 				sgp.projections.max.forward.progression.years=9,
 				sgp.projections.projection.unit="YEAR",
@@ -4436,6 +4437,7 @@ SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				print.other.gp=TRUE,
 				percentile.cuts=50, ### For within window projections
+				SGPt.max.time=TRUE,
 				max.sgp.target.years.forward=9,
 				sgp.projections.max.forward.progression.years=9,
 				sgp.projections.projection.unit="YEAR",

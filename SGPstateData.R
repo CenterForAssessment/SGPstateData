@@ -5156,7 +5156,8 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 		"Below Proficient"="BP",
 		"Proficient"="P",
 		"Advanced"="A"),
-	sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5
+	Include_Front_Page_in_School_Catalog=FALSE,
+	sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5.  Here 3 = 2 test years and 1 future year (growth proj fan)
 	Two_Page_Layout=list(
 		Four_Charts=list(
 			report.vp = viewport(layout = grid.layout(7, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)),

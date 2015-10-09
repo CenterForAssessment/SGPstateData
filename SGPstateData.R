@@ -4316,6 +4316,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <- list(
 				sgp.config.function=RLI_SGP_Config_Function,
 				max.n.for.coefficient.matrices=200000,
 				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
+				goodness.of.fit.achievement.level.prior=FALSE,
 				grade.projection.sequence=list(
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
@@ -4448,6 +4449,7 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- list(
 				sgp.config.function=RLI_UK_SGP_Config_Function,
 				max.n.for.coefficient.matrices=200000,
 				sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
+				goodness.of.fit.achievement.level.prior=FALSE,
 				grade.projection.sequence=list(
 					READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 					MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
@@ -5139,7 +5141,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 		# PRE_ALGEBRA="MATHEMATICS", ALGEBRA_I= "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 		SCIENCE="SCIENCE", EARTH_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE", CHEMISTRY="SCIENCE", PHYSICS = "SCIENCE"),
 
-	Grades_Reported=list(ELA=as.character(3:11), 
+	Grades_Reported=list(ELA=as.character(3:11),
 		MATHEMATICS= as.character(3:8), SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
 		# PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
 		SCIENCE= as.character(4:8), EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
@@ -5154,7 +5156,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5.  Here 3 = 2 test years and 1 future year (growth proj fan)
 	Two_Page_Layout=list(
 		Four_Charts=list(
-			report.vp = viewport(layout = grid.layout(7, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+			report.vp = viewport(layout = grid.layout(7, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)),
 													 heights = unit(c(0.4, 0.75, 4, 0.5, 4, 0.85, 0.5), rep("inches", 7)))),
 			page.content_areas = list(1:2, 3:4),
 			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),
@@ -5166,7 +5168,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 			# left.legend.vp <- viewport(layout.pos.row=2:6, layout.pos.col=1) # No left legend for UT, but it is an option.
 		),
 		Five_Charts=list(
-			report.vp = viewport(layout = grid.layout(9, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)), 
+			report.vp = viewport(layout = grid.layout(9, 3, widths = unit(c(0.125, 8.3, 0.075), rep("inches", 3)),
 													 heights = unit(c(0.35, 0.1, 3.256, 0.14, 3.256, 0.14, 3.256, 0.1, 0.4), rep("inches", 9)))),
 			page.content_areas = list(1:3, 4:5),
 			content_area_1.vp = viewport(layout.pos.row=3, layout.pos.col=2),  # 1st Page
@@ -5790,8 +5792,8 @@ SGPstateData[["WV"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WV"]][["Assessment_Program_Information"]] <-
 	list(
-	Assessment_Name="West Virginia Educational Standards Tests",
-	Assessment_Abbreviation="West Virginia General Summative Assessment",
+	Assessment_Name="West Virginia General Summative Assessment",
+	Assessment_Abbreviation="WVGSA",
         Organization=list(
                 Name="West Virginia Department of Education",
 		Abbreviation="WVDE",
@@ -5839,7 +5841,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["WV"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="R/LA"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(

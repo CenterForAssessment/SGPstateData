@@ -3206,7 +3206,8 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
 		GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463))
 	)
-###  PARCC SCALE SCORE METRIC CUTSCORES
+
+###  PARCC SCALE SCORE METRIC CUTSCORES ###
 # 	ELA.2015 =list(
 # 		GRADE_3=c(700, 725, 750, 810),
 # 		GRADE_4=c(700, 725, 750, 790),
@@ -3235,6 +3236,7 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 # 	INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
 # 	INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
 # 	INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804))
+###
 
 SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <-
 	list(

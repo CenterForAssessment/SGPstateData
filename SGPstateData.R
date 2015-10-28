@@ -3198,7 +3198,7 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
 		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
 		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-	
+
 	ALGEBRA_I =list( # Not sure we need the .2015 transition for this since Algebra I didn't exist prior to PARCC...
 		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
 		GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463)), # Leaving both 8th grade and EOCT in for Alg I.
@@ -3218,7 +3218,7 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 # 		GRADE_9=c(700, 725, 750, 791),
 # 		GRADE_10=c(700, 725, 750, 794),
 # 		GRADE_11=c(700, 725, 750, 792)),
-# 		
+#
 # 	MATHEMATICS.2015 =list(
 # 		GRADE_3=c(700, 725, 750, 790),
 # 		GRADE_4=c(700, 725, 750, 796),
@@ -3226,7 +3226,7 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 # 		GRADE_6=c(700, 725, 750, 788),
 # 		GRADE_7=c(700, 725, 750, 786),
 # 		GRADE_8=c(700, 725, 750, 801)),
-# 	
+#
 # 	ALGEBRA_I.2015 =list(
 # 		GRADE_8=c(700, 725, 750, 805),
 # 		GRADE_EOCT=c(700, 725, 750, 805)),
@@ -3266,15 +3266,15 @@ SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]] <-
 	CSEM=Massachusetts_PARCC_CSEM)
 
 SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-        list(
-                Assessment_Abbreviation="MCAS",
-                Assessment_Abbreviation.2015="PARCC",
-                Assessment_Name="Massachusetts Comprehensive Assessment System",
-                Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
-                Achievement_Levels=list(
+    list(
+        Assessment_Abbreviation="MCAS",
+        Assessment_Abbreviation.2015="PARCC",
+        Assessment_Name="Massachusetts Comprehensive Assessment System",
+        Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
+        Achievement_Levels=list(
 			Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-                Achievement_Levels.2015=list(
+        Achievement_Levels.2015=list(
 			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
 			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Achievement_Level_Labels=list(
@@ -3297,15 +3297,16 @@ SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Tran
                 Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
                 Year="2015",
 				Equate_Interval_Digits=2
-        )
+    )
+
 SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), ALGEBRA_I=c(8)),
 	Achievement_Level_Labels=list(
 		"Level 1"="Level 1",
 		"Level 2"="Level 2",
@@ -5017,7 +5018,8 @@ SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 		loss.hoss_11=c(1100, 1180)))
 
 SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <-
-	list(MATHEMATICS=list(
+	list(
+	MATHEMATICS=list(
 		GRADE_3=c(332, 340, 353),
 		GRADE_4=c(431, 440, 455),
 		GRADE_5=c(533, 540, 554),
@@ -5032,7 +5034,32 @@ SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_6=c(629, 640, 659),
 		GRADE_7=c(729, 740, 760),
 		GRADE_8=c(828, 840, 859),
-		GRADE_11=c(1130, 1140, 1154)))
+		GRADE_11=c(1130, 1140, 1154)),
+	ELA.2015 =list(
+		GRADE_3=c(700, 725, 750, 810),
+		GRADE_4=c(700, 725, 750, 790),
+		GRADE_5=c(700, 725, 750, 799),
+		GRADE_6=c(700, 725, 750, 790),
+		GRADE_7=c(700, 725, 750, 785),
+		GRADE_8=c(700, 725, 750, 794),
+		GRADE_9=c(700, 725, 750, 791),
+		GRADE_10=c(700, 725, 750, 794),
+		GRADE_11=c(700, 725, 750, 792)),
+	MATHEMATICS.2015 =list(
+		GRADE_3=c(700, 725, 750, 790),
+		GRADE_4=c(700, 725, 750, 796),
+		GRADE_5=c(700, 725, 750, 790),
+		GRADE_6=c(700, 725, 750, 788),
+		GRADE_7=c(700, 725, 750, 786),
+		GRADE_8=c(700, 725, 750, 801)),
+	ALGEBRA_I.2015 =list(
+		GRADE_8=c(700, 725, 750, 805),
+		GRADE_EOCT=c(700, 725, 750, 805)),
+	ALGEBRA_II.2015 =list(GRADE_EOCT=c(700, 725, 750, 808)),
+ 	GEOMETRY.2015=list(GRADE_EOCT=c(700, 725, 750, 783)),
+ 	INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
+ 	INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
+ 	INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
 
 SGPstateData[["RI"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -5050,31 +5077,67 @@ SGPstateData[["RI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 	list(
-	Assessment_Name="Rhode Island NECAP",
-	Assessment_Abbreviation="NECAP",
+	Assessment_Name="Rhode Island PARCC",
+	Assessment_Abbreviation="RI PARCC",
 	Organization=list(
 		Name="Rhode Island Department of Education",
 		Abbreviation="RIDE",
 		URL="www.ride.ri.gov/",
 		Contact="401-222-4600"),
 	Content_Areas=c("Mathematics", "Reading"),
-	Grades_Tested=c(3,4,5,6,7,8,11),
+	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Fall",
-	Test_Vendor="Measured Progress",
-        CSEM=NECAP_CSEM)
+	Test_Vendor="PARCC",
+    CSEM=NECAP_CSEM)
+
+SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
+        Assessment_Abbreviation="MCAS",
+        Assessment_Abbreviation.2015="PARCC",
+        Assessment_Name="Massachusetts Comprehensive Assessment System",
+        Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
+        Achievement_Levels=list(
+			Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient with Distinction"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+        Achievement_Levels.2015=list(
+			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Below Proficient"="Substantially Below Proficient",
+			"Part Proficient"="Partially Proficient",
+			"Proficient"="Proficient",
+			"Distinction"="Proficient with Distinction"),
+        Achievement_Level_Labels.2015=list(
+            "Level 1"="Level 1",
+            "Level 2"="Level 2",
+            "Level 3"="Level 3",
+            "Level 4"="Level 4",
+			"Level 5"="Level 5"),
+        Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+        Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
+        Vertical_Scale="No",
+        Vertical_Scale.2015="No",
+		Grades_Tested=c(3,4,5,6,7,8),
+		Grades_Tested.2015=c(3,4,5,6,7,8),
+        Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
+        Year="2015",
+		Equate_Interval_Digits=2
+    )
 
 SGPstateData[["RI"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
-	Achievement_Level_Labels=list(
-		"Below Proficient"="Substantially Below Proficient",
-		"Part Proficient"="Partially Proficient",
-		"Proficient"="Proficient",
-		"Distinction"="Proficient with Distinction"))
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80,100), ELA=c(0,20,40,60,80,100)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80,100), ELA=c(0,20,40,60,80,100)),
+		Projection_Fan_Limits=c(5, 95),
+		Vertical_Scale="No",
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"))
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <- list(null.output.string="")
 #load("Baseline_Coefficient_Matrices/RI/RI_Baseline_Matrices.Rdata")

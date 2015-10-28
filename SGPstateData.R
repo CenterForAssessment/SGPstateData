@@ -6017,7 +6017,7 @@ SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(2487, 2567, 2668),
 		GRADE_9=c(2488, 2571, 2670),
 		GRADE_10=c(2491, 2577, 2677),
-		GRADE_11=c(2493, 2583, 2682))
+		GRADE_11=c(2493, 2583, 2682)),
     WRITING=list(
         GRADE_4=c(7, 9, 11),
         GRADE_7=c(7, 9, 11),

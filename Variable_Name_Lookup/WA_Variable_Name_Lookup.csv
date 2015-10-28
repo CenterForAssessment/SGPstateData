@@ -1,41 +1,41 @@
 names.provided,names.sgp,names.type,names.info,names.output
-SSID,ID,individual,Unique student identifier,
-StudentLastName,LAST_NAME,label,Student last name,
-StudentFirstName,FIRST_NAME,label,Student first name,
-Subject,CONTENT_AREA,content,Content area associated with record,
-SchoolYear,YEAR,time,Year associated with record,
-ReportingGrade,GRADE,institution_level,Grade/Test level associated with record,
-ScaleScore,SCALE_SCORE,measure,Scale score,
-AchievementLevel,ACHIEVEMENT_LEVEL,measure,Achievement level,
-Gender,GENDER,demographic,Student gender,TRUE
-EthRace,ETHNICITY,demographic,Student ethnicity,TRUE
-FRL,FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUE
-CurrentEll,ELL_STATUS,demographic,Student Current ELL status,TRUE
-ELL_Category,ELL_CATEGORY,demographic,Student ELL status,TRUE
-SpecEd,IEP_STATUS,demographic,Student IEP status,TRUE
-Gifted,GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUE
-Migrant,MIGRANT,demographic,Student Migrant Status,TRUE
-Homeless,HOMELESS,demographic,Student Homeless Status,TRUE
+ID,ID,individual,Unique student identifier,
+LAST_NAME,LAST_NAME,label,Student last name,
+FIRST_NAME,FIRST_NAME,label,Student first name,
+CONTENT_AREA,CONTENT_AREA,content,Content area associated with record,
+YEAR,YEAR,time,Year associated with record,
+GRADE,GRADE,institution_level,Grade/Test level associated with record,
+SCALE_SCORE,SCALE_SCORE,measure,Scale score,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,
+GENDER,GENDER,demographic,Student gender,TRUE
+ETHNICITY,ETHNICITY,demographic,Student ethnicity,TRUE
+FREE_REDUCED_LUNCH_STATUS,FREE_REDUCED_LUNCH_STATUS,demographic,Student free and reduced lunch status,TRUE
+ELL_STATUS,ELL_STATUS,demographic,Student Current ELL status,TRUE
+IEP_STATUS,IEP_STATUS,demographic,Student IEP status,TRUE
+GIFTED_AND_TALENTED_PROGRAM_STATUS,GIFTED_AND_TALENTED_PROGRAM_STATUS,demographic,Student gifted and talented program status,TRUE
+MIGRANT,MIGRANT,demographic,Student Migrant Status,TRUE
+HOMELESS,HOMELESS,demographic,Student Homeless Status,TRUE
 HomeBased,HomeBased,demographic,Home school indicator,TRUE
 Private,Private,demographic,Private school student indicator,TRUE
-F1Visa,F1VISA,demographic,Student F1 Visa Status,TRUE
-FosterCare,FOSTER_CARE,demographic,Student Foster Car Status,TRUE
-Plan_504,PLAN_504,demographic,Student Status,TRUE
-LAPReading,LAP_READING,demographic,Student Status,TRUE
-LAPLanguageArts,LAP_LANGARTS,demographic,Student Status,TRUE
-LAPMath,LAP_MATH,demographic,Student Status,TRUE
-Title1TASReading,T1_TAS_READING,demographic,Student Status,TRUE
-Title1TASLanguangeArts,T1_TAS_LANGARTS,demographic,Student Status,TRUE
-Title1TASMath,T1_TAS_MATH,demographic,Student Status,TRUE
-NCLBSupplementalServices,NCLB_SUPPLEMENTAL_SERVICES,demographic,Student Status,TRUE
-TwentyFirstCentury,TWENTY_FIRST_CENTURY,demographic,Student Status,TRUE
+F1VISA,F1VISA,demographic,Student F1 Visa Status,TRUE
+FOSTER_CARE,FOSTER_CARE,demographic,Student Foster Car Status,TRUE
+PLAN_504,PLAN_504,demographic,Student Status,TRUE
+LAP_READING,LAP_READING,demographic,Student Status,TRUE
+LAP_LANGARTS,LAP_LANGARTS,demographic,Student Status,TRUE
+LAP_MATH,LAP_MATH,demographic,Student Status,TRUE
+T1_TAS_READING,T1_TAS_READING,demographic,Student Status,TRUE
+T1_TAS_LANGARTS,T1_TAS_LANGARTS,demographic,Student Status,TRUE
+T1_TAS_MATH,T1_TAS_MATH,demographic,Student Status,TRUE
+TWENTY_FIRST_CENTURY,TWENTY_FIRST_CENTURY,demographic,Student Status,TRUE
 MetStandard,MetStandard,demographic,Student Met Standard status,TRUE
-SchoolCode,SCHOOL_NUMBER,institution,School number,
-SchoolName,SCHOOL_NAME,label,School name,
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,
+SCHOOL_NAME,SCHOOL_NAME,label,School name,
 SchoolType,SchoolType,institution_type,School Type flag,
-DistrictCode,DISTRICT_NUMBER,institution,District number,
-DistrictName,DISTRICT_NAME,label,School name,
-SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
-DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
-STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
-ValidCase,VALID_CASE,individual_inclusion,Valid case indicator,
+DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
+DISTRICT_NAME,DISTRICT_NAME,label,School name,
+CESCHOOL,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+CEDISTRICT,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+NO_SGP_REASON,NO_SGP_REASON,individual_inclusion,Reason for exclusion,
+TestAttempt,TestAttempt,testing_status,students test attempt status,
+TestType,TestType,test,test type,

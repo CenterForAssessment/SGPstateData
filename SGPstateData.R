@@ -3117,14 +3117,13 @@ SGPstateData[["MA_MCAS"]][["Achievement"]][["Levels"]] <-
 	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_MCAS"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
-
-SGPstateData[["MA_MCAS"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
-
 SGPstateData[["MA_MCAS"]][["Growth"]][["Cutscores"]] <-
 	list(
 	Cuts=c(20, 40, 61, 81),
 	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["MA_MCAS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA_MCAS"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
 SGPstateData[["MA_MCAS"]][["Assessment_Program_Information"]] <-
 	list(
@@ -3143,7 +3142,7 @@ SGPstateData[["MA_MCAS"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["MA_MCAS"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+	# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
@@ -3309,12 +3308,13 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <-
 	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_PARCC"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
-
 SGPstateData[["MA_PARCC"]][["Growth"]][["Cutscores"]] <-
 	list(
 	Cuts=c(20, 40, 61, 81),
 	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["MA_PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA_PARCC"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
 SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]] <-
 	list(
@@ -3367,7 +3367,7 @@ SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Tran
 
 SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
+	#Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",

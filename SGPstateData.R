@@ -2575,12 +2575,13 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <-
 		"Pass +"="Pass +"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
-						max.order.for.percentile=3,
+			max.order.for.percentile=3,
             max.order.for.projection=3,
-						sgp.projections.baseline.max.order=2,
-						sgp.projections.lagged.baseline.max.order=2,
-						percentile.cuts=c(1,35,65,99),
-						sgp.loss.hoss.adjustment="IN")
+			sgp.projections.baseline.max.order=2,
+			sgp.projections.lagged.baseline.max.order=2,
+			percentile.cuts=c(1,35,65,99),
+			sgp.loss.hoss.adjustment="IN",
+			lagged.percentile.trajectory.values=c(1,35,65,99))
 
 SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
@@ -3168,8 +3169,8 @@ load("CSEM/Massachusetts/Massachusetts_PARCC_CSEM.Rdata")
 load("Knots_Boundaries/MA_PARCC_Knots_Boundaries.Rdata")
 SGPstateData[["MA_PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- MA_PARCC_Knots_Boundaries
 
-SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
-	list(ELA=list(
+SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <- list(
+	ELA=list(
 		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
 		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
 		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
@@ -3257,20 +3258,16 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
 		GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
 		GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)),
-	MATHEMATICS.2015 =list(
+	MATHEMATICS.2015=list(
 		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
 		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
 		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
 		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
 		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
 		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-	ALGEBRA_I =list( # Not sure we need the .2015 transition for this since Algebra I didn't exist prior to PARCC...
-		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
-		GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463)), # Leaving both 8th grade and EOCT in for Alg I.
-	ALGEBRA_I.2015 =list(
-		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
-		GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463))
-	)
+	ALGEBRA_I.2015=list(
+		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
+)
 
 ###  PARCC SCALE SCORE METRIC CUTSCORES ###
 # 	ELA.2015 =list(
@@ -3303,13 +3300,14 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <-
 # 	INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804))
 ###
 
-SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <-
-	list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_PARCC"]][["Growth"]][["Cutscores"]] <-
-	list(
+SGPstateData[["MA_PARCC"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(20, 40, 61, 81),
 	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
@@ -4467,7 +4465,7 @@ SGPstateData[["NJ"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
 		GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463)))
 
-SGPstateData[["CO"]][["Achievement"]][["Levels"]] <-
+SGPstateData[["NJ"]][["Achievement"]][["Levels"]] <-
     list(
 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
 		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
@@ -4502,7 +4500,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 	Test_Vendor="PARCC")
 #	Test_Vendor="Measurement Incorporated")
 
-SGPstateData[["CO"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+SGPstateData[["NJ"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
         Assessment_Abbreviation="NJASK",
         Assessment_Abbreviation.2015="PARCC",

@@ -1271,16 +1271,16 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))
 
-SGPstateData[["DEMO"]][["SGP_Configuration"]] <- 
-	list(
-		sgp.minimum.default.panel.years=3,
-		return.norm.group.scale.scores=TRUE,
-		return.norm.group.dates=TRUE,
-		return.projection.group.scale.scores=TRUE,
-		return.projection.group.dates=TRUE,
-		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-		sgPlot.output.format=c("PDF", "PDF_PIECES"),
-		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
+SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
+				sgp.minimum.default.panel.years=3,
+				lagged.percentile.trajectory.values=c(1,35,65,99),
+				return.norm.group.scale.scores=TRUE,
+				return.norm.group.dates=TRUE,
+				return.projection.group.scale.scores=TRUE,
+				return.projection.group.dates=TRUE,
+				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgPlot.output.format=c("PDF", "PDF_PIECES"),
+				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(
 #					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),

@@ -1261,6 +1261,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 
 SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgp.minimum.default.panel.years=3,
+				lagged.percentile.trajectory.values=c(1,35,65,99),
 				return.norm.group.scale.scores=TRUE,
 				return.norm.group.dates=TRUE,
 				return.projection.group.scale.scores=TRUE,

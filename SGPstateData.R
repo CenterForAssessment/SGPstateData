@@ -2582,7 +2582,7 @@ SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort"
+SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <- 
 	list(
@@ -3453,7 +3453,7 @@ SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), ALGEBRA_I=c(8)),
 	Achievement_Level_Labels=list(
 		"Level 1"="Level 1",

@@ -19,7 +19,7 @@ load("CSEM/NECAP/NECAP_CSEM.Rdata")
 load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
 SGPstateData[["ABQ"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
 
-SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["ABQ"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING=list(
 			GRADE_3=c(332,340,356),
@@ -219,7 +219,7 @@ SGPstateData[["AR"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Riverside Publishing",
 		CSEM=Arkansas_CSEM)
 
-SGPstateData[["AR"]][["Student_Report_Information"]] <- 
+SGPstateData[["AR"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list( LITERACY=c(100,200,300,400,500),
 			MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
@@ -932,7 +932,7 @@ SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
 		INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
 		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
 
-SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
 			GRADE_3=c(335, 419, 510),
@@ -1330,7 +1330,7 @@ SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(-0.089, 0.500, 1.365),
 			GRADE_12=c(0.019, 1.053, 1.427)))
 
-SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <- 
+SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <-
 	list(
 	 	Labels=c("Insatisfactorio", "Necesita mejorar", "Satisfactorio", "Excelente"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
@@ -1341,7 +1341,7 @@ SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81),
 
 SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
 
-SGPstateData[["GUA"]][["Student_Report_Information"]] <- 
+SGPstateData[["GUA"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
@@ -1632,7 +1632,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 			"Meets Expectations" = "Meets Expectations",
 			"Exceeds Expectations" = "Exceeds Expectations"))
 
-SGPstateData[["GA"]][["SGP_Configuration"]] <- 
+SGPstateData[["GA"]][["SGP_Configuration"]] <-
 	list(
 		# use.cohort.for.baseline.when.missing=TRUE,
 		return.norm.group.scale.scores=TRUE,
@@ -2497,7 +2497,7 @@ SGPstateData[["IL"]][["Student_Report_Information"]] <-
 
 ### INDIANA
 
-SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		ELA=list(
 			boundaries_2=c(94.1, 695.9),
@@ -2544,7 +2544,7 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(260, 810),
 			loss.hoss_8=c(340, 830)))
 
-SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		ELA=list(
 			GRADE_3=c(417, 521),
@@ -2575,7 +2575,7 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(533, 578),
 			GRADE_8=c(554, 595)))
 
-SGPstateData[["IN"]][["Achievement"]][["Levels"]] <- 
+SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 	list(
 		Labels=c("Did Not Pass", "Pass", "Pass +"),
 		Proficient=c("Not Proficient", "Proficient", "Proficient"))
@@ -2584,12 +2584,12 @@ SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
-SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <- 
+SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <-
 	list(
 		Cuts=c(35, 65),
 		Labels=c("1st - 34th", "35th - 64th", "65th - 99th"))
 
-SGPstateData[["IN"]][["Assessment_Program_Information"]] <- 
+SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
 		Assessment_Abbreviation="ISTEP+",
@@ -2603,7 +2603,7 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill")
 
-SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- 
+SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
 		Assessment_Abbreviation="ISTEP+",
 		Assessment_Abbreviation.2015="ISTEP+",
@@ -2662,7 +2662,7 @@ SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 load("Knots_Boundaries/KS_Knots_Boundaries.Rdata")
 SGPstateData[["KS"]][["Achievement"]][["Knots_Boundaries"]] <- KS_Knots_Boundaries
 
-SGPstateData[["KS"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["KS"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
 			GRADE_3=c(58, 70, 85, 93),
@@ -2721,7 +2721,7 @@ SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 ### MAINE
 
-SGPstateData[["ME"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["ME"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		READING=list(
 			knots_3=c(338, 344, 348, 356),
@@ -2766,7 +2766,7 @@ SGPstateData[["ME"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_8=c(800, 880),
 			loss.hoss_11=c(1100, 1180)))
 
-SGPstateData[["ME"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["ME"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
 			GRADE_3=c(332, 340, 353),
@@ -2797,7 +2797,7 @@ SGPstateData[["ME"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["ME"]][["Assessment_Program_Information"]] <- 
+SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Maine NECAP",
 		Assessment_Abbreviation="NECAP",
@@ -2812,7 +2812,7 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress",
 		CSEM=NECAP_CSEM)
 
-SGPstateData[["ME"]][["Student_Report_Information"]] <- 
+SGPstateData[["ME"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
@@ -2834,7 +2834,7 @@ SGPstateData[["ME"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### MASSACHUSETTS
 
 load("CSEM/Massachusetts/Massachusetts_CSEM.Rdata")
-SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		MATHEMATICS=list(
 			boundaries_3=c(-6.904, 4.189),
@@ -2975,7 +2975,7 @@ SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(20, 40, 61, 81),
 	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
-SGPstateData[["MA"]][["Assessment_Program_Information"]] <- 
+SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Massachusetts Comprehensive Assessment System",
 		Assessment_Abbreviation="MCAS",
@@ -2990,7 +2990,7 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress",
 		CSEM=Massachusetts_CSEM)
 
-SGPstateData[["MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- 
+SGPstateData[["MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
 		Assessment_Abbreviation="MCAS",
 		Assessment_Abbreviation.2015="PARCC",
@@ -3071,7 +3071,7 @@ SGPstateData[["MA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### MASSACHUSETTS_MCAS
 
 load("CSEM/Massachusetts/Massachusetts_MCAS_CSEM.Rdata")
-SGPstateData[["MA_MCAS"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["MA_MCAS"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		MATHEMATICS=list(
 			boundaries_3=c(-6.904, 4.189),
@@ -3118,7 +3118,7 @@ SGPstateData[["MA_MCAS"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_8=c(-6.375, 5.67),
 			loss.hoss_10=c(-6.375, 5.67)))
 
-SGPstateData[["MA_MCAS"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["MA_MCAS"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		ELA=list(
 			GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
@@ -3462,7 +3462,7 @@ SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
 		"Level 4"="Level 4",
 		"Level 5"="Level 5"))
 
-SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <- 
+SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <-
 	list(
 		projcuts.digits=2,
 		sgp.projections.max.forward.progression.grade=8)
@@ -3542,10 +3542,10 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
 		Grades_Reported=list(
-			MATHEMATICS=c(3,4,5,6,7,8,11), 
-			READING=c(3,4,5,6,7,8,11), 
-			SCIENCE=c(5,8,11), 
-			SOCIAL_STUDIES=c(6,9,11), 
+			MATHEMATICS=c(3,4,5,6,7,8,11),
+			READING=c(3,4,5,6,7,8,11),
+			SCIENCE=c(5,8,11),
+			SOCIAL_STUDIES=c(6,9,11),
 			WRITING=c(4,7,11)),
 		Achievement_Level_Labels=list(
 			"Not Proficient" = "Not Proficient",
@@ -4016,7 +4016,7 @@ SGPstateData[["NAPLAN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(426, 478),
 			GRADE_9=c(478, 530)))
 
-SGPstateData[["NAPLAN"]][["Achievement"]][["Levels"]] <- 
+SGPstateData[["NAPLAN"]][["Achievement"]][["Levels"]] <-
 	list(
 	 	Labels=c("Below Nat Min Std", "At Nat Min Std", "Above Nat Min Std"),
 		Proficient=c("Not Proficient", "Proficient", "Proficient"))
@@ -4027,7 +4027,7 @@ SGPstateData[["NAPLAN"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 60, 8
 
 SGPstateData[["NAPLAN"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(3, 5, 7, 9)
 
-SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <- 
+SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <-
 	list(
 		Content_Areas_Labels=list(NUMERACY="Numeracy", READING="Reading", WRITING="Writing", GRAMMAR="Grammar", SPELLING="Spelling"),
 		Grades_Reported=list(NUMERACY=c(3,5,7,9), READING=c(3,5,7,9), WRITING=c(3,5,7,9), GRAMMAR=c(3,5,7,9), SPELLING=c(3,5,7,9)),
@@ -4573,7 +4573,7 @@ SGPstateData[["NJ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
 			GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463)))
 
-SGPstateData[["NJ"]][["Achievement"]][["Levels"]] <- 
+SGPstateData[["NJ"]][["Achievement"]][["Levels"]] <-
 	list(
 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
 		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
@@ -4668,7 +4668,7 @@ SGPstateData[["NJ"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ
 load("Knots_Boundaries/ABQ_Knots_Boundaries.Rdata")
 SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- ABQ_Knots_Boundaries
 
-SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING=list(
 			GRADE_3=c(332,340,356),
@@ -4732,7 +4732,7 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <- list(
 
 load("CSEM/New_York/New_York_CSEM.Rdata")
 
-SGPstateData[["NY"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["NY"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		ELA=list(GRADE_3=c(616, 650, 720),
 			GRADE_4=c(612, 650, 716),
@@ -4771,7 +4771,7 @@ SGPstateData[["NY"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(639, 670, 694),
 			GRADE_8=c(639, 674, 704)))
 
-SGPstateData[["NY"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["NY"]][["Achievement"]][["Knots_Boundaries"]] <-
 list(
 	ELA=list(
 		boundaries_3=c(444.5, 810.5),
@@ -4813,7 +4813,7 @@ list(
 		loss.hoss_7=c(500, 800.5),
 		loss.hoss_8=c(480, 775.5)))
 
-SGPstateData[["NY"]][["Achievement"]][["Levels"]] <- 
+SGPstateData[["NY"]][["Achievement"]][["Levels"]] <-
 	list(
 		Labels=c("Below Standard", "Meets Basic Standard", "Meets Proficiency Standard", "Exceeds Proficiency Standard"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
@@ -4835,7 +4835,7 @@ SGPstateData[["NY"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="CTB/McGraw Hill",
 		CSEM=New_York_CSEM)
 
-SGPstateData[["NY"]][["Student_Report_Information"]] <- 
+SGPstateData[["NY"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
@@ -4857,7 +4857,7 @@ SGPstateData[["NY"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 ### OREGON
 
-SGPstateData[["OR"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["OR"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		Reading=list(
 			GRADE_3=c(204,211,224),
@@ -4904,7 +4904,7 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]] <-
 		Test_Season="Spring",
 		Test_Vendor="Oregon Department Education")
 
-SGPstateData[["OR"]][["Student_Report_Information"]] <- 
+SGPstateData[["OR"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
@@ -4928,7 +4928,7 @@ source("Cutscores/RLI/RLI_Cutscores_08152015.R")
 
 SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
 
-SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <- 
+SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 	list( # use `<-` assignment for `if` test below and = to give list names.
 		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 		State_Levels = list(
@@ -4992,7 +4992,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
 
-SGPstateData[["RLI"]][["SGP_Configuration"]] <- 
+SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 	list(
 		print.other.gp=TRUE,
 		percentile.cuts=50, ### For within window projections
@@ -5128,7 +5128,7 @@ SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
 
-SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <- 
+SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 	list(
 		print.other.gp=TRUE,
 		percentile.cuts=50, ### For within window projections
@@ -5466,7 +5466,7 @@ SGPstateData[["SD"]][["Student_Report_Information"]] <-
 
 ### UTAH
 
-SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		ELA.2014=list(
 			boundaries_3=c(10, 1080),
@@ -5765,7 +5765,7 @@ SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 # 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 # 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
-SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- 
+SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 	list(
 		ELA = as.character(3:11),
 		MATHEMATICS= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -5783,7 +5783,7 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 		BIOLOGY = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		CHEMISTRY=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		PHYSICS = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"))
-SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- 
+SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
 	list(
 		ELA = rep("ELA", 9),
 		MATHEMATICS= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
@@ -5802,7 +5802,7 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 		CHEMISTRY=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		PHYSICS = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'))
 
-SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- 
+SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
 	list(
 		ELA=rep(1L, 8),
 		MATHEMATICS= rep(1L, 8), # 8 is one fewer than the length of content_area.projection.sequence and grade.projection.sequence
@@ -6151,7 +6151,7 @@ SGPstateData[["VA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### WASHINGTON
 
 load("CSEM/Washington/Washington_CSEM.Rdata")
-SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <- 
+SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		READING=list(
 			knots_3=c(388, 406, 420, 434),
@@ -6295,7 +6295,7 @@ SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_EOCT=c(250, 550),
 			loss.hoss_EOCT=c(275, 525)))
 
-SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <- 
+SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
 			GRADE_3=c(375, 400, 436),
@@ -6724,11 +6724,16 @@ SGPstateData[["WV"]][["Student_Report_Information"]] <-
 	#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 		Achievement_Level_Labels=list(
-			"Novice"="Novice",
-			"Partial Mastery"="Partial Mastery",
-			"Mastery"="Mastery",
-			"Above Mastery"="Above Mastery",
-			"Distinguished"="Distinguished"))
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4"))
+#		Achievement_Level_Labels=list( For 2013_2014 and prior
+#			"Novice"="Novice",
+#			"Partial Mastery"="Partial Mastery",
+#			"Mastery"="Mastery",
+#			"Above Mastery"="Above Mastery",
+#			"Distinguished"="Distinguished"))
 
 SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WV_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/WV/WV_Baseline_Matrices.Rdata")

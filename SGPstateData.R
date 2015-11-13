@@ -4892,8 +4892,10 @@ SGPstateData[["OR"]][["Growth"]][["Cutscores"]] <- list(
 SGPstateData[["OR"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["OR"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Oregon Assessment of Knowledge and Skills",
-	Assessment_Abbreviation="OAKS",
+	Assessment_Name="SBAC Oregon",
+	Assessment_Abbreviation="SBAC",
+#	Assessment_Name="Oregon Assessment of Knowledge and Skills",
+#	Assessment_Abbreviation="OAKS",
 	Organization=list(
 		Name="Oregon Department of Education",
 		Abbreviation="ODOE",
@@ -4902,7 +4904,8 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
 	Test_Season="Spring",
-	Test_Vendor="Oregon Department Education")
+#	Test_Vendor="Oregon Department of Education")
+	Test_Vendor="SBAC")
 
 SGPstateData[["OR"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
 	Assessment_Abbreviation="OAKS",
@@ -6878,8 +6881,10 @@ SGPstateData[["WI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 SGPstateData[["WI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Wisconsin Knowledge and Concepts Examinations",
-	Assessment_Abbreviation="WKCE",
+	Assessment_Name="Wisconsin Badger Exam",
+	Assessment_Abbreviation="WBE",
+#	Assessment_Name="Wisconsin Knowledge and Concepts Examinations",
+#	Assessment_Abbreviation="WKCE",
 	Organization=list(
 		Name="Wisconsin Department of Public Instruction",
 		Abbreviation="WDOE",
@@ -6888,8 +6893,10 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
 	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
-	Test_Season="Fall",
-	Test_Vendor="CTB/McGraw Hill",
+#	Test_Season="Fall", 2014 and prior
+	Test_Season="Spring",
+#	Test_Vendor="CTB/McGraw Hill",
+	Test_Vendor="SBAC",
 	CSEM=Wisconsin_CSEM)
 
 SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(

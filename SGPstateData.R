@@ -6414,13 +6414,15 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 	Abbreviation="OSPI",
 		URL="www.k12.wa.us",
 		Contact="(360) 725-6000"),
-	Content_Areas=c("Mathematics", "Reading", "Science"),
+#	Content_Areas=c("Mathematics", "Reading", "Science"),
+	Content_Areas=c("Mathematics", "Reading"),
 	# # The assessment changed from WASL to MSP/HSPE (WCAP), but the scale basically stayed the same...
 	# Scale_Change=list(MATHEMATICS=c("2009_2010", "2010_2011"),
 					  # SCIENCE="2009_2010",
 					  # READING="2009_2010",
 					  # WRITING="2009_2010"),
-	Grades_Tested=c(3,4,5,6,7,8,9,10),
+#	Grades_Tested=c(3,4,5,6,7,8,9,10),
+	Grades_Tested=c(3,4,5,6,7,8),
 	Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC",
@@ -6431,23 +6433,24 @@ SGPstateData[['WA']][['SGP_Configuration']] <- list(
 	gPlot.sgp.targets.timeframe=2,
 	sgPlot.use.student.school.name=TRUE)
 
-SGPstateData[["WA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	READING = as.character(c(3:8,10)),
-	MATHEMATICS = as.character(3:10),
-	EOC_MATHEMATICS_1 = as.character(3:10),
-	EOC_MATHEMATICS_2 = as.character(3:10))
+#### Configurations for 2013_2014 and prior
+#SGPstateData[["WA"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+#	READING = as.character(c(3:8,10)),
+#	MATHEMATICS = as.character(3:10),
+#	EOC_MATHEMATICS_1 = as.character(3:10),
+#	EOC_MATHEMATICS_2 = as.character(3:10))
 
-SGPstateData[["WA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	READING = rep("READING", 7),
-	MATHEMATICS = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
-	EOC_MATHEMATICS_1 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
-	EOC_MATHEMATICS_2 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"))
+#SGPstateData[["WA"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+#	READING = rep("READING", 7),
+#	MATHEMATICS = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
+#	EOC_MATHEMATICS_1 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"),
+#	EOC_MATHEMATICS_2 = c(rep("MATHEMATICS", 6), "EOC_MATHEMATICS_1", "EOC_MATHEMATICS_2"))
 
-SGPstateData[["WA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	READING=c(rep(1L, 5), 2L),
-	MATHEMATICS=rep(1L, 7),
-	EOC_MATHEMATICS_1=rep(1L, 7),
-	EOC_MATHEMATICS_2= rep(1L, 7))
+#SGPstateData[["WA"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+#	READING=c(rep(1L, 5), 2L),
+#	MATHEMATICS=rep(1L, 7),
+#	EOC_MATHEMATICS_1=rep(1L, 7),
+#	EOC_MATHEMATICS_2= rep(1L, 7))
 
 SGPstateData[["WA"]][["SGP_Configuration"]][['sgp.loss.hoss.adjustment']]="WA"
 
@@ -6492,7 +6495,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition
 	Vertical_Scale="No",
 	Vertical_Scale.2014_2015="Yes",
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Grades_Tested.2014_2015=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
 	Year="2014_2015")
 

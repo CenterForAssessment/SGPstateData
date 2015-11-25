@@ -5434,7 +5434,7 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <- list(null.output.string="")
 SGPstateData[["RI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RI_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 
 
-### SOUTH DAKOTA 
+### SOUTH DAKOTA
 
 #load("Knots_Boundaries/SD_Knots_Boundaries.Rdata")
 #SGPstateData[["SD"]][["Achievement"]][["Knots_Boundaries"]] <- SD_Knots_Boundaries
@@ -6902,7 +6902,7 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(2543, 2628, 2718)))
 
 SGPstateData[["WI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
+	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["WI"]][["Growth"]][["Cutscores"]] <- list(
@@ -6930,7 +6930,8 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 	Test_Season="Spring",
 #	Test_Vendor="CTB/McGraw Hill",
 	Test_Vendor="SBAC",
-	CSEM=Wisconsin_CSEM)
+	CSEM="SCALE_SCORE_CSEM")
+#	CSEM=Wisconsin_CSEM)
 
 SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
 	Assessment_Abbreviation="WKCE",
@@ -6941,7 +6942,7 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Labels=c("Minimal Performance", "Basic", "Proficient", "Advanced"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	Achievement_Levels.2015=list(
-		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+		Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	Achievement_Level_Labels=list(
 		"Minimal"="Minimal Performance",
@@ -6949,16 +6950,16 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"),
 	Achievement_Level_Labels.2015=list(
-		"Level 1"="Level 1",
-		"Level 2"="Level 2",
-		"Level 3"="Level 3",
-		"Level 4"="Level 4"),
+		"Below Basic"="Below",
+		"Basic"="Basic",
+		"Proficient"="Proficient",
+		"Advanced"="Advanced"),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
 	Vertical_Scale="No",
 	Vertical_Scale.2015="Yes",
-	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested=c(3,4,5,6,7,8,10),
+	Grades_Tested.2015=c(3,4,5,6,7,8),
 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
 	Year="2015"
 )
@@ -6968,7 +6969,7 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	Achievement_Level_Labels=list(
-		"Minimal"="Minimal Performance",
+		"Below Basic"="Below",
 		"Basic"="Basic",
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))

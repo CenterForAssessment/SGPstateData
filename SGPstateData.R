@@ -7649,11 +7649,12 @@ SGPstateData[["WY"]][["Student_Report_Information"]] <-
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
-	  	Achievement_Level_Labels=list(
-			`Below basic` = "Below",
-			Basic = "Basic",
-			Proficient = "Proficient",
-			Advanced = "Advanced"))
+#		Earliest_Year_Reported=list(MATHEMATICS="2013_2014", READING="2013_2013"),
+		Achievement_Level_Labels=list(
+			"Below basic" = "Below",
+			"Basic" = "Basic",
+			"Proficient" = "Proficient",
+			"Advanced" = "Advanced"))
 
 SGPstateData[["WY"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(

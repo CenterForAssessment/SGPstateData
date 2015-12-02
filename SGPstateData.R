@@ -6480,19 +6480,25 @@ SGPstateData[['WA']][['SGP_Configuration']] <- list(
 SGPstateData[["WA"]][["SGP_Configuration"]][['sgp.loss.hoss.adjustment']]="WA"
 
 SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list( READING=c(100,200,300,400,500),
-		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list( READING=c(100,200,300,400,500),
-		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
-	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
-		READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
-	Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
+#	Transformed_Achievement_Level_Cutscores=list(READING=c(100,200,300,400,500),
+#		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(READING=c(100,200,300,400,500),
+#		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+	Content_Areas_Labels =list(READING="Reading", MATHEMATICS="Math"),
+#	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+#	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
+#		READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
+	Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8)),
+#	Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
 	Achievement_Level_Labels=list(
-		"L1: Below Basic"="Below Basic",
-		"L2: Basic"="Basic",
-		"L3: Proficient"="Proficient",
-		"L4: Advanced"="Advanced"))
+		"Level 1"="Level 1",
+		"Level 2"="Level 2",
+		"Level 3"="Level 3",
+		"Level 4"="Level 4"))
+#		"L1: Below Basic"="Below Basic",
+#		"L2: Basic"="Basic",
+#		"L3: Proficient"="Proficient",
+#		"L4: Advanced"="Advanced"))
 
 SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
 	Assessment_Abbreviation="MSP/HSPE",
@@ -6521,7 +6527,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition
 	Vertical_Scale.2014_2015="Yes",
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
 	Year="2014_2015")
 
 #load("Baseline_Coefficient_Matrices/WA/WA_Baseline_Matrices.Rdata")

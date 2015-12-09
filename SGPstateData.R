@@ -6620,7 +6620,7 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
 #	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
 #	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 #		READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
-	Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8)),
+	Grades_Reported=list(READING=c(3,4,5,6,7,8), MATHEMATICS=c(3,4,5,6,7,8)),
 #	Grades_Reported=list(READING=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8), EOC_MATHEMATICS_1=c(7,8,9,10), EOC_MATHEMATICS_2=c(8,9,10)),
 	Achievement_Level_Labels=list(
 		"Level 1"="Level 1",

@@ -4624,7 +4624,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Vertical_Scale.2015="No",
 		Grades_Tested=c(3,4,5,6,7,8),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,12),
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA	=c(100,200,300,400,500,600)),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 		Year="2015")
 
 SGPstateData[["NJ"]][["Student_Report_Information"]] <-

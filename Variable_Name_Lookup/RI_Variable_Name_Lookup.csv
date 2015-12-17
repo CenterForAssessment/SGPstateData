@@ -23,14 +23,8 @@ STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State incl
 DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
 SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
 EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School indicator,
-TEACHER_ID.1,INSTRUCTOR_NUMBER_1,institution_multiple_membership_1,Instructor 1 with possible multiple membership,
-TEACHER_ID.2,INSTRUCTOR_NUMBER_2,institution_multiple_membership_1,Instructor 2 with possible multiple membership,
-TEACHER_ID.3,INSTRUCTOR_NUMBER_3,institution_multiple_membership_1,Instructor 3 with possible multiple membership,
-TEACHER_ID.4,INSTRUCTOR_NUMBER_4,institution_multiple_membership_1,Instructor 4 with possible multiple membership,
-TEACHER_ID.5,INSTRUCTOR_NUMBER_5,institution_multiple_membership_1,Instructor 5 with possible multiple membership,
-TEACHER_ID.6,INSTRUCTOR_NUMBER_6,institution_multiple_membership_1,Instructor 6 with possible multiple membership,
-TEACHER_ID.7,INSTRUCTOR_NUMBER_7,institution_multiple_membership_1,Instructor 7 with possible multiple membership,
 ELL_MULTI_CATEGORY_STATUS,ELL_MULTI_CATEGORY_STATUS,demographic,Student ELL status indicator with multiple ELL categories,FALSE
 CONSOLIDATED_PROGRAM_SUBGROUP,CONSOLIDATED_PROGRAM_SUBGROUP,demographic,Consolidated program super subgroup (IEP or LEP),FALSE
 CONSOLIDATED_MINORITY_POVERTY_SUBGROUP,CONSOLIDATED_MINORITY_POVERTY_SUBGROUP,demographic,Consolidated minority/poverty subgroup  (Minority or Free/Reduced Lunch),FALSE
 ELL_STATUS,ELL_STATUS,demographic,Student ELL status indicator,TRUE
+TEST_FORMAT,TEST_FORMAT,demographic,Test format online versus paper,TRUE

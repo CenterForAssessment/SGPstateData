@@ -1811,7 +1811,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			# AMERICAN_LIT=as.integer(c(0, 1, 2)),
 			MATHEMATICS=rep(1L, 7),
 			COORDINATE_ALGEBRA=rep(1L, 3),
-			ANALYTIC_GEOMETRY =rep(1L, 3),
+			ANALYTIC_GEOMETRY =rep(1L, 2),
 			SCIENCE_PHYSCI=rep(1L, 7),
 			SCIENCE_BIO=rep(1L, 7),
 			BIOLOGY_PHYSCI=rep(1L, 3),

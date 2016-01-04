@@ -238,8 +238,8 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <-
 
 #SGPstateData[["AR"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AR_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-load("Baseline_Coefficient_Matrices/AR/AR_Baseline_Matrices.Rdata")
-SGPstateData[["AR"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- AR_Baseline_Matrices
+#load("Baseline_Coefficient_Matrices/AR/AR_Baseline_Matrices.Rdata")
+#SGPstateData[["AR"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- AR_Baseline_Matrices
 
 
 ### ARIZONA
@@ -715,8 +715,8 @@ SGPstateData[["CA"]][["SGP_Configuration"]] <- list(goodness.of.fit.minimum.n=25
 SGPstateData[["CA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 load("SGP_Norm_Group_Preference/TCRP_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["CA"]][["SGP_Norm_Group_Preference"]] <- TCRP_SGP_Norm_Group_Preference
-load("Baseline_Coefficient_Matrices/CA/CA_Baseline_Matrices.Rdata")
-SGPstateData[["CA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- CA_Baseline_Matrices
+#load("Baseline_Coefficient_Matrices/CA/CA_Baseline_Matrices.Rdata")
+#SGPstateData[["CA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- CA_Baseline_Matrices
 
 
 ### CELA
@@ -821,8 +821,8 @@ SGPstateData[["CELA"]][["Student_Report_Information"]] <-
 			"CELA Level 4"="CELA L4",
 			"CELA Level 5"="CELA L5"))
 
-load("Baseline_Coefficient_Matrices/CELA/CELA_Baseline_Matrices.Rdata")
-SGPstateData[["CELA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["CELA.BASELINE"]] <- CELA_Baseline_Matrices[["CELA.BASELINE"]]
+#load("Baseline_Coefficient_Matrices/CELA/CELA_Baseline_Matrices.Rdata")
+#SGPstateData[["CELA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["CELA.BASELINE"]] <- CELA_Baseline_Matrices[["CELA.BASELINE"]]
 
 
 ### COLORADO
@@ -3101,7 +3101,7 @@ SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
 
 SGPstateData[["MA"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
-SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(20, 40, 61, 81),
@@ -3987,16 +3987,16 @@ SGPstateData[["MS"]][["Student_Report_Information"]] <-
 SGPstateData[["MS"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="MS")
 
 SGPstateData[["MS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MS_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/MS/MS_Baseline_Matrices.Rdata")
-SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
-SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
+#load("Baseline_Coefficient_Matrices/MS/MS_Baseline_Matrices.Rdata")
+#SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MS_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+#SGPstateData[["MS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING_LANGUAGE_ARTS.BASELINE"]] <- MS_Baseline_Matrices[["READING_LANGUAGE_ARTS.BASELINE"]]
 load("SGP_Norm_Group_Preference/MS_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["MS"]][["SGP_Norm_Group_Preference"]] <- MS_SGP_Norm_Group_Preference
 
 
 ### MISSOURI
 
-load("CSEM/Missouri/Missouri_CSEM.Rdata")
+#load("CSEM/Missouri/Missouri_CSEM.Rdata")
 SGPstateData[["MO"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		COMMUNICATION_ARTS=list(
@@ -4085,8 +4085,8 @@ SGPstateData[["MO"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Communication Arts"),
 		Grades_Tested=c(3,4,5,6,7,8,10,11),
 		Test_Season="Spring",
-		Test_Vendor="CTB/McGraw Hill",
-		CSEM=Missouri_CSEM)
+		Test_Vendor="CTB/McGraw Hill")
+#		CSEM=Missouri_CSEM)
 
 SGPstateData[["MO"]][["Student_Report_Information"]] <-
 	list(
@@ -4283,8 +4283,8 @@ SGPstateData[["NE"]][["Student_Report_Information"]] <-
 
 SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NE_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-load("Baseline_Coefficient_Matrices/NE/NE_Baseline_Matrices.Rdata")
-SGPstateData[["NE"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NE_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
+#load("Baseline_Coefficient_Matrices/NE/NE_Baseline_Matrices.Rdata")
+#SGPstateData[["NE"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NE_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 
 ### NEVADA
 
@@ -7327,6 +7327,8 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		"Reaching"="L6"))
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
+SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,

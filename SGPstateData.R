@@ -4786,7 +4786,8 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("English Language Arts", "Mathematics"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Spring",
-		Test_Vendor="PARCC")
+		Test_Vendor="PARCC",
+		CSEM="SCALE_SCORE_CSEM")
 	#	Test_Vendor="Measurement Incorporated")
 
 SGPstateData[["NJ"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-

@@ -11,7 +11,7 @@ SGPstateData <- new.env()
 
 ### Load NECAP CSEM data
 
-load("CSEM/NECAP/NECAP_CSEM.Rdata")
+#load("CSEM/NECAP/NECAP_CSEM.Rdata")
 
 
 ### ALBUQUERQUE
@@ -2941,8 +2941,8 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Fall",
-		Test_Vendor="Measured Progress",
-		CSEM=NECAP_CSEM)
+		Test_Vendor="Measured Progress")
+#		CSEM=NECAP_CSEM)
 
 SGPstateData[["ME"]][["Student_Report_Information"]] <-
 	list(
@@ -4524,8 +4524,8 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Test_Season="Fall",
-		Test_Vendor="Measured Progress",
-		CSEM=NECAP_CSEM)
+		Test_Vendor="Measured Progress")
+#		CSEM=NECAP_CSEM)
 
 SGPstateData[["NH"]][["Student_Report_Information"]] <-
 	list(
@@ -5301,17 +5301,17 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
-load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.3.Rdata")
-SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-		RLI_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']],
-		RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-		RLI_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-)
+#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
+#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
+#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.3.Rdata")
+#SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+#	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
+#		RLI_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
+#	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']],
+#		RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
+#	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
+#		RLI_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
+#)
 
 
 ### RENAISSANCE LEARNING (UNITED KINGDOM)
@@ -5438,16 +5438,16 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
-load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.3.Rdata")
-SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-		RLI_UK_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-		RLI_UK_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-)
+#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
+#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
+#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.3.Rdata")
+#SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
+#	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
+#		RLI_UK_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
+#	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
+#	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
+#		RLI_UK_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
+#)
 
 
 ### RHODE ISLAND
@@ -6255,8 +6255,8 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Test_Vendor="Measured Progress",
-			Test_Season="Fall",
-			CSEM=NECAP_CSEM)
+			Test_Season="Fall")
+#			CSEM=NECAP_CSEM)
 
 SGPstateData[["VT"]][["Student_Report_Information"]] <-
 	list(

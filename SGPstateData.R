@@ -1360,7 +1360,11 @@ SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 # load("CSEM/Georgia/Georgia_CSEM.Rdata")
 
+#  Load TEMPORARY Milestones Knots and Bounds.  Replace in 2016 with those calculated with 2 years of data!
+load("Knots_Boundaries/GA_Temp_Milestones_KBs.Rdata")
+
 SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
+	c(GA_Temp_Milestones_KBs,
 	list(
 		MATHEMATICS=list(
 			knots_1=c(805, 824, 840, 860),
@@ -1566,7 +1570,7 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		MATHEMATICS_II=list(
 			knots_EOCT=c(382, 396, 409, 430),
 			boundaries_EOCT=c(160, 640),
-			loss.hoss_EOCT=c(200, 600)))
+			loss.hoss_EOCT=c(200, 600))))
 
 SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 	list(

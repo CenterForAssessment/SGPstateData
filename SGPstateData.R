@@ -1362,7 +1362,6 @@ SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 #  Load TEMPORARY Milestones Knots and Bounds.  Replace in 2016 with those calculated with 2 years of data!
 load("Knots_Boundaries/GA_Temp_Milestones_KBs.Rdata")
-SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <- GA_Temp_Milestones_KBs #
 
 SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 	c(GA_Temp_Milestones_KBs,

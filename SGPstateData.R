@@ -905,32 +905,7 @@ SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(240, 890),
 			loss.hoss_8=c(250, 910),
 			loss.hoss_9=c(260, 930),
-			loss.hoss_10=c(270, 950)),
-		READING.2015 =list(
-			GRADE_3=c(700, 725, 750, 810),
-			GRADE_4=c(700, 725, 750, 790),
-			GRADE_5=c(700, 725, 750, 799),
-			GRADE_6=c(700, 725, 750, 790),
-			GRADE_7=c(700, 725, 750, 785),
-			GRADE_8=c(700, 725, 750, 794),
-			GRADE_9=c(700, 725, 750, 791),
-			GRADE_10=c(700, 725, 750, 794),
-			GRADE_11=c(700, 725, 750, 792)),
-		MATHEMATICS.2015 =list(
-			GRADE_3=c(700, 725, 750, 790),
-			GRADE_4=c(700, 725, 750, 796),
-			GRADE_5=c(700, 725, 750, 790),
-			GRADE_6=c(700, 725, 750, 788),
-			GRADE_7=c(700, 725, 750, 786),
-			GRADE_8=c(700, 725, 750, 801)),
-		ALGEBRA_I.2015 =list(
-			GRADE_8=c(700, 725, 750, 805),
-			GRADE_EOCT=c(700, 725, 750, 805)),
-		ALGEBRA_II.2015 =list(GRADE_EOCT=c(700, 725, 750, 808)),
-		GEOMETRY.2015=list(GRADE_EOCT=c(700, 725, 750, 783)),
-		INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
-		INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
-		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
+			loss.hoss_10=c(270, 950)))
 
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -960,7 +935,32 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(430, 539, 629),
 			GRADE_8=c(434, 556, 651),
 			GRADE_9=c(436, 563, 672),
-			GRADE_10=c(459, 578, 690)))
+			GRADE_10=c(459, 578, 690)),
+		READING.2015 =list(
+			GRADE_3=c(700, 725, 750, 810),
+			GRADE_4=c(700, 725, 750, 790),
+			GRADE_5=c(700, 725, 750, 799),
+			GRADE_6=c(700, 725, 750, 790),
+			GRADE_7=c(700, 725, 750, 785),
+			GRADE_8=c(700, 725, 750, 794),
+			GRADE_9=c(700, 725, 750, 791),
+			GRADE_10=c(700, 725, 750, 794),
+			GRADE_11=c(700, 725, 750, 792)),
+		MATHEMATICS.2015 =list(
+			GRADE_3=c(700, 725, 750, 790),
+			GRADE_4=c(700, 725, 750, 796),
+			GRADE_5=c(700, 725, 750, 790),
+			GRADE_6=c(700, 725, 750, 788),
+			GRADE_7=c(700, 725, 750, 786),
+			GRADE_8=c(700, 725, 750, 801)),
+		ALGEBRA_I.2015 =list(
+			GRADE_8=c(700, 725, 750, 805),
+			GRADE_EOCT=c(700, 725, 750, 805)),
+		ALGEBRA_II.2015 =list(GRADE_EOCT=c(700, 725, 750, 808)),
+		GEOMETRY.2015=list(GRADE_EOCT=c(700, 725, 750, 783)),
+		INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
+		INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
+		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
 
 SGPstateData[["CO"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
@@ -1881,6 +1881,8 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(2473, 2552, 2610),
 			GRADE_7=c(2484, 2567, 2635),
 			GRADE_8=c(2504, 2586, 2653),
+			GRADE_9=c(2515, 2599, 2676),
+			GRADE_10=c(2529, 2614, 2697),
 			GRADE_11=c(2543, 2628, 2718)),
 		READING=list(
 			GRADE_3=c(271, 300, 352),
@@ -1905,6 +1907,8 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(2457, 2531, 2618),
 			GRADE_7=c(2479, 2552, 2649),
 			GRADE_8=c(2487, 2567, 2668),
+			GRADE_9=c(2488, 2571, 2670),
+			GRADE_10=c(2491, 2577, 2677),
 			GRADE_11=c(2493, 2583, 2682)))
 
 

@@ -905,32 +905,7 @@ SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(240, 890),
 			loss.hoss_8=c(250, 910),
 			loss.hoss_9=c(260, 930),
-			loss.hoss_10=c(270, 950)),
-		READING.2015 =list(
-			GRADE_3=c(700, 725, 750, 810),
-			GRADE_4=c(700, 725, 750, 790),
-			GRADE_5=c(700, 725, 750, 799),
-			GRADE_6=c(700, 725, 750, 790),
-			GRADE_7=c(700, 725, 750, 785),
-			GRADE_8=c(700, 725, 750, 794),
-			GRADE_9=c(700, 725, 750, 791),
-			GRADE_10=c(700, 725, 750, 794),
-			GRADE_11=c(700, 725, 750, 792)),
-		MATHEMATICS.2015 =list(
-			GRADE_3=c(700, 725, 750, 790),
-			GRADE_4=c(700, 725, 750, 796),
-			GRADE_5=c(700, 725, 750, 790),
-			GRADE_6=c(700, 725, 750, 788),
-			GRADE_7=c(700, 725, 750, 786),
-			GRADE_8=c(700, 725, 750, 801)),
-		ALGEBRA_I.2015 =list(
-			GRADE_8=c(700, 725, 750, 805),
-			GRADE_EOCT=c(700, 725, 750, 805)),
-		ALGEBRA_II.2015 =list(GRADE_EOCT=c(700, 725, 750, 808)),
-		GEOMETRY.2015=list(GRADE_EOCT=c(700, 725, 750, 783)),
-		INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
-		INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
-		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
+			loss.hoss_10=c(270, 950)))
 
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -960,7 +935,32 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(430, 539, 629),
 			GRADE_8=c(434, 556, 651),
 			GRADE_9=c(436, 563, 672),
-			GRADE_10=c(459, 578, 690)))
+			GRADE_10=c(459, 578, 690)),
+		READING.2015 =list(
+			GRADE_3=c(700, 725, 750, 810),
+			GRADE_4=c(700, 725, 750, 790),
+			GRADE_5=c(700, 725, 750, 799),
+			GRADE_6=c(700, 725, 750, 790),
+			GRADE_7=c(700, 725, 750, 785),
+			GRADE_8=c(700, 725, 750, 794),
+			GRADE_9=c(700, 725, 750, 791),
+			GRADE_10=c(700, 725, 750, 794),
+			GRADE_11=c(700, 725, 750, 792)),
+		MATHEMATICS.2015 =list(
+			GRADE_3=c(700, 725, 750, 790),
+			GRADE_4=c(700, 725, 750, 796),
+			GRADE_5=c(700, 725, 750, 790),
+			GRADE_6=c(700, 725, 750, 788),
+			GRADE_7=c(700, 725, 750, 786),
+			GRADE_8=c(700, 725, 750, 801)),
+		ALGEBRA_I.2015 =list(
+			GRADE_8=c(700, 725, 750, 805),
+			GRADE_EOCT=c(700, 725, 750, 805)),
+		ALGEBRA_II.2015 =list(GRADE_EOCT=c(700, 725, 750, 808)),
+		GEOMETRY.2015=list(GRADE_EOCT=c(700, 725, 750, 783)),
+		INTEGRATED_MATH_1.2015=list(GRADE_EOCT=c(700, 725, 750, 799)),
+		INTEGRATED_MATH_2.2015=list(GRADE_EOCT=c(700, 725, 750, 785)),
+		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
 
 SGPstateData[["CO"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
@@ -1881,6 +1881,8 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(2473, 2552, 2610),
 			GRADE_7=c(2484, 2567, 2635),
 			GRADE_8=c(2504, 2586, 2653),
+			GRADE_9=c(2515, 2599, 2676),
+			GRADE_10=c(2529, 2614, 2697),
 			GRADE_11=c(2543, 2628, 2718)),
 		READING=list(
 			GRADE_3=c(271, 300, 352),
@@ -1905,6 +1907,8 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(2457, 2531, 2618),
 			GRADE_7=c(2479, 2552, 2649),
 			GRADE_8=c(2487, 2567, 2668),
+			GRADE_9=c(2488, 2571, 2670),
+			GRADE_10=c(2491, 2577, 2677),
 			GRADE_11=c(2493, 2583, 2682)))
 
 
@@ -1917,6 +1921,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(2183.7, 2799.3),
 			boundaries_7=c(2197.2, 2830.8),
 			boundaries_8=c(2211.3, 2855.7),
+			boundaries_9=c(2211.3, 2920.2),
+			boundaries_10=c(2211.3, 2920.2),
 			boundaries_11=c(2221.8, 2920.2),
 			knots_3=c(2369, 2415, 2454, 2498),
 			knots_4=c(2407, 2456, 2496, 2541),
@@ -1924,6 +1930,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(2435, 2499, 2547, 2602),
 			knots_7=c(2437, 2505, 2560, 2618),
 			knots_8=c(2446, 2521, 2581, 2645),
+			knots_9=c(2446, 2521, 2581, 2645),
+			knots_10=c(2446, 2521, 2581, 2645),
 			knots_11=c(2459, 2533, 2594, 2662),
 			loss.hoss_3=c(2189, 2621),
 			loss.hoss_4=c(2204, 2659),
@@ -1931,6 +1939,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(2235, 2748),
 			loss.hoss_7=c(2250, 2778),
 			loss.hoss_8=c(2265, 2802),
+			loss.hoss_9=c(2265, 2862),
+			loss.hoss_10=c(2265, 2862),
 			loss.hoss_11=c(2280, 2862)),
 		MATHEMATICS.2011=list(
 			boundaries_3=c(60, 540),
@@ -1983,6 +1993,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(2158.6, 2775.4),
 			boundaries_7=c(2209.3, 2793.7),
 			boundaries_8=c(2239.9, 2817.1),
+			boundaries_9=c(2249.9, 2844.6),
+			boundaries_10=c(2249.4, 2844.6),
 			boundaries_11=c(2249.4, 2844.6),
 			knots_3=c(2345, 2399, 2447, 2501),
 			knots_4=c(2377, 2440, 2493, 2545),
@@ -1990,6 +2002,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(2437, 2497, 2547, 2600),
 			knots_7=c(2441, 2506, 2561, 2619),
 			knots_8=c(2470, 2531, 2584, 2640),
+			knots_9=c(2470, 2531, 2584, 2640),
+			knots_10=c(2470, 2531, 2584, 2640),
 			knots_11=c(2484, 2559, 2620, 2681),
 			loss.hoss_3=c(2114, 2623),
 			loss.hoss_4=c(2131, 2663),
@@ -1997,6 +2011,8 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(2210, 2724),
 			loss.hoss_7=c(2258, 2745),
 			loss.hoss_8=c(2288, 2769),
+			loss.hoss_9=c(2288, 2795),
+			loss.hoss_10=c(2288, 2795),
 			loss.hoss_11=c(2299, 2795)),
 		READING.2011=list(
 			boundaries_3=c(60, 540),

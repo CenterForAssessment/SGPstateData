@@ -963,8 +963,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 		INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804)))
 
 SGPstateData[["CO"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "No Score"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
 #SGPstateData[["CO"]][["Achievement"]][["Levels"]] <- list(
 #	Labels=c("Unsatisfactory", "Partially Proficient", "Proficient", "Advanced", "No Score"),
 #	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
@@ -1055,6 +1055,8 @@ SGPstateData[["CO"]][["SGP_Configuration"]] <- list(arrow.legend.color=c("#FD505
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- CO_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["WRITING.BASELINE"]] <- CO_Baseline_Matrices[["WRITING.BASELINE"]]
 SGPstateData[["CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+load("SGP_Norm_Group_Preference/CO_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["CO"]][["SGP_Norm_Group_Preference"]] <- CO_SGP_Norm_Group_Preference
 
 
 ### CONNECTICUT
@@ -1745,9 +1747,10 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
-		Transformed_Achievement_Level_Cutscores=list(GRADE_9_LIT = c(100, 200, 300), AMERICAN_LIT = c(100, 200, 300),
-			BIOLOGY = c(100, 200, 300), PHYSICAL_SCIENCE = c(100, 200, 300), US_HISTORY = c(100, 200, 300), ECONOMICS = c(100, 200, 300),
-			COORDINATE_ALGEBRA = c(100, 200, 300), ANALYTIC_GEOMETRY = c(100, 200, 300), MATHEMATICS_I = c(800, 850), MATHEMATICS_II = c(800, 850)),
+		Transformed_Achievement_Level_Cutscores=list(ELA=c(100, 200, 300), GRADE_9_LIT = c(100, 200, 300), AMERICAN_LIT = c(100, 200, 300),
+			SOCIAL_STUDIES=c(100, 200, 300), US_HISTORY = c(100, 200, 300), ECONOMICS = c(100, 200, 300),
+			SCIENCE=c(100, 200, 300), BIOLOGY = c(100, 200, 300), PHYSICAL_SCIENCE = c(100, 200, 300), 
+			MATHEMATICS=c(100, 200, 300), COORDINATE_ALGEBRA = c(100, 200, 300), ANALYTIC_GEOMETRY = c(100, 200, 300)),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
 			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),

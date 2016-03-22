@@ -1048,7 +1048,9 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <- list(
 #		"Proficient"="Proficient",
 #		"Advanced"="Advanced"))
 
-SGPstateData[["CO"]][["SGP_Configuration"]] <- list(arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"))
+SGPstateData[["CO"]][["SGP_Configuration"]] <- list(
+	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
+	sgp.cohort.size = 2000)
 
 #load("Baseline_Coefficient_Matrices/CO/CO_Baseline_Matrices.Rdata")
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- CO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

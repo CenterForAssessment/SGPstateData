@@ -1751,7 +1751,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		Vertical_Scale="No",
 		Transformed_Achievement_Level_Cutscores=list(ELA=c(100, 200, 300), GRADE_9_LIT = c(100, 200, 300), AMERICAN_LIT = c(100, 200, 300),
 			SOCIAL_STUDIES=c(100, 200, 300), US_HISTORY = c(100, 200, 300), ECONOMICS = c(100, 200, 300),
-			SCIENCE=c(100, 200, 300), BIOLOGY = c(100, 200, 300), PHYSICAL_SCIENCE = c(100, 200, 300), 
+			SCIENCE=c(100, 200, 300), BIOLOGY = c(100, 200, 300), PHYSICAL_SCIENCE = c(100, 200, 300),
 			MATHEMATICS=c(100, 200, 300), COORDINATE_ALGEBRA = c(100, 200, 300), ANALYTIC_GEOMETRY = c(100, 200, 300)),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
@@ -4125,6 +4125,65 @@ SGPstateData[["MO"]][["Student_Report_Information"]] <-
 			"Advanced"="Advanced"))
 
 SGPstateData[["MO"]][["SGP_Configuration"]] <- list(state.multiple.year.summary=5)
+
+
+### NCSC (National Center and State Collaborative) South Dakota
+
+SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <-
+	list(MATHEMATICS=list(
+		GRADE_3=c(1236, 1240, 1254),
+		GRADE_4=c(1233, 1240, 1251),
+		GRADE_5=c(1231, 1240, 1255),
+		GRADE_6=c(1234, 1240, 1249),
+		GRADE_7=c(1232, 1240, 1254),
+		GRADE_8=c(1234, 1240, 1249)),
+	ELA=list(
+		GRADE_3=c(1234, 1240, 1251),
+		GRADE_4=c(1234, 1240, 1258),
+		GRADE_5=c(1232, 1240, 1256),
+		GRADE_6=c(1231, 1240, 1253),
+		GRADE_7=c(1236, 1240, 1255),
+		GRADE_8=c(1230, 1240, 1250)))
+
+SGPstateData[["NCSC_SD"]][["Achievement"]][["Levels"]] <-
+	list(
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NCSC_SD"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+
+SGPstateData[["NCSC_SD"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NCSC_SD"]][["Growth"]][["Cutscores"]] <-
+	list(
+	Cuts=c(20, 40, 61, 81),
+	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["NCSC_SD"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="National Center and State Collaborative",
+	Assessment_Abbreviation="NCSC",
+	Organization=list(
+		Name="South Dakota Department of Education",
+		Abbreviation="SDDOE",
+		URL="www.doe.sd.gov",
+		Contact="betty.leidholt@state.sd.us"),
+	Content_Areas=c("Mathematics", "ELA"),
+	Grades_Tested=c(3,4,5,6,7,8),
+	Assessment_Years=c("2015", "2016"),
+	Test_Vendor="Measured Progress",
+	Test_Season="Spring")
+
+SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
+	list(
+	Vertical_Scale="No",
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+	Achievement_Level_Labels=list(
+		"Level 1"="Level 1",
+		"Level 2"="Level 2",
+		"Level 3"="Level 3",
+		"Level 4"="Level 4"))
 
 
 ### AUSTRALIA/NAPLAN

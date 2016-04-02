@@ -7176,8 +7176,8 @@ SGPstateData[["WI"]][["Achievement"]][["Levels"]] <- list(
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["WI"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(35, 66),
-	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+	Cuts=c(35, 65),
+	Labels=c("1st - 34th", "35th - 64th", "65th - 99th"))
 
 SGPstateData[["WI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -7243,6 +7243,11 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <- list(
 		"Basic"="Basic",
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))
+
+SGPstateData[["WI"]][["SGP_Configuration"]] <-
+	list(
+		print.other.gp=TRUE,
+		calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)))
 
 #load("Baseline_Coefficient_Matrices/WI/WI_Baseline_Matrices.Rdata")
 #SGPstateData[["WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- WI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

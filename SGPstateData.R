@@ -7247,6 +7247,7 @@ SGPstateData[["WI"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WI"]][["SGP_Configuration"]] <-
 	list(
 		print.other.gp=TRUE,
+		percentile.cuts=c(1, 35, 65, 99),
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)))
 
 #load("Baseline_Coefficient_Matrices/WI/WI_Baseline_Matrices.Rdata")

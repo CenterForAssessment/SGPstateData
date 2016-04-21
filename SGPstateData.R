@@ -1285,6 +1285,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.projections.max.forward.progression.years=FALSE,
 				gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(

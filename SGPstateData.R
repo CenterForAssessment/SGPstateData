@@ -938,7 +938,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(434, 556, 651),
 			GRADE_9=c(436, 563, 672),
 			GRADE_10=c(459, 578, 690)),
-		READING.2015 =list(
+		ELA.2015 =list(
 			GRADE_3=c(700, 725, 750, 810),
 			GRADE_4=c(700, 725, 750, 790),
 			GRADE_5=c(700, 725, 750, 799),
@@ -5237,20 +5237,197 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 load("Knots_Boundaries/PARCC_Knots_Boundaries.Rdata")
 SGPstateData[["PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_Knots_Boundaries
 
+load("Cutscores/PARCC/PARCC_Cutscores.Rdata")
+SGPstateData[["PARCC"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores
+
+SGPstateData[["PARCC"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["PARCC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["PARCC"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_CO
+
+SGPstateData[['PARCC_CO']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_CO"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_IL
+
+SGPstateData[['PARCC_IL']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_IL"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_MD
+
+SGPstateData[['PARCC_MD']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_MD"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_MA
+
+SGPstateData[['PARCC_MA']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_MA"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_NJ
+
+SGPstateData[['PARCC_NJ']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_NJ"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_NM
+
+SGPstateData[['PARCC_NM']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_NM"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
+### PARCC_RI
+
+SGPstateData[['PARCC_RI']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_RI"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
+
+
+### PARCC_DC
+
+SGPstateData[['PARCC_DC']] <- SGPstateData[['PARCC']]
+
+SGPstateData[["PARCC_DC"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="PARCC Inc",
+			Abbreviation="PARCC Inc",
+			URL="www.parccinc.org",
+			Contact="202.748.8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
 ### RENAISSANCE LEARNING

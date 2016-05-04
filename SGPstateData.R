@@ -6097,7 +6097,7 @@ SGPstateData[["UT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High") #  B
 
 SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 	list(
-		Cuts=c(35, 60),
+		Cuts=c(40, 60),
 		Labels=c("1st - 34th", "35th - 59th", "60th - 99th")) #  Changed to 60th percentile cut per conversation with Elena and Chris D. 10/01/12
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"

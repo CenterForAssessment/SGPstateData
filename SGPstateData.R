@@ -828,8 +828,10 @@ SGPstateData[["CELA"]][["Student_Report_Information"]] <-
 ### COLORADO
 
 load("CSEM/Colorado/Colorado_CSEM.Rdata")
+load("Knots_Boundaries/CO_Knots_Boundaries_PARCC_Scale_Score.Rdata")
 
 SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
+	c(CO_Knots_Boundaries,
 	list(
 		MATHEMATICS=list(
 			boundaries_3=c(150, 700),
@@ -905,7 +907,7 @@ SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(240, 890),
 			loss.hoss_8=c(250, 910),
 			loss.hoss_9=c(260, 930),
-			loss.hoss_10=c(270, 950)))
+			loss.hoss_10=c(270, 950))))
 
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -1688,7 +1690,7 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 
 SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 	list(
-		Labels=c("Beginning Learner", "Developing Learner", "Distinguished Learner", "Proficient Learner"),
+		Labels=c("Beginning Learner", "Developing Learner", "Proficient Learner", "Distinguished Learner"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 # SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 # 	list(
@@ -1726,7 +1728,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition
 	 		Labels=c("Does Not Meet Expectations", "Meets Expectations", "Exceeds Expectations"),
 	 		Proficient=c("Not Proficient", "Proficient", "Proficient")),
 		Achievement_Levels.2015=list(
-			Labels=c("Beginning Learner", "Developing Learner", "Distinguished Learner", "Proficient Learner"),
+			Labels=c("Beginning Learner", "Developing Learner", "Proficient Learner", "Distinguished Learner"),
 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Achievement_Level_Labels=list(
 			"Does Not Meet"="Does Not Meet Expectations",
@@ -1735,8 +1737,8 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Achievement_Level_Labels.2015=list(
 			"Beginning Learner"="Beginning Learner",
 			"Developing Learner"="Developing Learner",
-			"Distinguished Learner"="Distinguished Learner",
-			"Proficient Learner"="Proficient Learner"),
+			"Proficient Learner"="Proficient Learner",
+			"Distinguished Learner"="Distinguished Learner"),
 		Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
 		Content_Areas.2015=c("Mathematics", "ELA", "Science", "Social Studies"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
@@ -6116,7 +6118,7 @@ SGPstateData[["UT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High") #  B
 
 SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 	list(
-		Cuts=c(35, 60),
+		Cuts=c(40, 60),
 		Labels=c("1st - 34th", "35th - 59th", "60th - 99th")) #  Changed to 60th percentile cut per conversation with Elena and Chris D. 10/01/12
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"

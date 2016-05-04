@@ -828,8 +828,10 @@ SGPstateData[["CELA"]][["Student_Report_Information"]] <-
 ### COLORADO
 
 load("CSEM/Colorado/Colorado_CSEM.Rdata")
+load("Knots_Boundaries/CO_Knots_Boundaries_PARCC_Scale_Score.Rdata")
 
 SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
+	c(CO_Knots_Boundaries,
 	list(
 		MATHEMATICS=list(
 			boundaries_3=c(150, 700),
@@ -905,7 +907,7 @@ SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(240, 890),
 			loss.hoss_8=c(250, 910),
 			loss.hoss_9=c(260, 930),
-			loss.hoss_10=c(270, 950)))
+			loss.hoss_10=c(270, 950))))
 
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 	list(

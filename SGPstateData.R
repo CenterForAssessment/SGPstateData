@@ -5269,6 +5269,10 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
+	list(
+		sgp.minimum.default.panel.years=2)
+
 
 ### PARCC_CO
 

@@ -5273,8 +5273,28 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+													MATHEMATICS=c(0,100,200,300,400,500),
+													ELA=c(0,100,200,300,400,500),
+													GEOMETRY=c(0,100,200,300,400,500),
+													ALGEBRA_I=c(0,100,200,300,400,500),
+													ALGEBRA_II=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+													MATHEMATICS=c(0,100,200,300,400,500),
+													ELA=c(0,100,200,300,400,500),
+													GEOMETRY=c(0,100,200,300,400,500),
+													ALGEBRA_I=c(0,100,200,300,400,500),
+													ALGEBRA_II=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), ELA=c(3,4,5,6,7,8,9,10,11)),
+		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS", INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS"),
+		Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), ELA=c("3","4","5","6","7","8","9","10","11"), GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT", INTEGRATED_MATH_1="EOCT", INTEGRATED_MATH_2="EOCT", INTEGRATED_MATH_3="EOCT"),
+		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
 		Achievement_Level_Labels=list(
 			"Level 1"="Level 1",
 			"Level 2"="Level 2",
@@ -5290,8 +5310,45 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.projections.max.forward.progression.years=FALSE,
-		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
-		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)))
+		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
+		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
+		sgPlot.show.content_area.progression=TRUE,
+		grade.projection.sequence=list(
+			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_2=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_3=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")),
+		content_area.projection.sequence=list(
+			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			INTEGRATED_MATH_1=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
+			INTEGRATED_MATH_2=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
+			INTEGRATED_MATH_3=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3")),
+		year_lags.projection.sequence=list(
+			ELA=rep(1L, 8),
+			MATHEMATICS=rep(1L, 8),
+			GEOMETRY=rep(1L, 8),
+			ALGEBRA_I=rep(1L, 8),
+			ALGEBRA_II=rep(1L, 8),
+			INTEGRATED_MATH_1=rep(1L, 8),
+			INTEGRATED_MATH_2=rep(1L, 8),
+			INTEGRATED_MATH_3=rep(1L, 8)),
+		max.forward.projection.sequence=list(
+			ELA=3,
+			MATHEMATICS=3,
+			GEOMETRY=3,
+			ALGEBRA_I=3,
+			ALGEBRA_II=3,
+			INTEGRATED_MATH_1=3,
+			INTEGRATED_MATH_2=3,
+			INTEGRATED_MATH_3=3))
 
 
 ### PARCC_CO

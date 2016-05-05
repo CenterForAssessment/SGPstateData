@@ -1052,7 +1052,7 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["CO"]][["SGP_Configuration"]] <- list(
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
-	sgp.cohort.size = 2000)
+	sgp.cohort.size=2000)
 
 #load("Baseline_Coefficient_Matrices/CO/CO_Baseline_Matrices.Rdata")
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- CO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -5262,16 +5262,94 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 			Name="PARCC Inc",
 			Abbreviation="PARCC Inc",
 			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Contact="202-748-8100"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
+	list(
+		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+													MATHEMATICS=c(0,100,200,300,400,500),
+													ELA=c(0,100,200,300,400,500),
+													GEOMETRY=c(0,100,200,300,400,500),
+													ALGEBRA_I=c(0,100,200,300,400,500),
+													ALGEBRA_II=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+													MATHEMATICS=c(0,100,200,300,400,500),
+													ELA=c(0,100,200,300,400,500),
+													GEOMETRY=c(0,100,200,300,400,500),
+													ALGEBRA_I=c(0,100,200,300,400,500),
+													ALGEBRA_II=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
+													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3"),
+		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS", INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS"),
+		Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), ELA=c("3","4","5","6","7","8","9","10","11"), GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT", INTEGRATED_MATH_1="EOCT", INTEGRATED_MATH_2="EOCT", INTEGRATED_MATH_3="EOCT"),
+		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"))
+
 SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
-		sgp.minimum.default.panel.years=2)
+		sgp.minimum.default.panel.years=2,
+		percentile.cuts=c(1,35,50,66,99),
+		lagged.percentile.trajectory.values=c(1,35,50,66,99),
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+		sgp.projections.max.forward.progression.years=FALSE,
+		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
+		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
+		sgPlot.show.content_area.progression=TRUE,
+		sgp.cohort.size=1000,
+		grade.projection.sequence=list(
+			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_2=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_3=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")),
+		content_area.projection.sequence=list(
+			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			INTEGRATED_MATH_1=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
+			INTEGRATED_MATH_2=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
+			INTEGRATED_MATH_3=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3")),
+		year_lags.projection.sequence=list(
+			ELA=rep(1L, 8),
+			MATHEMATICS=rep(1L, 8),
+			GEOMETRY=rep(1L, 8),
+			ALGEBRA_I=rep(1L, 8),
+			ALGEBRA_II=rep(1L, 8),
+			INTEGRATED_MATH_1=rep(1L, 8),
+			INTEGRATED_MATH_2=rep(1L, 8),
+			INTEGRATED_MATH_3=rep(1L, 8)),
+		max.forward.projection.sequence=list(
+			ELA=3,
+			MATHEMATICS=3,
+			GEOMETRY=3,
+			ALGEBRA_I=3,
+			ALGEBRA_II=3,
+			INTEGRATED_MATH_1=3,
+			INTEGRATED_MATH_2=3,
+			INTEGRATED_MATH_3=3))
 
 
 ### PARCC_CO
@@ -5280,18 +5358,19 @@ SGPstateData[['PARCC_CO']] <- SGPstateData[['PARCC']]
 
 SGPstateData[["PARCC_CO"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
+		Assessment_Name="Colorado Measures of Academic Success",
+		Assessment_Abbreviation="CMAS",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Test_Season="Fall & Spring",
-		Test_Vendor="Pearson",
-		CSEM="SCALE_SCORE_CSEM")
+			Name="Colorado Department of Education",
+			Abbreviation="CDE",
+			URL="www.schoolview.org",
+			Contact="303-866-6600"),
+			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
+			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+			Test_Season="Fall & Spring",
+			Test_Vendor="Pearson",
+			CSEM="SCALE_SCORE_CSEM")
 
 
 ### PARCC_IL
@@ -5303,12 +5382,13 @@ SGPstateData[["PARCC_IL"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="Illinois State Board of Education",
+			Abbreviation="ISBE",
+			URL="www.isbe.net",
+			Contact="866-262-6663"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5323,12 +5403,13 @@ SGPstateData[["PARCC_MD"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="Maryland State Department of Education",
+			Abbreviation="MSDE",
+			URL="www.marylandpublicschools.org",
+			Contact="888-246-0016"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5343,12 +5424,13 @@ SGPstateData[["PARCC_MA"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="Massachusetts Department of Elementary and Secondary Education",
+			Abbreviation="ESE",
+			URL="www.doe.mass.edu",
+			Contact="781-338-3000"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5363,12 +5445,13 @@ SGPstateData[["PARCC_NJ"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="New Jersey Department of Education",
+			Abbreviation="NJDOE",
+			URL="www.state.nj.us/education",
+			Contact="877-900-6960"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5383,12 +5466,13 @@ SGPstateData[["PARCC_NM"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5403,12 +5487,13 @@ SGPstateData[["PARCC_RI"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="Rhode Island Department of Education",
+			Abbreviation="RIDE",
+			URL="www.ride.ri.gov/",
+			Contact="401-222-4600"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5423,12 +5508,13 @@ SGPstateData[["PARCC_DC"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Algebra II", "Integrated Math I", "Integrated Math II", "Integrated Math III"),
+			Name="Office of the State Superintendent of Education",
+			Abbreviation="OSSE",
+			URL="http://osse.dc.gov",
+			Contact="202-727-6436"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")

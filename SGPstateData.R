@@ -2831,6 +2831,7 @@ SGPstateData[["IL_ORIGINAL"]][["Student_Report_Information"]] <-
 			"Meets"="Meets",
 			"Exceeds"="Exceeds"))
 
+
 ### ILLINOIS
 
 SGPstateData[["IL"]] <- SGPstateData[['PARCC']]
@@ -3859,6 +3860,7 @@ SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <-
 
 SGPstateData[["MA_PARCC"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
+
 ### MASSACHUSETTS
 
 SGPstateData[["MA"]] <- SGPstateData[['PARCC']]
@@ -4565,6 +4567,7 @@ SGPstateData[["NAPLAN"]][["Student_Report_Information"]] <-
 			"Below Standard"="Below Nat Min Std",
 			"At Standard"="At Nat Min Std",
 			"Above Standard"="Above Nat Min Std"))
+
 
 #########################################################
 ### NEBRASKA
@@ -5867,8 +5870,10 @@ SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lo
 
 
 #########################################################
-### RHODE ISLAND (Original meta-data with RIDE/PARCC)
+### RHODE ISLAND
 #########################################################
+
+### RHODE ISLAND (Original meta-data with RIDE/PARCC)
 
 load("Knots_Boundaries/RI_Knots_Boundaries.Rdata")
 SGPstateData[["RI_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <- RI_Knots_Boundaries

@@ -5265,7 +5265,7 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5284,7 +5284,14 @@ SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 
 SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
-		sgp.minimum.default.panel.years=2)
+		sgp.minimum.default.panel.years=2,
+		percentile.cuts=c(1,35,50,66,99),
+		lagged.percentile.trajectory.values=c(1,35,50,66,99),
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+		sgp.projections.max.forward.progression.years=FALSE,
+		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
+		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)))
 
 
 ### PARCC_CO
@@ -5302,7 +5309,7 @@ SGPstateData[["PARCC_CO"]][["Assessment_Program_Information"]] <-
 			Contact="303-866-6600"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Assessment_Years=as.character(2014:2015),
+			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 			Test_Season="Fall & Spring",
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
@@ -5323,7 +5330,7 @@ SGPstateData[["PARCC_IL"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5344,7 +5351,7 @@ SGPstateData[["PARCC_MD"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5365,7 +5372,7 @@ SGPstateData[["PARCC_MA"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5386,7 +5393,7 @@ SGPstateData[["PARCC_NJ"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5402,7 +5409,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5422,7 +5429,7 @@ SGPstateData[["PARCC_NM"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5441,11 +5448,12 @@ SGPstateData[["PARCC_RI"]][["Assessment_Program_Information"]] <-
 			Abbreviation="RIDE",
 			URL="www.ride.ri.gov/",
 			Contact="401-222-4600"),
-			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
-			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Test_Season="Fall & Spring",
-			Test_Vendor="Pearson",
-			CSEM="SCALE_SCORE_CSEM")
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Test_Season="Fall & Spring",
+		Test_Vendor="Pearson",
+		CSEM="SCALE_SCORE_CSEM")
 
 
 ### PARCC_DC
@@ -5463,7 +5471,7 @@ SGPstateData[["PARCC_DC"]][["Assessment_Program_Information"]] <-
 			Contact="202.748.8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=as.character(2014:2015),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")

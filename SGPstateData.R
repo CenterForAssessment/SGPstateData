@@ -5444,22 +5444,6 @@ SGPstateData[["PARCC_NJ"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
-		Test_Season="Fall & Spring",
-		Test_Vendor="Pearson",
-		CSEM="SCALE_SCORE_CSEM")
-
-SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
-	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
-		Organization=list(
 			Name="New Jersey Department of Education",
 			Abbreviation="NJDOE",
 			URL="www.state.nj.us/education",
@@ -5471,6 +5455,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+
 ### PARCC_NM
 
 SGPstateData[['PARCC_NM']] <- SGPstateData[['PARCC']]
@@ -5480,10 +5465,10 @@ SGPstateData[["PARCC_NM"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
@@ -5498,8 +5483,8 @@ SGPstateData[['PARCC_RI']] <- SGPstateData[['PARCC']]
 
 SGPstateData[["PARCC_RI"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Rhode Island PARCC",
-		Assessment_Abbreviation="RI PARCC",
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
 		Organization=list(
 			Name="Rhode Island Department of Education",
 			Abbreviation="RIDE",
@@ -5522,10 +5507,10 @@ SGPstateData[["PARCC_DC"]][["Assessment_Program_Information"]] <-
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
-			Name="PARCC Inc",
-			Abbreviation="PARCC Inc",
-			URL="www.parccinc.org",
-			Contact="202.748.8100"),
+			Name="Office of the State Superintendent of Education",
+			Abbreviation="OSSE",
+			URL="http://osse.dc.gov",
+			Contact="202-727-6436"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),

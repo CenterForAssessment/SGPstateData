@@ -1052,7 +1052,7 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["CO"]][["SGP_Configuration"]] <- list(
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
-	sgp.cohort.size = 2000)
+	sgp.cohort.size=2000)
 
 #load("Baseline_Coefficient_Matrices/CO/CO_Baseline_Matrices.Rdata")
 #SGPstateData[["CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- CO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -5313,6 +5313,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
 		sgPlot.show.content_area.progression=TRUE,
+		sgp.cohort.size=1000,
 		grade.projection.sequence=list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),

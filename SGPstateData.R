@@ -86,7 +86,6 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
-		lagged.percentile.trajectory.values=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.projections.max.forward.progression.years=FALSE,

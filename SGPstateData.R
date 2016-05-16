@@ -1418,7 +1418,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
+	Assessment_Years=c("2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)
@@ -7097,7 +7097,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 					  # WRITING="2009_2010"),
 #	Grades_Tested=c(3,4,5,6,7,8,9,10),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
+	Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC",
 	CSEM=Washington_CSEM)
@@ -7133,7 +7133,7 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
 #		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
 #	Transformed_Achievement_Level_Cutscores_gaPlot=list(READING=c(100,200,300,400,500),
 #		MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
-	Content_Areas_Labels =list(READING="Reading", MATHEMATICS="Math"),
+	Content_Areas_Labels =list(READING="ELA", MATHEMATICS="Math"),
 #	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
 #	Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 #		READING = "READING", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),

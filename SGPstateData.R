@@ -2309,7 +2309,7 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), ### 2014 and prior
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)),
 #		Achievement_Level_Labels=list( ### 2014 and prior
 #			"Well Below"="Well Below Proficiency",
 #			"Approaches"="Approaches Proficiency",

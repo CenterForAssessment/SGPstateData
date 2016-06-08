@@ -9,6 +9,11 @@
 
 SGPstateData <- new.env()
 
+###  Load required packages
+require(data.table)
+require(grid)
+require(png)
+
 
 #########################################################
 ### PARCC (Consortium) Embedded in later state meta-data
@@ -84,6 +89,7 @@ SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 
 SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
+		rq.method = "fn",
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
@@ -96,6 +102,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		grade.projection.sequence=list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			MATHEMATICS_INTGRT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -105,6 +112,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		content_area.projection.sequence=list(
 			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
 			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+			MATHEMATICS_INTGRT=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
 			GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 			ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 			ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
@@ -114,6 +122,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		year_lags.projection.sequence=list(
 			ELA=rep(1L, 8),
 			MATHEMATICS=rep(1L, 8),
+			MATHEMATICS_INTGRT=rep(1L, 8),
 			GEOMETRY=rep(1L, 8),
 			ALGEBRA_I=rep(1L, 8),
 			ALGEBRA_II=rep(1L, 8),
@@ -123,12 +132,17 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		max.forward.projection.sequence=list(
 			ELA=3,
 			MATHEMATICS=3,
+			MATHEMATICS_INTGRT=3,
 			GEOMETRY=3,
 			ALGEBRA_I=3,
 			ALGEBRA_II=3,
 			INTEGRATED_MATH_1=3,
 			INTEGRATED_MATH_2=3,
 			INTEGRATED_MATH_3=3))
+
+SGPstateData[["PARCC"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("MATHEMATICS", "MATHEMATICS_INTGRT", "ALGEBRA_I", "INTEGRATED_MATH_1", "GEOMETRY", "INTEGRATED_MATH_2", "ALGEBRA_II", "INTEGRATED_MATH_3"),
+	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 
 #########################################################
@@ -2024,7 +2038,6 @@ SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
-require(data.table)
 SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "BIOLOGY_END", "PHYSICAL_SCIENCE_END", "PHYSICAL_SCIENCE_BIO"),
 	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
@@ -6597,7 +6610,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 # 		Grades_Reported_Domains.2014=list(ELA=as.character(3:11), MATHEMATICS=c(3:8, "EOCT"), SCIENCE= c(4:8, "EOCT"))
 # 	)
 
-require(grid)
+# require(grid)
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(SCIENCE=c(130, 160, 170, 200),
@@ -7814,13 +7827,13 @@ SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
 WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 
-require(png)
+# require(png)
 CDE.img <- readPNG("Custom_ISR/WIDA_CO/CDE.png")
 
 # Report_Text_Img_ENGLISH <- readPNG("Custom_ISR/WIDA_CO/ACCESS_English_Text.png")
 # Report_Text_Img_SPANISH <- readPNG("Custom_ISR/WIDA_CO/ACCESS_Spanish_Text.png")
 
-require(grid)
+# require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 	report.width=8.5,
 	report.height= 11,

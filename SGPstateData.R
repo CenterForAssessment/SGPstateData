@@ -1957,7 +1957,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# use.cohort.for.baseline.when.missing=TRUE,
 		# sgp.projections.baseline.max.order=4,
 		return.norm.group.scale.scores=TRUE,
-		goodness.of.fit.minimum.n = 1,
+		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
+		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2016 (or 17?) when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(
 			# READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.

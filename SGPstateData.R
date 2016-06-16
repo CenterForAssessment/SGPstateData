@@ -1957,7 +1957,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# use.cohort.for.baseline.when.missing=TRUE,
 		# sgp.projections.baseline.max.order=4,
 		return.norm.group.scale.scores=TRUE,
-		goodness.of.fit.minimum.n = 1,
+		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
+		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2016 (or 17?) when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(
 			# READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
@@ -5687,21 +5688,30 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		max.n.for.coefficient.matrices=200000,
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
+		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
 		grade.projection.sequence=list(
 		READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+		READING_SS=paste(1:12, 3, sep="."),
 		MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+		MATHEMATICS_SS=paste(1:12, 3, sep="."),
 		EARLY_LITERACY_FWS=paste(rep(as.character(c('PK','K',1:3)), each=3), c(1,2,3), sep=".")),
 		content_area.projection.sequence=list(
 		READING_FWS=rep("READING", length(1:12)*3),
+		READING_SS=rep("READING", length(1:12)),
 		MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
+		MATHEMATICS_SS=rep("MATHEMATICS", length(1:12)),
 		EARLY_LITERACY_FWS=rep("EARLY_LITERACY", length(c('PK','K',1:3))*3)),
 		year_lags.projection.sequence=list(
 		READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+		READING_SS=c(rep(1, 11)),
 		MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+		MATHEMATICS_SS=c(rep(1, 11)),
 		EARLY_LITERACY_FWS=c(rep(c(0.1, 0.1, 0.8), 4), c(0.1, 0.1))),
 		max.forward.projection.sequence=list(
 		READING_FWS=10,
+		READING_SS=12,
 		MATHEMATICS_FWS=10,
+		MATHEMATICS_SS=12,
 		EARLY_LITERACY_FWS=10),
 		output.column.order=list(
 			SGPercentiles=c('ID','SGP_BASELINE_ORDER_1','SGP_BASELINE_ORDER_2','SGP_BASELINE','SCALE_SCORE_PRIOR','SGP_LEVEL_BASELINE',

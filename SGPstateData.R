@@ -5660,7 +5660,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="Yes",
 		Projection_Fan_Limits=c(5, 95),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERACY="Early Literacy"),
-		Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERACY=c('PK','K',1,2,3)),
+		Grades_Reported=list(MATHEMATICS=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), EARLY_LITERACY=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep="."))),
 		Achievement_Level_Labels=list(
 			"Unsatisfactory"="Unsatisfactory",
 			"Part Proficient"="Partially Proficient",

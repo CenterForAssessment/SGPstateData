@@ -6479,6 +6479,7 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
 	max.order.for.percentile=5,
+	max.order.for.projection=1,
 	sgPlot.use.alternate.student.id="SSID")
 # 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 # 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
@@ -6500,7 +6501,14 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 		EARTH_SCIENCE=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		BIOLOGY = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
 		CHEMISTRY=c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
-		PHYSICS = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"))
+		PHYSICS = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT", "EOCT"),
+
+		SCIENCE_BIO = c("4", "5", "6", "7", "8", "EOCT"),
+		CHEM_BIO =c("EOCT", "EOCT"),
+		PHYS_BIO =c("EOCT", "EOCT"),
+		PHYS_CHEM =c("EOCT", "EOCT"),
+		BIO_PHYS = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+
 SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
 	list(
 		ELA = rep("ELA", 9),
@@ -6518,7 +6526,14 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 		EARTH_SCIENCE=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		BIOLOGY = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
 		CHEMISTRY=c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
-		PHYSICS = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'))
+		PHYSICS = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'CHEMISTRY', 'PHYSICS'),
+
+		SCIENCE_BIO = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'BIOLOGY'),
+		BIO_PHYS = c('SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'SCIENCE', 'EARTH_SCIENCE', 'BIOLOGY', 'PHYSICS'),
+		CHEM_BIO =c('CHEMISTRY', 'BIOLOGY'),
+		PHYS_BIO =c('PHYSICS', 'BIOLOGY'),
+		PHYS_CHEM =c('PHYSICS', 'CHEMISTRY'))
+
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
 	list(
@@ -6536,7 +6551,18 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 		EARTH_SCIENCE =rep(1L, 8),
 		BIOLOGY = rep(1L, 8),
 		CHEMISTRY=rep(1L, 8),
-		PHYSICS = rep(1L, 8))
+		PHYSICS = rep(1L, 8),
+
+		SCIENCE_BIO = rep(1L, 5),
+		CHEM_BIO =1L,
+		PHYS_BIO =1L,
+		PHYS_CHEM =1L,
+		BIO_PHYS = rep(1L, 7))
+
+SGPstateData[["UT"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("EARTH_SCIENCE", "SCIENCE_BIO",    "BIOLOGY", "BIO_PHYS",    "CHEMISTRY", "CHEM_BIO",    "PHYSICS", "PHYS_BIO", "PHYS_CHEM"),
+	PREFERENCE = c(1,2, 1,2, 1,2, 1,2,3), key = "SGP_PROJECTION_GROUP")
+
 
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	list(
@@ -6672,6 +6698,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 SGPstateData[["UT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/UT_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 load("SGP_Norm_Group_Preference/UT_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Preference
+
 
 
 #########################################################

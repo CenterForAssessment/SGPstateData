@@ -144,6 +144,9 @@ SGPstateData[["PARCC"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP = c("MATHEMATICS", "MATHEMATICS_INTGRT", "ALGEBRA_I", "INTEGRATED_MATH_1", "GEOMETRY", "INTEGRATED_MATH_2", "ALGEBRA_II", "INTEGRATED_MATH_3"),
 	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
+load("SGP_Norm_Group_Preference/PARCC_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["PARCC"]][["SGP_Norm_Group_Preference"]] <- PARCC_SGP_Norm_Group_Preference
+
 
 #########################################################
 ### ALBUQUERQUE

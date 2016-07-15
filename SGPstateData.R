@@ -568,6 +568,30 @@ SGPstateData[["ATI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 
 #########################################################
+### BUREAU of INDIAN AFFAIRS
+#########################################################
+
+load("Knots_Boundaries/PARCC_BIA_Knots_Boundaries.Rdata")
+SGPstateData[["BIA"]] <- SGPstateData[['PARCC']]
+SGPstateData[["BIA"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_BIA_Knots_Boundaries
+
+SGPstateData[["BIA"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="Bureau of Indian Affairs",
+			Abbreviation="BIA",
+			URL="www.indianaffairs.gov",
+			Contact="202-208-3710"),
+			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
+			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+			Test_Season="Fall & Spring",
+			Test_Vendor="Pearson",
+			CSEM="SCALE_SCORE_CSEM")
+
+#########################################################
 ### CALIFORNIA
 #########################################################
 
@@ -1217,7 +1241,9 @@ SGPstateData[["CO_ORIGINAL"]][["SGP_Norm_Group_Preference"]] <- CO_SGP_Norm_Grou
 
 ### COLORADO
 
+load("Knots_Boundaries/PARCC_CO_Knots_Boundaries.Rdata")
 SGPstateData[["CO"]] <- SGPstateData[['PARCC']]
+SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_CO_Knots_Boundaries
 
 SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 	list(
@@ -2867,7 +2893,9 @@ SGPstateData[["IL_ORIGINAL"]][["Student_Report_Information"]] <-
 
 ### ILLINOIS
 
+load("Knots_Boundaries/PARCC_IL_Knots_Boundaries.Rdata")
 SGPstateData[["IL"]] <- SGPstateData[['PARCC']]
+SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_IL_Knots_Boundaries
 
 SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 	list(
@@ -3232,7 +3260,9 @@ SGPstateData[["ME"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### MARYLAND
 #########################################################
 
+load("Knots_Boundaries/PARCC_MD_Knots_Boundaries.Rdata")
 SGPstateData[["MD"]] <- SGPstateData[['PARCC']]
+SGPstateData[["MD"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_MD_Knots_Boundaries
 
 SGPstateData[["MD"]][["Assessment_Program_Information"]] <-
 	list(
@@ -3896,7 +3926,9 @@ SGPstateData[["MA_PARCC"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_
 
 ### MASSACHUSETTS
 
+load("Knots_Boundaries/PARCC_MA_Knots_Boundaries.Rdata")
 SGPstateData[["MA"]] <- SGPstateData[['PARCC']]
+SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_MA_Knots_Boundaries
 
 SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	list(
@@ -5245,7 +5277,9 @@ SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjus
 
 ### NEW JERSEY
 
+load("Knots_Boundaries/PARCC_NJ_Knots_Boundaries.Rdata")
 SGPstateData[["NJ"]] <- SGPstateData[['PARCC']]
+SGPstateData[["NJ"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_NJ_Knots_Boundaries
 
 SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 	list(
@@ -5335,7 +5369,9 @@ SGPstateData[["NM_ORIGINAL"]][["Student_Report_Information"]] <- list(
 
 ### NEW MEXICO
 
+load("Knots_Boundaries/PARCC_NM_Knots_Boundaries.Rdata")
 SGPstateData[["NM"]] <- SGPstateData[['PARCC']]
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_NM_Knots_Boundaries
 
 SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 	list(
@@ -6097,7 +6133,9 @@ SGPstateData[["RI_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Na
 
 ### RHODE ISLAND
 
+load("Knots_Boundaries/PARCC_RI_Knots_Boundaries.Rdata")
 SGPstateData[["RI"]] <- SGPstateData[['PARCC']]
+SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_RI_Knots_Boundaries
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 	list(
@@ -7260,7 +7298,9 @@ SGPstateData[["WA"]][["SGP_Norm_Group_Preference"]] <- WA_SGP_Norm_Group_Prefere
 ### WASHINGTON DC
 #########################################################
 
+load("Knots_Boundaries/PARCC_DC_Knots_Boundaries.Rdata")
 SGPstateData[["DC"]] <- SGPstateData[['PARCC']]
+SGPstateData[["DC"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_DC_Knots_Boundaries
 
 SGPstateData[["DC"]][["Assessment_Program_Information"]] <-
 	list(
@@ -8253,6 +8293,7 @@ SGPstateData[["WIDA_NV"]][["SGP_Configuration"]] <- list(
 	max.order.for.projection=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% c('L1', 'L2', 'L3', 'L4')",
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 SGPstateData[["WIDA_NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices

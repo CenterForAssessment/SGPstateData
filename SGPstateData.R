@@ -89,7 +89,7 @@ SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 
 SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
-		fix.duplicates=TRUE,
+		fix.duplicates="KEEP.ALL",
 		rq.method = "fn",
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),

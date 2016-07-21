@@ -100,6 +100,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
 		sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
+		sgp.projections.use.only.complete.matrices=FALSE,
 		grade.projection.sequence=list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),

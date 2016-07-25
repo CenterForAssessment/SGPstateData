@@ -5705,10 +5705,10 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 		State_Levels = list(
 			Two_Level_States = list(
-				States = Three_Level_States <- c("IN"),
+				States = Two_Level_States <- c("IN"),
 				Levels = c("Not Proficient", "Proficient")),
 			Three_Level_States = list(
-				States = Three_Level_States <- c("AB", "IA", "IN", "NE", "TX", "VA"),
+				States = Three_Level_States <- c("AB", "IA", "NE", "TX", "VA"),
 				Levels = c("Not Proficient", "Proficient", "Proficient")),
 			Four_Level_States = list(
 				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CA", "CT", "DE", "HI", "ID", "GA", "KS", "KY", "ME", "MI", "MN",
@@ -5724,11 +5724,11 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 		)
 
 # Make sure we have all state cutscore information updated in levels:
-if (length(tmp <- setdiff(Cutscore_States, c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
-	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 3 - 5 Level list!", sep=""))
+if (length(tmp <- setdiff(Cutscore_States, c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
+	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 2 - 5 Level list!", sep=""))
 }
-if (length(tmp <- setdiff(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
-	message(paste("NOTE: Some states included in 3 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
+if (length(tmp <- setdiff(c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
+	message(paste("NOTE: Some states included in 2 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
 }
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")

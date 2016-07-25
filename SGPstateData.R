@@ -5704,18 +5704,21 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 	list( # use `<-` assignment for `if` test below and = to give list names.
 		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 		State_Levels = list(
+			Two_Level_States = list(
+				States = Three_Level_States <- c("IN"),
+				Levels = c("Not Proficient", "Proficient")),
 			Three_Level_States = list(
-				States = Three_Level_States <- c("AB", "GA", "IA", "IN", "MD", "NE", "NJ", "TX", "VA"),
+				States = Three_Level_States <- c("AB", "IA", "IN", "NE", "TX", "VA"),
 				Levels = c("Not Proficient", "Proficient", "Proficient")),
 			Four_Level_States = list(
-				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DC", "DE", "HI", "ID", "IL", "KY", "MA", "ME", "MI", "MN",
-					"MO", "MS", "MT", "ND", "NH", "NM", "NV", "NY", "OK", "PA", "RI", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WY"),
+				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CA", "CT", "DE", "HI", "ID", "GA", "KS", "KY", "ME", "MI", "MN",
+					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Five_Level_States_A = list(
-				States = Five_Level_States_A <- c("CT", "FL", "KS", "OH", "WV"),
+				States = Five_Level_States_A <- c("FL", "OH"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Five_Level_States_B = list(
-				States = Five_Level_States_B <- c("CA", "LA", "NC", "OR"),
+				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NC", "NJ", "NM", "RI"),
 				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 			)
 		)

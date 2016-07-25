@@ -1,7 +1,7 @@
 
 
 
-SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
+SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list( 
 	READING.AB=list(
 		GRADE_1.1=c(76, 250),
  		GRADE_1.2=c(76, 250),
@@ -39,6 +39,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(682, 1334),
  		GRADE_12.2=c(682, 1334),
  		GRADE_12.3=c(682, 1334)),
+ 
 	MATHEMATICS.AK=list(
 		GRADE_1.1=c(306, 355, 440),
  		GRADE_1.2=c(306, 355, 440),
@@ -113,7 +114,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(588, 897, 1292),
  		GRADE_12.2=c(588, 897, 1292),
  		GRADE_12.3=c(588, 897, 1292)),
-
+ 
 	MATHEMATICS.AL=list(
 		GRADE_1.1=c(343, 425, 498),
  		GRADE_1.2=c(343, 425, 498),
@@ -188,7 +189,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(679, 1082, 1325),
  		GRADE_12.2=c(679, 1082, 1325),
  		GRADE_12.3=c(679, 1082, 1325)),
-
+ 
 	MATHEMATICS.AR=list(
 		GRADE_1.1=c(343, 425, 498),
  		GRADE_1.2=c(343, 425, 498),
@@ -263,7 +264,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(679, 1082, 1325),
  		GRADE_12.2=c(679, 1082, 1325),
  		GRADE_12.3=c(679, 1082, 1325)),
-
+ 
 	MATHEMATICS.AZ=list(
 		GRADE_1.1=c(288, 361, 468),
  		GRADE_1.2=c(288, 361, 468),
@@ -338,7 +339,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(585, 856, 1340),
  		GRADE_12.2=c(585, 856, 1340),
  		GRADE_12.3=c(585, 856, 1340)),
-
+ 
 	MATHEMATICS.CA=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -413,7 +414,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.CO=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -488,7 +489,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.CT=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -563,7 +564,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.DC=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -638,7 +639,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.DE=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -713,7 +714,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.FL=list(
 		GRADE_1.1=c(333, 403, 461, 523),
  		GRADE_1.2=c(333, 403, 461, 523),
@@ -788,7 +789,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(781, 1080, 1298, 1344),
  		GRADE_12.2=c(781, 1080, 1298, 1344),
  		GRADE_12.3=c(781, 1080, 1298, 1344)),
-
+ 
 	MATHEMATICS.GA=list(
 		GRADE_1.1=c(334, 437, 522),
  		GRADE_1.2=c(334, 437, 522),
@@ -863,7 +864,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(814, 1173, 1337),
  		GRADE_12.2=c(814, 1173, 1337),
  		GRADE_12.3=c(814, 1173, 1337)),
-
+ 
 	MATHEMATICS.HI=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -938,7 +939,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.IA=list(
 		GRADE_1.1=c(372, 475),
  		GRADE_1.2=c(372, 475),
@@ -1013,7 +1014,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(1028, 1345),
  		GRADE_12.2=c(1028, 1345),
  		GRADE_12.3=c(1028, 1345)),
-
+ 
 	MATHEMATICS.ID=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -1088,7 +1089,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.IL=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -1163,7 +1164,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.IN=list(
 		GRADE_1.1=c(406),
  		GRADE_1.2=c(406),
@@ -1238,7 +1239,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(976),
  		GRADE_12.2=c(976),
  		GRADE_12.3=c(976)),
-
+ 
 	MATHEMATICS.KS=list(
 		GRADE_1.1=c(328, 421, 499),
  		GRADE_1.2=c(328, 421, 499),
@@ -1313,7 +1314,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(879, 1264, 1347),
  		GRADE_12.2=c(879, 1264, 1347),
  		GRADE_12.3=c(879, 1264, 1347)),
-
+ 
 	MATHEMATICS.KY=list(
 		GRADE_1.1=c(361, 450, 550),
  		GRADE_1.2=c(361, 450, 550),
@@ -1388,7 +1389,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(908, 1150, 1326),
  		GRADE_12.2=c(908, 1150, 1326),
  		GRADE_12.3=c(908, 1150, 1326)),
-
+ 
 	MATHEMATICS.LA=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -1463,7 +1464,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.MA=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -1538,7 +1539,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.MD=list(
 		GRADE_1.1=c(304, 385, 454, 562),
  		GRADE_1.2=c(304, 385, 454, 562),
@@ -1613,7 +1614,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(769, 961, 1184, 1341),
  		GRADE_12.2=c(769, 961, 1184, 1341),
  		GRADE_12.3=c(769, 961, 1184, 1341)),
-
+ 
 	MATHEMATICS.ME=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -1688,7 +1689,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.MI=list(
 		GRADE_1.1=c(354, 423, 487),
  		GRADE_1.2=c(354, 423, 487),
@@ -1763,7 +1764,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(835, 1126, 1331),
  		GRADE_12.2=c(835, 1126, 1331),
  		GRADE_12.3=c(835, 1126, 1331)),
-
+ 
 	MATHEMATICS.MN=list(
 		GRADE_1.1=c(332, 393, 492),
  		GRADE_1.2=c(332, 393, 492),
@@ -1838,7 +1839,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(949, 1173, 1334),
  		GRADE_12.2=c(949, 1173, 1334),
  		GRADE_12.3=c(949, 1173, 1334)),
-
+ 
 	MATHEMATICS.MO=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -1913,7 +1914,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.MS=list(
 		GRADE_1.1=c(304, 385, 454, 562),
  		GRADE_1.2=c(304, 385, 454, 562),
@@ -1988,7 +1989,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(769, 961, 1184, 1341),
  		GRADE_12.2=c(769, 961, 1184, 1341),
  		GRADE_12.3=c(769, 961, 1184, 1341)),
-
+ 
 	MATHEMATICS.MT=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -2063,7 +2064,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.NC=list(
 		GRADE_1.1=c(330, 409, 438, 524),
  		GRADE_1.2=c(330, 409, 438, 524),
@@ -2138,7 +2139,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(743, 1035, 1167, 1339),
  		GRADE_12.2=c(743, 1035, 1167, 1339),
  		GRADE_12.3=c(743, 1035, 1167, 1339)),
-
+ 
 	MATHEMATICS.ND=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -2213,7 +2214,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.NE=list(
 		GRADE_1.1=c(364, 473),
  		GRADE_1.2=c(364, 473),
@@ -2288,7 +2289,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(988, 1320),
  		GRADE_12.2=c(988, 1320),
  		GRADE_12.3=c(988, 1320)),
-
+ 
 	MATHEMATICS.NH=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -2363,7 +2364,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.NJ=list(
 		GRADE_1.1=c(304, 385, 454, 562),
  		GRADE_1.2=c(304, 385, 454, 562),
@@ -2438,7 +2439,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(769, 961, 1184, 1341),
  		GRADE_12.2=c(769, 961, 1184, 1341),
  		GRADE_12.3=c(769, 961, 1184, 1341)),
-
+ 
 	MATHEMATICS.NM=list(
 		GRADE_1.1=c(304, 385, 454, 562),
  		GRADE_1.2=c(304, 385, 454, 562),
@@ -2513,7 +2514,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(769, 961, 1184, 1341),
  		GRADE_12.2=c(769, 961, 1184, 1341),
  		GRADE_12.3=c(769, 961, 1184, 1341)),
-
+ 
 	MATHEMATICS.NV=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -2588,7 +2589,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.NY=list(
 		GRADE_1.1=c(365, 441, 488),
  		GRADE_1.2=c(365, 441, 488),
@@ -2663,7 +2664,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(908, 1256, 1335),
  		GRADE_12.2=c(908, 1256, 1335),
  		GRADE_12.3=c(908, 1256, 1335)),
-
+ 
 	MATHEMATICS.OH=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -2738,7 +2739,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(753, 968, 1189, 1342),
  		GRADE_12.2=c(753, 968, 1189, 1342),
  		GRADE_12.3=c(753, 968, 1189, 1342)),
-
+ 
 	MATHEMATICS.OK=list(
 		GRADE_1.1=c(321, 373, 471),
  		GRADE_1.2=c(321, 373, 471),
@@ -2813,7 +2814,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(737, 908, 1331),
  		GRADE_12.2=c(737, 908, 1331),
  		GRADE_12.3=c(737, 908, 1331)),
-
+ 
 	MATHEMATICS.OR=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -2888,7 +2889,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.PA=list(
 		GRADE_1.1=c(353, 425, 492),
  		GRADE_1.2=c(353, 425, 492),
@@ -2963,7 +2964,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(696, 1079, 1332),
  		GRADE_12.2=c(696, 1079, 1332),
  		GRADE_12.3=c(696, 1079, 1332)),
-
+ 
 	MATHEMATICS.RI=list(
 		GRADE_1.1=c(298, 382, 449, 570),
  		GRADE_1.2=c(298, 382, 449, 570),
@@ -3038,7 +3039,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 969, 1191, 1341),
  		GRADE_12.2=c(762, 969, 1191, 1341),
  		GRADE_12.3=c(762, 969, 1191, 1341)),
-
+ 
 	MATHEMATICS.SC=list(
 		GRADE_1.1=c(343, 425, 498),
  		GRADE_1.2=c(343, 425, 498),
@@ -3113,7 +3114,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(679, 1082, 1325),
  		GRADE_12.2=c(679, 1082, 1325),
  		GRADE_12.3=c(679, 1082, 1325)),
-
+ 
 	MATHEMATICS.SD=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -3188,7 +3189,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.TN=list(
 		GRADE_1.1=c(294, 409, 492),
  		GRADE_1.2=c(294, 409, 492),
@@ -3263,7 +3264,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(764, 1209, 1335),
  		GRADE_12.2=c(764, 1209, 1335),
  		GRADE_12.3=c(764, 1209, 1335)),
-
+ 
 	MATHEMATICS.TX=list(
 		GRADE_1.1=c(407, 537),
  		GRADE_1.2=c(407, 537),
@@ -3338,7 +3339,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(743, 1295),
  		GRADE_12.2=c(743, 1295),
  		GRADE_12.3=c(743, 1295)),
-
+ 
 	READING.UT=list(
 		GRADE_1.1=c(122, 186, 289),
  		GRADE_1.2=c(122, 186, 289),
@@ -3376,7 +3377,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(970, 1227, 1324),
  		GRADE_12.2=c(970, 1227, 1324),
  		GRADE_12.3=c(970, 1227, 1324)),
-
+ 
 	MATHEMATICS.VA=list(
 		GRADE_1.1=c(404, 530),
  		GRADE_1.2=c(404, 530),
@@ -3451,82 +3452,82 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(941, 1343),
  		GRADE_12.2=c(941, 1343),
  		GRADE_12.3=c(941, 1343)),
-
+ 
 	MATHEMATICS.VT=list(
-		GRADE_1.1=c(303, 357, 476),
- 		GRADE_1.2=c(303, 357, 476),
- 		GRADE_1.3=c(303, 357, 476),
- 		GRADE_2.1=c(424, 473, 580),
- 		GRADE_2.2=c(424, 473, 580),
- 		GRADE_2.3=c(424, 473, 580),
- 		GRADE_3.1=c(496, 555, 653),
- 		GRADE_3.2=c(496, 555, 653),
- 		GRADE_3.3=c(496, 555, 653),
- 		GRADE_4.1=c(576, 621, 724),
- 		GRADE_4.2=c(576, 621, 724),
- 		GRADE_4.3=c(576, 621, 724),
- 		GRADE_5.1=c(622, 669, 775),
- 		GRADE_5.2=c(622, 669, 775),
- 		GRADE_5.3=c(622, 669, 775),
- 		GRADE_6.1=c(682, 733, 836),
- 		GRADE_6.2=c(682, 733, 836),
- 		GRADE_6.3=c(682, 733, 836),
- 		GRADE_7.1=c(691, 749, 874),
- 		GRADE_7.2=c(691, 749, 874),
- 		GRADE_7.3=c(691, 749, 874),
- 		GRADE_8.1=c(715, 776, 909),
- 		GRADE_8.2=c(715, 776, 909),
- 		GRADE_8.3=c(715, 776, 909),
- 		GRADE_9.1=c(724, 785, 912),
- 		GRADE_9.2=c(724, 785, 912),
- 		GRADE_9.3=c(724, 785, 912),
- 		GRADE_10.1=c(725, 789, 921),
- 		GRADE_10.2=c(725, 789, 921),
- 		GRADE_10.3=c(725, 789, 921),
- 		GRADE_11.1=c(743, 808, 934),
- 		GRADE_11.2=c(743, 808, 934),
- 		GRADE_11.3=c(743, 808, 934),
- 		GRADE_12.1=c(749, 821, 940),
- 		GRADE_12.2=c(749, 821, 940),
- 		GRADE_12.3=c(749, 821, 940)),
+		GRADE_1.1=c(337, 418, 499),
+ 		GRADE_1.2=c(337, 418, 499),
+ 		GRADE_1.3=c(337, 418, 499),
+ 		GRADE_2.1=c(458, 529, 602),
+ 		GRADE_2.2=c(458, 529, 602),
+ 		GRADE_2.3=c(458, 529, 602),
+ 		GRADE_3.1=c(547, 621, 687),
+ 		GRADE_3.2=c(547, 621, 687),
+ 		GRADE_3.3=c(547, 621, 687),
+ 		GRADE_4.1=c(603, 696, 772),
+ 		GRADE_4.2=c(603, 696, 772),
+ 		GRADE_4.3=c(603, 696, 772),
+ 		GRADE_5.1=c(693, 782, 827),
+ 		GRADE_5.2=c(693, 782, 827),
+ 		GRADE_5.3=c(693, 782, 827),
+ 		GRADE_6.1=c(717, 808, 860),
+ 		GRADE_6.2=c(717, 808, 860),
+ 		GRADE_6.3=c(717, 808, 860),
+ 		GRADE_7.1=c(746, 831, 886),
+ 		GRADE_7.2=c(746, 831, 886),
+ 		GRADE_7.3=c(746, 831, 886),
+ 		GRADE_8.1=c(784, 852, 892),
+ 		GRADE_8.2=c(784, 852, 892),
+ 		GRADE_8.3=c(784, 852, 892),
+ 		GRADE_9.1=c(791, 853, 896),
+ 		GRADE_9.2=c(791, 853, 896),
+ 		GRADE_9.3=c(791, 853, 896),
+ 		GRADE_10.1=c(797, 859, 901),
+ 		GRADE_10.2=c(797, 859, 901),
+ 		GRADE_10.3=c(797, 859, 901),
+ 		GRADE_11.1=c(814, 874, 919),
+ 		GRADE_11.2=c(814, 874, 919),
+ 		GRADE_11.3=c(814, 874, 919),
+ 		GRADE_12.1=c(827, 891, 926),
+ 		GRADE_12.2=c(827, 891, 926),
+ 		GRADE_12.3=c(827, 891, 926)),
 	READING.VT=list(
-		GRADE_1.1=c(82, 107, 314),
- 		GRADE_1.2=c(82, 107, 314),
- 		GRADE_1.3=c(82, 107, 314),
- 		GRADE_2.1=c(188, 267, 496),
- 		GRADE_2.2=c(188, 267, 496),
- 		GRADE_2.3=c(188, 267, 496),
- 		GRADE_3.1=c(273, 359, 584),
- 		GRADE_3.2=c(273, 359, 584),
- 		GRADE_3.3=c(273, 359, 584),
- 		GRADE_4.1=c(325, 428, 726),
- 		GRADE_4.2=c(325, 428, 726),
- 		GRADE_4.3=c(325, 428, 726),
- 		GRADE_5.1=c(395, 507, 949),
- 		GRADE_5.2=c(395, 507, 949),
- 		GRADE_5.3=c(395, 507, 949),
- 		GRADE_6.1=c(458, 590, 1077),
- 		GRADE_6.2=c(458, 590, 1077),
- 		GRADE_6.3=c(458, 590, 1077),
- 		GRADE_7.1=c(458, 606, 1152),
- 		GRADE_7.2=c(458, 606, 1152),
- 		GRADE_7.3=c(458, 606, 1152),
- 		GRADE_8.1=c(507, 683, 1261),
- 		GRADE_8.2=c(507, 683, 1261),
- 		GRADE_8.3=c(507, 683, 1261),
- 		GRADE_9.1=c(569, 781, 1301),
- 		GRADE_9.2=c(569, 781, 1301),
- 		GRADE_9.3=c(569, 781, 1301),
- 		GRADE_10.1=c(575, 807, 1318),
- 		GRADE_10.2=c(575, 807, 1318),
- 		GRADE_10.3=c(575, 807, 1318),
- 		GRADE_11.1=c(601, 851, 1324),
- 		GRADE_11.2=c(601, 851, 1324),
- 		GRADE_11.3=c(601, 851, 1324),
- 		GRADE_12.1=c(628, 891, 1335),
- 		GRADE_12.2=c(628, 891, 1335),
- 		GRADE_12.3=c(628, 891, 1335)),
-
+		GRADE_1.1=c(91, 166, 249),
+ 		GRADE_1.2=c(91, 166, 249),
+ 		GRADE_1.3=c(91, 166, 249),
+ 		GRADE_2.1=c(233, 338, 436),
+ 		GRADE_2.2=c(233, 338, 436),
+ 		GRADE_2.3=c(233, 338, 436),
+ 		GRADE_3.1=c(333, 455, 562),
+ 		GRADE_3.2=c(333, 455, 562),
+ 		GRADE_3.3=c(333, 455, 562),
+ 		GRADE_4.1=c(435, 531, 661),
+ 		GRADE_4.2=c(435, 531, 661),
+ 		GRADE_4.3=c(435, 531, 661),
+ 		GRADE_5.1=c(484, 600, 853),
+ 		GRADE_5.2=c(484, 600, 853),
+ 		GRADE_5.3=c(484, 600, 853),
+ 		GRADE_6.1=c(500, 692, 1016),
+ 		GRADE_6.2=c(500, 692, 1016),
+ 		GRADE_6.3=c(500, 692, 1016),
+ 		GRADE_7.1=c(577, 773, 1169),
+ 		GRADE_7.2=c(577, 773, 1169),
+ 		GRADE_7.3=c(577, 773, 1169),
+ 		GRADE_8.1=c(590, 858, 1250),
+ 		GRADE_8.2=c(590, 858, 1250),
+ 		GRADE_8.3=c(590, 858, 1250),
+ 		GRADE_9.1=c(662, 919, 1292),
+ 		GRADE_9.2=c(662, 919, 1292),
+ 		GRADE_9.3=c(662, 919, 1292),
+ 		GRADE_10.1=c(675, 958, 1315),
+ 		GRADE_10.2=c(675, 958, 1315),
+ 		GRADE_10.3=c(675, 958, 1315),
+ 		GRADE_11.1=c(716, 993, 1322),
+ 		GRADE_11.2=c(716, 993, 1322),
+ 		GRADE_11.3=c(716, 993, 1322),
+ 		GRADE_12.1=c(762, 1080, 1333),
+ 		GRADE_12.2=c(762, 1080, 1333),
+ 		GRADE_12.3=c(762, 1080, 1333)),
+ 
 	MATHEMATICS.WA=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -3601,7 +3602,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.WI=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -3676,7 +3677,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.WV=list(
 		GRADE_1.1=c(337, 418, 499),
  		GRADE_1.2=c(337, 418, 499),
@@ -3751,7 +3752,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(762, 1080, 1333),
  		GRADE_12.2=c(762, 1080, 1333),
  		GRADE_12.3=c(762, 1080, 1333)),
-
+ 
 	MATHEMATICS.WY=list(
 		GRADE_1.1=c(327, 419, 518),
  		GRADE_1.2=c(327, 419, 518),
@@ -3826,4 +3827,6 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_12.1=c(831, 1151, 1328),
  		GRADE_12.2=c(831, 1151, 1328),
  		GRADE_12.3=c(831, 1151, 1328))
-)
+ )
+
+

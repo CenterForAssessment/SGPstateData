@@ -5704,28 +5704,31 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 	list( # use `<-` assignment for `if` test below and = to give list names.
 		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
 		State_Levels = list(
+			Two_Level_States = list(
+				States = Two_Level_States <- c("IN"),
+				Levels = c("Not Proficient", "Proficient")),
 			Three_Level_States = list(
-				States = Three_Level_States <- c("AB", "GA", "IA", "IN", "MD", "NE", "NJ", "TX", "VA"),
+				States = Three_Level_States <- c("AB", "IA", "NE", "TX", "VA"),
 				Levels = c("Not Proficient", "Proficient", "Proficient")),
 			Four_Level_States = list(
-				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CO", "DC", "DE", "HI", "ID", "IL", "KY", "MA", "ME", "MI", "MN",
-					"MO", "MS", "MT", "ND", "NH", "NM", "NV", "NY", "OK", "PA", "RI", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WY"),
+				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CA", "CT", "DE", "HI", "ID", "GA", "KS", "KY", "ME", "MI", "MN",
+					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Five_Level_States_A = list(
-				States = Five_Level_States_A <- c("CT", "FL", "KS", "OH", "WV"),
+				States = Five_Level_States_A <- c("FL", "OH"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Five_Level_States_B = list(
-				States = Five_Level_States_B <- c("CA", "LA", "NC", "OR"),
+				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NC", "NJ", "NM", "RI"),
 				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 			)
 		)
 
 # Make sure we have all state cutscore information updated in levels:
-if (length(tmp <- setdiff(Cutscore_States, c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
-	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 3 - 5 Level list!", sep=""))
+if (length(tmp <- setdiff(Cutscore_States, c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
+	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 2 - 5 Level list!", sep=""))
 }
-if (length(tmp <- setdiff(c(Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
-	message(paste("NOTE: Some states included in 3 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
+if (length(tmp <- setdiff(c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
+	message(paste("NOTE: Some states included in 2 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
 }
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")

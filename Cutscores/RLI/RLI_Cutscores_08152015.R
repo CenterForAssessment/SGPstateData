@@ -1,3 +1,6 @@
+
+
+
 SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list( 
 	READING.AB=list(
 		GRADE_1.1=c(76, 250),
@@ -3749,7 +3752,7 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] <- list(
  		GRADE_11.3=c(786, 1064, 1316),
  		GRADE_12.1=c(831, 1151, 1328),
  		GRADE_12.2=c(831, 1151, 1328),
- 		GRADE_12.3=c(831, 1151, 1328))
-)
+ 		GRADE_12.3=c(831, 1151, 1328)),
+ )
 
 

@@ -1,7 +1,7 @@
 library(data.table)
 
 ###  Read in the cutscore long data file
-rli.cs.long <- fread('Base_Files/cutscores_including_unlinked_grades_07152016.txt')
+rli.cs.long <- fread('Base_Files/cutscores_including_unlinked_grades_08012016.txt')
 
 ###  Reshape the long file into a wide file
 rli.cs <- reshape(rli.cs.long, timevar= 'ProficiencyLevel', idvar=c('StateTest', 'Subject', 'Grade'), direction='wide', drop=c("vchRegionCode", "MaxSS", "Linked"))#, "ProficiencyLevelName"
@@ -48,4 +48,4 @@ final.list <- gsub(", NA", "", unlist(tmp.list.state))
 
 ###  This will output the raw text to disk.
 
-cat(c("\n\n\nSGPstateData[[\"RLI\"]][[\"Achievement\"]][[\"Cutscores\"]] <- list(", final.list, ")\n\n\n"), file="RLI_Cutscores_07252016.R")
+cat(c("\n\n\nSGPstateData[[\"RLI\"]][[\"Achievement\"]][[\"Cutscores\"]] <- list(", final.list, ")\n\n\n"), file="RLI_Cutscores_08012016.R")

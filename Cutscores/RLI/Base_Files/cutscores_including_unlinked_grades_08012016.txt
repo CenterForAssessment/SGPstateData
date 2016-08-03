@@ -1,0 +1,5053 @@
+vchRegionCode	StateTest	Subject	Grade	ProficiencyLevel	ProficiencyLevelName	MinSS	MaxSS	Linked
+AB	AB	Reading	1	1	Below	0	75	0
+AB	AB	Reading	1	2	Acceptable	76	249	0
+AB	AB	Reading	1	3	Excellence	250	1400	0
+AB	AB	Reading	2	1	Below	0	149	0
+AB	AB	Reading	2	2	Acceptable	150	415	0
+AB	AB	Reading	2	3	Excellence	416	1400	0
+AB	AB	Reading	3	1	Below	0	220	1
+AB	AB	Reading	3	2	Acceptable	221	538	1
+AB	AB	Reading	3	3	Excellence	539	1400	1
+AB	AB	Reading	4	1	Below	0	292	1
+AB	AB	Reading	4	2	Acceptable	293	635	1
+AB	AB	Reading	4	3	Excellence	636	1400	1
+AB	AB	Reading	5	1	Below	0	359	1
+AB	AB	Reading	5	2	Acceptable	360	807	1
+AB	AB	Reading	5	3	Excellence	808	1400	1
+AB	AB	Reading	6	1	Below	0	421	1
+AB	AB	Reading	6	2	Acceptable	422	952	1
+AB	AB	Reading	6	3	Excellence	953	1400	1
+AB	AB	Reading	7	1	Below	0	490	1
+AB	AB	Reading	7	2	Acceptable	491	1153	1
+AB	AB	Reading	7	3	Excellence	1154	1400	1
+AB	AB	Reading	8	1	Below	0	547	1
+AB	AB	Reading	8	2	Acceptable	548	1260	1
+AB	AB	Reading	8	3	Excellence	1261	1400	1
+AB	AB	Reading	9	1	Below	0	619	1
+AB	AB	Reading	9	2	Acceptable	620	1296	1
+AB	AB	Reading	9	3	Excellence	1297	1400	1
+AB	AB	Reading	10	1	Below	0	626	0
+AB	AB	Reading	10	2	Acceptable	627	1316	0
+AB	AB	Reading	10	3	Excellence	1317	1400	0
+AB	AB	Reading	11	1	Below	0	653	0
+AB	AB	Reading	11	2	Acceptable	654	1323	0
+AB	AB	Reading	11	3	Excellence	1324	1400	0
+AB	AB	Reading	12	1	Below	0	681	0
+AB	AB	Reading	12	2	Acceptable	682	1333	0
+AB	AB	Reading	12	3	Excellence	1334	1400	0
+AK	AK	Math	1	1	Far Below 	0	305	0
+AK	AK	Math	1	2	Below	306	354	0
+AK	AK	Math	1	3	Proficient	355	439	0
+AK	AK	Math	1	4	Advanced	440	1400	0
+AK	AK	Math	2	1	Far Below 	0	429	0
+AK	AK	Math	2	2	Below	430	473	0
+AK	AK	Math	2	3	Proficient	474	549	0
+AK	AK	Math	2	4	Advanced	550	1400	0
+AK	AK	Math	3	1	Far Below 	0	512	1
+AK	AK	Math	3	2	Below	513	563	1
+AK	AK	Math	3	3	Proficient	564	637	1
+AK	AK	Math	3	4	Advanced	638	1400	1
+AK	AK	Math	4	1	Far Below 	0	577	1
+AK	AK	Math	4	2	Below	578	634	1
+AK	AK	Math	4	3	Proficient	635	711	1
+AK	AK	Math	4	4	Advanced	712	1400	1
+AK	AK	Math	5	1	Far Below 	0	604	1
+AK	AK	Math	5	2	Below	605	686	1
+AK	AK	Math	5	3	Proficient	687	762	1
+AK	AK	Math	5	4	Advanced	763	1400	1
+AK	AK	Math	6	1	Far Below 	0	656	0
+AK	AK	Math	6	2	Below	657	740	0
+AK	AK	Math	6	3	Proficient	741	821	0
+AK	AK	Math	6	4	Advanced	822	1400	0
+AK	AK	Math	7	1	Far Below 	0	673	0
+AK	AK	Math	7	2	Below	674	767	0
+AK	AK	Math	7	3	Proficient	768	854	0
+AK	AK	Math	7	4	Advanced	855	1400	0
+AK	AK	Math	8	1	Far Below 	0	695	0
+AK	AK	Math	8	2	Below	696	792	0
+AK	AK	Math	8	3	Proficient	793	890	0
+AK	AK	Math	8	4	Advanced	891	1400	0
+AK	AK	Math	9	1	Far Below 	0	705	0
+AK	AK	Math	9	2	Below	706	801	0
+AK	AK	Math	9	3	Proficient	802	894	0
+AK	AK	Math	9	4	Advanced	895	1400	0
+AK	AK	Math	10	1	Far Below 	0	707	0
+AK	AK	Math	10	2	Below	708	805	0
+AK	AK	Math	10	3	Proficient	806	899	0
+AK	AK	Math	10	4	Advanced	900	1400	0
+AK	AK	Math	11	1	Far Below 	0	728	0
+AK	AK	Math	11	2	Below	729	820	0
+AK	AK	Math	11	3	Proficient	821	917	0
+AK	AK	Math	11	4	Advanced	918	1400	0
+AK	AK	Math	12	1	Far Below 	0	731	0
+AK	AK	Math	12	2	Below	732	836	0
+AK	AK	Math	12	3	Proficient	837	924	0
+AK	AK	Math	12	4	Advanced	925	1400	0
+AK	AK	Reading	1	1	Far Below 	0	70	0
+AK	AK	Reading	1	2	Below	71	87	0
+AK	AK	Reading	1	3	Proficient	88	179	0
+AK	AK	Reading	1	4	Advanced	180	1400	0
+AK	AK	Reading	2	1	Far Below 	0	107	0
+AK	AK	Reading	2	2	Below	108	223	0
+AK	AK	Reading	2	3	Proficient	224	355	0
+AK	AK	Reading	2	4	Advanced	356	1400	0
+AK	AK	Reading	3	1	Far Below 	0	202	1
+AK	AK	Reading	3	2	Below	203	321	1
+AK	AK	Reading	3	3	Proficient	322	466	1
+AK	AK	Reading	3	4	Advanced	467	1400	1
+AK	AK	Reading	4	1	Far Below 	0	282	1
+AK	AK	Reading	4	2	Below	283	416	1
+AK	AK	Reading	4	3	Proficient	417	589	1
+AK	AK	Reading	4	4	Advanced	590	1400	1
+AK	AK	Reading	5	1	Far Below 	0	327	1
+AK	AK	Reading	5	2	Below	328	492	1
+AK	AK	Reading	5	3	Proficient	493	757	1
+AK	AK	Reading	5	4	Advanced	758	1400	1
+AK	AK	Reading	6	1	Far Below 	0	401	1
+AK	AK	Reading	6	2	Below	402	580	1
+AK	AK	Reading	6	3	Proficient	581	850	1
+AK	AK	Reading	6	4	Advanced	851	1400	1
+AK	AK	Reading	7	1	Far Below 	0	402	1
+AK	AK	Reading	7	2	Below	403	581	1
+AK	AK	Reading	7	3	Proficient	582	902	1
+AK	AK	Reading	7	4	Advanced	903	1400	1
+AK	AK	Reading	8	1	Far Below 	0	474	1
+AK	AK	Reading	8	2	Below	475	677	1
+AK	AK	Reading	8	3	Proficient	678	1058	1
+AK	AK	Reading	8	4	Advanced	1059	1400	1
+AK	AK	Reading	9	1	Far Below 	0	544	0
+AK	AK	Reading	9	2	Below	545	786	0
+AK	AK	Reading	9	3	Proficient	787	1164	0
+AK	AK	Reading	9	4	Advanced	1165	1400	0
+AK	AK	Reading	10	1	Far Below 	0	553	0
+AK	AK	Reading	10	2	Below	554	816	0
+AK	AK	Reading	10	3	Proficient	817	1209	0
+AK	AK	Reading	10	4	Advanced	1210	1400	0
+AK	AK	Reading	11	1	Far Below 	0	568	0
+AK	AK	Reading	11	2	Below	569	856	0
+AK	AK	Reading	11	3	Proficient	857	1234	0
+AK	AK	Reading	11	4	Advanced	1235	1400	0
+AK	AK	Reading	12	1	Far Below 	0	587	0
+AK	AK	Reading	12	2	Below	588	896	0
+AK	AK	Reading	12	3	Proficient	897	1291	0
+AK	AK	Reading	12	4	Advanced	1292	1400	0
+AL	AL	Math	1	1	Need Support	0	342	0
+AL	AL	Math	1	2	Close	343	424	0
+AL	AL	Math	1	3	Ready	425	497	0
+AL	AL	Math	1	4	Exceeding	498	1400	0
+AL	AL	Math	2	1	Need Support	0	459	0
+AL	AL	Math	2	2	Close	460	531	0
+AL	AL	Math	2	3	Ready	532	598	0
+AL	AL	Math	2	4	Exceeding	599	1400	0
+AL	AL	Math	3	1	Need Support	0	546	1
+AL	AL	Math	3	2	Close	547	622	1
+AL	AL	Math	3	3	Ready	623	680	1
+AL	AL	Math	3	4	Exceeding	681	1400	1
+AL	AL	Math	4	1	Need Support	0	564	1
+AL	AL	Math	4	2	Close	565	691	1
+AL	AL	Math	4	3	Ready	692	761	1
+AL	AL	Math	4	4	Exceeding	762	1400	1
+AL	AL	Math	5	1	Need Support	0	601	1
+AL	AL	Math	5	2	Close	602	755	1
+AL	AL	Math	5	3	Ready	756	814	1
+AL	AL	Math	5	4	Exceeding	815	1400	1
+AL	AL	Math	6	1	Need Support	0	662	1
+AL	AL	Math	6	2	Close	663	777	1
+AL	AL	Math	6	3	Ready	778	841	1
+AL	AL	Math	6	4	Exceeding	842	1400	1
+AL	AL	Math	7	1	Need Support	0	738	1
+AL	AL	Math	7	2	Close	739	821	1
+AL	AL	Math	7	3	Ready	822	876	1
+AL	AL	Math	7	4	Exceeding	877	1400	1
+AL	AL	Math	8	1	Need Support	0	787	1
+AL	AL	Math	8	2	Close	788	849	1
+AL	AL	Math	8	3	Ready	850	889	1
+AL	AL	Math	8	4	Exceeding	890	1400	1
+AL	AL	Math	9	1	Need Support	0	798	0
+AL	AL	Math	9	2	Close	799	854	0
+AL	AL	Math	9	3	Ready	855	894	0
+AL	AL	Math	9	4	Exceeding	895	1400	0
+AL	AL	Math	10	1	Need Support	0	802	0
+AL	AL	Math	10	2	Close	803	859	0
+AL	AL	Math	10	3	Ready	860	899	0
+AL	AL	Math	10	4	Exceeding	900	1400	0
+AL	AL	Math	11	1	Need Support	0	818	0
+AL	AL	Math	11	2	Close	819	874	0
+AL	AL	Math	11	3	Ready	875	913	0
+AL	AL	Math	11	4	Exceeding	914	1400	0
+AL	AL	Math	12	1	Need Support	0	835	0
+AL	AL	Math	12	2	Close	836	891	0
+AL	AL	Math	12	3	Ready	892	921	0
+AL	AL	Math	12	4	Exceeding	922	1400	0
+AL	AL	Reading	1	1	Need Support	0	153	0
+AL	AL	Reading	1	2	Close	154	218	0
+AL	AL	Reading	1	3	Ready	219	293	0
+AL	AL	Reading	1	4	Exceeding	294	1400	0
+AL	AL	Reading	2	1	Need Support	0	315	0
+AL	AL	Reading	2	2	Close	316	385	0
+AL	AL	Reading	2	3	Ready	386	474	0
+AL	AL	Reading	2	4	Exceeding	475	1400	0
+AL	AL	Reading	3	1	Need Support	0	417	1
+AL	AL	Reading	3	2	Close	418	501	1
+AL	AL	Reading	3	3	Ready	502	607	1
+AL	AL	Reading	3	4	Exceeding	608	1400	1
+AL	AL	Reading	4	1	Need Support	0	439	1
+AL	AL	Reading	4	2	Close	440	573	1
+AL	AL	Reading	4	3	Ready	574	724	1
+AL	AL	Reading	4	4	Exceeding	725	1400	1
+AL	AL	Reading	5	1	Need Support	0	523	1
+AL	AL	Reading	5	2	Close	524	698	1
+AL	AL	Reading	5	3	Ready	699	859	1
+AL	AL	Reading	5	4	Exceeding	860	1400	1
+AL	AL	Reading	6	1	Need Support	0	524	1
+AL	AL	Reading	6	2	Close	525	721	1
+AL	AL	Reading	6	3	Ready	722	932	1
+AL	AL	Reading	6	4	Exceeding	933	1400	1
+AL	AL	Reading	7	1	Need Support	0	525	1
+AL	AL	Reading	7	2	Close	526	852	1
+AL	AL	Reading	7	3	Ready	853	1211	1
+AL	AL	Reading	7	4	Exceeding	1212	1400	1
+AL	AL	Reading	8	1	Need Support	0	526	1
+AL	AL	Reading	8	2	Close	527	853	1
+AL	AL	Reading	8	3	Ready	854	1212	1
+AL	AL	Reading	8	4	Exceeding	1213	1400	1
+AL	AL	Reading	9	1	Need Support	0	613	0
+AL	AL	Reading	9	2	Close	614	923	0
+AL	AL	Reading	9	3	Ready	924	1253	0
+AL	AL	Reading	9	4	Exceeding	1254	1400	0
+AL	AL	Reading	10	1	Need Support	0	620	0
+AL	AL	Reading	10	2	Close	621	963	0
+AL	AL	Reading	10	3	Ready	964	1294	0
+AL	AL	Reading	10	4	Exceeding	1295	1400	0
+AL	AL	Reading	11	1	Need Support	0	649	0
+AL	AL	Reading	11	2	Close	650	1001	0
+AL	AL	Reading	11	3	Ready	1002	1309	0
+AL	AL	Reading	11	4	Exceeding	1310	1400	0
+AL	AL	Reading	12	1	Need Support	0	678	0
+AL	AL	Reading	12	2	Close	679	1081	0
+AL	AL	Reading	12	3	Ready	1082	1324	0
+AL	AL	Reading	12	4	Exceeding	1325	1400	0
+AR	AR	Math	1	1	Need Support	0	342	0
+AR	AR	Math	1	2	Close	343	424	0
+AR	AR	Math	1	3	Ready	425	497	0
+AR	AR	Math	1	4	Exceeding	498	1400	0
+AR	AR	Math	2	1	Need Support	0	459	0
+AR	AR	Math	2	2	Close	460	531	0
+AR	AR	Math	2	3	Ready	532	598	0
+AR	AR	Math	2	4	Exceeding	599	1400	0
+AR	AR	Math	3	1	Need Support	0	546	1
+AR	AR	Math	3	2	Close	547	622	1
+AR	AR	Math	3	3	Ready	623	680	1
+AR	AR	Math	3	4	Exceeding	681	1400	1
+AR	AR	Math	4	1	Need Support	0	564	1
+AR	AR	Math	4	2	Close	565	691	1
+AR	AR	Math	4	3	Ready	692	761	1
+AR	AR	Math	4	4	Exceeding	762	1400	1
+AR	AR	Math	5	1	Need Support	0	601	1
+AR	AR	Math	5	2	Close	602	755	1
+AR	AR	Math	5	3	Ready	756	814	1
+AR	AR	Math	5	4	Exceeding	815	1400	1
+AR	AR	Math	6	1	Need Support	0	662	1
+AR	AR	Math	6	2	Close	663	777	1
+AR	AR	Math	6	3	Ready	778	841	1
+AR	AR	Math	6	4	Exceeding	842	1400	1
+AR	AR	Math	7	1	Need Support	0	738	1
+AR	AR	Math	7	2	Close	739	821	1
+AR	AR	Math	7	3	Ready	822	876	1
+AR	AR	Math	7	4	Exceeding	877	1400	1
+AR	AR	Math	8	1	Need Support	0	787	1
+AR	AR	Math	8	2	Close	788	849	1
+AR	AR	Math	8	3	Ready	850	889	1
+AR	AR	Math	8	4	Exceeding	890	1400	1
+AR	AR	Math	9	1	Need Support	0	798	0
+AR	AR	Math	9	2	Close	799	854	0
+AR	AR	Math	9	3	Ready	855	894	0
+AR	AR	Math	9	4	Exceeding	895	1400	0
+AR	AR	Math	10	1	Need Support	0	802	0
+AR	AR	Math	10	2	Close	803	859	0
+AR	AR	Math	10	3	Ready	860	899	0
+AR	AR	Math	10	4	Exceeding	900	1400	0
+AR	AR	Math	11	1	Need Support	0	818	0
+AR	AR	Math	11	2	Close	819	874	0
+AR	AR	Math	11	3	Ready	875	913	0
+AR	AR	Math	11	4	Exceeding	914	1400	0
+AR	AR	Math	12	1	Need Support	0	835	0
+AR	AR	Math	12	2	Close	836	891	0
+AR	AR	Math	12	3	Ready	892	921	0
+AR	AR	Math	12	4	Exceeding	922	1400	0
+AR	AR	Reading	1	1	Need Support	0	153	0
+AR	AR	Reading	1	2	Close	154	218	0
+AR	AR	Reading	1	3	Ready	219	293	0
+AR	AR	Reading	1	4	Exceeding	294	1400	0
+AR	AR	Reading	2	1	Need Support	0	315	0
+AR	AR	Reading	2	2	Close	316	385	0
+AR	AR	Reading	2	3	Ready	386	474	0
+AR	AR	Reading	2	4	Exceeding	475	1400	0
+AR	AR	Reading	3	1	Need Support	0	417	1
+AR	AR	Reading	3	2	Close	418	501	1
+AR	AR	Reading	3	3	Ready	502	607	1
+AR	AR	Reading	3	4	Exceeding	608	1400	1
+AR	AR	Reading	4	1	Need Support	0	439	1
+AR	AR	Reading	4	2	Close	440	573	1
+AR	AR	Reading	4	3	Ready	574	724	1
+AR	AR	Reading	4	4	Exceeding	725	1400	1
+AR	AR	Reading	5	1	Need Support	0	523	1
+AR	AR	Reading	5	2	Close	524	698	1
+AR	AR	Reading	5	3	Ready	699	859	1
+AR	AR	Reading	5	4	Exceeding	860	1400	1
+AR	AR	Reading	6	1	Need Support	0	524	1
+AR	AR	Reading	6	2	Close	525	721	1
+AR	AR	Reading	6	3	Ready	722	932	1
+AR	AR	Reading	6	4	Exceeding	933	1400	1
+AR	AR	Reading	7	1	Need Support	0	525	1
+AR	AR	Reading	7	2	Close	526	852	1
+AR	AR	Reading	7	3	Ready	853	1211	1
+AR	AR	Reading	7	4	Exceeding	1212	1400	1
+AR	AR	Reading	8	1	Need Support	0	526	1
+AR	AR	Reading	8	2	Close	527	853	1
+AR	AR	Reading	8	3	Ready	854	1212	1
+AR	AR	Reading	8	4	Exceeding	1213	1400	1
+AR	AR	Reading	9	1	Need Support	0	613	0
+AR	AR	Reading	9	2	Close	614	923	0
+AR	AR	Reading	9	3	Ready	924	1253	0
+AR	AR	Reading	9	4	Exceeding	1254	1400	0
+AR	AR	Reading	10	1	Need Support	0	620	0
+AR	AR	Reading	10	2	Close	621	963	0
+AR	AR	Reading	10	3	Ready	964	1294	0
+AR	AR	Reading	10	4	Exceeding	1295	1400	0
+AR	AR	Reading	11	1	Need Support	0	649	0
+AR	AR	Reading	11	2	Close	650	1001	0
+AR	AR	Reading	11	3	Ready	1002	1309	0
+AR	AR	Reading	11	4	Exceeding	1310	1400	0
+AR	AR	Reading	12	1	Need Support	0	678	0
+AR	AR	Reading	12	2	Close	679	1081	0
+AR	AR	Reading	12	3	Ready	1082	1324	0
+AR	AR	Reading	12	4	Exceeding	1325	1400	0
+AZ	AZ	Math	1	1	Far Below Standard	0	287	0
+AZ	AZ	Math	1	2	Approaches Standard	288	360	0
+AZ	AZ	Math	1	3	Meets Standard	361	467	0
+AZ	AZ	Math	1	4	Exceeds Standard	468	1400	0
+AZ	AZ	Math	2	1	Far Below Standard	0	418	0
+AZ	AZ	Math	2	2	Approaches Standard	419	477	0
+AZ	AZ	Math	2	3	Meets Standard	478	570	0
+AZ	AZ	Math	2	4	Exceeds Standard	571	1400	0
+AZ	AZ	Math	3	1	Far Below Standard	0	478	1
+AZ	AZ	Math	3	2	Approaches Standard	479	568	1
+AZ	AZ	Math	3	3	Meets Standard	569	665	1
+AZ	AZ	Math	3	4	Exceeds Standard	666	1400	1
+AZ	AZ	Math	4	1	Far Below Standard	0	559	1
+AZ	AZ	Math	4	2	Approaches Standard	560	635	1
+AZ	AZ	Math	4	3	Meets Standard	636	740	1
+AZ	AZ	Math	4	4	Exceeds Standard	741	1400	1
+AZ	AZ	Math	5	1	Far Below Standard	0	612	1
+AZ	AZ	Math	5	2	Approaches Standard	613	697	1
+AZ	AZ	Math	5	3	Meets Standard	698	807	1
+AZ	AZ	Math	5	4	Exceeds Standard	808	1400	1
+AZ	AZ	Math	6	1	Far Below Standard	0	667	1
+AZ	AZ	Math	6	2	Approaches Standard	668	750	1
+AZ	AZ	Math	6	3	Meets Standard	751	828	1
+AZ	AZ	Math	6	4	Exceeds Standard	829	1400	1
+AZ	AZ	Math	7	1	Far Below Standard	0	673	1
+AZ	AZ	Math	7	2	Approaches Standard	674	751	1
+AZ	AZ	Math	7	3	Meets Standard	752	838	1
+AZ	AZ	Math	7	4	Exceeds Standard	839	1400	1
+AZ	AZ	Math	8	1	Far Below Standard	0	736	1
+AZ	AZ	Math	8	2	Approaches Standard	737	779	1
+AZ	AZ	Math	8	3	Meets Standard	780	894	1
+AZ	AZ	Math	8	4	Exceeds Standard	895	1400	1
+AZ	AZ	Math	9	1	Far Below Standard	0	747	0
+AZ	AZ	Math	9	2	Approaches Standard	748	789	0
+AZ	AZ	Math	9	3	Meets Standard	790	895	0
+AZ	AZ	Math	9	4	Exceeds Standard	896	1400	0
+AZ	AZ	Math	10	1	Far Below Standard	0	750	0
+AZ	AZ	Math	10	2	Approaches Standard	751	792	0
+AZ	AZ	Math	10	3	Meets Standard	793	900	0
+AZ	AZ	Math	10	4	Exceeds Standard	901	1400	0
+AZ	AZ	Math	11	1	Far Below Standard	0	765	0
+AZ	AZ	Math	11	2	Approaches Standard	766	809	0
+AZ	AZ	Math	11	3	Meets Standard	810	917	0
+AZ	AZ	Math	11	4	Exceeds Standard	918	1400	0
+AZ	AZ	Math	12	1	Far Below Standard	0	777	0
+AZ	AZ	Math	12	2	Approaches Standard	778	824	0
+AZ	AZ	Math	12	3	Meets Standard	825	924	0
+AZ	AZ	Math	12	4	Exceeds Standard	925	1400	0
+AZ	AZ	Reading	1	1	Far Below Standard	0	66	0
+AZ	AZ	Reading	1	2	Approaches Standard	67	88	0
+AZ	AZ	Reading	1	3	Meets Standard	89	262	0
+AZ	AZ	Reading	1	4	Exceeds Standard	263	1400	0
+AZ	AZ	Reading	2	1	Far Below Standard	0	94	0
+AZ	AZ	Reading	2	2	Approaches Standard	95	221	0
+AZ	AZ	Reading	2	3	Meets Standard	222	432	0
+AZ	AZ	Reading	2	4	Exceeds Standard	433	1400	0
+AZ	AZ	Reading	3	1	Far Below Standard	0	175	1
+AZ	AZ	Reading	3	2	Approaches Standard	176	316	1
+AZ	AZ	Reading	3	3	Meets Standard	317	550	1
+AZ	AZ	Reading	3	4	Exceeds Standard	551	1400	1
+AZ	AZ	Reading	4	1	Far Below Standard	0	230	1
+AZ	AZ	Reading	4	2	Approaches Standard	231	387	1
+AZ	AZ	Reading	4	3	Meets Standard	388	681	1
+AZ	AZ	Reading	4	4	Exceeds Standard	682	1400	1
+AZ	AZ	Reading	5	1	Far Below Standard	0	314	1
+AZ	AZ	Reading	5	2	Approaches Standard	315	467	1
+AZ	AZ	Reading	5	3	Meets Standard	468	872	1
+AZ	AZ	Reading	5	4	Exceeds Standard	873	1400	1
+AZ	AZ	Reading	6	1	Far Below Standard	0	335	1
+AZ	AZ	Reading	6	2	Approaches Standard	336	509	1
+AZ	AZ	Reading	6	3	Meets Standard	510	1034	1
+AZ	AZ	Reading	6	4	Exceeds Standard	1035	1400	1
+AZ	AZ	Reading	7	1	Far Below Standard	0	382	1
+AZ	AZ	Reading	7	2	Approaches Standard	383	550	1
+AZ	AZ	Reading	7	3	Meets Standard	551	1159	1
+AZ	AZ	Reading	7	4	Exceeds Standard	1160	1400	1
+AZ	AZ	Reading	8	1	Far Below Standard	0	449	1
+AZ	AZ	Reading	8	2	Approaches Standard	450	631	1
+AZ	AZ	Reading	8	3	Meets Standard	632	1270	1
+AZ	AZ	Reading	8	4	Exceeds Standard	1271	1400	1
+AZ	AZ	Reading	9	1	Far Below Standard	0	529	0
+AZ	AZ	Reading	9	2	Approaches Standard	530	733	0
+AZ	AZ	Reading	9	3	Meets Standard	734	1311	0
+AZ	AZ	Reading	9	4	Exceeds Standard	1312	1400	0
+AZ	AZ	Reading	10	1	Far Below Standard	0	547	0
+AZ	AZ	Reading	10	2	Approaches Standard	548	778	0
+AZ	AZ	Reading	10	3	Meets Standard	779	1322	0
+AZ	AZ	Reading	10	4	Exceeds Standard	1323	1400	0
+AZ	AZ	Reading	11	1	Far Below Standard	0	571	0
+AZ	AZ	Reading	11	2	Approaches Standard	572	821	0
+AZ	AZ	Reading	11	3	Meets Standard	822	1327	0
+AZ	AZ	Reading	11	4	Exceeds Standard	1328	1400	0
+AZ	AZ	Reading	12	1	Far Below Standard	0	584	0
+AZ	AZ	Reading	12	2	Approaches Standard	585	855	0
+AZ	AZ	Reading	12	3	Meets Standard	856	1339	0
+AZ	AZ	Reading	12	4	Exceeds Standard	1340	1400	0
+CA	CA	Math	1	1	Level 1	0	336	0
+CA	CA	Math	1	2	Level 2	337	417	0
+CA	CA	Math	1	3	Level 3	418	498	0
+CA	CA	Math	1	4	Level 4	499	1400	0
+CA	CA	Math	2	1	Level 1	0	457	0
+CA	CA	Math	2	2	Level 2	458	528	0
+CA	CA	Math	2	3	Level 3	529	601	0
+CA	CA	Math	2	4	Level 4	602	1400	0
+CA	CA	Math	3	1	Level 1	0	546	1
+CA	CA	Math	3	2	Level 2	547	620	1
+CA	CA	Math	3	3	Level 3	621	686	1
+CA	CA	Math	3	4	Level 4	687	1400	1
+CA	CA	Math	4	1	Level 1	0	602	1
+CA	CA	Math	4	2	Level 2	603	695	1
+CA	CA	Math	4	3	Level 3	696	771	1
+CA	CA	Math	4	4	Level 4	772	1400	1
+CA	CA	Math	5	1	Level 1	0	692	1
+CA	CA	Math	5	2	Level 2	693	781	1
+CA	CA	Math	5	3	Level 3	782	826	1
+CA	CA	Math	5	4	Level 4	827	1400	1
+CA	CA	Math	6	1	Level 1	0	716	1
+CA	CA	Math	6	2	Level 2	717	807	1
+CA	CA	Math	6	3	Level 3	808	859	1
+CA	CA	Math	6	4	Level 4	860	1400	1
+CA	CA	Math	7	1	Level 1	0	745	1
+CA	CA	Math	7	2	Level 2	746	830	1
+CA	CA	Math	7	3	Level 3	831	885	1
+CA	CA	Math	7	4	Level 4	886	1400	1
+CA	CA	Math	8	1	Level 1	0	783	1
+CA	CA	Math	8	2	Level 2	784	851	1
+CA	CA	Math	8	3	Level 3	852	891	1
+CA	CA	Math	8	4	Level 4	892	1400	1
+CA	CA	Math	9	1	Level 1	0	790	0
+CA	CA	Math	9	2	Level 2	791	852	0
+CA	CA	Math	9	3	Level 3	853	895	0
+CA	CA	Math	9	4	Level 4	896	1400	0
+CA	CA	Math	10	1	Level 1	0	796	0
+CA	CA	Math	10	2	Level 2	797	858	0
+CA	CA	Math	10	3	Level 3	859	900	0
+CA	CA	Math	10	4	Level 4	901	1400	0
+CA	CA	Math	11	1	Level 1	0	813	0
+CA	CA	Math	11	2	Level 2	814	873	0
+CA	CA	Math	11	3	Level 3	874	918	0
+CA	CA	Math	11	4	Level 4	919	1400	0
+CA	CA	Math	12	1	Level 1	0	826	0
+CA	CA	Math	12	2	Level 2	827	890	0
+CA	CA	Math	12	3	Level 3	891	925	0
+CA	CA	Math	12	4	Level 4	926	1400	0
+CA	CA	Reading	1	1	Level 1	0	90	0
+CA	CA	Reading	1	2	Level 2	91	165	0
+CA	CA	Reading	1	3	Level 3	166	248	0
+CA	CA	Reading	1	4	Level 4	249	1400	0
+CA	CA	Reading	2	1	Level 1	0	232	0
+CA	CA	Reading	2	2	Level 2	233	337	0
+CA	CA	Reading	2	3	Level 3	338	435	0
+CA	CA	Reading	2	4	Level 4	436	1400	0
+CA	CA	Reading	3	1	Level 1	0	332	1
+CA	CA	Reading	3	2	Level 2	333	454	1
+CA	CA	Reading	3	3	Level 3	455	561	1
+CA	CA	Reading	3	4	Level 4	562	1400	1
+CA	CA	Reading	4	1	Level 1	0	434	1
+CA	CA	Reading	4	2	Level 2	435	530	1
+CA	CA	Reading	4	3	Level 3	531	660	1
+CA	CA	Reading	4	4	Level 4	661	1400	1
+CA	CA	Reading	5	1	Level 1	0	483	1
+CA	CA	Reading	5	2	Level 2	484	599	1
+CA	CA	Reading	5	3	Level 3	600	852	1
+CA	CA	Reading	5	4	Level 4	853	1400	1
+CA	CA	Reading	6	1	Level 1	0	499	1
+CA	CA	Reading	6	2	Level 2	500	691	1
+CA	CA	Reading	6	3	Level 3	692	1015	1
+CA	CA	Reading	6	4	Level 4	1016	1400	1
+CA	CA	Reading	7	1	Level 1	0	576	1
+CA	CA	Reading	7	2	Level 2	577	772	1
+CA	CA	Reading	7	3	Level 3	773	1168	1
+CA	CA	Reading	7	4	Level 4	1169	1400	1
+CA	CA	Reading	8	1	Level 1	0	589	1
+CA	CA	Reading	8	2	Level 2	590	857	1
+CA	CA	Reading	8	3	Level 3	858	1249	1
+CA	CA	Reading	8	4	Level 4	1250	1400	1
+CA	CA	Reading	9	1	Level 1	0	661	0
+CA	CA	Reading	9	2	Level 2	662	918	0
+CA	CA	Reading	9	3	Level 3	919	1291	0
+CA	CA	Reading	9	4	Level 4	1292	1400	0
+CA	CA	Reading	10	1	Level 1	0	674	0
+CA	CA	Reading	10	2	Level 2	675	957	0
+CA	CA	Reading	10	3	Level 3	958	1314	0
+CA	CA	Reading	10	4	Level 4	1315	1400	0
+CA	CA	Reading	11	1	Level 1	0	715	0
+CA	CA	Reading	11	2	Level 2	716	992	0
+CA	CA	Reading	11	3	Level 3	993	1321	0
+CA	CA	Reading	11	4	Level 4	1322	1400	0
+CA	CA	Reading	12	1	Level 1	0	761	0
+CA	CA	Reading	12	2	Level 2	762	1079	0
+CA	CA	Reading	12	3	Level 3	1080	1332	0
+CA	CA	Reading	12	4	Level 4	1333	1400	0
+CO	CO	Math	1	1	Level 1	0	297	0
+CO	CO	Math	1	2	Level 2	298	381	0
+CO	CO	Math	1	3	Level 3	382	448	0
+CO	CO	Math	1	4	Level 4	449	569	0
+CO	CO	Math	1	5	Level 5	570	1400	0
+CO	CO	Math	2	1	Level 1	0	422	0
+CO	CO	Math	2	2	Level 2	423	497	0
+CO	CO	Math	2	3	Level 3	498	557	0
+CO	CO	Math	2	4	Level 4	558	659	0
+CO	CO	Math	2	5	Level 5	660	1400	0
+CO	CO	Math	3	1	Level 1	0	503	1
+CO	CO	Math	3	2	Level 2	504	588	1
+CO	CO	Math	3	3	Level 3	589	648	1
+CO	CO	Math	3	4	Level 4	649	742	1
+CO	CO	Math	3	5	Level 5	743	1400	1
+CO	CO	Math	4	1	Level 1	0	561	1
+CO	CO	Math	4	2	Level 2	562	661	1
+CO	CO	Math	4	3	Level 3	662	735	1
+CO	CO	Math	4	4	Level 4	736	850	1
+CO	CO	Math	4	5	Level 5	851	1400	1
+CO	CO	Math	5	1	Level 1	0	613	1
+CO	CO	Math	5	2	Level 2	614	720	1
+CO	CO	Math	5	3	Level 3	721	804	1
+CO	CO	Math	5	4	Level 4	805	901	1
+CO	CO	Math	5	5	Level 5	902	1400	1
+CO	CO	Math	6	1	Level 1	0	649	1
+CO	CO	Math	6	2	Level 2	650	756	1
+CO	CO	Math	6	3	Level 3	757	826	1
+CO	CO	Math	6	4	Level 4	827	925	1
+CO	CO	Math	6	5	Level 5	926	1400	1
+CO	CO	Math	7	1	Level 1	0	686	1
+CO	CO	Math	7	2	Level 2	687	777	1
+CO	CO	Math	7	3	Level 3	778	860	1
+CO	CO	Math	7	4	Level 4	861	960	1
+CO	CO	Math	7	5	Level 5	961	1400	1
+CO	CO	Math	8	1	Level 1	0	738	1
+CO	CO	Math	8	2	Level 2	739	815	1
+CO	CO	Math	8	3	Level 3	816	875	1
+CO	CO	Math	8	4	Level 4	876	1007	1
+CO	CO	Math	8	5	Level 5	1008	1400	1
+CO	CO	Math	9	1	Level 1	0	747	0
+CO	CO	Math	9	2	Level 2	748	819	0
+CO	CO	Math	9	3	Level 3	820	877	0
+CO	CO	Math	9	4	Level 4	878	1008	0
+CO	CO	Math	9	5	Level 5	1009	1400	0
+CO	CO	Math	10	1	Level 1	0	748	0
+CO	CO	Math	10	2	Level 2	749	825	0
+CO	CO	Math	10	3	Level 3	826	883	0
+CO	CO	Math	10	4	Level 4	884	1024	0
+CO	CO	Math	10	5	Level 5	1025	1400	0
+CO	CO	Math	11	1	Level 1	0	769	0
+CO	CO	Math	11	2	Level 2	770	839	0
+CO	CO	Math	11	3	Level 3	840	900	0
+CO	CO	Math	11	4	Level 4	901	1036	0
+CO	CO	Math	11	5	Level 5	1037	1400	0
+CO	CO	Math	12	1	Level 1	0	783	0
+CO	CO	Math	12	2	Level 2	784	855	0
+CO	CO	Math	12	3	Level 3	856	910	0
+CO	CO	Math	12	4	Level 4	911	1076	0
+CO	CO	Math	12	5	Level 5	1077	1400	0
+CO	CO	Reading	1	1	Level 1	0	85	0
+CO	CO	Reading	1	2	Level 2	86	134	0
+CO	CO	Reading	1	3	Level 3	135	214	0
+CO	CO	Reading	1	4	Level 4	215	460	0
+CO	CO	Reading	1	5	Level 5	461	1400	0
+CO	CO	Reading	2	1	Level 1	0	203	0
+CO	CO	Reading	2	2	Level 2	204	301	0
+CO	CO	Reading	2	3	Level 3	302	391	0
+CO	CO	Reading	2	4	Level 4	392	658	0
+CO	CO	Reading	2	5	Level 5	659	1400	0
+CO	CO	Reading	3	1	Level 1	0	303	1
+CO	CO	Reading	3	2	Level 2	304	412	1
+CO	CO	Reading	3	3	Level 3	413	513	1
+CO	CO	Reading	3	4	Level 4	514	923	1
+CO	CO	Reading	3	5	Level 5	924	1400	1
+CO	CO	Reading	4	1	Level 1	0	334	1
+CO	CO	Reading	4	2	Level 2	335	441	1
+CO	CO	Reading	4	3	Level 3	442	570	1
+CO	CO	Reading	4	4	Level 4	571	1019	1
+CO	CO	Reading	4	5	Level 5	1020	1400	1
+CO	CO	Reading	5	1	Level 1	0	371	1
+CO	CO	Reading	5	2	Level 2	372	507	1
+CO	CO	Reading	5	3	Level 3	508	662	1
+CO	CO	Reading	5	4	Level 4	663	1178	1
+CO	CO	Reading	5	5	Level 5	1179	1400	1
+CO	CO	Reading	6	1	Level 1	0	416	1
+CO	CO	Reading	6	2	Level 2	417	560	1
+CO	CO	Reading	6	3	Level 3	561	776	1
+CO	CO	Reading	6	4	Level 4	777	1251	1
+CO	CO	Reading	6	5	Level 5	1252	1400	1
+CO	CO	Reading	7	1	Level 1	0	466	1
+CO	CO	Reading	7	2	Level 2	467	614	1
+CO	CO	Reading	7	3	Level 3	615	829	1
+CO	CO	Reading	7	4	Level 4	830	1292	1
+CO	CO	Reading	7	5	Level 5	1293	1400	1
+CO	CO	Reading	8	1	Level 1	0	526	1
+CO	CO	Reading	8	2	Level 2	527	678	1
+CO	CO	Reading	8	3	Level 3	679	908	1
+CO	CO	Reading	8	4	Level 4	909	1320	1
+CO	CO	Reading	8	5	Level 5	1321	1400	1
+CO	CO	Reading	9	1	Level 1	0	596	1
+CO	CO	Reading	9	2	Level 2	597	825	1
+CO	CO	Reading	9	3	Level 3	826	1035	1
+CO	CO	Reading	9	4	Level 4	1036	1324	1
+CO	CO	Reading	9	5	Level 5	1325	1400	1
+CO	CO	Reading	10	1	Level 1	0	684	1
+CO	CO	Reading	10	2	Level 2	685	900	1
+CO	CO	Reading	10	3	Level 3	901	1075	1
+CO	CO	Reading	10	4	Level 4	1076	1325	1
+CO	CO	Reading	10	5	Level 5	1326	1400	1
+CO	CO	Reading	11	1	Level 1	0	715	0
+CO	CO	Reading	11	2	Level 2	716	921	0
+CO	CO	Reading	11	3	Level 3	922	1130	0
+CO	CO	Reading	11	4	Level 4	1131	1328	0
+CO	CO	Reading	11	5	Level 5	1329	1400	0
+CO	CO	Reading	12	1	Level 1	0	761	0
+CO	CO	Reading	12	2	Level 2	762	968	0
+CO	CO	Reading	12	3	Level 3	969	1190	0
+CO	CO	Reading	12	4	Level 4	1191	1340	0
+CO	CO	Reading	12	5	Level 5	1341	1400	0
+CT	CT	Math	1	1	Level 1	0	336	0
+CT	CT	Math	1	2	Level 2	337	417	0
+CT	CT	Math	1	3	Level 3	418	498	0
+CT	CT	Math	1	4	Level 4	499	1400	0
+CT	CT	Math	2	1	Level 1	0	457	0
+CT	CT	Math	2	2	Level 2	458	528	0
+CT	CT	Math	2	3	Level 3	529	601	0
+CT	CT	Math	2	4	Level 4	602	1400	0
+CT	CT	Math	3	1	Level 1	0	546	1
+CT	CT	Math	3	2	Level 2	547	620	1
+CT	CT	Math	3	3	Level 3	621	686	1
+CT	CT	Math	3	4	Level 4	687	1400	1
+CT	CT	Math	4	1	Level 1	0	602	1
+CT	CT	Math	4	2	Level 2	603	695	1
+CT	CT	Math	4	3	Level 3	696	771	1
+CT	CT	Math	4	4	Level 4	772	1400	1
+CT	CT	Math	5	1	Level 1	0	692	1
+CT	CT	Math	5	2	Level 2	693	781	1
+CT	CT	Math	5	3	Level 3	782	826	1
+CT	CT	Math	5	4	Level 4	827	1400	1
+CT	CT	Math	6	1	Level 1	0	716	1
+CT	CT	Math	6	2	Level 2	717	807	1
+CT	CT	Math	6	3	Level 3	808	859	1
+CT	CT	Math	6	4	Level 4	860	1400	1
+CT	CT	Math	7	1	Level 1	0	745	1
+CT	CT	Math	7	2	Level 2	746	830	1
+CT	CT	Math	7	3	Level 3	831	885	1
+CT	CT	Math	7	4	Level 4	886	1400	1
+CT	CT	Math	8	1	Level 1	0	783	1
+CT	CT	Math	8	2	Level 2	784	851	1
+CT	CT	Math	8	3	Level 3	852	891	1
+CT	CT	Math	8	4	Level 4	892	1400	1
+CT	CT	Math	9	1	Level 1	0	790	0
+CT	CT	Math	9	2	Level 2	791	852	0
+CT	CT	Math	9	3	Level 3	853	895	0
+CT	CT	Math	9	4	Level 4	896	1400	0
+CT	CT	Math	10	1	Level 1	0	796	0
+CT	CT	Math	10	2	Level 2	797	858	0
+CT	CT	Math	10	3	Level 3	859	900	0
+CT	CT	Math	10	4	Level 4	901	1400	0
+CT	CT	Math	11	1	Level 1	0	813	0
+CT	CT	Math	11	2	Level 2	814	873	0
+CT	CT	Math	11	3	Level 3	874	918	0
+CT	CT	Math	11	4	Level 4	919	1400	0
+CT	CT	Math	12	1	Level 1	0	826	0
+CT	CT	Math	12	2	Level 2	827	890	0
+CT	CT	Math	12	3	Level 3	891	925	0
+CT	CT	Math	12	4	Level 4	926	1400	0
+CT	CT	Reading	1	1	Level 1	0	90	0
+CT	CT	Reading	1	2	Level 2	91	165	0
+CT	CT	Reading	1	3	Level 3	166	248	0
+CT	CT	Reading	1	4	Level 4	249	1400	0
+CT	CT	Reading	2	1	Level 1	0	232	0
+CT	CT	Reading	2	2	Level 2	233	337	0
+CT	CT	Reading	2	3	Level 3	338	435	0
+CT	CT	Reading	2	4	Level 4	436	1400	0
+CT	CT	Reading	3	1	Level 1	0	332	1
+CT	CT	Reading	3	2	Level 2	333	454	1
+CT	CT	Reading	3	3	Level 3	455	561	1
+CT	CT	Reading	3	4	Level 4	562	1400	1
+CT	CT	Reading	4	1	Level 1	0	434	1
+CT	CT	Reading	4	2	Level 2	435	530	1
+CT	CT	Reading	4	3	Level 3	531	660	1
+CT	CT	Reading	4	4	Level 4	661	1400	1
+CT	CT	Reading	5	1	Level 1	0	483	1
+CT	CT	Reading	5	2	Level 2	484	599	1
+CT	CT	Reading	5	3	Level 3	600	852	1
+CT	CT	Reading	5	4	Level 4	853	1400	1
+CT	CT	Reading	6	1	Level 1	0	499	1
+CT	CT	Reading	6	2	Level 2	500	691	1
+CT	CT	Reading	6	3	Level 3	692	1015	1
+CT	CT	Reading	6	4	Level 4	1016	1400	1
+CT	CT	Reading	7	1	Level 1	0	576	1
+CT	CT	Reading	7	2	Level 2	577	772	1
+CT	CT	Reading	7	3	Level 3	773	1168	1
+CT	CT	Reading	7	4	Level 4	1169	1400	1
+CT	CT	Reading	8	1	Level 1	0	589	1
+CT	CT	Reading	8	2	Level 2	590	857	1
+CT	CT	Reading	8	3	Level 3	858	1249	1
+CT	CT	Reading	8	4	Level 4	1250	1400	1
+CT	CT	Reading	9	1	Level 1	0	661	0
+CT	CT	Reading	9	2	Level 2	662	918	0
+CT	CT	Reading	9	3	Level 3	919	1291	0
+CT	CT	Reading	9	4	Level 4	1292	1400	0
+CT	CT	Reading	10	1	Level 1	0	674	0
+CT	CT	Reading	10	2	Level 2	675	957	0
+CT	CT	Reading	10	3	Level 3	958	1314	0
+CT	CT	Reading	10	4	Level 4	1315	1400	0
+CT	CT	Reading	11	1	Level 1	0	715	0
+CT	CT	Reading	11	2	Level 2	716	992	0
+CT	CT	Reading	11	3	Level 3	993	1321	0
+CT	CT	Reading	11	4	Level 4	1322	1400	0
+CT	CT	Reading	12	1	Level 1	0	761	0
+CT	CT	Reading	12	2	Level 2	762	1079	0
+CT	CT	Reading	12	3	Level 3	1080	1332	0
+CT	CT	Reading	12	4	Level 4	1333	1400	0
+DC	DC	Math	1	1	Level 1	0	297	0
+DC	DC	Math	1	2	Level 2	298	381	0
+DC	DC	Math	1	3	Level 3	382	448	0
+DC	DC	Math	1	4	Level 4	449	569	0
+DC	DC	Math	1	5	Level 5	570	1400	0
+DC	DC	Math	2	1	Level 1	0	422	0
+DC	DC	Math	2	2	Level 2	423	497	0
+DC	DC	Math	2	3	Level 3	498	557	0
+DC	DC	Math	2	4	Level 4	558	659	0
+DC	DC	Math	2	5	Level 5	660	1400	0
+DC	DC	Math	3	1	Level 1	0	503	1
+DC	DC	Math	3	2	Level 2	504	588	1
+DC	DC	Math	3	3	Level 3	589	648	1
+DC	DC	Math	3	4	Level 4	649	742	1
+DC	DC	Math	3	5	Level 5	743	1400	1
+DC	DC	Math	4	1	Level 1	0	561	1
+DC	DC	Math	4	2	Level 2	562	661	1
+DC	DC	Math	4	3	Level 3	662	735	1
+DC	DC	Math	4	4	Level 4	736	850	1
+DC	DC	Math	4	5	Level 5	851	1400	1
+DC	DC	Math	5	1	Level 1	0	613	1
+DC	DC	Math	5	2	Level 2	614	720	1
+DC	DC	Math	5	3	Level 3	721	804	1
+DC	DC	Math	5	4	Level 4	805	901	1
+DC	DC	Math	5	5	Level 5	902	1400	1
+DC	DC	Math	6	1	Level 1	0	649	1
+DC	DC	Math	6	2	Level 2	650	756	1
+DC	DC	Math	6	3	Level 3	757	826	1
+DC	DC	Math	6	4	Level 4	827	925	1
+DC	DC	Math	6	5	Level 5	926	1400	1
+DC	DC	Math	7	1	Level 1	0	686	1
+DC	DC	Math	7	2	Level 2	687	777	1
+DC	DC	Math	7	3	Level 3	778	860	1
+DC	DC	Math	7	4	Level 4	861	960	1
+DC	DC	Math	7	5	Level 5	961	1400	1
+DC	DC	Math	8	1	Level 1	0	738	1
+DC	DC	Math	8	2	Level 2	739	815	1
+DC	DC	Math	8	3	Level 3	816	875	1
+DC	DC	Math	8	4	Level 4	876	1007	1
+DC	DC	Math	8	5	Level 5	1008	1400	1
+DC	DC	Math	9	1	Level 1	0	747	0
+DC	DC	Math	9	2	Level 2	748	819	0
+DC	DC	Math	9	3	Level 3	820	877	0
+DC	DC	Math	9	4	Level 4	878	1008	0
+DC	DC	Math	9	5	Level 5	1009	1400	0
+DC	DC	Math	10	1	Level 1	0	748	0
+DC	DC	Math	10	2	Level 2	749	825	0
+DC	DC	Math	10	3	Level 3	826	883	0
+DC	DC	Math	10	4	Level 4	884	1024	0
+DC	DC	Math	10	5	Level 5	1025	1400	0
+DC	DC	Math	11	1	Level 1	0	769	0
+DC	DC	Math	11	2	Level 2	770	839	0
+DC	DC	Math	11	3	Level 3	840	900	0
+DC	DC	Math	11	4	Level 4	901	1036	0
+DC	DC	Math	11	5	Level 5	1037	1400	0
+DC	DC	Math	12	1	Level 1	0	783	0
+DC	DC	Math	12	2	Level 2	784	855	0
+DC	DC	Math	12	3	Level 3	856	910	0
+DC	DC	Math	12	4	Level 4	911	1076	0
+DC	DC	Math	12	5	Level 5	1077	1400	0
+DC	DC	Reading	1	1	Level 1	0	85	0
+DC	DC	Reading	1	2	Level 2	86	134	0
+DC	DC	Reading	1	3	Level 3	135	214	0
+DC	DC	Reading	1	4	Level 4	215	460	0
+DC	DC	Reading	1	5	Level 5	461	1400	0
+DC	DC	Reading	2	1	Level 1	0	203	0
+DC	DC	Reading	2	2	Level 2	204	301	0
+DC	DC	Reading	2	3	Level 3	302	391	0
+DC	DC	Reading	2	4	Level 4	392	658	0
+DC	DC	Reading	2	5	Level 5	659	1400	0
+DC	DC	Reading	3	1	Level 1	0	303	1
+DC	DC	Reading	3	2	Level 2	304	412	1
+DC	DC	Reading	3	3	Level 3	413	513	1
+DC	DC	Reading	3	4	Level 4	514	923	1
+DC	DC	Reading	3	5	Level 5	924	1400	1
+DC	DC	Reading	4	1	Level 1	0	334	1
+DC	DC	Reading	4	2	Level 2	335	441	1
+DC	DC	Reading	4	3	Level 3	442	570	1
+DC	DC	Reading	4	4	Level 4	571	1019	1
+DC	DC	Reading	4	5	Level 5	1020	1400	1
+DC	DC	Reading	5	1	Level 1	0	371	1
+DC	DC	Reading	5	2	Level 2	372	507	1
+DC	DC	Reading	5	3	Level 3	508	662	1
+DC	DC	Reading	5	4	Level 4	663	1178	1
+DC	DC	Reading	5	5	Level 5	1179	1400	1
+DC	DC	Reading	6	1	Level 1	0	416	1
+DC	DC	Reading	6	2	Level 2	417	560	1
+DC	DC	Reading	6	3	Level 3	561	776	1
+DC	DC	Reading	6	4	Level 4	777	1251	1
+DC	DC	Reading	6	5	Level 5	1252	1400	1
+DC	DC	Reading	7	1	Level 1	0	466	1
+DC	DC	Reading	7	2	Level 2	467	614	1
+DC	DC	Reading	7	3	Level 3	615	829	1
+DC	DC	Reading	7	4	Level 4	830	1292	1
+DC	DC	Reading	7	5	Level 5	1293	1400	1
+DC	DC	Reading	8	1	Level 1	0	526	1
+DC	DC	Reading	8	2	Level 2	527	678	1
+DC	DC	Reading	8	3	Level 3	679	908	1
+DC	DC	Reading	8	4	Level 4	909	1320	1
+DC	DC	Reading	8	5	Level 5	1321	1400	1
+DC	DC	Reading	9	1	Level 1	0	596	1
+DC	DC	Reading	9	2	Level 2	597	825	1
+DC	DC	Reading	9	3	Level 3	826	1035	1
+DC	DC	Reading	9	4	Level 4	1036	1324	1
+DC	DC	Reading	9	5	Level 5	1325	1400	1
+DC	DC	Reading	10	1	Level 1	0	684	1
+DC	DC	Reading	10	2	Level 2	685	900	1
+DC	DC	Reading	10	3	Level 3	901	1075	1
+DC	DC	Reading	10	4	Level 4	1076	1325	1
+DC	DC	Reading	10	5	Level 5	1326	1400	1
+DC	DC	Reading	11	1	Level 1	0	715	0
+DC	DC	Reading	11	2	Level 2	716	921	0
+DC	DC	Reading	11	3	Level 3	922	1130	0
+DC	DC	Reading	11	4	Level 4	1131	1328	0
+DC	DC	Reading	11	5	Level 5	1329	1400	0
+DC	DC	Reading	12	1	Level 1	0	761	0
+DC	DC	Reading	12	2	Level 2	762	968	0
+DC	DC	Reading	12	3	Level 3	969	1190	0
+DC	DC	Reading	12	4	Level 4	1191	1340	0
+DC	DC	Reading	12	5	Level 5	1341	1400	0
+DE	DE	Math	1	1	Level 1	0	336	0
+DE	DE	Math	1	2	Level 2	337	417	0
+DE	DE	Math	1	3	Level 3	418	498	0
+DE	DE	Math	1	4	Level 4	499	1400	0
+DE	DE	Math	2	1	Level 1	0	457	0
+DE	DE	Math	2	2	Level 2	458	528	0
+DE	DE	Math	2	3	Level 3	529	601	0
+DE	DE	Math	2	4	Level 4	602	1400	0
+DE	DE	Math	3	1	Level 1	0	546	1
+DE	DE	Math	3	2	Level 2	547	620	1
+DE	DE	Math	3	3	Level 3	621	686	1
+DE	DE	Math	3	4	Level 4	687	1400	1
+DE	DE	Math	4	1	Level 1	0	602	1
+DE	DE	Math	4	2	Level 2	603	695	1
+DE	DE	Math	4	3	Level 3	696	771	1
+DE	DE	Math	4	4	Level 4	772	1400	1
+DE	DE	Math	5	1	Level 1	0	692	1
+DE	DE	Math	5	2	Level 2	693	781	1
+DE	DE	Math	5	3	Level 3	782	826	1
+DE	DE	Math	5	4	Level 4	827	1400	1
+DE	DE	Math	6	1	Level 1	0	716	1
+DE	DE	Math	6	2	Level 2	717	807	1
+DE	DE	Math	6	3	Level 3	808	859	1
+DE	DE	Math	6	4	Level 4	860	1400	1
+DE	DE	Math	7	1	Level 1	0	745	1
+DE	DE	Math	7	2	Level 2	746	830	1
+DE	DE	Math	7	3	Level 3	831	885	1
+DE	DE	Math	7	4	Level 4	886	1400	1
+DE	DE	Math	8	1	Level 1	0	783	1
+DE	DE	Math	8	2	Level 2	784	851	1
+DE	DE	Math	8	3	Level 3	852	891	1
+DE	DE	Math	8	4	Level 4	892	1400	1
+DE	DE	Math	9	1	Level 1	0	790	0
+DE	DE	Math	9	2	Level 2	791	852	0
+DE	DE	Math	9	3	Level 3	853	895	0
+DE	DE	Math	9	4	Level 4	896	1400	0
+DE	DE	Math	10	1	Level 1	0	796	0
+DE	DE	Math	10	2	Level 2	797	858	0
+DE	DE	Math	10	3	Level 3	859	900	0
+DE	DE	Math	10	4	Level 4	901	1400	0
+DE	DE	Math	11	1	Level 1	0	813	0
+DE	DE	Math	11	2	Level 2	814	873	0
+DE	DE	Math	11	3	Level 3	874	918	0
+DE	DE	Math	11	4	Level 4	919	1400	0
+DE	DE	Math	12	1	Level 1	0	826	0
+DE	DE	Math	12	2	Level 2	827	890	0
+DE	DE	Math	12	3	Level 3	891	925	0
+DE	DE	Math	12	4	Level 4	926	1400	0
+DE	DE	Reading	1	1	Level 1	0	90	0
+DE	DE	Reading	1	2	Level 2	91	165	0
+DE	DE	Reading	1	3	Level 3	166	248	0
+DE	DE	Reading	1	4	Level 4	249	1400	0
+DE	DE	Reading	2	1	Level 1	0	232	0
+DE	DE	Reading	2	2	Level 2	233	337	0
+DE	DE	Reading	2	3	Level 3	338	435	0
+DE	DE	Reading	2	4	Level 4	436	1400	0
+DE	DE	Reading	3	1	Level 1	0	332	1
+DE	DE	Reading	3	2	Level 2	333	454	1
+DE	DE	Reading	3	3	Level 3	455	561	1
+DE	DE	Reading	3	4	Level 4	562	1400	1
+DE	DE	Reading	4	1	Level 1	0	434	1
+DE	DE	Reading	4	2	Level 2	435	530	1
+DE	DE	Reading	4	3	Level 3	531	660	1
+DE	DE	Reading	4	4	Level 4	661	1400	1
+DE	DE	Reading	5	1	Level 1	0	483	1
+DE	DE	Reading	5	2	Level 2	484	599	1
+DE	DE	Reading	5	3	Level 3	600	852	1
+DE	DE	Reading	5	4	Level 4	853	1400	1
+DE	DE	Reading	6	1	Level 1	0	499	1
+DE	DE	Reading	6	2	Level 2	500	691	1
+DE	DE	Reading	6	3	Level 3	692	1015	1
+DE	DE	Reading	6	4	Level 4	1016	1400	1
+DE	DE	Reading	7	1	Level 1	0	576	1
+DE	DE	Reading	7	2	Level 2	577	772	1
+DE	DE	Reading	7	3	Level 3	773	1168	1
+DE	DE	Reading	7	4	Level 4	1169	1400	1
+DE	DE	Reading	8	1	Level 1	0	589	1
+DE	DE	Reading	8	2	Level 2	590	857	1
+DE	DE	Reading	8	3	Level 3	858	1249	1
+DE	DE	Reading	8	4	Level 4	1250	1400	1
+DE	DE	Reading	9	1	Level 1	0	661	0
+DE	DE	Reading	9	2	Level 2	662	918	0
+DE	DE	Reading	9	3	Level 3	919	1291	0
+DE	DE	Reading	9	4	Level 4	1292	1400	0
+DE	DE	Reading	10	1	Level 1	0	674	0
+DE	DE	Reading	10	2	Level 2	675	957	0
+DE	DE	Reading	10	3	Level 3	958	1314	0
+DE	DE	Reading	10	4	Level 4	1315	1400	0
+DE	DE	Reading	11	1	Level 1	0	715	0
+DE	DE	Reading	11	2	Level 2	716	992	0
+DE	DE	Reading	11	3	Level 3	993	1321	0
+DE	DE	Reading	11	4	Level 4	1322	1400	0
+DE	DE	Reading	12	1	Level 1	0	761	0
+DE	DE	Reading	12	2	Level 2	762	1079	0
+DE	DE	Reading	12	3	Level 3	1080	1332	0
+DE	DE	Reading	12	4	Level 4	1333	1400	0
+FL	FL	Math	1	1	Level 1	0	332	0
+FL	FL	Math	1	2	Level 2	333	402	0
+FL	FL	Math	1	3	Level 3	403	460	0
+FL	FL	Math	1	4	Level 4	461	522	0
+FL	FL	Math	1	5	Level 5	523	1400	0
+FL	FL	Math	2	1	Level 1	0	453	0
+FL	FL	Math	2	2	Level 2	454	515	0
+FL	FL	Math	2	3	Level 3	516	568	0
+FL	FL	Math	2	4	Level 4	569	626	0
+FL	FL	Math	2	5	Level 5	627	1400	0
+FL	FL	Math	3	1	Level 1	0	541	1
+FL	FL	Math	3	2	Level 2	542	605	1
+FL	FL	Math	3	3	Level 3	606	655	1
+FL	FL	Math	3	4	Level 4	656	710	1
+FL	FL	Math	3	5	Level 5	711	1400	1
+FL	FL	Math	4	1	Level 1	0	620	1
+FL	FL	Math	4	2	Level 2	621	676	1
+FL	FL	Math	4	3	Level 3	677	740	1
+FL	FL	Math	4	4	Level 4	741	794	1
+FL	FL	Math	4	5	Level 5	795	1400	1
+FL	FL	Math	5	1	Level 1	0	672	1
+FL	FL	Math	5	2	Level 2	673	752	1
+FL	FL	Math	5	3	Level 3	753	810	1
+FL	FL	Math	5	4	Level 4	811	857	1
+FL	FL	Math	5	5	Level 5	858	1400	1
+FL	FL	Math	6	1	Level 1	0	705	1
+FL	FL	Math	6	2	Level 2	706	777	1
+FL	FL	Math	6	3	Level 3	778	830	1
+FL	FL	Math	6	4	Level 4	831	883	1
+FL	FL	Math	6	5	Level 5	884	1400	1
+FL	FL	Math	7	1	Level 1	0	718	1
+FL	FL	Math	7	2	Level 2	719	792	1
+FL	FL	Math	7	3	Level 3	793	847	1
+FL	FL	Math	7	4	Level 4	848	892	1
+FL	FL	Math	7	5	Level 5	893	1400	1
+FL	FL	Math	8	1	Level 1	0	719	1
+FL	FL	Math	8	2	Level 2	720	793	1
+FL	FL	Math	8	3	Level 3	794	849	1
+FL	FL	Math	8	4	Level 4	850	893	1
+FL	FL	Math	8	5	Level 5	894	1400	1
+FL	FL	Math	9	1	Level 1	0	729	0
+FL	FL	Math	9	2	Level 2	730	802	0
+FL	FL	Math	9	3	Level 3	803	852	0
+FL	FL	Math	9	4	Level 4	853	895	0
+FL	FL	Math	9	5	Level 5	896	1400	0
+FL	FL	Math	10	1	Level 1	0	731	0
+FL	FL	Math	10	2	Level 2	732	806	0
+FL	FL	Math	10	3	Level 3	807	858	0
+FL	FL	Math	10	4	Level 4	859	900	0
+FL	FL	Math	10	5	Level 5	901	1400	0
+FL	FL	Math	11	1	Level 1	0	747	0
+FL	FL	Math	11	2	Level 2	748	821	0
+FL	FL	Math	11	3	Level 3	822	873	0
+FL	FL	Math	11	4	Level 4	874	918	0
+FL	FL	Math	11	5	Level 5	919	1400	0
+FL	FL	Math	12	1	Level 1	0	758	0
+FL	FL	Math	12	2	Level 2	759	836	0
+FL	FL	Math	12	3	Level 3	837	890	0
+FL	FL	Math	12	4	Level 4	891	925	0
+FL	FL	Math	12	5	Level 5	926	1400	0
+FL	FL	Reading	1	1	Level 1	0	87	0
+FL	FL	Reading	1	2	Level 2	88	146	0
+FL	FL	Reading	1	3	Level 3	147	229	0
+FL	FL	Reading	1	4	Level 4	230	330	0
+FL	FL	Reading	1	5	Level 5	331	1400	0
+FL	FL	Reading	2	1	Level 1	0	220	0
+FL	FL	Reading	2	2	Level 2	221	315	0
+FL	FL	Reading	2	3	Level 3	316	411	0
+FL	FL	Reading	2	4	Level 4	412	519	0
+FL	FL	Reading	2	5	Level 5	520	1400	0
+FL	FL	Reading	3	1	Level 1	0	318	1
+FL	FL	Reading	3	2	Level 2	319	427	1
+FL	FL	Reading	3	3	Level 3	428	539	1
+FL	FL	Reading	3	4	Level 4	540	681	1
+FL	FL	Reading	3	5	Level 5	682	1400	1
+FL	FL	Reading	4	1	Level 1	0	409	1
+FL	FL	Reading	4	2	Level 2	410	519	1
+FL	FL	Reading	4	3	Level 3	520	650	1
+FL	FL	Reading	4	4	Level 4	651	874	1
+FL	FL	Reading	4	5	Level 5	875	1400	1
+FL	FL	Reading	5	1	Level 1	0	476	1
+FL	FL	Reading	5	2	Level 2	477	627	1
+FL	FL	Reading	5	3	Level 3	628	810	1
+FL	FL	Reading	5	4	Level 4	811	1068	1
+FL	FL	Reading	5	5	Level 5	1069	1400	1
+FL	FL	Reading	6	1	Level 1	0	525	1
+FL	FL	Reading	6	2	Level 2	526	684	1
+FL	FL	Reading	6	3	Level 3	685	894	1
+FL	FL	Reading	6	4	Level 4	895	1210	1
+FL	FL	Reading	6	5	Level 5	1211	1400	1
+FL	FL	Reading	7	1	Level 1	0	591	1
+FL	FL	Reading	7	2	Level 2	592	769	1
+FL	FL	Reading	7	3	Level 3	770	941	1
+FL	FL	Reading	7	4	Level 4	942	1215	1
+FL	FL	Reading	7	5	Level 5	1216	1400	1
+FL	FL	Reading	8	1	Level 1	0	607	1
+FL	FL	Reading	8	2	Level 2	608	856	1
+FL	FL	Reading	8	3	Level 3	857	1100	1
+FL	FL	Reading	8	4	Level 4	1101	1314	1
+FL	FL	Reading	8	5	Level 5	1315	1400	1
+FL	FL	Reading	9	1	Level 1	0	675	0
+FL	FL	Reading	9	2	Level 2	676	918	0
+FL	FL	Reading	9	3	Level 3	919	1173	0
+FL	FL	Reading	9	4	Level 4	1174	1323	0
+FL	FL	Reading	9	5	Level 5	1324	1400	0
+FL	FL	Reading	10	1	Level 1	0	690	0
+FL	FL	Reading	10	2	Level 2	691	957	0
+FL	FL	Reading	10	3	Level 3	958	1217	0
+FL	FL	Reading	10	4	Level 4	1218	1331	0
+FL	FL	Reading	10	5	Level 5	1332	1400	0
+FL	FL	Reading	11	1	Level 1	0	731	0
+FL	FL	Reading	11	2	Level 2	732	992	0
+FL	FL	Reading	11	3	Level 3	993	1245	0
+FL	FL	Reading	11	4	Level 4	1246	1337	0
+FL	FL	Reading	11	5	Level 5	1338	1400	0
+FL	FL	Reading	12	1	Level 1	0	780	0
+FL	FL	Reading	12	2	Level 2	781	1079	0
+FL	FL	Reading	12	3	Level 3	1080	1297	0
+FL	FL	Reading	12	4	Level 4	1298	1343	0
+FL	FL	Reading	12	5	Level 5	1344	1400	0
+GA	GA	Math	1	1	Beginning Learner	0	333	0
+GA	GA	Math	1	2	Developing Learner	334	436	0
+GA	GA	Math	1	3	Proficient Learner	437	521	0
+GA	GA	Math	1	4	Distinguished Learner	522	1400	0
+GA	GA	Math	2	1	Beginning Learner	0	454	0
+GA	GA	Math	2	2	Developing Learner	455	547	0
+GA	GA	Math	2	3	Proficient Learner	548	625	0
+GA	GA	Math	2	4	Distinguished Learner	626	1400	0
+GA	GA	Math	3	1	Beginning Learner	0	541	1
+GA	GA	Math	3	2	Developing Learner	542	633	1
+GA	GA	Math	3	3	Proficient Learner	634	706	1
+GA	GA	Math	3	4	Distinguished Learner	707	1400	1
+GA	GA	Math	4	1	Beginning Learner	0	603	1
+GA	GA	Math	4	2	Developing Learner	604	700	1
+GA	GA	Math	4	3	Proficient Learner	701	778	1
+GA	GA	Math	4	4	Distinguished Learner	779	1400	1
+GA	GA	Math	5	1	Beginning Learner	0	674	1
+GA	GA	Math	5	2	Developing Learner	675	767	1
+GA	GA	Math	5	3	Proficient Learner	768	831	1
+GA	GA	Math	5	4	Distinguished Learner	832	1400	1
+GA	GA	Math	6	1	Beginning Learner	0	705	1
+GA	GA	Math	6	2	Developing Learner	706	799	1
+GA	GA	Math	6	3	Proficient Learner	800	866	1
+GA	GA	Math	6	4	Distinguished Learner	867	1400	1
+GA	GA	Math	7	1	Beginning Learner	0	715	1
+GA	GA	Math	7	2	Developing Learner	716	819	1
+GA	GA	Math	7	3	Proficient Learner	820	879	1
+GA	GA	Math	7	4	Distinguished Learner	880	1400	1
+GA	GA	Math	8	1	Beginning Learner	0	742	1
+GA	GA	Math	8	2	Developing Learner	743	842	1
+GA	GA	Math	8	3	Proficient Learner	843	896	1
+GA	GA	Math	8	4	Distinguished Learner	897	1400	1
+GA	GA	Math	9	1	Beginning Learner	0	753	0
+GA	GA	Math	9	2	Developing Learner	754	846	0
+GA	GA	Math	9	3	Proficient Learner	847	901	0
+GA	GA	Math	9	4	Distinguished Learner	902	1400	0
+GA	GA	Math	10	1	Beginning Learner	0	755	0
+GA	GA	Math	10	2	Developing Learner	756	852	0
+GA	GA	Math	10	3	Proficient Learner	853	906	0
+GA	GA	Math	10	4	Distinguished Learner	907	1400	0
+GA	GA	Math	11	1	Beginning Learner	0	773	0
+GA	GA	Math	11	2	Developing Learner	774	867	0
+GA	GA	Math	11	3	Proficient Learner	868	924	0
+GA	GA	Math	11	4	Distinguished Learner	925	1400	0
+GA	GA	Math	12	1	Beginning Learner	0	791	0
+GA	GA	Math	12	2	Developing Learner	792	883	0
+GA	GA	Math	12	3	Proficient Learner	884	933	0
+GA	GA	Math	12	4	Distinguished Learner	934	1400	0
+GA	GA	Reading	1	1	Beginning Learner	0	96	0
+GA	GA	Reading	1	2	Developing Learner	97	179	0
+GA	GA	Reading	1	3	Proficient Learner	180	293	0
+GA	GA	Reading	1	4	Distinguished Learner	294	1400	0
+GA	GA	Reading	2	1	Beginning Learner	0	249	0
+GA	GA	Reading	2	2	Developing Learner	250	355	0
+GA	GA	Reading	2	3	Proficient Learner	356	479	0
+GA	GA	Reading	2	4	Distinguished Learner	480	1400	0
+GA	GA	Reading	3	1	Beginning Learner	0	348	1
+GA	GA	Reading	3	2	Developing Learner	349	468	1
+GA	GA	Reading	3	3	Proficient Learner	469	617	1
+GA	GA	Reading	3	4	Distinguished Learner	618	1400	1
+GA	GA	Reading	4	1	Beginning Learner	0	415	1
+GA	GA	Reading	4	2	Developing Learner	416	563	1
+GA	GA	Reading	4	3	Proficient Learner	564	796	1
+GA	GA	Reading	4	4	Distinguished Learner	797	1400	1
+GA	GA	Reading	5	1	Beginning Learner	0	478	1
+GA	GA	Reading	5	2	Developing Learner	479	666	1
+GA	GA	Reading	5	3	Proficient Learner	667	959	1
+GA	GA	Reading	5	4	Distinguished Learner	960	1400	1
+GA	GA	Reading	6	1	Beginning Learner	0	543	1
+GA	GA	Reading	6	2	Developing Learner	544	742	1
+GA	GA	Reading	6	3	Proficient Learner	743	1086	1
+GA	GA	Reading	6	4	Distinguished Learner	1087	1400	1
+GA	GA	Reading	7	1	Beginning Learner	0	581	1
+GA	GA	Reading	7	2	Developing Learner	582	842	1
+GA	GA	Reading	7	3	Proficient Learner	843	1230	1
+GA	GA	Reading	7	4	Distinguished Learner	1231	1400	1
+GA	GA	Reading	8	1	Beginning Learner	0	614	1
+GA	GA	Reading	8	2	Developing Learner	615	907	1
+GA	GA	Reading	8	3	Proficient Learner	908	1273	1
+GA	GA	Reading	8	4	Distinguished Learner	1274	1400	1
+GA	GA	Reading	9	1	Beginning Learner	0	701	0
+GA	GA	Reading	9	2	Developing Learner	702	976	0
+GA	GA	Reading	9	3	Proficient Learner	977	1306	0
+GA	GA	Reading	9	4	Distinguished Learner	1307	1400	0
+GA	GA	Reading	10	1	Beginning Learner	0	720	0
+GA	GA	Reading	10	2	Developing Learner	721	1044	0
+GA	GA	Reading	10	3	Proficient Learner	1045	1320	0
+GA	GA	Reading	10	4	Distinguished Learner	1321	1400	0
+GA	GA	Reading	11	1	Beginning Learner	0	774	0
+GA	GA	Reading	11	2	Developing Learner	775	1100	0
+GA	GA	Reading	11	3	Proficient Learner	1101	1326	0
+GA	GA	Reading	11	4	Distinguished Learner	1327	1400	0
+GA	GA	Reading	12	1	Beginning Learner	0	813	0
+GA	GA	Reading	12	2	Developing Learner	814	1172	0
+GA	GA	Reading	12	3	Proficient Learner	1173	1336	0
+GA	GA	Reading	12	4	Distinguished Learner	1337	1400	0
+HI	HI	Math	1	1	Level 1	0	336	0
+HI	HI	Math	1	2	Level 2	337	417	0
+HI	HI	Math	1	3	Level 3	418	498	0
+HI	HI	Math	1	4	Level 4	499	1400	0
+HI	HI	Math	2	1	Level 1	0	457	0
+HI	HI	Math	2	2	Level 2	458	528	0
+HI	HI	Math	2	3	Level 3	529	601	0
+HI	HI	Math	2	4	Level 4	602	1400	0
+HI	HI	Math	3	1	Level 1	0	546	1
+HI	HI	Math	3	2	Level 2	547	620	1
+HI	HI	Math	3	3	Level 3	621	686	1
+HI	HI	Math	3	4	Level 4	687	1400	1
+HI	HI	Math	4	1	Level 1	0	602	1
+HI	HI	Math	4	2	Level 2	603	695	1
+HI	HI	Math	4	3	Level 3	696	771	1
+HI	HI	Math	4	4	Level 4	772	1400	1
+HI	HI	Math	5	1	Level 1	0	692	1
+HI	HI	Math	5	2	Level 2	693	781	1
+HI	HI	Math	5	3	Level 3	782	826	1
+HI	HI	Math	5	4	Level 4	827	1400	1
+HI	HI	Math	6	1	Level 1	0	716	1
+HI	HI	Math	6	2	Level 2	717	807	1
+HI	HI	Math	6	3	Level 3	808	859	1
+HI	HI	Math	6	4	Level 4	860	1400	1
+HI	HI	Math	7	1	Level 1	0	745	1
+HI	HI	Math	7	2	Level 2	746	830	1
+HI	HI	Math	7	3	Level 3	831	885	1
+HI	HI	Math	7	4	Level 4	886	1400	1
+HI	HI	Math	8	1	Level 1	0	783	1
+HI	HI	Math	8	2	Level 2	784	851	1
+HI	HI	Math	8	3	Level 3	852	891	1
+HI	HI	Math	8	4	Level 4	892	1400	1
+HI	HI	Math	9	1	Level 1	0	790	0
+HI	HI	Math	9	2	Level 2	791	852	0
+HI	HI	Math	9	3	Level 3	853	895	0
+HI	HI	Math	9	4	Level 4	896	1400	0
+HI	HI	Math	10	1	Level 1	0	796	0
+HI	HI	Math	10	2	Level 2	797	858	0
+HI	HI	Math	10	3	Level 3	859	900	0
+HI	HI	Math	10	4	Level 4	901	1400	0
+HI	HI	Math	11	1	Level 1	0	813	0
+HI	HI	Math	11	2	Level 2	814	873	0
+HI	HI	Math	11	3	Level 3	874	918	0
+HI	HI	Math	11	4	Level 4	919	1400	0
+HI	HI	Math	12	1	Level 1	0	826	0
+HI	HI	Math	12	2	Level 2	827	890	0
+HI	HI	Math	12	3	Level 3	891	925	0
+HI	HI	Math	12	4	Level 4	926	1400	0
+HI	HI	Reading	1	1	Level 1	0	90	0
+HI	HI	Reading	1	2	Level 2	91	165	0
+HI	HI	Reading	1	3	Level 3	166	248	0
+HI	HI	Reading	1	4	Level 4	249	1400	0
+HI	HI	Reading	2	1	Level 1	0	232	0
+HI	HI	Reading	2	2	Level 2	233	337	0
+HI	HI	Reading	2	3	Level 3	338	435	0
+HI	HI	Reading	2	4	Level 4	436	1400	0
+HI	HI	Reading	3	1	Level 1	0	332	1
+HI	HI	Reading	3	2	Level 2	333	454	1
+HI	HI	Reading	3	3	Level 3	455	561	1
+HI	HI	Reading	3	4	Level 4	562	1400	1
+HI	HI	Reading	4	1	Level 1	0	434	1
+HI	HI	Reading	4	2	Level 2	435	530	1
+HI	HI	Reading	4	3	Level 3	531	660	1
+HI	HI	Reading	4	4	Level 4	661	1400	1
+HI	HI	Reading	5	1	Level 1	0	483	1
+HI	HI	Reading	5	2	Level 2	484	599	1
+HI	HI	Reading	5	3	Level 3	600	852	1
+HI	HI	Reading	5	4	Level 4	853	1400	1
+HI	HI	Reading	6	1	Level 1	0	499	1
+HI	HI	Reading	6	2	Level 2	500	691	1
+HI	HI	Reading	6	3	Level 3	692	1015	1
+HI	HI	Reading	6	4	Level 4	1016	1400	1
+HI	HI	Reading	7	1	Level 1	0	576	1
+HI	HI	Reading	7	2	Level 2	577	772	1
+HI	HI	Reading	7	3	Level 3	773	1168	1
+HI	HI	Reading	7	4	Level 4	1169	1400	1
+HI	HI	Reading	8	1	Level 1	0	589	1
+HI	HI	Reading	8	2	Level 2	590	857	1
+HI	HI	Reading	8	3	Level 3	858	1249	1
+HI	HI	Reading	8	4	Level 4	1250	1400	1
+HI	HI	Reading	9	1	Level 1	0	661	0
+HI	HI	Reading	9	2	Level 2	662	918	0
+HI	HI	Reading	9	3	Level 3	919	1291	0
+HI	HI	Reading	9	4	Level 4	1292	1400	0
+HI	HI	Reading	10	1	Level 1	0	674	0
+HI	HI	Reading	10	2	Level 2	675	957	0
+HI	HI	Reading	10	3	Level 3	958	1314	0
+HI	HI	Reading	10	4	Level 4	1315	1400	0
+HI	HI	Reading	11	1	Level 1	0	715	0
+HI	HI	Reading	11	2	Level 2	716	992	0
+HI	HI	Reading	11	3	Level 3	993	1321	0
+HI	HI	Reading	11	4	Level 4	1322	1400	0
+HI	HI	Reading	12	1	Level 1	0	761	0
+HI	HI	Reading	12	2	Level 2	762	1079	0
+HI	HI	Reading	12	3	Level 3	1080	1332	0
+HI	HI	Reading	12	4	Level 4	1333	1400	0
+IA	IA	Math	1	1	Not Proficient	0	371	0
+IA	IA	Math	1	2	Proficient	372	474	0
+IA	IA	Math	1	3	Advanced	475	1400	0
+IA	IA	Math	2	1	Not Proficient	0	490	0
+IA	IA	Math	2	2	Proficient	491	576	0
+IA	IA	Math	2	3	Advanced	577	1400	0
+IA	IA	Math	3	1	Not Proficient	0	582	1
+IA	IA	Math	3	2	Proficient	583	671	1
+IA	IA	Math	3	3	Advanced	672	1400	1
+IA	IA	Math	4	1	Not Proficient	0	631	1
+IA	IA	Math	4	2	Proficient	632	730	1
+IA	IA	Math	4	3	Advanced	731	1400	1
+IA	IA	Math	5	1	Not Proficient	0	684	1
+IA	IA	Math	5	2	Proficient	685	804	1
+IA	IA	Math	5	3	Advanced	805	1400	1
+IA	IA	Math	6	1	Not Proficient	0	751	1
+IA	IA	Math	6	2	Proficient	752	850	1
+IA	IA	Math	6	3	Advanced	851	1400	1
+IA	IA	Math	7	1	Not Proficient	0	745	1
+IA	IA	Math	7	2	Proficient	746	885	1
+IA	IA	Math	7	3	Advanced	886	1400	1
+IA	IA	Math	8	1	Not Proficient	0	785	1
+IA	IA	Math	8	2	Proficient	786	896	1
+IA	IA	Math	8	3	Advanced	897	1400	1
+IA	IA	Math	9	1	Not Proficient	0	794	0
+IA	IA	Math	9	2	Proficient	795	899	0
+IA	IA	Math	9	3	Advanced	900	1400	0
+IA	IA	Math	10	1	Not Proficient	0	798	0
+IA	IA	Math	10	2	Proficient	799	904	0
+IA	IA	Math	10	3	Advanced	905	1400	0
+IA	IA	Math	11	1	Not Proficient	0	813	0
+IA	IA	Math	11	2	Proficient	814	921	0
+IA	IA	Math	11	3	Advanced	922	1400	0
+IA	IA	Math	12	1	Not Proficient	0	828	0
+IA	IA	Math	12	2	Proficient	829	928	0
+IA	IA	Math	12	3	Advanced	929	1400	0
+IA	IA	Reading	1	1	Not Proficient	0	93	0
+IA	IA	Reading	1	2	Proficient	94	320	0
+IA	IA	Reading	1	3	Advanced	321	1400	0
+IA	IA	Reading	2	1	Not Proficient	0	236	0
+IA	IA	Reading	2	2	Proficient	237	478	0
+IA	IA	Reading	2	3	Advanced	479	1400	0
+IA	IA	Reading	3	1	Not Proficient	0	330	1
+IA	IA	Reading	3	2	Proficient	331	630	1
+IA	IA	Reading	3	3	Advanced	631	1400	1
+IA	IA	Reading	4	1	Not Proficient	0	454	1
+IA	IA	Reading	4	2	Proficient	455	799	1
+IA	IA	Reading	4	3	Advanced	800	1400	1
+IA	IA	Reading	5	1	Not Proficient	0	532	1
+IA	IA	Reading	5	2	Proficient	533	930	1
+IA	IA	Reading	5	3	Advanced	931	1400	1
+IA	IA	Reading	6	1	Not Proficient	0	642	1
+IA	IA	Reading	6	2	Proficient	643	1107	1
+IA	IA	Reading	6	3	Advanced	1108	1400	1
+IA	IA	Reading	7	1	Not Proficient	0	674	1
+IA	IA	Reading	7	2	Proficient	675	1253	1
+IA	IA	Reading	7	3	Advanced	1254	1400	1
+IA	IA	Reading	8	1	Not Proficient	0	800	1
+IA	IA	Reading	8	2	Proficient	801	1314	1
+IA	IA	Reading	8	3	Advanced	1315	1400	1
+IA	IA	Reading	9	1	Not Proficient	0	902	0
+IA	IA	Reading	9	2	Proficient	903	1327	0
+IA	IA	Reading	9	3	Advanced	1328	1400	0
+IA	IA	Reading	10	1	Not Proficient	0	927	0
+IA	IA	Reading	10	2	Proficient	928	1335	0
+IA	IA	Reading	10	3	Advanced	1336	1400	0
+IA	IA	Reading	11	1	Not Proficient	0	966	0
+IA	IA	Reading	11	2	Proficient	967	1340	0
+IA	IA	Reading	11	3	Advanced	1341	1400	0
+IA	IA	Reading	12	1	Not Proficient	0	1027	0
+IA	IA	Reading	12	2	Proficient	1028	1344	0
+IA	IA	Reading	12	3	Advanced	1345	1400	0
+ID	ID	Math	1	1	Level 1	0	336	0
+ID	ID	Math	1	2	Level 2	337	417	0
+ID	ID	Math	1	3	Level 3	418	498	0
+ID	ID	Math	1	4	Level 4	499	1400	0
+ID	ID	Math	2	1	Level 1	0	457	0
+ID	ID	Math	2	2	Level 2	458	528	0
+ID	ID	Math	2	3	Level 3	529	601	0
+ID	ID	Math	2	4	Level 4	602	1400	0
+ID	ID	Math	3	1	Level 1	0	546	1
+ID	ID	Math	3	2	Level 2	547	620	1
+ID	ID	Math	3	3	Level 3	621	686	1
+ID	ID	Math	3	4	Level 4	687	1400	1
+ID	ID	Math	4	1	Level 1	0	602	1
+ID	ID	Math	4	2	Level 2	603	695	1
+ID	ID	Math	4	3	Level 3	696	771	1
+ID	ID	Math	4	4	Level 4	772	1400	1
+ID	ID	Math	5	1	Level 1	0	692	1
+ID	ID	Math	5	2	Level 2	693	781	1
+ID	ID	Math	5	3	Level 3	782	826	1
+ID	ID	Math	5	4	Level 4	827	1400	1
+ID	ID	Math	6	1	Level 1	0	716	1
+ID	ID	Math	6	2	Level 2	717	807	1
+ID	ID	Math	6	3	Level 3	808	859	1
+ID	ID	Math	6	4	Level 4	860	1400	1
+ID	ID	Math	7	1	Level 1	0	745	1
+ID	ID	Math	7	2	Level 2	746	830	1
+ID	ID	Math	7	3	Level 3	831	885	1
+ID	ID	Math	7	4	Level 4	886	1400	1
+ID	ID	Math	8	1	Level 1	0	783	1
+ID	ID	Math	8	2	Level 2	784	851	1
+ID	ID	Math	8	3	Level 3	852	891	1
+ID	ID	Math	8	4	Level 4	892	1400	1
+ID	ID	Math	9	1	Level 1	0	790	0
+ID	ID	Math	9	2	Level 2	791	852	0
+ID	ID	Math	9	3	Level 3	853	895	0
+ID	ID	Math	9	4	Level 4	896	1400	0
+ID	ID	Math	10	1	Level 1	0	796	0
+ID	ID	Math	10	2	Level 2	797	858	0
+ID	ID	Math	10	3	Level 3	859	900	0
+ID	ID	Math	10	4	Level 4	901	1400	0
+ID	ID	Math	11	1	Level 1	0	813	0
+ID	ID	Math	11	2	Level 2	814	873	0
+ID	ID	Math	11	3	Level 3	874	918	0
+ID	ID	Math	11	4	Level 4	919	1400	0
+ID	ID	Math	12	1	Level 1	0	826	0
+ID	ID	Math	12	2	Level 2	827	890	0
+ID	ID	Math	12	3	Level 3	891	925	0
+ID	ID	Math	12	4	Level 4	926	1400	0
+ID	ID	Reading	1	1	Level 1	0	90	0
+ID	ID	Reading	1	2	Level 2	91	165	0
+ID	ID	Reading	1	3	Level 3	166	248	0
+ID	ID	Reading	1	4	Level 4	249	1400	0
+ID	ID	Reading	2	1	Level 1	0	232	0
+ID	ID	Reading	2	2	Level 2	233	337	0
+ID	ID	Reading	2	3	Level 3	338	435	0
+ID	ID	Reading	2	4	Level 4	436	1400	0
+ID	ID	Reading	3	1	Level 1	0	332	1
+ID	ID	Reading	3	2	Level 2	333	454	1
+ID	ID	Reading	3	3	Level 3	455	561	1
+ID	ID	Reading	3	4	Level 4	562	1400	1
+ID	ID	Reading	4	1	Level 1	0	434	1
+ID	ID	Reading	4	2	Level 2	435	530	1
+ID	ID	Reading	4	3	Level 3	531	660	1
+ID	ID	Reading	4	4	Level 4	661	1400	1
+ID	ID	Reading	5	1	Level 1	0	483	1
+ID	ID	Reading	5	2	Level 2	484	599	1
+ID	ID	Reading	5	3	Level 3	600	852	1
+ID	ID	Reading	5	4	Level 4	853	1400	1
+ID	ID	Reading	6	1	Level 1	0	499	1
+ID	ID	Reading	6	2	Level 2	500	691	1
+ID	ID	Reading	6	3	Level 3	692	1015	1
+ID	ID	Reading	6	4	Level 4	1016	1400	1
+ID	ID	Reading	7	1	Level 1	0	576	1
+ID	ID	Reading	7	2	Level 2	577	772	1
+ID	ID	Reading	7	3	Level 3	773	1168	1
+ID	ID	Reading	7	4	Level 4	1169	1400	1
+ID	ID	Reading	8	1	Level 1	0	589	1
+ID	ID	Reading	8	2	Level 2	590	857	1
+ID	ID	Reading	8	3	Level 3	858	1249	1
+ID	ID	Reading	8	4	Level 4	1250	1400	1
+ID	ID	Reading	9	1	Level 1	0	661	0
+ID	ID	Reading	9	2	Level 2	662	918	0
+ID	ID	Reading	9	3	Level 3	919	1291	0
+ID	ID	Reading	9	4	Level 4	1292	1400	0
+ID	ID	Reading	10	1	Level 1	0	674	0
+ID	ID	Reading	10	2	Level 2	675	957	0
+ID	ID	Reading	10	3	Level 3	958	1314	0
+ID	ID	Reading	10	4	Level 4	1315	1400	0
+ID	ID	Reading	11	1	Level 1	0	715	0
+ID	ID	Reading	11	2	Level 2	716	992	0
+ID	ID	Reading	11	3	Level 3	993	1321	0
+ID	ID	Reading	11	4	Level 4	1322	1400	0
+ID	ID	Reading	12	1	Level 1	0	761	0
+ID	ID	Reading	12	2	Level 2	762	1079	0
+ID	ID	Reading	12	3	Level 3	1080	1332	0
+ID	ID	Reading	12	4	Level 4	1333	1400	0
+IL	IL	Math	1	1	Level 1	0	297	0
+IL	IL	Math	1	2	Level 2	298	381	0
+IL	IL	Math	1	3	Level 3	382	448	0
+IL	IL	Math	1	4	Level 4	449	569	0
+IL	IL	Math	1	5	Level 5	570	1400	0
+IL	IL	Math	2	1	Level 1	0	422	0
+IL	IL	Math	2	2	Level 2	423	497	0
+IL	IL	Math	2	3	Level 3	498	557	0
+IL	IL	Math	2	4	Level 4	558	659	0
+IL	IL	Math	2	5	Level 5	660	1400	0
+IL	IL	Math	3	1	Level 1	0	503	1
+IL	IL	Math	3	2	Level 2	504	588	1
+IL	IL	Math	3	3	Level 3	589	648	1
+IL	IL	Math	3	4	Level 4	649	742	1
+IL	IL	Math	3	5	Level 5	743	1400	1
+IL	IL	Math	4	1	Level 1	0	561	1
+IL	IL	Math	4	2	Level 2	562	661	1
+IL	IL	Math	4	3	Level 3	662	735	1
+IL	IL	Math	4	4	Level 4	736	850	1
+IL	IL	Math	4	5	Level 5	851	1400	1
+IL	IL	Math	5	1	Level 1	0	613	1
+IL	IL	Math	5	2	Level 2	614	720	1
+IL	IL	Math	5	3	Level 3	721	804	1
+IL	IL	Math	5	4	Level 4	805	901	1
+IL	IL	Math	5	5	Level 5	902	1400	1
+IL	IL	Math	6	1	Level 1	0	649	1
+IL	IL	Math	6	2	Level 2	650	756	1
+IL	IL	Math	6	3	Level 3	757	826	1
+IL	IL	Math	6	4	Level 4	827	925	1
+IL	IL	Math	6	5	Level 5	926	1400	1
+IL	IL	Math	7	1	Level 1	0	686	1
+IL	IL	Math	7	2	Level 2	687	777	1
+IL	IL	Math	7	3	Level 3	778	860	1
+IL	IL	Math	7	4	Level 4	861	960	1
+IL	IL	Math	7	5	Level 5	961	1400	1
+IL	IL	Math	8	1	Level 1	0	738	1
+IL	IL	Math	8	2	Level 2	739	815	1
+IL	IL	Math	8	3	Level 3	816	875	1
+IL	IL	Math	8	4	Level 4	876	1007	1
+IL	IL	Math	8	5	Level 5	1008	1400	1
+IL	IL	Math	9	1	Level 1	0	747	0
+IL	IL	Math	9	2	Level 2	748	819	0
+IL	IL	Math	9	3	Level 3	820	877	0
+IL	IL	Math	9	4	Level 4	878	1008	0
+IL	IL	Math	9	5	Level 5	1009	1400	0
+IL	IL	Math	10	1	Level 1	0	748	0
+IL	IL	Math	10	2	Level 2	749	825	0
+IL	IL	Math	10	3	Level 3	826	883	0
+IL	IL	Math	10	4	Level 4	884	1024	0
+IL	IL	Math	10	5	Level 5	1025	1400	0
+IL	IL	Math	11	1	Level 1	0	769	0
+IL	IL	Math	11	2	Level 2	770	839	0
+IL	IL	Math	11	3	Level 3	840	900	0
+IL	IL	Math	11	4	Level 4	901	1036	0
+IL	IL	Math	11	5	Level 5	1037	1400	0
+IL	IL	Math	12	1	Level 1	0	783	0
+IL	IL	Math	12	2	Level 2	784	855	0
+IL	IL	Math	12	3	Level 3	856	910	0
+IL	IL	Math	12	4	Level 4	911	1076	0
+IL	IL	Math	12	5	Level 5	1077	1400	0
+IL	IL	Reading	1	1	Level 1	0	85	0
+IL	IL	Reading	1	2	Level 2	86	134	0
+IL	IL	Reading	1	3	Level 3	135	214	0
+IL	IL	Reading	1	4	Level 4	215	460	0
+IL	IL	Reading	1	5	Level 5	461	1400	0
+IL	IL	Reading	2	1	Level 1	0	203	0
+IL	IL	Reading	2	2	Level 2	204	301	0
+IL	IL	Reading	2	3	Level 3	302	391	0
+IL	IL	Reading	2	4	Level 4	392	658	0
+IL	IL	Reading	2	5	Level 5	659	1400	0
+IL	IL	Reading	3	1	Level 1	0	303	1
+IL	IL	Reading	3	2	Level 2	304	412	1
+IL	IL	Reading	3	3	Level 3	413	513	1
+IL	IL	Reading	3	4	Level 4	514	923	1
+IL	IL	Reading	3	5	Level 5	924	1400	1
+IL	IL	Reading	4	1	Level 1	0	334	1
+IL	IL	Reading	4	2	Level 2	335	441	1
+IL	IL	Reading	4	3	Level 3	442	570	1
+IL	IL	Reading	4	4	Level 4	571	1019	1
+IL	IL	Reading	4	5	Level 5	1020	1400	1
+IL	IL	Reading	5	1	Level 1	0	371	1
+IL	IL	Reading	5	2	Level 2	372	507	1
+IL	IL	Reading	5	3	Level 3	508	662	1
+IL	IL	Reading	5	4	Level 4	663	1178	1
+IL	IL	Reading	5	5	Level 5	1179	1400	1
+IL	IL	Reading	6	1	Level 1	0	416	1
+IL	IL	Reading	6	2	Level 2	417	560	1
+IL	IL	Reading	6	3	Level 3	561	776	1
+IL	IL	Reading	6	4	Level 4	777	1251	1
+IL	IL	Reading	6	5	Level 5	1252	1400	1
+IL	IL	Reading	7	1	Level 1	0	466	1
+IL	IL	Reading	7	2	Level 2	467	614	1
+IL	IL	Reading	7	3	Level 3	615	829	1
+IL	IL	Reading	7	4	Level 4	830	1292	1
+IL	IL	Reading	7	5	Level 5	1293	1400	1
+IL	IL	Reading	8	1	Level 1	0	526	1
+IL	IL	Reading	8	2	Level 2	527	678	1
+IL	IL	Reading	8	3	Level 3	679	908	1
+IL	IL	Reading	8	4	Level 4	909	1320	1
+IL	IL	Reading	8	5	Level 5	1321	1400	1
+IL	IL	Reading	9	1	Level 1	0	596	1
+IL	IL	Reading	9	2	Level 2	597	825	1
+IL	IL	Reading	9	3	Level 3	826	1035	1
+IL	IL	Reading	9	4	Level 4	1036	1324	1
+IL	IL	Reading	9	5	Level 5	1325	1400	1
+IL	IL	Reading	10	1	Level 1	0	684	1
+IL	IL	Reading	10	2	Level 2	685	900	1
+IL	IL	Reading	10	3	Level 3	901	1075	1
+IL	IL	Reading	10	4	Level 4	1076	1325	1
+IL	IL	Reading	10	5	Level 5	1326	1400	1
+IL	IL	Reading	11	1	Level 1	0	715	0
+IL	IL	Reading	11	2	Level 2	716	921	0
+IL	IL	Reading	11	3	Level 3	922	1130	0
+IL	IL	Reading	11	4	Level 4	1131	1328	0
+IL	IL	Reading	11	5	Level 5	1329	1400	0
+IL	IL	Reading	12	1	Level 1	0	761	0
+IL	IL	Reading	12	2	Level 2	762	968	0
+IL	IL	Reading	12	3	Level 3	969	1190	0
+IL	IL	Reading	12	4	Level 4	1191	1340	0
+IL	IL	Reading	12	5	Level 5	1341	1400	0
+IN	IN	Math	1	1	Did not Pass	0	405	0
+IN	IN	Math	1	2	Pass and Pass+	406	1400	0
+IN	IN	Math	2	1	Did not Pass	0	517	0
+IN	IN	Math	2	2	Pass and Pass+	518	1400	0
+IN	IN	Math	3	1	Did not Pass	0	607	1
+IN	IN	Math	3	2	Pass and Pass+	608	1400	1
+IN	IN	Math	4	1	Did not Pass	0	673	1
+IN	IN	Math	4	2	Pass and Pass+	674	1400	1
+IN	IN	Math	5	1	Did not Pass	0	723	1
+IN	IN	Math	5	2	Pass and Pass+	724	1400	1
+IN	IN	Math	6	1	Did not Pass	0	776	1
+IN	IN	Math	6	2	Pass and Pass+	777	1400	1
+IN	IN	Math	7	1	Did not Pass	0	810	1
+IN	IN	Math	7	2	Pass and Pass+	811	1400	1
+IN	IN	Math	8	1	Did not Pass	0	829	1
+IN	IN	Math	8	2	Pass and Pass+	830	1400	1
+IN	IN	Math	9	1	Did not Pass	0	831	0
+IN	IN	Math	9	2	Pass and Pass+	832	1400	0
+IN	IN	Math	10	1	Did not Pass	0	839	0
+IN	IN	Math	10	2	Pass and Pass+	840	1400	0
+IN	IN	Math	11	1	Did not Pass	0	853	0
+IN	IN	Math	11	2	Pass and Pass+	854	1400	0
+IN	IN	Math	12	1	Did not Pass	0	870	0
+IN	IN	Math	12	2	Pass and Pass+	871	1400	0
+IN	IN	Reading	1	1	Did not Pass	0	103	0
+IN	IN	Reading	1	2	Pass and Pass+	104	1400	0
+IN	IN	Reading	2	1	Did not Pass	0	264	0
+IN	IN	Reading	2	2	Pass and Pass+	265	1400	0
+IN	IN	Reading	3	1	Did not Pass	0	369	1
+IN	IN	Reading	3	2	Pass and Pass+	370	1400	1
+IN	IN	Reading	4	1	Did not Pass	0	478	1
+IN	IN	Reading	4	2	Pass and Pass+	479	1400	1
+IN	IN	Reading	5	1	Did not Pass	0	569	1
+IN	IN	Reading	5	2	Pass and Pass+	570	1400	1
+IN	IN	Reading	6	1	Did not Pass	0	634	1
+IN	IN	Reading	6	2	Pass and Pass+	635	1400	1
+IN	IN	Reading	7	1	Did not Pass	0	698	1
+IN	IN	Reading	7	2	Pass and Pass+	699	1400	1
+IN	IN	Reading	8	1	Did not Pass	0	790	1
+IN	IN	Reading	8	2	Pass and Pass+	791	1400	1
+IN	IN	Reading	9	1	Did not Pass	0	880	0
+IN	IN	Reading	9	2	Pass and Pass+	881	1400	0
+IN	IN	Reading	10	1	Did not Pass	0	905	0
+IN	IN	Reading	10	2	Pass and Pass+	906	1400	0
+IN	IN	Reading	11	1	Did not Pass	0	931	0
+IN	IN	Reading	11	2	Pass and Pass+	932	1400	0
+IN	IN	Reading	12	1	Did not Pass	0	975	0
+IN	IN	Reading	12	2	Pass and Pass+	976	1400	0
+KS	KS	Math	1	1	Level 1	0	327	0
+KS	KS	Math	1	2	Level 2	328	420	0
+KS	KS	Math	1	3	Level 3	421	498	0
+KS	KS	Math	1	4	Level 4	499	1400	0
+KS	KS	Math	2	1	Level 1	0	449	0
+KS	KS	Math	2	2	Level 2	450	530	0
+KS	KS	Math	2	3	Level 3	531	601	0
+KS	KS	Math	2	4	Level 4	602	1400	0
+KS	KS	Math	3	1	Level 1	0	535	1
+KS	KS	Math	3	2	Level 2	536	622	1
+KS	KS	Math	3	3	Level 3	623	684	1
+KS	KS	Math	3	4	Level 4	685	1400	1
+KS	KS	Math	4	1	Level 1	0	593	1
+KS	KS	Math	4	2	Level 2	594	718	1
+KS	KS	Math	4	3	Level 3	719	781	1
+KS	KS	Math	4	4	Level 4	782	1400	1
+KS	KS	Math	5	1	Level 1	0	683	1
+KS	KS	Math	5	2	Level 2	684	785	1
+KS	KS	Math	5	3	Level 3	786	837	1
+KS	KS	Math	5	4	Level 4	838	1400	1
+KS	KS	Math	6	1	Level 1	0	706	1
+KS	KS	Math	6	2	Level 2	707	813	1
+KS	KS	Math	6	3	Level 3	814	869	1
+KS	KS	Math	6	4	Level 4	870	1400	1
+KS	KS	Math	7	1	Level 1	0	707	1
+KS	KS	Math	7	2	Level 2	708	845	1
+KS	KS	Math	7	3	Level 3	846	920	1
+KS	KS	Math	7	4	Level 4	921	1400	1
+KS	KS	Math	8	1	Level 1	0	808	1
+KS	KS	Math	8	2	Level 2	809	888	1
+KS	KS	Math	8	3	Level 3	889	944	1
+KS	KS	Math	8	4	Level 4	945	1400	1
+KS	KS	Math	9	1	Level 1	0	815	0
+KS	KS	Math	9	2	Level 2	816	891	0
+KS	KS	Math	9	3	Level 3	892	949	0
+KS	KS	Math	9	4	Level 4	950	1400	0
+KS	KS	Math	10	1	Level 1	0	853	0
+KS	KS	Math	10	2	Level 2	854	909	0
+KS	KS	Math	10	3	Level 3	910	974	0
+KS	KS	Math	10	4	Level 4	975	1400	0
+KS	KS	Math	11	1	Level 1	0	868	0
+KS	KS	Math	11	2	Level 2	869	926	0
+KS	KS	Math	11	3	Level 3	927	988	0
+KS	KS	Math	11	4	Level 4	989	1400	0
+KS	KS	Math	12	1	Level 1	0	884	0
+KS	KS	Math	12	2	Level 2	885	934	0
+KS	KS	Math	12	3	Level 3	935	1005	0
+KS	KS	Math	12	4	Level 4	1006	1400	0
+KS	KS	Reading	1	1	Level 1	0	87	0
+KS	KS	Reading	1	2	Level 2	88	165	0
+KS	KS	Reading	1	3	Level 3	166	281	0
+KS	KS	Reading	1	4	Level 4	282	1400	0
+KS	KS	Reading	2	1	Level 1	0	220	0
+KS	KS	Reading	2	2	Level 2	221	337	0
+KS	KS	Reading	2	3	Level 3	338	467	0
+KS	KS	Reading	2	4	Level 4	468	1400	0
+KS	KS	Reading	3	1	Level 1	0	318	1
+KS	KS	Reading	3	2	Level 2	319	452	1
+KS	KS	Reading	3	3	Level 3	453	606	1
+KS	KS	Reading	3	4	Level 4	607	1400	1
+KS	KS	Reading	4	1	Level 1	0	326	1
+KS	KS	Reading	4	2	Level 2	327	508	1
+KS	KS	Reading	4	3	Level 3	509	768	1
+KS	KS	Reading	4	4	Level 4	769	1400	1
+KS	KS	Reading	5	1	Level 1	0	469	1
+KS	KS	Reading	5	2	Level 2	470	630	1
+KS	KS	Reading	5	3	Level 3	631	869	1
+KS	KS	Reading	5	4	Level 4	870	1400	1
+KS	KS	Reading	6	1	Level 1	0	577	1
+KS	KS	Reading	6	2	Level 2	578	784	1
+KS	KS	Reading	6	3	Level 3	785	1199	1
+KS	KS	Reading	6	4	Level 4	1200	1400	1
+KS	KS	Reading	7	1	Level 1	0	614	1
+KS	KS	Reading	7	2	Level 2	615	872	1
+KS	KS	Reading	7	3	Level 3	873	1290	1
+KS	KS	Reading	7	4	Level 4	1291	1400	1
+KS	KS	Reading	8	1	Level 1	0	652	1
+KS	KS	Reading	8	2	Level 2	653	1050	1
+KS	KS	Reading	8	3	Level 3	1051	1335	1
+KS	KS	Reading	8	4	Level 4	1336	1400	1
+KS	KS	Reading	9	1	Level 1	0	725	0
+KS	KS	Reading	9	2	Level 2	726	1146	0
+KS	KS	Reading	9	3	Level 3	1147	1340	0
+KS	KS	Reading	9	4	Level 4	1341	1400	0
+KS	KS	Reading	10	1	Level 1	0	793	0
+KS	KS	Reading	10	2	Level 2	794	1187	0
+KS	KS	Reading	10	3	Level 3	1188	1344	0
+KS	KS	Reading	10	4	Level 4	1345	1400	0
+KS	KS	Reading	11	1	Level 1	0	841	0
+KS	KS	Reading	11	2	Level 2	842	1216	0
+KS	KS	Reading	11	3	Level 3	1217	1345	0
+KS	KS	Reading	11	4	Level 4	1346	1400	0
+KS	KS	Reading	12	1	Level 1	0	878	0
+KS	KS	Reading	12	2	Level 2	879	1263	0
+KS	KS	Reading	12	3	Level 3	1264	1346	0
+KS	KS	Reading	12	4	Level 4	1347	1400	0
+KY	KY	Math	1	1	Novice	0	360	0
+KY	KY	Math	1	2	Apprentice	361	449	0
+KY	KY	Math	1	3	Proficient	450	549	0
+KY	KY	Math	1	4	Distinguished	550	1400	0
+KY	KY	Math	2	1	Novice	0	477	0
+KY	KY	Math	2	2	Apprentice	478	553	0
+KY	KY	Math	2	3	Proficient	554	642	0
+KY	KY	Math	2	4	Distinguished	643	1400	0
+KY	KY	Math	3	1	Novice	0	568	1
+KY	KY	Math	3	2	Apprentice	569	649	1
+KY	KY	Math	3	3	Proficient	650	723	1
+KY	KY	Math	3	4	Distinguished	724	1400	1
+KY	KY	Math	4	1	Novice	0	623	1
+KY	KY	Math	4	2	Apprentice	624	719	1
+KY	KY	Math	4	3	Proficient	720	787	1
+KY	KY	Math	4	4	Distinguished	788	1400	1
+KY	KY	Math	5	1	Novice	0	646	1
+KY	KY	Math	5	2	Apprentice	647	769	1
+KY	KY	Math	5	3	Proficient	770	839	1
+KY	KY	Math	5	4	Distinguished	840	1400	1
+KY	KY	Math	6	1	Novice	0	673	1
+KY	KY	Math	6	2	Apprentice	674	781	1
+KY	KY	Math	6	3	Proficient	782	871	1
+KY	KY	Math	6	4	Distinguished	872	1400	1
+KY	KY	Math	7	1	Novice	0	704	1
+KY	KY	Math	7	2	Apprentice	705	812	1
+KY	KY	Math	7	3	Proficient	813	888	1
+KY	KY	Math	7	4	Distinguished	889	1400	1
+KY	KY	Math	8	1	Novice	0	725	1
+KY	KY	Math	8	2	Apprentice	726	828	1
+KY	KY	Math	8	3	Proficient	829	908	1
+KY	KY	Math	8	4	Distinguished	909	1400	1
+KY	KY	Math	9	1	Novice	0	736	0
+KY	KY	Math	9	2	Apprentice	737	828	0
+KY	KY	Math	9	3	Proficient	829	911	0
+KY	KY	Math	9	4	Distinguished	912	1400	0
+KY	KY	Math	10	1	Novice	0	739	0
+KY	KY	Math	10	2	Apprentice	740	832	0
+KY	KY	Math	10	3	Proficient	833	916	0
+KY	KY	Math	10	4	Distinguished	917	1400	0
+KY	KY	Math	11	1	Novice	0	752	0
+KY	KY	Math	11	2	Apprentice	753	846	0
+KY	KY	Math	11	3	Proficient	847	933	0
+KY	KY	Math	11	4	Distinguished	934	1400	0
+KY	KY	Math	12	1	Novice	0	761	0
+KY	KY	Math	12	2	Apprentice	762	863	0
+KY	KY	Math	12	3	Proficient	864	939	0
+KY	KY	Math	12	4	Distinguished	940	1400	0
+KY	KY	Reading	1	1	Novice	0	95	0
+KY	KY	Reading	1	2	Apprentice	96	167	0
+KY	KY	Reading	1	3	Proficient	168	262	0
+KY	KY	Reading	1	4	Distinguished	263	1400	0
+KY	KY	Reading	2	1	Novice	0	239	0
+KY	KY	Reading	2	2	Apprentice	240	323	0
+KY	KY	Reading	2	3	Proficient	324	432	0
+KY	KY	Reading	2	4	Distinguished	433	1400	0
+KY	KY	Reading	3	1	Novice	0	336	1
+KY	KY	Reading	3	2	Apprentice	337	433	1
+KY	KY	Reading	3	3	Proficient	434	552	1
+KY	KY	Reading	3	4	Distinguished	553	1400	1
+KY	KY	Reading	4	1	Novice	0	421	1
+KY	KY	Reading	4	2	Apprentice	422	530	1
+KY	KY	Reading	4	3	Proficient	531	680	1
+KY	KY	Reading	4	4	Distinguished	681	1400	1
+KY	KY	Reading	5	1	Novice	0	510	1
+KY	KY	Reading	5	2	Apprentice	511	600	1
+KY	KY	Reading	5	3	Proficient	601	804	1
+KY	KY	Reading	5	4	Distinguished	805	1400	1
+KY	KY	Reading	6	1	Novice	0	562	1
+KY	KY	Reading	6	2	Apprentice	563	682	1
+KY	KY	Reading	6	3	Proficient	683	939	1
+KY	KY	Reading	6	4	Distinguished	940	1400	1
+KY	KY	Reading	7	1	Novice	0	603	1
+KY	KY	Reading	7	2	Apprentice	604	778	1
+KY	KY	Reading	7	3	Proficient	779	1068	1
+KY	KY	Reading	7	4	Distinguished	1069	1400	1
+KY	KY	Reading	8	1	Novice	0	685	1
+KY	KY	Reading	8	2	Apprentice	686	890	1
+KY	KY	Reading	8	3	Proficient	891	1186	1
+KY	KY	Reading	8	4	Distinguished	1187	1400	1
+KY	KY	Reading	9	1	Novice	0	803	0
+KY	KY	Reading	9	2	Apprentice	804	965	0
+KY	KY	Reading	9	3	Proficient	966	1255	0
+KY	KY	Reading	9	4	Distinguished	1256	1400	0
+KY	KY	Reading	10	1	Novice	0	843	0
+KY	KY	Reading	10	2	Apprentice	844	1015	0
+KY	KY	Reading	10	3	Proficient	1016	1296	0
+KY	KY	Reading	10	4	Distinguished	1297	1400	0
+KY	KY	Reading	11	1	Novice	0	881	0
+KY	KY	Reading	11	2	Apprentice	882	1077	0
+KY	KY	Reading	11	3	Proficient	1078	1312	0
+KY	KY	Reading	11	4	Distinguished	1313	1400	0
+KY	KY	Reading	12	1	Novice	0	907	0
+KY	KY	Reading	12	2	Apprentice	908	1149	0
+KY	KY	Reading	12	3	Proficient	1150	1325	0
+KY	KY	Reading	12	4	Distinguished	1326	1400	0
+LA	LA	Math	1	1	Level 1	0	297	0
+LA	LA	Math	1	2	Level 2	298	381	0
+LA	LA	Math	1	3	Level 3	382	448	0
+LA	LA	Math	1	4	Level 4	449	569	0
+LA	LA	Math	1	5	Level 5	570	1400	0
+LA	LA	Math	2	1	Level 1	0	422	0
+LA	LA	Math	2	2	Level 2	423	497	0
+LA	LA	Math	2	3	Level 3	498	557	0
+LA	LA	Math	2	4	Level 4	558	659	0
+LA	LA	Math	2	5	Level 5	660	1400	0
+LA	LA	Math	3	1	Level 1	0	503	1
+LA	LA	Math	3	2	Level 2	504	588	1
+LA	LA	Math	3	3	Level 3	589	648	1
+LA	LA	Math	3	4	Level 4	649	742	1
+LA	LA	Math	3	5	Level 5	743	1400	1
+LA	LA	Math	4	1	Level 1	0	561	1
+LA	LA	Math	4	2	Level 2	562	661	1
+LA	LA	Math	4	3	Level 3	662	735	1
+LA	LA	Math	4	4	Level 4	736	850	1
+LA	LA	Math	4	5	Level 5	851	1400	1
+LA	LA	Math	5	1	Level 1	0	613	1
+LA	LA	Math	5	2	Level 2	614	720	1
+LA	LA	Math	5	3	Level 3	721	804	1
+LA	LA	Math	5	4	Level 4	805	901	1
+LA	LA	Math	5	5	Level 5	902	1400	1
+LA	LA	Math	6	1	Level 1	0	649	1
+LA	LA	Math	6	2	Level 2	650	756	1
+LA	LA	Math	6	3	Level 3	757	826	1
+LA	LA	Math	6	4	Level 4	827	925	1
+LA	LA	Math	6	5	Level 5	926	1400	1
+LA	LA	Math	7	1	Level 1	0	686	1
+LA	LA	Math	7	2	Level 2	687	777	1
+LA	LA	Math	7	3	Level 3	778	860	1
+LA	LA	Math	7	4	Level 4	861	960	1
+LA	LA	Math	7	5	Level 5	961	1400	1
+LA	LA	Math	8	1	Level 1	0	738	1
+LA	LA	Math	8	2	Level 2	739	815	1
+LA	LA	Math	8	3	Level 3	816	875	1
+LA	LA	Math	8	4	Level 4	876	1007	1
+LA	LA	Math	8	5	Level 5	1008	1400	1
+LA	LA	Math	9	1	Level 1	0	747	0
+LA	LA	Math	9	2	Level 2	748	819	0
+LA	LA	Math	9	3	Level 3	820	877	0
+LA	LA	Math	9	4	Level 4	878	1008	0
+LA	LA	Math	9	5	Level 5	1009	1400	0
+LA	LA	Math	10	1	Level 1	0	748	0
+LA	LA	Math	10	2	Level 2	749	825	0
+LA	LA	Math	10	3	Level 3	826	883	0
+LA	LA	Math	10	4	Level 4	884	1024	0
+LA	LA	Math	10	5	Level 5	1025	1400	0
+LA	LA	Math	11	1	Level 1	0	769	0
+LA	LA	Math	11	2	Level 2	770	839	0
+LA	LA	Math	11	3	Level 3	840	900	0
+LA	LA	Math	11	4	Level 4	901	1036	0
+LA	LA	Math	11	5	Level 5	1037	1400	0
+LA	LA	Math	12	1	Level 1	0	783	0
+LA	LA	Math	12	2	Level 2	784	855	0
+LA	LA	Math	12	3	Level 3	856	910	0
+LA	LA	Math	12	4	Level 4	911	1076	0
+LA	LA	Math	12	5	Level 5	1077	1400	0
+LA	LA	Reading	1	1	Level 1	0	85	0
+LA	LA	Reading	1	2	Level 2	86	134	0
+LA	LA	Reading	1	3	Level 3	135	214	0
+LA	LA	Reading	1	4	Level 4	215	460	0
+LA	LA	Reading	1	5	Level 5	461	1400	0
+LA	LA	Reading	2	1	Level 1	0	203	0
+LA	LA	Reading	2	2	Level 2	204	301	0
+LA	LA	Reading	2	3	Level 3	302	391	0
+LA	LA	Reading	2	4	Level 4	392	658	0
+LA	LA	Reading	2	5	Level 5	659	1400	0
+LA	LA	Reading	3	1	Level 1	0	303	1
+LA	LA	Reading	3	2	Level 2	304	412	1
+LA	LA	Reading	3	3	Level 3	413	513	1
+LA	LA	Reading	3	4	Level 4	514	923	1
+LA	LA	Reading	3	5	Level 5	924	1400	1
+LA	LA	Reading	4	1	Level 1	0	334	1
+LA	LA	Reading	4	2	Level 2	335	441	1
+LA	LA	Reading	4	3	Level 3	442	570	1
+LA	LA	Reading	4	4	Level 4	571	1019	1
+LA	LA	Reading	4	5	Level 5	1020	1400	1
+LA	LA	Reading	5	1	Level 1	0	371	1
+LA	LA	Reading	5	2	Level 2	372	507	1
+LA	LA	Reading	5	3	Level 3	508	662	1
+LA	LA	Reading	5	4	Level 4	663	1178	1
+LA	LA	Reading	5	5	Level 5	1179	1400	1
+LA	LA	Reading	6	1	Level 1	0	416	1
+LA	LA	Reading	6	2	Level 2	417	560	1
+LA	LA	Reading	6	3	Level 3	561	776	1
+LA	LA	Reading	6	4	Level 4	777	1251	1
+LA	LA	Reading	6	5	Level 5	1252	1400	1
+LA	LA	Reading	7	1	Level 1	0	466	1
+LA	LA	Reading	7	2	Level 2	467	614	1
+LA	LA	Reading	7	3	Level 3	615	829	1
+LA	LA	Reading	7	4	Level 4	830	1292	1
+LA	LA	Reading	7	5	Level 5	1293	1400	1
+LA	LA	Reading	8	1	Level 1	0	526	1
+LA	LA	Reading	8	2	Level 2	527	678	1
+LA	LA	Reading	8	3	Level 3	679	908	1
+LA	LA	Reading	8	4	Level 4	909	1320	1
+LA	LA	Reading	8	5	Level 5	1321	1400	1
+LA	LA	Reading	9	1	Level 1	0	596	1
+LA	LA	Reading	9	2	Level 2	597	825	1
+LA	LA	Reading	9	3	Level 3	826	1035	1
+LA	LA	Reading	9	4	Level 4	1036	1324	1
+LA	LA	Reading	9	5	Level 5	1325	1400	1
+LA	LA	Reading	10	1	Level 1	0	684	1
+LA	LA	Reading	10	2	Level 2	685	900	1
+LA	LA	Reading	10	3	Level 3	901	1075	1
+LA	LA	Reading	10	4	Level 4	1076	1325	1
+LA	LA	Reading	10	5	Level 5	1326	1400	1
+LA	LA	Reading	11	1	Level 1	0	715	0
+LA	LA	Reading	11	2	Level 2	716	921	0
+LA	LA	Reading	11	3	Level 3	922	1130	0
+LA	LA	Reading	11	4	Level 4	1131	1328	0
+LA	LA	Reading	11	5	Level 5	1329	1400	0
+LA	LA	Reading	12	1	Level 1	0	761	0
+LA	LA	Reading	12	2	Level 2	762	968	0
+LA	LA	Reading	12	3	Level 3	969	1190	0
+LA	LA	Reading	12	4	Level 4	1191	1340	0
+LA	LA	Reading	12	5	Level 5	1341	1400	0
+MA	MA	Math	1	1	Level 1	0	297	0
+MA	MA	Math	1	2	Level 2	298	381	0
+MA	MA	Math	1	3	Level 3	382	448	0
+MA	MA	Math	1	4	Level 4	449	569	0
+MA	MA	Math	1	5	Level 5	570	1400	0
+MA	MA	Math	2	1	Level 1	0	422	0
+MA	MA	Math	2	2	Level 2	423	497	0
+MA	MA	Math	2	3	Level 3	498	557	0
+MA	MA	Math	2	4	Level 4	558	659	0
+MA	MA	Math	2	5	Level 5	660	1400	0
+MA	MA	Math	3	1	Level 1	0	503	1
+MA	MA	Math	3	2	Level 2	504	588	1
+MA	MA	Math	3	3	Level 3	589	648	1
+MA	MA	Math	3	4	Level 4	649	742	1
+MA	MA	Math	3	5	Level 5	743	1400	1
+MA	MA	Math	4	1	Level 1	0	561	1
+MA	MA	Math	4	2	Level 2	562	661	1
+MA	MA	Math	4	3	Level 3	662	735	1
+MA	MA	Math	4	4	Level 4	736	850	1
+MA	MA	Math	4	5	Level 5	851	1400	1
+MA	MA	Math	5	1	Level 1	0	613	1
+MA	MA	Math	5	2	Level 2	614	720	1
+MA	MA	Math	5	3	Level 3	721	804	1
+MA	MA	Math	5	4	Level 4	805	901	1
+MA	MA	Math	5	5	Level 5	902	1400	1
+MA	MA	Math	6	1	Level 1	0	649	1
+MA	MA	Math	6	2	Level 2	650	756	1
+MA	MA	Math	6	3	Level 3	757	826	1
+MA	MA	Math	6	4	Level 4	827	925	1
+MA	MA	Math	6	5	Level 5	926	1400	1
+MA	MA	Math	7	1	Level 1	0	686	1
+MA	MA	Math	7	2	Level 2	687	777	1
+MA	MA	Math	7	3	Level 3	778	860	1
+MA	MA	Math	7	4	Level 4	861	960	1
+MA	MA	Math	7	5	Level 5	961	1400	1
+MA	MA	Math	8	1	Level 1	0	738	1
+MA	MA	Math	8	2	Level 2	739	815	1
+MA	MA	Math	8	3	Level 3	816	875	1
+MA	MA	Math	8	4	Level 4	876	1007	1
+MA	MA	Math	8	5	Level 5	1008	1400	1
+MA	MA	Math	9	1	Level 1	0	747	0
+MA	MA	Math	9	2	Level 2	748	819	0
+MA	MA	Math	9	3	Level 3	820	877	0
+MA	MA	Math	9	4	Level 4	878	1008	0
+MA	MA	Math	9	5	Level 5	1009	1400	0
+MA	MA	Math	10	1	Level 1	0	748	0
+MA	MA	Math	10	2	Level 2	749	825	0
+MA	MA	Math	10	3	Level 3	826	883	0
+MA	MA	Math	10	4	Level 4	884	1024	0
+MA	MA	Math	10	5	Level 5	1025	1400	0
+MA	MA	Math	11	1	Level 1	0	769	0
+MA	MA	Math	11	2	Level 2	770	839	0
+MA	MA	Math	11	3	Level 3	840	900	0
+MA	MA	Math	11	4	Level 4	901	1036	0
+MA	MA	Math	11	5	Level 5	1037	1400	0
+MA	MA	Math	12	1	Level 1	0	783	0
+MA	MA	Math	12	2	Level 2	784	855	0
+MA	MA	Math	12	3	Level 3	856	910	0
+MA	MA	Math	12	4	Level 4	911	1076	0
+MA	MA	Math	12	5	Level 5	1077	1400	0
+MA	MA	Reading	1	1	Level 1	0	85	0
+MA	MA	Reading	1	2	Level 2	86	134	0
+MA	MA	Reading	1	3	Level 3	135	214	0
+MA	MA	Reading	1	4	Level 4	215	460	0
+MA	MA	Reading	1	5	Level 5	461	1400	0
+MA	MA	Reading	2	1	Level 1	0	203	0
+MA	MA	Reading	2	2	Level 2	204	301	0
+MA	MA	Reading	2	3	Level 3	302	391	0
+MA	MA	Reading	2	4	Level 4	392	658	0
+MA	MA	Reading	2	5	Level 5	659	1400	0
+MA	MA	Reading	3	1	Level 1	0	303	1
+MA	MA	Reading	3	2	Level 2	304	412	1
+MA	MA	Reading	3	3	Level 3	413	513	1
+MA	MA	Reading	3	4	Level 4	514	923	1
+MA	MA	Reading	3	5	Level 5	924	1400	1
+MA	MA	Reading	4	1	Level 1	0	334	1
+MA	MA	Reading	4	2	Level 2	335	441	1
+MA	MA	Reading	4	3	Level 3	442	570	1
+MA	MA	Reading	4	4	Level 4	571	1019	1
+MA	MA	Reading	4	5	Level 5	1020	1400	1
+MA	MA	Reading	5	1	Level 1	0	371	1
+MA	MA	Reading	5	2	Level 2	372	507	1
+MA	MA	Reading	5	3	Level 3	508	662	1
+MA	MA	Reading	5	4	Level 4	663	1178	1
+MA	MA	Reading	5	5	Level 5	1179	1400	1
+MA	MA	Reading	6	1	Level 1	0	416	1
+MA	MA	Reading	6	2	Level 2	417	560	1
+MA	MA	Reading	6	3	Level 3	561	776	1
+MA	MA	Reading	6	4	Level 4	777	1251	1
+MA	MA	Reading	6	5	Level 5	1252	1400	1
+MA	MA	Reading	7	1	Level 1	0	466	1
+MA	MA	Reading	7	2	Level 2	467	614	1
+MA	MA	Reading	7	3	Level 3	615	829	1
+MA	MA	Reading	7	4	Level 4	830	1292	1
+MA	MA	Reading	7	5	Level 5	1293	1400	1
+MA	MA	Reading	8	1	Level 1	0	526	1
+MA	MA	Reading	8	2	Level 2	527	678	1
+MA	MA	Reading	8	3	Level 3	679	908	1
+MA	MA	Reading	8	4	Level 4	909	1320	1
+MA	MA	Reading	8	5	Level 5	1321	1400	1
+MA	MA	Reading	9	1	Level 1	0	596	1
+MA	MA	Reading	9	2	Level 2	597	825	1
+MA	MA	Reading	9	3	Level 3	826	1035	1
+MA	MA	Reading	9	4	Level 4	1036	1324	1
+MA	MA	Reading	9	5	Level 5	1325	1400	1
+MA	MA	Reading	10	1	Level 1	0	684	1
+MA	MA	Reading	10	2	Level 2	685	900	1
+MA	MA	Reading	10	3	Level 3	901	1075	1
+MA	MA	Reading	10	4	Level 4	1076	1325	1
+MA	MA	Reading	10	5	Level 5	1326	1400	1
+MA	MA	Reading	11	1	Level 1	0	715	0
+MA	MA	Reading	11	2	Level 2	716	921	0
+MA	MA	Reading	11	3	Level 3	922	1130	0
+MA	MA	Reading	11	4	Level 4	1131	1328	0
+MA	MA	Reading	11	5	Level 5	1329	1400	0
+MA	MA	Reading	12	1	Level 1	0	761	0
+MA	MA	Reading	12	2	Level 2	762	968	0
+MA	MA	Reading	12	3	Level 3	969	1190	0
+MA	MA	Reading	12	4	Level 4	1191	1340	0
+MA	MA	Reading	12	5	Level 5	1341	1400	0
+MD	MD	Math	1	1	Level 1	0	303	0
+MD	MD	Math	1	2	Level 2	304	384	0
+MD	MD	Math	1	3	Level 3	385	453	0
+MD	MD	Math	1	4	Level 4	454	561	0
+MD	MD	Math	1	5	Level 5	562	1400	0
+MD	MD	Math	2	1	Level 1	0	424	0
+MD	MD	Math	2	2	Level 2	425	498	0
+MD	MD	Math	2	3	Level 3	499	559	0
+MD	MD	Math	2	4	Level 4	560	657	0
+MD	MD	Math	2	5	Level 5	658	1400	0
+MD	MD	Math	3	1	Level 1	0	503	1
+MD	MD	Math	3	2	Level 2	504	588	1
+MD	MD	Math	3	3	Level 3	589	648	1
+MD	MD	Math	3	4	Level 4	649	742	1
+MD	MD	Math	3	5	Level 5	743	1400	1
+MD	MD	Math	4	1	Level 1	0	561	1
+MD	MD	Math	4	2	Level 2	562	661	1
+MD	MD	Math	4	3	Level 3	662	735	1
+MD	MD	Math	4	4	Level 4	736	850	1
+MD	MD	Math	4	5	Level 5	851	1400	1
+MD	MD	Math	5	1	Level 1	0	613	1
+MD	MD	Math	5	2	Level 2	614	720	1
+MD	MD	Math	5	3	Level 3	721	804	1
+MD	MD	Math	5	4	Level 4	805	901	1
+MD	MD	Math	5	5	Level 5	902	1400	1
+MD	MD	Math	6	1	Level 1	0	649	1
+MD	MD	Math	6	2	Level 2	650	756	1
+MD	MD	Math	6	3	Level 3	757	826	1
+MD	MD	Math	6	4	Level 4	827	925	1
+MD	MD	Math	6	5	Level 5	926	1400	1
+MD	MD	Math	7	1	Level 1	0	686	1
+MD	MD	Math	7	2	Level 2	687	777	1
+MD	MD	Math	7	3	Level 3	778	860	1
+MD	MD	Math	7	4	Level 4	861	960	1
+MD	MD	Math	7	5	Level 5	961	1400	1
+MD	MD	Math	8	1	Level 1	0	738	1
+MD	MD	Math	8	2	Level 2	739	815	1
+MD	MD	Math	8	3	Level 3	816	875	1
+MD	MD	Math	8	4	Level 4	876	1007	1
+MD	MD	Math	8	5	Level 5	1008	1400	1
+MD	MD	Math	9	1	Level 1	0	747	0
+MD	MD	Math	9	2	Level 2	748	819	0
+MD	MD	Math	9	3	Level 3	820	876	0
+MD	MD	Math	9	4	Level 4	877	1008	0
+MD	MD	Math	9	5	Level 5	1009	1400	0
+MD	MD	Math	10	1	Level 1	0	748	0
+MD	MD	Math	10	2	Level 2	749	825	0
+MD	MD	Math	10	3	Level 3	826	879	0
+MD	MD	Math	10	4	Level 4	880	1030	0
+MD	MD	Math	10	5	Level 5	1031	1400	0
+MD	MD	Math	11	1	Level 1	0	766	0
+MD	MD	Math	11	2	Level 2	767	839	0
+MD	MD	Math	11	3	Level 3	840	894	0
+MD	MD	Math	11	4	Level 4	895	1036	0
+MD	MD	Math	11	5	Level 5	1037	1400	0
+MD	MD	Math	12	1	Level 1	0	778	0
+MD	MD	Math	12	2	Level 2	779	851	0
+MD	MD	Math	12	3	Level 3	852	904	0
+MD	MD	Math	12	4	Level 4	905	1076	0
+MD	MD	Math	12	5	Level 5	1077	1400	0
+MD	MD	Reading	1	1	Level 1	0	86	0
+MD	MD	Reading	1	2	Level 2	87	148	0
+MD	MD	Reading	1	3	Level 3	149	225	0
+MD	MD	Reading	1	4	Level 4	226	478	0
+MD	MD	Reading	1	5	Level 5	479	1400	0
+MD	MD	Reading	2	1	Level 1	0	208	0
+MD	MD	Reading	2	2	Level 2	209	309	0
+MD	MD	Reading	2	3	Level 3	310	396	0
+MD	MD	Reading	2	4	Level 4	397	679	0
+MD	MD	Reading	2	5	Level 5	680	1400	0
+MD	MD	Reading	3	1	Level 1	0	303	1
+MD	MD	Reading	3	2	Level 2	304	412	1
+MD	MD	Reading	3	3	Level 3	413	513	1
+MD	MD	Reading	3	4	Level 4	514	923	1
+MD	MD	Reading	3	5	Level 5	924	1400	1
+MD	MD	Reading	4	1	Level 1	0	334	1
+MD	MD	Reading	4	2	Level 2	335	441	1
+MD	MD	Reading	4	3	Level 3	442	570	1
+MD	MD	Reading	4	4	Level 4	571	1019	1
+MD	MD	Reading	4	5	Level 5	1020	1400	1
+MD	MD	Reading	5	1	Level 1	0	371	1
+MD	MD	Reading	5	2	Level 2	372	507	1
+MD	MD	Reading	5	3	Level 3	508	662	1
+MD	MD	Reading	5	4	Level 4	663	1178	1
+MD	MD	Reading	5	5	Level 5	1179	1400	1
+MD	MD	Reading	6	1	Level 1	0	416	1
+MD	MD	Reading	6	2	Level 2	417	560	1
+MD	MD	Reading	6	3	Level 3	561	776	1
+MD	MD	Reading	6	4	Level 4	777	1251	1
+MD	MD	Reading	6	5	Level 5	1252	1400	1
+MD	MD	Reading	7	1	Level 1	0	466	1
+MD	MD	Reading	7	2	Level 2	467	614	1
+MD	MD	Reading	7	3	Level 3	615	829	1
+MD	MD	Reading	7	4	Level 4	830	1292	1
+MD	MD	Reading	7	5	Level 5	1293	1400	1
+MD	MD	Reading	8	1	Level 1	0	526	1
+MD	MD	Reading	8	2	Level 2	527	678	1
+MD	MD	Reading	8	3	Level 3	679	908	1
+MD	MD	Reading	8	4	Level 4	909	1320	1
+MD	MD	Reading	8	5	Level 5	1321	1400	1
+MD	MD	Reading	9	1	Level 1	0	596	1
+MD	MD	Reading	9	2	Level 2	597	825	1
+MD	MD	Reading	9	3	Level 3	826	1035	1
+MD	MD	Reading	9	4	Level 4	1036	1324	1
+MD	MD	Reading	9	5	Level 5	1325	1400	1
+MD	MD	Reading	10	1	Level 1	0	684	1
+MD	MD	Reading	10	2	Level 2	685	900	1
+MD	MD	Reading	10	3	Level 3	901	1075	1
+MD	MD	Reading	10	4	Level 4	1076	1325	1
+MD	MD	Reading	10	5	Level 5	1326	1400	1
+MD	MD	Reading	11	1	Level 1	0	720	0
+MD	MD	Reading	11	2	Level 2	721	916	0
+MD	MD	Reading	11	3	Level 3	917	1119	0
+MD	MD	Reading	11	4	Level 4	1120	1329	0
+MD	MD	Reading	11	5	Level 5	1330	1400	0
+MD	MD	Reading	12	1	Level 1	0	768	0
+MD	MD	Reading	12	2	Level 2	769	960	0
+MD	MD	Reading	12	3	Level 3	961	1183	0
+MD	MD	Reading	12	4	Level 4	1184	1340	0
+MD	MD	Reading	12	5	Level 5	1341	1400	0
+ME	ME	Math	1	1	Level 1	0	336	0
+ME	ME	Math	1	2	Level 2	337	417	0
+ME	ME	Math	1	3	Level 3	418	498	0
+ME	ME	Math	1	4	Level 4	499	1400	0
+ME	ME	Math	2	1	Level 1	0	457	0
+ME	ME	Math	2	2	Level 2	458	528	0
+ME	ME	Math	2	3	Level 3	529	601	0
+ME	ME	Math	2	4	Level 4	602	1400	0
+ME	ME	Math	3	1	Level 1	0	546	1
+ME	ME	Math	3	2	Level 2	547	620	1
+ME	ME	Math	3	3	Level 3	621	686	1
+ME	ME	Math	3	4	Level 4	687	1400	1
+ME	ME	Math	4	1	Level 1	0	602	1
+ME	ME	Math	4	2	Level 2	603	695	1
+ME	ME	Math	4	3	Level 3	696	771	1
+ME	ME	Math	4	4	Level 4	772	1400	1
+ME	ME	Math	5	1	Level 1	0	692	1
+ME	ME	Math	5	2	Level 2	693	781	1
+ME	ME	Math	5	3	Level 3	782	826	1
+ME	ME	Math	5	4	Level 4	827	1400	1
+ME	ME	Math	6	1	Level 1	0	716	1
+ME	ME	Math	6	2	Level 2	717	807	1
+ME	ME	Math	6	3	Level 3	808	859	1
+ME	ME	Math	6	4	Level 4	860	1400	1
+ME	ME	Math	7	1	Level 1	0	745	1
+ME	ME	Math	7	2	Level 2	746	830	1
+ME	ME	Math	7	3	Level 3	831	885	1
+ME	ME	Math	7	4	Level 4	886	1400	1
+ME	ME	Math	8	1	Level 1	0	783	1
+ME	ME	Math	8	2	Level 2	784	851	1
+ME	ME	Math	8	3	Level 3	852	891	1
+ME	ME	Math	8	4	Level 4	892	1400	1
+ME	ME	Math	9	1	Level 1	0	790	0
+ME	ME	Math	9	2	Level 2	791	852	0
+ME	ME	Math	9	3	Level 3	853	895	0
+ME	ME	Math	9	4	Level 4	896	1400	0
+ME	ME	Math	10	1	Level 1	0	796	0
+ME	ME	Math	10	2	Level 2	797	858	0
+ME	ME	Math	10	3	Level 3	859	900	0
+ME	ME	Math	10	4	Level 4	901	1400	0
+ME	ME	Math	11	1	Level 1	0	813	0
+ME	ME	Math	11	2	Level 2	814	873	0
+ME	ME	Math	11	3	Level 3	874	918	0
+ME	ME	Math	11	4	Level 4	919	1400	0
+ME	ME	Math	12	1	Level 1	0	826	0
+ME	ME	Math	12	2	Level 2	827	890	0
+ME	ME	Math	12	3	Level 3	891	925	0
+ME	ME	Math	12	4	Level 4	926	1400	0
+ME	ME	Reading	1	1	Level 1	0	90	0
+ME	ME	Reading	1	2	Level 2	91	165	0
+ME	ME	Reading	1	3	Level 3	166	248	0
+ME	ME	Reading	1	4	Level 4	249	1400	0
+ME	ME	Reading	2	1	Level 1	0	232	0
+ME	ME	Reading	2	2	Level 2	233	337	0
+ME	ME	Reading	2	3	Level 3	338	435	0
+ME	ME	Reading	2	4	Level 4	436	1400	0
+ME	ME	Reading	3	1	Level 1	0	332	1
+ME	ME	Reading	3	2	Level 2	333	454	1
+ME	ME	Reading	3	3	Level 3	455	561	1
+ME	ME	Reading	3	4	Level 4	562	1400	1
+ME	ME	Reading	4	1	Level 1	0	434	1
+ME	ME	Reading	4	2	Level 2	435	530	1
+ME	ME	Reading	4	3	Level 3	531	660	1
+ME	ME	Reading	4	4	Level 4	661	1400	1
+ME	ME	Reading	5	1	Level 1	0	483	1
+ME	ME	Reading	5	2	Level 2	484	599	1
+ME	ME	Reading	5	3	Level 3	600	852	1
+ME	ME	Reading	5	4	Level 4	853	1400	1
+ME	ME	Reading	6	1	Level 1	0	499	1
+ME	ME	Reading	6	2	Level 2	500	691	1
+ME	ME	Reading	6	3	Level 3	692	1015	1
+ME	ME	Reading	6	4	Level 4	1016	1400	1
+ME	ME	Reading	7	1	Level 1	0	576	1
+ME	ME	Reading	7	2	Level 2	577	772	1
+ME	ME	Reading	7	3	Level 3	773	1168	1
+ME	ME	Reading	7	4	Level 4	1169	1400	1
+ME	ME	Reading	8	1	Level 1	0	589	1
+ME	ME	Reading	8	2	Level 2	590	857	1
+ME	ME	Reading	8	3	Level 3	858	1249	1
+ME	ME	Reading	8	4	Level 4	1250	1400	1
+ME	ME	Reading	9	1	Level 1	0	661	0
+ME	ME	Reading	9	2	Level 2	662	918	0
+ME	ME	Reading	9	3	Level 3	919	1291	0
+ME	ME	Reading	9	4	Level 4	1292	1400	0
+ME	ME	Reading	10	1	Level 1	0	674	0
+ME	ME	Reading	10	2	Level 2	675	957	0
+ME	ME	Reading	10	3	Level 3	958	1314	0
+ME	ME	Reading	10	4	Level 4	1315	1400	0
+ME	ME	Reading	11	1	Level 1	0	715	0
+ME	ME	Reading	11	2	Level 2	716	992	0
+ME	ME	Reading	11	3	Level 3	993	1321	0
+ME	ME	Reading	11	4	Level 4	1322	1400	0
+ME	ME	Reading	12	1	Level 1	0	761	0
+ME	ME	Reading	12	2	Level 2	762	1079	0
+ME	ME	Reading	12	3	Level 3	1080	1332	0
+ME	ME	Reading	12	4	Level 4	1333	1400	0
+MI	MI	Math	1	1	Not Proficient	0	353	0
+MI	MI	Math	1	2	Partially Proficient	354	422	0
+MI	MI	Math	1	3	Proficient	423	486	0
+MI	MI	Math	1	4	Advanced	487	1400	0
+MI	MI	Math	2	1	Not Proficient	0	472	0
+MI	MI	Math	2	2	Partially Proficient	473	532	0
+MI	MI	Math	2	3	Proficient	533	592	0
+MI	MI	Math	2	4	Advanced	593	1400	0
+MI	MI	Math	3	1	Not Proficient	0	563	1
+MI	MI	Math	3	2	Partially Proficient	564	623	1
+MI	MI	Math	3	3	Proficient	624	678	1
+MI	MI	Math	3	4	Advanced	679	1400	1
+MI	MI	Math	4	1	Not Proficient	0	610	1
+MI	MI	Math	4	2	Partially Proficient	611	695	1
+MI	MI	Math	4	3	Proficient	696	755	1
+MI	MI	Math	4	4	Advanced	756	1400	1
+MI	MI	Math	5	1	Not Proficient	0	695	1
+MI	MI	Math	5	2	Partially Proficient	696	767	1
+MI	MI	Math	5	3	Proficient	768	812	1
+MI	MI	Math	5	4	Advanced	813	1400	1
+MI	MI	Math	6	1	Not Proficient	0	729	1
+MI	MI	Math	6	2	Partially Proficient	730	806	1
+MI	MI	Math	6	3	Proficient	807	849	1
+MI	MI	Math	6	4	Advanced	850	1400	1
+MI	MI	Math	7	1	Not Proficient	0	743	1
+MI	MI	Math	7	2	Partially Proficient	744	826	1
+MI	MI	Math	7	3	Proficient	827	872	1
+MI	MI	Math	7	4	Advanced	873	1400	1
+MI	MI	Math	8	1	Not Proficient	0	784	1
+MI	MI	Math	8	2	Partially Proficient	785	851	1
+MI	MI	Math	8	3	Proficient	852	890	1
+MI	MI	Math	8	4	Advanced	891	1400	1
+MI	MI	Math	9	1	Not Proficient	0	793	0
+MI	MI	Math	9	2	Partially Proficient	794	852	0
+MI	MI	Math	9	3	Proficient	853	891	0
+MI	MI	Math	9	4	Advanced	892	1400	0
+MI	MI	Math	10	1	Not Proficient	0	799	0
+MI	MI	Math	10	2	Partially Proficient	800	858	0
+MI	MI	Math	10	3	Proficient	859	897	0
+MI	MI	Math	10	4	Advanced	898	1400	0
+MI	MI	Math	11	1	Not Proficient	0	814	0
+MI	MI	Math	11	2	Partially Proficient	815	873	0
+MI	MI	Math	11	3	Proficient	874	914	0
+MI	MI	Math	11	4	Advanced	915	1400	0
+MI	MI	Math	12	1	Not Proficient	0	889	0
+MI	MI	Math	12	2	Partially Proficient	890	890	0
+MI	MI	Math	12	3	Proficient	891	922	0
+MI	MI	Math	12	4	Advanced	923	1400	0
+MI	MI	Reading	1	1	Not Proficient	0	90	0
+MI	MI	Reading	1	2	Partially Proficient	91	156	0
+MI	MI	Reading	1	3	Proficient	157	229	0
+MI	MI	Reading	1	4	Advanced	230	1400	0
+MI	MI	Reading	2	1	Not Proficient	0	232	0
+MI	MI	Reading	2	2	Partially Proficient	233	326	0
+MI	MI	Reading	2	3	Proficient	327	411	0
+MI	MI	Reading	2	4	Advanced	412	1400	0
+MI	MI	Reading	3	1	Not Proficient	0	332	1
+MI	MI	Reading	3	2	Partially Proficient	333	442	1
+MI	MI	Reading	3	3	Proficient	443	536	1
+MI	MI	Reading	3	4	Advanced	537	1400	1
+MI	MI	Reading	4	1	Not Proficient	0	447	1
+MI	MI	Reading	4	2	Partially Proficient	448	536	1
+MI	MI	Reading	4	3	Proficient	537	656	1
+MI	MI	Reading	4	4	Advanced	657	1400	1
+MI	MI	Reading	5	1	Not Proficient	0	503	1
+MI	MI	Reading	5	2	Partially Proficient	504	609	1
+MI	MI	Reading	5	3	Proficient	610	827	1
+MI	MI	Reading	5	4	Advanced	828	1400	1
+MI	MI	Reading	6	1	Not Proficient	0	567	1
+MI	MI	Reading	6	2	Partially Proficient	568	759	1
+MI	MI	Reading	6	3	Proficient	760	1020	1
+MI	MI	Reading	6	4	Advanced	1021	1400	1
+MI	MI	Reading	7	1	Not Proficient	0	589	1
+MI	MI	Reading	7	2	Partially Proficient	590	780	1
+MI	MI	Reading	7	3	Proficient	781	1126	1
+MI	MI	Reading	7	4	Advanced	1127	1400	1
+MI	MI	Reading	8	1	Not Proficient	0	642	1
+MI	MI	Reading	8	2	Partially Proficient	643	889	1
+MI	MI	Reading	8	3	Proficient	890	1234	1
+MI	MI	Reading	8	4	Advanced	1235	1400	1
+MI	MI	Reading	9	1	Not Proficient	0	714	0
+MI	MI	Reading	9	2	Partially Proficient	715	946	0
+MI	MI	Reading	9	3	Proficient	947	1284	0
+MI	MI	Reading	9	4	Advanced	1285	1400	0
+MI	MI	Reading	10	1	Not Proficient	0	737	0
+MI	MI	Reading	10	2	Partially Proficient	738	980	0
+MI	MI	Reading	10	3	Proficient	981	1311	0
+MI	MI	Reading	10	4	Advanced	1312	1400	0
+MI	MI	Reading	11	1	Not Proficient	0	791	0
+MI	MI	Reading	11	2	Partially Proficient	792	1044	0
+MI	MI	Reading	11	3	Proficient	1045	1319	0
+MI	MI	Reading	11	4	Advanced	1320	1400	0
+MI	MI	Reading	12	1	Not Proficient	0	834	0
+MI	MI	Reading	12	2	Partially Proficient	835	1125	0
+MI	MI	Reading	12	3	Proficient	1126	1330	0
+MI	MI	Reading	12	4	Advanced	1331	1400	0
+MN	MN	Math	1	1	Does Not Meet Standards	0	331	0
+MN	MN	Math	1	2	Partially Meets Standards	332	392	0
+MN	MN	Math	1	3	Meets Standards	393	491	0
+MN	MN	Math	1	4	Exceeds Standards	492	1400	0
+MN	MN	Math	2	1	Does Not Meet Standards	0	452	0
+MN	MN	Math	2	2	Partially Meets Standards	453	507	0
+MN	MN	Math	2	3	Meets Standards	508	595	0
+MN	MN	Math	2	4	Exceeds Standards	596	1400	0
+MN	MN	Math	3	1	Does Not Meet Standards	0	539	1
+MN	MN	Math	3	2	Partially Meets Standards	540	595	1
+MN	MN	Math	3	3	Meets Standards	596	676	1
+MN	MN	Math	3	4	Exceeds Standards	677	1400	1
+MN	MN	Math	4	1	Does Not Meet Standards	0	612	1
+MN	MN	Math	4	2	Partially Meets Standards	613	665	1
+MN	MN	Math	4	3	Meets Standards	666	746	1
+MN	MN	Math	4	4	Exceeds Standards	747	1400	1
+MN	MN	Math	5	1	Does Not Meet Standards	0	677	1
+MN	MN	Math	5	2	Partially Meets Standards	678	757	1
+MN	MN	Math	5	3	Meets Standards	758	835	1
+MN	MN	Math	5	4	Exceeds Standards	836	1400	1
+MN	MN	Math	6	1	Does Not Meet Standards	0	716	1
+MN	MN	Math	6	2	Partially Meets Standards	717	790	1
+MN	MN	Math	6	3	Meets Standards	791	869	1
+MN	MN	Math	6	4	Exceeds Standards	870	1400	1
+MN	MN	Math	7	1	Does Not Meet Standards	0	739	1
+MN	MN	Math	7	2	Partially Meets Standards	740	830	1
+MN	MN	Math	7	3	Meets Standards	831	893	1
+MN	MN	Math	7	4	Exceeds Standards	894	1400	1
+MN	MN	Math	8	1	Does Not Meet Standards	0	763	1
+MN	MN	Math	8	2	Partially Meets Standards	764	845	1
+MN	MN	Math	8	3	Meets Standards	846	903	1
+MN	MN	Math	8	4	Exceeds Standards	904	1400	1
+MN	MN	Math	9	1	Does Not Meet Standards	0	775	0
+MN	MN	Math	9	2	Partially Meets Standards	776	848	0
+MN	MN	Math	9	3	Meets Standards	849	911	0
+MN	MN	Math	9	4	Exceeds Standards	912	1400	0
+MN	MN	Math	10	1	Does Not Meet Standards	0	779	0
+MN	MN	Math	10	2	Partially Meets Standards	780	855	0
+MN	MN	Math	10	3	Meets Standards	856	921	0
+MN	MN	Math	10	4	Exceeds Standards	922	1400	0
+MN	MN	Math	11	1	Does Not Meet Standards	0	800	0
+MN	MN	Math	11	2	Partially Meets Standards	801	869	0
+MN	MN	Math	11	3	Meets Standards	870	938	0
+MN	MN	Math	11	4	Exceeds Standards	939	1400	0
+MN	MN	Math	12	1	Does Not Meet Standards	0	813	0
+MN	MN	Math	12	2	Partially Meets Standards	814	887	0
+MN	MN	Math	12	3	Meets Standards	888	945	0
+MN	MN	Math	12	4	Exceeds Standards	946	1400	0
+MN	MN	Reading	1	1	Does Not Meet Standards	0	96	0
+MN	MN	Reading	1	2	Partially Meets Standards	97	148	0
+MN	MN	Reading	1	3	Meets Standards	149	293	0
+MN	MN	Reading	1	4	Exceeds Standards	294	1400	0
+MN	MN	Reading	2	1	Does Not Meet Standards	0	249	0
+MN	MN	Reading	2	2	Partially Meets Standards	250	318	0
+MN	MN	Reading	2	3	Meets Standards	319	479	0
+MN	MN	Reading	2	4	Exceeds Standards	480	1400	0
+MN	MN	Reading	3	1	Does Not Meet Standards	0	349	1
+MN	MN	Reading	3	2	Partially Meets Standards	350	428	1
+MN	MN	Reading	3	3	Meets Standards	429	614	1
+MN	MN	Reading	3	4	Exceeds Standards	615	1400	1
+MN	MN	Reading	4	1	Does Not Meet Standards	0	424	1
+MN	MN	Reading	4	2	Partially Meets Standards	425	529	1
+MN	MN	Reading	4	3	Meets Standards	530	750	1
+MN	MN	Reading	4	4	Exceeds Standards	751	1400	1
+MN	MN	Reading	5	1	Does Not Meet Standards	0	462	1
+MN	MN	Reading	5	2	Partially Meets Standards	463	579	1
+MN	MN	Reading	5	3	Meets Standards	580	875	1
+MN	MN	Reading	5	4	Exceeds Standards	876	1400	1
+MN	MN	Reading	6	1	Does Not Meet Standards	0	563	1
+MN	MN	Reading	6	2	Partially Meets Standards	564	693	1
+MN	MN	Reading	6	3	Meets Standards	694	975	1
+MN	MN	Reading	6	4	Exceeds Standards	976	1400	1
+MN	MN	Reading	7	1	Does Not Meet Standards	0	664	1
+MN	MN	Reading	7	2	Partially Meets Standards	665	840	1
+MN	MN	Reading	7	3	Meets Standards	841	1158	1
+MN	MN	Reading	7	4	Exceeds Standards	1159	1400	1
+MN	MN	Reading	8	1	Does Not Meet Standards	0	733	1
+MN	MN	Reading	8	2	Partially Meets Standards	734	905	1
+MN	MN	Reading	8	3	Meets Standards	906	1243	1
+MN	MN	Reading	8	4	Exceeds Standards	1244	1400	1
+MN	MN	Reading	9	1	Does Not Meet Standards	0	848	0
+MN	MN	Reading	9	2	Partially Meets Standards	849	976	0
+MN	MN	Reading	9	3	Meets Standards	977	1295	0
+MN	MN	Reading	9	4	Exceeds Standards	1296	1400	0
+MN	MN	Reading	10	1	Does Not Meet Standards	0	878	0
+MN	MN	Reading	10	2	Partially Meets Standards	879	1044	0
+MN	MN	Reading	10	3	Meets Standards	1045	1315	0
+MN	MN	Reading	10	4	Exceeds Standards	1316	1400	0
+MN	MN	Reading	11	1	Does Not Meet Standards	0	906	0
+MN	MN	Reading	11	2	Partially Meets Standards	907	1100	0
+MN	MN	Reading	11	3	Meets Standards	1101	1322	0
+MN	MN	Reading	11	4	Exceeds Standards	1323	1400	0
+MN	MN	Reading	12	1	Does Not Meet Standards	0	948	0
+MN	MN	Reading	12	2	Partially Meets Standards	949	1172	0
+MN	MN	Reading	12	3	Meets Standards	1173	1333	0
+MN	MN	Reading	12	4	Exceeds Standards	1334	1400	0
+MO	MO	Math	1	1	Level 1	0	336	0
+MO	MO	Math	1	2	Level 2	337	417	0
+MO	MO	Math	1	3	Level 3	418	498	0
+MO	MO	Math	1	4	Level 4	499	1400	0
+MO	MO	Math	2	1	Level 1	0	457	0
+MO	MO	Math	2	2	Level 2	458	528	0
+MO	MO	Math	2	3	Level 3	529	601	0
+MO	MO	Math	2	4	Level 4	602	1400	0
+MO	MO	Math	3	1	Level 1	0	546	1
+MO	MO	Math	3	2	Level 2	547	620	1
+MO	MO	Math	3	3	Level 3	621	686	1
+MO	MO	Math	3	4	Level 4	687	1400	1
+MO	MO	Math	4	1	Level 1	0	602	1
+MO	MO	Math	4	2	Level 2	603	695	1
+MO	MO	Math	4	3	Level 3	696	771	1
+MO	MO	Math	4	4	Level 4	772	1400	1
+MO	MO	Math	5	1	Level 1	0	692	1
+MO	MO	Math	5	2	Level 2	693	781	1
+MO	MO	Math	5	3	Level 3	782	826	1
+MO	MO	Math	5	4	Level 4	827	1400	1
+MO	MO	Math	6	1	Level 1	0	716	1
+MO	MO	Math	6	2	Level 2	717	807	1
+MO	MO	Math	6	3	Level 3	808	859	1
+MO	MO	Math	6	4	Level 4	860	1400	1
+MO	MO	Math	7	1	Level 1	0	745	1
+MO	MO	Math	7	2	Level 2	746	830	1
+MO	MO	Math	7	3	Level 3	831	885	1
+MO	MO	Math	7	4	Level 4	886	1400	1
+MO	MO	Math	8	1	Level 1	0	783	1
+MO	MO	Math	8	2	Level 2	784	851	1
+MO	MO	Math	8	3	Level 3	852	891	1
+MO	MO	Math	8	4	Level 4	892	1400	1
+MO	MO	Math	9	1	Level 1	0	790	0
+MO	MO	Math	9	2	Level 2	791	852	0
+MO	MO	Math	9	3	Level 3	853	895	0
+MO	MO	Math	9	4	Level 4	896	1400	0
+MO	MO	Math	10	1	Level 1	0	796	0
+MO	MO	Math	10	2	Level 2	797	858	0
+MO	MO	Math	10	3	Level 3	859	900	0
+MO	MO	Math	10	4	Level 4	901	1400	0
+MO	MO	Math	11	1	Level 1	0	813	0
+MO	MO	Math	11	2	Level 2	814	873	0
+MO	MO	Math	11	3	Level 3	874	918	0
+MO	MO	Math	11	4	Level 4	919	1400	0
+MO	MO	Math	12	1	Level 1	0	826	0
+MO	MO	Math	12	2	Level 2	827	890	0
+MO	MO	Math	12	3	Level 3	891	925	0
+MO	MO	Math	12	4	Level 4	926	1400	0
+MO	MO	Reading	1	1	Level 1	0	90	0
+MO	MO	Reading	1	2	Level 2	91	165	0
+MO	MO	Reading	1	3	Level 3	166	248	0
+MO	MO	Reading	1	4	Level 4	249	1400	0
+MO	MO	Reading	2	1	Level 1	0	232	0
+MO	MO	Reading	2	2	Level 2	233	337	0
+MO	MO	Reading	2	3	Level 3	338	435	0
+MO	MO	Reading	2	4	Level 4	436	1400	0
+MO	MO	Reading	3	1	Level 1	0	332	1
+MO	MO	Reading	3	2	Level 2	333	454	1
+MO	MO	Reading	3	3	Level 3	455	561	1
+MO	MO	Reading	3	4	Level 4	562	1400	1
+MO	MO	Reading	4	1	Level 1	0	434	1
+MO	MO	Reading	4	2	Level 2	435	530	1
+MO	MO	Reading	4	3	Level 3	531	660	1
+MO	MO	Reading	4	4	Level 4	661	1400	1
+MO	MO	Reading	5	1	Level 1	0	483	1
+MO	MO	Reading	5	2	Level 2	484	599	1
+MO	MO	Reading	5	3	Level 3	600	852	1
+MO	MO	Reading	5	4	Level 4	853	1400	1
+MO	MO	Reading	6	1	Level 1	0	499	1
+MO	MO	Reading	6	2	Level 2	500	691	1
+MO	MO	Reading	6	3	Level 3	692	1015	1
+MO	MO	Reading	6	4	Level 4	1016	1400	1
+MO	MO	Reading	7	1	Level 1	0	576	1
+MO	MO	Reading	7	2	Level 2	577	772	1
+MO	MO	Reading	7	3	Level 3	773	1168	1
+MO	MO	Reading	7	4	Level 4	1169	1400	1
+MO	MO	Reading	8	1	Level 1	0	589	1
+MO	MO	Reading	8	2	Level 2	590	857	1
+MO	MO	Reading	8	3	Level 3	858	1249	1
+MO	MO	Reading	8	4	Level 4	1250	1400	1
+MO	MO	Reading	9	1	Level 1	0	661	0
+MO	MO	Reading	9	2	Level 2	662	918	0
+MO	MO	Reading	9	3	Level 3	919	1291	0
+MO	MO	Reading	9	4	Level 4	1292	1400	0
+MO	MO	Reading	10	1	Level 1	0	674	0
+MO	MO	Reading	10	2	Level 2	675	957	0
+MO	MO	Reading	10	3	Level 3	958	1314	0
+MO	MO	Reading	10	4	Level 4	1315	1400	0
+MO	MO	Reading	11	1	Level 1	0	715	0
+MO	MO	Reading	11	2	Level 2	716	992	0
+MO	MO	Reading	11	3	Level 3	993	1321	0
+MO	MO	Reading	11	4	Level 4	1322	1400	0
+MO	MO	Reading	12	1	Level 1	0	761	0
+MO	MO	Reading	12	2	Level 2	762	1079	0
+MO	MO	Reading	12	3	Level 3	1080	1332	0
+MO	MO	Reading	12	4	Level 4	1333	1400	0
+MS	MS	Math	1	1	Level 1	0	303	0
+MS	MS	Math	1	2	Level 2	304	384	0
+MS	MS	Math	1	3	Level 3	385	453	0
+MS	MS	Math	1	4	Level 4	454	561	0
+MS	MS	Math	1	5	Level 5	562	1400	0
+MS	MS	Math	2	1	Level 1	0	424	0
+MS	MS	Math	2	2	Level 2	425	498	0
+MS	MS	Math	2	3	Level 3	499	559	0
+MS	MS	Math	2	4	Level 4	560	657	0
+MS	MS	Math	2	5	Level 5	658	1400	0
+MS	MS	Math	3	1	Level 1	0	503	1
+MS	MS	Math	3	2	Level 2	504	588	1
+MS	MS	Math	3	3	Level 3	589	648	1
+MS	MS	Math	3	4	Level 4	649	742	1
+MS	MS	Math	3	5	Level 5	743	1400	1
+MS	MS	Math	4	1	Level 1	0	561	1
+MS	MS	Math	4	2	Level 2	562	661	1
+MS	MS	Math	4	3	Level 3	662	735	1
+MS	MS	Math	4	4	Level 4	736	850	1
+MS	MS	Math	4	5	Level 5	851	1400	1
+MS	MS	Math	5	1	Level 1	0	613	1
+MS	MS	Math	5	2	Level 2	614	720	1
+MS	MS	Math	5	3	Level 3	721	804	1
+MS	MS	Math	5	4	Level 4	805	901	1
+MS	MS	Math	5	5	Level 5	902	1400	1
+MS	MS	Math	6	1	Level 1	0	649	1
+MS	MS	Math	6	2	Level 2	650	756	1
+MS	MS	Math	6	3	Level 3	757	826	1
+MS	MS	Math	6	4	Level 4	827	925	1
+MS	MS	Math	6	5	Level 5	926	1400	1
+MS	MS	Math	7	1	Level 1	0	686	1
+MS	MS	Math	7	2	Level 2	687	777	1
+MS	MS	Math	7	3	Level 3	778	860	1
+MS	MS	Math	7	4	Level 4	861	960	1
+MS	MS	Math	7	5	Level 5	961	1400	1
+MS	MS	Math	8	1	Level 1	0	738	1
+MS	MS	Math	8	2	Level 2	739	815	1
+MS	MS	Math	8	3	Level 3	816	875	1
+MS	MS	Math	8	4	Level 4	876	1007	1
+MS	MS	Math	8	5	Level 5	1008	1400	1
+MS	MS	Math	9	1	Level 1	0	747	0
+MS	MS	Math	9	2	Level 2	748	819	0
+MS	MS	Math	9	3	Level 3	820	876	0
+MS	MS	Math	9	4	Level 4	877	1008	0
+MS	MS	Math	9	5	Level 5	1009	1400	0
+MS	MS	Math	10	1	Level 1	0	748	0
+MS	MS	Math	10	2	Level 2	749	825	0
+MS	MS	Math	10	3	Level 3	826	879	0
+MS	MS	Math	10	4	Level 4	880	1030	0
+MS	MS	Math	10	5	Level 5	1031	1400	0
+MS	MS	Math	11	1	Level 1	0	766	0
+MS	MS	Math	11	2	Level 2	767	839	0
+MS	MS	Math	11	3	Level 3	840	894	0
+MS	MS	Math	11	4	Level 4	895	1036	0
+MS	MS	Math	11	5	Level 5	1037	1400	0
+MS	MS	Math	12	1	Level 1	0	778	0
+MS	MS	Math	12	2	Level 2	779	851	0
+MS	MS	Math	12	3	Level 3	852	904	0
+MS	MS	Math	12	4	Level 4	905	1076	0
+MS	MS	Math	12	5	Level 5	1077	1400	0
+MS	MS	Reading	1	1	Level 1	0	86	0
+MS	MS	Reading	1	2	Level 2	87	148	0
+MS	MS	Reading	1	3	Level 3	149	225	0
+MS	MS	Reading	1	4	Level 4	226	478	0
+MS	MS	Reading	1	5	Level 5	479	1400	0
+MS	MS	Reading	2	1	Level 1	0	208	0
+MS	MS	Reading	2	2	Level 2	209	309	0
+MS	MS	Reading	2	3	Level 3	310	396	0
+MS	MS	Reading	2	4	Level 4	397	679	0
+MS	MS	Reading	2	5	Level 5	680	1400	0
+MS	MS	Reading	3	1	Level 1	0	303	1
+MS	MS	Reading	3	2	Level 2	304	412	1
+MS	MS	Reading	3	3	Level 3	413	513	1
+MS	MS	Reading	3	4	Level 4	514	923	1
+MS	MS	Reading	3	5	Level 5	924	1400	1
+MS	MS	Reading	4	1	Level 1	0	334	1
+MS	MS	Reading	4	2	Level 2	335	441	1
+MS	MS	Reading	4	3	Level 3	442	570	1
+MS	MS	Reading	4	4	Level 4	571	1019	1
+MS	MS	Reading	4	5	Level 5	1020	1400	1
+MS	MS	Reading	5	1	Level 1	0	371	1
+MS	MS	Reading	5	2	Level 2	372	507	1
+MS	MS	Reading	5	3	Level 3	508	662	1
+MS	MS	Reading	5	4	Level 4	663	1178	1
+MS	MS	Reading	5	5	Level 5	1179	1400	1
+MS	MS	Reading	6	1	Level 1	0	416	1
+MS	MS	Reading	6	2	Level 2	417	560	1
+MS	MS	Reading	6	3	Level 3	561	776	1
+MS	MS	Reading	6	4	Level 4	777	1251	1
+MS	MS	Reading	6	5	Level 5	1252	1400	1
+MS	MS	Reading	7	1	Level 1	0	466	1
+MS	MS	Reading	7	2	Level 2	467	614	1
+MS	MS	Reading	7	3	Level 3	615	829	1
+MS	MS	Reading	7	4	Level 4	830	1292	1
+MS	MS	Reading	7	5	Level 5	1293	1400	1
+MS	MS	Reading	8	1	Level 1	0	526	1
+MS	MS	Reading	8	2	Level 2	527	678	1
+MS	MS	Reading	8	3	Level 3	679	908	1
+MS	MS	Reading	8	4	Level 4	909	1320	1
+MS	MS	Reading	8	5	Level 5	1321	1400	1
+MS	MS	Reading	9	1	Level 1	0	596	1
+MS	MS	Reading	9	2	Level 2	597	825	1
+MS	MS	Reading	9	3	Level 3	826	1035	1
+MS	MS	Reading	9	4	Level 4	1036	1324	1
+MS	MS	Reading	9	5	Level 5	1325	1400	1
+MS	MS	Reading	10	1	Level 1	0	684	1
+MS	MS	Reading	10	2	Level 2	685	900	1
+MS	MS	Reading	10	3	Level 3	901	1075	1
+MS	MS	Reading	10	4	Level 4	1076	1325	1
+MS	MS	Reading	10	5	Level 5	1326	1400	1
+MS	MS	Reading	11	1	Level 1	0	720	0
+MS	MS	Reading	11	2	Level 2	721	916	0
+MS	MS	Reading	11	3	Level 3	917	1119	0
+MS	MS	Reading	11	4	Level 4	1120	1329	0
+MS	MS	Reading	11	5	Level 5	1330	1400	0
+MS	MS	Reading	12	1	Level 1	0	768	0
+MS	MS	Reading	12	2	Level 2	769	960	0
+MS	MS	Reading	12	3	Level 3	961	1183	0
+MS	MS	Reading	12	4	Level 4	1184	1340	0
+MS	MS	Reading	12	5	Level 5	1341	1400	0
+MT	MT	Math	1	1	Level 1	0	336	0
+MT	MT	Math	1	2	Level 2	337	417	0
+MT	MT	Math	1	3	Level 3	418	498	0
+MT	MT	Math	1	4	Level 4	499	1400	0
+MT	MT	Math	2	1	Level 1	0	457	0
+MT	MT	Math	2	2	Level 2	458	528	0
+MT	MT	Math	2	3	Level 3	529	601	0
+MT	MT	Math	2	4	Level 4	602	1400	0
+MT	MT	Math	3	1	Level 1	0	546	1
+MT	MT	Math	3	2	Level 2	547	620	1
+MT	MT	Math	3	3	Level 3	621	686	1
+MT	MT	Math	3	4	Level 4	687	1400	1
+MT	MT	Math	4	1	Level 1	0	602	1
+MT	MT	Math	4	2	Level 2	603	695	1
+MT	MT	Math	4	3	Level 3	696	771	1
+MT	MT	Math	4	4	Level 4	772	1400	1
+MT	MT	Math	5	1	Level 1	0	692	1
+MT	MT	Math	5	2	Level 2	693	781	1
+MT	MT	Math	5	3	Level 3	782	826	1
+MT	MT	Math	5	4	Level 4	827	1400	1
+MT	MT	Math	6	1	Level 1	0	716	1
+MT	MT	Math	6	2	Level 2	717	807	1
+MT	MT	Math	6	3	Level 3	808	859	1
+MT	MT	Math	6	4	Level 4	860	1400	1
+MT	MT	Math	7	1	Level 1	0	745	1
+MT	MT	Math	7	2	Level 2	746	830	1
+MT	MT	Math	7	3	Level 3	831	885	1
+MT	MT	Math	7	4	Level 4	886	1400	1
+MT	MT	Math	8	1	Level 1	0	783	1
+MT	MT	Math	8	2	Level 2	784	851	1
+MT	MT	Math	8	3	Level 3	852	891	1
+MT	MT	Math	8	4	Level 4	892	1400	1
+MT	MT	Math	9	1	Level 1	0	790	0
+MT	MT	Math	9	2	Level 2	791	852	0
+MT	MT	Math	9	3	Level 3	853	895	0
+MT	MT	Math	9	4	Level 4	896	1400	0
+MT	MT	Math	10	1	Level 1	0	796	0
+MT	MT	Math	10	2	Level 2	797	858	0
+MT	MT	Math	10	3	Level 3	859	900	0
+MT	MT	Math	10	4	Level 4	901	1400	0
+MT	MT	Math	11	1	Level 1	0	813	0
+MT	MT	Math	11	2	Level 2	814	873	0
+MT	MT	Math	11	3	Level 3	874	918	0
+MT	MT	Math	11	4	Level 4	919	1400	0
+MT	MT	Math	12	1	Level 1	0	826	0
+MT	MT	Math	12	2	Level 2	827	890	0
+MT	MT	Math	12	3	Level 3	891	925	0
+MT	MT	Math	12	4	Level 4	926	1400	0
+MT	MT	Reading	1	1	Level 1	0	90	0
+MT	MT	Reading	1	2	Level 2	91	165	0
+MT	MT	Reading	1	3	Level 3	166	248	0
+MT	MT	Reading	1	4	Level 4	249	1400	0
+MT	MT	Reading	2	1	Level 1	0	232	0
+MT	MT	Reading	2	2	Level 2	233	337	0
+MT	MT	Reading	2	3	Level 3	338	435	0
+MT	MT	Reading	2	4	Level 4	436	1400	0
+MT	MT	Reading	3	1	Level 1	0	332	1
+MT	MT	Reading	3	2	Level 2	333	454	1
+MT	MT	Reading	3	3	Level 3	455	561	1
+MT	MT	Reading	3	4	Level 4	562	1400	1
+MT	MT	Reading	4	1	Level 1	0	434	1
+MT	MT	Reading	4	2	Level 2	435	530	1
+MT	MT	Reading	4	3	Level 3	531	660	1
+MT	MT	Reading	4	4	Level 4	661	1400	1
+MT	MT	Reading	5	1	Level 1	0	483	1
+MT	MT	Reading	5	2	Level 2	484	599	1
+MT	MT	Reading	5	3	Level 3	600	852	1
+MT	MT	Reading	5	4	Level 4	853	1400	1
+MT	MT	Reading	6	1	Level 1	0	499	1
+MT	MT	Reading	6	2	Level 2	500	691	1
+MT	MT	Reading	6	3	Level 3	692	1015	1
+MT	MT	Reading	6	4	Level 4	1016	1400	1
+MT	MT	Reading	7	1	Level 1	0	576	1
+MT	MT	Reading	7	2	Level 2	577	772	1
+MT	MT	Reading	7	3	Level 3	773	1168	1
+MT	MT	Reading	7	4	Level 4	1169	1400	1
+MT	MT	Reading	8	1	Level 1	0	589	1
+MT	MT	Reading	8	2	Level 2	590	857	1
+MT	MT	Reading	8	3	Level 3	858	1249	1
+MT	MT	Reading	8	4	Level 4	1250	1400	1
+MT	MT	Reading	9	1	Level 1	0	661	0
+MT	MT	Reading	9	2	Level 2	662	918	0
+MT	MT	Reading	9	3	Level 3	919	1291	0
+MT	MT	Reading	9	4	Level 4	1292	1400	0
+MT	MT	Reading	10	1	Level 1	0	674	0
+MT	MT	Reading	10	2	Level 2	675	957	0
+MT	MT	Reading	10	3	Level 3	958	1314	0
+MT	MT	Reading	10	4	Level 4	1315	1400	0
+MT	MT	Reading	11	1	Level 1	0	715	0
+MT	MT	Reading	11	2	Level 2	716	992	0
+MT	MT	Reading	11	3	Level 3	993	1321	0
+MT	MT	Reading	11	4	Level 4	1322	1400	0
+MT	MT	Reading	12	1	Level 1	0	761	0
+MT	MT	Reading	12	2	Level 2	762	1079	0
+MT	MT	Reading	12	3	Level 3	1080	1332	0
+MT	MT	Reading	12	4	Level 4	1333	1400	0
+NC	NC	Math	1	1	Limited Command	0	329	0
+NC	NC	Math	1	2	Partial Command	330	408	0
+NC	NC	Math	1	3	Sufficient Command	409	437	0
+NC	NC	Math	1	4	Solid Command 	438	523	0
+NC	NC	Math	1	5	Superior Command 	524	1400	0
+NC	NC	Math	2	1	Limited Command	0	446	0
+NC	NC	Math	2	2	Partial Command	447	519	0
+NC	NC	Math	2	3	Sufficient Command	520	544	0
+NC	NC	Math	2	4	Solid Command 	545	625	0
+NC	NC	Math	2	5	Superior Command 	626	1400	0
+NC	NC	Math	3	1	Limited Command	0	530	1
+NC	NC	Math	3	2	Partial Command	531	608	1
+NC	NC	Math	3	3	Sufficient Command	609	635	1
+NC	NC	Math	3	4	Solid Command 	636	711	1
+NC	NC	Math	3	5	Superior Command 	712	1400	1
+NC	NC	Math	4	1	Limited Command	0	619	1
+NC	NC	Math	4	2	Partial Command	620	690	1
+NC	NC	Math	4	3	Sufficient Command	691	709	1
+NC	NC	Math	4	4	Solid Command 	710	790	1
+NC	NC	Math	4	5	Superior Command 	791	1400	1
+NC	NC	Math	5	1	Limited Command	0	662	1
+NC	NC	Math	5	2	Partial Command	663	744	1
+NC	NC	Math	5	3	Sufficient Command	745	762	1
+NC	NC	Math	5	4	Solid Command 	763	837	1
+NC	NC	Math	5	5	Superior Command 	838	1400	1
+NC	NC	Math	6	1	Limited Command	0	736	1
+NC	NC	Math	6	2	Partial Command	737	799	1
+NC	NC	Math	6	3	Sufficient Command	800	815	1
+NC	NC	Math	6	4	Solid Command 	816	875	1
+NC	NC	Math	6	5	Superior Command 	876	1400	1
+NC	NC	Math	7	1	Limited Command	0	764	1
+NC	NC	Math	7	2	Partial Command	765	828	1
+NC	NC	Math	7	3	Sufficient Command	829	841	1
+NC	NC	Math	7	4	Solid Command 	842	907	1
+NC	NC	Math	7	5	Superior Command 	908	1400	1
+NC	NC	Math	8	1	Limited Command	0	799	1
+NC	NC	Math	8	2	Partial Command	800	872	1
+NC	NC	Math	8	3	Sufficient Command	873	884	1
+NC	NC	Math	8	4	Solid Command 	885	941	1
+NC	NC	Math	8	5	Superior Command 	942	1400	1
+NC	NC	Math	9	1	Limited Command	0	806	0
+NC	NC	Math	9	2	Partial Command	807	872	0
+NC	NC	Math	9	3	Sufficient Command	873	884	0
+NC	NC	Math	9	4	Solid Command 	885	939	0
+NC	NC	Math	9	5	Superior Command 	940	1400	0
+NC	NC	Math	10	1	Limited Command	0	810	0
+NC	NC	Math	10	2	Partial Command	811	875	0
+NC	NC	Math	10	3	Sufficient Command	876	889	0
+NC	NC	Math	10	4	Solid Command 	890	948	0
+NC	NC	Math	10	5	Superior Command 	949	1400	0
+NC	NC	Math	11	1	Limited Command	0	825	0
+NC	NC	Math	11	2	Partial Command	826	892	0
+NC	NC	Math	11	3	Sufficient Command	893	904	0
+NC	NC	Math	11	4	Solid Command 	905	965	0
+NC	NC	Math	11	5	Superior Command 	966	1400	0
+NC	NC	Math	12	1	Limited Command	0	840	0
+NC	NC	Math	12	2	Partial Command	841	901	0
+NC	NC	Math	12	3	Sufficient Command	902	913	0
+NC	NC	Math	12	4	Solid Command 	914	975	0
+NC	NC	Math	12	5	Superior Command 	976	1400	0
+NC	NC	Reading	1	1	Limited Command	0	89	0
+NC	NC	Reading	1	2	Partial Command	90	138	0
+NC	NC	Reading	1	3	Sufficient Command	139	180	0
+NC	NC	Reading	1	4	Solid Command	181	314	0
+NC	NC	Reading	1	5	Superior Command	315	1400	0
+NC	NC	Reading	2	1	Limited Command	0	225	0
+NC	NC	Reading	2	2	Partial Command	226	297	0
+NC	NC	Reading	2	3	Sufficient Command	298	343	0
+NC	NC	Reading	2	4	Solid Command	344	496	0
+NC	NC	Reading	2	5	Superior Command	497	1400	0
+NC	NC	Reading	3	1	Limited Command	0	319	1
+NC	NC	Reading	3	2	Partial Command	320	400	1
+NC	NC	Reading	3	3	Sufficient Command	401	455	1
+NC	NC	Reading	3	4	Solid Command	456	641	1
+NC	NC	Reading	3	5	Superior Command	642	1400	1
+NC	NC	Reading	4	1	Limited Command	0	401	1
+NC	NC	Reading	4	2	Partial Command	402	491	1
+NC	NC	Reading	4	3	Sufficient Command	492	540	1
+NC	NC	Reading	4	4	Solid Command	541	883	1
+NC	NC	Reading	4	5	Superior Command	884	1400	1
+NC	NC	Reading	5	1	Limited Command	0	467	1
+NC	NC	Reading	5	2	Partial Command	468	580	1
+NC	NC	Reading	5	3	Sufficient Command	581	655	1
+NC	NC	Reading	5	4	Solid Command	656	973	1
+NC	NC	Reading	5	5	Superior Command	974	1400	1
+NC	NC	Reading	6	1	Limited Command	0	458	1
+NC	NC	Reading	6	2	Partial Command	459	619	1
+NC	NC	Reading	6	3	Sufficient Command	620	693	1
+NC	NC	Reading	6	4	Solid Command	694	1037	1
+NC	NC	Reading	6	5	Superior Command	1038	1400	1
+NC	NC	Reading	7	1	Limited Command	0	492	1
+NC	NC	Reading	7	2	Partial Command	493	690	1
+NC	NC	Reading	7	3	Sufficient Command	691	783	1
+NC	NC	Reading	7	4	Solid Command	784	1192	1
+NC	NC	Reading	7	5	Superior Command	1193	1400	1
+NC	NC	Reading	8	1	Limited Command	0	590	1
+NC	NC	Reading	8	2	Partial Command	591	836	1
+NC	NC	Reading	8	3	Sufficient Command	837	915	1
+NC	NC	Reading	8	4	Solid Command	916	1293	1
+NC	NC	Reading	8	5	Superior Command	1294	1400	1
+NC	NC	Reading	9	1	Limited Command	0	654	0
+NC	NC	Reading	9	2	Partial Command	655	906	0
+NC	NC	Reading	9	3	Sufficient Command	907	975	0
+NC	NC	Reading	9	4	Solid Command	976	1311	0
+NC	NC	Reading	9	5	Superior Command	1312	1400	0
+NC	NC	Reading	10	1	Limited Command	0	666	0
+NC	NC	Reading	10	2	Partial Command	667	933	0
+NC	NC	Reading	10	3	Sufficient Command	934	1038	0
+NC	NC	Reading	10	4	Solid Command	1039	1322	0
+NC	NC	Reading	10	5	Superior Command	1323	1400	0
+NC	NC	Reading	11	1	Limited Command	0	706	0
+NC	NC	Reading	11	2	Partial Command	707	967	0
+NC	NC	Reading	11	3	Sufficient Command	968	1097	0
+NC	NC	Reading	11	4	Solid Command	1098	1328	0
+NC	NC	Reading	11	5	Superior Command	1329	1400	0
+NC	NC	Reading	12	1	Limited Command	0	742	0
+NC	NC	Reading	12	2	Partial Command	743	1034	0
+NC	NC	Reading	12	3	Sufficient Command	1035	1166	0
+NC	NC	Reading	12	4	Solid Command	1167	1338	0
+NC	NC	Reading	12	5	Superior Command	1339	1400	0
+ND	ND	Math	1	1	Level 1	0	336	0
+ND	ND	Math	1	2	Level 2	337	417	0
+ND	ND	Math	1	3	Level 3	418	498	0
+ND	ND	Math	1	4	Level 4	499	1400	0
+ND	ND	Math	2	1	Level 1	0	457	0
+ND	ND	Math	2	2	Level 2	458	528	0
+ND	ND	Math	2	3	Level 3	529	601	0
+ND	ND	Math	2	4	Level 4	602	1400	0
+ND	ND	Math	3	1	Level 1	0	546	1
+ND	ND	Math	3	2	Level 2	547	620	1
+ND	ND	Math	3	3	Level 3	621	686	1
+ND	ND	Math	3	4	Level 4	687	1400	1
+ND	ND	Math	4	1	Level 1	0	602	1
+ND	ND	Math	4	2	Level 2	603	695	1
+ND	ND	Math	4	3	Level 3	696	771	1
+ND	ND	Math	4	4	Level 4	772	1400	1
+ND	ND	Math	5	1	Level 1	0	692	1
+ND	ND	Math	5	2	Level 2	693	781	1
+ND	ND	Math	5	3	Level 3	782	826	1
+ND	ND	Math	5	4	Level 4	827	1400	1
+ND	ND	Math	6	1	Level 1	0	716	1
+ND	ND	Math	6	2	Level 2	717	807	1
+ND	ND	Math	6	3	Level 3	808	859	1
+ND	ND	Math	6	4	Level 4	860	1400	1
+ND	ND	Math	7	1	Level 1	0	745	1
+ND	ND	Math	7	2	Level 2	746	830	1
+ND	ND	Math	7	3	Level 3	831	885	1
+ND	ND	Math	7	4	Level 4	886	1400	1
+ND	ND	Math	8	1	Level 1	0	783	1
+ND	ND	Math	8	2	Level 2	784	851	1
+ND	ND	Math	8	3	Level 3	852	891	1
+ND	ND	Math	8	4	Level 4	892	1400	1
+ND	ND	Math	9	1	Level 1	0	790	0
+ND	ND	Math	9	2	Level 2	791	852	0
+ND	ND	Math	9	3	Level 3	853	895	0
+ND	ND	Math	9	4	Level 4	896	1400	0
+ND	ND	Math	10	1	Level 1	0	796	0
+ND	ND	Math	10	2	Level 2	797	858	0
+ND	ND	Math	10	3	Level 3	859	900	0
+ND	ND	Math	10	4	Level 4	901	1400	0
+ND	ND	Math	11	1	Level 1	0	813	0
+ND	ND	Math	11	2	Level 2	814	873	0
+ND	ND	Math	11	3	Level 3	874	918	0
+ND	ND	Math	11	4	Level 4	919	1400	0
+ND	ND	Math	12	1	Level 1	0	826	0
+ND	ND	Math	12	2	Level 2	827	890	0
+ND	ND	Math	12	3	Level 3	891	925	0
+ND	ND	Math	12	4	Level 4	926	1400	0
+ND	ND	Reading	1	1	Level 1	0	90	0
+ND	ND	Reading	1	2	Level 2	91	165	0
+ND	ND	Reading	1	3	Level 3	166	248	0
+ND	ND	Reading	1	4	Level 4	249	1400	0
+ND	ND	Reading	2	1	Level 1	0	232	0
+ND	ND	Reading	2	2	Level 2	233	337	0
+ND	ND	Reading	2	3	Level 3	338	435	0
+ND	ND	Reading	2	4	Level 4	436	1400	0
+ND	ND	Reading	3	1	Level 1	0	332	1
+ND	ND	Reading	3	2	Level 2	333	454	1
+ND	ND	Reading	3	3	Level 3	455	561	1
+ND	ND	Reading	3	4	Level 4	562	1400	1
+ND	ND	Reading	4	1	Level 1	0	434	1
+ND	ND	Reading	4	2	Level 2	435	530	1
+ND	ND	Reading	4	3	Level 3	531	660	1
+ND	ND	Reading	4	4	Level 4	661	1400	1
+ND	ND	Reading	5	1	Level 1	0	483	1
+ND	ND	Reading	5	2	Level 2	484	599	1
+ND	ND	Reading	5	3	Level 3	600	852	1
+ND	ND	Reading	5	4	Level 4	853	1400	1
+ND	ND	Reading	6	1	Level 1	0	499	1
+ND	ND	Reading	6	2	Level 2	500	691	1
+ND	ND	Reading	6	3	Level 3	692	1015	1
+ND	ND	Reading	6	4	Level 4	1016	1400	1
+ND	ND	Reading	7	1	Level 1	0	576	1
+ND	ND	Reading	7	2	Level 2	577	772	1
+ND	ND	Reading	7	3	Level 3	773	1168	1
+ND	ND	Reading	7	4	Level 4	1169	1400	1
+ND	ND	Reading	8	1	Level 1	0	589	1
+ND	ND	Reading	8	2	Level 2	590	857	1
+ND	ND	Reading	8	3	Level 3	858	1249	1
+ND	ND	Reading	8	4	Level 4	1250	1400	1
+ND	ND	Reading	9	1	Level 1	0	661	0
+ND	ND	Reading	9	2	Level 2	662	918	0
+ND	ND	Reading	9	3	Level 3	919	1291	0
+ND	ND	Reading	9	4	Level 4	1292	1400	0
+ND	ND	Reading	10	1	Level 1	0	674	0
+ND	ND	Reading	10	2	Level 2	675	957	0
+ND	ND	Reading	10	3	Level 3	958	1314	0
+ND	ND	Reading	10	4	Level 4	1315	1400	0
+ND	ND	Reading	11	1	Level 1	0	715	0
+ND	ND	Reading	11	2	Level 2	716	992	0
+ND	ND	Reading	11	3	Level 3	993	1321	0
+ND	ND	Reading	11	4	Level 4	1322	1400	0
+ND	ND	Reading	12	1	Level 1	0	761	0
+ND	ND	Reading	12	2	Level 2	762	1079	0
+ND	ND	Reading	12	3	Level 3	1080	1332	0
+ND	ND	Reading	12	4	Level 4	1333	1400	0
+NE	NE	Math	1	1	Below Standards	0	363	0
+NE	NE	Math	1	2	Meets Standards	364	472	0
+NE	NE	Math	1	3	Exceeds Standards	473	1400	0
+NE	NE	Math	2	1	Below Standards	0	482	0
+NE	NE	Math	2	2	Meets Standards	483	579	0
+NE	NE	Math	2	3	Exceeds Standards	580	1400	0
+NE	NE	Math	3	1	Below Standards	0	571	1
+NE	NE	Math	3	2	Meets Standards	572	664	1
+NE	NE	Math	3	3	Exceeds Standards	665	1400	1
+NE	NE	Math	4	1	Below Standards	0	645	1
+NE	NE	Math	4	2	Meets Standards	646	749	1
+NE	NE	Math	4	3	Exceeds Standards	750	1400	1
+NE	NE	Math	5	1	Below Standards	0	695	1
+NE	NE	Math	5	2	Meets Standards	696	808	1
+NE	NE	Math	5	3	Exceeds Standards	809	1400	1
+NE	NE	Math	6	1	Below Standards	0	761	1
+NE	NE	Math	6	2	Meets Standards	762	861	1
+NE	NE	Math	6	3	Exceeds Standards	862	1400	1
+NE	NE	Math	7	1	Below Standards	0	779	1
+NE	NE	Math	7	2	Meets Standards	780	888	1
+NE	NE	Math	7	3	Exceeds Standards	889	1400	1
+NE	NE	Math	8	1	Below Standards	0	805	0
+NE	NE	Math	8	2	Meets Standards	806	925	0
+NE	NE	Math	8	3	Exceeds Standards	926	1400	0
+NE	NE	Math	9	1	Below Standards	0	810	0
+NE	NE	Math	9	2	Meets Standards	811	930	0
+NE	NE	Math	9	3	Exceeds Standards	931	1400	0
+NE	NE	Math	10	1	Below Standards	0	815	0
+NE	NE	Math	10	2	Meets Standards	816	938	0
+NE	NE	Math	10	3	Exceeds Standards	939	1400	0
+NE	NE	Math	11	1	Below Standards	0	829	0
+NE	NE	Math	11	2	Meets Standards	830	957	0
+NE	NE	Math	11	3	Exceeds Standards	958	1400	0
+NE	NE	Math	12	1	Below Standards	0	845	0
+NE	NE	Math	12	2	Meets Standards	846	969	0
+NE	NE	Math	12	3	Exceeds Standards	970	1400	0
+NE	NE	Reading	1	1	Below Standards	0	130	0
+NE	NE	Reading	1	2	Meets Standards	131	253	0
+NE	NE	Reading	1	3	Exceeds Standards	254	1400	0
+NE	NE	Reading	2	1	Below Standards	0	286	0
+NE	NE	Reading	2	2	Meets Standards	287	420	0
+NE	NE	Reading	2	3	Exceeds Standards	421	1400	0
+NE	NE	Reading	3	1	Below Standards	0	388	1
+NE	NE	Reading	3	2	Meets Standards	389	539	1
+NE	NE	Reading	3	3	Exceeds Standards	540	1400	1
+NE	NE	Reading	4	1	Below Standards	0	469	1
+NE	NE	Reading	4	2	Meets Standards	470	649	1
+NE	NE	Reading	4	3	Exceeds Standards	650	1400	1
+NE	NE	Reading	5	1	Below Standards	0	550	1
+NE	NE	Reading	5	2	Meets Standards	551	829	1
+NE	NE	Reading	5	3	Exceeds Standards	830	1400	1
+NE	NE	Reading	6	1	Below Standards	0	618	1
+NE	NE	Reading	6	2	Meets Standards	619	932	1
+NE	NE	Reading	6	3	Exceeds Standards	933	1400	1
+NE	NE	Reading	7	1	Below Standards	0	702	1
+NE	NE	Reading	7	2	Meets Standards	703	1052	1
+NE	NE	Reading	7	3	Exceeds Standards	1053	1400	1
+NE	NE	Reading	8	1	Below Standards	0	779	1
+NE	NE	Reading	8	2	Meets Standards	780	1166	1
+NE	NE	Reading	8	3	Exceeds Standards	1167	1400	1
+NE	NE	Reading	9	1	Below Standards	0	889	0
+NE	NE	Reading	9	2	Meets Standards	890	1228	0
+NE	NE	Reading	9	3	Exceeds Standards	1229	1400	0
+NE	NE	Reading	10	1	Below Standards	0	911	0
+NE	NE	Reading	10	2	Meets Standards	912	1270	0
+NE	NE	Reading	10	3	Exceeds Standards	1271	1400	0
+NE	NE	Reading	11	1	Below Standards	0	947	0
+NE	NE	Reading	11	2	Meets Standards	948	1298	0
+NE	NE	Reading	11	3	Exceeds Standards	1299	1400	0
+NE	NE	Reading	12	1	Below Standards	0	987	0
+NE	NE	Reading	12	2	Meets Standards	988	1319	0
+NE	NE	Reading	12	3	Exceeds Standards	1320	1400	0
+NH	NH	Math	1	1	Level 1	0	336	0
+NH	NH	Math	1	2	Level 2	337	417	0
+NH	NH	Math	1	3	Level 3	418	498	0
+NH	NH	Math	1	4	Level 4	499	1400	0
+NH	NH	Math	2	1	Level 1	0	457	0
+NH	NH	Math	2	2	Level 2	458	528	0
+NH	NH	Math	2	3	Level 3	529	601	0
+NH	NH	Math	2	4	Level 4	602	1400	0
+NH	NH	Math	3	1	Level 1	0	546	1
+NH	NH	Math	3	2	Level 2	547	620	1
+NH	NH	Math	3	3	Level 3	621	686	1
+NH	NH	Math	3	4	Level 4	687	1400	1
+NH	NH	Math	4	1	Level 1	0	602	1
+NH	NH	Math	4	2	Level 2	603	695	1
+NH	NH	Math	4	3	Level 3	696	771	1
+NH	NH	Math	4	4	Level 4	772	1400	1
+NH	NH	Math	5	1	Level 1	0	692	1
+NH	NH	Math	5	2	Level 2	693	781	1
+NH	NH	Math	5	3	Level 3	782	826	1
+NH	NH	Math	5	4	Level 4	827	1400	1
+NH	NH	Math	6	1	Level 1	0	716	1
+NH	NH	Math	6	2	Level 2	717	807	1
+NH	NH	Math	6	3	Level 3	808	859	1
+NH	NH	Math	6	4	Level 4	860	1400	1
+NH	NH	Math	7	1	Level 1	0	745	1
+NH	NH	Math	7	2	Level 2	746	830	1
+NH	NH	Math	7	3	Level 3	831	885	1
+NH	NH	Math	7	4	Level 4	886	1400	1
+NH	NH	Math	8	1	Level 1	0	783	1
+NH	NH	Math	8	2	Level 2	784	851	1
+NH	NH	Math	8	3	Level 3	852	891	1
+NH	NH	Math	8	4	Level 4	892	1400	1
+NH	NH	Math	9	1	Level 1	0	790	0
+NH	NH	Math	9	2	Level 2	791	852	0
+NH	NH	Math	9	3	Level 3	853	895	0
+NH	NH	Math	9	4	Level 4	896	1400	0
+NH	NH	Math	10	1	Level 1	0	796	0
+NH	NH	Math	10	2	Level 2	797	858	0
+NH	NH	Math	10	3	Level 3	859	900	0
+NH	NH	Math	10	4	Level 4	901	1400	0
+NH	NH	Math	11	1	Level 1	0	813	0
+NH	NH	Math	11	2	Level 2	814	873	0
+NH	NH	Math	11	3	Level 3	874	918	0
+NH	NH	Math	11	4	Level 4	919	1400	0
+NH	NH	Math	12	1	Level 1	0	826	0
+NH	NH	Math	12	2	Level 2	827	890	0
+NH	NH	Math	12	3	Level 3	891	925	0
+NH	NH	Math	12	4	Level 4	926	1400	0
+NH	NH	Reading	1	1	Level 1	0	90	0
+NH	NH	Reading	1	2	Level 2	91	165	0
+NH	NH	Reading	1	3	Level 3	166	248	0
+NH	NH	Reading	1	4	Level 4	249	1400	0
+NH	NH	Reading	2	1	Level 1	0	232	0
+NH	NH	Reading	2	2	Level 2	233	337	0
+NH	NH	Reading	2	3	Level 3	338	435	0
+NH	NH	Reading	2	4	Level 4	436	1400	0
+NH	NH	Reading	3	1	Level 1	0	332	1
+NH	NH	Reading	3	2	Level 2	333	454	1
+NH	NH	Reading	3	3	Level 3	455	561	1
+NH	NH	Reading	3	4	Level 4	562	1400	1
+NH	NH	Reading	4	1	Level 1	0	434	1
+NH	NH	Reading	4	2	Level 2	435	530	1
+NH	NH	Reading	4	3	Level 3	531	660	1
+NH	NH	Reading	4	4	Level 4	661	1400	1
+NH	NH	Reading	5	1	Level 1	0	483	1
+NH	NH	Reading	5	2	Level 2	484	599	1
+NH	NH	Reading	5	3	Level 3	600	852	1
+NH	NH	Reading	5	4	Level 4	853	1400	1
+NH	NH	Reading	6	1	Level 1	0	499	1
+NH	NH	Reading	6	2	Level 2	500	691	1
+NH	NH	Reading	6	3	Level 3	692	1015	1
+NH	NH	Reading	6	4	Level 4	1016	1400	1
+NH	NH	Reading	7	1	Level 1	0	576	1
+NH	NH	Reading	7	2	Level 2	577	772	1
+NH	NH	Reading	7	3	Level 3	773	1168	1
+NH	NH	Reading	7	4	Level 4	1169	1400	1
+NH	NH	Reading	8	1	Level 1	0	589	1
+NH	NH	Reading	8	2	Level 2	590	857	1
+NH	NH	Reading	8	3	Level 3	858	1249	1
+NH	NH	Reading	8	4	Level 4	1250	1400	1
+NH	NH	Reading	9	1	Level 1	0	661	0
+NH	NH	Reading	9	2	Level 2	662	918	0
+NH	NH	Reading	9	3	Level 3	919	1291	0
+NH	NH	Reading	9	4	Level 4	1292	1400	0
+NH	NH	Reading	10	1	Level 1	0	674	0
+NH	NH	Reading	10	2	Level 2	675	957	0
+NH	NH	Reading	10	3	Level 3	958	1314	0
+NH	NH	Reading	10	4	Level 4	1315	1400	0
+NH	NH	Reading	11	1	Level 1	0	715	0
+NH	NH	Reading	11	2	Level 2	716	992	0
+NH	NH	Reading	11	3	Level 3	993	1321	0
+NH	NH	Reading	11	4	Level 4	1322	1400	0
+NH	NH	Reading	12	1	Level 1	0	761	0
+NH	NH	Reading	12	2	Level 2	762	1079	0
+NH	NH	Reading	12	3	Level 3	1080	1332	0
+NH	NH	Reading	12	4	Level 4	1333	1400	0
+NJ	NJ	Math	1	1	Level 1	0	303	0
+NJ	NJ	Math	1	2	Level 2	304	384	0
+NJ	NJ	Math	1	3	Level 3	385	453	0
+NJ	NJ	Math	1	4	Level 4	454	561	0
+NJ	NJ	Math	1	5	Level 5	562	1400	0
+NJ	NJ	Math	2	1	Level 1	0	424	0
+NJ	NJ	Math	2	2	Level 2	425	498	0
+NJ	NJ	Math	2	3	Level 3	499	559	0
+NJ	NJ	Math	2	4	Level 4	560	657	0
+NJ	NJ	Math	2	5	Level 5	658	1400	0
+NJ	NJ	Math	3	1	Level 1	0	503	1
+NJ	NJ	Math	3	2	Level 2	504	588	1
+NJ	NJ	Math	3	3	Level 3	589	648	1
+NJ	NJ	Math	3	4	Level 4	649	742	1
+NJ	NJ	Math	3	5	Level 5	743	1400	1
+NJ	NJ	Math	4	1	Level 1	0	561	1
+NJ	NJ	Math	4	2	Level 2	562	661	1
+NJ	NJ	Math	4	3	Level 3	662	735	1
+NJ	NJ	Math	4	4	Level 4	736	850	1
+NJ	NJ	Math	4	5	Level 5	851	1400	1
+NJ	NJ	Math	5	1	Level 1	0	613	1
+NJ	NJ	Math	5	2	Level 2	614	720	1
+NJ	NJ	Math	5	3	Level 3	721	804	1
+NJ	NJ	Math	5	4	Level 4	805	901	1
+NJ	NJ	Math	5	5	Level 5	902	1400	1
+NJ	NJ	Math	6	1	Level 1	0	649	1
+NJ	NJ	Math	6	2	Level 2	650	756	1
+NJ	NJ	Math	6	3	Level 3	757	826	1
+NJ	NJ	Math	6	4	Level 4	827	925	1
+NJ	NJ	Math	6	5	Level 5	926	1400	1
+NJ	NJ	Math	7	1	Level 1	0	686	1
+NJ	NJ	Math	7	2	Level 2	687	777	1
+NJ	NJ	Math	7	3	Level 3	778	860	1
+NJ	NJ	Math	7	4	Level 4	861	960	1
+NJ	NJ	Math	7	5	Level 5	961	1400	1
+NJ	NJ	Math	8	1	Level 1	0	738	1
+NJ	NJ	Math	8	2	Level 2	739	815	1
+NJ	NJ	Math	8	3	Level 3	816	875	1
+NJ	NJ	Math	8	4	Level 4	876	1007	1
+NJ	NJ	Math	8	5	Level 5	1008	1400	1
+NJ	NJ	Math	9	1	Level 1	0	747	0
+NJ	NJ	Math	9	2	Level 2	748	819	0
+NJ	NJ	Math	9	3	Level 3	820	876	0
+NJ	NJ	Math	9	4	Level 4	877	1008	0
+NJ	NJ	Math	9	5	Level 5	1009	1400	0
+NJ	NJ	Math	10	1	Level 1	0	748	0
+NJ	NJ	Math	10	2	Level 2	749	825	0
+NJ	NJ	Math	10	3	Level 3	826	879	0
+NJ	NJ	Math	10	4	Level 4	880	1030	0
+NJ	NJ	Math	10	5	Level 5	1031	1400	0
+NJ	NJ	Math	11	1	Level 1	0	766	0
+NJ	NJ	Math	11	2	Level 2	767	839	0
+NJ	NJ	Math	11	3	Level 3	840	894	0
+NJ	NJ	Math	11	4	Level 4	895	1036	0
+NJ	NJ	Math	11	5	Level 5	1037	1400	0
+NJ	NJ	Math	12	1	Level 1	0	778	0
+NJ	NJ	Math	12	2	Level 2	779	851	0
+NJ	NJ	Math	12	3	Level 3	852	904	0
+NJ	NJ	Math	12	4	Level 4	905	1076	0
+NJ	NJ	Math	12	5	Level 5	1077	1400	0
+NJ	NJ	Reading	1	1	Level 1	0	86	0
+NJ	NJ	Reading	1	2	Level 2	87	148	0
+NJ	NJ	Reading	1	3	Level 3	149	225	0
+NJ	NJ	Reading	1	4	Level 4	226	478	0
+NJ	NJ	Reading	1	5	Level 5	479	1400	0
+NJ	NJ	Reading	2	1	Level 1	0	208	0
+NJ	NJ	Reading	2	2	Level 2	209	309	0
+NJ	NJ	Reading	2	3	Level 3	310	396	0
+NJ	NJ	Reading	2	4	Level 4	397	679	0
+NJ	NJ	Reading	2	5	Level 5	680	1400	0
+NJ	NJ	Reading	3	1	Level 1	0	303	1
+NJ	NJ	Reading	3	2	Level 2	304	412	1
+NJ	NJ	Reading	3	3	Level 3	413	513	1
+NJ	NJ	Reading	3	4	Level 4	514	923	1
+NJ	NJ	Reading	3	5	Level 5	924	1400	1
+NJ	NJ	Reading	4	1	Level 1	0	334	1
+NJ	NJ	Reading	4	2	Level 2	335	441	1
+NJ	NJ	Reading	4	3	Level 3	442	570	1
+NJ	NJ	Reading	4	4	Level 4	571	1019	1
+NJ	NJ	Reading	4	5	Level 5	1020	1400	1
+NJ	NJ	Reading	5	1	Level 1	0	371	1
+NJ	NJ	Reading	5	2	Level 2	372	507	1
+NJ	NJ	Reading	5	3	Level 3	508	662	1
+NJ	NJ	Reading	5	4	Level 4	663	1178	1
+NJ	NJ	Reading	5	5	Level 5	1179	1400	1
+NJ	NJ	Reading	6	1	Level 1	0	416	1
+NJ	NJ	Reading	6	2	Level 2	417	560	1
+NJ	NJ	Reading	6	3	Level 3	561	776	1
+NJ	NJ	Reading	6	4	Level 4	777	1251	1
+NJ	NJ	Reading	6	5	Level 5	1252	1400	1
+NJ	NJ	Reading	7	1	Level 1	0	466	1
+NJ	NJ	Reading	7	2	Level 2	467	614	1
+NJ	NJ	Reading	7	3	Level 3	615	829	1
+NJ	NJ	Reading	7	4	Level 4	830	1292	1
+NJ	NJ	Reading	7	5	Level 5	1293	1400	1
+NJ	NJ	Reading	8	1	Level 1	0	526	1
+NJ	NJ	Reading	8	2	Level 2	527	678	1
+NJ	NJ	Reading	8	3	Level 3	679	908	1
+NJ	NJ	Reading	8	4	Level 4	909	1320	1
+NJ	NJ	Reading	8	5	Level 5	1321	1400	1
+NJ	NJ	Reading	9	1	Level 1	0	596	1
+NJ	NJ	Reading	9	2	Level 2	597	825	1
+NJ	NJ	Reading	9	3	Level 3	826	1035	1
+NJ	NJ	Reading	9	4	Level 4	1036	1324	1
+NJ	NJ	Reading	9	5	Level 5	1325	1400	1
+NJ	NJ	Reading	10	1	Level 1	0	684	1
+NJ	NJ	Reading	10	2	Level 2	685	900	1
+NJ	NJ	Reading	10	3	Level 3	901	1075	1
+NJ	NJ	Reading	10	4	Level 4	1076	1325	1
+NJ	NJ	Reading	10	5	Level 5	1326	1400	1
+NJ	NJ	Reading	11	1	Level 1	0	720	0
+NJ	NJ	Reading	11	2	Level 2	721	916	0
+NJ	NJ	Reading	11	3	Level 3	917	1119	0
+NJ	NJ	Reading	11	4	Level 4	1120	1329	0
+NJ	NJ	Reading	11	5	Level 5	1330	1400	0
+NJ	NJ	Reading	12	1	Level 1	0	768	0
+NJ	NJ	Reading	12	2	Level 2	769	960	0
+NJ	NJ	Reading	12	3	Level 3	961	1183	0
+NJ	NJ	Reading	12	4	Level 4	1184	1340	0
+NJ	NJ	Reading	12	5	Level 5	1341	1400	0
+NM	NM	Math	1	1	Level 1	0	303	0
+NM	NM	Math	1	2	Level 2	304	384	0
+NM	NM	Math	1	3	Level 3	385	453	0
+NM	NM	Math	1	4	Level 4	454	561	0
+NM	NM	Math	1	5	Level 5	562	1400	0
+NM	NM	Math	2	1	Level 1	0	424	0
+NM	NM	Math	2	2	Level 2	425	498	0
+NM	NM	Math	2	3	Level 3	499	559	0
+NM	NM	Math	2	4	Level 4	560	657	0
+NM	NM	Math	2	5	Level 5	658	1400	0
+NM	NM	Math	3	1	Level 1	0	503	1
+NM	NM	Math	3	2	Level 2	504	588	1
+NM	NM	Math	3	3	Level 3	589	648	1
+NM	NM	Math	3	4	Level 4	649	742	1
+NM	NM	Math	3	5	Level 5	743	1400	1
+NM	NM	Math	4	1	Level 1	0	561	1
+NM	NM	Math	4	2	Level 2	562	661	1
+NM	NM	Math	4	3	Level 3	662	735	1
+NM	NM	Math	4	4	Level 4	736	850	1
+NM	NM	Math	4	5	Level 5	851	1400	1
+NM	NM	Math	5	1	Level 1	0	613	1
+NM	NM	Math	5	2	Level 2	614	720	1
+NM	NM	Math	5	3	Level 3	721	804	1
+NM	NM	Math	5	4	Level 4	805	901	1
+NM	NM	Math	5	5	Level 5	902	1400	1
+NM	NM	Math	6	1	Level 1	0	649	1
+NM	NM	Math	6	2	Level 2	650	756	1
+NM	NM	Math	6	3	Level 3	757	826	1
+NM	NM	Math	6	4	Level 4	827	925	1
+NM	NM	Math	6	5	Level 5	926	1400	1
+NM	NM	Math	7	1	Level 1	0	686	1
+NM	NM	Math	7	2	Level 2	687	777	1
+NM	NM	Math	7	3	Level 3	778	860	1
+NM	NM	Math	7	4	Level 4	861	960	1
+NM	NM	Math	7	5	Level 5	961	1400	1
+NM	NM	Math	8	1	Level 1	0	738	1
+NM	NM	Math	8	2	Level 2	739	815	1
+NM	NM	Math	8	3	Level 3	816	875	1
+NM	NM	Math	8	4	Level 4	876	1007	1
+NM	NM	Math	8	5	Level 5	1008	1400	1
+NM	NM	Math	9	1	Level 1	0	747	0
+NM	NM	Math	9	2	Level 2	748	819	0
+NM	NM	Math	9	3	Level 3	820	876	0
+NM	NM	Math	9	4	Level 4	877	1008	0
+NM	NM	Math	9	5	Level 5	1009	1400	0
+NM	NM	Math	10	1	Level 1	0	748	0
+NM	NM	Math	10	2	Level 2	749	825	0
+NM	NM	Math	10	3	Level 3	826	879	0
+NM	NM	Math	10	4	Level 4	880	1030	0
+NM	NM	Math	10	5	Level 5	1031	1400	0
+NM	NM	Math	11	1	Level 1	0	766	0
+NM	NM	Math	11	2	Level 2	767	839	0
+NM	NM	Math	11	3	Level 3	840	894	0
+NM	NM	Math	11	4	Level 4	895	1036	0
+NM	NM	Math	11	5	Level 5	1037	1400	0
+NM	NM	Math	12	1	Level 1	0	778	0
+NM	NM	Math	12	2	Level 2	779	851	0
+NM	NM	Math	12	3	Level 3	852	904	0
+NM	NM	Math	12	4	Level 4	905	1076	0
+NM	NM	Math	12	5	Level 5	1077	1400	0
+NM	NM	Reading	1	1	Level 1	0	86	0
+NM	NM	Reading	1	2	Level 2	87	148	0
+NM	NM	Reading	1	3	Level 3	149	225	0
+NM	NM	Reading	1	4	Level 4	226	478	0
+NM	NM	Reading	1	5	Level 5	479	1400	0
+NM	NM	Reading	2	1	Level 1	0	208	0
+NM	NM	Reading	2	2	Level 2	209	309	0
+NM	NM	Reading	2	3	Level 3	310	396	0
+NM	NM	Reading	2	4	Level 4	397	679	0
+NM	NM	Reading	2	5	Level 5	680	1400	0
+NM	NM	Reading	3	1	Level 1	0	303	1
+NM	NM	Reading	3	2	Level 2	304	412	1
+NM	NM	Reading	3	3	Level 3	413	513	1
+NM	NM	Reading	3	4	Level 4	514	923	1
+NM	NM	Reading	3	5	Level 5	924	1400	1
+NM	NM	Reading	4	1	Level 1	0	334	1
+NM	NM	Reading	4	2	Level 2	335	441	1
+NM	NM	Reading	4	3	Level 3	442	570	1
+NM	NM	Reading	4	4	Level 4	571	1019	1
+NM	NM	Reading	4	5	Level 5	1020	1400	1
+NM	NM	Reading	5	1	Level 1	0	371	1
+NM	NM	Reading	5	2	Level 2	372	507	1
+NM	NM	Reading	5	3	Level 3	508	662	1
+NM	NM	Reading	5	4	Level 4	663	1178	1
+NM	NM	Reading	5	5	Level 5	1179	1400	1
+NM	NM	Reading	6	1	Level 1	0	416	1
+NM	NM	Reading	6	2	Level 2	417	560	1
+NM	NM	Reading	6	3	Level 3	561	776	1
+NM	NM	Reading	6	4	Level 4	777	1251	1
+NM	NM	Reading	6	5	Level 5	1252	1400	1
+NM	NM	Reading	7	1	Level 1	0	466	1
+NM	NM	Reading	7	2	Level 2	467	614	1
+NM	NM	Reading	7	3	Level 3	615	829	1
+NM	NM	Reading	7	4	Level 4	830	1292	1
+NM	NM	Reading	7	5	Level 5	1293	1400	1
+NM	NM	Reading	8	1	Level 1	0	526	1
+NM	NM	Reading	8	2	Level 2	527	678	1
+NM	NM	Reading	8	3	Level 3	679	908	1
+NM	NM	Reading	8	4	Level 4	909	1320	1
+NM	NM	Reading	8	5	Level 5	1321	1400	1
+NM	NM	Reading	9	1	Level 1	0	596	1
+NM	NM	Reading	9	2	Level 2	597	825	1
+NM	NM	Reading	9	3	Level 3	826	1035	1
+NM	NM	Reading	9	4	Level 4	1036	1324	1
+NM	NM	Reading	9	5	Level 5	1325	1400	1
+NM	NM	Reading	10	1	Level 1	0	684	1
+NM	NM	Reading	10	2	Level 2	685	900	1
+NM	NM	Reading	10	3	Level 3	901	1075	1
+NM	NM	Reading	10	4	Level 4	1076	1325	1
+NM	NM	Reading	10	5	Level 5	1326	1400	1
+NM	NM	Reading	11	1	Level 1	0	720	0
+NM	NM	Reading	11	2	Level 2	721	916	0
+NM	NM	Reading	11	3	Level 3	917	1119	0
+NM	NM	Reading	11	4	Level 4	1120	1329	0
+NM	NM	Reading	11	5	Level 5	1330	1400	0
+NM	NM	Reading	12	1	Level 1	0	768	0
+NM	NM	Reading	12	2	Level 2	769	960	0
+NM	NM	Reading	12	3	Level 3	961	1183	0
+NM	NM	Reading	12	4	Level 4	1184	1340	0
+NM	NM	Reading	12	5	Level 5	1341	1400	0
+NV	NV	Math	1	1	Level 1	0	336	0
+NV	NV	Math	1	2	Level 2	337	417	0
+NV	NV	Math	1	3	Level 3	418	498	0
+NV	NV	Math	1	4	Level 4	499	1400	0
+NV	NV	Math	2	1	Level 1	0	457	0
+NV	NV	Math	2	2	Level 2	458	528	0
+NV	NV	Math	2	3	Level 3	529	601	0
+NV	NV	Math	2	4	Level 4	602	1400	0
+NV	NV	Math	3	1	Level 1	0	546	1
+NV	NV	Math	3	2	Level 2	547	620	1
+NV	NV	Math	3	3	Level 3	621	686	1
+NV	NV	Math	3	4	Level 4	687	1400	1
+NV	NV	Math	4	1	Level 1	0	602	1
+NV	NV	Math	4	2	Level 2	603	695	1
+NV	NV	Math	4	3	Level 3	696	771	1
+NV	NV	Math	4	4	Level 4	772	1400	1
+NV	NV	Math	5	1	Level 1	0	692	1
+NV	NV	Math	5	2	Level 2	693	781	1
+NV	NV	Math	5	3	Level 3	782	826	1
+NV	NV	Math	5	4	Level 4	827	1400	1
+NV	NV	Math	6	1	Level 1	0	716	1
+NV	NV	Math	6	2	Level 2	717	807	1
+NV	NV	Math	6	3	Level 3	808	859	1
+NV	NV	Math	6	4	Level 4	860	1400	1
+NV	NV	Math	7	1	Level 1	0	745	1
+NV	NV	Math	7	2	Level 2	746	830	1
+NV	NV	Math	7	3	Level 3	831	885	1
+NV	NV	Math	7	4	Level 4	886	1400	1
+NV	NV	Math	8	1	Level 1	0	783	1
+NV	NV	Math	8	2	Level 2	784	851	1
+NV	NV	Math	8	3	Level 3	852	891	1
+NV	NV	Math	8	4	Level 4	892	1400	1
+NV	NV	Math	9	1	Level 1	0	790	0
+NV	NV	Math	9	2	Level 2	791	852	0
+NV	NV	Math	9	3	Level 3	853	895	0
+NV	NV	Math	9	4	Level 4	896	1400	0
+NV	NV	Math	10	1	Level 1	0	796	0
+NV	NV	Math	10	2	Level 2	797	858	0
+NV	NV	Math	10	3	Level 3	859	900	0
+NV	NV	Math	10	4	Level 4	901	1400	0
+NV	NV	Math	11	1	Level 1	0	813	0
+NV	NV	Math	11	2	Level 2	814	873	0
+NV	NV	Math	11	3	Level 3	874	918	0
+NV	NV	Math	11	4	Level 4	919	1400	0
+NV	NV	Math	12	1	Level 1	0	826	0
+NV	NV	Math	12	2	Level 2	827	890	0
+NV	NV	Math	12	3	Level 3	891	925	0
+NV	NV	Math	12	4	Level 4	926	1400	0
+NV	NV	Reading	1	1	Level 1	0	90	0
+NV	NV	Reading	1	2	Level 2	91	165	0
+NV	NV	Reading	1	3	Level 3	166	248	0
+NV	NV	Reading	1	4	Level 4	249	1400	0
+NV	NV	Reading	2	1	Level 1	0	232	0
+NV	NV	Reading	2	2	Level 2	233	337	0
+NV	NV	Reading	2	3	Level 3	338	435	0
+NV	NV	Reading	2	4	Level 4	436	1400	0
+NV	NV	Reading	3	1	Level 1	0	332	1
+NV	NV	Reading	3	2	Level 2	333	454	1
+NV	NV	Reading	3	3	Level 3	455	561	1
+NV	NV	Reading	3	4	Level 4	562	1400	1
+NV	NV	Reading	4	1	Level 1	0	434	1
+NV	NV	Reading	4	2	Level 2	435	530	1
+NV	NV	Reading	4	3	Level 3	531	660	1
+NV	NV	Reading	4	4	Level 4	661	1400	1
+NV	NV	Reading	5	1	Level 1	0	483	1
+NV	NV	Reading	5	2	Level 2	484	599	1
+NV	NV	Reading	5	3	Level 3	600	852	1
+NV	NV	Reading	5	4	Level 4	853	1400	1
+NV	NV	Reading	6	1	Level 1	0	499	1
+NV	NV	Reading	6	2	Level 2	500	691	1
+NV	NV	Reading	6	3	Level 3	692	1015	1
+NV	NV	Reading	6	4	Level 4	1016	1400	1
+NV	NV	Reading	7	1	Level 1	0	576	1
+NV	NV	Reading	7	2	Level 2	577	772	1
+NV	NV	Reading	7	3	Level 3	773	1168	1
+NV	NV	Reading	7	4	Level 4	1169	1400	1
+NV	NV	Reading	8	1	Level 1	0	589	1
+NV	NV	Reading	8	2	Level 2	590	857	1
+NV	NV	Reading	8	3	Level 3	858	1249	1
+NV	NV	Reading	8	4	Level 4	1250	1400	1
+NV	NV	Reading	9	1	Level 1	0	661	0
+NV	NV	Reading	9	2	Level 2	662	918	0
+NV	NV	Reading	9	3	Level 3	919	1291	0
+NV	NV	Reading	9	4	Level 4	1292	1400	0
+NV	NV	Reading	10	1	Level 1	0	674	0
+NV	NV	Reading	10	2	Level 2	675	957	0
+NV	NV	Reading	10	3	Level 3	958	1314	0
+NV	NV	Reading	10	4	Level 4	1315	1400	0
+NV	NV	Reading	11	1	Level 1	0	715	0
+NV	NV	Reading	11	2	Level 2	716	992	0
+NV	NV	Reading	11	3	Level 3	993	1321	0
+NV	NV	Reading	11	4	Level 4	1322	1400	0
+NV	NV	Reading	12	1	Level 1	0	761	0
+NV	NV	Reading	12	2	Level 2	762	1079	0
+NV	NV	Reading	12	3	Level 3	1080	1332	0
+NV	NV	Reading	12	4	Level 4	1333	1400	0
+NY	NY	Math	1	1	Level 1	0	364	0
+NY	NY	Math	1	2	Level 2	365	440	0
+NY	NY	Math	1	3	Level 3	441	487	0
+NY	NY	Math	1	4	Level 4	488	1400	0
+NY	NY	Math	2	1	Level 1	0	482	0
+NY	NY	Math	2	2	Level 2	483	549	0
+NY	NY	Math	2	3	Level 3	550	594	0
+NY	NY	Math	2	4	Level 4	595	1400	0
+NY	NY	Math	3	1	Level 1	0	573	1
+NY	NY	Math	3	2	Level 2	574	640	1
+NY	NY	Math	3	3	Level 3	641	681	1
+NY	NY	Math	3	4	Level 4	682	1400	1
+NY	NY	Math	4	1	Level 1	0	638	1
+NY	NY	Math	4	2	Level 2	639	709	1
+NY	NY	Math	4	3	Level 3	710	757	1
+NY	NY	Math	4	4	Level 4	758	1400	1
+NY	NY	Math	5	1	Level 1	0	720	1
+NY	NY	Math	5	2	Level 2	721	780	1
+NY	NY	Math	5	3	Level 3	781	832	1
+NY	NY	Math	5	4	Level 4	833	1400	1
+NY	NY	Math	6	1	Level 1	0	733	1
+NY	NY	Math	6	2	Level 2	734	821	1
+NY	NY	Math	6	3	Level 3	822	862	1
+NY	NY	Math	6	4	Level 4	863	1400	1
+NY	NY	Math	7	1	Level 1	0	774	1
+NY	NY	Math	7	2	Level 2	775	848	1
+NY	NY	Math	7	3	Level 3	849	904	1
+NY	NY	Math	7	4	Level 4	905	1400	1
+NY	NY	Math	8	1	Level 1	0	775	1
+NY	NY	Math	8	2	Level 2	776	873	1
+NY	NY	Math	8	3	Level 3	874	924	1
+NY	NY	Math	8	4	Level 4	925	1400	1
+NY	NY	Math	9	1	Level 1	0	783	0
+NY	NY	Math	9	2	Level 2	784	876	0
+NY	NY	Math	9	3	Level 3	877	934	0
+NY	NY	Math	9	4	Level 4	935	1400	0
+NY	NY	Math	10	1	Level 1	0	787	0
+NY	NY	Math	10	2	Level 2	788	880	0
+NY	NY	Math	10	3	Level 3	881	940	0
+NY	NY	Math	10	4	Level 4	941	1400	0
+NY	NY	Math	11	1	Level 1	0	805	0
+NY	NY	Math	11	2	Level 2	806	896	0
+NY	NY	Math	11	3	Level 3	897	957	0
+NY	NY	Math	11	4	Level 4	958	1400	0
+NY	NY	Math	12	1	Level 1	0	819	0
+NY	NY	Math	12	2	Level 2	820	906	0
+NY	NY	Math	12	3	Level 3	907	969	0
+NY	NY	Math	12	4	Level 4	970	1400	0
+NY	NY	Reading	1	1	Level 1	0	123	0
+NY	NY	Reading	1	2	Level 2	124	225	0
+NY	NY	Reading	1	3	Level 3	226	359	0
+NY	NY	Reading	1	4	Level 4	360	1400	0
+NY	NY	Reading	2	1	Level 1	0	280	0
+NY	NY	Reading	2	2	Level 2	281	384	0
+NY	NY	Reading	2	3	Level 3	385	543	0
+NY	NY	Reading	2	4	Level 4	544	1400	0
+NY	NY	Reading	3	1	Level 1	0	377	1
+NY	NY	Reading	3	2	Level 2	378	499	1
+NY	NY	Reading	3	3	Level 3	500	701	1
+NY	NY	Reading	3	4	Level 4	702	1400	1
+NY	NY	Reading	4	1	Level 1	0	448	1
+NY	NY	Reading	4	2	Level 2	449	612	1
+NY	NY	Reading	4	3	Level 3	613	777	1
+NY	NY	Reading	4	4	Level 4	778	1400	1
+NY	NY	Reading	5	1	Level 1	0	540	1
+NY	NY	Reading	5	2	Level 2	541	730	1
+NY	NY	Reading	5	3	Level 3	731	932	1
+NY	NY	Reading	5	4	Level 4	933	1400	1
+NY	NY	Reading	6	1	Level 1	0	565	1
+NY	NY	Reading	6	2	Level 2	566	834	1
+NY	NY	Reading	6	3	Level 3	835	990	1
+NY	NY	Reading	6	4	Level 4	991	1400	1
+NY	NY	Reading	7	1	Level 1	0	660	1
+NY	NY	Reading	7	2	Level 2	661	927	1
+NY	NY	Reading	7	3	Level 3	928	1214	1
+NY	NY	Reading	7	4	Level 4	1215	1400	1
+NY	NY	Reading	8	1	Level 1	0	688	1
+NY	NY	Reading	8	2	Level 2	689	988	1
+NY	NY	Reading	8	3	Level 3	989	1239	1
+NY	NY	Reading	8	4	Level 4	1240	1400	1
+NY	NY	Reading	9	1	Level 1	0	803	0
+NY	NY	Reading	9	2	Level 2	804	1124	0
+NY	NY	Reading	9	3	Level 3	1125	1300	0
+NY	NY	Reading	9	4	Level 4	1301	1400	0
+NY	NY	Reading	10	1	Level 1	0	843	0
+NY	NY	Reading	10	2	Level 2	844	1175	0
+NY	NY	Reading	10	3	Level 3	1176	1317	0
+NY	NY	Reading	10	4	Level 4	1318	1400	0
+NY	NY	Reading	11	1	Level 1	0	881	0
+NY	NY	Reading	11	2	Level 2	882	1212	0
+NY	NY	Reading	11	3	Level 3	1213	1324	0
+NY	NY	Reading	11	4	Level 4	1325	1400	0
+NY	NY	Reading	12	1	Level 1	0	907	0
+NY	NY	Reading	12	2	Level 2	908	1255	0
+NY	NY	Reading	12	3	Level 3	1256	1334	0
+NY	NY	Reading	12	4	Level 4	1335	1400	0
+OH	OH	Math	1	1	Level 1	0	297	0
+OH	OH	Math	1	2	Level 2	298	381	0
+OH	OH	Math	1	3	Level 3	382	448	0
+OH	OH	Math	1	4	Level 4	449	569	0
+OH	OH	Math	1	5	Level 5	570	1400	0
+OH	OH	Math	2	1	Level 1	0	422	0
+OH	OH	Math	2	2	Level 2	423	497	0
+OH	OH	Math	2	3	Level 3	498	557	0
+OH	OH	Math	2	4	Level 4	558	659	0
+OH	OH	Math	2	5	Level 5	660	1400	0
+OH	OH	Math	3	1	Level 1	0	503	1
+OH	OH	Math	3	2	Level 2	504	588	1
+OH	OH	Math	3	3	Level 3	589	648	1
+OH	OH	Math	3	4	Level 4	649	742	1
+OH	OH	Math	3	5	Level 5	743	1400	1
+OH	OH	Math	4	1	Level 1	0	561	1
+OH	OH	Math	4	2	Level 2	562	661	1
+OH	OH	Math	4	3	Level 3	662	735	1
+OH	OH	Math	4	4	Level 4	736	850	1
+OH	OH	Math	4	5	Level 5	851	1400	1
+OH	OH	Math	5	1	Level 1	0	613	1
+OH	OH	Math	5	2	Level 2	614	720	1
+OH	OH	Math	5	3	Level 3	721	804	1
+OH	OH	Math	5	4	Level 4	805	901	1
+OH	OH	Math	5	5	Level 5	902	1400	1
+OH	OH	Math	6	1	Level 1	0	649	1
+OH	OH	Math	6	2	Level 2	650	756	1
+OH	OH	Math	6	3	Level 3	757	826	1
+OH	OH	Math	6	4	Level 4	827	925	1
+OH	OH	Math	6	5	Level 5	926	1400	1
+OH	OH	Math	7	1	Level 1	0	686	1
+OH	OH	Math	7	2	Level 2	687	777	1
+OH	OH	Math	7	3	Level 3	778	860	1
+OH	OH	Math	7	4	Level 4	861	960	1
+OH	OH	Math	7	5	Level 5	961	1400	1
+OH	OH	Math	8	1	Level 1	0	738	1
+OH	OH	Math	8	2	Level 2	739	815	1
+OH	OH	Math	8	3	Level 3	816	875	1
+OH	OH	Math	8	4	Level 4	876	1007	1
+OH	OH	Math	8	5	Level 5	1008	1400	1
+OH	OH	Math	9	1	Level 1	0	747	0
+OH	OH	Math	9	2	Level 2	748	819	0
+OH	OH	Math	9	3	Level 3	820	877	0
+OH	OH	Math	9	4	Level 4	878	1008	0
+OH	OH	Math	9	5	Level 5	1009	1400	0
+OH	OH	Math	10	1	Level 1	0	748	0
+OH	OH	Math	10	2	Level 2	749	825	0
+OH	OH	Math	10	3	Level 3	826	883	0
+OH	OH	Math	10	4	Level 4	884	1024	0
+OH	OH	Math	10	5	Level 5	1025	1400	0
+OH	OH	Math	11	1	Level 1	0	769	0
+OH	OH	Math	11	2	Level 2	770	839	0
+OH	OH	Math	11	3	Level 3	840	900	0
+OH	OH	Math	11	4	Level 4	901	1036	0
+OH	OH	Math	11	5	Level 5	1037	1400	0
+OH	OH	Math	12	1	Level 1	0	783	0
+OH	OH	Math	12	2	Level 2	784	855	0
+OH	OH	Math	12	3	Level 3	856	910	0
+OH	OH	Math	12	4	Level 4	911	1076	0
+OH	OH	Math	12	5	Level 5	1077	1400	0
+OH	OH	Reading	1	1	Level 1	0	83	0
+OH	OH	Reading	1	2	Level 2	84	120	0
+OH	OH	Reading	1	3	Level 3	121	201	0
+OH	OH	Reading	1	4	Level 4	202	444	0
+OH	OH	Reading	1	5	Level 5	445	1400	0
+OH	OH	Reading	2	1	Level 1	0	198	0
+OH	OH	Reading	2	2	Level 2	199	298	0
+OH	OH	Reading	2	3	Level 3	299	385	0
+OH	OH	Reading	2	4	Level 4	386	638	0
+OH	OH	Reading	2	5	Level 5	639	1400	0
+OH	OH	Reading	3	1	Level 1	0	303	1
+OH	OH	Reading	3	2	Level 2	304	412	1
+OH	OH	Reading	3	3	Level 3	413	513	1
+OH	OH	Reading	3	4	Level 4	514	923	1
+OH	OH	Reading	3	5	Level 5	924	1400	1
+OH	OH	Reading	4	1	Level 1	0	334	1
+OH	OH	Reading	4	2	Level 2	335	441	1
+OH	OH	Reading	4	3	Level 3	442	570	1
+OH	OH	Reading	4	4	Level 4	571	1019	1
+OH	OH	Reading	4	5	Level 5	1020	1400	1
+OH	OH	Reading	5	1	Level 1	0	371	1
+OH	OH	Reading	5	2	Level 2	372	507	1
+OH	OH	Reading	5	3	Level 3	508	662	1
+OH	OH	Reading	5	4	Level 4	663	1178	1
+OH	OH	Reading	5	5	Level 5	1179	1400	1
+OH	OH	Reading	6	1	Level 1	0	416	1
+OH	OH	Reading	6	2	Level 2	417	560	1
+OH	OH	Reading	6	3	Level 3	561	776	1
+OH	OH	Reading	6	4	Level 4	777	1251	1
+OH	OH	Reading	6	5	Level 5	1252	1400	1
+OH	OH	Reading	7	1	Level 1	0	466	1
+OH	OH	Reading	7	2	Level 2	467	614	1
+OH	OH	Reading	7	3	Level 3	615	829	1
+OH	OH	Reading	7	4	Level 4	830	1292	1
+OH	OH	Reading	7	5	Level 5	1293	1400	1
+OH	OH	Reading	8	1	Level 1	0	526	1
+OH	OH	Reading	8	2	Level 2	527	678	1
+OH	OH	Reading	8	3	Level 3	679	908	1
+OH	OH	Reading	8	4	Level 4	909	1320	1
+OH	OH	Reading	8	5	Level 5	1321	1400	1
+OH	OH	Reading	9	1	Level 1	0	596	1
+OH	OH	Reading	9	2	Level 2	597	825	1
+OH	OH	Reading	9	3	Level 3	826	1035	1
+OH	OH	Reading	9	4	Level 4	1036	1324	1
+OH	OH	Reading	9	5	Level 5	1325	1400	1
+OH	OH	Reading	10	1	Level 1	0	684	1
+OH	OH	Reading	10	2	Level 2	685	900	1
+OH	OH	Reading	10	3	Level 3	901	1075	1
+OH	OH	Reading	10	4	Level 4	1076	1325	1
+OH	OH	Reading	10	5	Level 5	1326	1400	1
+OH	OH	Reading	11	1	Level 1	0	710	0
+OH	OH	Reading	11	2	Level 2	711	918	0
+OH	OH	Reading	11	3	Level 3	919	1122	0
+OH	OH	Reading	11	4	Level 4	1123	1329	0
+OH	OH	Reading	11	5	Level 5	1330	1400	0
+OH	OH	Reading	12	1	Level 1	0	752	0
+OH	OH	Reading	12	2	Level 2	753	967	0
+OH	OH	Reading	12	3	Level 3	968	1188	0
+OH	OH	Reading	12	4	Level 4	1189	1341	0
+OH	OH	Reading	12	5	Level 5	1342	1400	0
+OK	OK	Math	1	1	Unsatisfactory	0	320	0
+OK	OK	Math	1	2	Limited Knowledge	321	372	0
+OK	OK	Math	1	3	Proficient	373	470	0
+OK	OK	Math	1	4	Advanced	471	1400	0
+OK	OK	Math	2	1	Unsatisfactory	0	444	0
+OK	OK	Math	2	2	Limited Knowledge	445	491	0
+OK	OK	Math	2	3	Proficient	492	574	0
+OK	OK	Math	2	4	Advanced	575	1400	0
+OK	OK	Math	3	1	Unsatisfactory	0	514	1
+OK	OK	Math	3	2	Limited Knowledge	515	585	1
+OK	OK	Math	3	3	Proficient	586	668	1
+OK	OK	Math	3	4	Advanced	669	1400	1
+OK	OK	Math	4	1	Unsatisfactory	0	564	1
+OK	OK	Math	4	2	Limited Knowledge	565	647	1
+OK	OK	Math	4	3	Proficient	648	732	1
+OK	OK	Math	4	4	Advanced	733	1400	1
+OK	OK	Math	5	1	Unsatisfactory	0	640	1
+OK	OK	Math	5	2	Limited Knowledge	641	700	1
+OK	OK	Math	5	3	Proficient	701	791	1
+OK	OK	Math	5	4	Advanced	792	1400	1
+OK	OK	Math	6	1	Unsatisfactory	0	692	1
+OK	OK	Math	6	2	Limited Knowledge	693	736	1
+OK	OK	Math	6	3	Proficient	737	835	1
+OK	OK	Math	6	4	Advanced	836	1400	1
+OK	OK	Math	7	1	Unsatisfactory	0	714	1
+OK	OK	Math	7	2	Limited Knowledge	715	755	1
+OK	OK	Math	7	3	Proficient	756	885	1
+OK	OK	Math	7	4	Advanced	886	1400	1
+OK	OK	Math	8	1	Unsatisfactory	0	744	0
+OK	OK	Math	8	2	Limited Knowledge	745	783	0
+OK	OK	Math	8	3	Proficient	784	923	0
+OK	OK	Math	8	4	Advanced	924	1400	0
+OK	OK	Math	9	1	Unsatisfactory	0	754	0
+OK	OK	Math	9	2	Limited Knowledge	755	792	0
+OK	OK	Math	9	3	Proficient	793	929	0
+OK	OK	Math	9	4	Advanced	930	1400	0
+OK	OK	Math	10	1	Unsatisfactory	0	757	0
+OK	OK	Math	10	2	Limited Knowledge	758	795	0
+OK	OK	Math	10	3	Proficient	796	934	0
+OK	OK	Math	10	4	Advanced	935	1400	0
+OK	OK	Math	11	1	Unsatisfactory	0	770	0
+OK	OK	Math	11	2	Limited Knowledge	771	812	0
+OK	OK	Math	11	3	Proficient	813	952	0
+OK	OK	Math	11	4	Advanced	953	1400	0
+OK	OK	Math	12	1	Unsatisfactory	0	786	0
+OK	OK	Math	12	2	Limited Knowledge	787	825	0
+OK	OK	Math	12	3	Proficient	826	961	0
+OK	OK	Math	12	4	Advanced	962	1400	0
+OK	OK	Reading	1	1	Unsatisfactory	0	83	0
+OK	OK	Reading	1	2	Limited Knowledge	84	126	0
+OK	OK	Reading	1	3	Proficient	127	359	0
+OK	OK	Reading	1	4	Advanced	360	1400	0
+OK	OK	Reading	2	1	Unsatisfactory	0	195	0
+OK	OK	Reading	2	2	Limited Knowledge	196	283	0
+OK	OK	Reading	2	3	Proficient	284	543	0
+OK	OK	Reading	2	4	Advanced	544	1400	0
+OK	OK	Reading	3	1	Unsatisfactory	0	287	1
+OK	OK	Reading	3	2	Limited Knowledge	288	379	1
+OK	OK	Reading	3	3	Proficient	380	693	1
+OK	OK	Reading	3	4	Advanced	694	1400	1
+OK	OK	Reading	4	1	Unsatisfactory	0	374	1
+OK	OK	Reading	4	2	Limited Knowledge	375	460	1
+OK	OK	Reading	4	3	Proficient	461	819	1
+OK	OK	Reading	4	4	Advanced	820	1400	1
+OK	OK	Reading	5	1	Unsatisfactory	0	433	1
+OK	OK	Reading	5	2	Limited Knowledge	434	541	1
+OK	OK	Reading	5	3	Proficient	542	939	1
+OK	OK	Reading	5	4	Advanced	940	1400	1
+OK	OK	Reading	6	1	Unsatisfactory	0	477	1
+OK	OK	Reading	6	2	Limited Knowledge	478	608	1
+OK	OK	Reading	6	3	Proficient	609	1013	1
+OK	OK	Reading	6	4	Advanced	1014	1400	1
+OK	OK	Reading	7	1	Unsatisfactory	0	526	1
+OK	OK	Reading	7	2	Limited Knowledge	527	631	1
+OK	OK	Reading	7	3	Proficient	632	1150	1
+OK	OK	Reading	7	4	Advanced	1151	1400	1
+OK	OK	Reading	8	1	Unsatisfactory	0	563	1
+OK	OK	Reading	8	2	Limited Knowledge	564	682	1
+OK	OK	Reading	8	3	Proficient	683	1221	1
+OK	OK	Reading	8	4	Advanced	1222	1400	1
+OK	OK	Reading	9	1	Unsatisfactory	0	647	0
+OK	OK	Reading	9	2	Limited Knowledge	648	803	0
+OK	OK	Reading	9	3	Proficient	804	1288	0
+OK	OK	Reading	9	4	Advanced	1289	1400	0
+OK	OK	Reading	10	1	Unsatisfactory	0	672	0
+OK	OK	Reading	10	2	Limited Knowledge	673	843	0
+OK	OK	Reading	10	3	Proficient	844	1312	0
+OK	OK	Reading	10	4	Advanced	1313	1400	0
+OK	OK	Reading	11	1	Unsatisfactory	0	707	0
+OK	OK	Reading	11	2	Limited Knowledge	708	881	0
+OK	OK	Reading	11	3	Proficient	882	1320	0
+OK	OK	Reading	11	4	Advanced	1321	1400	0
+OK	OK	Reading	12	1	Unsatisfactory	0	736	0
+OK	OK	Reading	12	2	Limited Knowledge	737	907	0
+OK	OK	Reading	12	3	Proficient	908	1330	0
+OK	OK	Reading	12	4	Advanced	1331	1400	0
+OR	OR	Math	1	1	Level 1	0	336	0
+OR	OR	Math	1	2	Level 2	337	417	0
+OR	OR	Math	1	3	Level 3	418	498	0
+OR	OR	Math	1	4	Level 4	499	1400	0
+OR	OR	Math	2	1	Level 1	0	457	0
+OR	OR	Math	2	2	Level 2	458	528	0
+OR	OR	Math	2	3	Level 3	529	601	0
+OR	OR	Math	2	4	Level 4	602	1400	0
+OR	OR	Math	3	1	Level 1	0	546	1
+OR	OR	Math	3	2	Level 2	547	620	1
+OR	OR	Math	3	3	Level 3	621	686	1
+OR	OR	Math	3	4	Level 4	687	1400	1
+OR	OR	Math	4	1	Level 1	0	602	1
+OR	OR	Math	4	2	Level 2	603	695	1
+OR	OR	Math	4	3	Level 3	696	771	1
+OR	OR	Math	4	4	Level 4	772	1400	1
+OR	OR	Math	5	1	Level 1	0	692	1
+OR	OR	Math	5	2	Level 2	693	781	1
+OR	OR	Math	5	3	Level 3	782	826	1
+OR	OR	Math	5	4	Level 4	827	1400	1
+OR	OR	Math	6	1	Level 1	0	716	1
+OR	OR	Math	6	2	Level 2	717	807	1
+OR	OR	Math	6	3	Level 3	808	859	1
+OR	OR	Math	6	4	Level 4	860	1400	1
+OR	OR	Math	7	1	Level 1	0	745	1
+OR	OR	Math	7	2	Level 2	746	830	1
+OR	OR	Math	7	3	Level 3	831	885	1
+OR	OR	Math	7	4	Level 4	886	1400	1
+OR	OR	Math	8	1	Level 1	0	783	1
+OR	OR	Math	8	2	Level 2	784	851	1
+OR	OR	Math	8	3	Level 3	852	891	1
+OR	OR	Math	8	4	Level 4	892	1400	1
+OR	OR	Math	9	1	Level 1	0	790	0
+OR	OR	Math	9	2	Level 2	791	852	0
+OR	OR	Math	9	3	Level 3	853	895	0
+OR	OR	Math	9	4	Level 4	896	1400	0
+OR	OR	Math	10	1	Level 1	0	796	0
+OR	OR	Math	10	2	Level 2	797	858	0
+OR	OR	Math	10	3	Level 3	859	900	0
+OR	OR	Math	10	4	Level 4	901	1400	0
+OR	OR	Math	11	1	Level 1	0	813	0
+OR	OR	Math	11	2	Level 2	814	873	0
+OR	OR	Math	11	3	Level 3	874	918	0
+OR	OR	Math	11	4	Level 4	919	1400	0
+OR	OR	Math	12	1	Level 1	0	826	0
+OR	OR	Math	12	2	Level 2	827	890	0
+OR	OR	Math	12	3	Level 3	891	925	0
+OR	OR	Math	12	4	Level 4	926	1400	0
+OR	OR	Reading	1	1	Level 1	0	90	0
+OR	OR	Reading	1	2	Level 2	91	165	0
+OR	OR	Reading	1	3	Level 3	166	248	0
+OR	OR	Reading	1	4	Level 4	249	1400	0
+OR	OR	Reading	2	1	Level 1	0	232	0
+OR	OR	Reading	2	2	Level 2	233	337	0
+OR	OR	Reading	2	3	Level 3	338	435	0
+OR	OR	Reading	2	4	Level 4	436	1400	0
+OR	OR	Reading	3	1	Level 1	0	332	1
+OR	OR	Reading	3	2	Level 2	333	454	1
+OR	OR	Reading	3	3	Level 3	455	561	1
+OR	OR	Reading	3	4	Level 4	562	1400	1
+OR	OR	Reading	4	1	Level 1	0	434	1
+OR	OR	Reading	4	2	Level 2	435	530	1
+OR	OR	Reading	4	3	Level 3	531	660	1
+OR	OR	Reading	4	4	Level 4	661	1400	1
+OR	OR	Reading	5	1	Level 1	0	483	1
+OR	OR	Reading	5	2	Level 2	484	599	1
+OR	OR	Reading	5	3	Level 3	600	852	1
+OR	OR	Reading	5	4	Level 4	853	1400	1
+OR	OR	Reading	6	1	Level 1	0	499	1
+OR	OR	Reading	6	2	Level 2	500	691	1
+OR	OR	Reading	6	3	Level 3	692	1015	1
+OR	OR	Reading	6	4	Level 4	1016	1400	1
+OR	OR	Reading	7	1	Level 1	0	576	1
+OR	OR	Reading	7	2	Level 2	577	772	1
+OR	OR	Reading	7	3	Level 3	773	1168	1
+OR	OR	Reading	7	4	Level 4	1169	1400	1
+OR	OR	Reading	8	1	Level 1	0	589	1
+OR	OR	Reading	8	2	Level 2	590	857	1
+OR	OR	Reading	8	3	Level 3	858	1249	1
+OR	OR	Reading	8	4	Level 4	1250	1400	1
+OR	OR	Reading	9	1	Level 1	0	661	0
+OR	OR	Reading	9	2	Level 2	662	918	0
+OR	OR	Reading	9	3	Level 3	919	1291	0
+OR	OR	Reading	9	4	Level 4	1292	1400	0
+OR	OR	Reading	10	1	Level 1	0	674	0
+OR	OR	Reading	10	2	Level 2	675	957	0
+OR	OR	Reading	10	3	Level 3	958	1314	0
+OR	OR	Reading	10	4	Level 4	1315	1400	0
+OR	OR	Reading	11	1	Level 1	0	715	0
+OR	OR	Reading	11	2	Level 2	716	992	0
+OR	OR	Reading	11	3	Level 3	993	1321	0
+OR	OR	Reading	11	4	Level 4	1322	1400	0
+OR	OR	Reading	12	1	Level 1	0	761	0
+OR	OR	Reading	12	2	Level 2	762	1079	0
+OR	OR	Reading	12	3	Level 3	1080	1332	0
+OR	OR	Reading	12	4	Level 4	1333	1400	0
+PA	PA	Math	1	1	Below Basic	0	352	0
+PA	PA	Math	1	2	Basic	353	424	0
+PA	PA	Math	1	3	Proficient	425	491	0
+PA	PA	Math	1	4	Advanced	492	1400	0
+PA	PA	Math	2	1	Below Basic	0	471	0
+PA	PA	Math	2	2	Basic	472	534	0
+PA	PA	Math	2	3	Proficient	535	595	0
+PA	PA	Math	2	4	Advanced	596	1400	0
+PA	PA	Math	3	1	Below Basic	0	559	1
+PA	PA	Math	3	2	Basic	560	624	1
+PA	PA	Math	3	3	Proficient	625	675	1
+PA	PA	Math	3	4	Advanced	676	1400	1
+PA	PA	Math	4	1	Below Basic	0	623	1
+PA	PA	Math	4	2	Basic	624	703	1
+PA	PA	Math	4	3	Proficient	704	761	1
+PA	PA	Math	4	4	Advanced	762	1400	1
+PA	PA	Math	5	1	Below Basic	0	667	1
+PA	PA	Math	5	2	Basic	668	776	1
+PA	PA	Math	5	3	Proficient	777	828	1
+PA	PA	Math	5	4	Advanced	829	1400	1
+PA	PA	Math	6	1	Below Basic	0	721	1
+PA	PA	Math	6	2	Basic	722	812	1
+PA	PA	Math	6	3	Proficient	813	872	1
+PA	PA	Math	6	4	Advanced	873	1400	1
+PA	PA	Math	7	1	Below Basic	0	744	0
+PA	PA	Math	7	2	Basic	745	843	0
+PA	PA	Math	7	3	Proficient	844	910	0
+PA	PA	Math	7	4	Advanced	911	1400	0
+PA	PA	Math	8	1	Below Basic	0	772	0
+PA	PA	Math	8	2	Basic	773	881	0
+PA	PA	Math	8	3	Proficient	882	949	0
+PA	PA	Math	8	4	Advanced	950	1400	0
+PA	PA	Math	9	1	Below Basic	0	781	0
+PA	PA	Math	9	2	Basic	782	883	0
+PA	PA	Math	9	3	Proficient	884	957	0
+PA	PA	Math	9	4	Advanced	958	1400	0
+PA	PA	Math	10	1	Below Basic	0	786	0
+PA	PA	Math	10	2	Basic	787	888	0
+PA	PA	Math	10	3	Proficient	889	964	0
+PA	PA	Math	10	4	Advanced	965	1400	0
+PA	PA	Math	11	1	Below Basic	0	805	0
+PA	PA	Math	11	2	Basic	806	906	0
+PA	PA	Math	11	3	Proficient	907	979	0
+PA	PA	Math	11	4	Advanced	980	1400	0
+PA	PA	Math	12	1	Below Basic	0	819	0
+PA	PA	Math	12	2	Basic	820	917	0
+PA	PA	Math	12	3	Proficient	918	994	0
+PA	PA	Math	12	4	Advanced	995	1400	0
+PA	PA	Reading	1	1	Below Basic	0	76	0
+PA	PA	Reading	1	2	Basic	77	136	0
+PA	PA	Reading	1	3	Proficient	137	293	0
+PA	PA	Reading	1	4	Advanced	294	1400	0
+PA	PA	Reading	2	1	Below Basic	0	161	0
+PA	PA	Reading	2	2	Basic	162	304	0
+PA	PA	Reading	2	3	Proficient	305	479	0
+PA	PA	Reading	2	4	Advanced	480	1400	0
+PA	PA	Reading	3	1	Below Basic	0	254	1
+PA	PA	Reading	3	2	Basic	255	411	1
+PA	PA	Reading	3	3	Proficient	412	614	1
+PA	PA	Reading	3	4	Advanced	615	1400	1
+PA	PA	Reading	4	1	Below Basic	0	340	1
+PA	PA	Reading	4	2	Basic	341	497	1
+PA	PA	Reading	4	3	Proficient	498	670	1
+PA	PA	Reading	4	4	Advanced	671	1400	1
+PA	PA	Reading	5	1	Below Basic	0	421	1
+PA	PA	Reading	5	2	Basic	422	563	1
+PA	PA	Reading	5	3	Proficient	564	853	1
+PA	PA	Reading	5	4	Advanced	854	1400	1
+PA	PA	Reading	6	1	Below Basic	0	432	1
+PA	PA	Reading	6	2	Basic	433	652	1
+PA	PA	Reading	6	3	Proficient	653	944	1
+PA	PA	Reading	6	4	Advanced	945	1400	1
+PA	PA	Reading	7	1	Below Basic	0	433	1
+PA	PA	Reading	7	2	Basic	434	761	1
+PA	PA	Reading	7	3	Proficient	762	1122	1
+PA	PA	Reading	7	4	Advanced	1123	1400	1
+PA	PA	Reading	8	1	Below Basic	0	541	1
+PA	PA	Reading	8	2	Basic	542	844	1
+PA	PA	Reading	8	3	Proficient	845	1238	1
+PA	PA	Reading	8	4	Advanced	1239	1400	1
+PA	PA	Reading	9	1	Below Basic	0	622	0
+PA	PA	Reading	9	2	Basic	623	917	0
+PA	PA	Reading	9	3	Proficient	918	1290	0
+PA	PA	Reading	9	4	Advanced	1291	1400	0
+PA	PA	Reading	10	1	Below Basic	0	635	0
+PA	PA	Reading	10	2	Basic	636	956	0
+PA	PA	Reading	10	3	Proficient	957	1313	0
+PA	PA	Reading	10	4	Advanced	1314	1400	0
+PA	PA	Reading	11	1	Below Basic	0	664	0
+PA	PA	Reading	11	2	Basic	665	991	0
+PA	PA	Reading	11	3	Proficient	992	1320	0
+PA	PA	Reading	11	4	Advanced	1321	1400	0
+PA	PA	Reading	12	1	Below Basic	0	695	0
+PA	PA	Reading	12	2	Basic	696	1078	0
+PA	PA	Reading	12	3	Proficient	1079	1331	0
+PA	PA	Reading	12	4	Advanced	1332	1400	0
+RI	RI	Math	1	1	Level 1	0	297	0
+RI	RI	Math	1	2	Level 2	298	381	0
+RI	RI	Math	1	3	Level 3	382	448	0
+RI	RI	Math	1	4	Level 4	449	569	0
+RI	RI	Math	1	5	Level 5	570	1400	0
+RI	RI	Math	2	1	Level 1	0	422	0
+RI	RI	Math	2	2	Level 2	423	497	0
+RI	RI	Math	2	3	Level 3	498	557	0
+RI	RI	Math	2	4	Level 4	558	659	0
+RI	RI	Math	2	5	Level 5	660	1400	0
+RI	RI	Math	3	1	Level 1	0	503	1
+RI	RI	Math	3	2	Level 2	504	588	1
+RI	RI	Math	3	3	Level 3	589	648	1
+RI	RI	Math	3	4	Level 4	649	742	1
+RI	RI	Math	3	5	Level 5	743	1400	1
+RI	RI	Math	4	1	Level 1	0	561	1
+RI	RI	Math	4	2	Level 2	562	661	1
+RI	RI	Math	4	3	Level 3	662	735	1
+RI	RI	Math	4	4	Level 4	736	850	1
+RI	RI	Math	4	5	Level 5	851	1400	1
+RI	RI	Math	5	1	Level 1	0	613	1
+RI	RI	Math	5	2	Level 2	614	720	1
+RI	RI	Math	5	3	Level 3	721	804	1
+RI	RI	Math	5	4	Level 4	805	901	1
+RI	RI	Math	5	5	Level 5	902	1400	1
+RI	RI	Math	6	1	Level 1	0	649	1
+RI	RI	Math	6	2	Level 2	650	756	1
+RI	RI	Math	6	3	Level 3	757	826	1
+RI	RI	Math	6	4	Level 4	827	925	1
+RI	RI	Math	6	5	Level 5	926	1400	1
+RI	RI	Math	7	1	Level 1	0	686	1
+RI	RI	Math	7	2	Level 2	687	777	1
+RI	RI	Math	7	3	Level 3	778	860	1
+RI	RI	Math	7	4	Level 4	861	960	1
+RI	RI	Math	7	5	Level 5	961	1400	1
+RI	RI	Math	8	1	Level 1	0	738	1
+RI	RI	Math	8	2	Level 2	739	815	1
+RI	RI	Math	8	3	Level 3	816	875	1
+RI	RI	Math	8	4	Level 4	876	1007	1
+RI	RI	Math	8	5	Level 5	1008	1400	1
+RI	RI	Math	9	1	Level 1	0	747	0
+RI	RI	Math	9	2	Level 2	748	819	0
+RI	RI	Math	9	3	Level 3	820	877	0
+RI	RI	Math	9	4	Level 4	878	1008	0
+RI	RI	Math	9	5	Level 5	1009	1400	0
+RI	RI	Math	10	1	Level 1	0	748	0
+RI	RI	Math	10	2	Level 2	749	825	0
+RI	RI	Math	10	3	Level 3	826	883	0
+RI	RI	Math	10	4	Level 4	884	1024	0
+RI	RI	Math	10	5	Level 5	1025	1400	0
+RI	RI	Math	11	1	Level 1	0	769	0
+RI	RI	Math	11	2	Level 2	770	839	0
+RI	RI	Math	11	3	Level 3	840	900	0
+RI	RI	Math	11	4	Level 4	901	1036	0
+RI	RI	Math	11	5	Level 5	1037	1400	0
+RI	RI	Math	12	1	Level 1	0	783	0
+RI	RI	Math	12	2	Level 2	784	855	0
+RI	RI	Math	12	3	Level 3	856	910	0
+RI	RI	Math	12	4	Level 4	911	1076	0
+RI	RI	Math	12	5	Level 5	1077	1400	0
+RI	RI	Reading	1	1	Level 1	0	85	0
+RI	RI	Reading	1	2	Level 2	86	134	0
+RI	RI	Reading	1	3	Level 3	135	214	0
+RI	RI	Reading	1	4	Level 4	215	460	0
+RI	RI	Reading	1	5	Level 5	461	1400	0
+RI	RI	Reading	2	1	Level 1	0	203	0
+RI	RI	Reading	2	2	Level 2	204	301	0
+RI	RI	Reading	2	3	Level 3	302	391	0
+RI	RI	Reading	2	4	Level 4	392	658	0
+RI	RI	Reading	2	5	Level 5	659	1400	0
+RI	RI	Reading	3	1	Level 1	0	303	1
+RI	RI	Reading	3	2	Level 2	304	412	1
+RI	RI	Reading	3	3	Level 3	413	513	1
+RI	RI	Reading	3	4	Level 4	514	923	1
+RI	RI	Reading	3	5	Level 5	924	1400	1
+RI	RI	Reading	4	1	Level 1	0	334	1
+RI	RI	Reading	4	2	Level 2	335	441	1
+RI	RI	Reading	4	3	Level 3	442	570	1
+RI	RI	Reading	4	4	Level 4	571	1019	1
+RI	RI	Reading	4	5	Level 5	1020	1400	1
+RI	RI	Reading	5	1	Level 1	0	371	1
+RI	RI	Reading	5	2	Level 2	372	507	1
+RI	RI	Reading	5	3	Level 3	508	662	1
+RI	RI	Reading	5	4	Level 4	663	1178	1
+RI	RI	Reading	5	5	Level 5	1179	1400	1
+RI	RI	Reading	6	1	Level 1	0	416	1
+RI	RI	Reading	6	2	Level 2	417	560	1
+RI	RI	Reading	6	3	Level 3	561	776	1
+RI	RI	Reading	6	4	Level 4	777	1251	1
+RI	RI	Reading	6	5	Level 5	1252	1400	1
+RI	RI	Reading	7	1	Level 1	0	466	1
+RI	RI	Reading	7	2	Level 2	467	614	1
+RI	RI	Reading	7	3	Level 3	615	829	1
+RI	RI	Reading	7	4	Level 4	830	1292	1
+RI	RI	Reading	7	5	Level 5	1293	1400	1
+RI	RI	Reading	8	1	Level 1	0	526	1
+RI	RI	Reading	8	2	Level 2	527	678	1
+RI	RI	Reading	8	3	Level 3	679	908	1
+RI	RI	Reading	8	4	Level 4	909	1320	1
+RI	RI	Reading	8	5	Level 5	1321	1400	1
+RI	RI	Reading	9	1	Level 1	0	596	1
+RI	RI	Reading	9	2	Level 2	597	825	1
+RI	RI	Reading	9	3	Level 3	826	1035	1
+RI	RI	Reading	9	4	Level 4	1036	1324	1
+RI	RI	Reading	9	5	Level 5	1325	1400	1
+RI	RI	Reading	10	1	Level 1	0	684	1
+RI	RI	Reading	10	2	Level 2	685	900	1
+RI	RI	Reading	10	3	Level 3	901	1075	1
+RI	RI	Reading	10	4	Level 4	1076	1325	1
+RI	RI	Reading	10	5	Level 5	1326	1400	1
+RI	RI	Reading	11	1	Level 1	0	715	0
+RI	RI	Reading	11	2	Level 2	716	921	0
+RI	RI	Reading	11	3	Level 3	922	1130	0
+RI	RI	Reading	11	4	Level 4	1131	1328	0
+RI	RI	Reading	11	5	Level 5	1329	1400	0
+RI	RI	Reading	12	1	Level 1	0	761	0
+RI	RI	Reading	12	2	Level 2	762	968	0
+RI	RI	Reading	12	3	Level 3	969	1190	0
+RI	RI	Reading	12	4	Level 4	1191	1340	0
+RI	RI	Reading	12	5	Level 5	1341	1400	0
+SC	SC	Math	1	1	Need Support	0	342	0
+SC	SC	Math	1	2	Close	343	424	0
+SC	SC	Math	1	3	Ready	425	497	0
+SC	SC	Math	1	4	Exceeding	498	1400	0
+SC	SC	Math	2	1	Need Support	0	459	0
+SC	SC	Math	2	2	Close	460	531	0
+SC	SC	Math	2	3	Ready	532	598	0
+SC	SC	Math	2	4	Exceeding	599	1400	0
+SC	SC	Math	3	1	Need Support	0	546	1
+SC	SC	Math	3	2	Close	547	622	1
+SC	SC	Math	3	3	Ready	623	680	1
+SC	SC	Math	3	4	Exceeding	681	1400	1
+SC	SC	Math	4	1	Need Support	0	564	1
+SC	SC	Math	4	2	Close	565	691	1
+SC	SC	Math	4	3	Ready	692	761	1
+SC	SC	Math	4	4	Exceeding	762	1400	1
+SC	SC	Math	5	1	Need Support	0	601	1
+SC	SC	Math	5	2	Close	602	755	1
+SC	SC	Math	5	3	Ready	756	814	1
+SC	SC	Math	5	4	Exceeding	815	1400	1
+SC	SC	Math	6	1	Need Support	0	662	1
+SC	SC	Math	6	2	Close	663	777	1
+SC	SC	Math	6	3	Ready	778	841	1
+SC	SC	Math	6	4	Exceeding	842	1400	1
+SC	SC	Math	7	1	Need Support	0	738	1
+SC	SC	Math	7	2	Close	739	821	1
+SC	SC	Math	7	3	Ready	822	876	1
+SC	SC	Math	7	4	Exceeding	877	1400	1
+SC	SC	Math	8	1	Need Support	0	787	1
+SC	SC	Math	8	2	Close	788	849	1
+SC	SC	Math	8	3	Ready	850	889	1
+SC	SC	Math	8	4	Exceeding	890	1400	1
+SC	SC	Math	9	1	Need Support	0	798	0
+SC	SC	Math	9	2	Close	799	854	0
+SC	SC	Math	9	3	Ready	855	894	0
+SC	SC	Math	9	4	Exceeding	895	1400	0
+SC	SC	Math	10	1	Need Support	0	802	0
+SC	SC	Math	10	2	Close	803	859	0
+SC	SC	Math	10	3	Ready	860	899	0
+SC	SC	Math	10	4	Exceeding	900	1400	0
+SC	SC	Math	11	1	Need Support	0	818	0
+SC	SC	Math	11	2	Close	819	874	0
+SC	SC	Math	11	3	Ready	875	913	0
+SC	SC	Math	11	4	Exceeding	914	1400	0
+SC	SC	Math	12	1	Need Support	0	835	0
+SC	SC	Math	12	2	Close	836	891	0
+SC	SC	Math	12	3	Ready	892	921	0
+SC	SC	Math	12	4	Exceeding	922	1400	0
+SC	SC	Reading	1	1	Need Support	0	153	0
+SC	SC	Reading	1	2	Close	154	218	0
+SC	SC	Reading	1	3	Ready	219	293	0
+SC	SC	Reading	1	4	Exceeding	294	1400	0
+SC	SC	Reading	2	1	Need Support	0	315	0
+SC	SC	Reading	2	2	Close	316	385	0
+SC	SC	Reading	2	3	Ready	386	474	0
+SC	SC	Reading	2	4	Exceeding	475	1400	0
+SC	SC	Reading	3	1	Need Support	0	417	1
+SC	SC	Reading	3	2	Close	418	501	1
+SC	SC	Reading	3	3	Ready	502	607	1
+SC	SC	Reading	3	4	Exceeding	608	1400	1
+SC	SC	Reading	4	1	Need Support	0	439	1
+SC	SC	Reading	4	2	Close	440	573	1
+SC	SC	Reading	4	3	Ready	574	724	1
+SC	SC	Reading	4	4	Exceeding	725	1400	1
+SC	SC	Reading	5	1	Need Support	0	523	1
+SC	SC	Reading	5	2	Close	524	698	1
+SC	SC	Reading	5	3	Ready	699	859	1
+SC	SC	Reading	5	4	Exceeding	860	1400	1
+SC	SC	Reading	6	1	Need Support	0	524	1
+SC	SC	Reading	6	2	Close	525	721	1
+SC	SC	Reading	6	3	Ready	722	932	1
+SC	SC	Reading	6	4	Exceeding	933	1400	1
+SC	SC	Reading	7	1	Need Support	0	525	1
+SC	SC	Reading	7	2	Close	526	852	1
+SC	SC	Reading	7	3	Ready	853	1211	1
+SC	SC	Reading	7	4	Exceeding	1212	1400	1
+SC	SC	Reading	8	1	Need Support	0	526	1
+SC	SC	Reading	8	2	Close	527	853	1
+SC	SC	Reading	8	3	Ready	854	1212	1
+SC	SC	Reading	8	4	Exceeding	1213	1400	1
+SC	SC	Reading	9	1	Need Support	0	613	0
+SC	SC	Reading	9	2	Close	614	923	0
+SC	SC	Reading	9	3	Ready	924	1253	0
+SC	SC	Reading	9	4	Exceeding	1254	1400	0
+SC	SC	Reading	10	1	Need Support	0	620	0
+SC	SC	Reading	10	2	Close	621	963	0
+SC	SC	Reading	10	3	Ready	964	1294	0
+SC	SC	Reading	10	4	Exceeding	1295	1400	0
+SC	SC	Reading	11	1	Need Support	0	649	0
+SC	SC	Reading	11	2	Close	650	1001	0
+SC	SC	Reading	11	3	Ready	1002	1309	0
+SC	SC	Reading	11	4	Exceeding	1310	1400	0
+SC	SC	Reading	12	1	Need Support	0	678	0
+SC	SC	Reading	12	2	Close	679	1081	0
+SC	SC	Reading	12	3	Ready	1082	1324	0
+SC	SC	Reading	12	4	Exceeding	1325	1400	0
+SD	SD	Math	1	1	Level 1	0	336	0
+SD	SD	Math	1	2	Level 2	337	417	0
+SD	SD	Math	1	3	Level 3	418	498	0
+SD	SD	Math	1	4	Level 4	499	1400	0
+SD	SD	Math	2	1	Level 1	0	457	0
+SD	SD	Math	2	2	Level 2	458	528	0
+SD	SD	Math	2	3	Level 3	529	601	0
+SD	SD	Math	2	4	Level 4	602	1400	0
+SD	SD	Math	3	1	Level 1	0	546	1
+SD	SD	Math	3	2	Level 2	547	620	1
+SD	SD	Math	3	3	Level 3	621	686	1
+SD	SD	Math	3	4	Level 4	687	1400	1
+SD	SD	Math	4	1	Level 1	0	602	1
+SD	SD	Math	4	2	Level 2	603	695	1
+SD	SD	Math	4	3	Level 3	696	771	1
+SD	SD	Math	4	4	Level 4	772	1400	1
+SD	SD	Math	5	1	Level 1	0	692	1
+SD	SD	Math	5	2	Level 2	693	781	1
+SD	SD	Math	5	3	Level 3	782	826	1
+SD	SD	Math	5	4	Level 4	827	1400	1
+SD	SD	Math	6	1	Level 1	0	716	1
+SD	SD	Math	6	2	Level 2	717	807	1
+SD	SD	Math	6	3	Level 3	808	859	1
+SD	SD	Math	6	4	Level 4	860	1400	1
+SD	SD	Math	7	1	Level 1	0	745	1
+SD	SD	Math	7	2	Level 2	746	830	1
+SD	SD	Math	7	3	Level 3	831	885	1
+SD	SD	Math	7	4	Level 4	886	1400	1
+SD	SD	Math	8	1	Level 1	0	783	1
+SD	SD	Math	8	2	Level 2	784	851	1
+SD	SD	Math	8	3	Level 3	852	891	1
+SD	SD	Math	8	4	Level 4	892	1400	1
+SD	SD	Math	9	1	Level 1	0	790	0
+SD	SD	Math	9	2	Level 2	791	852	0
+SD	SD	Math	9	3	Level 3	853	895	0
+SD	SD	Math	9	4	Level 4	896	1400	0
+SD	SD	Math	10	1	Level 1	0	796	0
+SD	SD	Math	10	2	Level 2	797	858	0
+SD	SD	Math	10	3	Level 3	859	900	0
+SD	SD	Math	10	4	Level 4	901	1400	0
+SD	SD	Math	11	1	Level 1	0	813	0
+SD	SD	Math	11	2	Level 2	814	873	0
+SD	SD	Math	11	3	Level 3	874	918	0
+SD	SD	Math	11	4	Level 4	919	1400	0
+SD	SD	Math	12	1	Level 1	0	826	0
+SD	SD	Math	12	2	Level 2	827	890	0
+SD	SD	Math	12	3	Level 3	891	925	0
+SD	SD	Math	12	4	Level 4	926	1400	0
+SD	SD	Reading	1	1	Level 1	0	90	0
+SD	SD	Reading	1	2	Level 2	91	165	0
+SD	SD	Reading	1	3	Level 3	166	248	0
+SD	SD	Reading	1	4	Level 4	249	1400	0
+SD	SD	Reading	2	1	Level 1	0	232	0
+SD	SD	Reading	2	2	Level 2	233	337	0
+SD	SD	Reading	2	3	Level 3	338	435	0
+SD	SD	Reading	2	4	Level 4	436	1400	0
+SD	SD	Reading	3	1	Level 1	0	332	1
+SD	SD	Reading	3	2	Level 2	333	454	1
+SD	SD	Reading	3	3	Level 3	455	561	1
+SD	SD	Reading	3	4	Level 4	562	1400	1
+SD	SD	Reading	4	1	Level 1	0	434	1
+SD	SD	Reading	4	2	Level 2	435	530	1
+SD	SD	Reading	4	3	Level 3	531	660	1
+SD	SD	Reading	4	4	Level 4	661	1400	1
+SD	SD	Reading	5	1	Level 1	0	483	1
+SD	SD	Reading	5	2	Level 2	484	599	1
+SD	SD	Reading	5	3	Level 3	600	852	1
+SD	SD	Reading	5	4	Level 4	853	1400	1
+SD	SD	Reading	6	1	Level 1	0	499	1
+SD	SD	Reading	6	2	Level 2	500	691	1
+SD	SD	Reading	6	3	Level 3	692	1015	1
+SD	SD	Reading	6	4	Level 4	1016	1400	1
+SD	SD	Reading	7	1	Level 1	0	576	1
+SD	SD	Reading	7	2	Level 2	577	772	1
+SD	SD	Reading	7	3	Level 3	773	1168	1
+SD	SD	Reading	7	4	Level 4	1169	1400	1
+SD	SD	Reading	8	1	Level 1	0	589	1
+SD	SD	Reading	8	2	Level 2	590	857	1
+SD	SD	Reading	8	3	Level 3	858	1249	1
+SD	SD	Reading	8	4	Level 4	1250	1400	1
+SD	SD	Reading	9	1	Level 1	0	661	0
+SD	SD	Reading	9	2	Level 2	662	918	0
+SD	SD	Reading	9	3	Level 3	919	1291	0
+SD	SD	Reading	9	4	Level 4	1292	1400	0
+SD	SD	Reading	10	1	Level 1	0	674	0
+SD	SD	Reading	10	2	Level 2	675	957	0
+SD	SD	Reading	10	3	Level 3	958	1314	0
+SD	SD	Reading	10	4	Level 4	1315	1400	0
+SD	SD	Reading	11	1	Level 1	0	715	0
+SD	SD	Reading	11	2	Level 2	716	992	0
+SD	SD	Reading	11	3	Level 3	993	1321	0
+SD	SD	Reading	11	4	Level 4	1322	1400	0
+SD	SD	Reading	12	1	Level 1	0	761	0
+SD	SD	Reading	12	2	Level 2	762	1079	0
+SD	SD	Reading	12	3	Level 3	1080	1332	0
+SD	SD	Reading	12	4	Level 4	1333	1400	0
+TN	TN	Math	1	1	Below Basic	0	293	0
+TN	TN	Math	1	2	Basic	294	408	0
+TN	TN	Math	1	3	Proficient	409	491	0
+TN	TN	Math	1	4	Advanced	492	1400	0
+TN	TN	Math	2	1	Below Basic	0	421	0
+TN	TN	Math	2	2	Basic	422	521	0
+TN	TN	Math	2	3	Proficient	522	597	0
+TN	TN	Math	2	4	Advanced	598	1400	0
+TN	TN	Math	3	1	Below Basic	0	486	1
+TN	TN	Math	3	2	Basic	487	616	1
+TN	TN	Math	3	3	Proficient	617	683	1
+TN	TN	Math	3	4	Advanced	684	1400	1
+TN	TN	Math	4	1	Below Basic	0	595	1
+TN	TN	Math	4	2	Basic	596	708	1
+TN	TN	Math	4	3	Proficient	709	771	1
+TN	TN	Math	4	4	Advanced	772	1400	1
+TN	TN	Math	5	1	Below Basic	0	656	1
+TN	TN	Math	5	2	Basic	657	757	1
+TN	TN	Math	5	3	Proficient	758	825	1
+TN	TN	Math	5	4	Advanced	826	1400	1
+TN	TN	Math	6	1	Below Basic	0	696	1
+TN	TN	Math	6	2	Basic	697	809	1
+TN	TN	Math	6	3	Proficient	810	873	1
+TN	TN	Math	6	4	Advanced	874	1400	1
+TN	TN	Math	7	1	Below Basic	0	728	1
+TN	TN	Math	7	2	Basic	729	822	1
+TN	TN	Math	7	3	Proficient	823	892	1
+TN	TN	Math	7	4	Advanced	893	1400	1
+TN	TN	Math	8	1	Below Basic	0	759	1
+TN	TN	Math	8	2	Basic	760	858	1
+TN	TN	Math	8	3	Proficient	859	918	1
+TN	TN	Math	8	4	Advanced	919	1400	1
+TN	TN	Math	9	1	Below Basic	0	769	0
+TN	TN	Math	9	2	Basic	770	861	0
+TN	TN	Math	9	3	Proficient	862	924	0
+TN	TN	Math	9	4	Advanced	925	1400	0
+TN	TN	Math	10	1	Below Basic	0	772	0
+TN	TN	Math	10	2	Basic	773	865	0
+TN	TN	Math	10	3	Proficient	866	929	0
+TN	TN	Math	10	4	Advanced	930	1400	0
+TN	TN	Math	11	1	Below Basic	0	787	0
+TN	TN	Math	11	2	Basic	788	877	0
+TN	TN	Math	11	3	Proficient	878	946	0
+TN	TN	Math	11	4	Advanced	947	1400	0
+TN	TN	Math	12	1	Below Basic	0	805	0
+TN	TN	Math	12	2	Basic	806	893	0
+TN	TN	Math	12	3	Proficient	894	954	0
+TN	TN	Math	12	4	Advanced	955	1400	0
+TN	TN	Reading	1	1	Below Basic	0	76	0
+TN	TN	Reading	1	2	Basic	77	176	0
+TN	TN	Reading	1	3	Proficient	177	276	0
+TN	TN	Reading	1	4	Advanced	277	1400	0
+TN	TN	Reading	2	1	Below Basic	0	156	0
+TN	TN	Reading	2	2	Basic	157	334	0
+TN	TN	Reading	2	3	Proficient	335	450	0
+TN	TN	Reading	2	4	Advanced	451	1400	0
+TN	TN	Reading	3	1	Below Basic	0	244	1
+TN	TN	Reading	3	2	Basic	245	444	1
+TN	TN	Reading	3	3	Proficient	445	570	1
+TN	TN	Reading	3	4	Advanced	571	1400	1
+TN	TN	Reading	4	1	Below Basic	0	335	1
+TN	TN	Reading	4	2	Basic	336	530	1
+TN	TN	Reading	4	3	Proficient	531	719	1
+TN	TN	Reading	4	4	Advanced	720	1400	1
+TN	TN	Reading	5	1	Below Basic	0	376	1
+TN	TN	Reading	5	2	Basic	377	591	1
+TN	TN	Reading	5	3	Proficient	592	896	1
+TN	TN	Reading	5	4	Advanced	897	1400	1
+TN	TN	Reading	6	1	Below Basic	0	446	1
+TN	TN	Reading	6	2	Basic	447	646	1
+TN	TN	Reading	6	3	Proficient	647	1038	1
+TN	TN	Reading	6	4	Advanced	1039	1400	1
+TN	TN	Reading	7	1	Below Basic	0	554	1
+TN	TN	Reading	7	2	Basic	555	824	1
+TN	TN	Reading	7	3	Proficient	825	1136	1
+TN	TN	Reading	7	4	Advanced	1137	1400	1
+TN	TN	Reading	8	1	Below Basic	0	567	1
+TN	TN	Reading	8	2	Basic	568	932	1
+TN	TN	Reading	8	3	Proficient	933	1238	1
+TN	TN	Reading	8	4	Advanced	1239	1400	1
+TN	TN	Reading	9	1	Below Basic	0	659	0
+TN	TN	Reading	9	2	Basic	660	1041	0
+TN	TN	Reading	9	3	Proficient	1042	1300	0
+TN	TN	Reading	9	4	Advanced	1301	1400	0
+TN	TN	Reading	10	1	Below Basic	0	684	0
+TN	TN	Reading	10	2	Basic	685	1103	0
+TN	TN	Reading	10	3	Proficient	1104	1317	0
+TN	TN	Reading	10	4	Advanced	1318	1400	0
+TN	TN	Reading	11	1	Below Basic	0	722	0
+TN	TN	Reading	11	2	Basic	723	1158	0
+TN	TN	Reading	11	3	Proficient	1159	1324	0
+TN	TN	Reading	11	4	Advanced	1325	1400	0
+TN	TN	Reading	12	1	Below Basic	0	763	0
+TN	TN	Reading	12	2	Basic	764	1208	0
+TN	TN	Reading	12	3	Proficient	1209	1334	0
+TN	TN	Reading	12	4	Advanced	1335	1400	0
+TX	TX	Math	1	1	Unsatisfactory	0	397	0
+TX	TX	Math	1	2	Satisfactory	398	512	0
+TX	TX	Math	1	3	Advanced	513	1400	0
+TX	TX	Math	2	1	Unsatisfactory	0	508	0
+TX	TX	Math	2	2	Satisfactory	509	613	0
+TX	TX	Math	2	3	Advanced	614	1400	0
+TX	TX	Math	3	1	Unsatisfactory	0	599	1
+TX	TX	Math	3	2	Satisfactory	600	700	1
+TX	TX	Math	3	3	Advanced	701	1400	1
+TX	TX	Math	4	1	Unsatisfactory	0	682	1
+TX	TX	Math	4	2	Satisfactory	683	783	1
+TX	TX	Math	4	3	Advanced	784	1400	1
+TX	TX	Math	5	1	Unsatisfactory	0	699	1
+TX	TX	Math	5	2	Satisfactory	700	813	1
+TX	TX	Math	5	3	Advanced	814	1400	1
+TX	TX	Math	6	1	Unsatisfactory	0	739	1
+TX	TX	Math	6	2	Satisfactory	740	861	1
+TX	TX	Math	6	3	Advanced	862	1400	1
+TX	TX	Math	7	1	Unsatisfactory	0	775	1
+TX	TX	Math	7	2	Satisfactory	776	880	1
+TX	TX	Math	7	3	Advanced	881	1400	1
+TX	TX	Math	8	1	Unsatisfactory	0	790	0
+TX	TX	Math	8	2	Satisfactory	791	905	0
+TX	TX	Math	8	3	Advanced	906	1400	0
+TX	TX	Math	9	1	Unsatisfactory	0	804	0
+TX	TX	Math	9	2	Satisfactory	805	916	0
+TX	TX	Math	9	3	Advanced	917	1400	0
+TX	TX	Math	10	1	Unsatisfactory	0	808	0
+TX	TX	Math	10	2	Satisfactory	809	925	0
+TX	TX	Math	10	3	Advanced	926	1400	0
+TX	TX	Math	11	1	Unsatisfactory	0	824	0
+TX	TX	Math	11	2	Satisfactory	825	939	0
+TX	TX	Math	11	3	Advanced	940	1400	0
+TX	TX	Math	12	1	Unsatisfactory	0	840	0
+TX	TX	Math	12	2	Satisfactory	841	946	0
+TX	TX	Math	12	3	Advanced	947	1400	0
+TX	TX	Reading	1	1	Unsatisfactory	0	102	0
+TX	TX	Reading	1	2	Satisfactory	103	250	0
+TX	TX	Reading	1	3	Advanced	251	1400	0
+TX	TX	Reading	2	1	Unsatisfactory	0	257	0
+TX	TX	Reading	2	2	Satisfactory	258	426	0
+TX	TX	Reading	2	3	Advanced	427	1400	0
+TX	TX	Reading	3	1	Unsatisfactory	0	358	1
+TX	TX	Reading	3	2	Satisfactory	359	547	1
+TX	TX	Reading	3	3	Advanced	548	1400	1
+TX	TX	Reading	4	1	Unsatisfactory	0	464	1
+TX	TX	Reading	4	2	Satisfactory	465	674	1
+TX	TX	Reading	4	3	Advanced	675	1400	1
+TX	TX	Reading	5	1	Unsatisfactory	0	495	1
+TX	TX	Reading	5	2	Satisfactory	496	794	1
+TX	TX	Reading	5	3	Advanced	795	1400	1
+TX	TX	Reading	6	1	Unsatisfactory	0	559	1
+TX	TX	Reading	6	2	Satisfactory	560	890	1
+TX	TX	Reading	6	3	Advanced	891	1400	1
+TX	TX	Reading	7	1	Unsatisfactory	0	591	1
+TX	TX	Reading	7	2	Satisfactory	592	1035	1
+TX	TX	Reading	7	3	Advanced	1036	1400	1
+TX	TX	Reading	8	1	Unsatisfactory	0	625	1
+TX	TX	Reading	8	2	Satisfactory	626	1096	1
+TX	TX	Reading	8	3	Advanced	1097	1400	1
+TX	TX	Reading	9	1	Unsatisfactory	0	709	0
+TX	TX	Reading	9	2	Satisfactory	710	1186	0
+TX	TX	Reading	9	3	Advanced	1187	1400	0
+TX	TX	Reading	10	1	Unsatisfactory	0	727	0
+TX	TX	Reading	10	2	Satisfactory	728	1227	0
+TX	TX	Reading	10	3	Advanced	1228	1400	0
+TX	TX	Reading	11	1	Unsatisfactory	0	779	0
+TX	TX	Reading	11	2	Satisfactory	780	1256	0
+TX	TX	Reading	11	3	Advanced	1257	1400	0
+TX	TX	Reading	12	1	Unsatisfactory	0	818	0
+TX	TX	Reading	12	2	Satisfactory	819	1303	0
+TX	TX	Reading	12	3	Advanced	1304	1400	0
+UT	UT	Reading	1	1	Below Proficient	0	121	0
+UT	UT	Reading	1	2	Approaching Proficient	122	185	0
+UT	UT	Reading	1	3	Proficient	186	288	0
+UT	UT	Reading	1	4	Highly Proficient	289	1400	0
+UT	UT	Reading	2	1	Below Proficient	0	280	0
+UT	UT	Reading	2	2	Approaching Proficient	281	350	0
+UT	UT	Reading	2	3	Proficient	351	468	0
+UT	UT	Reading	2	4	Highly Proficient	469	1400	0
+UT	UT	Reading	3	1	Below Proficient	0	378	1
+UT	UT	Reading	3	2	Approaching Proficient	379	463	1
+UT	UT	Reading	3	3	Proficient	464	599	1
+UT	UT	Reading	3	4	Highly Proficient	600	1400	1
+UT	UT	Reading	4	1	Below Proficient	0	453	1
+UT	UT	Reading	4	2	Approaching Proficient	454	558	1
+UT	UT	Reading	4	3	Proficient	559	712	1
+UT	UT	Reading	4	4	Highly Proficient	713	1400	1
+UT	UT	Reading	5	1	Below Proficient	0	532	1
+UT	UT	Reading	5	2	Approaching Proficient	533	644	1
+UT	UT	Reading	5	3	Proficient	645	860	1
+UT	UT	Reading	5	4	Highly Proficient	861	1400	1
+UT	UT	Reading	6	1	Below Proficient	0	650	1
+UT	UT	Reading	6	2	Approaching Proficient	651	789	1
+UT	UT	Reading	6	3	Proficient	790	995	1
+UT	UT	Reading	6	4	Highly Proficient	996	1400	1
+UT	UT	Reading	7	1	Below Proficient	0	705	1
+UT	UT	Reading	7	2	Approaching Proficient	706	872	1
+UT	UT	Reading	7	3	Proficient	873	1138	1
+UT	UT	Reading	7	4	Highly Proficient	1139	1400	1
+UT	UT	Reading	8	1	Below Proficient	0	788	1
+UT	UT	Reading	8	2	Approaching Proficient	789	973	1
+UT	UT	Reading	8	3	Proficient	974	1207	1
+UT	UT	Reading	8	4	Highly Proficient	1208	1400	1
+UT	UT	Reading	9	1	Below Proficient	0	878	0
+UT	UT	Reading	9	2	Approaching Proficient	879	1074	0
+UT	UT	Reading	9	3	Proficient	1075	1246	0
+UT	UT	Reading	9	4	Highly Proficient	1247	1400	0
+UT	UT	Reading	10	1	Below Proficient	0	902	0
+UT	UT	Reading	10	2	Approaching Proficient	903	1141	0
+UT	UT	Reading	10	3	Proficient	1142	1290	0
+UT	UT	Reading	10	4	Highly Proficient	1291	1400	0
+UT	UT	Reading	11	1	Below Proficient	0	925	0
+UT	UT	Reading	11	2	Approaching Proficient	926	1175	0
+UT	UT	Reading	11	3	Proficient	1176	1306	0
+UT	UT	Reading	11	4	Highly Proficient	1307	1400	0
+UT	UT	Reading	12	1	Below Proficient	0	969	0
+UT	UT	Reading	12	2	Approaching Proficient	970	1226	0
+UT	UT	Reading	12	3	Proficient	1227	1323	0
+UT	UT	Reading	12	4	Highly Proficient	1324	1400	0
+VA	VA	Math	1	1	Fail	0	403	0
+VA	VA	Math	1	2	Proficient	404	529	0
+VA	VA	Math	1	3	Advanced	530	1400	0
+VA	VA	Math	2	1	Fail	0	512	0
+VA	VA	Math	2	2	Proficient	513	623	0
+VA	VA	Math	2	3	Advanced	624	1400	0
+VA	VA	Math	3	1	Fail	0	605	1
+VA	VA	Math	3	2	Proficient	606	701	1
+VA	VA	Math	3	3	Advanced	702	1400	1
+VA	VA	Math	4	1	Fail	0	639	1
+VA	VA	Math	4	2	Proficient	640	764	1
+VA	VA	Math	4	3	Advanced	765	1400	1
+VA	VA	Math	5	1	Fail	0	691	1
+VA	VA	Math	5	2	Proficient	692	816	1
+VA	VA	Math	5	3	Advanced	817	1400	1
+VA	VA	Math	6	1	Fail	0	714	1
+VA	VA	Math	6	2	Proficient	715	868	1
+VA	VA	Math	6	3	Advanced	869	1400	1
+VA	VA	Math	7	1	Fail	0	730	0
+VA	VA	Math	7	2	Proficient	731	904	0
+VA	VA	Math	7	3	Advanced	905	1400	0
+VA	VA	Math	8	1	Fail	0	757	0
+VA	VA	Math	8	2	Proficient	758	939	0
+VA	VA	Math	8	3	Advanced	940	1400	0
+VA	VA	Math	9	1	Fail	0	766	0
+VA	VA	Math	9	2	Proficient	767	946	0
+VA	VA	Math	9	3	Advanced	947	1400	0
+VA	VA	Math	10	1	Fail	0	769	0
+VA	VA	Math	10	2	Proficient	770	951	0
+VA	VA	Math	10	3	Advanced	952	1400	0
+VA	VA	Math	11	1	Fail	0	785	0
+VA	VA	Math	11	2	Proficient	786	970	0
+VA	VA	Math	11	3	Advanced	971	1400	0
+VA	VA	Math	12	1	Fail	0	802	0
+VA	VA	Math	12	2	Proficient	803	981	0
+VA	VA	Math	12	3	Advanced	982	1400	0
+VA	VA	Reading	1	1	Fail	0	127	0
+VA	VA	Reading	1	2	Proficient	128	296	0
+VA	VA	Reading	1	3	Advanced	297	1400	0
+VA	VA	Reading	2	1	Fail	0	277	0
+VA	VA	Reading	2	2	Proficient	278	472	0
+VA	VA	Reading	2	3	Advanced	473	1400	0
+VA	VA	Reading	3	1	Fail	0	368	1
+VA	VA	Reading	3	2	Proficient	369	592	1
+VA	VA	Reading	3	3	Advanced	593	1400	1
+VA	VA	Reading	4	1	Fail	0	468	1
+VA	VA	Reading	4	2	Proficient	469	756	1
+VA	VA	Reading	4	3	Advanced	757	1400	1
+VA	VA	Reading	5	1	Fail	0	523	1
+VA	VA	Reading	5	2	Proficient	524	887	1
+VA	VA	Reading	5	3	Advanced	888	1400	1
+VA	VA	Reading	6	1	Fail	0	604	1
+VA	VA	Reading	6	2	Proficient	605	1034	1
+VA	VA	Reading	6	3	Advanced	1035	1400	1
+VA	VA	Reading	7	1	Fail	0	631	1
+VA	VA	Reading	7	2	Proficient	632	1180	1
+VA	VA	Reading	7	3	Advanced	1181	1400	1
+VA	VA	Reading	8	1	Fail	0	728	1
+VA	VA	Reading	8	2	Proficient	729	1299	1
+VA	VA	Reading	8	3	Advanced	1300	1400	1
+VA	VA	Reading	9	1	Fail	0	850	0
+VA	VA	Reading	9	2	Proficient	851	1318	0
+VA	VA	Reading	9	3	Advanced	1319	1400	0
+VA	VA	Reading	10	1	Fail	0	878	0
+VA	VA	Reading	10	2	Proficient	879	1327	0
+VA	VA	Reading	10	3	Advanced	1328	1400	0
+VA	VA	Reading	11	1	Fail	0	907	0
+VA	VA	Reading	11	2	Proficient	908	1332	0
+VA	VA	Reading	11	3	Advanced	1333	1400	0
+VA	VA	Reading	12	1	Fail	0	940	0
+VA	VA	Reading	12	2	Proficient	941	1342	0
+VA	VA	Reading	12	3	Advanced	1343	1400	0
+VT	VT	Math	1	1	Level 1	0	336	0
+VT	VT	Math	1	2	Level 2	337	417	0
+VT	VT	Math	1	3	Level 3	418	498	0
+VT	VT	Math	1	4	Level 4	499	1400	0
+VT	VT	Math	2	1	Level 1	0	457	0
+VT	VT	Math	2	2	Level 2	458	528	0
+VT	VT	Math	2	3	Level 3	529	601	0
+VT	VT	Math	2	4	Level 4	602	1400	0
+VT	VT	Math	3	1	Level 1	0	546	1
+VT	VT	Math	3	2	Level 2	547	620	1
+VT	VT	Math	3	3	Level 3	621	686	1
+VT	VT	Math	3	4	Level 4	687	1400	1
+VT	VT	Math	4	1	Level 1	0	602	1
+VT	VT	Math	4	2	Level 2	603	695	1
+VT	VT	Math	4	3	Level 3	696	771	1
+VT	VT	Math	4	4	Level 4	772	1400	1
+VT	VT	Math	5	1	Level 1	0	692	1
+VT	VT	Math	5	2	Level 2	693	781	1
+VT	VT	Math	5	3	Level 3	782	826	1
+VT	VT	Math	5	4	Level 4	827	1400	1
+VT	VT	Math	6	1	Level 1	0	716	1
+VT	VT	Math	6	2	Level 2	717	807	1
+VT	VT	Math	6	3	Level 3	808	859	1
+VT	VT	Math	6	4	Level 4	860	1400	1
+VT	VT	Math	7	1	Level 1	0	745	1
+VT	VT	Math	7	2	Level 2	746	830	1
+VT	VT	Math	7	3	Level 3	831	885	1
+VT	VT	Math	7	4	Level 4	886	1400	1
+VT	VT	Math	8	1	Level 1	0	783	1
+VT	VT	Math	8	2	Level 2	784	851	1
+VT	VT	Math	8	3	Level 3	852	891	1
+VT	VT	Math	8	4	Level 4	892	1400	1
+VT	VT	Math	9	1	Level 1	0	790	0
+VT	VT	Math	9	2	Level 2	791	852	0
+VT	VT	Math	9	3	Level 3	853	895	0
+VT	VT	Math	9	4	Level 4	896	1400	0
+VT	VT	Math	10	1	Level 1	0	796	0
+VT	VT	Math	10	2	Level 2	797	858	0
+VT	VT	Math	10	3	Level 3	859	900	0
+VT	VT	Math	10	4	Level 4	901	1400	0
+VT	VT	Math	11	1	Level 1	0	813	0
+VT	VT	Math	11	2	Level 2	814	873	0
+VT	VT	Math	11	3	Level 3	874	918	0
+VT	VT	Math	11	4	Level 4	919	1400	0
+VT	VT	Math	12	1	Level 1	0	826	0
+VT	VT	Math	12	2	Level 2	827	890	0
+VT	VT	Math	12	3	Level 3	891	925	0
+VT	VT	Math	12	4	Level 4	926	1400	0
+VT	VT	Reading	1	1	Level 1	0	90	0
+VT	VT	Reading	1	2	Level 2	91	165	0
+VT	VT	Reading	1	3	Level 3	166	248	0
+VT	VT	Reading	1	4	Level 4	249	1400	0
+VT	VT	Reading	2	1	Level 1	0	232	0
+VT	VT	Reading	2	2	Level 2	233	337	0
+VT	VT	Reading	2	3	Level 3	338	435	0
+VT	VT	Reading	2	4	Level 4	436	1400	0
+VT	VT	Reading	3	1	Level 1	0	332	1
+VT	VT	Reading	3	2	Level 2	333	454	1
+VT	VT	Reading	3	3	Level 3	455	561	1
+VT	VT	Reading	3	4	Level 4	562	1400	1
+VT	VT	Reading	4	1	Level 1	0	434	1
+VT	VT	Reading	4	2	Level 2	435	530	1
+VT	VT	Reading	4	3	Level 3	531	660	1
+VT	VT	Reading	4	4	Level 4	661	1400	1
+VT	VT	Reading	5	1	Level 1	0	483	1
+VT	VT	Reading	5	2	Level 2	484	599	1
+VT	VT	Reading	5	3	Level 3	600	852	1
+VT	VT	Reading	5	4	Level 4	853	1400	1
+VT	VT	Reading	6	1	Level 1	0	499	1
+VT	VT	Reading	6	2	Level 2	500	691	1
+VT	VT	Reading	6	3	Level 3	692	1015	1
+VT	VT	Reading	6	4	Level 4	1016	1400	1
+VT	VT	Reading	7	1	Level 1	0	576	1
+VT	VT	Reading	7	2	Level 2	577	772	1
+VT	VT	Reading	7	3	Level 3	773	1168	1
+VT	VT	Reading	7	4	Level 4	1169	1400	1
+VT	VT	Reading	8	1	Level 1	0	589	1
+VT	VT	Reading	8	2	Level 2	590	857	1
+VT	VT	Reading	8	3	Level 3	858	1249	1
+VT	VT	Reading	8	4	Level 4	1250	1400	1
+VT	VT	Reading	9	1	Level 1	0	661	0
+VT	VT	Reading	9	2	Level 2	662	918	0
+VT	VT	Reading	9	3	Level 3	919	1291	0
+VT	VT	Reading	9	4	Level 4	1292	1400	0
+VT	VT	Reading	10	1	Level 1	0	674	0
+VT	VT	Reading	10	2	Level 2	675	957	0
+VT	VT	Reading	10	3	Level 3	958	1314	0
+VT	VT	Reading	10	4	Level 4	1315	1400	0
+VT	VT	Reading	11	1	Level 1	0	715	0
+VT	VT	Reading	11	2	Level 2	716	992	0
+VT	VT	Reading	11	3	Level 3	993	1321	0
+VT	VT	Reading	11	4	Level 4	1322	1400	0
+VT	VT	Reading	12	1	Level 1	0	761	0
+VT	VT	Reading	12	2	Level 2	762	1079	0
+VT	VT	Reading	12	3	Level 3	1080	1332	0
+VT	VT	Reading	12	4	Level 4	1333	1400	0
+WA	WA	Math	1	1	Level 1	0	336	0
+WA	WA	Math	1	2	Level 2	337	417	0
+WA	WA	Math	1	3	Level 3	418	498	0
+WA	WA	Math	1	4	Level 4	499	1400	0
+WA	WA	Math	2	1	Level 1	0	457	0
+WA	WA	Math	2	2	Level 2	458	528	0
+WA	WA	Math	2	3	Level 3	529	601	0
+WA	WA	Math	2	4	Level 4	602	1400	0
+WA	WA	Math	3	1	Level 1	0	546	1
+WA	WA	Math	3	2	Level 2	547	620	1
+WA	WA	Math	3	3	Level 3	621	686	1
+WA	WA	Math	3	4	Level 4	687	1400	1
+WA	WA	Math	4	1	Level 1	0	602	1
+WA	WA	Math	4	2	Level 2	603	695	1
+WA	WA	Math	4	3	Level 3	696	771	1
+WA	WA	Math	4	4	Level 4	772	1400	1
+WA	WA	Math	5	1	Level 1	0	692	1
+WA	WA	Math	5	2	Level 2	693	781	1
+WA	WA	Math	5	3	Level 3	782	826	1
+WA	WA	Math	5	4	Level 4	827	1400	1
+WA	WA	Math	6	1	Level 1	0	716	1
+WA	WA	Math	6	2	Level 2	717	807	1
+WA	WA	Math	6	3	Level 3	808	859	1
+WA	WA	Math	6	4	Level 4	860	1400	1
+WA	WA	Math	7	1	Level 1	0	745	1
+WA	WA	Math	7	2	Level 2	746	830	1
+WA	WA	Math	7	3	Level 3	831	885	1
+WA	WA	Math	7	4	Level 4	886	1400	1
+WA	WA	Math	8	1	Level 1	0	783	1
+WA	WA	Math	8	2	Level 2	784	851	1
+WA	WA	Math	8	3	Level 3	852	891	1
+WA	WA	Math	8	4	Level 4	892	1400	1
+WA	WA	Math	9	1	Level 1	0	790	0
+WA	WA	Math	9	2	Level 2	791	852	0
+WA	WA	Math	9	3	Level 3	853	895	0
+WA	WA	Math	9	4	Level 4	896	1400	0
+WA	WA	Math	10	1	Level 1	0	796	0
+WA	WA	Math	10	2	Level 2	797	858	0
+WA	WA	Math	10	3	Level 3	859	900	0
+WA	WA	Math	10	4	Level 4	901	1400	0
+WA	WA	Math	11	1	Level 1	0	813	0
+WA	WA	Math	11	2	Level 2	814	873	0
+WA	WA	Math	11	3	Level 3	874	918	0
+WA	WA	Math	11	4	Level 4	919	1400	0
+WA	WA	Math	12	1	Level 1	0	826	0
+WA	WA	Math	12	2	Level 2	827	890	0
+WA	WA	Math	12	3	Level 3	891	925	0
+WA	WA	Math	12	4	Level 4	926	1400	0
+WA	WA	Reading	1	1	Level 1	0	90	0
+WA	WA	Reading	1	2	Level 2	91	165	0
+WA	WA	Reading	1	3	Level 3	166	248	0
+WA	WA	Reading	1	4	Level 4	249	1400	0
+WA	WA	Reading	2	1	Level 1	0	232	0
+WA	WA	Reading	2	2	Level 2	233	337	0
+WA	WA	Reading	2	3	Level 3	338	435	0
+WA	WA	Reading	2	4	Level 4	436	1400	0
+WA	WA	Reading	3	1	Level 1	0	332	1
+WA	WA	Reading	3	2	Level 2	333	454	1
+WA	WA	Reading	3	3	Level 3	455	561	1
+WA	WA	Reading	3	4	Level 4	562	1400	1
+WA	WA	Reading	4	1	Level 1	0	434	1
+WA	WA	Reading	4	2	Level 2	435	530	1
+WA	WA	Reading	4	3	Level 3	531	660	1
+WA	WA	Reading	4	4	Level 4	661	1400	1
+WA	WA	Reading	5	1	Level 1	0	483	1
+WA	WA	Reading	5	2	Level 2	484	599	1
+WA	WA	Reading	5	3	Level 3	600	852	1
+WA	WA	Reading	5	4	Level 4	853	1400	1
+WA	WA	Reading	6	1	Level 1	0	499	1
+WA	WA	Reading	6	2	Level 2	500	691	1
+WA	WA	Reading	6	3	Level 3	692	1015	1
+WA	WA	Reading	6	4	Level 4	1016	1400	1
+WA	WA	Reading	7	1	Level 1	0	576	1
+WA	WA	Reading	7	2	Level 2	577	772	1
+WA	WA	Reading	7	3	Level 3	773	1168	1
+WA	WA	Reading	7	4	Level 4	1169	1400	1
+WA	WA	Reading	8	1	Level 1	0	589	1
+WA	WA	Reading	8	2	Level 2	590	857	1
+WA	WA	Reading	8	3	Level 3	858	1249	1
+WA	WA	Reading	8	4	Level 4	1250	1400	1
+WA	WA	Reading	9	1	Level 1	0	661	0
+WA	WA	Reading	9	2	Level 2	662	918	0
+WA	WA	Reading	9	3	Level 3	919	1291	0
+WA	WA	Reading	9	4	Level 4	1292	1400	0
+WA	WA	Reading	10	1	Level 1	0	674	0
+WA	WA	Reading	10	2	Level 2	675	957	0
+WA	WA	Reading	10	3	Level 3	958	1314	0
+WA	WA	Reading	10	4	Level 4	1315	1400	0
+WA	WA	Reading	11	1	Level 1	0	715	0
+WA	WA	Reading	11	2	Level 2	716	992	0
+WA	WA	Reading	11	3	Level 3	993	1321	0
+WA	WA	Reading	11	4	Level 4	1322	1400	0
+WA	WA	Reading	12	1	Level 1	0	761	0
+WA	WA	Reading	12	2	Level 2	762	1079	0
+WA	WA	Reading	12	3	Level 3	1080	1332	0
+WA	WA	Reading	12	4	Level 4	1333	1400	0
+WI	WI	Math	1	1	Level 1	0	336	0
+WI	WI	Math	1	2	Level 2	337	417	0
+WI	WI	Math	1	3	Level 3	418	498	0
+WI	WI	Math	1	4	Level 4	499	1400	0
+WI	WI	Math	2	1	Level 1	0	457	0
+WI	WI	Math	2	2	Level 2	458	528	0
+WI	WI	Math	2	3	Level 3	529	601	0
+WI	WI	Math	2	4	Level 4	602	1400	0
+WI	WI	Math	3	1	Level 1	0	546	1
+WI	WI	Math	3	2	Level 2	547	620	1
+WI	WI	Math	3	3	Level 3	621	686	1
+WI	WI	Math	3	4	Level 4	687	1400	1
+WI	WI	Math	4	1	Level 1	0	602	1
+WI	WI	Math	4	2	Level 2	603	695	1
+WI	WI	Math	4	3	Level 3	696	771	1
+WI	WI	Math	4	4	Level 4	772	1400	1
+WI	WI	Math	5	1	Level 1	0	692	1
+WI	WI	Math	5	2	Level 2	693	781	1
+WI	WI	Math	5	3	Level 3	782	826	1
+WI	WI	Math	5	4	Level 4	827	1400	1
+WI	WI	Math	6	1	Level 1	0	716	1
+WI	WI	Math	6	2	Level 2	717	807	1
+WI	WI	Math	6	3	Level 3	808	859	1
+WI	WI	Math	6	4	Level 4	860	1400	1
+WI	WI	Math	7	1	Level 1	0	745	1
+WI	WI	Math	7	2	Level 2	746	830	1
+WI	WI	Math	7	3	Level 3	831	885	1
+WI	WI	Math	7	4	Level 4	886	1400	1
+WI	WI	Math	8	1	Level 1	0	783	1
+WI	WI	Math	8	2	Level 2	784	851	1
+WI	WI	Math	8	3	Level 3	852	891	1
+WI	WI	Math	8	4	Level 4	892	1400	1
+WI	WI	Math	9	1	Level 1	0	790	0
+WI	WI	Math	9	2	Level 2	791	852	0
+WI	WI	Math	9	3	Level 3	853	895	0
+WI	WI	Math	9	4	Level 4	896	1400	0
+WI	WI	Math	10	1	Level 1	0	796	0
+WI	WI	Math	10	2	Level 2	797	858	0
+WI	WI	Math	10	3	Level 3	859	900	0
+WI	WI	Math	10	4	Level 4	901	1400	0
+WI	WI	Math	11	1	Level 1	0	813	0
+WI	WI	Math	11	2	Level 2	814	873	0
+WI	WI	Math	11	3	Level 3	874	918	0
+WI	WI	Math	11	4	Level 4	919	1400	0
+WI	WI	Math	12	1	Level 1	0	826	0
+WI	WI	Math	12	2	Level 2	827	890	0
+WI	WI	Math	12	3	Level 3	891	925	0
+WI	WI	Math	12	4	Level 4	926	1400	0
+WI	WI	Reading	1	1	Level 1	0	90	0
+WI	WI	Reading	1	2	Level 2	91	165	0
+WI	WI	Reading	1	3	Level 3	166	248	0
+WI	WI	Reading	1	4	Level 4	249	1400	0
+WI	WI	Reading	2	1	Level 1	0	232	0
+WI	WI	Reading	2	2	Level 2	233	337	0
+WI	WI	Reading	2	3	Level 3	338	435	0
+WI	WI	Reading	2	4	Level 4	436	1400	0
+WI	WI	Reading	3	1	Level 1	0	332	1
+WI	WI	Reading	3	2	Level 2	333	454	1
+WI	WI	Reading	3	3	Level 3	455	561	1
+WI	WI	Reading	3	4	Level 4	562	1400	1
+WI	WI	Reading	4	1	Level 1	0	434	1
+WI	WI	Reading	4	2	Level 2	435	530	1
+WI	WI	Reading	4	3	Level 3	531	660	1
+WI	WI	Reading	4	4	Level 4	661	1400	1
+WI	WI	Reading	5	1	Level 1	0	483	1
+WI	WI	Reading	5	2	Level 2	484	599	1
+WI	WI	Reading	5	3	Level 3	600	852	1
+WI	WI	Reading	5	4	Level 4	853	1400	1
+WI	WI	Reading	6	1	Level 1	0	499	1
+WI	WI	Reading	6	2	Level 2	500	691	1
+WI	WI	Reading	6	3	Level 3	692	1015	1
+WI	WI	Reading	6	4	Level 4	1016	1400	1
+WI	WI	Reading	7	1	Level 1	0	576	1
+WI	WI	Reading	7	2	Level 2	577	772	1
+WI	WI	Reading	7	3	Level 3	773	1168	1
+WI	WI	Reading	7	4	Level 4	1169	1400	1
+WI	WI	Reading	8	1	Level 1	0	589	1
+WI	WI	Reading	8	2	Level 2	590	857	1
+WI	WI	Reading	8	3	Level 3	858	1249	1
+WI	WI	Reading	8	4	Level 4	1250	1400	1
+WI	WI	Reading	9	1	Level 1	0	661	0
+WI	WI	Reading	9	2	Level 2	662	918	0
+WI	WI	Reading	9	3	Level 3	919	1291	0
+WI	WI	Reading	9	4	Level 4	1292	1400	0
+WI	WI	Reading	10	1	Level 1	0	674	0
+WI	WI	Reading	10	2	Level 2	675	957	0
+WI	WI	Reading	10	3	Level 3	958	1314	0
+WI	WI	Reading	10	4	Level 4	1315	1400	0
+WI	WI	Reading	11	1	Level 1	0	715	0
+WI	WI	Reading	11	2	Level 2	716	992	0
+WI	WI	Reading	11	3	Level 3	993	1321	0
+WI	WI	Reading	11	4	Level 4	1322	1400	0
+WI	WI	Reading	12	1	Level 1	0	761	0
+WI	WI	Reading	12	2	Level 2	762	1079	0
+WI	WI	Reading	12	3	Level 3	1080	1332	0
+WI	WI	Reading	12	4	Level 4	1333	1400	0
+WV	WV	Math	1	1	Level 1	0	336	0
+WV	WV	Math	1	2	Level 2	337	417	0
+WV	WV	Math	1	3	Level 3	418	498	0
+WV	WV	Math	1	4	Level 4	499	1400	0
+WV	WV	Math	2	1	Level 1	0	457	0
+WV	WV	Math	2	2	Level 2	458	528	0
+WV	WV	Math	2	3	Level 3	529	601	0
+WV	WV	Math	2	4	Level 4	602	1400	0
+WV	WV	Math	3	1	Level 1	0	546	1
+WV	WV	Math	3	2	Level 2	547	620	1
+WV	WV	Math	3	3	Level 3	621	686	1
+WV	WV	Math	3	4	Level 4	687	1400	1
+WV	WV	Math	4	1	Level 1	0	602	1
+WV	WV	Math	4	2	Level 2	603	695	1
+WV	WV	Math	4	3	Level 3	696	771	1
+WV	WV	Math	4	4	Level 4	772	1400	1
+WV	WV	Math	5	1	Level 1	0	692	1
+WV	WV	Math	5	2	Level 2	693	781	1
+WV	WV	Math	5	3	Level 3	782	826	1
+WV	WV	Math	5	4	Level 4	827	1400	1
+WV	WV	Math	6	1	Level 1	0	716	1
+WV	WV	Math	6	2	Level 2	717	807	1
+WV	WV	Math	6	3	Level 3	808	859	1
+WV	WV	Math	6	4	Level 4	860	1400	1
+WV	WV	Math	7	1	Level 1	0	745	1
+WV	WV	Math	7	2	Level 2	746	830	1
+WV	WV	Math	7	3	Level 3	831	885	1
+WV	WV	Math	7	4	Level 4	886	1400	1
+WV	WV	Math	8	1	Level 1	0	783	1
+WV	WV	Math	8	2	Level 2	784	851	1
+WV	WV	Math	8	3	Level 3	852	891	1
+WV	WV	Math	8	4	Level 4	892	1400	1
+WV	WV	Math	9	1	Level 1	0	790	0
+WV	WV	Math	9	2	Level 2	791	852	0
+WV	WV	Math	9	3	Level 3	853	895	0
+WV	WV	Math	9	4	Level 4	896	1400	0
+WV	WV	Math	10	1	Level 1	0	796	0
+WV	WV	Math	10	2	Level 2	797	858	0
+WV	WV	Math	10	3	Level 3	859	900	0
+WV	WV	Math	10	4	Level 4	901	1400	0
+WV	WV	Math	11	1	Level 1	0	813	0
+WV	WV	Math	11	2	Level 2	814	873	0
+WV	WV	Math	11	3	Level 3	874	918	0
+WV	WV	Math	11	4	Level 4	919	1400	0
+WV	WV	Math	12	1	Level 1	0	826	0
+WV	WV	Math	12	2	Level 2	827	890	0
+WV	WV	Math	12	3	Level 3	891	925	0
+WV	WV	Math	12	4	Level 4	926	1400	0
+WV	WV	Reading	1	1	Level 1	0	90	0
+WV	WV	Reading	1	2	Level 2	91	165	0
+WV	WV	Reading	1	3	Level 3	166	248	0
+WV	WV	Reading	1	4	Level 4	249	1400	0
+WV	WV	Reading	2	1	Level 1	0	232	0
+WV	WV	Reading	2	2	Level 2	233	337	0
+WV	WV	Reading	2	3	Level 3	338	435	0
+WV	WV	Reading	2	4	Level 4	436	1400	0
+WV	WV	Reading	3	1	Level 1	0	332	1
+WV	WV	Reading	3	2	Level 2	333	454	1
+WV	WV	Reading	3	3	Level 3	455	561	1
+WV	WV	Reading	3	4	Level 4	562	1400	1
+WV	WV	Reading	4	1	Level 1	0	434	1
+WV	WV	Reading	4	2	Level 2	435	530	1
+WV	WV	Reading	4	3	Level 3	531	660	1
+WV	WV	Reading	4	4	Level 4	661	1400	1
+WV	WV	Reading	5	1	Level 1	0	483	1
+WV	WV	Reading	5	2	Level 2	484	599	1
+WV	WV	Reading	5	3	Level 3	600	852	1
+WV	WV	Reading	5	4	Level 4	853	1400	1
+WV	WV	Reading	6	1	Level 1	0	499	1
+WV	WV	Reading	6	2	Level 2	500	691	1
+WV	WV	Reading	6	3	Level 3	692	1015	1
+WV	WV	Reading	6	4	Level 4	1016	1400	1
+WV	WV	Reading	7	1	Level 1	0	576	1
+WV	WV	Reading	7	2	Level 2	577	772	1
+WV	WV	Reading	7	3	Level 3	773	1168	1
+WV	WV	Reading	7	4	Level 4	1169	1400	1
+WV	WV	Reading	8	1	Level 1	0	589	1
+WV	WV	Reading	8	2	Level 2	590	857	1
+WV	WV	Reading	8	3	Level 3	858	1249	1
+WV	WV	Reading	8	4	Level 4	1250	1400	1
+WV	WV	Reading	9	1	Level 1	0	661	0
+WV	WV	Reading	9	2	Level 2	662	918	0
+WV	WV	Reading	9	3	Level 3	919	1291	0
+WV	WV	Reading	9	4	Level 4	1292	1400	0
+WV	WV	Reading	10	1	Level 1	0	674	0
+WV	WV	Reading	10	2	Level 2	675	957	0
+WV	WV	Reading	10	3	Level 3	958	1314	0
+WV	WV	Reading	10	4	Level 4	1315	1400	0
+WV	WV	Reading	11	1	Level 1	0	715	0
+WV	WV	Reading	11	2	Level 2	716	992	0
+WV	WV	Reading	11	3	Level 3	993	1321	0
+WV	WV	Reading	11	4	Level 4	1322	1400	0
+WV	WV	Reading	12	1	Level 1	0	761	0
+WV	WV	Reading	12	2	Level 2	762	1079	0
+WV	WV	Reading	12	3	Level 3	1080	1332	0
+WV	WV	Reading	12	4	Level 4	1333	1400	0
+WY	WY	Math	1	1	Below Basic	0	326	0
+WY	WY	Math	1	2	Basic	327	418	0
+WY	WY	Math	1	3	Proficient	419	517	0
+WY	WY	Math	1	4	Advanced	518	1400	0
+WY	WY	Math	2	1	Below Basic	0	452	0
+WY	WY	Math	2	2	Basic	453	533	0
+WY	WY	Math	2	3	Proficient	534	620	0
+WY	WY	Math	2	4	Advanced	621	1400	0
+WY	WY	Math	3	1	Below Basic	0	540	1
+WY	WY	Math	3	2	Basic	541	619	1
+WY	WY	Math	3	3	Proficient	620	698	1
+WY	WY	Math	3	4	Advanced	699	1400	1
+WY	WY	Math	4	1	Below Basic	0	589	1
+WY	WY	Math	4	2	Basic	590	687	1
+WY	WY	Math	4	3	Proficient	688	767	1
+WY	WY	Math	4	4	Advanced	768	1400	1
+WY	WY	Math	5	1	Below Basic	0	641	1
+WY	WY	Math	5	2	Basic	642	737	1
+WY	WY	Math	5	3	Proficient	738	829	1
+WY	WY	Math	5	4	Advanced	830	1400	1
+WY	WY	Math	6	1	Below Basic	0	675	1
+WY	WY	Math	6	2	Basic	676	781	1
+WY	WY	Math	6	3	Proficient	782	862	1
+WY	WY	Math	6	4	Advanced	863	1400	1
+WY	WY	Math	7	1	Below Basic	0	696	0
+WY	WY	Math	7	2	Basic	697	813	0
+WY	WY	Math	7	3	Proficient	814	900	0
+WY	WY	Math	7	4	Advanced	901	1400	0
+WY	WY	Math	8	1	Below Basic	0	721	0
+WY	WY	Math	8	2	Basic	722	841	0
+WY	WY	Math	8	3	Proficient	842	938	0
+WY	WY	Math	8	4	Advanced	939	1400	0
+WY	WY	Math	9	1	Below Basic	0	732	0
+WY	WY	Math	9	2	Basic	733	846	0
+WY	WY	Math	9	3	Proficient	847	944	0
+WY	WY	Math	9	4	Advanced	945	1400	0
+WY	WY	Math	10	1	Below Basic	0	734	0
+WY	WY	Math	10	2	Basic	735	852	0
+WY	WY	Math	10	3	Proficient	853	953	0
+WY	WY	Math	10	4	Advanced	954	1400	0
+WY	WY	Math	11	1	Below Basic	0	757	0
+WY	WY	Math	11	2	Basic	758	869	0
+WY	WY	Math	11	3	Proficient	870	975	0
+WY	WY	Math	11	4	Advanced	976	1400	0
+WY	WY	Math	12	1	Below Basic	0	765	0
+WY	WY	Math	12	2	Basic	766	886	0
+WY	WY	Math	12	3	Proficient	887	987	0
+WY	WY	Math	12	4	Advanced	988	1400	0
+WY	WY	Reading	1	1	Below Basic	0	83	0
+WY	WY	Reading	1	2	Basic	84	115	0
+WY	WY	Reading	1	3	Proficient	116	238	0
+WY	WY	Reading	1	4	Advanced	239	1400	0
+WY	WY	Reading	2	1	Below Basic	0	201	0
+WY	WY	Reading	2	2	Basic	202	293	0
+WY	WY	Reading	2	3	Proficient	294	431	0
+WY	WY	Reading	2	4	Advanced	432	1400	0
+WY	WY	Reading	3	1	Below Basic	0	301	1
+WY	WY	Reading	3	2	Basic	302	402	1
+WY	WY	Reading	3	3	Proficient	403	557	1
+WY	WY	Reading	3	4	Advanced	558	1400	1
+WY	WY	Reading	4	1	Below Basic	0	371	1
+WY	WY	Reading	4	2	Basic	372	492	1
+WY	WY	Reading	4	3	Proficient	493	691	1
+WY	WY	Reading	4	4	Advanced	692	1400	1
+WY	WY	Reading	5	1	Below Basic	0	444	1
+WY	WY	Reading	5	2	Basic	445	581	1
+WY	WY	Reading	5	3	Proficient	582	805	1
+WY	WY	Reading	5	4	Advanced	806	1400	1
+WY	WY	Reading	6	1	Below Basic	0	499	1
+WY	WY	Reading	6	2	Basic	500	667	1
+WY	WY	Reading	6	3	Proficient	668	914	1
+WY	WY	Reading	6	4	Advanced	915	1400	1
+WY	WY	Reading	7	1	Below Basic	0	556	0
+WY	WY	Reading	7	2	Basic	557	776	0
+WY	WY	Reading	7	3	Proficient	777	1061	0
+WY	WY	Reading	7	4	Advanced	1062	1400	0
+WY	WY	Reading	8	1	Below Basic	0	626	0
+WY	WY	Reading	8	2	Basic	627	892	0
+WY	WY	Reading	8	3	Proficient	893	1215	0
+WY	WY	Reading	8	4	Advanced	1216	1400	0
+WY	WY	Reading	9	1	Below Basic	0	705	0
+WY	WY	Reading	9	2	Basic	706	955	0
+WY	WY	Reading	9	3	Proficient	956	1262	0
+WY	WY	Reading	9	4	Advanced	1263	1400	0
+WY	WY	Reading	10	1	Below Basic	0	728	0
+WY	WY	Reading	10	2	Basic	729	997	0
+WY	WY	Reading	10	3	Proficient	998	1302	0
+WY	WY	Reading	10	4	Advanced	1303	1400	0
+WY	WY	Reading	11	1	Below Basic	0	785	0
+WY	WY	Reading	11	2	Basic	786	1063	0
+WY	WY	Reading	11	3	Proficient	1064	1315	0
+WY	WY	Reading	11	4	Advanced	1316	1400	0
+WY	WY	Reading	12	1	Below Basic	0	830	0
+WY	WY	Reading	12	2	Basic	831	1150	0
+WY	WY	Reading	12	3	Proficient	1151	1327	0
+WY	WY	Reading	12	4	Advanced	1328	1400	0

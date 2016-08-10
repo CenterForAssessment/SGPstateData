@@ -7440,6 +7440,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 #	Content_Areas=c("Mathematics", "Reading", "Science"),
 	Content_Areas=c("Mathematics", "Reading"),
 	# # The assessment changed from WASL to MSP/HSPE (WCAP), but the scale basically stayed the same...
+	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 	# Scale_Change=list(MATHEMATICS=c("2009_2010", "2010_2011"),
 					  # SCIENCE="2009_2010",
 					  # READING="2009_2010",

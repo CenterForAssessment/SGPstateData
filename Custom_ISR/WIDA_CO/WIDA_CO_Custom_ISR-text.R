@@ -39,11 +39,11 @@ del idioma.  La calificaci\u{F3}n general consiste en escuchar, hablar, leer y e
 competencia.  Comenzando de menor a mayor rendimiento, los niveles son: inicial, transici\u{F3}n, desarrollado, elevado, apto y avanzado.
 
 Crecimiento: El modelo de crecimiento de Colorado mide el progreso anual de cada estudiante. Nos dice c\u{F3}mo el progreso del estudiante ELL se
-compara con el de estudiantes en los a\u{F1}os anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes de
-crecimiento estudiantil oscilan entre 1 (bajo crecimiento) y 99 (alto crecimiento). Los porcentajes no son porcentajes de calificaciones, y no
+compara con el de estudiantes en los a\u{F1}os anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes
+de crecimiento estudiantil oscilan entre 1 (bajo crecimiento) y 99 (alto crecimiento). Los porcentajes no son porcentajes de calificaciones, y no
 reflejan los niveles de logro de los estudiantes. A\u{FA}n los estudiantes con bajas calificaciones en sus ex\u{E1}menes pueden obtener altos porcentajes
-de crecimiento estudiantil, si comparados con sus compa\u{F1}eros, han progresado sustancialmente en su dominio del idioma ingl\u{E9}s desde la evaluaci\u{F3}n
-del a\u{F1}o anterior. 
+de crecimiento estudiantil, si comparados con sus compa\u{F1}eros, han progresado sustancialmente en su dominio del idioma ingl\u{E9}s desde la
+evaluaci\u{F3}n del a\u{F1}o anterior. 
 
 Esperamos que este reporte le ayude a entender mejor el desarrollo de su hijo en el idioma Ingl\u{E9}s. Este reporte de crecimiento acad\u{E9}mico le
 podr\u{ED}a servir para discutir con los maestros de su hijo preguntas como las siguientes:

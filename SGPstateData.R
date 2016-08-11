@@ -1263,6 +1263,51 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
+	MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	MATHEMATICS_INTGRT_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	GEOMETRY_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_I_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_II_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	INTEGRATED_MATH_1_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	INTEGRATED_MATH_2_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	ELA_SS=rep("ELA_SS", 7),
+	MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
+	MATHEMATICS_INTGRT_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
+	GEOMETRY_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
+	ALGEBRA_I_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
+	ALGEBRA_II_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
+	INTEGRATED_MATH_1_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
+	INTEGRATED_MATH_2_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
+	INTEGRATED_MATH_3_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"))
+SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	ELA_SS=rep(1L, 6),
+	MATHEMATICS_SS=rep(1L, 8),
+	MATHEMATICS_INTGRT_SS=rep(1L, 8),
+	GEOMETRY_SS=rep(1L, 8),
+	ALGEBRA_I_SS=rep(1L, 8),
+	ALGEBRA_II_SS=rep(1L, 8),
+	INTEGRATED_MATH_1_SS=rep(1L, 8),
+	INTEGRATED_MATH_2_SS=rep(1L, 8),
+	INTEGRATED_MATH_3_SS=rep(1L, 8))
+SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	ELA_SS=3,
+	MATHEMATICS_SS=3,
+	MATHEMATICS_INTGRT_SS=3,
+	GEOMETRY_SS=3,
+	ALGEBRA_I_SS=3,
+	ALGEBRA_II_SS=3,
+	INTEGRATED_MATH_1_SS=3,
+	INTEGRATED_MATH_2_SS=3,
+	INTEGRATED_MATH_3_SS=3)
+
+SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS"),
+	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
+
 
 #########################################################
 ### CONNECTICUT
@@ -8191,7 +8236,7 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		URL="www.schoolview.org",
 		Contact="303-866-6763"),
 	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")

@@ -4128,6 +4128,37 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 		CSEM="SCALE_SCORE_CSEM")
 
 
+### MASSACHUSETTS 2016
+
+load("Knots_Boundaries/MA_2016_Knots_Boundaries_PRE_2014.Rdata")
+SGPstateData[["MA_2016"]] <- SGPstateData[['PARCC']]
+SGPstateData[["MA_2016"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2016_Knots_Boundaries_PRE_2014
+
+SGPstateData[["MA_2016"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["MA_2016"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(20, 40, 61, 81),
+	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+SGPstateData[["MA_2016"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA_2016"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
+
+SGPstateData[["MA_2016"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="Massachusetts Comprehensive Assessment System",
+	Assessment_Abbreviation="MCAS",
+		Organization=list(
+		Name="Massachusetts Department of Elementary and Secondary Education",
+		Abbreviation="ESE",
+		URL="http://www.doe.mass.edu/",
+		Contact="781-338-3000"),
+	Content_Areas=c("Mathematics", "English Language Arts"),
+	Grades_Tested=c(3,4,5,6,7,8,10),
+	Test_Season="Spring",
+	Test_Vendor="Measured Progress/Pearson")
+
+
 #########################################################
 ### MICHIGAN
 #########################################################

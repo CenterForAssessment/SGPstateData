@@ -145,16 +145,15 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2015 English Language Proficiency and Student Growth Report",
+		grid.text("2016 English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, paste("For more information please visit the", tmp.organization$Name, paste("(", tmp.organization$Abbreviation, ")", sep=""),
-			"at", tmp.organization$URL, "or contact", tmp.organization$Contact), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- paste("Cooperatively developed by ", tmp.organization$Abbreviation, " & the Center for Assessment, Inc.", sep="")
-		grid.text(x=0.02, y=0.30, paste(copyright.text, " Distributed by ", tmp.organization$Abbreviation, ".", sep=""), 
+		grid.text(x=0.02, y=0.65, paste0("For more information please visit www.cde.state.co.us/accountability/englishlanguageproficiencygrowth or contact ", tmp.organization$Contact, "."), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
+		copyright.text <- paste0("Cooperatively developed by the ", tmp.organization$Name, " (", tmp.organization$Abbreviation, ") & the Center for Assessment, Inc.")
+		grid.text(x=0.02, y=0.30, paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."), 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
 
@@ -303,15 +302,15 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2015 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+		grid.text("2016 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.schoolview.org o llamar El Departamento de Educaci\u{F3}n de Colorado (CDE): 303-866-6763",
+		grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar El Departamento de",
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- "Producido por El Departamento de Educaci\u{F3}n de Colorado y El Centro de Evaluaci\u{F3}n, Inc."
+		copyright.text <- "Educaci\u{F3}n de Colorado (CDE): 303-866-6763. Producido por El Departamento de Educaci\u{F3}n de Colorado y El Centro de Evaluaci\u{F3}n, Inc."
 		grid.text(x=0.02, y=0.30, copyright.text, 
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()

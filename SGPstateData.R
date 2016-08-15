@@ -5914,10 +5914,10 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Five_Level_States_A = list(
-				States = Five_Level_States_A <- c("FL", "OH"),
+				States = Five_Level_States_A <- c("FL", "OH", "NC"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Five_Level_States_B = list(
-				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NC", "NJ", "NM", "RI"),
+				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NJ", "NM", "RI"),
 				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 			)
 		)

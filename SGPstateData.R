@@ -7669,7 +7669,7 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_8=c(2097, 2989),
 		loss.hoss_9=c(2102, 3032),
 		loss.hoss_10=c(2102, 3032),
-		loss.hoss_11=c(2102, 2032)),
+		loss.hoss_11=c(2102, 3032)),
 	READING.2014_2015=list(
 		boundaries_3=c(2063.1, 2673.9),
 		boundaries_4=c(2077.8, 2716.2),

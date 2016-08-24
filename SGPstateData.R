@@ -1258,7 +1258,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Contact="303-866-6600"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+			Assessment_Years=c("2014_2015", "2015_2016"), #"2015_2016.1", Only Spring assessments (?)
 			Test_Season="Fall & Spring",
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
@@ -1272,7 +1272,7 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 	ALGEBRA_II_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	INTEGRATED_MATH_1_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	INTEGRATED_MATH_2_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-	INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+	INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")) # "3", "4", "5", "6", "7", "8", 
 SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
 	ELA_SS=rep("ELA_SS", 7),
 	MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
@@ -1280,9 +1280,9 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 	GEOMETRY_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
 	ALGEBRA_I_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
 	ALGEBRA_II_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
-	INTEGRATED_MATH_1_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
-	INTEGRATED_MATH_2_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
-	INTEGRATED_MATH_3_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"))
+	INTEGRATED_MATH_1_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
+	INTEGRATED_MATH_2_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
+	INTEGRATED_MATH_3_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS")) # 
 SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
 	ELA_SS=rep(1L, 6),
 	MATHEMATICS_SS=rep(1L, 8),
@@ -1308,6 +1308,39 @@ SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP = c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS"),
 	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
+
+SGPstateData[["CO"]][["Student_Report_Information"]] <-
+	list(
+		sgPlot.year.span=3,
+		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+			MATHEMATICS_SS=c(0,100,200,300,400,500),
+			ELA_SS=c(0,100,200,300,400,500),
+			GEOMETRY_SS=c(0,100,200,300,400,500),
+			ALGEBRA_I_SS=c(0,100,200,300,400,500),
+			ALGEBRA_II_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+			MATHEMATICS_SS=c(0,100,200,300,400,500),
+			ELA_SS=c(0,100,200,300,400,500),
+			GEOMETRY_SS=c(0,100,200,300,400,500),
+			ALGEBRA_I_SS=c(0,100,200,300,400,500),
+			ALGEBRA_II_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
+			INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+		Content_Areas_Labels=list(MATHEMATICS_SS="Math", ELA_SS="ELA", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II", INTEGRATED_MATH_1_SS="Integrated Math 1", INTEGRATED_MATH_2_SS="Integrated Math 2", INTEGRATED_MATH_3_SS="Integrated Math 3"),
+		Content_Areas_Domains=list(ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS", INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
+		Grades_Reported=list(MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT"), ELA_SS=c("3","4","5","6","7","8","9"), GEOMETRY_SS="EOCT", ALGEBRA_I_SS="EOCT", ALGEBRA_II_SS="EOCT", INTEGRATED_MATH_1_SS="EOCT", INTEGRATED_MATH_2_SS="EOCT", INTEGRATED_MATH_3_SS="EOCT"),
+		Grades_Reported_Domains=list(MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT"), ELA_SS=c("3","4","5","6","7","8","9")),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"))
 
 #########################################################
 ### CONNECTICUT
@@ -4175,9 +4208,10 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 
 ### MASSACHUSETTS 2016
 
+load("Knots_Boundaries/MA_2016_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/MA_2016_Knots_Boundaries_PRE_2014.Rdata")
-SGPstateData[["MA_2016"]] <- SGPstateData[['PARCC']]
-SGPstateData[["MA_2016"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2016_Knots_Boundaries_PRE_2014
+# SGPstateData[["MA_2016"]] <- SGPstateData[['PARCC']]
+SGPstateData[["MA_2016"]][["Achievement"]][["Knots_Boundaries"]] <- c(MA_2016_Knots_Boundaries_PRE_2014, MA_2016_Knots_Boundaries)
 
 SGPstateData[["MA_2016"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),

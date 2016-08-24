@@ -2516,10 +2516,10 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"),
 		Achievement_Level_Labels.2015=list(
-			"Not Met"="Not Met (Level 1)",
-			"Nearly Met"="Nearly Met (Level 2)",
-			"Met"="Met (Level 3)",
-			"Exceeded"="Exceeded (Level 4)"),
+			"Not Met"="Not Met Standard",
+			"Nearly Met"="Nearly Met Standard",
+			"Met"="Met Standard",
+			"Exceeded"="Exceeded Standard"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
 		Vertical_Scale="No",
@@ -2546,10 +2546,10 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 #			"Meets"="Meets Proficiency",
 #			"Exceeds"="Exceeds Proficiency"))
 		Achievement_Level_Labels=list(
-			"Not Met"="Not Met (Level 1)",
-			"Nearly Met"="Nearly Met (Level 2)",
-			"Met"="Met (Level 3)",
-			"Exceeded"="Exceeded (Level 4)"))
+			"Not Met"="Not Met Standard",
+			"Nearly Met"="Nearly Met Standard",
+			"Met"="Met Standard",
+			"Exceeded"="Exceeded Standard"))
 
 SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan=TRUE,

@@ -2571,8 +2571,8 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), ### 2014 and prior
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)), ### 2015
-#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), ### 2016 and late
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)), ### 2015
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), ### 2016 and late
 #		Achievement_Level_Labels=list( ### 2014 and prior
 #			"Well Below"="Well Below Proficiency",
 #			"Approaches"="Approaches Proficiency",
@@ -5948,10 +5948,10 @@ SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
 					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Five_Level_States_A = list(
-				States = Five_Level_States_A <- c("FL", "OH"),
+				States = Five_Level_States_A <- c("FL", "OH", "NC"),
 				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Five_Level_States_B = list(
-				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NC", "NJ", "NM", "RI"),
+				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NJ", "NM", "RI"),
 				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 			)
 		)
@@ -7703,7 +7703,7 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_8=c(2097, 2989),
 		loss.hoss_9=c(2102, 3032),
 		loss.hoss_10=c(2102, 3032),
-		loss.hoss_11=c(2102, 2032)),
+		loss.hoss_11=c(2102, 3032)),
 	READING.2014_2015=list(
 		boundaries_3=c(2063.1, 2673.9),
 		boundaries_4=c(2077.8, 2716.2),
@@ -7975,6 +7975,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 )
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior

@@ -2538,8 +2538,8 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), ### 2014 and prior
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)), ### 2015
-#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), ### 2016 and late
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)), ### 2015
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), ### 2016 and late
 #		Achievement_Level_Labels=list( ### 2014 and prior
 #			"Well Below"="Well Below Proficiency",
 #			"Approaches"="Approaches Proficiency",
@@ -7941,6 +7941,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 )
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior

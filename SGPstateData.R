@@ -2419,7 +2419,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_8=c(2097, 2989),
 			loss.hoss_9=c(2102, 3032),
 			loss.hoss_10=c(2102, 3032),
-			loss.hoss_11=c(2102, 2032)),
+			loss.hoss_11=c(2102, 3032)),
 		READING.2015=list(
 			boundaries_3=c(2063.1, 2673.9),
 			boundaries_4=c(2077.8, 2716.2),
@@ -2549,10 +2549,10 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Meets"="Meets Proficiency",
 			"Exceeds"="Exceeds Proficiency"),
 		Achievement_Level_Labels.2015=list(
-			"Not Met"="Not Met (Level 1)",
-			"Nearly Met"="Nearly Met (Level 2)",
-			"Met"="Met (Level 3)",
-			"Exceeded"="Exceeded (Level 4)"),
+			"Not Met"="Not Met Standard",
+			"Nearly Met"="Nearly Met Standard",
+			"Met"="Met Standard",
+			"Exceeded"="Exceeded Standard"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
 		Vertical_Scale="No",
@@ -2579,10 +2579,10 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 #			"Meets"="Meets Proficiency",
 #			"Exceeds"="Exceeds Proficiency"))
 		Achievement_Level_Labels=list(
-			"Not Met"="Not Met (Level 1)",
-			"Nearly Met"="Nearly Met (Level 2)",
-			"Met"="Met (Level 3)",
-			"Exceeded"="Exceeded (Level 4)"))
+			"Not Met"="Not Met Standard",
+			"Nearly Met"="Nearly Met Standard",
+			"Met"="Met Standard",
+			"Exceeded"="Exceeded Standard"))
 
 SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan=TRUE,
@@ -2873,7 +2873,7 @@ SGPstateData[["ID"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_8=c(2097, 2989),
 			loss.hoss_9=c(2102, 3032),
 			loss.hoss_10=c(2102, 3032),
-			loss.hoss_11=c(2102, 2032)))
+			loss.hoss_11=c(2102, 3032)))
 
 SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -7342,7 +7342,7 @@ SGPstateData[["WA"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_8=c(2097, 2989),
 		loss.hoss_9=c(2102, 3032),
 		loss.hoss_10=c(2102, 3032),
-		loss.hoss_11=c(2102, 2032)),
+		loss.hoss_11=c(2102, 3032)),
 	WRITING=list(
 		knots_4=c(7, 9, 10, 11),
 		knots_7=c(8, 9, 10, 11),

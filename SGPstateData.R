@@ -1170,9 +1170,10 @@ SGPstateData[["CO_ORIGINAL"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading"),
 #	Content_Areas=c("Mathematics", "Reading", "Writing"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11,12),
-	Assessment_Years=as.character(2003:2015),
+	Assessment_Years=as.character(2003:2016),
 	Test_Season="Spring",
 	Test_Vendor="PARCC",
+	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Colorado_CSEM)
 
@@ -2068,9 +2069,10 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Abbreviation="Milestones",
 		Content_Areas=c("Mathematics", "ELA", "Science", "Social Studies"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'),
+		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
+		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015'),
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
 
@@ -2234,6 +2236,7 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(277, 300, 323),
 			GRADE_7=c(281, 300, 334),
 			GRADE_8=c(276, 300, 332),
+			GRADE_9=c(275, 300, 331),
 			GRADE_10=c(275, 300, 331),
 			GRADE_11=c(275, 300, 331)),
 		MATHEMATICS.2011=list(
@@ -2243,6 +2246,7 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(271, 300, 340),
 			GRADE_7=c(271, 300, 339),
 			GRADE_8=c(272, 300, 342),
+			GRADE_9=c(277, 300, 336),
 			GRADE_10=c(277, 300, 336),
 			GRADE_11=c(277, 300, 336)),
 		MATHEMATICS.2015=list(
@@ -2262,6 +2266,7 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(278, 300, 342),
 			GRADE_7=c(286, 300, 343),
 			GRADE_8=c(286, 300, 340),
+			GRADE_9=c(289, 300, 336),
 			GRADE_10=c(289, 300, 336),
 			GRADE_11=c(289, 300, 336)),
 		READING.2011=list(
@@ -2271,6 +2276,7 @@ SGPstateData[["HI"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(270, 300, 331),
 			GRADE_7=c(270, 300, 336),
 			GRADE_8=c(273, 300, 330),
+			GRADE_9=c(277, 300, 340),
 			GRADE_10=c(277, 300, 340),
 			GRADE_11=c(277, 300, 340)),
 		READING.2015=list(
@@ -2349,6 +2355,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(60, 540),
 			boundaries_7=c(60, 540),
 			boundaries_8=c(60, 540),
+			boundaries_9=c(60, 540),
 			boundaries_10=c(60, 540),
 			boundaries_11=c(60, 540),
 			knots_3=c(267, 290, 308, 330),
@@ -2357,6 +2364,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(266, 288, 304, 325),
 			knots_7=c(268, 289, 307, 329),
 			knots_8=c(262, 286, 306, 329),
+			knots_9=c(267, 282, 298, 314),
 			knots_10=c(267, 282, 298, 314),
 			knots_11=c(267, 282, 298, 314),
 			loss.hoss_3=c(178, 453),
@@ -2365,6 +2373,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(182, 465),
 			loss.hoss_7=c(195, 471),
 			loss.hoss_8=c(175, 474),
+			loss.hoss_9=c(195, 467),
 			loss.hoss_10=c(195, 467),
 			loss.hoss_11=c(195, 467)),
 		MATHEMATICS=list(
@@ -2374,6 +2383,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(60, 540),
 			boundaries_7=c(60, 540),
 			boundaries_8=c(60, 540),
+			boundaries_9=c(60, 540),
 			boundaries_10=c(60, 540),
 			boundaries_11=c(60, 540),
 			knots_3=c(267, 290, 308, 330),
@@ -2382,6 +2392,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(266, 288, 304, 325),
 			knots_7=c(268, 289, 307, 329),
 			knots_8=c(262, 286, 306, 329),
+			knots_9=c(267, 282, 298, 314),
 			knots_10=c(267, 282, 298, 314),
 			knots_11=c(267, 282, 298, 314),
 			loss.hoss_3=c(100, 500),
@@ -2390,6 +2401,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(100, 500),
 			loss.hoss_7=c(100, 500),
 			loss.hoss_8=c(100, 500),
+			loss.hoss_9=c(100, 500),
 			loss.hoss_10=c(100, 500),
 			loss.hoss_11=c(100, 500)),
 		READING.2016=list(
@@ -2455,6 +2467,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(60, 540),
 			boundaries_7=c(60, 540),
 			boundaries_8=c(60, 540),
+			boundaries_9=c(60, 540),
 			boundaries_10=c(60, 540),
 			boundaries_11=c(60, 540),
 			knots_3=c(274, 300, 319, 339),
@@ -2463,6 +2476,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(278, 301, 319, 338),
 			knots_7=c(286, 306, 324, 344),
 			knots_8=c(287, 306, 320, 340),
+			knots_9=c(285, 303, 315, 331),
 			knots_10=c(285, 303, 315, 331),
 			knots_11=c(285, 303, 315, 331),
 			loss.hoss_3=c(200, 442),
@@ -2471,6 +2485,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(204, 444),
 			loss.hoss_7=c(187, 448),
 			loss.hoss_8=c(210, 460),
+			loss.hoss_9=c(200, 433),
 			loss.hoss_10=c(200, 433),
 			loss.hoss_11=c(200, 433)),
 		READING=list(
@@ -2480,6 +2495,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(60, 540),
 			boundaries_7=c(60, 540),
 			boundaries_8=c(60, 540),
+			boundaries_9=c(60, 540),
 			boundaries_10=c(60, 540),
 			boundaries_11=c(60, 540),
 			knots_3=c(274, 300, 319, 339),
@@ -2488,6 +2504,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(278, 301, 319, 338),
 			knots_7=c(286, 306, 324, 344),
 			knots_8=c(287, 306, 320, 340),
+			knots_9=c(285, 303, 315, 331),
 			knots_10=c(285, 303, 315, 331),
 			knots_11=c(285, 303, 315, 331),
 			loss.hoss_3=c(100, 500),
@@ -2496,6 +2513,7 @@ SGPstateData[["HI"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(100, 500),
 			loss.hoss_7=c(100, 500),
 			loss.hoss_8=c(100, 500),
+			loss.hoss_9=c(100, 500),
 			loss.hoss_10=c(100, 500),
 			loss.hoss_11=c(100, 500)))
 
@@ -2529,6 +2547,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Season="Spring")
 
 SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
@@ -3133,8 +3152,9 @@ SGPstateData[["IL_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="866-262-6663"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+		Assessment_Years=c("1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
 		Test_Season="Spring",
+		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Vendor="ISBE Division of Assessment",
 		CSEM=Illinois_CSEM)
 
@@ -3279,6 +3299,7 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 			URL="www.doe.in.gov",
 			Contact="webmaster@doe.in.gov"),
 		Content_Areas=c("English/Language Arts", "Mathematics"),
+		Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill")
@@ -3491,6 +3512,7 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 			URL="www.maine.gov/education",
 			Contact="207-624-6600"),
 		Content_Areas=c("Mathematics", "Reading"),
+		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Fall",
 		Test_Vendor="Measured Progress")
@@ -3720,26 +3742,6 @@ SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 			"Needs Improvement"="Needs Improvement",
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"),
-		Achievement_Level_Labels.2015=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="No",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8),
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), READING=c(100,200,300,400,500,600)),
-		Year="2015",
-		Equate_Interval_Digits=2
-	)
-
-
-SGPstateData[["MA_ORIGINAL"]][["Student_Report_Information"]] <-
-	list(
 		Achievement_Level_Labels.2015=list(
 			"Level 1"="Level 1",
 			"Level 2"="Level 2",
@@ -4234,6 +4236,7 @@ SGPstateData[["MA_2016"]][["Assessment_Program_Information"]] <- list(
 		Contact="781-338-3000"),
 	Content_Areas=c("Mathematics", "English Language Arts"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
+	Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
 	Test_Season="Spring",
 	Test_Vendor="Measured Progress/Pearson")
 
@@ -4323,7 +4326,8 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading", "Social Studies", "Science"),
 #	Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
-	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
+	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC/DRC")
 
@@ -4450,7 +4454,8 @@ SGPstateData[["MN"]][["Assessment_Program_Information"]] <- list(
 		Contact="651-582-8200"),
 		Content_Areas=c("Mathematics", "Reading", "Science"),
 		Grades_Tested=c(3,4,5,6,7,8,10,11),
-		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013"),
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Scale_Change=list(MATHEMATICS="2015", READING="2015", SCIENCE="2015"),
 		Test_Season="Spring",
 		Test_Vendor="Pearson")
 #			CSEM=Minnesota_CSEM)
@@ -4611,6 +4616,7 @@ SGPstateData[["MS"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("Reading Language Arts", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
+	Scale_Change=list(READING="2014_2015", MATHEMATICS="2014_2015"),
 	Test_Vendor="Pearson")
 
 SGPstateData[["MS"]][["Student_Report_Information"]] <-
@@ -5119,6 +5125,7 @@ SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 			URL="www.doe.nv.gov",
 			Contact="775-687-9200 "),
 		Content_Areas=c("Mathematics", "Reading"),
+		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress",
@@ -5238,6 +5245,7 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <-
 		Contact="603-271-3494"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
+		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 		Test_Season="Fall",
 		Test_Vendor="Measured Progress")
 #		CSEM=NECAP_CSEM)
@@ -5506,6 +5514,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics"),
 		Grades_Tested=c(3,4,5,6,7,8),
+		Scale_Change=list(ELA="2015", MATHEMATICS="2015"),
 		Test_Season="Spring",
 		Test_Vendor="PARCC",
 		CSEM="SCALE_SCORE_CSEM")
@@ -5872,6 +5881,7 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]] <- list(
 		Contact="503-947-5600"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
+	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 	Test_Season="Spring",
 #	Test_Vendor="Oregon Department of Education")
 	Test_Vendor="SBAC")
@@ -6367,6 +6377,7 @@ SGPstateData[["RI_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
+		Scale_Change=list(MATHEMATICS="2014_2015", ELA="2014_2015"),
 		Test_Season="Fall",
 		Test_Vendor="PARCC",
 		CSEM="SCALE_SCORE_CSEM")
@@ -6453,8 +6464,83 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 ### SOUTH DAKOTA
 #########################################################
 
-#load("Knots_Boundaries/SD_Knots_Boundaries.Rdata")
-#SGPstateData[["SD"]][["Achievement"]][["Knots_Boundaries"]] <- SD_Knots_Boundaries
+SGPstateData[["SD"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+	ELA.2016=list(
+		boundaries_3=c(1920.0, 2892.0),
+		boundaries_4=c(1948.5, 2950.5),
+		boundaries_5=c(1970.0, 3002.0),
+		boundaries_6=c(1993.2, 3022.8),
+		boundaries_7=c(1993.8, 3052.2),
+		boundaries_8=c(2007.8, 3078.2),
+		knots_3=c(2350, 2405, 2451, 2500),
+		knots_4=c(2383, 2444, 2491, 2538),
+		knots_5=c(2413, 2473, 2522, 2573),
+		knots_6=c(2447, 2505, 2550, 2598),
+		knots_7=c(2467, 2527, 2577, 2626),
+		knots_8=c(2481.4, 2542, 2594, 2646),
+		loss.hoss_3=c(2001, 2811),
+		loss.hoss_4=c(2032, 2867),
+		loss.hoss_5=c(2056, 2916),
+		loss.hoss_6=c(2079, 2937),
+		loss.hoss_7=c(2082, 2964),
+		loss.hoss_8=c(2097, 2989)),
+	ELA=list(
+		boundaries_3=c(2063.1, 2673.9),
+		boundaries_4=c(2077.8, 2716.2),
+		boundaries_5=c(2151.0, 2751.0),
+		boundaries_6=c(2158.6, 2775.4),
+		boundaries_7=c(2209.3, 2793.7),
+		boundaries_8=c(2239.9, 2817.1),
+		knots_3=c(2349, 2402, 2446, 2493),
+		knots_4=c(2378, 2436, 2481, 2530),
+		knots_5=c(2414, 2471, 2518, 2568),
+		knots_6=c(2440, 2495, 2538, 2587),
+		knots_7=c(2463, 2521, 2570, 2620),
+		knots_8=c(2477, 2534, 2583, 2634),
+		loss.hoss_3=c(2114, 2623),
+		loss.hoss_4=c(2131, 2663),
+		loss.hoss_5=c(2201, 2701),
+		loss.hoss_6=c(2210, 2724),
+		loss.hoss_7=c(2258, 2745),
+		loss.hoss_8=c(2288, 2769)),
+	MATHEMATICS.2016=list(
+		boundaries_3=c(2001.9, 2831.1),
+		boundaries_4=c(2015.6, 2908.4),
+		boundaries_5=c(2015.4, 2970.6),
+		boundaries_6=c(2022.2, 2991.8),
+		boundaries_7=c(2022.4, 3049.6),
+		boundaries_8=c(2025.0, 3081.0),
+		knots_3=c(2374, 2421, 2457.6, 2498),
+		knots_4=c(2410, 2459, 2497, 2539),
+		knots_5=c(2424, 2478, 2521, 2567),
+		knots_6=c(2444, 2505, 2550, 2598),
+		knots_7=c(2457, 2523, 2568, 2619),
+		knots_8=c(2461, 2530, 2587, 2649),
+		loss.hoss_3=c(2071, 2762),
+		loss.hoss_4=c(2090, 2834),
+		loss.hoss_5=c(2095, 2891),
+		loss.hoss_6=c(2103, 2911),
+		loss.hoss_7=c(2108, 2964),
+		loss.hoss_8=c(2113, 2993)),
+	MATHEMATICS=list(
+		boundaries_3=c(2145.8, 2664.2),
+		boundaries_4=c(2158.5, 2704.5),
+		boundaries_5=c(2170.9, 2748.1),
+		boundaries_6=c(2183.7, 2799.3),
+		boundaries_7=c(2197.2, 2830.8),
+		boundaries_8=c(2205.3, 2855.7),
+		knots_3=c(2370, 2416, 2453, 2493),
+		knots_4=c(2405, 2452, 2491, 2531),
+		knots_5=c(2424, 2474, 2517, 2563),
+		knots_6=c(2437, 2495, 2537, 2583),
+		knots_7=c(2453, 2515, 2562, 2613),
+		knots_8=c(2456, 2523, 2577, 2637),
+		loss.hoss_3=c(2189, 2621),
+		loss.hoss_4=c(2204, 2659),
+		loss.hoss_5=c(2219, 2700),
+		loss.hoss_6=c(2235, 2748),
+		loss.hoss_7=c(2250, 2778),
+		loss.hoss_8=c(2265, 2802)))
 
 SGPstateData[["SD"]][["Achievement"]][["Cutscores"]] <- list(
 	MATHEMATICS=list(
@@ -7975,7 +8061,6 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 )
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- list(
-	sgPlot.year.span = 3,
 	Vertical_Scale="Yes",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
@@ -8110,7 +8195,8 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 		Contact="800-441-4563"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #	Test_Season="Fall", 2014 and prior
 	Test_Season="Spring",
 #	Test_Vendor="CTB/McGraw Hill",
@@ -8848,7 +8934,8 @@ SGPstateData[["WY"]][["Assessment_Program_Information"]] <-
 			Contact="deb.lindsey@wyo.gov"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"))
+		Scale_Change=list(MATHEMATICS="2013_2014", READING="2013_2014"),
+		Assessment_Years=c("2007_2008","2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"))
 
 SGPstateData[["WY"]][["Student_Report_Information"]] <-
 	list(

@@ -101,6 +101,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
 		sgp.projections.use.only.complete.matrices=FALSE,
+		null.output.string="",
 		grade.projection.sequence=list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -4738,6 +4739,49 @@ SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(1236, 1240, 1255),
 		GRADE_8=c(1230, 1240, 1250)))
 
+SGPstateData[["MO"]][["Achievement"]][["Knots_Boundaries"]] <-
+	list(
+		ELA=list(
+			boundaries_3=c(1191, 1299),
+			boundaries_4=c(1191, 1299),
+			boundaries_5=c(1191, 1299),
+			boundaries_6=c(1191, 1299),
+			boundaries_7=c(1191, 1299),
+			boundaries_8=c(1191, 1299),
+			knots_3=c(1229, 1238, 1246, 1257),
+			knots_4=c(1229, 1238.6, 1247, 1256),
+			knots_5=c(1233, 1240, 1248.2, 1258),
+			knots_6=c(1228, 1236, 1242, 1251),
+			knots_7=c(1232, 1238, 1245, 1255),
+			knots_8=c(1227.4, 1234, 1241, 1250),
+			loss.hoss_3=c(1200, 1290),
+			loss.hoss_4=c(1200, 1290),
+			loss.hoss_5=c(1200, 1290),
+			loss.hoss_6=c(1200, 1290),
+			loss.hoss_7=c(1200, 1290),
+			loss.hoss_8=c(1200, 1290),
+			loss.hoss_11=c(1200, 1290)),
+		MATHEMATICS=list(
+			boundaries_3=c(1191, 1299),
+			boundaries_4=c(1191, 1299),
+			boundaries_5=c(1191, 1299),
+			boundaries_6=c(1191, 1299),
+			boundaries_7=c(1191, 1299),
+			boundaries_8=c(1191, 1299),
+			knots_3=c(1232, 1240, 1247, 1259),
+			knots_4=c(1230, 1238, 1245, 1255),
+			knots_5=c(1236, 1242, 1247, 1256),
+			knots_6=c(1232, 1238, 1242, 1254),
+			knots_7=c(1235.8, 1239, 1246, 1255.2),
+			knots_8=c(1231, 1239, 1243, 1252),
+			loss.hoss_3=c(1200, 1290),
+			loss.hoss_4=c(1200, 1290),
+			loss.hoss_5=c(1200, 1290),
+			loss.hoss_6=c(1200, 1290),
+			loss.hoss_7=c(1200, 1290),
+			loss.hoss_8=c(1200, 1290),
+			loss.hoss_10=c(1200, 1290)))
+
 SGPstateData[["NCSC_SD"]][["Achievement"]][["Levels"]] <-
 	list(
 	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
@@ -4754,8 +4798,8 @@ SGPstateData[["NCSC_SD"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["NCSC_SD"]][["Assessment_Program_Information"]] <-
 	list(
-	Assessment_Name="National Center and State Collaborative",
-	Assessment_Abbreviation="NCSC",
+	Assessment_Name="Multi-State Alternate Assessment",
+	Assessment_Abbreviation="NCSC-MSAA",
 	Organization=list(
 		Name="South Dakota Department of Education",
 		Abbreviation="SDDOE",

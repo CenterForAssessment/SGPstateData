@@ -389,168 +389,183 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <-
 ### ARIZONA
 #########################################################
 
-SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <-
-	list(
-		MATHEMATICS=list(
-			boundaries_2=c(328.35, 738.65),
-			boundaries_3=c(177.5, 672.5),
-			boundaries_4=c(207.75, 697.25),
-			boundaries_5=c(232.75, 722.25),
-			boundaries_6=c(247.25, 747.75),
-			boundaries_7=c(267.5, 762.5),
-			boundaries_8=c(275, 825),
-			boundaries_9=c(379.3, 900.7),
-			boundaries_10=c(503.1, 918.9),
-			knots_2=c(538, 559, 577, 599),
-			knots_3=c(406, 436, 461, 489),
-			knots_4=c(435, 470, 497, 530),
-			knots_5=c(457, 489, 516, 549),
-			knots_6=c(468, 503, 534, 571),
-			knots_7=c(497, 530, 559, 591),
-			knots_8=c(503, 538, 569, 606),
-			knots_9=c(660, 688, 709, 732),
-			knots_10=c(664, 691, 713, 741),
-			loss.hoss_2=c(347, 720),
-			loss.hoss_3=c(200, 650),
-			loss.hoss_4=c(230, 675),
-			loss.hoss_5=c(255, 700),
-			loss.hoss_6=c(270, 725),
-			loss.hoss_7=c(290, 740),
-			loss.hoss_8=c(300, 800),
-			loss.hoss_9=c(403, 877),
-			loss.hoss_10=c(522, 900)),
-		MATHEMATICS.2010=list(
-			boundaries_2=c(389.4, 710.6),
-			boundaries_3=c(192.45, 556.55),
-			boundaries_4=c(186.2, 577.8),
-			boundaries_5=c(144.25, 600.75),
-			boundaries_6=c(138, 622),
-			boundaries_7=c(221, 639),
-			boundaries_8=c(268.3, 657.7),
-			boundaries_9=c(557.85, 869.15),
-			boundaries_10=c(275.85, 807.15),
-			knots_2=c(554, 580, 605, 628),
-			knots_3=c(325, 356, 381, 409),
-			knots_4=c(339, 371, 396, 421),
-			knots_5=c(351, 381, 408, 436),
-			knots_6=c(364, 395, 422, 451),
-			knots_7=c(379, 408, 434, 466),
-			knots_8=c(394, 420, 444, 474),
-			knots_9=c(686, 702, 724, 749),
-			knots_10=c(458, 486, 509, 539),
-			loss.hoss_2=c(404, 696),
-			loss.hoss_3=c(209, 540),
-			loss.hoss_4=c(204, 560),
-			loss.hoss_5=c(165, 580),
-			loss.hoss_6=c(160, 600),
-			loss.hoss_7=c(240, 620),
-			loss.hoss_8=c(286, 640),
-			loss.hoss_9=c(572, 855),
-			loss.hoss_10=c(300, 783)),
-		READING=list(
-			boundaries_2=c(408.05, 736.95),
-			boundaries_3=c(178, 662),
-			boundaries_4=c(198, 682),
-			boundaries_5=c(218.25, 696.75),
-			boundaries_6=c(228, 712),
-			boundaries_7=c(237, 743),
-			boundaries_8=c(243.5, 826.5),
-			boundaries_9=c(457.1, 850.9),
-			boundaries_10=c(480, 920),
-			knots_2=c(575, 599, 617, 638),
-			knots_3=c(413, 443, 469, 499),
-			knots_4=c(430, 463, 488, 519),
-			knots_5=c(451, 483, 507, 532),
-			knots_6=c(460, 492, 517, 543),
-			knots_7=c(473, 506, 532, 562),
-			knots_8=c(474, 509, 538, 568),
-			knots_9=c(655, 676, 696, 721),
-			knots_10=c(663, 694, 720, 746),
-			loss.hoss_2=c(423, 722),
-			loss.hoss_3=c(200, 640),
-			loss.hoss_4=c(220, 660),
-			loss.hoss_5=c(240, 675),
-			loss.hoss_6=c(250, 690),
-			loss.hoss_7=c(260, 720),
-			loss.hoss_8=c(270, 800),
-			loss.hoss_9=c(475, 833),
-			loss.hoss_10=c(500, 900)))
+load("Knots_Boundaries/AZ_Knots_Boundaries.Rdata")
+SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- AZ_Knots_Boundaries
 
-SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
-	list(
-		MATHEMATICS=list(
-			GRADE_3=c(386, 420, 492),
-			GRADE_4=c(414, 448, 521),
-			GRADE_5=c(442, 476, 550),
-			GRADE_6=c(463, 496, 574),
-			GRADE_7=c(484, 517, 599),
-			GRADE_8=c(505, 537, 623),
-			GRADE_10=c(668, 683, 750)),
-		READING=list(
-			GRADE_3=c(379, 431, 516),
-			GRADE_4=c(402, 450, 536),
-			GRADE_5=c(424, 468, 556),
-			GRADE_6=c(433, 478, 571),
-			GRADE_7=c(443, 489, 587),
-			GRADE_8=c(452, 499, 602),
-			GRADE_10=c(627, 674, 773)),
-		MATHEMATICS.2010=list(
-			GRADE_3=c(303, 347, 406),
-			GRADE_4=c(331, 366, 416),
-			GRADE_5=c(348, 381, 436),
-			GRADE_6=c(366, 398, 446),
-			GRADE_7=c(382, 411, 460),
-			GRADE_8=c(409, 426, 475),
-			GRADE_10=c(471, 487, 537)))
+#SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <-
+#	list(
+#		MATHEMATICS=list(
+#			boundaries_2=c(328.35, 738.65),
+#			boundaries_3=c(177.5, 672.5),
+#			boundaries_4=c(207.75, 697.25),
+#			boundaries_5=c(232.75, 722.25),
+#			boundaries_6=c(247.25, 747.75),
+#			boundaries_7=c(267.5, 762.5),
+#			boundaries_8=c(275, 825),
+#			boundaries_9=c(379.3, 900.7),
+#			boundaries_10=c(503.1, 918.9),
+#			knots_2=c(538, 559, 577, 599),
+#			knots_3=c(406, 436, 461, 489),
+#			knots_4=c(435, 470, 497, 530),
+#			knots_5=c(457, 489, 516, 549),
+#			knots_6=c(468, 503, 534, 571),
+#			knots_7=c(497, 530, 559, 591),
+#			knots_8=c(503, 538, 569, 606),
+#			knots_9=c(660, 688, 709, 732),
+#			knots_10=c(664, 691, 713, 741),
+#			loss.hoss_2=c(347, 720),
+#			loss.hoss_3=c(200, 650),
+#			loss.hoss_4=c(230, 675),
+#			loss.hoss_5=c(255, 700),
+#			loss.hoss_6=c(270, 725),
+#			loss.hoss_7=c(290, 740),
+#			loss.hoss_8=c(300, 800),
+#			loss.hoss_9=c(403, 877),
+#			loss.hoss_10=c(522, 900)),
+#		MATHEMATICS.2010=list(
+#			boundaries_2=c(389.4, 710.6),
+#			boundaries_3=c(192.45, 556.55),
+#			boundaries_4=c(186.2, 577.8),
+#			boundaries_5=c(144.25, 600.75),
+#			boundaries_6=c(138, 622),
+#			boundaries_7=c(221, 639),
+#			boundaries_8=c(268.3, 657.7),
+#			boundaries_9=c(557.85, 869.15),
+#			boundaries_10=c(275.85, 807.15),
+#			knots_2=c(554, 580, 605, 628),
+#			knots_3=c(325, 356, 381, 409),
+#			knots_4=c(339, 371, 396, 421),
+#			knots_5=c(351, 381, 408, 436),
+#			knots_6=c(364, 395, 422, 451),
+#			knots_7=c(379, 408, 434, 466),
+#			knots_8=c(394, 420, 444, 474),
+#			knots_9=c(686, 702, 724, 749),
+#			knots_10=c(458, 486, 509, 539),
+#			loss.hoss_2=c(404, 696),
+#			loss.hoss_3=c(209, 540),
+#			loss.hoss_4=c(204, 560),
+#			loss.hoss_5=c(165, 580),
+#			loss.hoss_6=c(160, 600),
+#			loss.hoss_7=c(240, 620),
+#			loss.hoss_8=c(286, 640),
+#			loss.hoss_9=c(572, 855),
+#			loss.hoss_10=c(300, 783)),
+#		READING=list(
+#			boundaries_2=c(408.05, 736.95),
+#			boundaries_3=c(178, 662),
+#			boundaries_4=c(198, 682),
+#			boundaries_5=c(218.25, 696.75),
+#			boundaries_6=c(228, 712),
+#			boundaries_7=c(237, 743),
+#			boundaries_8=c(243.5, 826.5),
+#			boundaries_9=c(457.1, 850.9),
+#			boundaries_10=c(480, 920),
+#			knots_2=c(575, 599, 617, 638),
+#			knots_3=c(413, 443, 469, 499),
+#			knots_4=c(430, 463, 488, 519),
+#			knots_5=c(451, 483, 507, 532),
+#			knots_6=c(460, 492, 517, 543),
+#			knots_7=c(473, 506, 532, 562),
+#			knots_8=c(474, 509, 538, 568),
+#			knots_9=c(655, 676, 696, 721),
+#			knots_10=c(663, 694, 720, 746),
+#			loss.hoss_2=c(423, 722),
+#			loss.hoss_3=c(200, 640),
+#			loss.hoss_4=c(220, 660),
+#			loss.hoss_5=c(240, 675),
+#			loss.hoss_6=c(250, 690),
+#			loss.hoss_7=c(260, 720),
+#			loss.hoss_8=c(270, 800),
+#			loss.hoss_9=c(475, 833),
+#			loss.hoss_10=c(500, 900)))
+
+#SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
+#	list(
+#		MATHEMATICS=list(
+#			GRADE_3=c(386, 420, 492),
+#			GRADE_4=c(414, 448, 521),
+#			GRADE_5=c(442, 476, 550),
+#			GRADE_6=c(463, 496, 574),
+#			GRADE_7=c(484, 517, 599),
+#			GRADE_8=c(505, 537, 623),
+#			GRADE_10=c(668, 683, 750)),
+#		READING=list(
+#			GRADE_3=c(379, 431, 516),
+#			GRADE_4=c(402, 450, 536),
+#			GRADE_5=c(424, 468, 556),
+#			GRADE_6=c(433, 478, 571),
+#			GRADE_7=c(443, 489, 587),
+#			GRADE_8=c(452, 499, 602),
+#			GRADE_10=c(627, 674, 773)),
+#		MATHEMATICS.2010=list(
+#			GRADE_3=c(303, 347, 406),
+#			GRADE_4=c(331, 366, 416),
+#			GRADE_5=c(348, 381, 436),
+#			GRADE_6=c(366, 398, 446),
+#			GRADE_7=c(382, 411, 460),
+#			GRADE_8=c(409, 426, 475),
+#			GRADE_10=c(471, 487, 537)))
 
 SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-
 	list(
-		Labels=c("Falls Far Below", "Approaches", "Meets", "Exceeds"),
+		Labels=c("Minimally Proficient", "Partially Proficient", "Proficient", "Highly Proficient"),
+#		Labels=c("Falls Far Below", "Approaches", "Meets", "Exceeds"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["AZ"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+SGPstateData[["AZ"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["AZ"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 	list(
-		Cuts=c(20, 40, 61, 81),
-		Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+		Cuts=c(35, 66),
+		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
+#SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Arizona's Instrument to Measure Standards",
-		Assessment_Abbreviation="AIMS",
+		Assessment_Name="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics",
+#		Assessment_Name="Arizona's Instrument to Measure Standards",
+		Assessment_Abbreviation="AzMERIT",
+#		Assessment_Abbreviation="AIMS",
 		Organization=list(
 			Name="Arizona Department of Education",
 			Abbreviation="ADE",
 			URL="www.azed.gov",
 			Contact="1-800-352-4558"),
-		Content_Areas=c("Mathematics", "Reading"),
-		Scale_Change=list(MATHEMATICS=2010),
-		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
-		Test_Season="Spring",
-		Test_Vendor="CTB/McGraw Hill")
+		Content_Areas=c("Mathematics", "Reading", "Algebra I", "Geometry", "Algebra II"),
+#		Scale_Change=list(MATHEMATICS=2010),
+#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+#		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
+		Assessment_Years=c("2015", "2016"),
+#		Test_Season="Spring",
+		Test_Vendor="AIR")
+#		Test_Vendor="CTB/McGraw Hill")
 
 SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 	list(
-		# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
-		# Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
-		Earliest_Year_Reported=list(MATHEMATICS=2010),
+#		# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
+#		# Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I=c(7,8,9,10), GEOMETRY=c(8.9,10,11), ALGEBRA_II=c(8,9,10,11)),
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+#		Earliest_Year_Reported=list(MATHEMATICS=2010),
 		Achievement_Level_Labels=list(
-			"Falls Far Below"="Falls Far Below",
-			"Approaches"="Approaches",
-			"Meets"="Meets",
-			"Exceeds"="Exceeds"))
+			"Min Proficient"="Minimally Proficient",
+			"Part Proficient"="Partially Proficient",
+			"Proficient"="Proficient",
+			"Highly Proficient"="Highly Proficient"))
+#			"Falls Far Below"="Falls Far Below",
+#			"Approaches"="Approaches",
+#			"Meets"="Meets",
+#			"Exceeds"="Exceeds"))
 
-SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
-	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+#SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
+#	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+#	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
-SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+#SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 #########################################################

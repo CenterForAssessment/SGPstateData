@@ -390,121 +390,58 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <-
 #########################################################
 
 load("Knots_Boundaries/AZ_Knots_Boundaries.Rdata")
-SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- AZ_Knots_Boundaries
+load("Knots_Boundaries/AZ_Knots_Boundaries_PRE_2015.Rdata")
+SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- c(AZ_Knots_Boundaries_PRE_2015, AZ_Knots_Boundaries)
 
-#SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <-
-#	list(
-#		MATHEMATICS=list(
-#			boundaries_2=c(328.35, 738.65),
-#			boundaries_3=c(177.5, 672.5),
-#			boundaries_4=c(207.75, 697.25),
-#			boundaries_5=c(232.75, 722.25),
-#			boundaries_6=c(247.25, 747.75),
-#			boundaries_7=c(267.5, 762.5),
-#			boundaries_8=c(275, 825),
-#			boundaries_9=c(379.3, 900.7),
-#			boundaries_10=c(503.1, 918.9),
-#			knots_2=c(538, 559, 577, 599),
-#			knots_3=c(406, 436, 461, 489),
-#			knots_4=c(435, 470, 497, 530),
-#			knots_5=c(457, 489, 516, 549),
-#			knots_6=c(468, 503, 534, 571),
-#			knots_7=c(497, 530, 559, 591),
-#			knots_8=c(503, 538, 569, 606),
-#			knots_9=c(660, 688, 709, 732),
-#			knots_10=c(664, 691, 713, 741),
-#			loss.hoss_2=c(347, 720),
-#			loss.hoss_3=c(200, 650),
-#			loss.hoss_4=c(230, 675),
-#			loss.hoss_5=c(255, 700),
-#			loss.hoss_6=c(270, 725),
-#			loss.hoss_7=c(290, 740),
-#			loss.hoss_8=c(300, 800),
-#			loss.hoss_9=c(403, 877),
-#			loss.hoss_10=c(522, 900)),
-#		MATHEMATICS.2010=list(
-#			boundaries_2=c(389.4, 710.6),
-#			boundaries_3=c(192.45, 556.55),
-#			boundaries_4=c(186.2, 577.8),
-#			boundaries_5=c(144.25, 600.75),
-#			boundaries_6=c(138, 622),
-#			boundaries_7=c(221, 639),
-#			boundaries_8=c(268.3, 657.7),
-#			boundaries_9=c(557.85, 869.15),
-#			boundaries_10=c(275.85, 807.15),
-#			knots_2=c(554, 580, 605, 628),
-#			knots_3=c(325, 356, 381, 409),
-#			knots_4=c(339, 371, 396, 421),
-#			knots_5=c(351, 381, 408, 436),
-#			knots_6=c(364, 395, 422, 451),
-#			knots_7=c(379, 408, 434, 466),
-#			knots_8=c(394, 420, 444, 474),
-#			knots_9=c(686, 702, 724, 749),
-#			knots_10=c(458, 486, 509, 539),
-#			loss.hoss_2=c(404, 696),
-#			loss.hoss_3=c(209, 540),
-#			loss.hoss_4=c(204, 560),
-#			loss.hoss_5=c(165, 580),
-#			loss.hoss_6=c(160, 600),
-#			loss.hoss_7=c(240, 620),
-#			loss.hoss_8=c(286, 640),
-#			loss.hoss_9=c(572, 855),
-#			loss.hoss_10=c(300, 783)),
-#		READING=list(
-#			boundaries_2=c(408.05, 736.95),
-#			boundaries_3=c(178, 662),
-#			boundaries_4=c(198, 682),
-#			boundaries_5=c(218.25, 696.75),
-#			boundaries_6=c(228, 712),
-#			boundaries_7=c(237, 743),
-#			boundaries_8=c(243.5, 826.5),
-#			boundaries_9=c(457.1, 850.9),
-#			boundaries_10=c(480, 920),
-#			knots_2=c(575, 599, 617, 638),
-#			knots_3=c(413, 443, 469, 499),
-#			knots_4=c(430, 463, 488, 519),
-#			knots_5=c(451, 483, 507, 532),
-#			knots_6=c(460, 492, 517, 543),
-#			knots_7=c(473, 506, 532, 562),
-#			knots_8=c(474, 509, 538, 568),
-#			knots_9=c(655, 676, 696, 721),
-#			knots_10=c(663, 694, 720, 746),
-#			loss.hoss_2=c(423, 722),
-#			loss.hoss_3=c(200, 640),
-#			loss.hoss_4=c(220, 660),
-#			loss.hoss_5=c(240, 675),
-#			loss.hoss_6=c(250, 690),
-#			loss.hoss_7=c(260, 720),
-#			loss.hoss_8=c(270, 800),
-#			loss.hoss_9=c(475, 833),
-#			loss.hoss_10=c(500, 900)))
-
-#SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
-#	list(
-#		MATHEMATICS=list(
-#			GRADE_3=c(386, 420, 492),
-#			GRADE_4=c(414, 448, 521),
-#			GRADE_5=c(442, 476, 550),
-#			GRADE_6=c(463, 496, 574),
-#			GRADE_7=c(484, 517, 599),
-#			GRADE_8=c(505, 537, 623),
-#			GRADE_10=c(668, 683, 750)),
-#		READING=list(
-#			GRADE_3=c(379, 431, 516),
-#			GRADE_4=c(402, 450, 536),
-#			GRADE_5=c(424, 468, 556),
-#			GRADE_6=c(433, 478, 571),
-#			GRADE_7=c(443, 489, 587),
-#			GRADE_8=c(452, 499, 602),
-#			GRADE_10=c(627, 674, 773)),
-#		MATHEMATICS.2010=list(
-#			GRADE_3=c(303, 347, 406),
-#			GRADE_4=c(331, 366, 416),
-#			GRADE_5=c(348, 381, 436),
-#			GRADE_6=c(366, 398, 446),
-#			GRADE_7=c(382, 411, 460),
-#			GRADE_8=c(409, 426, 475),
-#			GRADE_10=c(471, 487, 537)))
+SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
+	list(
+		MATHEMATICS=list(
+			GRADE_3=c(3495, 3531, 3573),
+			GRADE_4=c(3530, 3562, 3606),
+			GRADE_5=c(3563, 3595, 3635),
+			GRADE_6=c(3602, 3629, 3663),
+			GRADE_7=c(3629, 3652, 3680),
+			GRADE_8=c(3650, 3673, 3705)),
+		MATHEMATICS.2014=list(
+			GRADE_3=c(386, 420, 492),
+			GRADE_4=c(414, 448, 521),
+			GRADE_5=c(442, 476, 550),
+			GRADE_6=c(463, 496, 574),
+			GRADE_7=c(484, 517, 599),
+			GRADE_8=c(505, 537, 623),
+			GRADE_10=c(668, 683, 750)),
+		READING=list(
+			GRADE_3=c(2497, 2509, 2541),
+			GRADE_4=c(2510, 2523, 2559),
+			GRADE_5=c(2520, 2543, 2578),
+			GRADE_6=c(2532, 2553, 2597),
+			GRADE_7=c(2543, 2561, 2600),
+			GRADE_8=c(2551, 2572, 2604),
+			GRADE_9=c(2555, 2577, 2606),
+			GRADE_10=c(2567, 2581, 2606),
+			GRADE_11=c(2569, 2585, 2608)),
+		READING.2014=list(
+			GRADE_3=c(379, 431, 516),
+			GRADE_4=c(402, 450, 536),
+			GRADE_5=c(424, 468, 556),
+			GRADE_6=c(433, 478, 571),
+			GRADE_7=c(443, 489, 587),
+			GRADE_8=c(452, 499, 602),
+			GRADE_10=c(627, 674, 773)),
+		MATHEMATICS.2010=list(
+			GRADE_3=c(303, 347, 406),
+			GRADE_4=c(331, 366, 416),
+			GRADE_5=c(348, 381, 436),
+			GRADE_6=c(366, 398, 446),
+			GRADE_7=c(382, 411, 460),
+			GRADE_8=c(409, 426, 475),
+			GRADE_10=c(471, 487, 537)),
+		ALGEBRA_I=list(
+			GRADE_EOCT=c(3661, 3681, 3720)),
+		GEOMETRY=list(
+			GRADE_EOCT=c(3673, 3697, 3743)),
+		ALGEBRA_II=list(
+			GRADE_EOCT=c(3690, 3711, 3751)))
 
 SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -522,10 +459,10 @@ SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 		Cuts=c(35, 66),
 		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-#SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
+SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics",
-#		Assessment_Name="Arizona's Instrument to Measure Standards",
+		Assessment_Name="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics", ### 2015-
+#		Assessment_Name="Arizona's Instrument to Measure Standards", ### 2006-2014
 		Assessment_Abbreviation="AzMERIT",
 #		Assessment_Abbreviation="AIMS",
 		Organization=list(
@@ -536,9 +473,8 @@ SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 		Content_Areas=c("Mathematics", "Reading", "Algebra I", "Geometry", "Algebra II"),
 #		Scale_Change=list(MATHEMATICS=2010),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-#		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
-		Assessment_Years=c("2015", "2016"),
-#		Test_Season="Spring",
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Test_Season="Spring",
 		Test_Vendor="AIR")
 #		Test_Vendor="CTB/McGraw Hill")
 
@@ -561,7 +497,8 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 #			"Meets"="Meets",
 #			"Exceeds"="Exceeds"))
 
-#SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
+SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
+	sgp.minimum.default.panel.years=2)
 #	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 #	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 

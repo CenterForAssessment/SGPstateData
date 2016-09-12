@@ -2495,7 +2495,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Met"="Met Standard",
 			"Exceeded"="Exceeded Standard"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
+		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
 		Vertical_Scale="No",
 		Vertical_Scale.2015="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,10),
@@ -2510,7 +2510,7 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 #		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)), ### 2014 and prior
 #		Vertical_Scale="No", ### 2014 and prior
 		Vertical_Scale="Yes",
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
 #		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)), ### 2014 and prior
 #		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)), ### 2015
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)), ### 2016 and late
@@ -5884,7 +5884,7 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)),
 	Achievement_Level_Labels=list(
 		"Low"="Low",
@@ -8016,7 +8016,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 		"Level 3"="Level 3",
 		"Level 4"="Level 4"),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA"),
 	Vertical_Scale="No",
 	Vertical_Scale.2014_2015="Yes",
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
@@ -8027,7 +8027,7 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale="Yes",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
 #	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(

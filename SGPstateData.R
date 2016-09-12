@@ -498,7 +498,8 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 #			"Exceeds"="Exceeds"))
 
 SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
-	sgp.minimum.default.panel.years=2)
+	sgp.minimum.default.panel.years=2,
+	print.other.gp=TRUE)
 #	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 #	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
@@ -2056,6 +2057,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# use.cohort.for.baseline.when.missing=TRUE,
 		# sgp.projections.baseline.max.order=4,
 		return.norm.group.scale.scores=TRUE,
+		print.other.gp=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2016 (or 17?) when CRCT ELA/READING combo is no longer used for EOCT Lits priors
@@ -5534,7 +5536,8 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 #SGPstateData[["NJ_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- NJ_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 SGPstateData[["NJ_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NJ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ_ORIGINAL")
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ_ORIGINAL",
+															print.other.gp=TRUE)
 
 
 ### NEW JERSEY

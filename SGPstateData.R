@@ -1259,6 +1259,9 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	INTEGRATED_MATH_2_SS=3,
 	INTEGRATED_MATH_3_SS=3)
 
+
+SGPstateData[["CO"]][["SGP_Configuration"]][["arrow.legend.color"]] <- c("#FD5050", "#FDBF1A", "#07B806")
+
 SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP = c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS"),
 	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
@@ -1266,36 +1269,45 @@ SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 
 SGPstateData[["CO"]][["Student_Report_Information"]] <-
 	list(
-		sgPlot.year.span=3,
+		sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5.  Here 3 = 2 test years and 1 future year (growth proj fan)
 		Vertical_Scale="No",
 		Transformed_Achievement_Level_Cutscores=list(
-			MATHEMATICS_SS=c(0,100,200,300,400,500),
-			ELA_SS=c(0,100,200,300,400,500),
-			GEOMETRY_SS=c(0,100,200,300,400,500),
-			ALGEBRA_I_SS=c(0,100,200,300,400,500),
-			ALGEBRA_II_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+				MATHEMATICS_SS=c(0,100,200,300,400,500),
+				ELA_SS=c(0,100,200,300,400,500),
+				GEOMETRY_SS=c(0,100,200,300,400,500),
+				ALGEBRA_I_SS=c(0,100,200,300,400,500),
+				ALGEBRA_II_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-			MATHEMATICS_SS=c(0,100,200,300,400,500),
-			ELA_SS=c(0,100,200,300,400,500),
-			GEOMETRY_SS=c(0,100,200,300,400,500),
-			ALGEBRA_I_SS=c(0,100,200,300,400,500),
-			ALGEBRA_II_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
-			INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
-		Content_Areas_Labels=list(MATHEMATICS_SS="Math", ELA_SS="ELA", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II", INTEGRATED_MATH_1_SS="Integrated Math 1", INTEGRATED_MATH_2_SS="Integrated Math 2", INTEGRATED_MATH_3_SS="Integrated Math 3"),
-		Content_Areas_Domains=list(ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS", INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
-		Grades_Reported=list(MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT"), ELA_SS=c("3","4","5","6","7","8","9"), GEOMETRY_SS="EOCT", ALGEBRA_I_SS="EOCT", ALGEBRA_II_SS="EOCT", INTEGRATED_MATH_1_SS="EOCT", INTEGRATED_MATH_2_SS="EOCT", INTEGRATED_MATH_3_SS="EOCT"),
-		Grades_Reported_Domains=list(MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT"), ELA_SS=c("3","4","5","6","7","8","9")),
+				MATHEMATICS_SS=c(0,100,200,300,400,500),
+				ELA_SS=c(0,100,200,300,400,500),
+				GEOMETRY_SS=c(0,100,200,300,400,500),
+				ALGEBRA_I_SS=c(0,100,200,300,400,500),
+				ALGEBRA_II_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
+				INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+		Content_Areas_Labels=list(
+				ELA_SS="ELA", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II", 
+				INTEGRATED_MATH_1_SS="Integrtd Math 1", INTEGRATED_MATH_2_SS="Integrtd Math 2", INTEGRATED_MATH_3_SS="Integrtd Math 3"),
+		Content_Areas_Domains=list(
+				ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS", 
+				INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
+		Grades_Reported=list(
+				ELA_SS=c("3","4","5","6","7","8","9"), MATHEMATICS_SS=c("3","4","5","6","7","8"), GEOMETRY_SS="EOCT", ALGEBRA_I_SS="EOCT", ALGEBRA_II_SS="EOCT", 
+				INTEGRATED_MATH_1_SS="EOCT", INTEGRATED_MATH_2_SS="EOCT", INTEGRATED_MATH_3_SS="EOCT"),
+		Grades_Reported_Domains=list(
+				ELA_SS=c("3","4","5","6","7","8","9"), 
+				MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT")),
 		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"))
+				"Level 1"="Level 1",
+				"Level 2"="Level 2",
+				"Level 3"="Level 3",
+				"Level 4"="Level 4",
+				"Level 5"="Level 5"))
+
 
 #########################################################
 ### CONNECTICUT

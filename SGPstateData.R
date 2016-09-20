@@ -1995,6 +1995,8 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_EOCT=c(475, 525, 610)),
 		ALGEBRA=list(
 			GRADE_EOCT=c(400, 450)),
+		ALGEBRA_I=list(
+			GRADE_EOCT=c(475, 525, 594)),
 		COORDINATE_ALGEBRA=list(
 			GRADE_EOCT=c(400, 450)),
 		COORDINATE_ALGEBRA.2015=list(
@@ -2003,8 +2005,10 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_EOCT=c(400, 450)),
 		ANALYTIC_GEOMETRY.2015=list(
 			GRADE_EOCT=c(475, 525, 596)),
+		# GEOMETRY=list( # CRT Geometry (pre-Milestones)
+		# 	GRADE_EOCT=c(400, 450)),
 		GEOMETRY=list(
-			GRADE_EOCT=c(400, 450)),
+			GRADE_EOCT=c(475, 525, 596)),
 		MATHEMATICS_I=list(
 			GRADE_EOCT=c(400, 450)),
 		MATHEMATICS_II=list(
@@ -2038,7 +2042,8 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
-		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015'),
+		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015', 
+			AMERICAN_LIT='2015', ANALYTIC_GEOMETRY='2015', BIOLOGY='2015', COORDINATE_ALGEBRA='2015', ECONOMICS='2015', GRADE_9_LIT='2015', PHYSICAL_SCIENCE='2015', US_HISTORY='2015'),
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
 
@@ -2088,7 +2093,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 			ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
 			SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
-			MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
+			MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), SCIENCE=c(3,4,5,6,7,8), SOCIAL_STUDIES=c(3,4,5,6,7,8)),
 		Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
@@ -2103,9 +2108,10 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# sgp.projections.baseline.max.order=4,
 		return.norm.group.scale.scores=TRUE,
 		print.other.gp=TRUE,
+		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
-		# max.order.for.percentile = 2, # Can't use this until 2016 (or 17?) when CRCT ELA/READING combo is no longer used for EOCT Lits priors
+		# max.order.for.percentile = 2, # Can't use this until 2017 when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(
 			# READING=c("3", "4", "5", "6", "7", "8"), # READING can't go into EOCT projections directly because LIT courses need both ELA and READING priors.
 			# ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
@@ -2113,9 +2119,15 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
 			# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
 			# AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			COORDINATE_ALGEBRA=c("7", "8", "EOCT", "EOCT"),  # 2013 Cohort referenced configs only use max 2 priors
-			ANALYTIC_GEOMETRY =c("8", "EOCT", "EOCT"),  # 2014 Cohort referenced configs only use max 2 priors
+			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATH_ALG_I = c("3", "4", "5", "6", "7", "8", "EOCT"), #, "EOCT"), # Add GEOMETRY in 2017
+			COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			ANALYTIC_GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			# ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT"), #, "EOCT"), # Add GEOMETRY in 2017
+			# GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),   # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
 			SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
@@ -2131,27 +2143,41 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 			# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
 			# AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
-			COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
-			ANALYTIC_GEOMETRY=c("MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+			GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+			AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+
+			MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+			MATH_ALG_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I"), #, "GEOMETRY"),# Add GEOMETRY in 2017
+			COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+			ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+			# ALGEBRA_I=c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
+			# GEOMETRY =c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
+			
 			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
-			BIOLOGY_PHYSCI= c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			BIOLOGY_END= c("SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
 			PHYSICAL_SCIENCE_END=c("SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+
 			SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 			US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 			ECONOMICS=c("US_HISTORY", "ECONOMICS")),
 		year_lags.projection.sequence = list(
 			# READING=rep(1L, 5),
 			# ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
-			# ELA = as.integer(c(0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2)),
 			# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
 			# AMERICAN_LIT=as.integer(c(0, 1, 2)),
-			MATHEMATICS=rep(1L, 7),
-			COORDINATE_ALGEBRA=rep(1L, 3),
-			ANALYTIC_GEOMETRY =rep(1L, 2),
+			ELA = c(rep(1L, 6), 2),
+			GRADE_9_LIT =c(rep(1L, 6), 2),
+			AMERICAN_LIT=c(rep(1L, 6), 2),
+			MATH_COORD_ALG=rep(1L, 7),
+			MATH_ALG_I = rep(1L, 6),
+			COORDINATE_ALGEBRA=rep(1L, 7),
+			ANALYTIC_GEOMETRY =rep(1L, 7),
+			# ALGEBRA_I=rep(1L, 6),
+			# GEOMETRY =rep(1L, 7),
 			SCIENCE_PHYSCI=rep(1L, 7),
 			SCIENCE_BIO=rep(1L, 7),
 			BIOLOGY_PHYSCI=rep(1L, 3),
@@ -2163,12 +2189,15 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ECONOMICS=1L),
 		max.forward.projection.sequence = list(
 			# READING=3,
-			# ELA=3,
-			# GRADE_9_LIT=3,
-			# AMERICAN_LIT=3,
-			MATHEMATICS=3,
+			ELA=3,
+			GRADE_9_LIT=3,
+			AMERICAN_LIT=3,
+			MATH_COORD_ALG=3,
+			MATH_ALG_I=3,
 			COORDINATE_ALGEBRA=3,
 			ANALYTIC_GEOMETRY=3,
+			# ALGEBRA_I=3,
+			# GEOMETRY=3,
 			SCIENCE_BIO=3,
 			SCIENCE_PHYSCI=3,
 			BIOLOGY_PHYSCI=3,
@@ -2186,8 +2215,8 @@ load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
 SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "BIOLOGY_END", "PHYSICAL_SCIENCE_END", "PHYSICAL_SCIENCE_BIO"),
-	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
+	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "BIOLOGY_END", "PHYSICAL_SCIENCE_END", "PHYSICAL_SCIENCE_BIO", "MATH_COORD_ALG", "MATH_ALG_I"),
+	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 
 #########################################################

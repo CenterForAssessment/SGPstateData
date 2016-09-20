@@ -2042,7 +2042,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
-		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015', 
+		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
 			AMERICAN_LIT='2015', ANALYTIC_GEOMETRY='2015', BIOLOGY='2015', COORDINATE_ALGEBRA='2015', ECONOMICS='2015', GRADE_9_LIT='2015', PHYSICAL_SCIENCE='2015', US_HISTORY='2015'),
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
@@ -2153,7 +2153,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 			# ALGEBRA_I=c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
 			# GEOMETRY =c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
-			
+
 			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
 			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
@@ -5619,19 +5619,19 @@ SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjus
 															print.other.gp=TRUE)
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	ELA=c("3", "4", "5", "6", "7", "8", "9"),
+	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	ELA=rep("ELA", 7),
+	ELA=rep("ELA", 9),
 	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	ELA=rep(1L, 6),
+	ELA=rep(1L, 8),
 	MATHEMATICS=rep(1L, 8),
 	GEOMETRY=rep(1L, 8),
 	ALGEBRA_I=rep(1L, 8),

@@ -3348,7 +3348,7 @@ SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	sgp.loss.hoss.adjustment="IN",
 	lagged.percentile.trajectory.values=c(1,35,65,99))
 
-#SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/IN_Baseline_Matrices.Rdata")
 #SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- IN_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]
@@ -5617,6 +5617,31 @@ SGPstateData[["NJ_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Na
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ_ORIGINAL",
 															print.other.gp=TRUE)
+
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	ELA=c("3", "4", "5", "6", "7", "8", "9"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	ELA=rep("ELA", 7),
+	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	ELA=rep(1L, 6),
+	MATHEMATICS=rep(1L, 8),
+	GEOMETRY=rep(1L, 8),
+	ALGEBRA_I=rep(1L, 8),
+	ALGEBRA_II=rep(1L, 8))
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	ELA=3,
+	MATHEMATICS=3,
+	GEOMETRY=3,
+	ALGEBRA_I=3,
+	ALGEBRA_II=3)
 
 
 ### NEW JERSEY

@@ -2042,7 +2042,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
-		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015', 
+		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
 			AMERICAN_LIT='2015', ANALYTIC_GEOMETRY='2015', BIOLOGY='2015', COORDINATE_ALGEBRA='2015', ECONOMICS='2015', GRADE_9_LIT='2015', PHYSICAL_SCIENCE='2015', US_HISTORY='2015'),
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
@@ -2153,7 +2153,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 			# ALGEBRA_I=c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
 			# GEOMETRY =c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
-			
+
 			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
 			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
@@ -5508,23 +5508,52 @@ SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(200, 250),
 			GRADE_7=c(200, 250),
 			GRADE_8=c(200, 250)),
-		ELA.2015 =list(
-			GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
-			GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
-			GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
-			GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
-			GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
-			GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809)),
-		MATHEMATICS.2015 =list(
-			GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
-			GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
-			GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
-			GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
-			GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
-			GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-		ALGEBRA_I.2015 =list(
-			GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463),
-			GRADE_EOCT=c(-1.114, -0.2949, 0.5287, 2.3463)))
+		ELA.2015=list(
+	        GRADE_3=c(-0.9769, -0.2867, 0.4034, 2.0652),
+	        GRADE_4=c(-1.3276, -0.5156, 0.2965, 1.6011),
+	        GRADE_5=c(-1.3768, -0.5285, 0.3199, 1.9854),
+	        GRADE_6=c(-1.3649, -0.4946, 0.3757, 1.7686),
+	        GRADE_7=c(-1.1752, -0.4374, 0.3004, 1.3373),
+	        GRADE_8=c(-1.1431, -0.4148, 0.3134, 1.5827),
+	        GRADE_9=c(-1.0779, -0.3481, 0.3817, 1.5891),
+	        GRADE_10=c(-0.8354, -0.2465, 0.3423, 1.3758),
+	        GRADE_11=c(-1.0889, -0.4065, 0.2759, 1.4112)),
+	    ELA.2016=list(
+	        GRADE_3=c(-0.9648, -0.2840, 0.3968, 2.0360),
+	        GRADE_4=c(-1.3004, -0.5079, 0.2846, 1.5578),
+	        GRADE_5=c(-1.3411, -0.4924, 0.3563, 2.0224),
+	        GRADE_6=c(-1.3656, -0.4827, 0.4002, 1.8133),
+	        GRADE_7=c(-1.2488, -0.5117, 0.2254, 1.2614),
+	        GRADE_8=c(-1.2730, -0.5402, 0.1925, 1.4696),
+	        GRADE_9=c(-1.1635, -0.4329, 0.2977, 1.5065),
+	        GRADE_10=c(-0.8909, -0.3112, 0.2684, 1.2858),
+	        GRADE_11=c(-1.1017, -0.3859, 0.3298, 1.5206)),
+		MATHEMATICS.2015=list(
+	        GRADE_3=c(-1.2403, -0.4553, 0.3296, 1.5902),
+	        GRADE_4=c(-1.2763, -0.4305, 0.4153, 1.9791),
+	        GRADE_5=c(-1.2730, -0.4103, 0.4523, 1.8156),
+	        GRADE_6=c(-1.2700, -0.3977, 0.4747, 1.8136),
+	        GRADE_7=c(-1.3483, -0.3747, 0.5989, 2.0131),
+	        GRADE_8=c(-0.8417, -0.0968, 0.6481, 2.1770)),
+	    MATHEMATICS.2016=list(
+	        GRADE_3=c(-1.4141, -0.6356, 0.1429, 1.3931),
+	        GRADE_4=c(-1.384, -0.5484, 0.2873, 1.8323),
+	        GRADE_5=c(-1.4571, -0.5959, 0.2653, 1.6262),
+	        GRADE_6=c(-1.3829, -0.4948, 0.3935, 1.7567),
+	        GRADE_7=c(-1.4464, -0.4505, 0.5453, 1.9919),
+	        GRADE_8=c(-0.8851, -0.1264, 0.6323, 2.1896)),
+		ALGEBRA_I=list(
+	        GRADE_EOCT=c(-1.1045, -0.2802, 0.5442, 2.3716)),
+	    ALGEBRA_I.2016=list(
+	        GRADE_EOCT=c(-1.1781, -0.3853, 0.4075, 2.1651)),
+	    ALGEBRA_II=list(
+	        GRADE_EOCT=c(-0.5384, 0.1635, 0.8654, 2.4823)),
+	    ALGEBRA_II.2016 =list(
+	        GRADE_EOCT=c(-0.5759, 0.0860, 0.7480, 2.2728)),
+	    GEOMETRY=list(
+	        GRADE_EOCT=c(-1.2478, -0.2558, 0.7362, 2.0459)),
+	    GEOMETRY.2016=list(
+	        GRADE_EOCT=c(-1.3013, -0.3389, 0.6235, 1.8940)))
 
 SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -5619,19 +5648,19 @@ SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjus
 															print.other.gp=TRUE)
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	ELA=c("3", "4", "5", "6", "7", "8", "9"),
+	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	ELA=rep("ELA", 7),
+	ELA=rep("ELA", 9),
 	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	ELA=rep(1L, 6),
+	ELA=rep(1L, 8),
 	MATHEMATICS=rep(1L, 8),
 	GEOMETRY=rep(1L, 8),
 	ALGEBRA_I=rep(1L, 8),

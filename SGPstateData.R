@@ -5447,46 +5447,50 @@ SGPstateData[["NEW_HAVEN"]][["Student_Report_Information"]] <-
 
 ### NEW JERSEY (Original meta-data including NJASK/PARCC)
 
-SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <-
-	list(
-		ELA= list(
-			boundaries_3=c(80, 320),
-			boundaries_4=c(80, 320),
-			boundaries_5=c(80, 320),
-			boundaries_6=c(80, 320),
-			boundaries_7=c(80, 320),
-			boundaries_8=c(80, 320),
-			knots_3=c(193, 209, 221, 234),
-			knots_4=c(189, 207, 220, 233),
-			knots_5=c(192, 207, 219, 234),
-			knots_6=c(188, 204, 217, 231),
-			knots_7=c(193, 209, 222, 239),
-			knots_8=c(201, 216, 228, 243),
-			loss.hoss_3=c(100, 300),
-			loss.hoss_4=c(100, 300),
-			loss.hoss_5=c(100, 300),
-			loss.hoss_6=c(100, 300),
-			loss.hoss_7=c(100, 300),
-			loss.hoss_8=c(100, 300)),
-		MATHEMATICS=list(
-			boundaries_3=c(80, 320),
-			boundaries_4=c(80, 320),
-			boundaries_5=c(80, 320),
-			boundaries_6=c(80, 320),
-			boundaries_7=c(80, 320),
-			boundaries_8=c(80, 320),
-			knots_3=c(202, 226, 244, 259),
-			knots_4=c(200, 224, 246, 265),
-			knots_5=c(197, 220, 238, 259),
-			knots_6=c(189, 210, 227, 250),
-			knots_7=c(181, 202, 221, 246),
-			knots_8=c(181, 209, 231, 258),
-			loss.hoss_3=c(100, 300),
-			loss.hoss_4=c(100, 300),
-			loss.hoss_5=c(100, 300),
-			loss.hoss_6=c(100, 300),
-			loss.hoss_7=c(100, 300),
-			loss.hoss_8=c(100, 300)))
+load("Knots_Boundaries/NJ_Knots_Boundaries.Rdata")
+
+SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <- NJ_Knots_Boundaries
+
+#SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <-
+#	list(
+#		ELA=list(
+#			boundaries_3=c(80, 320),
+#			boundaries_4=c(80, 320),
+#			boundaries_5=c(80, 320),
+#			boundaries_6=c(80, 320),
+#			boundaries_7=c(80, 320),
+#			boundaries_8=c(80, 320),
+#			knots_3=c(193, 209, 221, 234),
+#			knots_4=c(189, 207, 220, 233),
+#			knots_5=c(192, 207, 219, 234),
+#			knots_6=c(188, 204, 217, 231),
+#			knots_7=c(193, 209, 222, 239),
+#			knots_8=c(201, 216, 228, 243),
+#			loss.hoss_3=c(100, 300),
+#			loss.hoss_4=c(100, 300),
+#			loss.hoss_5=c(100, 300),
+#			loss.hoss_6=c(100, 300),
+#			loss.hoss_7=c(100, 300),
+#			loss.hoss_8=c(100, 300)),
+#		MATHEMATICS=list(
+#			boundaries_3=c(80, 320),
+#			boundaries_4=c(80, 320),
+#			boundaries_5=c(80, 320),
+#			boundaries_6=c(80, 320),
+#			boundaries_7=c(80, 320),
+#			boundaries_8=c(80, 320),
+#			knots_3=c(202, 226, 244, 259),
+#			knots_4=c(200, 224, 246, 265),
+#			knots_5=c(197, 220, 238, 259),
+#			knots_6=c(189, 210, 227, 250),
+#			knots_7=c(181, 202, 221, 246),
+#			knots_8=c(181, 209, 231, 258),
+#			loss.hoss_3=c(100, 300),
+#			loss.hoss_4=c(100, 300),
+#			loss.hoss_5=c(100, 300),
+#			loss.hoss_6=c(100, 300),
+#			loss.hoss_7=c(100, 300),
+#			loss.hoss_8=c(100, 300)))
 
 SGPstateData[["NJ_ORIGINAL"]][["Achievement"]][["Cutscores"]] <-
 	list(

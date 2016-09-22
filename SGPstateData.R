@@ -2097,8 +2097,8 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 		Grades_Reported=list(
 			ELA=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), GRADE_9_LIT = "EOCT", AMERICAN_LIT = "EOCT",
-			SOCIAL_STUDIES=c(3,4,5,6,7,8), US_HISTORY = "EOCT", ECONOMICS = "EOCT", 
-			MATHEMATICS=c(3,4,5,6,7,8), COORDINATE_ALGEBRA ="EOCT", ANALYTIC_GEOMETRY = "EOCT", ALGEBRA_I ="EOCT", GEOMETRY = "EOCT", 
+			SOCIAL_STUDIES=c(3,4,5,6,7,8), US_HISTORY = "EOCT", ECONOMICS = "EOCT",
+			MATHEMATICS=c(3,4,5,6,7,8), COORDINATE_ALGEBRA ="EOCT", ANALYTIC_GEOMETRY = "EOCT", ALGEBRA_I ="EOCT", GEOMETRY = "EOCT",
 			SCIENCE=c(3,4,5,6,7,8), PHYSICAL_SCIENCE = "EOCT", BIOLOGY = "EOCT"),
 		Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
 		Achievement_Level_Labels=list(
@@ -5589,7 +5589,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			URL="www.state.nj.us/education",
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics"),
-		Grades_Tested=c(3,4,5,6,7,8),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Scale_Change=list(ELA="2015", MATHEMATICS="2015"),
 		Test_Season="Spring",
 		Test_Vendor="PARCC",
@@ -5623,7 +5623,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 		Vertical_Scale="No",
 		Vertical_Scale.2015="No",
 		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,12),
+		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
 		Year="2015")
 
@@ -5631,7 +5631,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,'EOCT'), ELA=c(3,4,5,6,7,8,9,10,11)),
 		Achievement_Level_Labels=list(
 			"Level 1"="Level 1",
 			"Level 2"="Level 2",

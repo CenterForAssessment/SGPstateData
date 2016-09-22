@@ -5623,13 +5623,25 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 		Vertical_Scale="No",
 		Vertical_Scale.2015="No",
 		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11),
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
+		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,'EOCT'),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400), ELA=c(100,200,300,400)),
+		Transformed_Achievement_Level_Cutscores.2015=list(
+												MATHEMATICS=c(100,200,300,400,500,600),
+												ELA=c(100,200,300,400,500,600),
+												ALGEBRA_I=c(100,200,300,400,500,600),
+												GEOMETRY=c(100,200,300,400,500,600),
+												ALGEBRA_II=c(100,200,300,400,500,600)),
 		Year="2015")
 
 SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+												MATHEMATICS=c(100,200,300,400,500,600),
+												ELA=c(100,200,300,400,500,600),
+												ALGEBRA_I=c(100,200,300,400,500,600),
+												GEOMETRY=c(100,200,300,400,500,600),
+												ALGEBRA_II=c(100,200,300,400,500,600)),
 		Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,'EOCT'), ELA=c(3,4,5,6,7,8,9,10,11)),
 		Achievement_Level_Labels=list(

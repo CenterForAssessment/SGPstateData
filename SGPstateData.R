@@ -5688,6 +5688,9 @@ SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["max.forward.projection.se
 	ALGEBRA_I=3,
 	ALGEBRA_II=3)
 
+load("SGP_Norm_Group_Preference/NJ_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["NJ_ORIGINAL"]][["SGP_Norm_Group_Preference"]] <- NJ_SGP_Norm_Group_Preference
+
 
 ### NEW JERSEY
 

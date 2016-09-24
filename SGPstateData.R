@@ -1127,7 +1127,7 @@ SGPstateData[["CO_ORIGINAL"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Years=as.character(2003:2016),
 	Test_Season="Spring",
 	Test_Vendor="PARCC",
-	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+	Scale_Change=list(MATHEMATICS="2015", READING="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 #	Test_Vendor="CTB/McGraw Hill",
 	CSEM=Colorado_CSEM)
 
@@ -5590,7 +5590,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Geometry", "Algebra II"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Scale_Change=list(ELA="2015", MATHEMATICS="2015"),
+		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="PARCC",
 		CSEM="SCALE_SCORE_CSEM")
@@ -7328,6 +7328,8 @@ SGPstateData[["VT"]][["Student_Report_Information"]] <-
 			"Part Proficient"="Partially Proficient",
 			"Proficient"="Proficient",
 			"Distinction"="Proficient with Distinction"))
+
+SGPstateData[["VT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/VT_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 #########################################################

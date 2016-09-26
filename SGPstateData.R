@@ -5642,7 +5642,12 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 												ALGEBRA_I=c(100,200,300,400,500,600),
 												GEOMETRY=c(100,200,300,400,500,600),
 												ALGEBRA_II=c(100,200,300,400,500,600)),
-		Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+												MATHEMATICS=c(100,200,300,400,500,600),
+												ELA=c(100,200,300,400,500,600),
+												ALGEBRA_I=c(100,200,300,400,500,600),
+												GEOMETRY=c(100,200,300,400,500,600),
+												ALGEBRA_II=c(100,200,300,400,500,600)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
 		Achievement_Level_Labels=list(
 			"Level 1"="Level 1",
@@ -7270,27 +7275,27 @@ SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Prefere
 ### VERMONT
 #########################################################
 
-load("Knots_Boundaries/VT_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/VT_Knots_Boundaries_ORIGINAL.Rdata")
 SGPstateData[["VT"]][["Achievement"]][["Knots_Boundaries"]] <- VT_Knots_Boundaries
 
 SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
-			GRADE_3=c(332, 340, 353),
-			GRADE_4=c(431, 440, 455),
-			GRADE_5=c(533, 540, 554),
-			GRADE_6=c(633, 640, 653),
-			GRADE_7=c(734, 740, 752),
-			GRADE_8=c(834, 840, 852),
-			GRADE_11=c(1134, 1140, 1152)),
+			GRADE_3=c(32, 40, 53),
+			GRADE_4=c(31, 40, 55),
+			GRADE_5=c(33, 40, 54),
+			GRADE_6=c(33, 40, 53),
+			GRADE_7=c(34, 40, 52),
+			GRADE_8=c(34, 40, 52),
+			GRADE_11=c(34, 40, 52)),
 		READING=list(
-			GRADE_3=c(331, 340, 357),
-			GRADE_4=c(431, 440, 456),
-			GRADE_5=c(530, 540, 556),
-			GRADE_6=c(629, 640, 659),
-			GRADE_7=c(729, 740, 760),
-			GRADE_8=c(828, 840, 859),
-			GRADE_11=c(1130, 1140, 1154)))
+			GRADE_3=c(31, 40, 57),
+			GRADE_4=c(31, 40, 56),
+			GRADE_5=c(30, 40, 56),
+			GRADE_6=c(29, 40, 59),
+			GRADE_7=c(29, 40, 60),
+			GRADE_8=c(28, 40, 59),
+			GRADE_11=c(30, 40, 54)))
 
 SGPstateData[["VT"]][["Achievement"]][["Levels"]] <-
 	list(

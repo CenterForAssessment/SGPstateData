@@ -5642,7 +5642,12 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 												ALGEBRA_I=c(100,200,300,400,500,600),
 												GEOMETRY=c(100,200,300,400,500,600),
 												ALGEBRA_II=c(100,200,300,400,500,600)),
-		Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+												MATHEMATICS=c(100,200,300,400,500,600),
+												ELA=c(100,200,300,400,500,600),
+												ALGEBRA_I=c(100,200,300,400,500,600),
+												GEOMETRY=c(100,200,300,400,500,600),
+												ALGEBRA_II=c(100,200,300,400,500,600)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
 		Achievement_Level_Labels=list(
 			"Level 1"="Level 1",

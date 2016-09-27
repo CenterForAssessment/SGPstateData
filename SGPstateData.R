@@ -3773,7 +3773,6 @@ SGPstateData[["MA_ORIGINAL"]][["Student_Report_Information"]] <- list(
 		"Advanced"="Advanced"))
 
 SGPstateData[["MA_ORIGINAL"]][["SGP_Configuration"]] <- list(
-						projcuts.digits=2,
 						sgp.projections.max.forward.progression.grade=8)
 
 #load("Baseline_Coefficient_Matrices/MA/MA_Baseline_Matrices_2009_2013.Rdata")
@@ -3955,7 +3954,6 @@ SGPstateData[["MA_MCAS"]][["Student_Report_Information"]] <- list(
 		"Advanced"="Advanced"))
 
 SGPstateData[["MA_MCAS"]][["SGP_Configuration"]] <- list(
-	projcuts.digits=2,
 	sgp.projections.max.forward.progression.grade=8)
 
 SGPstateData[["MA_MCAS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -4179,7 +4177,6 @@ SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
 
 SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <-
 	list(
-		projcuts.digits=2,
 		sgp.projections.max.forward.progression.grade=8)
 
 SGPstateData[["MA_PARCC"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -5649,6 +5646,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 												GEOMETRY=c(100,200,300,400,500,600),
 												ALGEBRA_II=c(100,200,300,400,500,600)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
+		Content_Areas_Domains=list(ELA="ELA", MATHEMATICS="MATHEMATICS", ALGEBRA_I="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
 		Achievement_Level_Labels=list(
 			"Level 1"="Level 1",
 			"Level 2"="Level 2",
@@ -5666,7 +5664,8 @@ SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 SGPstateData[["NJ_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NJ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ_ORIGINAL",
-															print.other.gp=TRUE)
+															print.other.gp=TRUE,
+															projcut.digits=3)
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
@@ -6155,6 +6154,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
 		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
+		projcuts.digits=0,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 #			READING_SS=paste(1:12, 3, sep="."),
@@ -6302,6 +6302,7 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 		max.n.for.coefficient.matrices=200000,
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
+		projcuts.digits=0,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 			MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
@@ -6552,7 +6553,9 @@ SGPstateData[["RI_ORIGINAL"]][["Student_Report_Information"]] <-
 			"Level 4"="Level 4",
 			"Level 5"="Level 5"))
 
-SGPstateData[["RI_ORIGINAL"]][["SGP_Configuration"]] <- list(null.output.string="")
+SGPstateData[["RI_ORIGINAL"]][["SGP_Configuration"]] <- list(
+													null.output.string="",
+													projcuts.gits=3)
 #load("Baseline_Coefficient_Matrices/RI/RI_Baseline_Matrices.Rdata")
 #SGPstateData[["RI_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- RI_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["RI_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- RI_Baseline_Matrices[["MATHEMATICS.BASELINE"]]

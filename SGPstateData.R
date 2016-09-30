@@ -2075,16 +2075,19 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
 		Vertical_Scale="No",
 		Vertical_Scale.2015="No",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8),
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100, 200, 300), ELA=c(100, 200, 300), SCIENCE=c(100, 200, 300), SOCIAL_STUDIES=c(100, 200, 300)),
+		Grades_Tested=c(3,4,5,6,7,8, "EOCT"),
+		Grades_Tested.2015=c(3,4,5,6,7,8, "EOCT"),
+		Transformed_Achievement_Level_Cutscores = list(ELA = c(100, 200, 300, 400), GRADE_9_LIT = c(100, 200, 300, 400), AMERICAN_LIT = c(100, 200, 300, 400),
+			SOCIAL_STUDIES = c(100, 200, 300, 400), US_HISTORY = c(100, 200, 300, 400), ECONOMICS = c(100, 200, 300, 400),
+			SCIENCE=c(100, 200, 300, 400), BIOLOGY = c(100, 200, 300, 400), PHYSICAL_SCIENCE = c(100, 200, 300, 400),
+			MATHEMATICS=c(100, 200, 300, 400), COORDINATE_ALGEBRA = c(100, 200, 300, 400), ANALYTIC_GEOMETRY = c(100, 200, 300, 400), ALGEBRA_I = c(100, 200, 300, 400), GEOMETRY = c(100, 200, 300, 400)),
 		Year="2015"
 	)
 
 SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
-		Transformed_Achievement_Level_Cutscores= list(ELA = c(100, 200, 300, 400), GRADE_9_LIT = c(100, 200, 300, 400), AMERICAN_LIT = c(100, 200, 300, 400),
+		Transformed_Achievement_Level_Cutscores = list(ELA = c(100, 200, 300, 400), GRADE_9_LIT = c(100, 200, 300, 400), AMERICAN_LIT = c(100, 200, 300, 400),
 			SOCIAL_STUDIES = c(100, 200, 300, 400), US_HISTORY = c(100, 200, 300, 400), ECONOMICS = c(100, 200, 300, 400),
 			SCIENCE=c(100, 200, 300, 400), BIOLOGY = c(100, 200, 300, 400), PHYSICAL_SCIENCE = c(100, 200, 300, 400),
 			MATHEMATICS=c(100, 200, 300, 400), COORDINATE_ALGEBRA = c(100, 200, 300, 400), ANALYTIC_GEOMETRY = c(100, 200, 300, 400), ALGEBRA_I = c(100, 200, 300, 400), GEOMETRY = c(100, 200, 300, 400)),
@@ -2092,7 +2095,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
 			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
-			ELA="ELA", READING="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA",
+			ELA="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA", # READING="ELA", 
 			SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
 			MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
@@ -2127,14 +2130,16 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+			# MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8"), # CANONICAL for growthAchievementPlot
 			MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			MATH_ALG_I = c("3", "4", "5", "6", "7", "8", "EOCT"), #, "EOCT"), # Add GEOMETRY in 2017
 			COORDINATE_ALGEBRA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			ANALYTIC_GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			# ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT"), #, "EOCT"), # Add GEOMETRY in 2017
 			# GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),   # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
-			SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+			# SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+			SCIENCE=c("3", "4", "5", "6", "7", "8"), # CANONICAL for growthAchievementPlot
 			SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
@@ -2154,7 +2159,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 			AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 
-			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"), # CANONICAL for growthAchievementPlot
+			# MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"), # CANONICAL for growthAchievementPlot
+			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS"), # CANONICAL for growthAchievementPlot
 			MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 			MATH_ALG_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I"), #, "GEOMETRY"),# Add GEOMETRY in 2017
 			COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
@@ -2162,7 +2168,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			# ALGEBRA_I=c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
 			# GEOMETRY =c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
 
-			SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
+			# SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
+			SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE"), # CANONICAL for growthAchievementPlot
 			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
 			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
@@ -2181,14 +2188,15 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ELA = c(rep(1L, 6), 2),
 			GRADE_9_LIT =c(rep(1L, 6), 2),
 			AMERICAN_LIT=c(rep(1L, 6), 2),
-			MATHEMATICS=rep(1L, 7), # CANONICAL for growthAchievementPlot
+			# MATHEMATICS=rep(1L, 7), # CANONICAL for growthAchievementPlot
+			MATHEMATICS=rep(1L, 5), # CANONICAL for growthAchievementPlot
 			MATH_COORD_ALG=rep(1L, 7),
 			MATH_ALG_I = rep(1L, 6),
 			COORDINATE_ALGEBRA=rep(1L, 7),
 			ANALYTIC_GEOMETRY =rep(1L, 7),
 			# ALGEBRA_I=rep(1L, 6),
 			# GEOMETRY =rep(1L, 7),
-			SCIENCE=rep(1L, 7),
+			SCIENCE=rep(1L, 5),
 			SCIENCE_PHYSCI=rep(1L, 7),
 			SCIENCE_BIO=rep(1L, 7),
 			BIOLOGY_PHYSCI=rep(1L, 3),

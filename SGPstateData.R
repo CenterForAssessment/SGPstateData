@@ -2138,13 +2138,11 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ANALYTIC_GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			# ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT"), #, "EOCT"), # Add GEOMETRY in 2017
 			# GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),   # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
-			# SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
-			SCIENCE=c("3", "4", "5", "6", "7", "8"), # CANONICAL for growthAchievementPlot
+			SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+			# SCIENCE=c("3", "4", "5", "6", "7", "8"), # CANONICAL for growthAchievementPlot
 			SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
-			BIOLOGY_END=c("8", "EOCT", "EOCT"),
-			PHYSICAL_SCIENCE_END=c("8", "EOCT", "EOCT"),
 			PHYSICAL_SCIENCE_BIO=c("7", "8", "EOCT", "EOCT"),
 			SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 			US_HISTORY=c("8", "EOCT", "EOCT"),
@@ -2168,14 +2166,12 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			# ALGEBRA_I=c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
 			# GEOMETRY =c("ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
 
-			# SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
-			SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE"), # CANONICAL for growthAchievementPlot
+			SCIENCE = c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
+			# SCIENCE=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE"), # CANONICAL for growthAchievementPlot
 			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
 			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
-			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-			BIOLOGY_END= c("SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
-			PHYSICAL_SCIENCE_END=c("SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-			PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # Max 2 Priors
+			PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"), # Max 2 Priors
 
 			SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 			US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
@@ -2196,12 +2192,10 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			ANALYTIC_GEOMETRY =rep(1L, 7),
 			# ALGEBRA_I=rep(1L, 6),
 			# GEOMETRY =rep(1L, 7),
-			SCIENCE=rep(1L, 5),
+			SCIENCE=rep(1L, 7),
 			SCIENCE_PHYSCI=rep(1L, 7),
 			SCIENCE_BIO=rep(1L, 7),
 			BIOLOGY_PHYSCI=rep(1L, 3),
-			BIOLOGY_END=rep(1L, 2),
-			PHYSICAL_SCIENCE_END=rep(1L, 2),
 			PHYSICAL_SCIENCE_BIO=rep(1L, 3),
 			SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
 			US_HISTORY=as.integer(c(3,1)),
@@ -2222,9 +2216,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			SCIENCE_PHYSCI=3,
 			SCIENCE_BIO=3,
 			BIOLOGY_PHYSCI=3,
-			BIOLOGY_END=3,
 			PHYSICAL_SCIENCE_BIO=3,
-			PHYSICAL_SCIENCE_END=3,
 			SOCIAL_STUDIES=3,
 			US_HISTORY=3,
 			ECONOMICS=3))
@@ -2236,8 +2228,8 @@ load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
 SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "BIOLOGY_END", "PHYSICAL_SCIENCE_END", "PHYSICAL_SCIENCE_BIO", "MATH_COORD_ALG", "MATH_ALG_I"),
-	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
+	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "PHYSICAL_SCIENCE_BIO", "MATH_COORD_ALG", "MATH_ALG_I"),
+	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 
 #########################################################

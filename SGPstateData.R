@@ -478,6 +478,38 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="AIR")
 #		Test_Vendor="CTB/McGraw Hill")
 
+SGPstateData[["AZ"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
+		Assessment_Abbreviation="AIMS",
+		Assessment_Abbreviation.2015="AzMERIT",
+		Assessment_Name="Arizona's Instrument to Measure Standards",
+		Assessment_Name.2015="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics",
+		Achievement_Levels=list(
+			Labels=c("Falls Far Below", "Approaches", "Meets", "Exceeds"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Levels.2015=list(
+			Labels=c("Minimally Proficient", "Partially Proficient", "Proficient", "Highly Proficient"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Far Below"="Falls Far Below",
+			"Approaches"="Approaches",
+			"Meets"="Meets",
+			"Exceeds"="Exceeds"),
+		Achievement_Level_Labels.2015=list(
+			"Min Proficient"="Minimally Proficient",
+			"Part Proficient"="Partially Proficient",
+			"Proficient"="Proficient",
+			"Highly Proficient"="Highly Proficient"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA"),
+		Vertical_Scale="No",
+		Vertical_Scale.2015="Yes",
+		Grades_Tested=c(2,3,4,5,6,7,8,9,10),
+		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,12),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
+		Year="2015"
+	)
+
 SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 	list(
 #		# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400)), ## Not used since only reporting after 2010
@@ -2095,7 +2127,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
 			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
-			ELA="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA", # READING="ELA", 
+			ELA="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA", # READING="ELA",
 			SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
 			MATHEMATICS="MATHEMATICS", COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),

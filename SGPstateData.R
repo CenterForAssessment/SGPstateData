@@ -4853,7 +4853,7 @@ SGPstateData[["NCSC_SD"]][["Achievement"]][["Levels"]] <-
 	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["NCSC_SD"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+SGPstateData[["NCSC_SD"]][["Growth"]][["Levels"]] <- c("Much Below Average", "Below Average", "Average", "Above Average", "Much Above Average")
 
 SGPstateData[["NCSC_SD"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
@@ -4870,7 +4870,7 @@ SGPstateData[["NCSC_SD"]][["Assessment_Program_Information"]] <-
 		Name="South Dakota Department of Education",
 		Abbreviation="SDDOE",
 		URL="www.doe.sd.gov",
-		Contact="betty.leidholt@state.sd.us"),
+		Contact="DOE.Accountability@state.sd.us"),
 	Content_Areas=c("Mathematics", "ELA"),
 	Grades_Tested=c(3,4,5,6,7,8),
 	Assessment_Years=c("2015", "2016"),
@@ -6741,7 +6741,7 @@ SGPstateData[["SD"]][["Achievement"]][["Levels"]] <- list(
 #	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
 #	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["SD"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Typical", "High", "Very High")
+SGPstateData[["SD"]][["Growth"]][["Levels"]] <- c("Much Below Average", "Below", "Typical", "Above", "Much Above Average")
 
 SGPstateData[["SD"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
@@ -6758,7 +6758,7 @@ SGPstateData[["SD"]][["Assessment_Program_Information"]] <- list(
 		Name="South Dakota Department of Education",
 		Abbreviation="SDDOE",
 		URL="www.doe.sd.gov",
-		Contact="betty.leidholt@state.sd.us"),
+		Contact="DOE.Accountability@state.sd.us"),
 	Content_Areas=c("Mathematics", "ELA"),
 #	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8),

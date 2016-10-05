@@ -1612,17 +1612,20 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 ### GUATEMALA/GUA
 #########################################################
 
-load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
-SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
+#load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
+#SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
 
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING=list(
-			GRADE_9=c(-0.387, 0.341,  0.823),
-			GRADE_12=c(-0.129, 0.469, 0.879)),
-		MATHEMATICS=list(
-			GRADE_9=c(-0.089, 0.500, 1.365),
-			GRADE_12=c(0.019, 1.053, 1.427)))
+			GRADE_1=c(-0.844, 0.201,  1.261),
+			GRADE_2=c(-0.66179, -0.37087, 0.08916),
+			GRADE_3=c(-0.844, 0.193, 1.237)))
+#			GRADE_9=c(-0.387, 0.341,  0.823),
+#			GRADE_12=c(-0.129, 0.469, 0.879)),
+#		MATHEMATICS=list(
+#			GRADE_9=c(-0.089, 0.500, 1.365),
+#			GRADE_12=c(0.019, 1.053, 1.427)))
 
 SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -1633,14 +1636,14 @@ SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "T\u{ED}p
 SGPstateData[["GUA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81), Labels=list("1st-19th", "20th-39th", "40th-60th", "61st-80th", "81st-99th"))
 
-SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(9, 12)
+SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(1,2,3)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
 		Content_Areas_Labels=list(MATHEMATICS="Matem\u{E1}ticas", READING="Lectura"),
-		Grades_Reported=list(MATHEMATICS=c(9,12), READING=c(9,12)),
+		Grades_Reported=list(MATHEMATICS=c(1,2,3), READING=c(1,2,3)),
 		Achievement_Level_Labels=list(
 			"Insatisfactorio"="Insatisfactorio",
 			"Necesita mejorar"="Necesita mejorar",

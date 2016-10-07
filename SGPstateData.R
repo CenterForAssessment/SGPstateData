@@ -59,23 +59,23 @@ SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
 		Transformed_Achievement_Level_Cutscores=list(
-													MATHEMATICS=c(0,100,200,300,400,500),
-													ELA=c(0,100,200,300,400,500),
-													GEOMETRY=c(0,100,200,300,400,500),
-													ALGEBRA_I=c(0,100,200,300,400,500),
-													ALGEBRA_II=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
+													MATHEMATICS=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ELA=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													GEOMETRY=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ALGEBRA_I=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ALGEBRA_II=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_1=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_2=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_3=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2")),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-													MATHEMATICS=c(0,100,200,300,400,500),
-													ELA=c(0,100,200,300,400,500),
-													GEOMETRY=c(0,100,200,300,400,500),
-													ALGEBRA_I=c(0,100,200,300,400,500),
-													ALGEBRA_II=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_1=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_2=c(0,100,200,300,400,500),
-													INTEGRATED_MATH_3=c(0,100,200,300,400,500)),
+													MATHEMATICS=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ELA=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													GEOMETRY=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ALGEBRA_I=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													ALGEBRA_II=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_1=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_2=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+													INTEGRATED_MATH_3=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2")),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3"),
 		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS", INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS"),
 		Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), ELA=c("3","4","5","6","7","8","9","10","11"), GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT", INTEGRATED_MATH_1="EOCT", INTEGRATED_MATH_2="EOCT", INTEGRATED_MATH_3="EOCT"),
@@ -206,8 +206,8 @@ SGPstateData[["ABQ"]][["Assessment_Program_Information"]] <-
 	Test_Vendor="Measured Progress")
 
 SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2011:2014), READING=as.character(2011:2014)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=as.character(2011:2014), READING=as.character(2011:2014)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
@@ -364,10 +364,16 @@ SGPstateData[["AR"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["AR"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list( LITERACY=c(100,200,300,400,500),
-			MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list( LITERACY=c(100,200,300,400,500),
-			MATHEMATICS=c(100,200,300,400,500), EOC_MATHEMATICS_1 =c(100,200,300,400,500), EOC_MATHEMATICS_2 =c(100,200,300,400,500)),
+		Transformed_Achievement_Level_Cutscores=list(
+								LITERACY=c(as.character(2009:2016)),
+								MATHEMATICS=c(as.character(2009:2016)),
+								EOC_MATHEMATICS_1=c(as.character(2009:2016)),
+								EOC_MATHEMATICS_2=c(as.character(2009:2016))),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+								LITERACY=c(as.character(2009:2016)),
+								MATHEMATICS=c(as.character(2009:2016)),
+								EOC_MATHEMATICS_1=c(as.character(2009:2016)),
+								EOC_MATHEMATICS_2=c(as.character(2009:2016))),
 		Content_Areas_Labels =list(LITERACY = "Literacy", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 			LITERACY = "LITERACY", MATHEMATICS = "MATHEMATICS", EOC_MATHEMATICS_1="MATHEMATICS", EOC_MATHEMATICS_2="MATHEMATICS"),
@@ -5660,30 +5666,30 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 		Vertical_Scale.2015="No",
 		Grades_Tested=c(3,4,5,6,7,8),
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,'EOCT'),
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400), ELA=c(100,200,300,400)),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2006:2014), ELA=as.character(2006:2014)),
 		Transformed_Achievement_Level_Cutscores.2015=list(
-												MATHEMATICS=c(100,200,300,400,500,600),
-												ELA=c(100,200,300,400,500,600),
-												ALGEBRA_I=c(100,200,300,400,500,600),
-												GEOMETRY=c(100,200,300,400,500,600),
-												ALGEBRA_II=c(100,200,300,400,500,600)),
+												MATHEMATICS=as.character(2015:2016),
+												ELA=as.character(2015:2016),
+												ALGEBRA_I=as.character(2015:2016),
+												GEOMETRY=as.character(2015:2016),
+												ALGEBRA_II=as.character(2015:2016)),
 		Year="2015")
 
 SGPstateData[["NJ_ORIGINAL"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
 		Transformed_Achievement_Level_Cutscores=list(
-												MATHEMATICS=c(100,200,300,400,500,600),
-												ELA=c(100,200,300,400,500,600),
-												ALGEBRA_I=c(100,200,300,400,500,600),
-												GEOMETRY=c(100,200,300,400,500,600),
-												ALGEBRA_II=c(100,200,300,400,500,600)),
+												MATHEMATICS=as.character(2006:2016),
+												ELA=as.character(2006:2016),
+												ALGEBRA_I=as.character(2006:2016),
+												GEOMETRY=as.character(2006:2016),
+												ALGEBRA_II=as.character(2006:2016)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-												MATHEMATICS=c(100,200,300,400,500,600),
-												ELA=c(100,200,300,400,500,600),
-												ALGEBRA_I=c(100,200,300,400,500,600),
-												GEOMETRY=c(100,200,300,400,500,600),
-												ALGEBRA_II=c(100,200,300,400,500,600)),
+												MATHEMATICS=as.character(2006:2016),
+												ELA=as.character(2006:2016),
+												ALGEBRA_I=as.character(2006:2016),
+												GEOMETRY=as.character(2006:2016),
+												ALGEBRA_II=as.character(2006:2016)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
 		Content_Areas_Domains=list(ELA="ELA", MATHEMATICS="MATHEMATICS", ALGEBRA_I="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
 		Achievement_Level_Labels=list(

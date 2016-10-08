@@ -96,7 +96,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.projections.max.forward.progression.years=FALSE,
-		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
+		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
 		sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
@@ -1583,7 +1583,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.projections.max.forward.progression.years=FALSE,
-				gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE))#,
+				gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE))#,
 #				sgPlot.show.content_area.progression=TRUE,
 #				grade.projection.sequence <- list(
 #					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
@@ -5774,7 +5774,8 @@ SGPstateData[["NJ_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Na
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]] <- list(sgp.loss.hoss.adjustment="NJ_ORIGINAL",
 															print.other.gp=TRUE,
-															projcut.digits=3)
+															projcut.digits=3,
+															gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE))
 
 SGPstateData[["NJ_ORIGINAL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
@@ -6261,7 +6262,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		max.n.for.coefficient.matrices=200000,
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
-		gaPlot.back.extrapolated.typical.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
+		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
 		projcuts.digits=0,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),

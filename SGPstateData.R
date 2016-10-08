@@ -865,8 +865,12 @@ SGPstateData[["CA"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["CA"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,150,275,400,525,600), ELA=c(100,150,275,400,525,600)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,150,275,400,525,600), ELA=c(100,150,275,400,525,600)),
+		Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2014),
+									ELA=as.character(2009:2014)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2014),
+									ELA=as.character(2009:2014)),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 		Grades_Reported=list(MATHEMATICS=c(2,3,4,5,6,7), ELA=c(2,3,4,5,6,7,8,9,10,11)),
@@ -1299,7 +1303,6 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	INTEGRATED_MATH_2_SS=3,
 	INTEGRATED_MATH_3_SS=3)
 
-
 SGPstateData[["CO"]][["SGP_Configuration"]][["arrow.legend.color"]] <- c("#FD5050", "#FDBF1A", "#07B806")
 
 SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
@@ -1312,23 +1315,23 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <-
 		sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5.  Here 3 = 2 test years and 1 future year (growth proj fan)
 		Vertical_Scale="No",
 		Transformed_Achievement_Level_Cutscores=list(
-				MATHEMATICS_SS=c(0,100,200,300,400,500),
-				ELA_SS=c(0,100,200,300,400,500),
-				GEOMETRY_SS=c(0,100,200,300,400,500),
-				ALGEBRA_I_SS=c(0,100,200,300,400,500),
-				ALGEBRA_II_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+				MATHEMATICS_SS=as.character(2015:2016),
+				ELA_SS=as.character(2015:2016),
+				GEOMETRY_SS=as.character(2015:2016),
+				ALGEBRA_I_SS=as.character(2015:2016),
+				ALGEBRA_II_SS=as.character(2015:2016),
+				INTEGRATED_MATH_1_SS=as.character(2015:2016),
+				INTEGRATED_MATH_2_SS=as.character(2015:2016),
+				INTEGRATED_MATH_3_SS=as.character(2015:2016)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-				MATHEMATICS_SS=c(0,100,200,300,400,500),
-				ELA_SS=c(0,100,200,300,400,500),
-				GEOMETRY_SS=c(0,100,200,300,400,500),
-				ALGEBRA_I_SS=c(0,100,200,300,400,500),
-				ALGEBRA_II_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_1_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_2_SS=c(0,100,200,300,400,500),
-				INTEGRATED_MATH_3_SS=c(0,100,200,300,400,500)),
+				MATHEMATICS_SS=as.character(2015:2016),
+				ELA_SS=as.character(2015:2016),
+				GEOMETRY_SS=as.character(2015:2016),
+				ALGEBRA_I_SS=as.character(2015:2016),
+				ALGEBRA_II_SS=as.character(2015:2016),
+				INTEGRATED_MATH_1_SS=as.character(2015:2016),
+				INTEGRATED_MATH_2_SS=as.character(2015:2016),
+				INTEGRATED_MATH_3_SS=as.character(2015:2016)),
 		Content_Areas_Labels=list(
 				ELA_SS="ELA", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
 				INTEGRATED_MATH_1_SS="Integrtd Math 1", INTEGRATED_MATH_2_SS="Integrtd Math 2", INTEGRATED_MATH_3_SS="Integrtd Math 3"),
@@ -1407,8 +1410,10 @@ SGPstateData[["CT"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["CT"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(WRITING=c(0,100,200,300,400,500)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(WRITING=c(0,100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores=list(
+											WRITING=as.character(2009:2014)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+											WRITING=as.character(2009:2014)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", WRITING="Writing"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), WRITING=c(3,4,5,6,7,8)),
@@ -1555,8 +1560,6 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 	list(
-# 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400)), ### FOR TESTING
-# 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400), GRADE_9_LIT=c(0,100,200,300,400), AMERICAN_LIT=c(0,100,200,300,400), ALGEBRA_I=c(0,100,200,300,400), ALGEBRA_II=c(0,100,200,300,400)), ### FOR TESTING
 	Vertical_Scale="Yes",
 	Projection_Fan_Limits=c(5, 95),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
@@ -1648,8 +1651,12 @@ SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- 
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,100,200,300,400), READING=c(0,100,200,300,400)),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=as.character(2012:2016),
+										READING=as.character(2012:2016)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=as.character(2012:2016),
+										READING=as.character(2012:2016)),
 		Content_Areas_Labels=list(MATHEMATICS="Matem\u{E1}ticas", READING="Lectura"),
 		Grades_Reported=list(MATHEMATICS=c(1,2,3), READING=c(1,2,3)),
 		Achievement_Level_Labels=list(
@@ -2126,14 +2133,36 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale="No",
-		Transformed_Achievement_Level_Cutscores = list(ELA = c(100, 200, 300, 400), GRADE_9_LIT = c(100, 200, 300, 400), AMERICAN_LIT = c(100, 200, 300, 400),
-			SOCIAL_STUDIES = c(100, 200, 300, 400), US_HISTORY = c(100, 200, 300, 400), ECONOMICS = c(100, 200, 300, 400),
-			SCIENCE=c(100, 200, 300, 400), BIOLOGY = c(100, 200, 300, 400), PHYSICAL_SCIENCE = c(100, 200, 300, 400),
-			MATHEMATICS=c(100, 200, 300, 400), COORDINATE_ALGEBRA = c(100, 200, 300, 400), ANALYTIC_GEOMETRY = c(100, 200, 300, 400), ALGEBRA_I = c(100, 200, 300, 400), GEOMETRY = c(100, 200, 300, 400)),
-		Transformed_Achievement_Level_Cutscores_gaPlot = list(ELA = c(100, 200, 300, 400), GRADE_9_LIT = c(100, 200, 300, 400), AMERICAN_LIT = c(100, 200, 300, 400),
-			SOCIAL_STUDIES = c(100, 200, 300, 400), US_HISTORY = c(100, 200, 300, 400), ECONOMICS = c(100, 200, 300, 400),
-			SCIENCE=c(100, 200, 300, 400), BIOLOGY = c(100, 200, 300, 400), PHYSICAL_SCIENCE = c(100, 200, 300, 400),
-			MATHEMATICS=c(100, 200, 300, 400), COORDINATE_ALGEBRA = c(100, 200, 300, 400), ANALYTIC_GEOMETRY = c(100, 200, 300, 400), ALGEBRA_I = c(100, 200, 300, 400), GEOMETRY = c(100, 200, 300, 400)),
+		Transformed_Achievement_Level_Cutscores = list(
+											ELA=as.character(2007:2016),
+											GRADE_9_LIT=as.character(2007:2016),
+											AMERICAN_LIT=as.character(2007:2016),
+											SOCIAL_STUDIES=as.character(2007:2016),
+											US_HISTORY=as.character(2007:2016),
+											ECONOMICS=as.character(2007:2016),
+											SCIENCE=as.character(2007:2016),
+											BIOLOGY=as.character(2007:2016),
+											PHYSICAL_SCIENCE=as.character(2007:2016),
+											MATHEMATICS=as.character(2007:2016),
+											COORDINATE_ALGEBRA=as.character(2007:2016),
+											ANALYTIC_GEOMETRY=as.character(2007:2016),
+											ALGEBRA_I=as.character(2007:2016),
+											GEOMETRY=as.character(2007:2016)),
+		Transformed_Achievement_Level_Cutscores_gaPlot = list(
+											ELA=as.character(2007:2016),
+											GRADE_9_LIT=as.character(2007:2016),
+											AMERICAN_LIT=as.character(2007:2016),
+											SOCIAL_STUDIES=as.character(2007:2016),
+											US_HISTORY=as.character(2007:2016),
+											ECONOMICS=as.character(2007:2016),
+											SCIENCE=as.character(2007:2016),
+											BIOLOGY=as.character(2007:2016),
+											PHYSICAL_SCIENCE=as.character(2007:2016),
+											MATHEMATICS=as.character(2007:2016),
+											COORDINATE_ALGEBRA=as.character(2007:2016),
+											ANALYTIC_GEOMETRY=as.character(2007:2016),
+											ALGEBRA_I=as.character(2007:2016),
+											GEOMETRY=as.character(2007:2016)),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
 			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
@@ -2630,8 +2659,12 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["HI"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)), ### 2014 and prior
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)), ### 2014 and prior
+#		Transformed_Achievement_Level_Cutscores=list(
+#										MATHEMATICS=as.character(2008:2014),
+#										READING=as.character(2008:2014)),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#										MATHEMATICS=as.character(2008:2014),
+#										READING=as.character(2008:2014)),
 #		Vertical_Scale="No", ### 2014 and prior
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
@@ -3446,13 +3479,17 @@ SGPstateData[["KS"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
 	Test_Season="Spring",
-	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015"),
+	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 	Test_Vendor="The Center for Educational Testing and Evaluation (CETE) at The University of Kansas")
 ######  Grades and Assessment Years need to be verified - based on Sheng's sample data
 
 SGPstateData[["KS"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80,100), READING=c(0,20,40,60,80,100)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80,100), READING=c(0,20,40,60,80,100)),
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=paste(2005:2015, 2006:2016, sep="_"),
+									READING=paste(2005:2015, 2006:2016, sep="_")),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=paste(2005:2015, 2006:2016, sep="_"),
+									READING=paste(2005:2015, 2006:2016, sep="_")),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)),
@@ -3564,9 +3601,9 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["ME"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-		Vertical_Scale="No",
+#		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+#		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
@@ -3803,8 +3840,12 @@ SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 	)
 
 SGPstateData[["MA_ORIGINAL"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -3984,8 +4025,12 @@ SGPstateData[["MA_MCAS"]][["Assessment_Program_Information"]] <- list(
 	CSEM=Massachusetts_MCAS_CSEM)
 
 SGPstateData[["MA_MCAS"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -4202,10 +4247,13 @@ SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Tran
 		Equate_Interval_Digits=2
 	)
 
-SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <-
-	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500,600), ELA=c(100,200,300,400,500,600)),
+SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2016),
+									ELA=as.character(2009:2016)),
 	Projection_Fan_Limits=c(5, 95),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
@@ -4402,6 +4450,12 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition
 	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=paste(2007:2015, 2008:2016, sep="_"),
+									READING=paste(2007:2015, 2008:2016, sep="_")),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=paste(2007:2015, 2008:2016, sep="_"),
+									READING=paste(2007:2015, 2008:2016, sep="_")),
 	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
 	Vertical_Scale="No",
@@ -4499,8 +4553,12 @@ SGPstateData[["MN"]][["Assessment_Program_Information"]] <- list(
 #			CSEM=Minnesota_CSEM)
 
 SGPstateData[["MN"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,40,50,60,80), READING=c(0,40,50,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(
+								MATHEMATICS=as.character(2006:2016),
+								READING=as.character(2006:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+								MATHEMATICS=as.character(2006:2016),
+								READING=as.character(2006:2016)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11), SCIENCE=c(3,4,5,6,7,8,10,11)),
@@ -4659,8 +4717,12 @@ SGPstateData[["MS"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["MS"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING_LANGUAGE_ARTS=c(100,200,300,400,500)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING_LANGUAGE_ARTS=c(100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores=list(
+								MATHEMATICS=paste(2007:2015, 2008:2016, sep="_"),
+								READING_LANGUAGE_ARTS=paste(2007:2015, 2008:2016, sep="_")),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+								MATHEMATICS=paste(2007:2015, 2008:2016, sep="_"),
+								READING_LANGUAGE_ARTS=paste(2007:2015, 2008:2016, sep="_")),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING_LANGUAGE_ARTS="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING_LANGUAGE_ARTS=c(3,4,5,6,7,8)),
@@ -5068,8 +5130,12 @@ SGPstateData[["NE"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NE"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,85,135,200), READING=c(0,85,135,200)),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=as.character(2009:2016),
+										READING=as.character(2009:2016)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=as.character(2009:2016),
+										READING=as.character(2009:2016)),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
@@ -5214,8 +5280,12 @@ SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NV"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+#		Transformed_Achievement_Level_Cutscores=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
@@ -5333,9 +5403,14 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NH"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-		Vertical_Scale="No",
+#		Transformed_Achievement_Level_Cutscores=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Vertical_Scale="No",
+		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
@@ -5470,8 +5545,8 @@ SGPstateData[["NEW_HAVEN"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NEW_HAVEN"]][["Student_Report_Information"]] <-
 	list(
-	Transformed_Achievement_Level_Cutscores=list(WRITING=c(0,100,200,300,400,500)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(WRITING=c(0,100,200,300,400,500)),
+	Transformed_Achievement_Level_Cutscores=list(WRITING=as.character(2008:2014)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(WRITING=as.character(2008:2014)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", WRITING="Writing"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), WRITING=c(3,4,5,6,7,8)),
@@ -5810,10 +5885,10 @@ SGPstateData[["NM_ORIGINAL"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress")
 
 SGPstateData[["NM_ORIGINAL"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2011:2014), READING=as.character(2011:2014)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=as.character(2011:2014), READING=as.character(2011:2014)),
 	Vertical_Scale="No",
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="English Language Arts"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	Achievement_Level_Labels=list(
 		"Beginning"="Beginning Step",
@@ -5956,8 +6031,8 @@ SGPstateData[["NY"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NY"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), ELA=c(0,20,40,60,80)),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2006:2014), ELA=as.character(2006:2014)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=as.character(2006:2014), ELA=as.character(2006:2014)),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
@@ -6572,8 +6647,12 @@ SGPstateData[["RI_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_T
 
 SGPstateData[["RI_ORIGINAL"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80,100), ELA=c(0,20,40,60,80,100)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80,100), ELA=c(0,20,40,60,80,100)),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=paste(2014:2015, 2015:2016, sep="_"),
+										ELA=paste(2014:2015, 2015:2016, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=paste(2014:2015, 2015:2016, sep="_"),
+										ELA=paste(2014:2015, 2015:2016, sep="_")),
 		Projection_Fan_Limits=c(5, 95),
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
@@ -6760,14 +6839,18 @@ SGPstateData[["SD"]][["Assessment_Program_Information"]] <- list(
 	Grades_Tested=c(3,4,5,6,7,8),
 #	Grades_Tested=c(3,4,5,6,7,8,11),
 	Assessment_Years=c("2015", "2016"),
-#	Assessment_Years=c("2009", "2010", "2011", "2012", "2013", "2014", "2015"),
+#	Assessment_Years=c("2009", "2010", "2011", "2012", "2013", "2014"),
 	Test_Vendor="AIR",
 #	Test_Vendor="Pearson",
 	Test_Season="Spring")
 
 SGPstateData[["SD"]][["Student_Report_Information"]] <- list(
-#	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
-#	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(100,200,300,400,500), READING=c(100,200,300,400,500)),
+#	Transformed_Achievement_Level_Cutscores=list(
+#									MATHEMATICS=as.character(2009:2014),
+#									READING=as.character(2009:2014)),
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#									MATHEMATICS=as.character(2009:2014),
+#									READING=as.character(2009:2014)),
 	Vertical_Scale="Yes",
 #	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -7182,7 +7265,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		Scale_Change=list(ELA="2014", MATHEMATICS="2014", SCIENCE="2014", EARTH_SCIENCE="2014", BIOLOGY="2014", CHEMISTRY="2014", PHYSICS="2014", SEC_MATH_I="2014", SEC_MATH_II="2014", SEC_MATH_III="2014"), # Add SEC_MATH_* so that it forces projections with the correct # of priors.
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Test_Season="Spring",
-		Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"), # 2005-2007 removed in 2013
+		Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"), # 2005-2007 removed in 2013
 		Test_Vendor="AIR")
 
 # SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
@@ -7245,10 +7328,22 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 # require(grid)
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(SCIENCE=c(130, 160, 170, 200),
-		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(SCIENCE=c(130, 160, 170, 200),
-		EARTH_SCIENCE=c(130, 160, 170, 200), BIOLOGY=c(130, 160, 170, 200), CHEMISTRY=c(130, 160, 170, 200), PHYSICS=c(130, 160, 170, 200)),
+	Transformed_Achievement_Level_Cutscores=list(
+#									MATHEMATICS=as.character(2008:2013),
+#									ELA=as.character(2008:2013),
+									SCIENCE=as.character(2008:2016),
+									EARTH_SCIENCE=as.character(2008:2016),
+									BIOLOGY=as.character(2008:2016),
+									CHEMISTRY=as.character(2008:2016),
+									PHYSICS=as.character(2008:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#									MATHEMATICS=as.character(2008:2013),
+#									ELA=as.character(2008:2013),
+									SCIENCE=as.character(2008:2016),
+									EARTH_SCIENCE=as.character(2008:2016),
+									BIOLOGY=as.character(2008:2016),
+									CHEMISTRY=as.character(2008:2016),
+									PHYSICS=as.character(2008:2016)),
 	Vertical_Scale="Yes", # Math and ELA - not Science
 	Content_Areas_Labels=list(ELA = "ELA",
 		MATHEMATICS = "Math", SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",
@@ -7358,8 +7453,13 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["VT"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+#		Transformed_Achievement_Level_Cutscores=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+#										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Vertical_Scale="Yes",
 		Vertical_Scale="No",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
@@ -7491,8 +7591,12 @@ SGPstateData[["VA"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="Pearson")
 
 SGPstateData[["VA"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(200,300,400,500,600), ENGLISH_READING=c(200,300,400,500,600)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(200,300,400,500,600), ENGLISH_READING=c(200,300,400,500,600)),
+	Transformed_Achievement_Level_Cutscores=list(
+								MATHEMATICS=paste(2005:2012, 2006:2013, sep="_"),
+								ENGLISH_READING=paste(2005:2012, 2006:2013, sep="_")),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+								MATHEMATICS=paste(2005:2012, 2006:2013, sep="_"),
+								ENGLISH_READING=paste(2005:2012, 2006:2013, sep="_")),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ENGLISH_READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ENGLISH_READING=c(3,4,5,6,7,8)),

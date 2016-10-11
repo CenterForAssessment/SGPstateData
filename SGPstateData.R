@@ -7005,151 +7005,157 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(130, 199),
 			loss.hoss_8=c(130, 199)),
 
-	PRE_ALGEBRA=list(
-		knots_EOCT=c(156, 163, 168, 174),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+		PRE_ALGEBRA=list(
+			knots_EOCT=c(156, 163, 168, 174),
+			boundaries_EOCT=c(123, 206),
+			loss.hoss_EOCT=c(130, 199)),
 
-	ALGEBRA_I=list(
-		knots_EOCT=c(153, 160, 165, 171),
-		boundaries_EOCT=c(117, 207),
-		loss.hoss_EOCT=c(125, 199)),
+		ALGEBRA_I=list(
+			knots_EOCT=c(153, 160, 165, 171),
+			boundaries_EOCT=c(117, 207),
+			loss.hoss_EOCT=c(125, 199)),
 
-	ALGEBRA_II=list(loss.hoss_EOCT=c(130, 199)),
+		ALGEBRA_II=list(loss.hoss_EOCT=c(130, 199)),
 
-	GEOMETRY=list(loss.hoss_EOCT=c(130, 199)),
+		GEOMETRY=list(loss.hoss_EOCT=c(130, 199)),
 
-	SEC_MATH_I=list(
-		knots_EOCT=c(431, 486, 528, 571),
-		boundaries_EOCT=c(75, 975),
-		loss.hoss_EOCT=c(150, 900)),
+		SEC_MATH_I=list(
+			knots_EOCT=c(431, 486, 528, 571),
+			boundaries_EOCT=c(75, 975),
+			loss.hoss_EOCT=c(150, 900)),
 
-	SEC_MATH_II=list(
-		knots_EOCT=c(462, 518, 565, 619),
-		boundaries_EOCT=c(75, 975),
-		loss.hoss_EOCT=c(150, 900)),
+		SEC_MATH_II=list(
+			knots_EOCT=c(462, 518, 565, 619),
+			boundaries_EOCT=c(75, 975),
+			loss.hoss_EOCT=c(150, 900)),
 
-	SEC_MATH_III=list(
-		knots_EOCT=c(502, 565, 614, 666),
-		boundaries_EOCT=c(75, 975),
-		loss.hoss_EOCT=c(150, 900)),
+		SEC_MATH_III=list(
+			knots_EOCT=c(502, 565, 614, 666),
+			boundaries_EOCT=c(75, 975),
+			loss.hoss_EOCT=c(150, 900)),
 
-	EARTH_SCIENCE.2014=list(
-		knots_EOCT=c(805, 826, 843, 862),
-		boundaries_EOCT=c(615, 1030),
-		loss.hoss_EOCT=c(650, 999)),
-	EARTH_SCIENCE=list(
-		knots_EOCT=c(155, 161, 166, 172),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+		EARTH_SCIENCE.2014=list(
+			knots_EOCT=c(805, 826, 843, 862),
+			boundaries_EOCT=c(615, 1030),
+			loss.hoss_EOCT=c(650, 999)),
+		EARTH_SCIENCE=list(
+			knots_EOCT=c(155, 161, 166, 172),
+			boundaries_EOCT=c(123, 206),
+			loss.hoss_EOCT=c(130, 199)),
 
-	BIOLOGY.2014=list(
-		knots_EOCT=c(806, 826, 840, 857),
-		boundaries_EOCT=c(615, 1030),
-		loss.hoss_EOCT=c(650, 999)),
-	BIOLOGY=list(
-		knots_EOCT=c(156, 162, 167, 173),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+		BIOLOGY.2014=list(
+			knots_EOCT=c(806, 826, 840, 857),
+			boundaries_EOCT=c(615, 1030),
+			loss.hoss_EOCT=c(650, 999)),
+		BIOLOGY=list(
+			knots_EOCT=c(156, 162, 167, 173),
+			boundaries_EOCT=c(123, 206),
+			loss.hoss_EOCT=c(130, 199)),
 
-	CHEMISTRY.2014=list(
-		knots_EOCT=c(804, 829, 847, 869),
-		boundaries_EOCT=c(615, 1030),
-		loss.hoss_EOCT=c(650, 999)),
-	CHEMISTRY=list(
-		knots_EOCT=c(151, 158, 163, 168),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)),
+		CHEMISTRY.2014=list(
+			knots_EOCT=c(804, 829, 847, 869),
+			boundaries_EOCT=c(615, 1030),
+			loss.hoss_EOCT=c(650, 999)),
+		CHEMISTRY=list(
+			knots_EOCT=c(151, 158, 163, 168),
+			boundaries_EOCT=c(123, 206),
+			loss.hoss_EOCT=c(130, 199)),
 
-	PHYSICS.2014=list(
-		knots_EOCT=c(804, 827, 847, 869),
-		boundaries_EOCT=c(615, 1030),
-		loss.hoss_EOCT=c(650, 999)),
-	PHYSICS=list(
-		knots_EOCT=c(155, 161, 166, 172),
-		boundaries_EOCT=c(123, 206),
-		loss.hoss_EOCT=c(130, 199)))
+		PHYSICS.2014=list(
+			knots_EOCT=c(804, 827, 847, 869),
+			boundaries_EOCT=c(615, 1030),
+			loss.hoss_EOCT=c(650, 999)),
+		PHYSICS=list(
+			knots_EOCT=c(155, 161, 166, 172),
+			boundaries_EOCT=c(123, 206),
+			loss.hoss_EOCT=c(130, 199)))
 
 SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 	list(
-	# 	ELA=list(
-	# 		GRADE_3=c(160, 168),
-	# 		GRADE_4=c(160, 168),
-	# 		GRADE_5=c(160, 168),
-	# 		GRADE_6=c(160, 168),
-	# 		GRADE_7=c(160, 170),
-	# 		GRADE_8=c(160, 168),
-	# 		GRADE_9=c(160, 170),
-	# 		GRADE_10=c(160, 169),
-	# 		GRADE_11=c(160, 168)),
-		ELA=list(
-			 GRADE_3=c(334, 406),
-			 GRADE_4=c(378, 442),
-			 GRADE_5=c(410, 465),
-			 GRADE_6=c(434, 493),
-			 GRADE_7=c(450, 514),
-			 GRADE_8=c(471, 533),
-			 GRADE_9=c(487, 559),
-			GRADE_10=c(498, 574),
-			GRADE_11=c(513, 591)),
-	# 	MATHEMATICS=list(
-	# 		GRADE_3=c(160, 168),
-	# 		GRADE_4=c(160, 167),
-	# 		GRADE_5=c(160, 166),
-	# 		GRADE_6=c(160, 166),
-	# 		GRADE_7=c(160, 169),
-	# 		GRADE_8=c(160, 168)),
-		MATHEMATICS=list(
-			GRADE_3=c(317, 337),
-			GRADE_4=c(349, 376),
-			GRADE_5=c(384, 416),
-			GRADE_6=c(432, 464),
-			GRADE_7=c(450, 499),
-			GRADE_8=c(499, 554)),
-	# 	SCIENCE=list(
-	# 		GRADE_4=c(160, 167),
-	# 		GRADE_5=c(160, 168),
-	# 		GRADE_6=c(160, 167),
-	# 		GRADE_7=c(160, 167),
-	# 		GRADE_8=c(160, 167)),
-		SCIENCE=list(
-			GRADE_4=c(840, 856),
-			GRADE_5=c(840, 856),
-			GRADE_6=c(840, 864),
-			GRADE_7=c(840, 854),
-			GRADE_8=c(840, 854)),
+	ELA.2014=list(
+		GRADE_3=c(334, 406),
+		GRADE_4=c(378, 442),
+		GRADE_5=c(410, 465),
+		GRADE_6=c(434, 493),
+		GRADE_7=c(450, 514),
+		GRADE_8=c(471, 533),
+		GRADE_9=c(487, 559),
+		RADE_10=c(498, 574),
+		GRADE_11=c(513, 591)),
+	ELA=list(
+		GRADE_3=c(160, 168),
+		GRADE_4=c(160, 168),
+		GRADE_5=c(160, 168),
+		GRADE_6=c(160, 168),
+		GRADE_7=c(160, 170),
+		GRADE_8=c(160, 168),
+		GRADE_9=c(160, 170),
+		GRADE_10=c(160, 169),
+		GRADE_11=c(160, 168)),
 
-		PRE_ALGEBRA=list(
-			GRADE_EOCT=c(160, 168)),
-		ALGEBRA_I=list(
-			GRADE_EOCT=c(160, 168)),
-		ALGEBRA_II=list(
-			GRADE_EOCT=c(160, 168)),
-		GEOMETRY=list(
-			GRADE_EOCT=c(160, 168)),
-		SEC_MATH_I=list(
-			GRADE_EOCT=c(535, 591)),
-		SEC_MATH_II=list(
-			GRADE_EOCT=c(584, 648)),
-		SEC_MATH_III=list(
-			GRADE_EOCT=c(611, 680)),
+	MATHEMATICS.2014=list(
+		GRADE_3=c(317, 337),
+		GRADE_4=c(349, 376),
+		GRADE_5=c(384, 416),
+		GRADE_6=c(432, 464),
+		GRADE_7=c(450, 499),
+		GRADE_8=c(499, 554)),
+	MATHEMATICS=list(
+		GRADE_3=c(160, 168),
+		GRADE_4=c(160, 167),
+		GRADE_5=c(160, 166),
+		GRADE_6=c(160, 166),
+		GRADE_7=c(160, 169),
+		GRADE_8=c(160, 168)),
 
-	# 	EARTH_SCIENCE=list(
-	# 		GRADE_EOCT=c(160, 167)),
-		EARTH_SCIENCE=list(
-			GRADE_EOCT=c(840, 866)),
-	# 	BIOLOGY=list(
-	# 		GRADE_EOCT=c(160, 167)),
-		BIOLOGY=list(
-			GRADE_EOCT=c(840, 858)),
-	# 	CHEMISTRY=list(
-	# 		GRADE_EOCT=c(160, 166)),
-		CHEMISTRY=list(
-			GRADE_EOCT=c(840, 865)),
-	# 	PHYSICS=list(
-	# 		GRADE_EOCT=c(160, 169)),
-		PHYSICS=list(
-			GRADE_EOCT=c(840, 878)))
+	SCIENCE.2014=list(
+		GRADE_4=c(840, 856),
+		GRADE_5=c(840, 856),
+		GRADE_6=c(840, 864),
+		GRADE_7=c(840, 854),
+		GRADE_8=c(840, 854)),
+	SCIENCE=list(
+		GRADE_4=c(160, 167),
+		GRADE_5=c(160, 168),
+		GRADE_6=c(160, 167),
+		GRADE_7=c(160, 167),
+		GRADE_8=c(160, 167)),
+
+	PRE_ALGEBRA=list(
+		GRADE_EOCT=c(160, 168)),
+	ALGEBRA_I=list(
+		GRADE_EOCT=c(160, 168)),
+	ALGEBRA_II=list(
+		GRADE_EOCT=c(160, 168)),
+	GEOMETRY=list(
+		GRADE_EOCT=c(160, 168)),
+	SEC_MATH_I=list(
+		GRADE_EOCT=c(535, 591)),
+	SEC_MATH_II=list(
+		GRADE_EOCT=c(584, 648)),
+	SEC_MATH_III=list(
+		GRADE_EOCT=c(611, 680)),
+
+	EARTH_SCIENCE.2014=list(
+		GRADE_EOCT=c(840, 866)),
+	EARTH_SCIENCE=list(
+		GRADE_EOCT=c(160, 167)),
+
+	BIOLOGY.2014=list(
+		GRADE_EOCT=c(840, 858)),
+	BIOLOGY=list(
+		GRADE_EOCT=c(160, 167)),
+
+	CHEMISTRY.2014=list(
+		GRADE_EOCT=c(840, 865)),
+	CHEMISTRY=list(
+		GRADE_EOCT=c(160, 166)),
+
+	PHYSICS.2014=list(
+		GRADE_EOCT=c(840, 878)),
+	PHYSICS=list(
+		GRADE_EOCT=c(160, 169)))
+
 
 SGPstateData[["UT"]][["Achievement"]][["Levels"]] <-
 	list(

@@ -7019,17 +7019,17 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 		GEOMETRY=list(loss.hoss_EOCT=c(130, 199)),
 
-		SEC_MATH_I=list(
+		SEC_MATH_I.2014=list(
 			knots_EOCT=c(431, 486, 528, 571),
 			boundaries_EOCT=c(75, 975),
 			loss.hoss_EOCT=c(150, 900)),
 
-		SEC_MATH_II=list(
+		SEC_MATH_II.2014=list(
 			knots_EOCT=c(462, 518, 565, 619),
 			boundaries_EOCT=c(75, 975),
 			loss.hoss_EOCT=c(150, 900)),
 
-		SEC_MATH_III=list(
+		SEC_MATH_III.2014=list(
 			knots_EOCT=c(502, 565, 614, 666),
 			boundaries_EOCT=c(75, 975),
 			loss.hoss_EOCT=c(150, 900)),
@@ -7129,11 +7129,11 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_EOCT=c(160, 168)),
 	GEOMETRY=list(
 		GRADE_EOCT=c(160, 168)),
-	SEC_MATH_I=list(
+	SEC_MATH_I.2014=list(
 		GRADE_EOCT=c(535, 591)),
-	SEC_MATH_II=list(
+	SEC_MATH_II.2014=list(
 		GRADE_EOCT=c(584, 648)),
-	SEC_MATH_III=list(
+	SEC_MATH_III.2014=list(
 		GRADE_EOCT=c(611, 680)),
 
 	EARTH_SCIENCE.2014=list(

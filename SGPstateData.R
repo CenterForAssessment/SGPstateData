@@ -6817,7 +6817,7 @@ SGPstateData[["SD"]][["Achievement"]][["Levels"]] <- list(
 #	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
 #	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["SD"]][["Growth"]][["Levels"]] <- c("Much Below Average", "Below", "Typical", "Above", "Much Above Average")
+SGPstateData[["SD"]][["Growth"]][["Levels"]] <- c("Much Below Average", "Below Average", "Typical", "Above Average", "Much Above Average")
 
 SGPstateData[["SD"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 

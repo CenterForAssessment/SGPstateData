@@ -2659,12 +2659,12 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["HI"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(
-#										MATHEMATICS=as.character(2008:2014),
-#										READING=as.character(2008:2014)),
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-#										MATHEMATICS=as.character(2008:2014),
-#										READING=as.character(2008:2014)),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=as.character(2008:2014),
+										READING=as.character(2008:2014)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=as.character(2008:2014),
+										READING=as.character(2008:2014)),
 #		Vertical_Scale="No", ### 2014 and prior
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
@@ -3593,7 +3593,7 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 			URL="www.maine.gov/education",
 			Contact="207-624-6600"),
 		Content_Areas=c("Mathematics", "Reading"),
-		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Fall",
 		Test_Vendor="Measured Progress")
@@ -3601,9 +3601,14 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["ME"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=c(0,20,40,60,80), READING=c(0,20,40,60,80)),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
 #		Vertical_Scale="No",
+		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
@@ -5280,13 +5285,14 @@ SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NV"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
-		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Vertical_Scale="No",
+		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), READING=c(3,4,5,6,7,8,10)),
 		Achievement_Level_Labels=list(
@@ -5403,12 +5409,12 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NH"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
 #		Vertical_Scale="No",
 		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
@@ -6787,7 +6793,21 @@ SGPstateData[["SD"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(2473, 2552, 2610),
 		GRADE_7=c(2484, 2567, 2635),
 		GRADE_8=c(2504, 2586, 2653)),
+	MATHEMATICS.2016=list(
+		GRADE_3=c(2381, 2436, 2501),
+		GRADE_4=c(2411, 2485, 2549),
+		GRADE_5=c(2455, 2528, 2579),
+		GRADE_6=c(2473, 2552, 2610),
+		GRADE_7=c(2484, 2567, 2635),
+		GRADE_8=c(2504, 2586, 2653)),
 	ELA=list(
+		GRADE_3=c(2367, 2432, 2490),
+		GRADE_4=c(2416, 2473, 2533),
+		GRADE_5=c(2442, 2502, 2582),
+		GRADE_6=c(2457, 2531, 2618),
+		GRADE_7=c(2479, 2552, 2649),
+		GRADE_8=c(2487, 2567, 2668)),
+	ELA.2016=list(
 		GRADE_3=c(2367, 2432, 2490),
 		GRADE_4=c(2416, 2473, 2533),
 		GRADE_5=c(2442, 2502, 2582),
@@ -6846,12 +6866,12 @@ SGPstateData[["SD"]][["Assessment_Program_Information"]] <- list(
 	Test_Season="Spring")
 
 SGPstateData[["SD"]][["Student_Report_Information"]] <- list(
-#	Transformed_Achievement_Level_Cutscores=list(
-#									MATHEMATICS=as.character(2009:2014),
-#									READING=as.character(2009:2014)),
-#	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-#									MATHEMATICS=as.character(2009:2014),
-#									READING=as.character(2009:2014)),
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2014),
+									READING=as.character(2009:2014)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2014),
+									READING=as.character(2009:2014)),
 	Vertical_Scale="Yes",
 #	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -7460,14 +7480,14 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["VT"]][["Student_Report_Information"]] <-
 	list(
-#		Transformed_Achievement_Level_Cutscores=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
-#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-#										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-#										READING=paste(2007:2013, 2008:2014, sep="_")),
-#		Vertical_Scale="Yes",
-		Vertical_Scale="No",
+		Transformed_Achievement_Level_Cutscores=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
+										READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Vertical_Scale="No", ## NECAP up to 2013-2014
+		Vertical_Scale="Yes",
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(

@@ -6888,6 +6888,9 @@ SGPstateData[["SD"]][["Student_Report_Information"]] <- list(
 #		"Proficient"="Proficient",
 #		"Advanced"="Advanced"))
 
+SGPstateData[["SD"]][['SGP_Configuration']] <- list(
+				Show_Fan_Growth_Labels=FALSE
+)
 
 #########################################################
 ### UTAH

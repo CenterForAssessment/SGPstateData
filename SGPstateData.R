@@ -6882,7 +6882,13 @@ SGPstateData[["SD"]][["Student_Report_Information"]] <- list(
 		"Level 1"="Level 1",
 		"Level 2"="Level 2",
 		"Level 3"="Level 3",
-		"Level 4"="Level 4"))
+		"Level 4"="Level 4"),
+	Growth_Level_Labels=list(
+		"Much Below"="Much Below Average",
+		"Below"="Below Average",
+		"Typical"="Typical",
+		"Above"="Above Average",
+		"Much Above"="Much Above Average"))
 #		"Below Basic"="Below Basic",
 #		"Basic"="Basic",
 #		"Proficient"="Proficient",

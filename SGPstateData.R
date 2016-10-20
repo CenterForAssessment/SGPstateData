@@ -8383,8 +8383,7 @@ SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WV_Baseline_Matrices[["READING.BASELINE"]]
 
 SGPstateData[["WV"]][["SGP_Configuration"]] <- list(
-	print.other.gp=TRUE,
-	max.order.for.percentile=3,
+	max.order.for.percentile=1,
 	max.order.for.projection=3)
 
 

@@ -6683,8 +6683,10 @@ SGPstateData[["RI_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Na
 ### RHODE ISLAND
 
 load("Knots_Boundaries/PARCC_RI_Knots_Boundaries.Rdata")
+load("Cutscores/PARCC/PARCC_Cutscores_NO_DOT_YEAR.Rdata")
 SGPstateData[["RI"]] <- SGPstateData[['PARCC']]
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_RI_Knots_Boundaries
+SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores_NO_DOT_YEAR
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 	list(
@@ -8383,6 +8385,7 @@ SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #SGPstateData[["WV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- WV_Baseline_Matrices[["READING.BASELINE"]]
 
 SGPstateData[["WV"]][["SGP_Configuration"]] <- list(
+	sgp.minimum.default.panel.years=2,
 	max.order.for.percentile=3,
 	max.order.for.projection=3)
 

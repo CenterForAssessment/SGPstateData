@@ -95,3 +95,9 @@ PARCC_Cutscores <- list(
         GRADE_EOCT=c(-0.7076, -0.0384, 0.6309, 2.0689)))
 
 save(PARCC_Cutscores, file="PARCC_Cutscores.Rdata")
+
+### Create without .2 notation
+
+PARCC_Cutscores_NO_DOT_YEAR <- PARCC_Cutscores
+names(PARCC_Cutscores_NO_DOT_YEAR) <- gsub("2015_2016[.]2", "2015_2016", names(PARCC_Cutscores))
+save(PARCC_Cutscores_NO_DOT_YEAR, file="PARCC_Cutscores_NO_DOT_YEAR.Rdata")

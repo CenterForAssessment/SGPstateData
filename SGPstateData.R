@@ -6699,10 +6699,51 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015", "2015_2016"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
+
+		SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
+			list(
+				fix.duplicates="KEEP.ALL",
+				rq.method = "fn",
+				sgp.minimum.default.panel.years=2,
+				percentile.cuts=c(1,35,50,66,99),
+				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
+				sgp.projections.max.forward.progression.years=FALSE,
+				gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
+				calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
+				sgPlot.show.content_area.progression=TRUE,
+				sgp.cohort.size=1000,
+				sgp.projections.use.only.complete.matrices=FALSE,
+				null.output.string="",
+				grade.projection.sequence=list(
+					ELA=c("3", "4", "5", "6", "7", "8", "9", "10"),
+					MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					MATHEMATICS_INTGRT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					INTEGRATED_MATH_2=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+					INTEGRATED_MATH_3=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
+				content_area.projection.sequence=list(
+					ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+					MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
+					GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
+					ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II")),
+				year_lags.projection.sequence=list(
+					ELA=rep(1L, 7),
+					MATHEMATICS=rep(1L, 7),
+					GEOMETRY=rep(1L, 7),
+					ALGEBRA_I=rep(1L, 7)),
+				max.forward.projection.sequence=list(
+					ELA=3,
+					MATHEMATICS=3,
+					GEOMETRY=3,
+					ALGEBRA_I=3))
 
 
 #########################################################

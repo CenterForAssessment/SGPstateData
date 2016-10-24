@@ -6697,7 +6697,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Abbreviation="RIDE",
 			URL="www.ride.ri.gov/",
 			Contact="401-222-4600"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Assessment_Years=c("2014_2015", "2015_2016"),
 		Test_Season="Fall & Spring",

@@ -8444,6 +8444,7 @@ SGPstateData[["WV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 SGPstateData[["WV"]][["SGP_Configuration"]] <- list(
 	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
 	sgp.minimum.default.panel.years=2,
 	max.order.for.percentile=3,
 	max.order.for.projection=3)

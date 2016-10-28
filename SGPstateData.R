@@ -4972,6 +4972,10 @@ SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
 		"Above"="Above Average",
 		"Much Above"="Much Above Average"))
 
+	SGPstateData[["NCSC_SD"]][['SGP_Configuration']] <- list(
+					Show_Fan_Growth_Labels=FALSE)
+
+
 #########################################################
 ### AUSTRALIA/NAPLAN
 #########################################################

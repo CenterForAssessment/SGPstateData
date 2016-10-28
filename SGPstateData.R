@@ -4951,6 +4951,12 @@ SGPstateData[["NCSC_SD"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
 	list(
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2015:2016),
+									ELA=as.character(2015:2016)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2015:2016),
+									ELA=as.character(2015:2016)),
 	Vertical_Scale="No",
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
@@ -4958,8 +4964,13 @@ SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
 		"Level 1"="Level 1",
 		"Level 2"="Level 2",
 		"Level 3"="Level 3",
-		"Level 4"="Level 4"))
-
+		"Level 4"="Level 4"),
+	Growth_Level_Labels=list(
+		"Much Below"="Much Below Average",
+		"Below"="Below Average",
+		"Typical"="Typical",
+		"Above"="Above Average",
+		"Much Above"="Much Above Average"))
 
 #########################################################
 ### AUSTRALIA/NAPLAN

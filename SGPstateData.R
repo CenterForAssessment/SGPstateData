@@ -4877,7 +4877,7 @@ SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(1236, 1240, 1255),
 		GRADE_8=c(1230, 1240, 1250)))
 
-SGPstateData[["MO"]][["Achievement"]][["Knots_Boundaries"]] <-
+SGPstateData[["NCSC_SD"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		ELA=list(
 			boundaries_3=c(1191, 1299),
@@ -4897,8 +4897,7 @@ SGPstateData[["MO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_5=c(1200, 1290),
 			loss.hoss_6=c(1200, 1290),
 			loss.hoss_7=c(1200, 1290),
-			loss.hoss_8=c(1200, 1290),
-			loss.hoss_11=c(1200, 1290)),
+			loss.hoss_8=c(1200, 1290)),
 		MATHEMATICS=list(
 			boundaries_3=c(1191, 1299),
 			boundaries_4=c(1191, 1299),
@@ -4917,8 +4916,7 @@ SGPstateData[["MO"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_5=c(1200, 1290),
 			loss.hoss_6=c(1200, 1290),
 			loss.hoss_7=c(1200, 1290),
-			loss.hoss_8=c(1200, 1290),
-			loss.hoss_10=c(1200, 1290)))
+			loss.hoss_8=c(1200, 1290)))
 
 SGPstateData[["NCSC_SD"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -4972,8 +4970,8 @@ SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
 		"Above"="Above Average",
 		"Much Above"="Much Above Average"))
 
-	SGPstateData[["NCSC_SD"]][['SGP_Configuration']] <- list(
-					Show_Fan_Growth_Labels=FALSE)
+SGPstateData[["NCSC_SD"]][['SGP_Configuration']] <- list(
+			Show_Fan_Growth_Labels=FALSE)
 
 
 #########################################################

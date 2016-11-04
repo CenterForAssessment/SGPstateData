@@ -100,6 +100,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
 		sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
+		sgp.less.than.sgp.cohort.size.return="<1000",
 		sgp.projections.use.only.complete.matrices=FALSE,
 		null.output.string="",
 		grade.projection.sequence=list(

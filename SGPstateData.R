@@ -542,7 +542,9 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 
 SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	sgp.minimum.default.panel.years=2,
-	print.other.gp=TRUE)
+	print.other.gp=TRUE,
+	sgp.cohort.size=2000,
+	sgp.less.than.sgp.cohort.size.return="<2000")
 #	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 #	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 

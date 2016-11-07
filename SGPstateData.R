@@ -94,7 +94,6 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.projections.max.forward.progression.years=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
@@ -545,8 +544,31 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	print.other.gp=TRUE,
 	sgp.cohort.size=2000,
 	sgp.less.than.sgp.cohort.size.return="<2000")
-#	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-#	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
+
+SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	ELA=rep("ELA", 9),
+	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
+SGPstateData[["AZ"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	ELA=rep(1L, 8),
+	MATHEMATICS=rep(1L, 8),
+	GEOMETRY=rep(1L, 8),
+	ALGEBRA_I=rep(1L, 8),
+	ALGEBRA_II=rep(1L, 8))
+SGPstateData[["AZ"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	ELA=3,
+	MATHEMATICS=3,
+	GEOMETRY=3,
+	ALGEBRA_I=3,
+	ALGEBRA_II=3)
 
 #SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
@@ -1582,31 +1604,8 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				return.projection.group.dates=TRUE,
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
-				sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 				sgp.projections.max.forward.progression.years=FALSE,
-				gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE))#,
-#				sgPlot.show.content_area.progression=TRUE,
-#				grade.projection.sequence <- list(
-#					READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-#					MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-#					GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-#					AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-#					ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-#					ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
-#				content_area.projection.sequence <- list(
-#					READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-#					GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-#					AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-#					MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
-#					ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
-#					ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II")),
-#				year_lags.projection.sequence <- list(
-#					READING=rep(1L, 7),
-#					MATHEMATICS=rep(1L, 7),
-#					GRADE_9_LIT=rep(1L, 7),
-#					AMERICAN_LIT=rep(1L, 7),
-#					ALGEBRA_I=rep(1L, 7),
-#					ALGEBRA_II=rep(1L, 7)))
+				gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE))
 
 load("Baseline_Coefficient_Matrices/DEMO/DEMO_Baseline_Matrices.Rdata")
 SGPstateData[["DEMO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- DEMO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
@@ -6748,7 +6747,6 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <-
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.projections.max.forward.progression.years=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
 		sgPlot.show.content_area.progression=TRUE,
@@ -7278,8 +7276,6 @@ SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=5,
 	max.order.for.projection=1,
 	sgPlot.use.alternate.student.id="SSID")
-# 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-# 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"))
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 	list(

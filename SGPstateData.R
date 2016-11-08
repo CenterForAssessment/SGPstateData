@@ -401,7 +401,7 @@ SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- c(AZ_Knots_Bounda
 
 SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 	list(
-		MATHEMATICS=list(
+		MATHEMATICS.2015=list(
 			GRADE_3=c(3495, 3531, 3573),
 			GRADE_4=c(3530, 3562, 3606),
 			GRADE_5=c(3563, 3595, 3635),
@@ -416,7 +416,21 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(484, 517, 599),
 			GRADE_8=c(505, 537, 623),
 			GRADE_10=c(668, 683, 750)),
-		READING=list(
+		MATHEMATICS.2010=list(
+			GRADE_3=c(303, 347, 406),
+			GRADE_4=c(331, 366, 416),
+			GRADE_5=c(348, 381, 436),
+			GRADE_6=c(366, 398, 446),
+			GRADE_7=c(382, 411, 460),
+			GRADE_8=c(409, 426, 475),
+			GRADE_10=c(471, 487, 537)),
+		ALGEBRA_I.2015=list(
+			GRADE_EOCT=c(3661, 3681, 3720)),
+		GEOMETRY.2015=list(
+			GRADE_EOCT=c(3673, 3697, 3743)),
+		ALGEBRA_II.2015=list(
+			GRADE_EOCT=c(3690, 3711, 3751)),
+		ELA.2015=list(
 			GRADE_3=c(2497, 2509, 2541),
 			GRADE_4=c(2510, 2523, 2559),
 			GRADE_5=c(2520, 2543, 2578),
@@ -433,21 +447,7 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(433, 478, 571),
 			GRADE_7=c(443, 489, 587),
 			GRADE_8=c(452, 499, 602),
-			GRADE_10=c(627, 674, 773)),
-		MATHEMATICS.2010=list(
-			GRADE_3=c(303, 347, 406),
-			GRADE_4=c(331, 366, 416),
-			GRADE_5=c(348, 381, 436),
-			GRADE_6=c(366, 398, 446),
-			GRADE_7=c(382, 411, 460),
-			GRADE_8=c(409, 426, 475),
-			GRADE_10=c(471, 487, 537)),
-		ALGEBRA_I=list(
-			GRADE_EOCT=c(3661, 3681, 3720)),
-		GEOMETRY=list(
-			GRADE_EOCT=c(3673, 3697, 3743)),
-		ALGEBRA_II=list(
-			GRADE_EOCT=c(3690, 3711, 3751)))
+			GRADE_10=c(627, 674, 773)))
 
 SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-
 	list(

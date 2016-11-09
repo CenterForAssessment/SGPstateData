@@ -477,9 +477,9 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 			URL="www.azed.gov",
 			Contact="1-800-352-4558"),
 		Content_Areas=c("Mathematics", "Reading", "Algebra I", "Geometry", "Algebra II"),
-#		Scale_Change=list(MATHEMATICS=2010),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 #		Test_Vendor="CTB/McGraw Hill")

@@ -570,6 +570,8 @@ SGPstateData[["AZ"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	ALGEBRA_I=3,
 	ALGEBRA_II=3)
 
+load("SGP_Norm_Group_Preference/AZ_SGP_Norm_Group_Preference.Rdata")
+SGPstateData[["AZ"]][["SGP_Norm_Group_Preference"]] <- AZ_SGP_Norm_Group_Preference
 #SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 

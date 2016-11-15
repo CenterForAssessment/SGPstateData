@@ -524,12 +524,11 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 								MATHEMATICS=as.character(2009:2014),
 								READING=as.character(2009:2014)),
 		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE, ALGEBRA_I=TRUE, GEOMETRY=TRUE, ALGEBRA_II=TRUE),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", READING="Reading"),
 		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
 		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
-#		Earliest_Year_Reported=list(MATHEMATICS=2010),
+		Earliest_Year_Reported=list(ELA='2015', MATHEMATICS='2015', ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Achievement_Level_Labels=list(
 			"Min Proficient"="Minimally Proficient",
 			"Part Proficient"="Partially Proficient",
@@ -9323,7 +9322,7 @@ SGPstateData[["WY"]][["Student_Report_Information"]] <-
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
-#		Earliest_Year_Reported=list(MATHEMATICS="2013_2014", READING="2013_2013"),
+#		Earliest_Year_Reported=list(MATHEMATICS="2013_2014", READING="2013_2014"),
 		Achievement_Level_Labels=list(
 			"Below basic" = "Below",
 			"Basic" = "Basic",

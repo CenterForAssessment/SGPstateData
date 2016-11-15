@@ -507,7 +507,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Proficient"="Proficient",
 			"Highly Proficient"="Highly Proficient"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA"),
+		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
 		Vertical_Scale="No",
 		Vertical_Scale.2015="Yes",
 		Grades_Tested=c(2,3,4,5,6,7,8,9,10),
@@ -523,11 +523,12 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
 								MATHEMATICS=as.character(2009:2014),
 								READING=as.character(2009:2014)),
-		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE, ALGEBRA_I=TRUE, GEOMETRY=TRUE, ALGEBRA_II=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I=c(7,8,9,10), GEOMETRY=c(8.9,10,11), ALGEBRA_II=c(8,9,10,11)),
-#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", READING="Reading"),
+		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
+		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
 #		Earliest_Year_Reported=list(MATHEMATICS=2010),
 		Achievement_Level_Labels=list(
 			"Min Proficient"="Minimally Proficient",
@@ -1360,17 +1361,17 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <-
 		Vertical_Scale = c(SGPstateData[["PARCC"]][["Student_Report_Information"]][["Vertical_Scale"]], list(
 			ELA_SS=FALSE, MATHEMATICS_SS=FALSE, GEOMETRY_SS=FALSE, ALGEBRA_I_SS=FALSE, ALGEBRA_II_SS=FALSE, INTEGRATED_MATH_1_SS=FALSE, INTEGRATED_MATH_2_SS=FALSE, INTEGRATED_MATH_3_SS=FALSE)),
 		Content_Areas_Labels=list(
-				ELA="ELA", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", 
+				ELA="ELA", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II",
 				INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3",
 				ELA_SS="ELA", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
 				INTEGRATED_MATH_1_SS="Integrtd Math 1", INTEGRATED_MATH_2_SS="Integrtd Math 2", INTEGRATED_MATH_3_SS="Integrtd Math 3"),
 		Content_Areas_Domains=list(
-				ELA="ELA", MATHEMATICS="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS", 
+				ELA="ELA", MATHEMATICS="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 				INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS",
 				ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS",
 				INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
 		Grades_Reported=list(
-				ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8"), GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT", 
+				ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8"), GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT",
 				INTEGRATED_MATH_1="EOCT", INTEGRATED_MATH_2="EOCT", INTEGRATED_MATH_3="EOCT",
 				ELA_SS=c("3","4","5","6","7","8","9"), MATHEMATICS_SS=c("3","4","5","6","7","8"), GEOMETRY_SS="EOCT", ALGEBRA_I_SS="EOCT", ALGEBRA_II_SS="EOCT",
 				INTEGRATED_MATH_1_SS="EOCT", INTEGRATED_MATH_2_SS="EOCT", INTEGRATED_MATH_3_SS="EOCT"),

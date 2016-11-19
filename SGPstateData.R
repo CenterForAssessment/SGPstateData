@@ -5488,8 +5488,8 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 
 SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
-		# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=paste(2007:2017, 2008:2018, sep="_"), READING=paste(2007:2017, 2008:2018, sep="_")),
-		# Transformed_Achievement_Level_Cutscores_gaPlot=list( MATHEMATICS=paste(2007:2017, 2008:2018, sep="_"), READING=paste(2007:2017, 2008:2018, sep="_")),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list( MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),

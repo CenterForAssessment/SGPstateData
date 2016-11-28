@@ -543,7 +543,7 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	sgp.minimum.default.panel.years=2,
 	print.other.gp=TRUE,
 	sgp.cohort.size=2000,
-	sgp.less.than.sgp.cohort.size.return="<2000")
+	sgp.less.than.sgp.cohort.size.return="< 2000 Student in Norm Group")
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),

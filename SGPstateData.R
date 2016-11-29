@@ -3567,7 +3567,7 @@ SGPstateData[["KY"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(109, 300),
 			loss.hoss_8=c(108, 278)))
 
-SGPstateData[["KY"]][["Achievement"]][["Achievement"]][["Cutscores"]] <-
+SGPstateData[["KY"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
 			GRADE_3=c(192, 210, 234),

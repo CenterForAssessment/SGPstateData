@@ -3523,6 +3523,98 @@ SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 
 
 #########################################################
+### KENTUCKY
+#########################################################
+
+SGPstateData[["KY"]][["Achievement"]][["Knots_Boundaries"]] <-
+	list(
+		MATHEMATICS=list(
+			boundaries_3=c(80, 320),
+			boundaries_4=c(85.5, 319.5),
+			boundaries_5=c(87.7, 319.3),
+			boundaries_6=c(89.9, 319.1),
+			boundaries_7=c(94.3, 318.7),
+			boundaries_8=c(92.1, 318.9),
+			knots_3= c(191, 202, 213, 225),
+			knots_4=c(194, 204, 213, 226),
+			knots_5=c(194, 205, 214, 226),
+			knots_6=c(192, 201, 212, 223),
+			knots_7=c(192, 201, 210, 222),
+			knots_8=c(193, 202, 212, 223),
+			loss.hoss_3=c(100, 300),
+			loss.hoss_4=c(105, 300),
+			loss.hoss_5=c(107, 300),
+			loss.hoss_6=c(109, 300),
+			loss.hoss_7=c(113, 300),
+			loss.hoss_8=c(111, 300)),
+		READING=list(
+			boundaries_3=c(85.7, 305.3),
+			boundaries_4=c(80.3, 316.7),
+			boundaries_5=c(89.1, 315.9),
+			boundaries_6=c(84.4, 319.6),
+			boundaries_7=c(89.9, 319.1),
+			boundaries_8=c(91, 295),
+			knots_3= c(194, 206, 215, 226),
+			knots_4=c(195, 206, 215, 225),
+			knots_5=c(197, 207, 214, 223),
+			knots_6=c(194, 205, 214, 224),
+			knots_7=c(197, 207, 215, 225),
+			knots_8=c(197, 206, 214, 223),
+			loss.hoss_3=c(104, 287),
+			loss.hoss_4=c(100, 297),
+			loss.hoss_5=c(108, 297),
+			loss.hoss_6=c(104, 300),
+			loss.hoss_7=c(109, 300),
+			loss.hoss_8=c(108, 278)))
+
+SGPstateData[["KY"]][["Achievement"]][["Achievement"]][["Cutscores"]] <-
+	list(
+		MATHEMATICS=list(
+			GRADE_3=c(192, 210, 234),
+			GRADE_4=c(194, 210, 229),
+			GRADE_5=c(192, 210, 229),
+			GRADE_6=c(191, 210, 231),
+			GRADE_7=c(192, 210, 231),
+			GRADE_8=c(192, 210, 232)),
+		READING=list(
+			GRADE_3=c(198, 210, 226),
+			GRADE_4=c(197, 210, 227),
+			GRADE_5=c(198, 210, 226),
+			GRADE_6=c(199, 210, 227),
+			GRADE_7=c(199, 210, 226),
+			GRADE_8=c(199, 210, 225)))
+
+SGPstateData[["KY"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Novice", "Apprentice", "Proficient", "Distinguished"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["KS"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="K-PREP",
+	Assessment_Abbreviation="K-PREP",
+	Content_Areas=c("READING", "MATHEMATICS"),
+	Assessment_Years=c("2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Grades_Tested=c(3, 4, 5, 6, 7, 8),
+	Test_Vendor="Pearson",
+	Test_Season="Spring")
+
+SGPstateData[["KS"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=paste(2012:2015, 2013:2018, sep="_"),
+									READING=paste(2012:2015, 2013:2018, sep="_")),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=paste(2012:2015, 2013:2018, sep="_"),
+									READING=paste(2012:2015, 2013:2018, sep="_")),
+	Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+	Achievement_Level_Labels=list(
+		"Novice"="Novice",
+		"Apprentice"="Apprentice",
+		"Proficient"="Proficient",
+		"Distinguished"="Distinguished"))
+
+#########################################################
 ### MAINE
 #########################################################
 

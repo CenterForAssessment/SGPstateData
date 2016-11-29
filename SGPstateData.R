@@ -3589,7 +3589,7 @@ SGPstateData[["KY"]][["Achievement"]][["Levels"]] <-
 		Labels=c("Novice", "Apprentice", "Proficient", "Distinguished"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["KS"]][["Assessment_Program_Information"]] <- list(
+SGPstateData[["KY"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="K-PREP",
 	Assessment_Abbreviation="K-PREP",
 	Content_Areas=c("READING", "MATHEMATICS"),
@@ -3598,7 +3598,7 @@ SGPstateData[["KS"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="Pearson",
 	Test_Season="Spring")
 
-SGPstateData[["KS"]][["Student_Report_Information"]] <- list(
+SGPstateData[["KY"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
 									MATHEMATICS=paste(2012:2015, 2013:2018, sep="_"),
 									READING=paste(2012:2015, 2013:2018, sep="_")),
@@ -3613,6 +3613,7 @@ SGPstateData[["KS"]][["Student_Report_Information"]] <- list(
 		"Apprentice"="Apprentice",
 		"Proficient"="Proficient",
 		"Distinguished"="Distinguished"))
+
 
 #########################################################
 ### MAINE

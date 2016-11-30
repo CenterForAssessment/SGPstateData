@@ -6341,7 +6341,8 @@ SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Bounda
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
 #source("Cutscores/RLI/RLI_Cutscores.R")
 #source("Cutscores/RLI/RLI_Cutscores_08152015.R")
-source("Cutscores/RLI/RLI_Cutscores_08012016.R")
+#source("Cutscores/RLI/RLI_Cutscores_08012016.R")
+source("Cutscores/RLI/RLI_Cutscores_11282016.R")
 
 SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
 

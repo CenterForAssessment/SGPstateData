@@ -97,7 +97,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgp.projections.max.forward.progression.years=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
-		sgPlot.show.content_area.progression=TRUE,
+		# sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
 		sgp.less.than.sgp.cohort.size.return="<1000",
 		sgp.projections.use.only.complete.matrices=FALSE,
@@ -1280,7 +1280,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Name="Colorado Department of Education",
 			Abbreviation="CDE",
 			URL="www.schoolview.org",
-			Contact="303-866-6600"),
+			Contact="303-866-6763"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 			Assessment_Years=c("2014_2015", "2015_2016"), #"2015_2016.1", Only Spring assessments (?)
@@ -1330,6 +1330,7 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	INTEGRATED_MATH_3_SS=3)
 
 SGPstateData[["CO"]][["SGP_Configuration"]][["arrow.legend.color"]] <- c("#FD5050", "#FDBF1A", "#07B806")
+SGPstateData[["CO"]][["SGP_Configuration"]][["sgPlot.use.student.id"]] <- TRUE
 
 SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP = c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS"),
@@ -1338,6 +1339,7 @@ SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 
 SGPstateData[["CO"]][["Student_Report_Information"]] <-
 	list(
+		Include_Front_Page_in_School_Catalog=FALSE,
 		sgPlot.year.span = 3, # Number of years to represent in Chart.  Default is 5.  Here 3 = 2 test years and 1 future year (growth proj fan)
 		Transformed_Achievement_Level_Cutscores = c(SGPstateData[["PARCC"]][["Student_Report_Information"]][["Transformed_Achievement_Level_Cutscores"]], list(
 			ELA_SS=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2"),
@@ -1360,10 +1362,10 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <-
 		Vertical_Scale = c(SGPstateData[["PARCC"]][["Student_Report_Information"]][["Vertical_Scale"]], list(
 			ELA_SS=FALSE, MATHEMATICS_SS=FALSE, GEOMETRY_SS=FALSE, ALGEBRA_I_SS=FALSE, ALGEBRA_II_SS=FALSE, INTEGRATED_MATH_1_SS=FALSE, INTEGRATED_MATH_2_SS=FALSE, INTEGRATED_MATH_3_SS=FALSE)),
 		Content_Areas_Labels=list(
-				ELA="ELA", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II",
+				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II",
 				INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3",
-				ELA_SS="ELA", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
-				INTEGRATED_MATH_1_SS="Integrtd Math 1", INTEGRATED_MATH_2_SS="Integrtd Math 2", INTEGRATED_MATH_3_SS="Integrtd Math 3"),
+				ELA_SS="English Language Arts", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
+				INTEGRATED_MATH_1_SS="Integrated Math 1", INTEGRATED_MATH_2_SS="Integrated Math 2", INTEGRATED_MATH_3_SS="Integrated Math 3"),
 		Content_Areas_Domains=list(
 				ELA="ELA", MATHEMATICS="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS",
 				INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS",
@@ -1377,12 +1379,13 @@ SGPstateData[["CO"]][["Student_Report_Information"]] <-
 		Grades_Reported_Domains=list(
 				ELA=c("3","4","5","6","7","8","9"), ELA_SS=c("3","4","5","6","7","8","9"),
 				MATHEMATICS=c("3","4","5","6","7","8","EOCT"), MATHEMATICS_SS=c("3","4","5","6","7","8","EOCT")),
+		Proficiency_Label = "benchmark",
 		Achievement_Level_Labels=list(
-				"Level 1"="Level 1",
-				"Level 2"="Level 2",
-				"Level 3"="Level 3",
-				"Level 4"="Level 4",
-				"Level 5"="Level 5"))
+				"Did Not Yet Meet"="Level 1",
+				"Partially Meeting"="Level 2",
+				"Approaching"="Level 3",
+				"Meeting"="Level 4",
+				"Exceeding"="Level 5"))
 
 
 #########################################################
@@ -1581,7 +1584,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 	Assessment_Abbreviation="DEMO",
 	Organization=list(
 		Name="Student Growth Percentiles Package",
-		Abbreviation="SGP Package",
+		Abbreviation="the SGP Package",
 		URL="www.sgp.io",
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
@@ -1597,6 +1600,7 @@ SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 	Projection_Fan_Limits=c(5, 95),
 	Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
+	# Use_EOCT_Label = TRUE, # Use this (non-NULL) to print 'EOCT' instead of CONTENT_AREA in first row of
 	Achievement_Level_Labels=list(
 		"Unsatisfactory"="Unsatisfactory",
 		"Part Proficient"="Partially Proficient",
@@ -6903,7 +6907,7 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <-
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.projections.max.forward.progression.years=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
-		sgPlot.show.content_area.progression=TRUE,
+		# sgPlot.show.content_area.progression=TRUE,
 		sgp.cohort.size=1000,
 		sgp.projections.use.only.complete.matrices=FALSE,
 		null.output.string="",

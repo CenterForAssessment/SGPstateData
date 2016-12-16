@@ -2697,6 +2697,7 @@ SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan=TRUE,
 	output.groups=c("COMPLEX", "SCHOOL"),
 	outputSGP.translate.names=FALSE,
+	state.multiple.year.summary=2,
 	output.column.order=list(SGP_Data_LONG=
 		c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
 		  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER",

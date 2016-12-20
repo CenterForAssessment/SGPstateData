@@ -9014,7 +9014,7 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 ##########################################################################################
 
 load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
-SGPstateData[["WIDA_GA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries  ##I will update the knots and Boundaries for GA
+SGPstateData[["WIDA_GA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Cutscores"]] <- list(
   READING =list(
@@ -9069,7 +9069,6 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
     "Expanding"="L4",
     "Bridging"="L5",
     "Reaching"="L6"))
-
 
 SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
   max.order.for.percentile=2,

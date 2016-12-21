@@ -9042,7 +9042,8 @@ SGPstateData[["WIDA_GA"]][["Growth"]][["Cutscores"]] <- list(
   Cuts=c(35, 66),
   Labels=c("1st-34th","35th-65th","66th-99th"))
 
-SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+#SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
 
 SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
   Assessment_Name="World Class Instructional Design and Assessment",
@@ -9063,20 +9064,23 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
   Content_Areas_Labels=list(READING="Reading"),
   Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
   Achievement_Level_Labels=list(
-    "Entering"="L1",
-    "Emerging"="L2",
-    "Developing"="L3",
-    "Expanding"="L4",
-    "Bridging"="L5",
-    "Reaching"="L6"))
+    "Entering"="WIDA Level 1",
+    "Emerging"="WIDA Level 2",
+    "Developing"="WIDA Level 3",
+    "Expanding"="WIDA Level 4",
+    "Bridging"="WIDA Level 5",
+    "Reaching"="WIDA Level 6"))
 
 SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
   max.order.for.percentile=2,
   max.order.for.projection=2,
   max.sgp.target.years.forward=5,
   sgp.projections.max.forward.progression.years=7,
-  sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
-  sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+  return.norm.group.scale.scores=TRUE,
+  print.other.gp=TRUE,
+  print.sgp.order=TRUE,
+  sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
+  sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
   sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")

@@ -9042,7 +9042,8 @@ SGPstateData[["WIDA_GA"]][["Growth"]][["Cutscores"]] <- list(
   Cuts=c(35, 66),
   Labels=c("1st-34th","35th-65th","66th-99th"))
 
-SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+#SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
 
 SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
   Assessment_Name="World Class Instructional Design and Assessment",

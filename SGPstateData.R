@@ -9076,6 +9076,9 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
   max.order.for.projection=2,
   max.sgp.target.years.forward=5,
   sgp.projections.max.forward.progression.years=7,
+  return.norm.group.scale.scores=TRUE,
+  print.other.gp=TRUE,
+  print.sgp.order=TRUE,
   sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
   sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
   sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))

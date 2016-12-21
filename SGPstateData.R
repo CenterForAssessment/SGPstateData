@@ -9064,12 +9064,12 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
   Content_Areas_Labels=list(READING="Reading"),
   Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
   Achievement_Level_Labels=list(
-    "Entering"="L1",
-    "Emerging"="L2",
-    "Developing"="L3",
-    "Expanding"="L4",
-    "Bridging"="L5",
-    "Reaching"="L6"))
+    "Entering"="WIDA Level 1",
+    "Emerging"="WIDA Level 2",
+    "Developing"="WIDA Level 3",
+    "Expanding"="WIDA Level 4",
+    "Bridging"="WIDA Level 5",
+    "Reaching"="WIDA Level 6"))
 
 SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
   max.order.for.percentile=2,

@@ -1288,7 +1288,9 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
 
-SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+
+SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- c(
+	SGPstateData[["PARCC"]][["SGP_Configuration"]][["grade.projection.sequence"]], list(
 	ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
 	MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	MATHEMATICS_INTGRT_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -1297,8 +1299,9 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 	ALGEBRA_II_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	INTEGRATED_MATH_1_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	INTEGRATED_MATH_2_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-	INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")) # "3", "4", "5", "6", "7", "8",
-SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")))
+SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- c(
+	SGPstateData[["PARCC"]][["SGP_Configuration"]][["content_area.projection.sequence"]], list(
 	ELA_SS=rep("ELA_SS", 7),
 	MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
 	MATHEMATICS_INTGRT_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
@@ -1307,8 +1310,9 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 	ALGEBRA_II_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
 	INTEGRATED_MATH_1_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
 	INTEGRATED_MATH_2_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"),
-	INTEGRATED_MATH_3_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS")) #
-SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	INTEGRATED_MATH_3_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS"))) #
+SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- c(
+	SGPstateData[["PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequence"]], list(
 	ELA_SS=rep(1L, 6),
 	MATHEMATICS_SS=rep(1L, 8),
 	MATHEMATICS_INTGRT_SS=rep(1L, 8),
@@ -1317,8 +1321,9 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 	ALGEBRA_II_SS=rep(1L, 8),
 	INTEGRATED_MATH_1_SS=rep(1L, 8),
 	INTEGRATED_MATH_2_SS=rep(1L, 8),
-	INTEGRATED_MATH_3_SS=rep(1L, 8))
-SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	INTEGRATED_MATH_3_SS=rep(1L, 8)))
+SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- c(
+	SGPstateData[["PARCC"]][["SGP_Configuration"]][["max.forward.projection.sequence"]], list(
 	ELA_SS=3,
 	MATHEMATICS_SS=3,
 	MATHEMATICS_INTGRT_SS=3,
@@ -1327,14 +1332,16 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	ALGEBRA_II_SS=3,
 	INTEGRATED_MATH_1_SS=3,
 	INTEGRATED_MATH_2_SS=3,
-	INTEGRATED_MATH_3_SS=3)
+	INTEGRATED_MATH_3_SS=3))
 
 SGPstateData[["CO"]][["SGP_Configuration"]][["arrow.legend.color"]] <- c("#FD5050", "#FDBF1A", "#07B806")
 SGPstateData[["CO"]][["SGP_Configuration"]][["sgPlot.use.student.id"]] <- TRUE
 
 SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS"),
-	PREFERENCE = c(1, 2, 1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
+	SGP_PROJECTION_GROUP =
+		c("MATHEMATICS_SS", "MATHEMATICS_INTGRT_SS", "ALGEBRA_I_SS", "INTEGRATED_MATH_1_SS", "GEOMETRY_SS", "INTEGRATED_MATH_2_SS", "ALGEBRA_II_SS", "INTEGRATED_MATH_3_SS",
+			"MATHEMATICS", "MATHEMATICS_INTGRT", "ALGEBRA_I", "INTEGRATED_MATH_1", "GEOMETRY", "INTEGRATED_MATH_2", "ALGEBRA_II", "INTEGRATED_MATH_3"),
+	PREFERENCE = c(1, 3, 1, 3, 1, 3, 1, 3, 2, 4, 2, 4, 2, 4, 2, 4), key = "SGP_PROJECTION_GROUP")
 
 
 SGPstateData[["CO"]][["Student_Report_Information"]] <-

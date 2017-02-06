@@ -6347,7 +6347,8 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 #########################################################
 
 RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
-load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/RLI_Knots_Boundaries_RASCH.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R

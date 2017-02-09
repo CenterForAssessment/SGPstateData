@@ -3466,6 +3466,70 @@ SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #SGPstateData[["IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- IN_Baseline_Matrices[["ELA.BASELINE"]]
 
 
+########################################################
+### IOWA
+#########################################################
+
+#load("Knots_Boundaries/IOWA_Knots_Boundaries.Rdata")
+#SGPstateData[["IA"]][["Achievement"]][["Knots_Boundaries"]] <- IA_Knots_Boundaries
+
+SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
+    list(
+        READING=list(
+            GRADE_3=c(175,217),
+            GRADE_4=c(189,235),
+            GRADE_5=c(202,253),
+            GRADE_6=c(213,264),
+            GRADE_7=c(226,287),
+            GRADE_8=c(239,303),
+            GRADE_10=c(257,325),
+            GRADE_11=c(263,325)),
+        MATHEMATICS=list(
+            GRADE_3=c(177,204),
+            GRADE_4=c(189,223),
+            GRADE_5=c(200,242),
+            GRADE_6=c(212,257),
+            GRADE_7=c(222,276),
+            GRADE_8=c(236,290),
+            GRADE_10=c(249,310),
+            GRADE_11=c(263,326)))
+
+SGPstateData[["IA"]][["Achievement"]][["Levels"]] <-
+    list(
+    Labels=c("Not Proficent", "Proficent", "Advanced"),
+    Proficient=c("Not Proficent", "Proficent", "Advanced"))
+
+SGPstateData[["IA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["IA"]][["Growth"]][["Cutscores"]] <-
+    list(
+    Cuts=c(35, 66),
+    Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["IA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["IA"]][["Assessment_Program_Information"]] <-
+    list(
+    Assessment_Name="Iowa Assessment",
+    Assessment_Abbreviation="ITP",
+    Organization=list(
+        Name="IOWA",
+        Abbreviation="IA"),
+    Content_Areas=c("Mathematics", "Reading"),
+    Grades_Tested=c(3,4,5,6,7,8,10,11),
+    Test_Season="Spring",
+    Test_Vendor="ITP")
+
+SGPstateData[["IA"]][["Student_Report_Information"]] <- list(
+    Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
+    Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)),
+    Achievement_Level_Labels=list(
+        "Not Proficient"="Not Proficient Step",
+        "Proficient"="Proficient",
+        "Advanced"="Advanced"))
+
+
 #########################################################
 ### KANSAS
 #########################################################
@@ -6347,7 +6411,8 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 #########################################################
 
 RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
-load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/RLI_Knots_Boundaries_RASCH.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R

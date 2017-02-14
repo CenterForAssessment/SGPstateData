@@ -50,7 +50,7 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 			Contact="202-748-8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -597,21 +597,21 @@ SGPstateData[["ATI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 #########################################################
 
 load("Knots_Boundaries/PARCC_BIA_Knots_Boundaries.Rdata")
-SGPstateData[["BIA"]] <- SGPstateData[['PARCC']]
-SGPstateData[["BIA"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_BIA_Knots_Boundaries
+SGPstateData[["BI"]] <- SGPstateData[['PARCC']]
+SGPstateData[["BI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_BIA_Knots_Boundaries
 
-SGPstateData[["BIA"]][["Assessment_Program_Information"]] <-
+SGPstateData[["BI"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
 		Organization=list(
 			Name="Bureau of Indian Affairs",
-			Abbreviation="BIA",
+			Abbreviation="BI",
 			URL="www.indianaffairs.gov",
 			Contact="202-208-3710"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 			Test_Season="Fall & Spring",
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
@@ -1283,7 +1283,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Contact="303-866-6763"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Assessment_Years=c("2014_2015", "2015_2016"), #"2015_2016.1", Only Spring assessments (?)
+			Assessment_Years=c("2014_2015", "2015_2016", "2016_2017"),
 			Test_Season="Fall & Spring",
 			Test_Vendor="Pearson",
 			CSEM="SCALE_SCORE_CSEM")
@@ -3296,7 +3296,7 @@ SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 			Contact="866-262-6663"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -3829,7 +3829,7 @@ SGPstateData[["MD"]][["Assessment_Program_Information"]] <-
 			Contact="888-246-0016"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -6071,7 +6071,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -6163,7 +6163,7 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 			Contact="505-827-5800"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -6927,13 +6927,92 @@ SGPstateData[["RI_ORIGINAL"]][["SGP_Configuration"]] <- list(
 SGPstateData[["RI_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RI_Variable_Name_Lookup.csv", colClasses=c(rep("character", 4), "logical"))
 
 
+### RHODE ISLAND (USED for STATE ANALYSES in 2016)
+
+#load("Knots_Boundaries/PARCC_RI_Knots_Boundaries.Rdata")
+#load("Cutscores/PARCC/PARCC_Cutscores_NO_DOT_YEAR.Rdata")
+#SGPstateData[["RI"]] <- SGPstateData[['PARCC']]
+#SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_RI_Knots_Boundaries
+#SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores_NO_DOT_YEAR
+
+#SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
+#	list(
+#		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+#		Assessment_Abbreviation="PARCC",
+#		Organization=list(
+#			Name="Rhode Island Department of Education",
+#			Abbreviation="RIDE",
+#			URL="www.ride.ri.gov/",
+#			Contact="401-222-4600"),
+#		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I"),
+#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+#		Assessment_Years=c("2014_2015", "2015_2016"),
+#		Test_Season="Fall & Spring",
+#		Test_Vendor="Pearson",
+#		CSEM="SCALE_SCORE_CSEM")
+
+#SGPstateData[["RI"]][["Student_Report_Information"]] <-
+#	list(
+#		Transformed_Achievement_Level_Cutscores=list(
+#													MATHEMATICS=paste(2014:2017, 2015:2018, sep="_"),
+#													ELA=paste(2014:2017, 2015:2018, sep="_"),
+#													GEOMETRY=paste(2014:2017, 2015:2018, sep="_"),
+#													ALGEBRA_I=paste(2014:2017, 2015:2018, sep="_")),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#													MATHEMATICS=paste(2014:2017, 2015:2018, sep="_"),
+#													ELA=paste(2014:2017, 2015:2018, sep="_"),
+#													GEOMETRY=paste(2014:2017, 2015:2018, sep="_"),
+#													ALGEBRA_I=paste(2014:2017, 2015:2018, sep="_")),
+#		Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE, GEOMETRY=FALSE, ALGEBRA_I=FALSE),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I"),
+#		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS"),
+#		Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), ELA=c("3","4","5","6","7","8","9","10"), GEOMETRY="EOCT", ALGEBRA_I="EOCT"),
+#		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10")),
+#		Achievement_Level_Labels=list(
+#			"Level 1"="Level 1",
+#			"Level 2"="Level 2",
+#			"Level 3"="Level 3",
+#			"Level 4"="Level 4",
+#			"Level 5"="Level 5"))
+
+#SGPstateData[["RI"]][["SGP_Configuration"]] <-
+#	list(
+#		fix.duplicates="KEEP.ALL",
+#		sgp.minimum.default.panel.years=2,
+#		percentile.cuts=c(1,35,50,66,99),
+#		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+#		sgp.projections.max.forward.progression.years=FALSE,
+#		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
+#		# sgPlot.show.content_area.progression=TRUE,
+#		sgp.cohort.size=1000,
+#		sgp.projections.use.only.complete.matrices=FALSE,
+#		null.output.string="",
+#		grade.projection.sequence=list(
+#			ELA=c("3", "4", "5", "6", "7", "8", "9", "10"),
+#			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
+#		content_area.projection.sequence=list(
+#			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+#			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
+#			GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
+#			ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY")),
+#		year_lags.projection.sequence=list(
+#			ELA=rep(1L, 7),
+#			MATHEMATICS=rep(1L, 7),
+#			GEOMETRY=rep(1L, 7),
+#			ALGEBRA_I=rep(1L, 7)),
+#		max.forward.projection.sequence=list(
+#			ELA=3,
+#			MATHEMATICS=3,
+#			GEOMETRY=3,
+#			ALGEBRA_I=3))
+
 ### RHODE ISLAND
 
 load("Knots_Boundaries/PARCC_RI_Knots_Boundaries.Rdata")
-load("Cutscores/PARCC/PARCC_Cutscores_NO_DOT_YEAR.Rdata")
 SGPstateData[["RI"]] <- SGPstateData[['PARCC']]
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_RI_Knots_Boundaries
-SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores_NO_DOT_YEAR
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 	list(
@@ -6946,67 +7025,10 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015", "2015_2016"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
-
-SGPstateData[["RI"]][["Student_Report_Information"]] <-
-	list(
-		Transformed_Achievement_Level_Cutscores=list(
-													MATHEMATICS=paste(2014:2017, 2015:2018, sep="_"),
-													ELA=paste(2014:2017, 2015:2018, sep="_"),
-													GEOMETRY=paste(2014:2017, 2015:2018, sep="_"),
-													ALGEBRA_I=paste(2014:2017, 2015:2018, sep="_")),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-													MATHEMATICS=paste(2014:2017, 2015:2018, sep="_"),
-													ELA=paste(2014:2017, 2015:2018, sep="_"),
-													GEOMETRY=paste(2014:2017, 2015:2018, sep="_"),
-													ALGEBRA_I=paste(2014:2017, 2015:2018, sep="_")),
-		Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE, GEOMETRY=FALSE, ALGEBRA_I=FALSE),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I"),
-		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS"),
-		Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), ELA=c("3","4","5","6","7","8","9","10"), GEOMETRY="EOCT", ALGEBRA_I="EOCT"),
-		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10")),
-		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"))
-
-SGPstateData[["RI"]][["SGP_Configuration"]] <-
-	list(
-		fix.duplicates="KEEP.ALL",
-		sgp.minimum.default.panel.years=2,
-		percentile.cuts=c(1,35,50,66,99),
-		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-		sgp.projections.max.forward.progression.years=FALSE,
-		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
-		# sgPlot.show.content_area.progression=TRUE,
-		sgp.cohort.size=1000,
-		sgp.projections.use.only.complete.matrices=FALSE,
-		null.output.string="",
-		grade.projection.sequence=list(
-			ELA=c("3", "4", "5", "6", "7", "8", "9", "10"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
-		content_area.projection.sequence=list(
-			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
-			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
-			GEOMETRY=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),
-			ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY")),
-		year_lags.projection.sequence=list(
-			ELA=rep(1L, 7),
-			MATHEMATICS=rep(1L, 7),
-			GEOMETRY=rep(1L, 7),
-			ALGEBRA_I=rep(1L, 7)),
-		max.forward.projection.sequence=list(
-			ELA=3,
-			MATHEMATICS=3,
-			GEOMETRY=3,
-			ALGEBRA_I=3))
 
 
 #########################################################
@@ -8355,7 +8377,7 @@ SGPstateData[["DC"]][["Assessment_Program_Information"]] <-
 			Contact="202-727-6436"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")

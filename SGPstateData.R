@@ -6411,7 +6411,6 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 #########################################################
 
 RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
-#load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
@@ -6586,17 +6585,6 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.3.Rdata")
-#SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-#	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-#	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-#	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-#)
 
 
 #########################################################
@@ -6727,16 +6715,6 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.3.Rdata")
-#SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-#	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-#		RLI_UK_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-#	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-#	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-#		RLI_UK_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-#)
 
 
 #########################################################

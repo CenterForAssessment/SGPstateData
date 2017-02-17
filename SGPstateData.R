@@ -6414,8 +6414,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 #########################################################
 
 RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
-#load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
-load("Knots_Boundaries/RLI_Knots_Boundaries_RASCH.Rdata")
+load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
@@ -6425,40 +6424,40 @@ SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Bounda
 #source("Cutscores/RLI/RLI_Cutscores_11282016.R")
 #source("Cutscores/RLI/RLI_Cutscores_12092016.R")
 #source("Cutscores/RLI/RLI_Cutscores_01242017.R")
-source("Cutscores/RLI/RLI_Cutscores_RASCH_01242017.R")
+#source("Cutscores/RLI/RLI_Cutscores_RASCH_01242017.R")
 
-SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
-
-SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
-	list( # use `<-` assignment for `if` test below and = to give list names.
-		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
-		State_Levels = list(
-			Two_Level_States = list(
-				States = Two_Level_States <- c("IN"),
-				Levels = c("Not Proficient", "Proficient")),
-			Three_Level_States = list(
-				States = Three_Level_States <- c("AB", "IA", "NE", "TX", "VA"),
-				Levels = c("Not Proficient", "Proficient", "Proficient")),
-			Four_Level_States = list(
-				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CA", "CT", "DE", "HI", "ID", "GA", "KS", "KY", "ME", "MI", "MN",
-					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
-				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-			Five_Level_States_A = list(
-				States = Five_Level_States_A <- c("FL", "OH", "NC"),
-				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
-			Five_Level_States_B = list(
-				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NJ", "NM", "RI"),
-				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
-			)
-		)
+#SGPstateData[["RLI"]][["Achievement"]][["Cutscore_Information"]] <-
+#	list( # use `<-` assignment for `if` test below and = to give list names.
+#		Cutscore_States = Cutscore_States <- unique(sapply(names(SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]]), function(x) strsplit(x, "[.]")[[1]][2], USE.NAMES=FALSE)),
+#		State_Levels = list(
+#			Two_Level_States = list(
+#				States = Two_Level_States <- c("IN"),
+#				Levels = c("Not Proficient", "Proficient")),
+#			Three_Level_States = list(
+#				States = Three_Level_States <- c("AB", "IA", "NE", "TX", "VA"),
+#				Levels = c("Not Proficient", "Proficient", "Proficient")),
+#			Four_Level_States = list(
+#				States = Four_Level_States <- c("AK", "AL", "AR", "AZ", "CA", "CT", "DE", "HI", "ID", "GA", "KS", "KY", "ME", "MI", "MN",
+#					"MO", "MT", "ND", "NH", "NV", "NY", "OK", "OR", "PA", "SC", "SD", "TN", "UT", "VT", "WA", "WI", "WV", "WY"),
+#				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#			Five_Level_States_A = list(
+#				States = Five_Level_States_A <- c("FL", "OH", "NC"),
+#				Levels = c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
+#			Five_Level_States_B = list(
+#				States = Five_Level_States_B <- c("CO", "DC", "IL", "LA", "MA", "MD", "MS", "NJ", "NM", "RI"),
+#				Levels = c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#			)
+#		)
 
 # Make sure we have all state cutscore information updated in levels:
-if (length(tmp <- setdiff(Cutscore_States, c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
-	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 2 - 5 Level list!", sep=""))
-}
-if (length(tmp <- setdiff(c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
-	message(paste("NOTE: Some states included in 2 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
-}
+#if (length(tmp <- setdiff(Cutscore_States, c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B)) > 0)) {
+#	message(paste("NOTE: Not all RLI Cutscore states (", paste(tmp, collapse=", "), ") included in 2 - 5 Level list!", sep=""))
+#}
+#if (length(tmp <- setdiff(c(Two_Level_States, Three_Level_States, Four_Level_States, Five_Level_States_A, Five_Level_States_B), Cutscore_States))) {
+#	message(paste("NOTE: Some states included in 2 - 5 Level list (", paste(tmp, collapse=", "), ") that do not have Cutscores!", sep=""))
+#}
+
+SGPstateData[["RLI"]][["Achievement"]][["Levels"]][['Labels']] <- c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5")
 
 SGPstateData[["RLI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -6519,7 +6518,8 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
-		projcuts.digits=0,
+		projcuts.digits=3,
+		percentile.trajectory.values=1:99,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 #			READING_SS=paste(1:12, 3, sep="."),
@@ -6588,17 +6588,6 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.1.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.2.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI/RLI_Baseline_Matrices_SGPt/RLI_Baseline_Matrices_2015_2016.3.Rdata")
-#SGPstateData[["RLI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-#	EARLY_LITERACY.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-#	READING.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['READING.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-#	MATHEMATICS.BASELINE=c(RLI_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-#		RLI_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-#)
 
 
 #########################################################
@@ -6667,7 +6656,8 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 		max.n.for.coefficient.matrices=200000,
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
-		projcuts.digits=0,
+		projcuts.digits=3,
+		percentile.trajectory.values=1:99,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 			MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
@@ -6728,16 +6718,6 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 				'SGP_PROJECTION_GROUP','GROUP')))
 
 SGPstateData[["RLI_UK"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/RLI_UK_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.1.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.2.Rdata")
-#load("Baseline_Coefficient_Matrices/RLI_UK/RLI_UK_Baseline_Matrices_SGPt/RLI_UK_Baseline_Matrices_2015_2016.3.Rdata")
-#SGPstateData[["RLI_UK"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- list(
-#	EARLY_LITERACY.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['EARLY_LITERACY.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['EARLY_LITERACY.BASELINE']],
-#		RLI_UK_Baseline_Matrices_2015_2016.3[['EARLY_LITERACY.BASELINE']]),
-#	READING.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['READING.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.3[['READING.BASELINE']]),
-#	MATHEMATICS.BASELINE=c(RLI_UK_Baseline_Matrices_2015_2016.1[['MATHEMATICS.BASELINE']], RLI_UK_Baseline_Matrices_2015_2016.2[['MATHEMATICS.BASELINE']],
-#		RLI_UK_Baseline_Matrices_2015_2016.3[['MATHEMATICS.BASELINE']])
-#)
 
 
 #########################################################

@@ -6487,10 +6487,12 @@ SGPstateData[["RLI"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE, EARLY_LITERACY=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, MATHEMATICS_RASCH=TRUE, READING=TRUE, READING_RASCH=TRUE, EARLY_LITERACY=TRUE, EARLY_LITERACY_RASCH=TRUE),
 		Projection_Fan_Limits=c(5, 95),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERACY="Early Literacy"),
-		Grades_Reported=list(MATHEMATICS=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), EARLY_LITERACY=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep="."))),
+		Content_Areas_Labels=list(MATHEMATICS="Math", MATHEMATICS_RASCH="Mathematics", READING="Reading", READING_RASCH="Reading", EARLY_LITERACY="Early Literacy", EARLY_LITERACY_RASCH="Early Literacy"),
+		Grades_Reported=list(MATHEMATICS=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), MATHEMATICS_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
+							 READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
+							 EARLY_LITERACY=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep=".")), EARLY_LITERACY_RASCH=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep="."))),
 		Achievement_Level_Labels=list(
 			"Unsatisfactory"="Unsatisfactory",
 			"Part Proficient"="Partially Proficient",
@@ -6644,10 +6646,12 @@ SGPstateData[["RLI_UK"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE, EARLY_LITERACY=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, MATHEMATICS_RASCH=TRUE, READING=TRUE, READING_RASCH=TRUE, EARLY_LITERACY=TRUE, EARLY_LITERACY_RASCH=TRUE),
 		Projection_Fan_Limits=c(5, 95),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", EARLY_LITERACY="Early Literacy"),
-		Grades_Reported=list(MATHEMATICS=c(1,2,3,4,5,6,7,8,9,10,11,12), READING=c(1,2,3,4,5,6,7,8,9,10,11,12), EARLY_LITERACY=c('PK','K',1,2,3)),
+		Content_Areas_Labels=list(MATHEMATICS="Math", MATHEMATICS_RASCH="Mathematics", READING="Reading", READING_RASCH="Reading", EARLY_LITERACY="Early Literacy", EARLY_LITERACY_RASCH="Early Literacy"),
+		Grades_Reported=list(MATHEMATICS=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), MATHEMATICS_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
+							 READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
+							 EARLY_LITERACY=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep=".")), EARLY_LITERACY_RASCH=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep="."))),
 		Achievement_Level_Labels=list(
 			"Unsatisfactory"="Unsatisfactory",
 			"Part Proficient"="Partially Proficient",

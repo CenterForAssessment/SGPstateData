@@ -6416,6 +6416,7 @@ SGPstateData[["OR"]][["Student_Report_Information"]] <- list(
 RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-function.R')
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
+load("Cutscores/RLI/RLI_Cutscores_testSGP.rda")
 
 # SGPstateData[["RLI"]][["Achievement"]][["Cutscores"]] #  See sourced file RLI_Cutscores.R
 #source("Cutscores/RLI/RLI_Cutscores.R")
@@ -6520,6 +6521,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
 		projcuts.digits=3,
 		percentile.trajectory.values=1:99,
+		testSGP.cutscores=RLI_Cutscores_testSGP,
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 #			READING_SS=paste(1:12, 3, sep="."),

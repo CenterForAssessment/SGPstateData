@@ -3485,8 +3485,9 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
             GRADE_6=c(213,264),
             GRADE_7=c(226,287),
             GRADE_8=c(239,303),
+			GRADE_9=c(249,317),
             GRADE_10=c(257,325),
-            GRADE_11=c(263,325)),
+            GRADE_11=c(263,331)),
         MATHEMATICS=list(
             GRADE_3=c(177,204),
             GRADE_4=c(189,223),

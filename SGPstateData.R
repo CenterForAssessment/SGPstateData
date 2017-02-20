@@ -3485,8 +3485,9 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
             GRADE_6=c(213,264),
             GRADE_7=c(226,287),
             GRADE_8=c(239,303),
+			GRADE_9=c(249,317),
             GRADE_10=c(257,325),
-            GRADE_11=c(263,325)),
+            GRADE_11=c(263,331)),
         MATHEMATICS=list(
             GRADE_3=c(177,204),
             GRADE_4=c(189,223),
@@ -3519,14 +3520,14 @@ SGPstateData[["IA"]][["Assessment_Program_Information"]] <-
         Name="IOWA",
         Abbreviation="IA"),
     Content_Areas=c("Mathematics", "Reading"),
-    Grades_Tested=c(3,4,5,6,7,8,10,11),
+    Grades_Tested=c(3,4,5,6,7,8,9,10,11),
     Test_Season="Spring",
     Test_Vendor="ITP")
 
 SGPstateData[["IA"]][["Student_Report_Information"]] <- list(
     Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
     Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), READING=c(3,4,5,6,7,8,10,11)),
+    Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
     Achievement_Level_Labels=list(
         "Not Proficient"="Not Proficient Step",
         "Proficient"="Proficient",

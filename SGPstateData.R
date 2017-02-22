@@ -3501,7 +3501,7 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
 SGPstateData[["IA"]][["Achievement"]][["Levels"]] <-
     list(
     Labels=c("Not Proficent", "Proficent", "Advanced"),
-    Proficient=c("Not Proficent", "Proficent", "Advanced"))
+    Proficient=c("Not Proficent", "Proficent", "Proficient"))
 
 SGPstateData[["IA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

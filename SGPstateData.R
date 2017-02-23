@@ -3529,7 +3529,7 @@ SGPstateData[["IA"]][["Student_Report_Information"]] <- list(
     Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
     Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
     Achievement_Level_Labels=list(
-        "Not Proficient"="Not Proficient Step",
+        "Not Proficient"="Not Proficient",
         "Proficient"="Proficient",
         "Advanced"="Advanced"))
 

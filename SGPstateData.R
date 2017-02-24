@@ -6445,8 +6445,7 @@ SGPstateData[["RLI"]][["Assessment_Program_Information"]] <-
 		Grades_Tested=c('PK','K',1,2,3,4,5,6,7,8,9,10,11,12),
 		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 		Test_Vendor="Renaissance Learning Incorporated",
-		Test_Season="Fall/Winter/Spring",
-		CSEM="SEM")
+		Test_Season="Fall/Winter/Spring")
 
 SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 	list(
@@ -6577,8 +6576,7 @@ SGPstateData[["RLI_UK"]][["Assessment_Program_Information"]] <-
 		Grades_Tested=c('K',1,2,3,4,5,6,7,8,9,10,11,12),
 		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 		Test_Vendor="Renaissance Learning Incorporated UK",
-		Test_Season="Fall/Winter/Spring",
-		CSEM="SEM")
+		Test_Season="Fall/Winter/Spring")
 
 SGPstateData[["RLI_UK"]][["Student_Report_Information"]] <-
 	list(

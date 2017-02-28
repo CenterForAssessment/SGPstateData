@@ -3477,26 +3477,27 @@ SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #SGPstateData[["IA"]][["Achievement"]][["Knots_Boundaries"]] <- IA_Knots_Boundaries
 
 SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
-    list(
-        READING=list(
-            GRADE_3=c(175,217),
-            GRADE_4=c(189,235),
-            GRADE_5=c(202,253),
-            GRADE_6=c(213,264),
-            GRADE_7=c(226,287),
-            GRADE_8=c(239,303),
-			GRADE_9=c(249,317),
-            GRADE_10=c(257,325),
-            GRADE_11=c(263,331)),
-        MATHEMATICS=list(
-            GRADE_3=c(177,204),
-            GRADE_4=c(189,223),
-            GRADE_5=c(200,242),
-            GRADE_6=c(212,257),
-            GRADE_7=c(222,276),
-            GRADE_8=c(236,290),
-            GRADE_10=c(249,310),
-            GRADE_11=c(263,326)))
+	list(
+		READING=list(
+			GRADE_3=c(175,218),
+			GRADE_4=c(189,236),
+			GRADE_5=c(202,254),
+			GRADE_6=c(213,265),
+			GRADE_7=c(226,288),
+			GRADE_8=c(239,304),
+			GRADE_9=c(249,318),
+			GRADE_10=c(257,326),
+			GRADE_11=c(263,332)),
+		MATHEMATICS=list(
+			GRADE_3=c(177,205),
+			GRADE_4=c(189,224),
+			GRADE_5=c(200,243),
+			GRADE_6=c(212,258),
+			GRADE_7=c(222,277),
+			GRADE_8=c(236,291),
+			GRADE_9=c(249,311),
+			GRADE_10=c(257,320),
+			GRADE_11=c(263,327)))
 
 SGPstateData[["IA"]][["Achievement"]][["Levels"]] <-
     list(

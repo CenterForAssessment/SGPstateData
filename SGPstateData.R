@@ -1650,17 +1650,13 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 #load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
 #SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
 
+
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING=list(
 			GRADE_1=c(-0.844, 0.201,  1.261),
 			GRADE_2=c(-0.66179, -0.37087, 0.08916),
 			GRADE_3=c(-0.844, 0.193, 1.237)))
-#			GRADE_9=c(-0.387, 0.341,  0.823),
-#			GRADE_12=c(-0.129, 0.469, 0.879)),
-#		MATHEMATICS=list(
-#			GRADE_9=c(-0.089, 0.500, 1.365),
-#			GRADE_12=c(0.019, 1.053, 1.427)))
 
 SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <-
 	list(

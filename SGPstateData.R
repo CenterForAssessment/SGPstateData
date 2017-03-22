@@ -1728,10 +1728,13 @@ SGPstateData[["GUA"]][["Student_Report_Information"]] <-
 			"Satisfactorio"="Satisfactorio",
 			"Excelente"="Excelente"))
 
-SGPstateData[["GUA"]][["SGP_Configuration"]] <- list(highest.level.summary.grouping="COUNTRY")
+SGPstateData[["GUA"]][["SGP_Configuration"]] <- list(
+							highest.level.summary.grouping="COUNTRY",
+							sgp.minimum.default.panel.years=2)
+
 SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-
+		
 #########################################################
 ### GEORGIA
 #########################################################

@@ -1644,6 +1644,48 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 
 
 #########################################################
+### DEMO EOCT (Necessary for some testSGP routines)
+#########################################################
+
+SGPstateData[["DEMO_EOCT"]] <- SGPstateData[['DEMO']]
+SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.sgp"]]
+setnames(SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
+
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
+	ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
+	ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"))
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	MATHEMATICS=rep(1L, 7),
+	ALGEBRA_I=rep(1L, 7),
+	ALGEBRA_II=rep(1L, 7))
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	MATHEMATICS=3,
+	ALGEBRA_I=3,
+	ALGEBRA_II=3)
+
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["fix.duplicates"]] <- "KEEP.ALL"
+SGPstateData[["DEMO_EOCT"]][["SGP_Norm_Group_Preference"]] <- NULL
+SGPstateData[["DEMO_EOCT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["DEMO_EOCT"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE, GRADE_9_LIT=TRUE, AMERICAN_LIT=TRUE, ALGEBRA_I=TRUE, ALGEBRA_II=TRUE),
+	Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading", GRADE_9_LIT="Grade 9 Literature", AMERICAN_LIT="American Literature", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+	Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", READING="READING", GRADE_9_LIT="READING", AMERICAN_LIT="READING", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
+	Grades_Reported=list(MATHEMATICS=c("3","4","5","6","7","8"), READING=c("3","4","5","6","7","8"), GRADE_9_LIT="EOCT", AMERICAN_LIT="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT"),
+	Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), READING=c("3","4","5","6","7","8","EOCT")),
+	Achievement_Level_Labels=list(
+		"Unsatisfactory"="Unsatisfactory",
+		"Part Proficient"="Partially Proficient",
+		"Proficient"="Proficient",
+		"Advanced"="Advanced"))
+
+
+#########################################################
 ### GUATEMALA/GUA
 #########################################################
 

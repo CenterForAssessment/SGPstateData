@@ -1689,9 +1689,8 @@ SGPstateData[["DEMO_EOCT"]][["Student_Report_Information"]] <- list(
 ### GUATEMALA/GUA
 #########################################################
 
-#load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
-#SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
-
+load("Knots_Boundaries/GUA_Knots_Boundaries.Rdata")
+SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Boundaries
 
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -1734,7 +1733,7 @@ SGPstateData[["GUA"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["GUA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GUA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-		
+
 #########################################################
 ### GEORGIA
 #########################################################

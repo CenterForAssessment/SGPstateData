@@ -8855,6 +8855,72 @@ SGPstateData[["WI"]][["SGP_Configuration"]] <-
 SGPstateData[["WI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WI_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
+########################################################
+### UNITED STATES VIRGIN ISLANDS (VI)
+#########################################################
+
+load("Knots_Boundaries/VI_Knots_Boundaries.Rdata")
+SGPstateData[["VI"]][["Achievement"]][["Knots_Boundaries"]] <- VI_Knots_Boundaries
+
+SGPstateData[["VI"]][["Achievement"]][["Cutscores"]] <-
+	list(
+		MATHEMATICS=list(
+			GRADE_3=c(2381, 2436, 2501),
+			GRADE_4=c(2411, 2485, 2549),
+			GRADE_5=c(2455, 2528, 2579),
+			GRADE_6=c(2473, 2552, 2610),
+			GRADE_7=c(2484, 2567, 2635),
+			GRADE_8=c(2504, 2586, 2653)),
+		ELA=list(
+			GRADE_3=c(2367, 2432, 2490),
+			GRADE_4=c(2416, 2473, 2533),
+			GRADE_5=c(2442, 2502, 2582),
+			GRADE_6=c(2457, 2531, 2618),
+			GRADE_7=c(2479, 2552, 2649),
+			GRADE_8=c(2487, 2567, 2668)))
+
+SGPstateData[["VI"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["VI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["VI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["VI"]][["Growth"]][["Cutscores"]] <- list(
+		Cuts=c(35, 66),
+		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["VI"]][["Assessment_Program_Information"]] <- list(
+		Assessment_Name="Smarter Balanced Assessment",
+		Assessment_Abbreviation="SBA",
+		Organization=list(
+		Name="Virgin Islands Department of Education",
+		Abbreviation="VIDOE",
+		URL="www.vide.vi",
+		Contact="340-774-0100"),
+		Content_Areas=c("Mathematics", "ELA"),
+		Grades_Tested=c(3,4,5,6,7,8),
+		Assessment_Years=c("2015", "2016"),
+		Test_Season="Spring",
+		Test_Vendor="SBAC")
+
+SGPstateData[["VI"]][["Student_Report_Information"]] <- list(
+		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+		Achievement_Level_Labels=list(
+			"Not Met Standard"="Not Met Standard",
+			"Nearly Met Standard"="Nearly Met Standard",
+			"Met Standard"="Met Standard",
+			"Exceeded Standard"="Exceeded Standard"))
+
+SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
+		sgp.minimum.default.panel.years=2,
+		print.other.gp=TRUE)
+
+
+
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA)
 ##########################################################################################

@@ -1695,6 +1695,7 @@ SGPstateData[["GUA"]][["Achievement"]][["Knots_Boundaries"]] <- GUA_Knots_Bounda
 SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING=list(
+			GRADE_0=c(-0.844, 0.201,  1.261),
 			GRADE_1=c(-0.844, 0.201,  1.261),
 			GRADE_2=c(-0.66179, -0.37087, 0.08916),
 			GRADE_3=c(-0.844, 0.193, 1.237),

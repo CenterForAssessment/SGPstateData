@@ -1697,7 +1697,8 @@ SGPstateData[["GUA"]][["Achievement"]][["Cutscores"]] <-
 		READING=list(
 			GRADE_1=c(-0.844, 0.201,  1.261),
 			GRADE_2=c(-0.66179, -0.37087, 0.08916),
-			GRADE_3=c(-0.844, 0.193, 1.237)))
+			GRADE_3=c(-0.844, 0.193, 1.237),
+			GRADE_4=c(-0.844, 0.193, 1.237)))
 
 SGPstateData[["GUA"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -1708,19 +1709,22 @@ SGPstateData[["GUA"]][["Growth"]][["Levels"]] <- c("Muy bajo", "Bajo", "T\u{ED}p
 SGPstateData[["GUA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["GUA"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(20, 40, 61, 81), Labels=list("1st-19th", "20th-39th", "40th-60th", "61st-80th", "81st-99th"))
 
-SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(1,2,3)
+SGPstateData[["GUA"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(0,1,2,3,4)
 
 SGPstateData[["GUA"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(
-										MATHEMATICS=as.character(2012:2018),
+#										MATHEMATICS=as.character(2012:2018),
 										READING=as.character(2012:2018)),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-										MATHEMATICS=as.character(2012:2018),
+#										MATHEMATICS=as.character(2012:2018),
 										READING=as.character(2012:2018)),
-		Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
-		Content_Areas_Labels=list(MATHEMATICS="Matem\u{E1}ticas", READING="Lectura"),
-		Grades_Reported=list(MATHEMATICS=c(1,2,3), READING=c(1,2,3)),
+#		Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
+		Vertical_Scale=list(READING=FALSE),
+#		Content_Areas_Labels=list(MATHEMATICS="Matem\u{E1}ticas", READING="Lectura"),
+		Content_Areas_Labels=list(READING="Lectura"),
+#		Grades_Reported=list(MATHEMATICS=c(0,1,2,3,4), READING=c(0,1,2,3,4)),
+		Grades_Reported=list(READING=c(0,1,2,3,4)),
 		Achievement_Level_Labels=list(
 			"Insatisfactorio"="Insatisfactorio",
 			"Necesita mejorar"="Necesita mejorar",

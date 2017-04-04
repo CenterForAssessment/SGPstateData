@@ -1650,29 +1650,45 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 SGPstateData[["DEMO_EOCT"]] <- SGPstateData[['DEMO']]
 SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.sgp"]]
 setnames(SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
+SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][-(c(9:14, 18:19, 21)),]
 
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	READING=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+	GRADE_9_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+	AMERICAN_LIT=c("READING", "READING", "READING", "READING", "READING", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
 	ALGEBRA_I=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"),
 	ALGEBRA_II=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "ALGEBRA_II"))
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	READING=rep(1L, 7),
 	MATHEMATICS=rep(1L, 7),
+	GRADE_9_LIT=rep(1L, 7),
+	AMERICAN_LIT=rep(1L, 7),
 	ALGEBRA_I=rep(1L, 7),
 	ALGEBRA_II=rep(1L, 7))
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	READING=3,
 	MATHEMATICS=3,
+	GRADE_9_LIT=3,
+	AMERICAN_LIT=3,
 	ALGEBRA_I=3,
 	ALGEBRA_II=3)
 
-SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["fix.duplicates"]] <- "KEEP.ALL"
+# SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["fix.duplicates"]] <- "KEEP.ALL"
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- TRUE
 SGPstateData[["DEMO_EOCT"]][["SGP_Norm_Group_Preference"]] <- NULL
 SGPstateData[["DEMO_EOCT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["DEMO_EOCT"]][["Student_Report_Information"]] <- list(
+	# Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=sgpData.years, READING=sgpData.years, GRADE_9_LIT=sgpData.years, AMERICAN_LIT=sgpData.years, ALGEBRA_I=sgpData.years, ALGEBRA_II=sgpData.years), ### FOR TESTING
+	# Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=sgpData.years, READING=sgpData.years, GRADE_9_LIT=sgpData.years, AMERICAN_LIT=sgpData.years, ALGEBRA_I=sgpData.years, ALGEBRA_II=sgpData.years), ### FOR TESTING
 	Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE, GRADE_9_LIT=TRUE, AMERICAN_LIT=TRUE, ALGEBRA_I=TRUE, ALGEBRA_II=TRUE),
 	Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading", GRADE_9_LIT="Grade 9 Literature", AMERICAN_LIT="American Literature", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
 	Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", READING="READING", GRADE_9_LIT="READING", AMERICAN_LIT="READING", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),

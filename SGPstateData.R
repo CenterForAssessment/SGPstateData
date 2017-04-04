@@ -8936,7 +8936,7 @@ SGPstateData[["VI"]][["Student_Report_Information"]] <- list(
 			"Met Standard"="Met Standard",
 			"Exceeded Standard"="Exceeded Standard"))
 
-SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
+SGPstateData[["VI"]][["SGP_Configuration"]] <- list(
 		sgp.minimum.default.panel.years=2,
 		print.other.gp=TRUE)
 

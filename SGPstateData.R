@@ -8711,7 +8711,6 @@ SGPstateData[["WV"]][["SGP_Configuration"]] <- list(
 ### WISCONSIN
 #########################################################
 
-load("CSEM/Wisconsin/Wisconsin_CSEM.Rdata")
 SGPstateData[["WI"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 	READING=list(
 		knots_3=c(431, 452, 469, 487),
@@ -8820,7 +8819,7 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 #	Test_Season="Fall", 2014 and prior
 	Test_Season="Spring",
 #	Test_Vendor="CTB/McGraw Hill",
-	Test_Vendor="SBAC",
+	Test_Vendor="DRC",
 	CSEM="SCALE_SCORE_CSEM")
 #	CSEM=Wisconsin_CSEM)
 
@@ -8938,7 +8937,8 @@ SGPstateData[["VI"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["VI"]][["SGP_Configuration"]] <- list(
 		sgp.minimum.default.panel.years=2,
-		print.other.gp=TRUE)
+		print.other.gp=TRUE,
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"))
 
 
 

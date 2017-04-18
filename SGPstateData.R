@@ -8776,6 +8776,13 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_7=c(2479, 2552, 2649),
 		GRADE_8=c(2487, 2567, 2668),
 		GRADE_11=c(2493, 2583, 2682)),
+	READING.2016=list(
+		GRADE_3=c(522, 570, 624),
+		GRADE_4=c(546, 592, 650),
+		GRADE_5=c(564, 610, 670),
+		GRADE_6=c(572, 622, 671),
+		GRADE_7=c(585, 638, 697),
+		GRADE_8=c(592, 652, 708)),
 	MATHEMATICS=list(
 		GRADE_3=c(388, 438, 492),
 		GRADE_4=c(425, 474, 526),
@@ -8791,7 +8798,14 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(2473, 2552, 2610),
 		GRADE_7=c(2484, 2567, 2635),
 		GRADE_8=c(2504, 2586, 2653),
-		GRADE_11=c(2543, 2628, 2718)))
+		GRADE_11=c(2543, 2628, 2718)),
+	MATHEMATICS.2016=list(
+		GRADE_3=c(517, 560, 611),
+		GRADE_4=c(536, 588, 633),
+		GRADE_5=c(574, 611, 658),
+		GRADE_6=c(582, 626, 688),
+		GRADE_7=c(606, 647, 712),
+		GRADE_8=c(620, 667, 718)))
 
 SGPstateData[["WI"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
@@ -8806,8 +8820,10 @@ SGPstateData[["WI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 SGPstateData[["WI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Wisconsin Badger Exam",
-	Assessment_Abbreviation="WBE",
+	Assessment_Name="Wisconsin Forward Exam",
+	Assessment_Abbreviation="WFE",
+#	Assessment_Name="Wisconsin Badger Exam",
+#	Assessment_Abbreviation="WBE",
 #	Assessment_Name="Wisconsin Knowledge and Concepts Examinations",
 #	Assessment_Abbreviation="WKCE",
 	Organization=list(

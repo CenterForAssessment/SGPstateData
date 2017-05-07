@@ -411,14 +411,6 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(3602, 3629, 3663),
 			GRADE_7=c(3629, 3652, 3680),
 			GRADE_8=c(3650, 3673, 3705)),
-		MATHEMATICS.2014=list(
-			GRADE_3=c(386, 420, 492),
-			GRADE_4=c(414, 448, 521),
-			GRADE_5=c(442, 476, 550),
-			GRADE_6=c(463, 496, 574),
-			GRADE_7=c(484, 517, 599),
-			GRADE_8=c(505, 537, 623),
-			GRADE_10=c(668, 683, 750)),
 		MATHEMATICS.2010=list(
 			GRADE_3=c(303, 347, 406),
 			GRADE_4=c(331, 366, 416),
@@ -426,6 +418,7 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(366, 398, 446),
 			GRADE_7=c(382, 411, 460),
 			GRADE_8=c(409, 426, 475),
+			GRADE_9=c(471, 487, 537),
 			GRADE_10=c(471, 487, 537)),
 		ALGEBRA_I.2015=list(
 			GRADE_EOCT=c(3661, 3681, 3720)),
@@ -443,13 +436,14 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(2555, 2577, 2606),
 			GRADE_10=c(2567, 2581, 2606),
 			GRADE_11=c(2569, 2585, 2608)),
-		READING.2014=list(
+		READING.2012=list(
 			GRADE_3=c(379, 431, 516),
 			GRADE_4=c(402, 450, 536),
 			GRADE_5=c(424, 468, 556),
 			GRADE_6=c(433, 478, 571),
 			GRADE_7=c(443, 489, 587),
 			GRADE_8=c(452, 499, 602),
+			GRADE_9=c(627, 674, 773),
 			GRADE_10=c(627, 674, 773)))
 
 SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-

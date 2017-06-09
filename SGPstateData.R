@@ -4668,7 +4668,8 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
 	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
 	Test_Season="Spring",
-	Test_Vendor="SBAC/DRC")
+	Test_Vendor="SBAC/DRC",
+	CSEM="CSEM")
 
 SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(

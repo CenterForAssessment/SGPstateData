@@ -9069,7 +9069,7 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]] <- list(
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

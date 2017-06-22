@@ -5420,7 +5420,7 @@ SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 #load("CSEM/Nevada/Nevada_CSEM.Rdata")
 
-#SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <- 
+#SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <-
 #	list(
 #		READING=list(
 #			knots_3=c(256, 296, 327, 357),
@@ -6557,7 +6557,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		outputSGP.pass.through.variables="OFFICIAL_WINDOW_SCORE",
 		sgp.target.types=c("Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.config.function=RLI_SGP_Config_Function,
-		max.n.for.coefficient.matrices=200000,
+		max.n.for.coefficient.matrices=500000,
 		sgp.use.my.sgp_object.baseline.coefficient.matrices=TRUE,
 		goodness.of.fit.achievement.level.prior=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),

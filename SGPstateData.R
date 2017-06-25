@@ -99,6 +99,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		calculate.confidence.intervals=list(confidence.quantiles=c(0.05, 0.95)),
 		# sgPlot.show.content_area.progression=TRUE,
 		return.norm.group.scale.scores=TRUE,
+		return.projection.group.scale.scores=TRUE,
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1000,

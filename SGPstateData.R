@@ -9488,10 +9488,24 @@ SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 SGPstateData[["WIDA_NV"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_NV"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
+SGPstateData[["WIDA_NV"]][["Achievement"]][["Cutscores"]][['READING.2017']] <- list(
+					GRADE_0=c(229, 261, 293, 309, 325, 350),
+					GRADE_1=c(242, 274, 315, 330, 344, 368),
+					GRADE_2=c(254, 289, 329, 344, 359, 383),
+					GRADE_3=c(265, 300, 340, 356, 371, 396),
+					GRADE_4=c(279, 309, 350, 366, 382, 406),
+					GRADE_5=c(286, 317, 358, 374, 390, 415),
+					GRADE_6=c(291, 324, 365, 382, 399, 423),
+					GRADE_7=c(298, 331, 372, 389, 406, 431),
+					GRADE_8=c(304, 337, 378, 395, 412, 438),
+					GRADE_9=c(311, 344, 385, 402, 418, 446),
+					GRADE_10=c(318, 350, 391, 408, 424, 453),
+					GRADE_11=c(325, 356, 397, 413, 429, 459),
+					GRADE_12=c(331, 362, 402, 418, 434, 466))
 
 SGPstateData[["WIDA_NV"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("L1", "L2", "L3", "L4", "L5", "L6"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient"))
+	Labels=c("L1", "L2", "L3", "L4", "L4.5", "L5", "L6"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient","Proficient"))
 
 SGPstateData[["WIDA_NV"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
@@ -9524,6 +9538,7 @@ SGPstateData[["WIDA_NV"]][["Student_Report_Information"]] <- list(
 		"Emerging"="L2",
 		"Developing"="L3",
 		"Expanding"="L4",
+		"Expanding+"="L4.5",
 		"Bridging"="L5",
 		"Reaching"="L6"))
 

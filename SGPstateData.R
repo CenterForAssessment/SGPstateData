@@ -541,6 +541,10 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	sgp.minimum.default.panel.years=2,
 	print.other.gp=TRUE,
 	sgp.cohort.size=2000,
+	return.norm.group.scale.scores=TRUE,
+	return.norm.group.dates=TRUE,
+	return.projection.group.scale.scores=TRUE,
+	return.projection.group.dates=TRUE,
 	sgp.less.than.sgp.cohort.size.return="< 2000 Student in Norm Group")
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(

@@ -151,7 +151,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 			ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			ALGEBRA_II_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-			INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			INTEGRATED_MATH_1_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			INTEGRATED_MATH_2=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			INTEGRATED_MATH_2_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			INTEGRATED_MATH_3=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -1352,7 +1352,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			URL="www.schoolview.org",
 			Contact="303-866-6763"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+			Grades_Tested=c(3,4,5,6,7,8,9),
 			Assessment_Years=c("2014_2015", "2015_2016", "2016_2017"),
 			Test_Season="Fall & Spring",
 			Test_Vendor="Pearson",
@@ -1360,6 +1360,44 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["CO"]][["SGP_Configuration"]][["arrow.legend.color"]] <- c("#FD5050", "#FDBF1A", "#07B806")
 SGPstateData[["CO"]][["SGP_Configuration"]][["sgPlot.use.student.id"]] <- TRUE
+
+SGPstateData[["CO"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
+		list(
+			ELA=c("3", "4", "5", "6", "7", "8", "9"),
+			ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATHEMATICS_INTGRT=c("3", "4", "5", "6", "7", "8", "EOCT"),
+			MATHEMATICS_INTGRT_SS=c("3", "4", "5", "6", "7", "8", "EOCT"),
+			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			GEOMETRY_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			ALGEBRA_I_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			INTEGRATED_MATH_1=c("3", "4", "5", "6", "7", "8", "EOCT"),
+			INTEGRATED_MATH_1_SS=c("3", "4", "5", "6", "7", "8", "EOCT"))
+
+SGPstateData[["CO"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
+  list(
+			ELA=rep("ELA", 7), ELA_SS=rep("ELA_SS", 7),
+			MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+			MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"),
+			MATHEMATICS_INTGRT=c(rep("MATHEMATICS", 6), "INTEGRATED_MATH_1"),
+			MATHEMATICS_INTGRT_SS=c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS"),
+			ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+			ALGEBRA_I_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"),
+			GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+			GEOMETRY_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"),
+			INTEGRATED_MATH_1=c(rep("MATHEMATICS", 6), "INTEGRATED_MATH_1"),
+			INTEGRATED_MATH_1_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS"))
+
+SGPstateData[["CO"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
+  list(
+			ELA=rep(1L, 6), ELA_SS=rep(1L, 6),
+			MATHEMATICS=rep(1L, 7), MATHEMATICS_SS=rep(1L, 7),
+			MATHEMATICS_INTGRT=rep(1L, 6), MATHEMATICS_INTGRT_SS=rep(1L, 6),
+			GEOMETRY=rep(1L, 7), GEOMETRY_SS=rep(1L, 7),
+			ALGEBRA_I=rep(1L, 7), ALGEBRA_I_SS=rep(1L, 7),
+			INTEGRATED_MATH_1=rep(1L, 6), INTEGRATED_MATH_1_SS=rep(1L, 6))
 
 SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
 	SGP_PROJECTION_GROUP =
@@ -3346,6 +3384,19 @@ SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
+
+SGPstateData[["IL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+		ELA=c("3", "4", "5", "6", "7", "8", "9"),
+		ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
+		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+SGPstateData[["IL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+		ELA=rep("ELA", 7), ELA_SS=rep("ELA_SS", 7),
+		MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+		MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"))
+SGPstateData[["IL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+		ELA=rep(1L, 6), ELA_SS=rep(1L, 6),
+		MATHEMATICS=rep(1L, 7), MATHEMATICS_SS=rep(1L, 7))
 
 
 #########################################################
@@ -7026,6 +7077,18 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+		ELA=c("3", "4", "5", "6", "7", "8", "9"),
+		ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
+		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+		ELA=rep("ELA", 7), ELA_SS=rep("ELA_SS", 7),
+		MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+		MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"))
+SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+		ELA=rep(1L, 6), ELA_SS=rep(1L, 6),
+		MATHEMATICS=rep(1L, 7), MATHEMATICS_SS=rep(1L, 7))
 
 #########################################################
 ### SOUTH DAKOTA
@@ -8378,6 +8441,18 @@ SGPstateData[["DC"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["DC"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+		ELA=c("3", "4", "5", "6", "7", "8", "9", "10"),
+		ELA_SS=c("3", "4", "5", "6", "7", "8", "9", "10"),
+		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+SGPstateData[["DC"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+		ELA=rep("ELA", 8), ELA_SS=rep("ELA_SS", 8),
+		MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
+		MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"))
+SGPstateData[["DC"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+		ELA=rep(1L, 7), ELA_SS=rep(1L, 7),
+		MATHEMATICS=rep(1L, 7), MATHEMATICS_SS=rep(1L, 7))
 
 #########################################################
 ### WEST VIRGINIA

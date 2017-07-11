@@ -1418,6 +1418,11 @@ SGPstateData[["CO"]][["Student_Report_Information"]][["Achievement_Level_Labels"
 		"Exceeding"="Level 5")
 
 
+SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.cohort.size"]] <- 2000
+SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.less.than.sgp.cohort.size.return"]] <- "<2000"
+SGPstateData[["CO"]][["SGP_Configuration"]][["return.norm.group.scale.scores"]] <- TRUE
+
+
 #########################################################
 ### CONNECTICUT
 #########################################################

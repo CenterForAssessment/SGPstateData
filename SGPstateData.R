@@ -1422,6 +1422,8 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.cohort.size"]] <- 2000
 SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.less.than.sgp.cohort.size.return"]] <- "<2000"
 SGPstateData[["CO"]][["SGP_Configuration"]][["return.norm.group.scale.scores"]] <- TRUE
 
+SGPstateData[["CO"]][["Variable_Name_Lookup"]] <- SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]]
+
 
 #########################################################
 ### CONNECTICUT
@@ -3476,7 +3478,7 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_5=c(486, 546),
 			GRADE_6=c(502, 572),
 			GRADE_7=c(516, 592),
-			GRADE_8=c(537, 617)),
+			GRADE_8=c(537, 617),
 			GRADE_10=c(244, 292)),
 		MATHEMATICS=list(
 			GRADE_3=c(413, 513),

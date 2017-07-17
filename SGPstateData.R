@@ -1422,6 +1422,8 @@ SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.cohort.size"]] <- 2000
 SGPstateData[["CO"]][["SGP_Configuration"]][["sgp.less.than.sgp.cohort.size.return"]] <- "<2000"
 SGPstateData[["CO"]][["SGP_Configuration"]][["return.norm.group.scale.scores"]] <- TRUE
 
+SGPstateData[["CO"]][["Variable_Name_Lookup"]] <- SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]]
+
 
 #########################################################
 ### CONNECTICUT

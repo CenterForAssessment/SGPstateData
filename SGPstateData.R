@@ -3420,6 +3420,7 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(173.3, 856.7),
 			boundaries_7=c(203.4, 876.6),
 			boundaries_8=c(223.4, 896.6),
+			boundaries_10=c(85, 415),
 			knots_2=c(402, 432, 458, 490),
 			knots_3=c(422, 452, 478, 507),
 			knots_4=c(440, 473, 498, 528),
@@ -3427,13 +3428,15 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(468, 509, 543, 582),
 			knots_7=c(496, 526, 551, 580),
 			knots_8=c(494, 530, 561, 598),
+			knots_10=c(213, 244, 269, 295),
 			loss.hoss_2=c(100, 690),
 			loss.hoss_3=c(110, 780),
 			loss.hoss_4=c(115, 800),
 			loss.hoss_5=c(130, 820),
 			loss.hoss_6=c(175, 850),
 			loss.hoss_7=c(210, 870),
-			loss.hoss_8=c(230, 890)),
+			loss.hoss_8=c(230, 890),
+			loss.hoss_10=c(100, 400)),
 		MATHEMATICS=list(
 			boundaries_2=c(94.8, 625.2),
 			boundaries_3=c(134.05, 740.95),
@@ -3442,6 +3445,7 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			boundaries_6=c(234.5, 795.5),
 			boundaries_7=c(254.5, 815.5),
 			boundaries_8=c(335.1, 834.9),
+			boundaries_10=c(85, 415),
 			knots_2=c(379, 414, 441, 472),
 			knots_3=c(409, 447, 478, 515),
 			knots_4=c(434, 471, 501, 536),
@@ -3449,13 +3453,15 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_6=c(486, 521, 551, 585),
 			knots_7=c(503, 541, 575, 614),
 			knots_8=c(530, 571, 604, 641),
+			knots_10=c(210, 240, 266, 297),
 			loss.hoss_2=c(100, 620),
 			loss.hoss_3=c(140, 735),
 			loss.hoss_4=c(180, 750),
 			loss.hoss_5=c(220, 775),
 			loss.hoss_6=c(240, 790),
 			loss.hoss_7=c(260, 810),
-			loss.hoss_8=c(340, 830)))
+			loss.hoss_8=c(340, 830),
+			loss.hoss_10=c(100, 400)))
 
 SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -3472,7 +3478,8 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_5=c(486, 546),
 			GRADE_6=c(502, 572),
 			GRADE_7=c(516, 592),
-			GRADE_8=c(537, 617)),
+			GRADE_8=c(537, 617),
+			GRADE_10=c(244, 292)),
 		MATHEMATICS=list(
 			GRADE_3=c(413, 513),
 			GRADE_4=c(445, 541),
@@ -3486,7 +3493,8 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_5=c(480, 536),
 			GRADE_6=c(510, 560),
 			GRADE_7=c(533, 578),
-			GRADE_8=c(554, 595)))
+			GRADE_8=c(554, 595),
+			GRADE_10=c(271, 339)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -3513,9 +3521,9 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 			Contact="webmaster@doe.in.gov"),
 		Content_Areas=c("English/Language Arts", "Mathematics"),
 		Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
-		Grades_Tested=c(3,4,5,6,7,8),
+		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
-		Test_Vendor="CTB/McGraw Hill")
+		Test_Vendor="Pearson")
 
 SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
@@ -3541,15 +3549,15 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA"),
 		Vertical_Scale="No",
 		Vertical_Scale.2015="Yes",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8),
+		Grades_Tested=c(3,4,5,6,7,8,10),
+		Grades_Tested.2015=c(3,4,5,6,7,8,10),
 		Year="2015"
 	)
 
 SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
-	Grades_Reported=list(ELA=c(3,4,5,6,7,8), MATHEMATICS=c(3,4,5,6,7,8)),
+	Grades_Reported=list(ELA=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8,10)),
 	Achievement_Level_Labels=list(
 		"Did Not Pass"="Did Not Pass",
 		"Pass"="Pass",

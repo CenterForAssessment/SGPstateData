@@ -9360,7 +9360,7 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(450, 464, 489, 500),
 		GRADE_12=c(450, 464, 489, 500)),
 	READING.2013=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2017=list(
+	READING.2016=list( ### NOTE: Using 2017 cuts for 2016 assuming 2016 scores transformed to 2017 scale.
 		GRADE_0=c(229, 261, 293, 300, 325, 350),
 		GRADE_1=c(242, 274, 315, 321, 344, 368),
 		GRADE_2=c(254, 289, 329, 335, 359, 383),

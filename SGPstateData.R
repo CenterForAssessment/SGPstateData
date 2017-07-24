@@ -9360,12 +9360,25 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(450, 464, 489, 500),
 		GRADE_12=c(450, 464, 489, 500)),
 	READING.2013=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2017=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
+	READING.2017=list(
+		GRADE_0=c(229, 261, 293, 300, 325, 350),
+		GRADE_1=c(242, 274, 315, 321, 344, 368),
+		GRADE_2=c(254, 289, 329, 335, 359, 383),
+		GRADE_3=c(265, 300, 340, 347, 371, 396),
+		GRADE_4=c(279, 309, 350, 357, 382, 406),
+		GRADE_5=c(286, 317, 358, 365, 390, 415),
+		GRADE_6=c(291, 324, 365, 372, 399, 423),
+		GRADE_7=c(298, 331, 372, 379, 406, 431),
+		GRADE_8=c(304, 337, 378, 385, 412, 438),
+		GRADE_9=c(311, 344, 385, 392, 418, 446),
+		GRADE_10=c(318, 350, 391, 398, 424, 453),
+		GRADE_11=c(325, 356, 397, 404, 429, 459),
+		GRADE_12=c(331, 362, 402, 409, 434, 466)))
 
 
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

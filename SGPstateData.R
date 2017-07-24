@@ -9396,7 +9396,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="ESE",
 		URL="http://www.doe.mass.edu/",
 		Contact="781-338-3000"),
-	Scale_Change=list(READING="2013"),
+	Scale_Change=list(READING="2016"),
 	Assessment_Years=c("2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
@@ -9411,43 +9411,44 @@ SGPstateData[["WIDA_MA"]][["Student_Report_Information"]] <- list(
 		"WIDA L2"="WIDA Level 2",
 		"WIDA L3"="WIDA Level 3",
 		"WIDA L4"="WIDA Level 4",
+		"WIDA L4.2"="WIDA Level 4.2",
 		"WIDA L5"="WIDA Level 5",
 		"WIDA L6"="WIDA Level 6"))
 
-SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MEPA",
-		Assessment_Abbreviation.2013="WIDA",
-		Assessment_Name="Massachusetts English Proficiency Assessment",
-		Assessment_Name.2013="World Class Instructional Design and Assessment",
-		Achievement_Levels=list(
-			Labels=c("MEPA Level 1", "MEPA Level 2", "MEPA Level 3", "MEPA Level 4", "MEPA Level 5", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Levels.2013=list(
-			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Level_Labels=list(
-			"MEPA L1"="MEPA Level 1",
-			"MEPA L2"="MEPA Level 2",
-			"MEPA L3"="MEPA Level 3",
-			"MEPA L4"="MEPA Level 4",
-			"MEPA L5"="MEPA Level 5"),
-		Achievement_Level_Labels.2013=list(
-			"WIDA L1"="WIDA Level 1",
-			"WIDA L2"="WIDA Level 2",
-			"WIDA L3"="WIDA Level 3",
-			"WIDA L4"="WIDA Level 4",
-			"WIDA L5"="WIDA Level 5",
-			"WIDA L6"="WIDA Level 6"),
-		Content_Areas_Labels=list(READING="Reading"),
-		Content_Areas_Labels.2013=list(READING="Reading"),
-		Vertical_Scale="No",
-		Vertical_Scale.2013="Yes",
-		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Year="2013",
-		Baseline_Projections_in_Transition_Year=TRUE
-		)
+#SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MEPA",
+#		Assessment_Abbreviation.2013="WIDA",
+#		Assessment_Name="Massachusetts English Proficiency Assessment",
+#		Assessment_Name.2013="World Class Instructional Design and Assessment",
+#		Achievement_Levels=list(
+#			Labels=c("MEPA Level 1", "MEPA Level 2", "MEPA Level 3", "MEPA Level 4", "MEPA Level 5", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Levels.2013=list(
+#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Level_Labels=list(
+#			"MEPA L1"="MEPA Level 1",
+#			"MEPA L2"="MEPA Level 2",
+#			"MEPA L3"="MEPA Level 3",
+#			"MEPA L4"="MEPA Level 4",
+#			"MEPA L5"="MEPA Level 5"),
+#		Achievement_Level_Labels.2013=list(
+#			"WIDA L1"="WIDA Level 1",
+#			"WIDA L2"="WIDA Level 2",
+#			"WIDA L3"="WIDA Level 3",
+#			"WIDA L4"="WIDA Level 4",
+#			"WIDA L5"="WIDA Level 5",
+#			"WIDA L6"="WIDA Level 6"),
+#		Content_Areas_Labels=list(READING="Reading"),
+#		Content_Areas_Labels.2013=list(READING="Reading"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2013="Yes",
+#		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Year="2013",
+#		Baseline_Projections_in_Transition_Year=TRUE
+#		)
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,

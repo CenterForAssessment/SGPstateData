@@ -3955,510 +3955,510 @@ SGPstateData[["MD"]][["Assessment_Program_Information"]] <-
 
 ### MASSACHUSETTS (MCAS meta-data)
 
-load("CSEM/Massachusetts/Massachusetts_CSEM.Rdata")
-SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <-
-	list(
-		MATHEMATICS=list(
-			boundaries_3=c(-6.904, 4.189),
-			boundaries_4=c(-5.225, 2.647),
-			boundaries_5=c(-7.580, 4.115),
-			boundaries_6=c(-9.691, 4.801),
-			boundaries_7=c(-11.246, 4.736),
-			boundaries_8=c(-18.094, 4.696),
-			boundaries_10=c(-18.094, 4.696),
-			knots_3=c(-0.436, 0.155, 0.618, 1.250),
-			knots_4=c(-0.553, -0.125, 0.225, 0.658),
-			knots_5=c(-0.794, -0.156, 0.368, 0.956),
-			knots_6=c(-0.848, -0.081, 0.500, 1.258),
-			knots_7=c(-1.097, -0.346, 0.292, 1.021),
-			knots_8=c(-1.175, -0.369, 0.298, 0.988),
-			knots_10=c(-1.175, -0.369, 0.298, 0.988),
-			loss.hoss_3=c(-6.904, 4.189),
-			loss.hoss_4=c(-5.225, 2.647),
-			loss.hoss_5=c(-7.580, 4.115),
-			loss.hoss_6=c(-9.691, 4.801),
-			loss.hoss_7=c(-11.246, 4.736),
-			loss.hoss_8=c(-18.094, 4.696),
-			loss.hoss_10=c(-18.094, 4.696)),
-		ELA=list(
-			boundaries_3=c(-8.275, 3.620),
-			boundaries_4=c(-2.788, 3.995),
-			boundaries_5=c(-4.08, 4.08),
-			boundaries_6=c(-4.088, 4.841),
-			boundaries_7=c(-6.11, 4.82),
-			boundaries_8=c(-6.375, 5.67),
-			boundaries_10=c(-6.375, 5.67),
-			knots_3=c(-0.903, -0.331, 0.181, 0.763),
-			knots_4=c(-1.161, -0.463, .079, 0.759),
-			knots_5=c(-0.854, -0.201, -0.301, 0.977),
-			knots_6=c(-0.721, -0.031, 0.537, 1.077),
-			knots_7=c(-0.697, 0.053, 0.596, 1.265),
-			knots_8=c(-0.520, 0.236, 0.834, 1.622),
-			knots_10=c(-0.520, 0.236, 0.834, 1.622),
-			loss.hoss_3=c(-8.275, 3.620),
-			loss.hoss_4=c(-2.788, 3.995),
-			loss.hoss_5=c(-4.08, 4.08),
-			loss.hoss_6=c(-4.088, 4.841),
-			loss.hoss_7=c(-6.11, 4.82),
-			loss.hoss_8=c(-6.375, 5.67),
-			loss.hoss_10=c(-6.375, 5.67)))
+#load("CSEM/Massachusetts/Massachusetts_CSEM.Rdata")
+#SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Knots_Boundaries"]] <-
+#	list(
+#		MATHEMATICS=list(
+#			boundaries_3=c(-6.904, 4.189),
+#			boundaries_4=c(-5.225, 2.647),
+#			boundaries_5=c(-7.580, 4.115),
+#			boundaries_6=c(-9.691, 4.801),
+#			boundaries_7=c(-11.246, 4.736),
+#			boundaries_8=c(-18.094, 4.696),
+#			boundaries_10=c(-18.094, 4.696),
+#			knots_3=c(-0.436, 0.155, 0.618, 1.250),
+#			knots_4=c(-0.553, -0.125, 0.225, 0.658),
+#			knots_5=c(-0.794, -0.156, 0.368, 0.956),
+#			knots_6=c(-0.848, -0.081, 0.500, 1.258),
+#			knots_7=c(-1.097, -0.346, 0.292, 1.021),
+#			knots_8=c(-1.175, -0.369, 0.298, 0.988),
+#			knots_10=c(-1.175, -0.369, 0.298, 0.988),
+#			loss.hoss_3=c(-6.904, 4.189),
+#			loss.hoss_4=c(-5.225, 2.647),
+#			loss.hoss_5=c(-7.580, 4.115),
+#			loss.hoss_6=c(-9.691, 4.801),
+#			loss.hoss_7=c(-11.246, 4.736),
+#			loss.hoss_8=c(-18.094, 4.696),
+#			loss.hoss_10=c(-18.094, 4.696)),
+#		ELA=list(
+#			boundaries_3=c(-8.275, 3.620),
+#			boundaries_4=c(-2.788, 3.995),
+#			boundaries_5=c(-4.08, 4.08),
+#			boundaries_6=c(-4.088, 4.841),
+#			boundaries_7=c(-6.11, 4.82),
+#			boundaries_8=c(-6.375, 5.67),
+#			boundaries_10=c(-6.375, 5.67),
+#			knots_3=c(-0.903, -0.331, 0.181, 0.763),
+#			knots_4=c(-1.161, -0.463, .079, 0.759),
+#			knots_5=c(-0.854, -0.201, -0.301, 0.977),
+#			knots_6=c(-0.721, -0.031, 0.537, 1.077),
+#			knots_7=c(-0.697, 0.053, 0.596, 1.265),
+#			knots_8=c(-0.520, 0.236, 0.834, 1.622),
+#			knots_10=c(-0.520, 0.236, 0.834, 1.622),
+#			loss.hoss_3=c(-8.275, 3.620),
+#			loss.hoss_4=c(-2.788, 3.995),
+#			loss.hoss_5=c(-4.08, 4.08),
+#			loss.hoss_6=c(-4.088, 4.841),
+#			loss.hoss_7=c(-6.11, 4.82),
+#			loss.hoss_8=c(-6.375, 5.67),
+#			loss.hoss_10=c(-6.375, 5.67)))
 
-SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Cutscores"]] <- list(
-	ELA=list(
-		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
-		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
-		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
-		GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
-		GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
-		GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
-		GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
-	ELA.2010=list(
-		GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
-		GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
-		GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
-		GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
-		GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
-		GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
-		GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
-	ELA.2011=list(
-		GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
-		GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
-		GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
-		GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
-		GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
-		GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
-		GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
-	ELA.2012=list(
-		GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
-		GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
-		GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
-		GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
-		GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
-		GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
-		GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
-	ELA.2013=list(
-		GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
-		GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
-		GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
-		GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
-		GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
-		GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
-		GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
-	MATHEMATICS=list(
-		GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
-		GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
-		GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
-		GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
-		GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
-		GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
-		GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
-	MATHEMATICS.2010=list(
-		GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
-		GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
-		GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
-		GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
-		GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
-		GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
-		GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
-	MATHEMATICS.2011=list(
-		GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
-		GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
-		GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
-		GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
-		GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
-		GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
-		GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
-	MATHEMATICS.2012=list(
-		GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
-		GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
-		GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
-		GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
-		GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
-		GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
-		GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
-	MATHEMATICS.2013=list(
-		GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
-		GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
-		GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
-		GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
-		GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
-		GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
-		GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)))
+#SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Cutscores"]] <- list(
+#	ELA=list(
+#		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
+#		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
+#		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
+#		GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
+#		GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
+#		GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
+#		GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
+#	ELA.2010=list(
+#		GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
+#		GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
+#		GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
+#		GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
+#		GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
+#		GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
+#		GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
+#	ELA.2011=list(
+#		GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
+#		GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
+#		GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
+#		GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
+#		GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
+#		GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
+#		GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
+#	ELA.2012=list(
+#		GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
+#		GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
+#		GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
+#		GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
+#		GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
+#		GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
+#		GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
+#	ELA.2013=list(
+#		GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
+#		GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
+#		GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
+#		GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
+#		GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
+#		GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
+#		GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
+#	MATHEMATICS=list(
+#		GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
+#		GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
+#		GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
+#		GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
+#		GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
+#		GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
+#		GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
+#	MATHEMATICS.2010=list(
+#		GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
+#		GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
+#		GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
+#		GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
+#		GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
+#		GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
+#		GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
+#	MATHEMATICS.2011=list(
+#		GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
+#		GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
+#		GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
+#		GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
+#		GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
+#		GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
+#		GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
+#	MATHEMATICS.2012=list(
+#		GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
+#		GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
+#		GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
+#		GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
+#		GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
+#		GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
+#		GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
+#	MATHEMATICS.2013=list(
+#		GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
+#		GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
+#		GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
+#		GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
+#		GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
+#		GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
+#		GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)))
 
-SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#SGPstateData[["MA_ORIGINAL"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_ORIGINAL"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
+#SGPstateData[["MA_ORIGINAL"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
-SGPstateData[["MA_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+#SGPstateData[["MA_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
-SGPstateData[["MA_ORIGINAL"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(20, 40, 61, 81),
-	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+#SGPstateData[["MA_ORIGINAL"]][["Growth"]][["Cutscores"]] <- list(
+#	Cuts=c(20, 40, 61, 81),
+#	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
-SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]] <-
-	list(
-		Assessment_Name="Massachusetts Comprehensive Assessment System",
-		Assessment_Abbreviation="MCAS",
-			Organization=list(
-			Name="Massachusetts Department of Elementary and Secondary Education",
-			Abbreviation="ESE",
-			URL="http://www.doe.mass.edu/",
-			Contact="781-338-3000"),
-		Content_Areas=c("Mathematics", "English Language Arts"),
-		Grades_Tested=c(3,4,5,6,7,8,10),
-		Test_Season="Spring",
-		Test_Vendor="Measured Progress",
-		CSEM=Massachusetts_CSEM)
+#SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]] <-
+#	list(
+#		Assessment_Name="Massachusetts Comprehensive Assessment System",
+#		Assessment_Abbreviation="MCAS",
+#			Organization=list(
+#			Name="Massachusetts Department of Elementary and Secondary Education",
+#			Abbreviation="ESE",
+#			URL="http://www.doe.mass.edu/",
+#			Contact="781-338-3000"),
+#		Content_Areas=c("Mathematics", "English Language Arts"),
+#		Grades_Tested=c(3,4,5,6,7,8,10),
+#		Test_Season="Spring",
+#		Test_Vendor="Measured Progress",
+#		CSEM=Massachusetts_CSEM)
 
-SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MCAS",
-		Assessment_Abbreviation.2015="PARCC",
-		Assessment_Name="Massachusetts Comprehensive Assessment System",
-		Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
-		Achievement_Levels=list(
-		Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Warning/Failing"="Warning/Failing",
-			"Needs Improvement"="Needs Improvement",
-			"Proficient"="Proficient",
-			"Advanced"="Advanced"),
-		Achievement_Level_Labels.2015=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="No",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8),
-		Year="2015",
-		Equate_Interval_Digits=2
-	)
+#SGPstateData[["MA_ORIGINAL"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MCAS",
+#		Assessment_Abbreviation.2015="PARCC",
+#		Assessment_Name="Massachusetts Comprehensive Assessment System",
+#		Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
+#		Achievement_Levels=list(
+#		Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2015=list(
+#			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Warning/Failing"="Warning/Failing",
+#			"Needs Improvement"="Needs Improvement",
+#			"Proficient"="Proficient",
+#			"Advanced"="Advanced"),
+#		Achievement_Level_Labels.2015=list(
+#			"Level 1"="Level 1",
+#			"Level 2"="Level 2",
+#			"Level 3"="Level 3",
+#			"Level 4"="Level 4",
+#			"Level 5"="Level 5"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2015="No",
+#		Grades_Tested=c(3,4,5,6,7,8),
+#		Grades_Tested.2015=c(3,4,5,6,7,8),
+#		Year="2015",
+#		Equate_Interval_Digits=2
+#	)
 
-SGPstateData[["MA_ORIGINAL"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2009:2016),
-									ELA=as.character(2009:2016)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2009:2016),
-									ELA=as.character(2009:2016)),
-	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
-	Projection_Fan_Limits=c(5, 95),
-	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
-	Achievement_Level_Labels=list(
-		"Warning/Failing"="Warning/Failing",
-		"Needs Improvement"="Needs Improvement",
-		"Proficient"="Proficient",
-		"Advanced"="Advanced"))
+#SGPstateData[["MA_ORIGINAL"]][["Student_Report_Information"]] <- list(
+#	Transformed_Achievement_Level_Cutscores=list(
+#									MATHEMATICS=as.character(2009:2016),
+#									ELA=as.character(2009:2016)),
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#									MATHEMATICS=as.character(2009:2016),
+#									ELA=as.character(2009:2016)),
+#	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+#	Projection_Fan_Limits=c(5, 95),
+#	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
+#	Achievement_Level_Labels=list(
+#		"Warning/Failing"="Warning/Failing",
+#		"Needs Improvement"="Needs Improvement",
+#		"Proficient"="Proficient",
+#		"Advanced"="Advanced"))
 
-SGPstateData[["MA_ORIGINAL"]][["SGP_Configuration"]] <- list(
-						sgp.projections.max.forward.progression.grade=8)
+#SGPstateData[["MA_ORIGINAL"]][["SGP_Configuration"]] <- list(
+#						sgp.projections.max.forward.progression.grade=8)
 
 #load("Baseline_Coefficient_Matrices/MA/MA_Baseline_Matrices_2009_2013.Rdata")
 #SGPstateData[["MA_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["ELA.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["ELA.BASELINE"]]
 #SGPstateData[["MA_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- MA_Baseline_Matrices_2009_2013[["MATHEMATICS.BASELINE"]]
 
-SGPstateData[["MA_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+#SGPstateData[["MA_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 ### MASSACHUSETTS_MCAS
 
-load("CSEM/Massachusetts/Massachusetts_MCAS_CSEM.Rdata")
-SGPstateData[["MA_MCAS"]][["Achievement"]][["Knots_Boundaries"]] <-
-	list(
-		MATHEMATICS=list(
-			boundaries_3=c(-6.904, 4.189),
-			boundaries_4=c(-5.225, 2.647),
-			boundaries_5=c(-7.580, 4.115),
-			boundaries_6=c(-9.691, 4.801),
-			boundaries_7=c(-11.246, 4.736),
-			boundaries_8=c(-18.094, 4.696),
-			boundaries_10=c(-18.094, 4.696),
-			knots_3=c(-0.436, 0.155, 0.618, 1.250),
-			knots_4=c(-0.553, -0.125, 0.225, 0.658),
-			knots_5=c(-0.794, -0.156, 0.368, 0.956),
-			knots_6=c(-0.848, -0.081, 0.500, 1.258),
-			knots_7=c(-1.097, -0.346, 0.292, 1.021),
-			knots_8=c(-1.175, -0.369, 0.298, 0.988),
-			knots_10=c(-1.175, -0.369, 0.298, 0.988),
-			loss.hoss_3=c(-6.904, 4.189),
-			loss.hoss_4=c(-5.225, 2.647),
-			loss.hoss_5=c(-7.580, 4.115),
-			loss.hoss_6=c(-9.691, 4.801),
-			loss.hoss_7=c(-11.246, 4.736),
-			loss.hoss_8=c(-18.094, 4.696),
-			loss.hoss_10=c(-18.094, 4.696)),
-		ELA=list(
-			boundaries_3=c(-8.275, 3.620),
-			boundaries_4=c(-2.788, 3.995),
-			boundaries_5=c(-4.08, 4.08),
-			boundaries_6=c(-4.088, 4.841),
-			boundaries_7=c(-6.11, 4.82),
-			boundaries_8=c(-6.375, 5.67),
-			boundaries_10=c(-6.375, 5.67),
-			knots_3=c(-0.903, -0.331, 0.181, 0.763),
-			knots_4=c(-1.161, -0.463, .079, 0.759),
-			knots_5=c(-0.854, -0.201, -0.301, 0.977),
-			knots_6=c(-0.721, -0.031, 0.537, 1.077),
-			knots_7=c(-0.697, 0.053, 0.596, 1.265),
-			knots_8=c(-0.520, 0.236, 0.834, 1.622),
-			knots_10=c(-0.520, 0.236, 0.834, 1.622),
-			loss.hoss_3=c(-8.275, 3.620),
-			loss.hoss_4=c(-2.788, 3.995),
-			loss.hoss_5=c(-4.08, 4.08),
-			loss.hoss_6=c(-4.088, 4.841),
-			loss.hoss_7=c(-6.11, 4.82),
-			loss.hoss_8=c(-6.375, 5.67),
-			loss.hoss_10=c(-6.375, 5.67)))
+#load("CSEM/Massachusetts/Massachusetts_MCAS_CSEM.Rdata")
+#SGPstateData[["MA_MCAS"]][["Achievement"]][["Knots_Boundaries"]] <-
+#	list(
+#		MATHEMATICS=list(
+#			boundaries_3=c(-6.904, 4.189),
+#			boundaries_4=c(-5.225, 2.647),
+#			boundaries_5=c(-7.580, 4.115),
+#			boundaries_6=c(-9.691, 4.801),
+#			boundaries_7=c(-11.246, 4.736),
+#			boundaries_8=c(-18.094, 4.696),
+#			boundaries_10=c(-18.094, 4.696),
+#			knots_3=c(-0.436, 0.155, 0.618, 1.250),
+#			knots_4=c(-0.553, -0.125, 0.225, 0.658),
+#			knots_5=c(-0.794, -0.156, 0.368, 0.956),
+#			knots_6=c(-0.848, -0.081, 0.500, 1.258),
+#			knots_7=c(-1.097, -0.346, 0.292, 1.021),
+#			knots_8=c(-1.175, -0.369, 0.298, 0.988),
+#			knots_10=c(-1.175, -0.369, 0.298, 0.988),
+#			loss.hoss_3=c(-6.904, 4.189),
+#			loss.hoss_4=c(-5.225, 2.647),
+#			loss.hoss_5=c(-7.580, 4.115),
+#			loss.hoss_6=c(-9.691, 4.801),
+#			loss.hoss_7=c(-11.246, 4.736),
+#			loss.hoss_8=c(-18.094, 4.696),
+#			loss.hoss_10=c(-18.094, 4.696)),
+#		ELA=list(
+#			boundaries_3=c(-8.275, 3.620),
+#			boundaries_4=c(-2.788, 3.995),
+#			boundaries_5=c(-4.08, 4.08),
+#			boundaries_6=c(-4.088, 4.841),
+#			boundaries_7=c(-6.11, 4.82),
+#			boundaries_8=c(-6.375, 5.67),
+#			boundaries_10=c(-6.375, 5.67),
+#			knots_3=c(-0.903, -0.331, 0.181, 0.763),
+#			knots_4=c(-1.161, -0.463, .079, 0.759),
+#			knots_5=c(-0.854, -0.201, -0.301, 0.977),
+#			knots_6=c(-0.721, -0.031, 0.537, 1.077),
+#			knots_7=c(-0.697, 0.053, 0.596, 1.265),
+#			knots_8=c(-0.520, 0.236, 0.834, 1.622),
+#			knots_10=c(-0.520, 0.236, 0.834, 1.622),
+#			loss.hoss_3=c(-8.275, 3.620),
+#			loss.hoss_4=c(-2.788, 3.995),
+#			loss.hoss_5=c(-4.08, 4.08),
+#			loss.hoss_6=c(-4.088, 4.841),
+#			loss.hoss_7=c(-6.11, 4.82),
+#			loss.hoss_8=c(-6.375, 5.67),
+#			loss.hoss_10=c(-6.375, 5.67)))
 
-SGPstateData[["MA_MCAS"]][["Achievement"]][["Cutscores"]] <-
-	list(
-		ELA=list(
-			GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
-			GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
-			GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
-			GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
-			GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
-			GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
-			GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
-		ELA.2010=list(
-			GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
-			GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
-			GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
-			GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
-			GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
-			GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
-			GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
-		ELA.2011=list(
-			GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
-			GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
-			GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
-			GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
-			GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
-			GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
-			GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
-		ELA.2012=list(
-			GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
-			GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
-			GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
-			GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
-			GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
-			GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
-			GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
-		ELA.2013=list(
-			GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
-			GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
-			GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
-			GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
-			GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
-			GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
-			GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
-		MATHEMATICS=list(
-			GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
-			GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
-			GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
-			GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
-			GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
-			GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
-			GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
-		MATHEMATICS.2010=list(
-			GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
-			GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
-			GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
-			GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
-			GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
-			GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
-			GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
-		MATHEMATICS.2011=list(
-			GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
-			GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
-			GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
-			GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
-			GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
-			GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
-			GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
-		MATHEMATICS.2012=list(
-			GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
-			GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
-			GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
-			GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
-			GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
-			GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
-			GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
-		MATHEMATICS.2013=list(
-			GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
-			GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
-			GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
-			GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
-			GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
-			GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
-			GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)))
+#SGPstateData[["MA_MCAS"]][["Achievement"]][["Cutscores"]] <-
+#	list(
+#		ELA=list(
+#			GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
+#			GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
+#			GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
+#			GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
+#			GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
+#			GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
+#			GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
+#		ELA.2010=list(
+#			GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
+#			GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
+#			GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
+#			GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
+#			GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
+#			GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
+#			GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
+#		ELA.2011=list(
+#			GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
+#			GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
+#			GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
+#			GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
+#			GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
+#			GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
+#			GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
+#		ELA.2012=list(
+#			GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
+#			GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
+#			GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
+#			GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
+#			GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
+#			GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
+#			GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
+#		ELA.2013=list(
+#			GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
+#			GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
+#			GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
+#			GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
+#			GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
+#			GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
+#			GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
+#		MATHEMATICS=list(
+#			GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
+#			GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
+#			GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
+#			GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
+#			GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
+#			GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
+#			GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
+#		MATHEMATICS.2010=list(
+#			GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
+#			GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
+#			GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
+#			GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
+#			GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
+#			GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
+#			GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
+#		MATHEMATICS.2011=list(
+#			GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
+#			GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
+#			GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
+#			GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
+#			GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
+#			GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
+#			GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
+#		MATHEMATICS.2012=list(
+#			GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
+#			GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
+#			GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
+#			GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
+#			GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
+#			GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
+#			GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
+#		MATHEMATICS.2013=list(
+#			GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
+#			GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
+#			GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
+#			GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
+#			GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
+#			GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
+#			GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)))
 
-SGPstateData[["MA_MCAS"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#SGPstateData[["MA_MCAS"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_MCAS"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(20, 40, 61, 81),
-	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+#SGPstateData[["MA_MCAS"]][["Growth"]][["Cutscores"]] <- list(
+#	Cuts=c(20, 40, 61, 81),
+#	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
-SGPstateData[["MA_MCAS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["MA_MCAS"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
+#SGPstateData[["MA_MCAS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+#SGPstateData[["MA_MCAS"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
-SGPstateData[["MA_MCAS"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Massachusetts Comprehensive Assessment System",
-	Assessment_Abbreviation="MCAS",
-		Organization=list(
-		Name="Massachusetts Department of Elementary and Secondary Education",
-		Abbreviation="ESE",
-		URL="http://www.doe.mass.edu/",
-		Contact="781-338-3000"),
-	Content_Areas=c("Mathematics", "English Language Arts"),
-	Grades_Tested=c(3,4,5,6,7,8,10),
-	Test_Season="Spring",
-	Test_Vendor="Measured Progress",
-	CSEM=Massachusetts_MCAS_CSEM)
+#SGPstateData[["MA_MCAS"]][["Assessment_Program_Information"]] <- list(
+#	Assessment_Name="Massachusetts Comprehensive Assessment System",
+#	Assessment_Abbreviation="MCAS",
+#		Organization=list(
+#		Name="Massachusetts Department of Elementary and Secondary Education",
+#		Abbreviation="ESE",
+#		URL="http://www.doe.mass.edu/",
+#		Contact="781-338-3000"),
+#	Content_Areas=c("Mathematics", "English Language Arts"),
+#	Grades_Tested=c(3,4,5,6,7,8,10),
+#	Test_Season="Spring",
+#	Test_Vendor="Measured Progress",
+#	CSEM=Massachusetts_MCAS_CSEM)
 
-SGPstateData[["MA_MCAS"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2009:2016),
-									ELA=as.character(2009:2016)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2009:2016),
-									ELA=as.character(2009:2016)),
-	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
-	Projection_Fan_Limits=c(5, 95),
-	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
-	Achievement_Level_Labels=list(
-		"Warning/Failing"="Warning/Failing",
-		"Needs Improvement"="Needs Improvement",
-		"Proficient"="Proficient",
-		"Advanced"="Advanced"))
+#SGPstateData[["MA_MCAS"]][["Student_Report_Information"]] <- list(
+#	Transformed_Achievement_Level_Cutscores=list(
+#									MATHEMATICS=as.character(2009:2016),
+#									ELA=as.character(2009:2016)),
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#									MATHEMATICS=as.character(2009:2016),
+#									ELA=as.character(2009:2016)),
+#	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+#	Projection_Fan_Limits=c(5, 95),
+#	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
+#	Achievement_Level_Labels=list(
+#		"Warning/Failing"="Warning/Failing",
+#		"Needs Improvement"="Needs Improvement",
+#		"Proficient"="Proficient",
+#		"Advanced"="Advanced"))
 
-SGPstateData[["MA_MCAS"]][["SGP_Configuration"]] <- list(
-	sgp.projections.max.forward.progression.grade=8)
+#SGPstateData[["MA_MCAS"]][["SGP_Configuration"]] <- list(
+#	sgp.projections.max.forward.progression.grade=8)
 
-SGPstateData[["MA_MCAS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+#SGPstateData[["MA_MCAS"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 
 ### MASSACHUSETTS_PARCC
 
-load("CSEM/Massachusetts/Massachusetts_PARCC_CSEM.Rdata")
+#load("CSEM/Massachusetts/Massachusetts_PARCC_CSEM.Rdata")
 
-load("Knots_Boundaries/MA_PARCC_Knots_Boundaries.Rdata")
-SGPstateData[["MA_PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- MA_PARCC_Knots_Boundaries
+#load("Knots_Boundaries/MA_PARCC_Knots_Boundaries.Rdata")
+#SGPstateData[["MA_PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- MA_PARCC_Knots_Boundaries
 
-SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <- list(
-	ELA=list(
-		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
-		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
-		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
-		GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
-		GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
-		GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
-		GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
-	ELA.2010=list(
-		GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
-		GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
-		GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
-		GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
-		GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
-		GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
-		GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
-	ELA.2011=list(
-		GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
-		GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
-		GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
-		GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
-		GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
-		GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
-		GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
-	ELA.2012=list(
-		GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
-		GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
-		GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
-		GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
-		GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
-		GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
-		GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
-	ELA.2013=list(
-		GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
-		GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
-		GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
-		GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
-		GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
-		GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
-		GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
-	ELA.2015 =list(
-		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
-		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
-		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
-		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
-		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
-		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809)),
+#SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <- list(
+#	ELA=list(
+#		GRADE_3=c(-1.42909369, -0.215034418, 1.091762353),
+#		GRADE_4=c(-1.701038566, -0.231680055, 1.298985981),
+#		GRADE_5=c(-1.676113199, -0.192168777, 1.366544216),
+#		GRADE_6=c(-1.691579968, -0.17458534, 1.760596127),
+#		GRADE_7=c(-1.729307659, -0.234448095, 1.794513035),
+#		GRADE_8=c(-1.659630289, -0.307644016, 2.092363055),
+#		GRADE_10=c(-1.810870172, -0.278593633, 1.435370133)),
+#	ELA.2010=list(
+#		GRADE_3=c(-1.621318975, -0.235480278, 1.018899635),
+#		GRADE_4=c(-1.682014372, -0.223930122, 1.37276864),
+#		GRADE_5=c(-1.599576055, -0.227214179, 1.254204256),
+#		GRADE_6=c(-1.731083908, -0.262337138, 1.729612884),
+#		GRADE_7=c(-1.650343315, -0.290737927, 1.927702368),
+#		GRADE_8=c(-1.608374133, -0.247825427, 2.050635042),
+#		GRADE_10=c(-1.919766153, -0.227606302, 1.492616535)),
+#	ELA.2011=list(
+#		GRADE_3=c(-1.644681109, -0.283594296, 1.205757479),
+#		GRADE_4=c(-1.715332096, -0.22960969, 1.486208717),
+#		GRADE_5=c(-1.701200572, -0.312242947, 1.192126975),
+#		GRADE_6=c(-1.671314382, -0.201858788, 1.673682971),
+#		GRADE_7=c(-1.698154856, -0.247514204, 1.744052569),
+#		GRADE_8=c(-1.619903644, -0.279321809, 1.992450909),
+#		GRADE_10=c(-1.909834297, -0.302027595, 1.414670298)),
+#	ELA.2012=list(
+#		GRADE_3=c(-1.686017235, -0.31126683, 0.901631274),
+#		GRADE_4=c(-1.672310689, -0.303124723, 1.382321351),
+#		GRADE_5=c(-1.659283658, -0.241931899, 1.266161997),
+#		GRADE_6=c(-1.623704972, -0.232602665, 1.618507533),
+#		GRADE_7=c(-1.695255017, -0.213966527, 1.845140149),
+#		GRADE_8=c(-1.681302569, -0.301606879, 2.106119446),
+#		GRADE_10=c(-1.895658417, -0.289381678, 1.451536227)),
+#	ELA.2013=list(
+#		GRADE_3=c(-1.677320162, -0.21672897, 1.117832811),
+#		GRADE_4=c(-1.740793321, -0.280595031, 1.452778744),
+#		GRADE_5=c(-1.629517738, -0.306804018, 1.1993955),
+#		GRADE_6=c(-1.717854121, -0.178538123, 1.81569587),
+#		GRADE_7=c(-1.722321416, -0.253271057, 1.786744892),
+#		GRADE_8=c(-1.613784175, -0.257666012, 2.081155848),
+#		GRADE_10=c(-1.813457499, -0.237741623, 1.470799706)),
+#	ELA.2015 =list(
+#		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
+#		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
+#		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
+#		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
+#		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
+#		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809)),
 
-	MATHEMATICS=list(
-		GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
-		GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
-		GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
-		GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
-		GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
-		GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
-		GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
-	MATHEMATICS.2010=list(
-		GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
-		GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
-		GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
-		GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
-		GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
-		GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
-		GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
-	MATHEMATICS.2011=list(
-		GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
-		GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
-		GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
-		GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
-		GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
-		GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
-		GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
-	MATHEMATICS.2012=list(
-		GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
-		GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
-		GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
-		GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
-		GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
-		GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
-		GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
-	MATHEMATICS.2013=list(
-		GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
-		GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
-		GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
-		GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
-		GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
-		GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
-		GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)),
-	MATHEMATICS.2015=list(
-		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
-		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
-		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
-		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
-		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
-		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-	ALGEBRA_I.2015=list(
-		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
-)
+#	MATHEMATICS=list(
+#		GRADE_3=c(-0.679597014, 0.259570745, 1.440019007),
+#		GRADE_4=c(-0.818911094, 0.150419543, 0.745903854),
+#		GRADE_5=c(-0.843950203, 0.171740196, 1.079620173),
+#		GRADE_6=c(-0.90862029, 0.145456382, 1.234203935),
+#		GRADE_7=c(-0.849875919, 0.174870873, 1.251282185),
+#		GRADE_8=c(-0.879401299, 0.170045893, 1.180853733),
+#		GRADE_10=c(-1.417415757, 0.15243449, 1.371427206)),
+#	MATHEMATICS.2010=list(
+#		GRADE_3=c(-0.869475871, 0.187857155, 1.32813029),
+#		GRADE_4=c(-0.792569016, 0.158288036, 0.760617004),
+#		GRADE_5=c(-0.829436707, 0.186441511, 1.03658179),
+#		GRADE_6=c(-0.879909019, 0.172964143, 1.220837038),
+#		GRADE_7=c(-0.855205788, 0.142883728, 1.325876342),
+#		GRADE_8=c(-0.901223853, 0.196553224, 1.27311411),
+#		GRADE_10=c(-1.538201277, 0.178728912, 1.355127466)),
+#	MATHEMATICS.2011=list(
+#		GRADE_3=c(-0.836216032, 0.135066055, 1.457577645),
+#		GRADE_4=c(-0.812718733, 0.174743403, 0.758801425),
+#		GRADE_5=c(-0.808464525, 0.149127134, 1.088119238),
+#		GRADE_6=c(-0.859234498, 0.190546824, 1.209532603),
+#		GRADE_7=c(-0.90052886, 0.193310389, 1.321574452),
+#		GRADE_8=c(-0.92188104, 0.132145402, 1.180694563),
+#		GRADE_10=c(-1.415991148, 0.145731612, 1.445822342)),
+#	MATHEMATICS.2012=list(
+#		GRADE_3=c(-0.774653198, 0.206120813, 1.222999624),
+#		GRADE_4=c(-0.770931912, 0.132958294, 0.786784793),
+#		GRADE_5=c(-0.806186904, 0.159558291, 1.100842745),
+#		GRADE_6=c(-0.8459956, 0.198964231, 1.194926159),
+#		GRADE_7=c(-0.924844147, 0.203457327, 1.24529973),
+#		GRADE_8=c(-0.927795391, 0.176658004, 1.242965789),
+#		GRADE_10=c(-1.411008894, 0.109299723, 1.452366601)),
+#	MATHEMATICS.2013=list(
+#		GRADE_3=c(-0.819602484, 0.214018392, 1.235457872),
+#		GRADE_4=c(-0.835527388, 0.131079297, 0.779292276),
+#		GRADE_5=c(-0.898299863, 0.142907475, 1.081483186),
+#		GRADE_6=c(-0.850822498, 0.160319072, 1.272165299),
+#		GRADE_7=c(-0.891990177, 0.126106113, 1.260375497),
+#		GRADE_8=c(-0.878231414, 0.141874403, 1.303559999),
+#		GRADE_10=c(-1.381145218, 0.111910031, 1.371984305)),
+#	MATHEMATICS.2015=list(
+#		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
+#		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
+#		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
+#		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
+#		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
+#		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
+#	ALGEBRA_I.2015=list(
+#		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
+#)
 
 ###  PARCC SCALE SCORE METRIC CUTSCORES ###
 # 	ELA.2015 =list(
@@ -4491,147 +4491,177 @@ SGPstateData[["MA_PARCC"]][["Achievement"]][["Cutscores"]] <- list(
 # 	INTEGRATED_MATH_3=list(GRADE_EOCT=c(700, 725, 750, 804))
 ###
 
-SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 #SGPstateData[["MA_PARCC"]][["Achievement"]][["Levels"]] <- list(
 #	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
 #	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["MA_PARCC"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(20, 40, 61, 81),
-	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+#SGPstateData[["MA_PARCC"]][["Growth"]][["Cutscores"]] <- list(
+#	Cuts=c(20, 40, 61, 81),
+#	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
 
-SGPstateData[["MA_PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["MA_PARCC"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
+#SGPstateData[["MA_PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+#SGPstateData[["MA_PARCC"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
 
-SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]] <-
-	list(
-	Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-	Assessment_Abbreviation="PARCC",
-	Organization=list(
-		Name="Massachusetts Department of Elementary and Secondary Education",
-		Abbreviation="ESE",
-		URL="http://www.doe.mass.edu/",
-		Contact="781-338-3000"),
-	Content_Areas=c("Mathematics", "English Language Arts"),
-	Grades_Tested=c(3,4,5,6,7,8),
-	Test_Season="Spring",
-	Test_Vendor="PARCC",
-	CSEM=Massachusetts_PARCC_CSEM)
+#SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]] <-
+#	list(
+#	Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+#	Assessment_Abbreviation="PARCC",
+#	Organization=list(
+#		Name="Massachusetts Department of Elementary and Secondary Education",
+#		Abbreviation="ESE",
+#		URL="http://www.doe.mass.edu/",
+#		Contact="781-338-3000"),
+#	Content_Areas=c("Mathematics", "English Language Arts"),
+#	Grades_Tested=c(3,4,5,6,7,8),
+#	Test_Season="Spring",
+#	Test_Vendor="PARCC",
+#	CSEM=Massachusetts_PARCC_CSEM)
 
-SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MCAS",
-		Assessment_Abbreviation.2015="PARCC",
-		Assessment_Name="Massachusetts Comprehensive Assessment System",
-		Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
-		Achievement_Levels=list(
-			Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Warning/Failing"="Warning/Failing",
-			"Needs Improvement"="Needs Improvement",
-			"Proficient"="Proficient",
-			"Advanced"="Advanced"),
-		Achievement_Level_Labels.2015=list(
-				"Level 1"="Level 1",
-				"Level 2"="Level 2",
-				"Level 3"="Level 3",
-				"Level 4"="Level 4",
-				"Level 5"="Level 5"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="No",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2015=c(3,4,5,6,7,8),
-		Year="2015",
-		Equate_Interval_Digits=2
-	)
+#SGPstateData[["MA_PARCC"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MCAS",
+#		Assessment_Abbreviation.2015="PARCC",
+#		Assessment_Name="Massachusetts Comprehensive Assessment System",
+#		Assessment_Name.2015="Partnership for Assessment of Readiness for College and Careers",
+#		Achievement_Levels=list(
+#			Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2015=list(
+#			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Warning/Failing"="Warning/Failing",
+#			"Needs Improvement"="Needs Improvement",
+#			"Proficient"="Proficient",
+#			"Advanced"="Advanced"),
+#		Achievement_Level_Labels.2015=list(
+#				"Level 1"="Level 1",
+#				"Level 2"="Level 2",
+#				"Level 3"="Level 3",
+#				"Level 4"="Level 4",
+#				"Level 5"="Level 5"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2015="No",
+#		Grades_Tested=c(3,4,5,6,7,8),
+#		Grades_Tested.2015=c(3,4,5,6,7,8),
+#		Year="2015",
+#		Equate_Interval_Digits=2
+#	)
 
-SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2009:2018),
-									ELA=as.character(2009:2018)),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2009:2018),
-									ELA=as.character(2009:2018)),
-	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
-	Projection_Fan_Limits=c(5, 95),
-	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), ALGEBRA_I=c(8)),
-	Achievement_Level_Labels=list(
-		"Level 1"="Level 1",
-		"Level 2"="Level 2",
-		"Level 3"="Level 3",
-		"Level 4"="Level 4",
-		"Level 5"="Level 5"))
+#SGPstateData[["MA_PARCC"]][["Student_Report_Information"]] <- list(
+#	Transformed_Achievement_Level_Cutscores=list(
+#									MATHEMATICS=as.character(2009:2018),
+#									ELA=as.character(2009:2018)),
+#	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#									MATHEMATICS=as.character(2009:2018),
+#									ELA=as.character(2009:2018)),
+#	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+#	Projection_Fan_Limits=c(5, 95),
+#	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
+#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8), ALGEBRA_I=c(8)),
+#	Achievement_Level_Labels=list(
+#		"Level 1"="Level 1",
+#		"Level 2"="Level 2",
+#		"Level 3"="Level 3",
+#		"Level 4"="Level 4",
+#		"Level 5"="Level 5"))
 
-SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <-
-	list(
-		sgp.projections.max.forward.progression.grade=8)
+#SGPstateData[["MA_PARCC"]][["SGP_Configuration"]] <-
+#	list(
+#		sgp.projections.max.forward.progression.grade=8)
 
-SGPstateData[["MA_PARCC"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+#SGPstateData[["MA_PARCC"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/MA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
+
+### MASSACHUSETTS 2016
+
+#load("Knots_Boundaries/MA_2016_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/MA_2016_Knots_Boundaries_PRE_2014.Rdata")
+# SGPstateData[["MA_2016"]] <- SGPstateData[['PARCC']]
+#SGPstateData[["MA_2016"]][["Achievement"]][["Knots_Boundaries"]] <- c(MA_2016_Knots_Boundaries_PRE_2014, MA_2016_Knots_Boundaries)
+
+#SGPstateData[["MA_2016"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+#SGPstateData[["MA_2016"]][["Growth"]][["Cutscores"]] <- list(
+#	Cuts=c(20, 40, 61, 81),
+#	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
+
+#SGPstateData[["MA_2016"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+#SGPstateData[["MA_2016"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
+
+#SGPstateData[["MA_2016"]][["Assessment_Program_Information"]] <- list(
+#	Assessment_Name="Massachusetts Comprehensive Assessment System",
+#	Assessment_Abbreviation="MCAS",
+#		Organization=list(
+#		Name="Massachusetts Department of Elementary and Secondary Education",
+#		Abbreviation="ESE",
+#		URL="http://www.doe.mass.edu/",
+#		Contact="781-338-3000"),
+#	Content_Areas=c("Mathematics", "English Language Arts"),
+#	Grades_Tested=c(3,4,5,6,7,8,10),
+#	Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
+#	Test_Season="Spring",
+#	Test_Vendor="Measured Progress/Pearson")
 
 
 ### MASSACHUSETTS
 
-load("Knots_Boundaries/PARCC_MA_Knots_Boundaries.Rdata")
-SGPstateData[["MA"]] <- SGPstateData[['PARCC']]
-SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_MA_Knots_Boundaries
+load("Knots_Boundaries/MA_2017_Knots_Boundaries.Rdata")
+SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2017_Knots_Boundaries
+
+SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list( ### THESE ARE PROBABLY WRONG 7/26/2017
+	ELA =list(
+		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
+		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
+		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
+		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
+		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
+		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809),
+		GRADE_10=c(-1.1576, -0.4282, 0.3001, 1.5809)),
+	MATHEMATICS=list(
+		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
+		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
+		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
+		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
+		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
+		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
+	ALGEBRA_I=list(
+		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
+	)
+
+SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
+		Assessment_Name="Massachusetts Comprehensive Assessment System 2.0",
+		Assessment_Abbreviation="MCAS 2.0",
 		Organization=list(
 			Name="Massachusetts Department of Elementary and Secondary Education",
 			Abbreviation="ESE",
 			URL="www.doe.mass.edu",
 			Contact="781-338-3000"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2"),
-		Test_Season="Fall & Spring",
-		Test_Vendor="Pearson",
+		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
+		Grades_Tested=c(3,4,5,6,7,8,10),
+		Assessment_Years=c("2015", "2016", "2017"),
+		Test_Season="Spring",
+		Test_Vendor="Measured Progress/Pearson",
 		CSEM="SCALE_SCORE_CSEM")
-
-
-### MASSACHUSETTS 2016
-
-load("Knots_Boundaries/MA_2016_Knots_Boundaries.Rdata")
-load("Knots_Boundaries/MA_2016_Knots_Boundaries_PRE_2014.Rdata")
-# SGPstateData[["MA_2016"]] <- SGPstateData[['PARCC']]
-SGPstateData[["MA_2016"]][["Achievement"]][["Knots_Boundaries"]] <- c(MA_2016_Knots_Boundaries_PRE_2014, MA_2016_Knots_Boundaries)
-
-SGPstateData[["MA_2016"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
-	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
-
-SGPstateData[["MA_2016"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(20, 40, 61, 81),
-	Labels=c("1st - 19th", "20th - 39th", "40th - 60th", "61st - 80th", "81st  - 99th"))
-
-SGPstateData[["MA_2016"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["MA_2016"]][["Growth"]][["Levels"]] <- c("Very Low", "Low", "Moderate", "High", "Very High")
-
-SGPstateData[["MA_2016"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Massachusetts Comprehensive Assessment System",
-	Assessment_Abbreviation="MCAS",
-		Organization=list(
-		Name="Massachusetts Department of Elementary and Secondary Education",
-		Abbreviation="ESE",
-		URL="http://www.doe.mass.edu/",
-		Contact="781-338-3000"),
-	Content_Areas=c("Mathematics", "English Language Arts"),
-	Grades_Tested=c(3,4,5,6,7,8,10),
-	Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
-	Test_Season="Spring",
-	Test_Vendor="Measured Progress/Pearson")
 
 
 #########################################################
@@ -9360,12 +9390,25 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(450, 464, 489, 500),
 		GRADE_12=c(450, 464, 489, 500)),
 	READING.2013=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2017=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
+	READING.2016=list( ### NOTE: Using 2017 cuts for 2016 assuming 2016 scores transformed to 2017 scale.
+		GRADE_0=c(229, 261, 293, 300, 325, 350),
+		GRADE_1=c(242, 274, 315, 321, 344, 368),
+		GRADE_2=c(254, 289, 329, 335, 359, 383),
+		GRADE_3=c(265, 300, 340, 347, 371, 396),
+		GRADE_4=c(279, 309, 350, 357, 382, 406),
+		GRADE_5=c(286, 317, 358, 365, 390, 415),
+		GRADE_6=c(291, 324, 365, 372, 399, 423),
+		GRADE_7=c(298, 331, 372, 379, 406, 431),
+		GRADE_8=c(304, 337, 378, 385, 412, 438),
+		GRADE_9=c(311, 344, 385, 392, 418, 446),
+		GRADE_10=c(318, 350, 391, 398, 424, 453),
+		GRADE_11=c(325, 356, 397, 404, 429, 459),
+		GRADE_12=c(331, 362, 402, 409, 434, 466)))
 
 
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -9383,7 +9426,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="ESE",
 		URL="http://www.doe.mass.edu/",
 		Contact="781-338-3000"),
-	Scale_Change=list(READING="2013"),
+	Scale_Change=list(READING="2016"),
 	Assessment_Years=c("2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
@@ -9398,43 +9441,44 @@ SGPstateData[["WIDA_MA"]][["Student_Report_Information"]] <- list(
 		"WIDA L2"="WIDA Level 2",
 		"WIDA L3"="WIDA Level 3",
 		"WIDA L4"="WIDA Level 4",
+		"WIDA L4.2"="WIDA Level 4.2",
 		"WIDA L5"="WIDA Level 5",
 		"WIDA L6"="WIDA Level 6"))
 
-SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MEPA",
-		Assessment_Abbreviation.2013="WIDA",
-		Assessment_Name="Massachusetts English Proficiency Assessment",
-		Assessment_Name.2013="World Class Instructional Design and Assessment",
-		Achievement_Levels=list(
-			Labels=c("MEPA Level 1", "MEPA Level 2", "MEPA Level 3", "MEPA Level 4", "MEPA Level 5", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Levels.2013=list(
-			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Level_Labels=list(
-			"MEPA L1"="MEPA Level 1",
-			"MEPA L2"="MEPA Level 2",
-			"MEPA L3"="MEPA Level 3",
-			"MEPA L4"="MEPA Level 4",
-			"MEPA L5"="MEPA Level 5"),
-		Achievement_Level_Labels.2013=list(
-			"WIDA L1"="WIDA Level 1",
-			"WIDA L2"="WIDA Level 2",
-			"WIDA L3"="WIDA Level 3",
-			"WIDA L4"="WIDA Level 4",
-			"WIDA L5"="WIDA Level 5",
-			"WIDA L6"="WIDA Level 6"),
-		Content_Areas_Labels=list(READING="Reading"),
-		Content_Areas_Labels.2013=list(READING="Reading"),
-		Vertical_Scale="No",
-		Vertical_Scale.2013="Yes",
-		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Year="2013",
-		Baseline_Projections_in_Transition_Year=TRUE
-		)
+#SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MEPA",
+#		Assessment_Abbreviation.2013="WIDA",
+#		Assessment_Name="Massachusetts English Proficiency Assessment",
+#		Assessment_Name.2013="World Class Instructional Design and Assessment",
+#		Achievement_Levels=list(
+#			Labels=c("MEPA Level 1", "MEPA Level 2", "MEPA Level 3", "MEPA Level 4", "MEPA Level 5", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Levels.2013=list(
+#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Level_Labels=list(
+#			"MEPA L1"="MEPA Level 1",
+#			"MEPA L2"="MEPA Level 2",
+#			"MEPA L3"="MEPA Level 3",
+#			"MEPA L4"="MEPA Level 4",
+#			"MEPA L5"="MEPA Level 5"),
+#		Achievement_Level_Labels.2013=list(
+#			"WIDA L1"="WIDA Level 1",
+#			"WIDA L2"="WIDA Level 2",
+#			"WIDA L3"="WIDA Level 3",
+#			"WIDA L4"="WIDA Level 4",
+#			"WIDA L5"="WIDA Level 5",
+#			"WIDA L6"="WIDA Level 6"),
+#		Content_Areas_Labels=list(READING="Reading"),
+#		Content_Areas_Labels.2013=list(READING="Reading"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2013="Yes",
+#		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Year="2013",
+#		Baseline_Projections_in_Transition_Year=TRUE
+#		)
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,

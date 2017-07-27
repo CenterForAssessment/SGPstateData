@@ -4616,25 +4616,25 @@ SGPstateData[["MD"]][["Assessment_Program_Information"]] <-
 load("Knots_Boundaries/MA_2017_Knots_Boundaries.Rdata")
 SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2017_Knots_Boundaries
 
-SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list( ### THESE ARE PROBABLY WRONG 7/26/2017
-	ELA =list(
-		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
-		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
-		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
-		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
-		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
-		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809),
-		GRADE_10=c(-1.1576, -0.4282, 0.3001, 1.5809)),
-	MATHEMATICS=list(
-		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
-		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
-		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
-		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
-		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
-		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-	ALGEBRA_I=list(
-		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
-	)
+#SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list( ### THESE ARE PROBABLY WRONG 7/26/2017
+#	ELA =list(
+#		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
+#		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
+#		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
+#		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
+#		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
+#		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809),
+#		GRADE_10=c(-1.1576, -0.4282, 0.3001, 1.5809)),
+#	MATHEMATICS=list(
+#		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
+#		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
+#		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
+#		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
+#		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
+#		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
+#	ALGEBRA_I=list(
+#		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
+#	)
 
 SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),

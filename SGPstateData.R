@@ -1350,7 +1350,7 @@ SGPstateData[["CO"]][["Assessment_Program_Information"]] <-
 			Name="Colorado Department of Education",
 			Abbreviation="CDE",
 			URL="www.schoolview.org",
-			Contact="303-866-6763"),
+			Contact="growth.questions@cde.state.co.us"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 			Grades_Tested=c(3,4,5,6,7,8,9),
 			Assessment_Years=c("2014_2015", "2015_2016", "2016_2017"),

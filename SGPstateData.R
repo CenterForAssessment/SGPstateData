@@ -9507,6 +9507,9 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
+SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
+	sgp.minimum.default.panel.years=2)
+
 
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN

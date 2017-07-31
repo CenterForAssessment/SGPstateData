@@ -9167,8 +9167,8 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	sgp.projections.max.forward.progression.years=7,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
+#SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9237,12 +9237,12 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+#SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
@@ -9363,8 +9363,7 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9492,7 +9491,8 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Trans
 		Vertical_Scale.2017="Yes",
 		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
 		Grades_Tested.2017=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Year="2017"#,
+		Year="2017",
+		Preequated_by_Contractor=TRUE#,
 #		Baseline_Projections_in_Transition_Year=TRUE
 		)
 
@@ -9505,7 +9505,7 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2)
@@ -9618,7 +9618,7 @@ SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9690,7 +9690,7 @@ SGPstateData[["WIDA_NV"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% c('L1', 'L2', 'L3', 'L4')",
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9755,8 +9755,7 @@ SGPstateData[["WIDA_RI"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 #########################################################

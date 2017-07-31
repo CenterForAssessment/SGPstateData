@@ -9167,8 +9167,8 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	sgp.projections.max.forward.progression.years=7,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
+#SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9237,12 +9237,12 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+#SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
@@ -9363,8 +9363,7 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9390,7 +9389,21 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(450, 464, 489, 500),
 		GRADE_12=c(450, 464, 489, 500)),
 	READING.2013=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2016=list( ### NOTE: Using 2017 cuts for 2016 assuming 2016 scores transformed to 2017 scale.
+	READING.2016=list(
+		GRADE_0=c(229, 261, 293, 325, 350),
+		GRADE_1=c(242, 274, 315, 344, 368),
+		GRADE_2=c(254, 289, 329, 359, 383),
+		GRADE_3=c(265, 300, 340, 371, 396),
+		GRADE_4=c(279, 309, 350, 382, 406),
+		GRADE_5=c(286, 317, 358, 390, 415),
+		GRADE_6=c(291, 324, 365, 399, 423),
+		GRADE_7=c(298, 331, 372, 406, 431),
+		GRADE_8=c(304, 337, 378, 412, 438),
+		GRADE_9=c(311, 344, 385, 418, 446),
+		GRADE_10=c(318, 350, 391, 424, 453),
+		GRADE_11=c(325, 356, 397, 429, 459),
+		GRADE_12=c(331, 362, 402, 434, 466)),
+	READING.2017=list(
 		GRADE_0=c(229, 261, 293, 300, 325, 350),
 		GRADE_1=c(242, 274, 315, 321, 344, 368),
 		GRADE_2=c(254, 289, 329, 335, 359, 383),
@@ -9445,40 +9458,43 @@ SGPstateData[["WIDA_MA"]][["Student_Report_Information"]] <- list(
 		"WIDA L5"="WIDA Level 5",
 		"WIDA L6"="WIDA Level 6"))
 
-#SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-#	list(
-#		Assessment_Abbreviation="MEPA",
-#		Assessment_Abbreviation.2013="WIDA",
-#		Assessment_Name="Massachusetts English Proficiency Assessment",
-#		Assessment_Name.2013="World Class Instructional Design and Assessment",
-#		Achievement_Levels=list(
-#			Labels=c("MEPA Level 1", "MEPA Level 2", "MEPA Level 3", "MEPA Level 4", "MEPA Level 5", "NO SCORE"),
-#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-#		Achievement_Levels.2013=list(
-#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-#		Achievement_Level_Labels=list(
-#			"MEPA L1"="MEPA Level 1",
-#			"MEPA L2"="MEPA Level 2",
-#			"MEPA L3"="MEPA Level 3",
-#			"MEPA L4"="MEPA Level 4",
-#			"MEPA L5"="MEPA Level 5"),
-#		Achievement_Level_Labels.2013=list(
-#			"WIDA L1"="WIDA Level 1",
-#			"WIDA L2"="WIDA Level 2",
-#			"WIDA L3"="WIDA Level 3",
-#			"WIDA L4"="WIDA Level 4",
-#			"WIDA L5"="WIDA Level 5",
-#			"WIDA L6"="WIDA Level 6"),
-#		Content_Areas_Labels=list(READING="Reading"),
-#		Content_Areas_Labels.2013=list(READING="Reading"),
-#		Vertical_Scale="No",
-#		Vertical_Scale.2013="Yes",
-#		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-#		Grades_Tested.2013=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-#		Year="2013",
+SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
+		Assessment_Abbreviation="ACCESS",
+		Assessment_Abbreviation.2017="ACCESS 2.0",
+		Assessment_Name="ACCESS",
+		Assessment_Name.2017="ACCESS 2.0",
+		Achievement_Levels=list(
+			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+		Achievement_Levels.2017=list(
+			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+			Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA)),
+		Achievement_Level_Labels=list(
+			"WIDA L1"="WIDA Level 1",
+			"WIDA L2"="WIDA Level 2",
+			"WIDA L3"="WIDA Level 3",
+			"WIDA L4"="WIDA Level 4",
+			"WIDA L5"="WIDA Level 5",
+			"WIDA L6"="WIDA Level 6"),
+		Achievement_Level_Labels.2017=list(
+			"WIDA L1"="WIDA Level 1",
+			"WIDA L2"="WIDA Level 2",
+			"WIDA L3"="WIDA Level 3",
+			"WIDA L4"="WIDA Level 4",
+			"WIDA L4.2"="WIDA Level 4.2",
+			"WIDA L5"="WIDA Level 5",
+			"WIDA L6"="WIDA Level 6"),
+		Content_Areas_Labels=list(READING="Reading"),
+		Content_Areas_Labels.2017=list(READING="Reading"),
+		Vertical_Scale="Yes",
+		Vertical_Scale.2017="Yes",
+		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+		Grades_Tested.2017=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+		Year="2017",
+		Preequated_by_Contractor=TRUE#,
 #		Baseline_Projections_in_Transition_Year=TRUE
-#		)
+		)
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,
@@ -9489,7 +9505,10 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+
+SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
+	sgp.minimum.default.panel.years=2)
 
 
 ##########################################################################################
@@ -9599,7 +9618,7 @@ SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_MI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9671,7 +9690,7 @@ SGPstateData[["WIDA_NV"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% c('L1', 'L2', 'L3', 'L4')",
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-SGPstateData[["WIDA_NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_NV"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 ##########################################################################################
@@ -9736,8 +9755,7 @@ SGPstateData[["WIDA_RI"]][["SGP_Configuration"]] <- list(
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
-load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+#SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 
 #########################################################

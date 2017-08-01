@@ -9304,7 +9304,6 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) GEORGIA
 ##########################################################################################
 
-load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
@@ -9515,8 +9514,7 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MICHIGAN
 ##########################################################################################
 
-load("Knots_Boundaries/WIDA_MI_Knots_Boundaries.Rdata")
-SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_MI_Knots_Boundaries
+SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
@@ -9560,7 +9558,8 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Years=c("2012", "2013", "2014", "2015", "2016", "2017"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Test_Season="Spring")
+	Test_Season="Spring",
+	CSEM="CSEM")
 
 SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
@@ -9697,7 +9696,6 @@ SGPstateData[["WIDA_NV"]][["SGP_Configuration"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) RHODE ISLAND
 ##########################################################################################
 
-load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_RI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_RI"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]

@@ -2169,9 +2169,9 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_EOCT=c(400, 450)),
 		ANALYTIC_GEOMETRY.2015=list(
 			GRADE_EOCT=c(475, 525, 596)),
-		# GEOMETRY=list( # CRT Geometry (pre-Milestones)
-		# 	GRADE_EOCT=c(400, 450)),
-		GEOMETRY=list(
+		GEOMETRY=list( # CRT Geometry (pre-Milestones)
+			GRADE_EOCT=c(400, 450)),
+		GEOMETRY.2015=list(
 			GRADE_EOCT=c(475, 525, 596)),
 		MATHEMATICS_I=list(
 			GRADE_EOCT=c(400, 450)),

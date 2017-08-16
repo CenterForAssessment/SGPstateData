@@ -2737,7 +2737,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			Contact="808-586-3230"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
-		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Season="Spring")
 

@@ -2738,7 +2738,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			Contact="808-586-3230"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
-		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Season="Spring")
 
@@ -2796,7 +2796,7 @@ SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan=TRUE,
 	output.groups=c("COMPLEX", "SCHOOL"),
 	outputSGP.translate.names=FALSE,
-	state.multiple.year.summary=2,
+	state.multiple.year.summary=3,
 	output.column.order=list(SGP_Data_LONG=
 		c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
 		  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER",
@@ -9146,7 +9146,7 @@ SGPstateData[["WIDA"]][["Assessment_Program_Information"]] <- list(
 		Contact="1-866-276-7735"),
 	Content_Areas="Reading",
 	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Test_Season="Spring",
 	Test_Vendor="WIDA")
 
@@ -9165,6 +9165,7 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
+	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
@@ -9219,7 +9220,7 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		URL="www.schoolview.org",
 		Contact="303-866-6763"),
 	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")
@@ -9301,6 +9302,93 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 		"Elevado"="L4",
 		"Apto"="L5",
 		"Avanzado"="L6"))
+
+
+##########################################################################################
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) DENVER PUBLIC SCHOOLS (DPS)
+##########################################################################################
+
+SGPstateData[["WIDA_DPS"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_DPS"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(237, 263, 288, 307, 329),
+		GRADE_1=c(249, 277, 303, 321, 344),
+		GRADE_2=c(261, 290, 316, 335, 357),
+		GRADE_3=c(272, 303, 328, 347, 369),
+		GRADE_4=c(283, 314, 340, 359, 380),
+		GRADE_5=c(293, 324, 350, 369, 390),
+		GRADE_6=c(302, 334, 359, 379, 399),
+		GRADE_7=c(311, 342, 368, 386, 407),
+		GRADE_8=c(319, 350, 375, 394, 414),
+		GRADE_9=c(327, 357, 382, 400, 419),
+		GRADE_10=c(333, 363, 387, 405, 424),
+		GRADE_11=c(340, 368, 391, 409, 427),
+		GRADE_12=c(346, 372, 395, 413, 430)),
+	READING.2017=list(
+		GRADE_0=c(229, 261, 293, 325, 350),
+		GRADE_1=c(242, 274, 315, 344, 368),
+		GRADE_2=c(254, 289, 329, 359, 383),
+		GRADE_3=c(265, 300, 340, 371, 396),
+		GRADE_4=c(279, 309, 350, 382, 406),
+		GRADE_5=c(286, 317, 358, 390, 415),
+		GRADE_6=c(291, 324, 365, 399, 423),
+		GRADE_7=c(298, 331, 372, 406, 431),
+		GRADE_8=c(304, 337, 378, 412, 438),
+		GRADE_9=c(311, 344, 385, 418, 446),
+		GRADE_10=c(318, 350, 391, 424, 453),
+		GRADE_11=c(325, 356, 397, 429, 459),
+		GRADE_12=c(331, 362, 402, 434, 466)))
+
+SGPstateData[["WIDA_DPS"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("L1", "L2", "L3", "L4", "L5", "L6"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient"))
+
+SGPstateData[["WIDA_DPS"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["WIDA_DPS"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_DPS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["WIDA_DPS"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
+	Organization=list(
+		Name="World Class Instructional Design and Assessment",
+	Abbreviation="WIDA",
+		URL="http://www.wida.us/",
+		Contact="1-866-276-7735"),
+	Content_Areas="Reading",
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2016", "2017"),
+	Test_Season="Spring",
+	Test_Vendor="WIDA")
+
+SGPstateData[["WIDA_DPS"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(READING=TRUE),
+	Content_Areas_Labels=list(READING="Reading"),
+	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
+	Achievement_Level_Labels=list(
+		"Entering"="L1",
+		"Emerging"="L2",
+		"Developing"="L3",
+		"Expanding"="L4",
+		"Bridging"="L5",
+		"Reaching"="L6"))
+
+SGPstateData[["WIDA_DPS"]][["SGP_Configuration"]] <- list(
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	max.sgp.target.years.forward=5,
+	sgp.minimum.default.panel.years=2,
+	sgp.projections.max.forward.progression.years=7,
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+#load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
+#SGPstateData[["WIDA_DPS"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+
 
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) GEORGIA

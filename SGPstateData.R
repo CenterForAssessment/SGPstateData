@@ -2305,6 +2305,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
+		sgp.less.than.sgp.cohort.size.return="<1500",
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2017 when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(
@@ -7540,7 +7541,7 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_7=c(450, 514),
 		GRADE_8=c(471, 533),
 		GRADE_9=c(487, 559),
-		RADE_10=c(498, 574),
+		GRADE_10=c(498, 574),
 		GRADE_11=c(513, 591)),
 	ELA=list(
 		GRADE_3=c(160, 168),
@@ -7633,6 +7634,7 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
+	sgp.less.than.sgp.cohort.size.return="<3000",
 	max.order.for.percentile=5,
 	max.order.for.projection=1,
 	sgPlot.use.alternate.student.id="SSID")

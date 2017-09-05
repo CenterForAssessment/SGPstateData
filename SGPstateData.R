@@ -9714,7 +9714,8 @@ SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) NEVADA
 ##########################################################################################
 
-SGPstateData[["WIDA_NV"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+load("Knots_Boundaries/WIDA_NV_Knots_Boundaries.Rdata")
+SGPstateData[["WIDA_NV"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_NV_Knots_Boundaries
 
 SGPstateData[["WIDA_NV"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
 SGPstateData[["WIDA_NV"]][["Achievement"]][["Cutscores"]][['READING.2017']] <- list(

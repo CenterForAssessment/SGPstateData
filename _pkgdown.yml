@@ -1,0 +1,37 @@
+DESCRIPTION:
+  Package: SGPstateData
+  Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
+           person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut"))
+  License: GPL-3
+  BugReports: https://github.com/CenterForAssessment/SGPstateData/issues
+
+template:
+  package: centerPackageTemplate
+  default_assets: false
+
+
+home:
+  strip_header: true
+  links:
+    - text: State SGP Repos
+      href: https://centerforassessment.github.io/
+
+
+navbar:
+    title: ~
+    type: default
+    left:
+    - text: Overview
+      menu:
+      - text: "SGPstateData Specifications"
+        href: articles/SGPstateData_Specifications.html
+    - text: News
+      menu:
+      - text: "SGPstateData notes"
+      - text: "September 2017"
+        href: articles/releases/SGP_Summer_2015_Notes.html
+    right:
+      - icon: fa-github fa-2x
+        href: https://github.com/centerforassessment/SGPstateData
+      - icon: fa-twitter
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPstateData%2F&via=NCIEA1&text=SGPstateData:%20State%20assessment%20meta-data%20for%20SGP%20analyses&hashtags=rstats%2C%20SGP

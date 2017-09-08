@@ -2,10 +2,9 @@ SGPstateData
 ============
 
 
-State assessment program meta-data from large scale state assessments for use with SGP package
-----------------------------------------------------------------------------------------------
+# State assessment program meta-data for use with SGP package
 
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active) [![Join the chat at https://gitter.im/CenterForAssessment/SGPstateData](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPstateData?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPstateData/blob/master/LICENSE.md)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active) [![Join the chat at https://gitter.im/CenterForAssessment/SGPstateData](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPstateData?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPstateData/blob/master/LICENSE.md)
 
 SGPstateData is an environment (an **R** object of class environment) embedded as part of the [SGP package](https://sgp.io) containing information on state assessment
 programs, organized by state. The environment contains achievement level cutscores and labels for the state assessments, assessment name and abbreviation, growth cutscores
@@ -20,15 +19,19 @@ To add in your organization's data, answer questions and respond to feedback, do
 an [issue on GitHub](https://github.com/CenterForAssessment/SGPstateData/issues)
 
 
-# SGP Analysis Resources
+# SGP Resources
 
 * [SGP GitHub Pages](https://sgp.io)
 * [CRAN Repo](https://CRAN.R-project.org/package=SGP)
 * [Norm- and Criterion-Referenced Student Growth](https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/Betebenner_EMIP_2009.pdf)
 
 
-# Prepared with :heart: by:
+# Contributors
+
+SGPstateData is crafted with :heart: by:
 
 * [Damian Betebenner](https://github.com/dbetebenner)
 * [Adam VanIwaarden](https://github.com/adamvi)
 * [Dozens of state/organziation data analysts](https://sgp.io/authors.html)
+
+We love feedback and are happy to answer questions.

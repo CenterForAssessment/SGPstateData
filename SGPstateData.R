@@ -3207,6 +3207,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Grades_Tested.2015=c(3,4,5,6,7,8,9,10),
 		Year="2015")
 
+SGPstateData[["ID"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ID_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+
 
 #########################################################
 ### ILLINOIS

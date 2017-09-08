@@ -1,4 +1,4 @@
-names.provided,names.sgp,names.sgp.type,names.sgp.info,names.sgp.output
+names.provided,names.sgp,names.type,names.info,names.output
 ID,ID,individual,Unique student identifier,
 LAST_NAME,LAST_NAME,label,Student last name,
 FIRST_NAME,FIRST_NAME,label,Student first name,
@@ -18,7 +18,7 @@ SCHOOL_NAME,SCHOOL_NAME,label,School name,
 EMH_LEVEL,EMH_LEVEL,institution_type,Elementary/Middle/High School level flag,
 DISTRICT_NUMBER,DISTRICT_NUMBER,institution,District number,
 DISTRICT_NAME,DISTRICT_NAME,label,School name,
-SCHOOL_NUMBER,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
-DISTRICT_NAME,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
 STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
 VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,

@@ -1,5 +1,6 @@
 DESCRIPTION:
   Package: SGPstateData
+  Title: State assessment program meta-data for the SGP package
   Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
            person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut"))
   License: GPL-3

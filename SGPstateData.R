@@ -9599,7 +9599,12 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 #SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
-	sgp.minimum.default.panel.years=2)
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	sgp.minimum.default.panel.years=2,
+	max.sgp.target.years.forward=5,
+	sgp.projections.max.forward.progression.years=7,
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 
 ##########################################################################################

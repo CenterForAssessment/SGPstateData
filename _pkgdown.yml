@@ -30,7 +30,7 @@ navbar:
       menu:
       - text: "SGPstateData notes"
       - text: "September 2017"
-        href: articles/releases/SGP_Summer_2015_Notes.html
+        href: articles/releases/SGPstateData_September_2017_Notes.html
     right:
       - icon: fa-github fa-2x
         href: https://github.com/centerforassessment/SGPstateData

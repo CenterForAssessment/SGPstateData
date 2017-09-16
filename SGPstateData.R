@@ -9180,8 +9180,11 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT Colorado (ACCESS)
 ##########################################################################################
 
+load("Knots_Boundaries/WIDA_CO_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2016"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING.2016"]]
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["LITERACY"]] <- WIDA_CO_Knots_Boundaries[['LITERACY']]
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]] <- list(
 	LITERACY=list(

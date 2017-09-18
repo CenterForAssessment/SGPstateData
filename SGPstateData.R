@@ -3210,7 +3210,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["ID"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ID_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 SGPstateData[["ID"]][["SGP_Configuration"]] <- list(
-	gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE)
+	gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
+	sgp.projections.max.forward.progression.years=FALSE
 )
 
 

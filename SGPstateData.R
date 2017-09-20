@@ -9268,6 +9268,7 @@ SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_L
 
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,
+	sgp.minimum.default.panel.years=2,
 	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 

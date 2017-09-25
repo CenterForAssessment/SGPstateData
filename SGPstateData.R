@@ -5512,6 +5512,8 @@ SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 #load("CSEM/Nevada/Nevada_CSEM.Rdata")
 
+load("Knots_Boundaries/NV_Knots_Boundaries.Rdata")
+SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <- NV_Knots_Boundaries
 #SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <-
 #	list(
 #		READING=list(

@@ -3162,7 +3162,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10),
 		Test_Season="Spring",
-		Test_Vendor="SBAC/AIR")
+		Test_Vendor="SBAC/AIR",
+		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["ID"]][["Student_Report_Information"]] <-
 	list(
@@ -5512,6 +5513,8 @@ SGPstateData[["NE"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 
 #load("CSEM/Nevada/Nevada_CSEM.Rdata")
 
+load("Knots_Boundaries/NV_Knots_Boundaries.Rdata")
+SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <- NV_Knots_Boundaries
 #SGPstateData[["NV"]][["Achievement"]][["Knots_Boundaries"]] <-
 #	list(
 #		READING=list(

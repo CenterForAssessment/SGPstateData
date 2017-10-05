@@ -4646,7 +4646,7 @@ SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2017_Knots_Bou
 #	)
 
 SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(

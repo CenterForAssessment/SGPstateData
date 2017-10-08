@@ -4625,28 +4625,25 @@ SGPstateData[["MD"]][["Assessment_Program_Information"]] <-
 load("Knots_Boundaries/MA_2017_Knots_Boundaries.Rdata")
 SGPstateData[["MA"]][["Achievement"]][["Knots_Boundaries"]] <- MA_2017_Knots_Boundaries
 
-#SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list( ### THESE ARE PROBABLY WRONG 7/26/2017
-#	ELA =list(
-#		GRADE_3=c(-0.9853, -0.2993, 0.3904, 2.0464),
-#		GRADE_4=c(-1.3364, -0.5317, 0.2807, 1.5798),
-#		GRADE_5=c(-1.3927, -0.5453, 0.3031, 1.9675),
-#		GRADE_6=c(-1.3797, -0.5106, 0.3583, 1.7538),
-#		GRADE_7=c(-1.1893, -0.4518, 0.2858, 1.3188),
-#		GRADE_8=c(-1.1576, -0.4282, 0.3001, 1.5809),
-#		GRADE_10=c(-1.1576, -0.4282, 0.3001, 1.5809)),
-#	MATHEMATICS=list(
-#		GRADE_3=c(-1.2554, -0.4704, 0.3141, 1.5706),
-#		GRADE_4=c(-1.292, -0.4443, 0.4003, 1.9593),
-#		GRADE_5=c(-1.2863, -0.4264, 0.4358, 1.8156),
-#		GRADE_6=c(-1.2872, -0.4151, 0.4579, 1.7864),
-#		GRADE_7=c(-1.3656, -0.3931, 0.5803, 1.9826),
-#		GRADE_8=c(-0.8499, -0.1114, 0.6337, 2.1573)),
-#	ALGEBRA_I=list(
-#		GRADE_8=c(-1.114, -0.2949, 0.5287, 2.3463))
-#	)
+SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list(
+	ELA =list(
+		GRADE_3=c(-1.58103875, 0.011395, 1.60382875),
+		GRADE_4=c(-1.56114375, 0.030745, 1.62263375),
+		GRADE_5=c(-1.65871875, 0.03758, 1.73387875),
+		GRADE_6=c(-1.59094, -0.0106625, 1.569615),
+		GRADE_7=c(-1.55992625, 0.010925, 1.58177625),
+		GRADE_8=c(-1.4563275, 0.051195, 1.5587175)),
+	MATHEMATICS=list(
+		GRADE_3=c(-1.37721625, 0.02747, 1.43215625),
+		GRADE_4=c(-1.37875875, 0.054015, 1.48678875),
+		GRADE_5=c(-1.55075375, 0.0249325, 1.60061875),
+		GRADE_6=c(-1.5180775, -0.00828, 1.5015175),
+		GRADE_7=c(-1.41406125, 0.0311575, 1.47637625),
+		GRADE_8=c(-1.49566, -0.008435, 1.47879))
+	)
 
 SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Warning/Failing", "Needs Improvement", "Proficient", "Advanced"),
+	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(

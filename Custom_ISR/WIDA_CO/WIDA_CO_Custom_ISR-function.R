@@ -1,4 +1,4 @@
-`make.custom.isr` <- 
+`make.custom.isr` <-
 function() {
 
 		## Start pdf device
@@ -6,7 +6,7 @@ function() {
 		report.width= custom.isr$report.width
 		report.height= custom.isr$report.height
 
-		pdf(file.path(path.to.pdfs, file_name), 
+		pdf(file.path(path.to.pdfs, file_name),
 			width=report.width, height=report.height, version="1.4", onefile=TRUE)
 
 		##  Push full report layout viewport
@@ -28,20 +28,20 @@ function() {
 				Grades=as.character(subset(tmp_student_data, select=paste("GRADE", rev(sgPlot.years), sep="."))),
 				Content_Areas=as.character(subset(tmp_student_data, select=paste("CONTENT_AREA_LABELS", rev(sgPlot.years), sep="."))),
 				Cuts=list(
-					NY1=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY1=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_1", names(tmp_student_data))), grep("YEAR_1_CURRENT_TRANSFORMED", names(tmp_student_data))))),
-					NY2=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY2=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_2", names(tmp_student_data))), grep("YEAR_2_CURRENT_TRANSFORMED", names(tmp_student_data))))),
-					NY3=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY3=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_3", names(tmp_student_data))), grep("YEAR_3_CURRENT_TRANSFORMED", names(tmp_student_data)))))),
 				Plotting_Cuts=list(
 					NY1=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_1_CURRENT_TRANSFORMED", names(tmp_student_data))))),
 					NY2=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_2_CURRENT_TRANSFORMED", names(tmp_student_data))))),
 					NY3=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_3_CURRENT_TRANSFORMED", names(tmp_student_data)))))),
 				SGP_Targets=list(
-					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]], 
-					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]], 
-					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]], 
+					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
+					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
+					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
@@ -83,7 +83,7 @@ function() {
 					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Font_Size="Small_1")))
 					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Zero_to_K =TRUE, Font_Size=list(
 						title.ca.size = 1.6, legend.size = 0.6, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.6))))
-	
+
 			popViewport()
 		} ## END loop over content_areas
 
@@ -108,14 +108,14 @@ function() {
 		pushViewport(custom.isr$Grid_Objects$top.border.cde.vp)
 		grid.raster(custom.isr$Report_Logo)
 		popViewport()
-		
+
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
 		popViewport()
-		
-		##  Color block 1		
+
+		##  Color block 1
 		pushViewport(custom.isr$Grid_Objects$color_block_1.vp)
 		grid.rect(gp=gpar(fill=sgPlot.header.footer.color, col=sgPlot.header.footer.color))
 		popViewport()
@@ -128,7 +128,7 @@ function() {
 		grid.text(x=0.025, y=0.5, custom.isr$Report_Text_ENGLISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.825), just="left", default.units="native")
 		popViewport()
 
-		##  Color block 2		
+		##  Color block 2
 		pushViewport(custom.isr$Grid_Objects$color_block_2.vp)
 		grid.rect(gp=gpar(fill=sgPlot.header.footer.color, col=sgPlot.header.footer.color))
 		popViewport()
@@ -145,7 +145,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2016 English Language Proficiency and Student Growth Report",
+		grid.text("2017 English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
@@ -153,11 +153,11 @@ function() {
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
 		grid.text(x=0.02, y=0.65, paste0("For more information please visit www.cde.state.co.us/accountability/englishlanguageproficiencygrowth or contact ", tmp.organization$Contact, "."), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		copyright.text <- paste0("Cooperatively developed by the ", tmp.organization$Name, " (", tmp.organization$Abbreviation, ") & the Center for Assessment, Inc.")
-		grid.text(x=0.02, y=0.30, paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."), 
+		grid.text(x=0.02, y=0.30, paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."),
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
 
-		
+
 #######################
 ##  Spanish Version  ##
 #######################
@@ -167,7 +167,7 @@ function() {
 
 		##  Push full report layout viewport
 		pushViewport(custom.isr$Grid_Objects$report.vp)
-		
+
 		##  Push/pop content area report blocks
 		for (vp in seq_along(content_areas)) {
 			tmp_student_data <- as.data.frame(tmp_grade_data[ID==n & CONTENT_AREA==content_areas[vp]])
@@ -184,20 +184,20 @@ function() {
 				Grades=as.character(subset(tmp_student_data, select=paste("GRADE", rev(sgPlot.years), sep="."))),
 				Content_Areas=as.character(subset(tmp_student_data, select=paste("CONTENT_AREA_LABELS", rev(sgPlot.years), sep="."))),
 				Cuts=list(
-					NY1=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY1=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_1", names(tmp_student_data))), grep("YEAR_1_CURRENT_TRANSFORMED", names(tmp_student_data))))),
-					NY2=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY2=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_2", names(tmp_student_data))), grep("YEAR_2_CURRENT_TRANSFORMED", names(tmp_student_data))))),
-					NY3=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)), 
+					NY3=as.numeric(subset(tmp_student_data, select=setdiff(intersect(grep(trajectory.cuts, names(tmp_student_data)),
 						grep("YEAR_3", names(tmp_student_data))), grep("YEAR_3_CURRENT_TRANSFORMED", names(tmp_student_data)))))),
 				Plotting_Cuts=list(
 					NY1=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_1_CURRENT_TRANSFORMED", names(tmp_student_data))))),
 					NY2=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_2_CURRENT_TRANSFORMED", names(tmp_student_data))))),
 					NY3=as.numeric(subset(tmp_student_data, select=intersect(grep(trajectory.cuts, names(tmp_student_data)), grep("YEAR_3_CURRENT_TRANSFORMED", names(tmp_student_data)))))),
 				SGP_Targets=list(
-					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]], 
-					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]], 
-					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]], 
+					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
+					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
+					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
@@ -239,7 +239,7 @@ function() {
 					# Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Font_Size="Small_1")))
 					Content_Area_Title=tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep=".")]], Configuration= list(Language = "Spanish", Zero_to_K =TRUE, Font_Size=list(
 						title.ca.size = 1.6, legend.size = 0.6, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.5))))
-	
+
 			popViewport()
 		} ## END loop over content_areas
 
@@ -264,14 +264,14 @@ function() {
 		pushViewport(custom.isr$Grid_Objects$top.border.cde.vp)
 		grid.raster(custom.isr$Report_Logo)
 		popViewport()
-		
+
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
 		popViewport()
-	
-		##  Color block 1		
+
+		##  Color block 1
 		pushViewport(custom.isr$Grid_Objects$color_block_1.vp)
 		grid.rect(gp=gpar(fill=sgPlot.header.footer.color, col=sgPlot.header.footer.color))
 		popViewport()
@@ -285,7 +285,7 @@ function() {
 		grid.text(x=0.015, y=0.5, custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.825), just="left", default.units="native")
 		popViewport()
 
-		##  Color block 2		
+		##  Color block 2
 		pushViewport(custom.isr$Grid_Objects$color_block_2.vp)
 		grid.rect(gp=gpar(fill=sgPlot.header.footer.color, col=sgPlot.header.footer.color))
 		popViewport()
@@ -302,7 +302,7 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2016 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+		grid.text("2017 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
@@ -311,9 +311,9 @@ function() {
 		grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar El Departamento de",
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		copyright.text <- "Educaci\u{F3}n de Colorado (CDE): 303-866-6763. Producido por El Departamento de Educaci\u{F3}n de Colorado y El Centro de Evaluaci\u{F3}n, Inc."
-		grid.text(x=0.02, y=0.30, copyright.text, 
+		grid.text(x=0.02, y=0.30, copyright.text,
 			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		popViewport()
-		
+
 		dev.off()
 }

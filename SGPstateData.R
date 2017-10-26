@@ -2411,7 +2411,7 @@ load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
 SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "PHYSICAL_SCIENCE_BIO", "MATH_COORD_ALG", "MATH_ALG_I"),
+	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "PHYSICAL_SCIENCE_BIO", "MATH_ALG_I", "MATH_COORD_ALG"),
 	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 

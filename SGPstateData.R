@@ -2211,37 +2211,37 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
 
-SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="GA-CRCT",
-		Assessment_Abbreviation.2015="Milestones",
-		Assessment_Name="Georgia Criterion-Referenced Competency Tests",
-		Assessment_Name.2015="Georgia Milestones Assessment System",
-		Achievement_Levels=list(
-	 		Labels=c("Does Not Meet Expectations", "Meets Expectations", "Exceeds Expectations"),
-	 		Proficient=c("Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Beginning Learner", "Developing Learner", "Proficient Learner", "Distinguished Learner"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Does Not Meet"="Does Not Meet Expectations",
-			"Meets"="Meets Expectations",
-			"Exceeds"="Exceeds Expectations"),
-		Achievement_Level_Labels.2015=list(
-			"Beginning Learner"="Beginning Learner",
-			"Developing Learner"="Developing Learner",
-			"Proficient Learner"="Proficient Learner",
-			"Distinguished Learner"="Distinguished Learner"),
-		Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
-		Content_Areas.2015=c("Mathematics", "ELA", "Science", "Social Studies"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="No",
-		Grades_Tested=c(3,4,5,6,7,8, "EOCT"),
-		Grades_Tested.2015=c(3,4,5,6,7,8, "EOCT"),
-		Year="2015"
-	)
+# SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+# 	list(
+# 		Assessment_Abbreviation="GA-CRCT",
+# 		Assessment_Abbreviation.2015="Milestones",
+# 		Assessment_Name="Georgia Criterion-Referenced Competency Tests",
+# 		Assessment_Name.2015="Georgia Milestones Assessment System",
+# 		Achievement_Levels=list(
+# 	 		Labels=c("Does Not Meet Expectations", "Meets Expectations", "Exceeds Expectations"),
+# 	 		Proficient=c("Not Proficient", "Proficient", "Proficient")),
+# 		Achievement_Levels.2015=list(
+# 			Labels=c("Beginning Learner", "Developing Learner", "Proficient Learner", "Distinguished Learner"),
+# 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+# 		Achievement_Level_Labels=list(
+# 			"Does Not Meet"="Does Not Meet Expectations",
+# 			"Meets"="Meets Expectations",
+# 			"Exceeds"="Exceeds Expectations"),
+# 		Achievement_Level_Labels.2015=list(
+# 			"Beginning Learner"="Beginning Learner",
+# 			"Developing Learner"="Developing Learner",
+# 			"Proficient Learner"="Proficient Learner",
+# 			"Distinguished Learner"="Distinguished Learner"),
+# 		Content_Areas=c("Mathematics", "Reading", "ELA", "Science", "Social Studies"),
+# 		Content_Areas.2015=c("Mathematics", "ELA", "Science", "Social Studies"),
+# 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+# 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+# 		Vertical_Scale="No",
+# 		Vertical_Scale.2015="No",
+# 		Grades_Tested=c(3,4,5,6,7,8, "EOCT"),
+# 		Grades_Tested.2015=c(3,4,5,6,7,8, "EOCT"),
+# 		Year="2015"
+# 	)
 
 SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	list(

@@ -5847,7 +5847,8 @@ SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
 		sgp.loss.hoss.adjustment="NH",
 		state.multiple.year.summary=5,
-		print.other.gp=TRUE)
+		print.other.gp=TRUE,
+		max.order.for.percentile=2)
 
 SGPstateData[["NH"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NH_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/NH/NH_Baseline_Matrices.Rdata")

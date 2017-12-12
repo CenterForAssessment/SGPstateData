@@ -1700,13 +1700,13 @@ SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["year_lags.projection.sequen
 	AMERICAN_LIT=rep(1L, 7),
 	ALGEBRA_I=rep(1L, 7),
 	ALGEBRA_II=rep(1L, 7))
-SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
-	READING=3,
-	MATHEMATICS=3,
-	GRADE_9_LIT=3,
-	AMERICAN_LIT=3,
-	ALGEBRA_I=3,
-	ALGEBRA_II=3)
+#SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+#	READING=3,
+#	MATHEMATICS=3,
+#	GRADE_9_LIT=3,
+#	AMERICAN_LIT=3,
+#	ALGEBRA_I=3,
+#	ALGEBRA_II=3)
 
 # SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["fix.duplicates"]] <- "KEEP.ALL"
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- TRUE
@@ -5847,7 +5847,8 @@ SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
 		sgp.loss.hoss.adjustment="NH",
 		state.multiple.year.summary=5,
-		print.other.gp=TRUE)
+		print.other.gp=TRUE,
+		max.order.for.percentile=2)
 
 SGPstateData[["NH"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NH_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("Baseline_Coefficient_Matrices/NH/NH_Baseline_Matrices.Rdata")
@@ -9620,22 +9621,15 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Trans
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,
 		max.order.for.projection=2,
-		max.sgp.target.years.forward=6,
+		max.sgp.target.years.forward=5,
 		sgp.projections.max.forward.progression.years=7,
+		sgp.minimum.default.panel.years=2,
 		sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
-
-SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
-	max.order.for.percentile=2,
-	max.order.for.projection=2,
-	sgp.minimum.default.panel.years=2,
-	max.sgp.target.years.forward=5,
-	sgp.projections.max.forward.progression.years=7,
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 
 ##########################################################################################

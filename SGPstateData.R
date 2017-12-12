@@ -1700,13 +1700,13 @@ SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["year_lags.projection.sequen
 	AMERICAN_LIT=rep(1L, 7),
 	ALGEBRA_I=rep(1L, 7),
 	ALGEBRA_II=rep(1L, 7))
-#SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
-#	READING=3,
-#	MATHEMATICS=3,
-#	GRADE_9_LIT=3,
-#	AMERICAN_LIT=3,
-#	ALGEBRA_I=3,
-#	ALGEBRA_II=3)
+SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	READING=7,
+	MATHEMATICS=7,
+	GRADE_9_LIT=7,
+	AMERICAN_LIT=7,
+	ALGEBRA_I=7,
+	ALGEBRA_II=7)
 
 # SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["fix.duplicates"]] <- "KEEP.ALL"
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- TRUE
@@ -6639,8 +6639,10 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		print.other.gp=TRUE,
 		percentile.cuts=50, ### For within window projections
 		SGPt.max.time=TRUE,
-		max.sgp.target.years.forward=9,
-		sgp.projections.max.forward.progression.years=9,
+#		max.sgp.target.years.forward=9,
+#		sgp.projections.max.forward.progression.years=9,
+		max.sgp.target.years.forward=10,
+		sgp.projections.max.forward.progression.years=10,
 		sgp.projections.projection.unit="YEAR",
 		sgp.projections.projection.unit.label="TIME",
 		return.prior.scale.score.standardized=TRUE,
@@ -6770,8 +6772,10 @@ SGPstateData[["RLI_UK"]][["SGP_Configuration"]] <-
 		print.other.gp=TRUE,
 		percentile.cuts=50, ### For within window projections
 		SGPt.max.time=TRUE,
-		max.sgp.target.years.forward=9,
-		sgp.projections.max.forward.progression.years=9,
+#		max.sgp.target.years.forward=9,
+#		sgp.projections.max.forward.progression.years=9,
+		max.sgp.target.years.forward=10,
+		sgp.projections.max.forward.progression.years=10,
 		sgp.projections.projection.unit="YEAR",
 		sgp.projections.projection.unit.label="TIME",
 		return.prior.scale.score.standardized=TRUE,

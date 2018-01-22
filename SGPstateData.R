@@ -644,6 +644,10 @@ SGPstateData[["AZ"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	ALGEBRA_I_FROM_7=3,
 	ALGEBRA_II=3)
 
+SGPstateData[["AZ"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("MATHEMATICS", "ALGEBRA_I_FROM_7"),
+	PREFERENCE = c(1, 2), key = "SGP_PROJECTION_GROUP")
+
 load("SGP_Norm_Group_Preference/AZ_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["AZ"]][["SGP_Norm_Group_Preference"]] <- AZ_SGP_Norm_Group_Preference
 #SGPstateData[["AZ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AZ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))

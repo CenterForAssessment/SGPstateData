@@ -620,25 +620,33 @@ SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+	ALGEBRA_I_FROM_7=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
 	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
 	ELA=rep("ELA", 9),
 	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+	ALGEBRA_I_FROM_7=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
 	ELA=rep(1L, 8),
 	MATHEMATICS=rep(1L, 8),
 	GEOMETRY=rep(1L, 8),
 	ALGEBRA_I=rep(1L, 8),
+	ALGEBRA_I_FROM_7=rep(1L, 7),
 	ALGEBRA_II=rep(1L, 8))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
 	ELA=3,
 	MATHEMATICS=3,
 	GEOMETRY=3,
 	ALGEBRA_I=3,
+	ALGEBRA_I_FROM_7=3,
 	ALGEBRA_II=3)
+
+SGPstateData[["AZ"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("MATHEMATICS", "ALGEBRA_I_FROM_7"),
+	PREFERENCE = c(1, 2), key = "SGP_PROJECTION_GROUP")
 
 load("SGP_Norm_Group_Preference/AZ_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["AZ"]][["SGP_Norm_Group_Preference"]] <- AZ_SGP_Norm_Group_Preference

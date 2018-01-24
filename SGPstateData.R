@@ -7889,76 +7889,88 @@ load("SGP_Norm_Group_Preference/UT_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Preference
 
 
-
 #########################################################
 ### VERMONT
 #########################################################
 
-load("Knots_Boundaries/VT_Knots_Boundaries_ORIGINAL.Rdata")
-SGPstateData[["VT"]][["Achievement"]][["Knots_Boundaries"]] <- VT_Knots_Boundaries
+load("Knots_Boundaries/VT_SBAC_Knots_Boundaries.Rdata")
+SGPstateData[["VT"]][["Achievement"]][["Knots_Boundaries"]] <- VT_SBAC_Knots_Boundaries
+
+#SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
+#	list(
+#		MATHEMATICS=list(
+#			GRADE_3=c(32, 40, 53),
+#			GRADE_4=c(31, 40, 55),
+#			GRADE_5=c(33, 40, 54),
+#			GRADE_6=c(33, 40, 53),
+#			GRADE_7=c(34, 40, 52),
+#			GRADE_8=c(34, 40, 52),
+#			GRADE_11=c(34, 40, 52)),
+#		READING=list(
+#			GRADE_3=c(31, 40, 57),
+#			GRADE_4=c(31, 40, 56),
+#			GRADE_5=c(30, 40, 56),
+#			GRADE_6=c(29, 40, 59),
+#			GRADE_7=c(29, 40, 60),
+#			GRADE_8=c(28, 40, 59),
+#			GRADE_11=c(30, 40, 54)))
 
 SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
-			GRADE_3=c(32, 40, 53),
-			GRADE_4=c(31, 40, 55),
-			GRADE_5=c(33, 40, 54),
-			GRADE_6=c(33, 40, 53),
-			GRADE_7=c(34, 40, 52),
-			GRADE_8=c(34, 40, 52),
-			GRADE_11=c(34, 40, 52)),
+			GRADE_3=c(2381, 2436, 2501),
+			GRADE_4=c(2411, 2485, 2549),
+			GRADE_5=c(2455, 2528, 2579),
+			GRADE_6=c(2473, 2552, 2610),
+			GRADE_7=c(2484, 2567, 2635),
+			GRADE_8=c(2504, 2586, 2653)),
 		READING=list(
-			GRADE_3=c(31, 40, 57),
-			GRADE_4=c(31, 40, 56),
-			GRADE_5=c(30, 40, 56),
-			GRADE_6=c(29, 40, 59),
-			GRADE_7=c(29, 40, 60),
-			GRADE_8=c(28, 40, 59),
-			GRADE_11=c(30, 40, 54)))
+			GRADE_3=c(2367, 2432, 2490),
+			GRADE_4=c(2416, 2473, 2533),
+			GRADE_5=c(2442, 2502, 2582),
+			GRADE_6=c(2457, 2531, 2618),
+			GRADE_7=c(2479, 2552, 2649),
+			GRADE_8=c(2487, 2567, 2668)))
 
-SGPstateData[["VT"]][["Achievement"]][["Levels"]] <-
-	list(
-		Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient with Distinction"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+SGPstateData[["VT"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["VT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["VT"]][["Growth"]][["Cutscores"]] <-
-	list(
+SGPstateData[["VT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["VT"]][["Growth"]][["Cutscores"]] <- list(
 		Cuts=c(35, 66),
 		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["VT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-
-SGPstateData[["VT"]][["Assessment_Program_Information"]] <-
-	list(
-		Assessment_Name="Vermont NECAP",
-		Assessment_Abbreviation="NECAP",
+SGPstateData[["VT"]][["Assessment_Program_Information"]] <- list(
+		Assessment_Name="Smarter Balanced Assessment",
+		Assessment_Abbreviation="SBA",
+		Organization=list(
+		Name="Vermont Agency of Education",
+		Abbreviation="VAE",
+		URL="http://education.vermont.gov/",
+		Contact="603-271-3494"),
 		Content_Areas=c("Mathematics", "Reading"),
-		Grades_Tested=c(3,4,5,6,7,8,11),
-		Test_Vendor="Measured Progress",
-			Test_Season="Fall")
-#			CSEM=NECAP_CSEM)
+		Grades_Tested=c(3,4,5,6,7,8),
+		Assessment_Years=c("2015", "2016", "2017"),
+		Test_Season="Spring",
+		Test_Vendor="SBAC")
 
-SGPstateData[["VT"]][["Student_Report_Information"]] <-
-	list(
-		Transformed_Achievement_Level_Cutscores=list(
-										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-										READING=paste(2007:2013, 2008:2014, sep="_")),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-										MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"),
-										READING=paste(2007:2013, 2008:2014, sep="_")),
-#		Vertical_Scale="No", ## NECAP up to 2013-2014
+SGPstateData[["VT"]][["Student_Report_Information"]] <- list(
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
-			"Below Proficient"="Substantially Below Proficient",
-			"Part Proficient"="Partially Proficient",
-			"Proficient"="Proficient",
-			"Distinction"="Proficient with Distinction"))
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4"))
 
-SGPstateData[["VT"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/VT_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+SGPstateData[["VT"]][["SGP_Configuration"]] <- list(
+		print.other.gp=TRUE,
+		max.order.for.percentile=2)
 
 
 #########################################################

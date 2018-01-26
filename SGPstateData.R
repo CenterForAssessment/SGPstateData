@@ -7933,7 +7933,7 @@ SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(2487, 2567, 2668)))
 
 SGPstateData[["VT"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient With Distinction"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["VT"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -7949,24 +7949,24 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <- list(
 		Assessment_Abbreviation="SBA",
 		Organization=list(
 		Name="Vermont Agency of Education",
-		Abbreviation="VAE",
+		Abbreviation="VTAOE",
 		URL="http://education.vermont.gov/",
-		Contact="603-271-3494"),
+		Contact="802-479-1305"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Assessment_Years=c("2015", "2016", "2017"),
 		Test_Season="Spring",
-		Test_Vendor="SBAC")
+		Test_Vendor="AIR")
 
 SGPstateData[["VT"]][["Student_Report_Information"]] <- list(
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4"))
+			"Substantially Below Proficient"="Below Proficient",
+			"Partially Proficient"="Part Proficient",
+			"Proficient"="Proficient",
+			"Proficient With Distinction"="Distinction"))
 
 SGPstateData[["VT"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,

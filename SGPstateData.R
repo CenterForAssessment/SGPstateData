@@ -7893,8 +7893,8 @@ SGPstateData[["UT"]][["SGP_Norm_Group_Preference"]] <- UT_SGP_Norm_Group_Prefere
 ### VERMONT
 #########################################################
 
-load("Knots_Boundaries/VT_SBAC_Knots_Boundaries.Rdata")
-SGPstateData[["VT"]][["Achievement"]][["Knots_Boundaries"]] <- VT_SBAC_Knots_Boundaries
+load("Knots_Boundaries/VT_Knots_Boundaries.Rdata")
+SGPstateData[["VT"]][["Achievement"]][["Knots_Boundaries"]] <- VT_Knots_Boundaries
 
 #SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
 #	list(

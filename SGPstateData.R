@@ -9645,7 +9645,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Trans
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,
 		max.order.for.projection=2,
-		max.sgp.target.years.forward=5,
+		max.sgp.target.years.forward=1:5,
 		sgp.projections.max.forward.progression.years=7,
 		sgp.minimum.default.panel.years=2,
 		sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",

@@ -1,7 +1,14 @@
+<p align="center">
+    <a href="https://github.com/CenterForAssessment/Colloquium_2018/blob/master/LICENSE.md" target="_blank">
+        <img src="img/CC-BY-SA.svg" width="10%"/>
+    </a>
+</p>
+
+
 GNU Lesser General Public License
 =================================
 
-_Version 3, 29 June 2007_  
+_Version 3, 29 June 2007_
 _Copyright © 2007 Free Software Foundation, Inc. &lt;<http://fsf.org/>&gt;_
 
 Everyone is permitted to copy and distribute verbatim copies

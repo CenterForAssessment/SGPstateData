@@ -1,10 +1,3 @@
-<p align="center">
-    <a href="https://github.com/CenterForAssessment/Colloquium_2018/blob/master/LICENSE.md" target="_blank">
-        <img src="img/CC-BY-SA.svg" width="10%"/>
-    </a>
-</p>
-
-
 GNU Lesser General Public License
 =================================
 

@@ -10182,8 +10182,11 @@ SGPstateData[["WY"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 ######################################################
 ###
-### Save the result
+###    Create 'digest' stamp and save the result
 ###
 ######################################################
+
+SGPstateData[["digest"]] <- NULL
+SGPstateData[["digest"]] <- digest::digest(SGPstateData)
 
 save(SGPstateData, file="SGPstateData.rda", compress="xz")

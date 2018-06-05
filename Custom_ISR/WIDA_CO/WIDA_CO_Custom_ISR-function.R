@@ -112,7 +112,7 @@ function() {
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("English Language Proficiency and Student Growth Report",
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
+			gp=gpar(fontface="bold", fontfamily="Helvetica", col="black", cex=1.125), just="top", default.units="native") # Helvetica-Narrow
 		popViewport()
 
 		##  Color block 1
@@ -145,16 +145,16 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2017 English Language Proficiency and Student Growth Report",
+		grid.text("2018 English Language Proficiency and Student Growth Report",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, paste0("For more information please visit www.cde.state.co.us/accountability/englishlanguageproficiencygrowth or contact ", tmp.organization$Contact, "."), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
+		# grid.text(x=0.02, y=0.65, paste0("For more information please visit www.cde.state.co.us/accountability/englishlanguageproficiencygrowth or contact ", tmp.organization$Contact, "."), gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
 		copyright.text <- paste0("Cooperatively developed by the ", tmp.organization$Name, " (", tmp.organization$Abbreviation, ") & the Center for Assessment, Inc.")
-		grid.text(x=0.02, y=0.30, paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."),
-			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
+		grid.text(x=0.02, y=0.50, paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."), # y=0.30
+			gp=gpar(cex=0.85, col="black", fontface="bold", fontfamily="Helvetica-Narrow"), default.units="native", just=c("left", "top"))
 		popViewport()
 
 
@@ -268,7 +268,7 @@ function() {
 		##  Report Title
 		pushViewport(custom.isr$Grid_Objects$report_title.vp)
 		grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
-			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="black", cex=1.125), just="top", default.units="native")
+			gp=gpar(fontface="bold", fontfamily="Helvetica", col="black", cex=1.125), just="top", default.units="native") # Helvetica-Narrow
 		popViewport()
 
 		##  Color block 1
@@ -302,17 +302,17 @@ function() {
 
 		pushViewport(custom.isr$Grid_Objects$left.border.vp)
 		grid.rect(gp=gpar(fill= sgPlot.header.footer.color, col= sgPlot.header.footer.color))
-		grid.text("2017 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+		grid.text("2018 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
 			gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=2), rot=270, just="center", default.units="native")
 		popViewport()
 
 		## Bottom Legend
 		pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
-		grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar El Departamento de",
-			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
-		copyright.text <- "Educaci\u{F3}n de Colorado (CDE): 303-866-6763. Producido por El Departamento de Educaci\u{F3}n de Colorado y El Centro de Evaluaci\u{F3}n, Inc."
-		grid.text(x=0.02, y=0.30, copyright.text,
-			gp=gpar(cex=0.75, col="black"), default.units="native", just=c("left", "top"))
+		# grid.text(x=0.02, y=0.65, "Para obtener m\u{E1}s informaci\u{F3}n visite www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar El Departamento de",
+			# gp=gpar(cex=0.75, col="black", fontfamily="Helvetica-Narrow"), default.units="native", just=c("left", "top"))
+		copyright.text <- "Producido por El Departamento de Educaci\u{F3}n de Colorado (CDE) y El Centro de Evaluaci\u{F3}n, Inc. Distribuido por CDE."
+		grid.text(x=0.02, y=0.50, copyright.text, # y=0.30
+			gp=gpar(cex=0.825, col="black", fontfamily="Helvetica-Narrow"), default.units="native", just=c("left", "top"))
 		popViewport()
 
 		dev.off()

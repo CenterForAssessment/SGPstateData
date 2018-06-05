@@ -9273,12 +9273,13 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		URL="www.schoolview.org",
 		Contact="303-866-6763"),
 	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"),
 	Content_Areas=c("READING", "LITERACY"),
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")
 
 SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), LITERACY=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale=list(READING=TRUE, LITERACY=TRUE),
 	Content_Areas_Labels=list(READING="Overall", LITERACY="Overall"),
@@ -9346,6 +9347,7 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}p
 SGPstateData[["WIDA_CO_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_CO"]][["SGP_Configuration"]]
 
 SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
 	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale=list(READING=TRUE),
 	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),

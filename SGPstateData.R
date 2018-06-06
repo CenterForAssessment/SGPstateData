@@ -50,7 +50,7 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 			Contact="202-748-8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -10035,7 +10035,8 @@ SGPstateData[["WIDA_WI"]][["Assessment_Program_Information"]] <- list(
 	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
 	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Test_Season="Spring",
-	Test_Vendor="WIDA")
+	Test_Vendor="WIDA",
+	CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["WIDA_WI"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(READING=TRUE),

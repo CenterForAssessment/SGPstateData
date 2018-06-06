@@ -50,7 +50,7 @@ SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 			Contact="202-748-8100"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2"),
+		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2"),
 		Test_Season="Fall & Spring",
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
@@ -9515,6 +9515,72 @@ SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 
 
 ##########################################################################################
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) INDIANA
+##########################################################################################
+
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
+
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+
+SGPstateData[["WIDA_IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_IN"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_IN"]][["Growth"]][["System_Type"]] <- "Baseline Referenced"
+
+SGPstateData[["WIDA_IN"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
+	Organization=list(
+		Name="World Class Instructional Design and Assessment",
+		Abbreviation="WIDA",
+		URL="http://www.wida.us/",
+		Contact="1-866-276-7735"),
+	Content_Areas="Reading",
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"),
+	Test_Season="Spring",
+	Test_Vendor="WIDA")
+
+SGPstateData[["WIDA_IN"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(READING=TRUE),
+	Content_Areas_Labels=list(READING="Reading"),
+	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
+	Achievement_Level_Labels=list(
+		"Entering"="WIDA Level 1",
+		"Emerging"="WIDA Level 2",
+		"Developing"="WIDA Level 3",
+		"Expanding"="WIDA Level 4",
+		"Bridging"="WIDA Level 5",
+		"Reaching"="WIDA Level 6"))
+
+SGPstateData[["WIDA_IN"]][["SGP_Configuration"]] <- list(
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	max.sgp.target.years.forward=5,
+	sgp.minimum.default.panel.years=2,
+	sgp.projections.max.forward.progression.years=7,
+	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
+	print.sgp.order=TRUE,
+	projcuts.digits=0,
+	percentile.cuts=c(1,35,50,65,99),
+	lagged.percentile.trajectory.values=c(1,35,50,65,99),
+	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
+	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+#SGPstateData[["WIDA_IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+SGPstateData[["WIDA_IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+
+
+##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) MASSACHUSETTS
 ##########################################################################################
 
@@ -9946,7 +10012,7 @@ SGPstateData[["WIDA_WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_12=c(331, 362, 402, 434, 466)))
 
 SGPstateData[["WIDA_WI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("L1", "L2", "L3", "L4", "L5", "L6"),
+	Labels=c("1", "2", "3", "4", "5", "6"),
 	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient"))
 
 SGPstateData[["WIDA_WI"]][["Growth"]][["Cutscores"]] <- list(
@@ -9969,7 +10035,8 @@ SGPstateData[["WIDA_WI"]][["Assessment_Program_Information"]] <- list(
 	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
 	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Test_Season="Spring",
-	Test_Vendor="WIDA")
+	Test_Vendor="WIDA",
+	CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["WIDA_WI"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(READING=TRUE),

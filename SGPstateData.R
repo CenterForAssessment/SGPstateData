@@ -613,7 +613,8 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	return.norm.group.dates=TRUE,
 	return.projection.group.scale.scores=TRUE,
 	return.projection.group.dates=TRUE,
-	sgp.less.than.sgp.cohort.size.return="< 2000 Student in Norm Group")
+	sgp.less.than.sgp.cohort.size.return="< 2000 Student in Norm Group",
+	sgp.target.scale.scores.merge="1_year_lagged_current")
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),

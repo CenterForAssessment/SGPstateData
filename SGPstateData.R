@@ -9657,7 +9657,7 @@ SGPstateData[["WIDA_IN"]][["SGP_Configuration"]] <- list(
 	percentile.cuts=c(1,35,50,65,99),
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
-	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
+	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #SGPstateData[["WIDA_IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices

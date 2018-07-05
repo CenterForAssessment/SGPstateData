@@ -286,6 +286,7 @@ SGPstateData[["SBAC"]][["Student_Report_Information"]] <- list(
 		"Level 3"="Level 3",
 		"Level 4"="Level 4"))
 
+SGPstateData[["SBAC"]][["SGP_Configuration"]][["max.n.for.coefficient.matrices"]] <- 1000000
 
 
 #########################################################

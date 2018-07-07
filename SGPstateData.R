@@ -286,9 +286,11 @@ SGPstateData[["SBAC"]][["Student_Report_Information"]] <- list(
 		"Level 3"="Level 3",
 		"Level 4"="Level 4"))
 
-SGPstateData[["SBAC"]][["SGP_Configuration"]] <- 
+SGPstateData[["SBAC"]][["SGP_Configuration"]] <-
 list(
-	max.n.for.coefficient.matrices=1000000
+	max.n.for.coefficient.matrices=1000000,
+	sgp.minimum.default.panel.years=2,
+	sgp.target.scale.scores.merge="all_years_lagged_current"
 )
 
 #########################################################

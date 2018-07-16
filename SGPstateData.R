@@ -274,7 +274,8 @@ SGPstateData[["SBAC"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10,11),
 	Test_Season="Spring",
-	Test_Vendor="SBAC")
+	Test_Vendor="SBAC",
+	CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["SBAC"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),

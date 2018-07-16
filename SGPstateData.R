@@ -121,7 +121,7 @@ SGPstateData[["PARCC"]][["Student_Report_Information"]] <-
 SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 	list(
 		fix.duplicates="KEEP.ALL",
-		rq.method = "fn",
+		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
@@ -288,7 +288,7 @@ SGPstateData[["SBAC"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["SBAC"]][["SGP_Configuration"]] <-
 list(
-	max.n.for.coefficient.matrices=1000000,
+	rq.method="fn",
 	sgp.minimum.default.panel.years=2,
 	sgp.target.scale.scores.merge="all_years_lagged_current"
 )

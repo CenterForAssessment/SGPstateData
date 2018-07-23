@@ -2297,7 +2297,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Abbreviation="Milestones",
 		Content_Areas=c("Mathematics", "ELA", "Science", "Social Studies"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'),
+		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
 		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
@@ -2387,9 +2387,10 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 			SCIENCE=c(3,4,5,6,7,8), PHYSICAL_SCIENCE = "EOCT", BIOLOGY = "EOCT"),
 		Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
 		Achievement_Level_Labels=list(
-			"Does Not Meet"="Does Not Meet Expectations",
-			"Meets Expectations" = "Meets Expectations",
-			"Exceeds Expectations" = "Exceeds Expectations"))
+					"Beginning Learner"="Beginning Learner",
+					"Developing Learner"="Developing Learner",
+					"Proficient Learner"="Proficient Learner",
+					"Distinguished Learner"="Distinguished Learner"))
 
 SGPstateData[["GA"]][["SGP_Configuration"]] <-
 	list(

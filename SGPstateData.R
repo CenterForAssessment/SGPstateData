@@ -224,6 +224,72 @@ SGPstateData[["PARCC"]][["SGP_Norm_Group_Preference"]] <- PARCC_SGP_Norm_Group_P
 
 
 #########################################################
+### SBAC
+#########################################################
+
+load("Knots_Boundaries/SBAC_Knots_Boundaries.Rdata")
+
+SGPstateData[["SBAC"]][["Achievement"]][["Knots_Boundaries"]] <- SBAC_Knots_Boundaries
+
+SGPstateData[["SBAC"]][["Achievement"]][["Cutscores"]] <- list(
+	ELA=list(
+		GRADE_3=c(2367, 2432, 2490),
+		GRADE_4=c(2416, 2473, 2533),
+		GRADE_5=c(2442, 2502, 2582),
+		GRADE_6=c(2457, 2531, 2618),
+		GRADE_7=c(2479, 2552, 2649),
+		GRADE_8=c(2487, 2567, 2668),
+		GRADE_10=c(2491, 2577, 2677),
+		GRADE_11=c(2493, 2583, 2682)),
+	MATHEMATICS=list(
+		GRADE_3=c(2381, 2436, 2501),
+		GRADE_4=c(2411, 2485, 2549),
+		GRADE_5=c(2455, 2528, 2579),
+		GRADE_6=c(2473, 2552, 2610),
+		GRADE_7=c(2484, 2567, 2635),
+		GRADE_8=c(2504, 2586, 2653),
+		GRADE_10=c(2529, 2614, 2697),
+		GRADE_11=c(2543, 2628, 2718)))
+
+SGPstateData[["SBAC"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["SBAC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["SBAC"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["SBAC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["SBAC"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="SBAC",
+	Assessment_Abbreviation="Smarter Balanced Assessment Consortium",
+	Organization=list(
+		Name="Smarter Balanced Assessment Consortium",
+		Abbreviation="SBAC",
+		URL="www.smarterbalanced.org",
+		Contact="888-888-8888"),
+	Content_Areas=c("Mathematics", "Reading"),
+	Grades_Tested=c(3,4,5,6,7,8,10,11),
+	Test_Season="Spring",
+	Test_Vendor="SBAC")
+
+SGPstateData[["SBAC"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10,11), ELA=c(3,4,5,6,7,8,10,11)),
+	Achievement_Level_Labels=list(
+		"Level 1"="Level 1",
+		"Level 2"="Level 2",
+		"Level 3"="Level 3",
+		"Level 4"="Level 4"))
+
+SGPstateData[["SBAC"]][["SGP_Configuration"]][["max.n.for.coefficient.matrices"]] <- 1000000
+
+
+#########################################################
 ### ALBUQUERQUE
 #########################################################
 
@@ -9648,7 +9714,7 @@ SGPstateData[["WIDA_IN"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA_IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
+	max.sgp.target.years.forward=1:6,
 	sgp.minimum.default.panel.years=2,
 	sgp.projections.max.forward.progression.years=7,
 	return.norm.group.scale.scores=TRUE,
@@ -9658,7 +9724,7 @@ SGPstateData[["WIDA_IN"]][["SGP_Configuration"]] <- list(
 	percentile.cuts=c(1,35,50,65,99),
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
-	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
+	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #SGPstateData[["WIDA_IN"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices

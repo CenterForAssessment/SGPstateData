@@ -10213,6 +10213,7 @@ SGPstateData[["WIDA_WI"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")

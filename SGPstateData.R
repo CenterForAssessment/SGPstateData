@@ -1648,7 +1648,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       MATHEMATICS_SAT  =  c("3", "4", "5", "6", "7", "8", "9", "10", "11")
     ),
     content_area.projection.sequence = list(
-			ELA = c(rep("ELA", 6), "ELA_PSAT_09", "ELA_PSAT_10", "ELA_SAT")
+			ELA = c(rep("ELA", 6), "ELA_PSAT_09", "ELA_PSAT_10", "ELA_SAT"),
       ELA_PSAT_09 = c(rep("ELA", 6), "ELA_PSAT_09", "ELA_PSAT_10", "ELA_SAT"),
       ELA_PSAT_10 = c(rep("ELA", 6), "ELA_PSAT_09", "ELA_PSAT_10", "ELA_SAT"),
       ELA_SAT = c(rep("ELA", 6), "ELA_PSAT_09", "ELA_PSAT_10", "ELA_SAT"),
@@ -1666,7 +1666,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			MATHEMATICS = rep(1L, 8),
 			MATHEMATICS_PSAT_09=rep(1L, 8),
 			MATHEMATICS_PSAT_10=rep(1L, 8),
-			MATHEMATICS_SAT  =  rep(1L, 8),
+			MATHEMATICS_SAT  =  rep(1L, 8)
 		)
   )
 

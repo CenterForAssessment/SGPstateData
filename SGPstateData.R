@@ -1576,6 +1576,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			MATHEMATICS    =    c("3", "4", "5", "6", "7", "8", "9"), # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			ALGEBRA_I = c("3", "4", "5", "6", "7", "EOCT", "9"),
 			GEOMETRY = c("7", "EOCT"),
+			ALGEBRA_II = c("8", "EOCT"),
 			INTEGRATED_MATH_1 = c("7", "EOCT"),
 			MATHEMATICS_PSAT_9 =c("3", "4", "5", "6", "7", "8", "9"),
       MATHEMATICS_PSAT_10=c("10", "11"),
@@ -1587,8 +1588,9 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       ELA_SAT  =  c("ELA_PSAT_10", "ELA_SAT"),     # c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
 
 			MATHEMATICS = c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9"), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
-			ALGEBRA_I=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"),
+			ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"),
 			GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
+			ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
 			INTEGRATED_MATH_1 = c("MATHEMATICS", "INTEGRATED_MATH_1"),
 			MATHEMATICS_PSAT_9 =c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9"), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
       MATHEMATICS_PSAT_10=c("MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
@@ -1600,8 +1602,9 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       ELA_SAT  =  1L,
 
 			MATHEMATICS = rep(1L, 6), # rep(1L, 8)
-			ALGEBRA_I = rep(1L, 6),
+			ALGEBRA_I =rep(1L, 6),
 			GEOMETRY = 1L,
+			ALGEBRA_II=1L,
 			INTEGRATED_MATH_1 = 1L,
 			MATHEMATICS_PSAT_9=rep(1L, 6),
 			MATHEMATICS_PSAT_10=1L,

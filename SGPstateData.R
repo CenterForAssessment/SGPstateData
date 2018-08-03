@@ -1513,6 +1513,10 @@ SGPstateData[["CO"]][["Achievement"]][["Levels"]] <-
 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "No Score"),
 		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
 
+SGPstateData[["CO"]][["Growth"]][["Cutscores"]] <- list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
 SGPstateData[["CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["CO"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"

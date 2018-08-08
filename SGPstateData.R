@@ -4946,6 +4946,8 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress/Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
+		print.other.gp=TRUE)
 
 #########################################################
 ### MICHIGAN

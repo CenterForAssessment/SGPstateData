@@ -4920,7 +4920,7 @@ SGPstateData[["MA"]][["Achievement"]][["Cutscores"]] <- list(
 	)
 
 SGPstateData[["MA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
@@ -4941,7 +4941,7 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 			Contact="781-338-3000"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2015", "2016", "2017"),
+		Assessment_Years=c("2015", "2016", "2017", "2018"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
 		CSEM="SCALE_SCORE_CSEM")

@@ -4946,6 +4946,23 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress/Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
+	Transformed_Achievement_Level_Cutscores=list(
+									MATHEMATICS=as.character(2009:2018),
+									ELA=as.character(2009:2018)),
+	Transformed_Achievement_Level_Cutscores_gaPlot=list(
+									MATHEMATICS=as.character(2009:2018),
+									ELA=as.character(2009:2018)),
+	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+	Projection_Fan_Limits=c(5, 95),
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10), ALGEBRA_I=c(8)),
+	Achievement_Level_Labels=list(
+		"Level 1"="Level 1",
+		"Level 2"="Level 2",
+		"Level 3"="Level 3",
+		"Level 4"="Level 4"))
+
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE)
 

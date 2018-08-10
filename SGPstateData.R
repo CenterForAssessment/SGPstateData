@@ -9893,13 +9893,27 @@ SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) INDIANA
 ##########################################################################################
 
-SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+	READING=list(
+		GRADE_0=c(229, 261, 293, 300, 309, 325, 350),
+		GRADE_1=c(242, 274, 315, 321, 330, 344, 368),
+		GRADE_2=c(254, 289, 329, 335, 344, 359, 383),
+		GRADE_3=c(265, 300, 340, 347, 356, 371, 396),
+		GRADE_4=c(279, 309, 350, 357, 366, 382, 406),
+		GRADE_5=c(286, 317, 358, 365, 374, 390, 415),
+		GRADE_6=c(291, 324, 365, 372, 382, 399, 423),
+		GRADE_7=c(298, 331, 372, 379, 389, 406, 431),
+		GRADE_8=c(304, 337, 378, 385, 395, 412, 438),
+		GRADE_9=c(311, 344, 385, 392, 402, 418, 446),
+		GRADE_10=c(318, 350, 391, 398, 408, 424, 453),
+		GRADE_11=c(325, 356, 397, 404, 413, 429, 459),
+		GRADE_12=c(331, 362, 402, 409, 418, 434, 466)))
 
 SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
 
 SGPstateData[["WIDA_IN"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 4.5", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Not Proficient", "Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -10433,6 +10447,7 @@ SGPstateData[["WIDA_WI"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	print.other.gp=TRUE,
 	calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 

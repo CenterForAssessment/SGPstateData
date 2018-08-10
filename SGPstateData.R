@@ -9893,7 +9893,9 @@ SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) INDIANA
 ##########################################################################################
 
-SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
 		GRADE_0=c(229, 261, 293, 300, 309, 325, 350),
 		GRADE_1=c(242, 274, 315, 321, 330, 344, 368),

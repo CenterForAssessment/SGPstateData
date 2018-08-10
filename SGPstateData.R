@@ -9893,7 +9893,9 @@ SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) INDIANA
 ##########################################################################################
 
-SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- list(
 	READING=list(
 		GRADE_0=c(229, 261, 293, 300, 309, 325, 350),
 		GRADE_1=c(242, 274, 315, 321, 330, 344, 368),
@@ -10447,6 +10449,7 @@ SGPstateData[["WIDA_WI"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	percentile.cuts=c(1,35,50,65,99),
 	print.other.gp=TRUE,
 	calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))

@@ -9911,11 +9911,9 @@ SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(325, 356, 397, 404, 413, 429, 459),
 		GRADE_12=c(331, 362, 402, 409, 418, 434, 466)))
 
-SGPstateData[["WIDA_IN"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
-
 SGPstateData[["WIDA_IN"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 4.5", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Not Proficient", "Proficient","Proficient",NA))
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -9948,7 +9946,9 @@ SGPstateData[["WIDA_IN"]][["Student_Report_Information"]] <- list(
 		"Emerging"="WIDA Level 2",
 		"Developing"="WIDA Level 3",
 		"Expanding"="WIDA Level 4",
-		"Bridging"="WIDA Level 5",
+		"Bridging 4.2"="WIDA Level 4.2",
+		"Bridging 4.5"="WIDA Level 4.5",
+		"Bridging 5.0"="WIDA Level 5",
 		"Reaching"="WIDA Level 6"))
 
 SGPstateData[["WIDA_IN"]][["SGP_Configuration"]] <- list(

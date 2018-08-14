@@ -2522,35 +2522,35 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 SGPstateData[["GA"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores = list(
-											ELA=as.character(2007:2019),
-											GRADE_9_LIT=as.character(2007:2019),
-											AMERICAN_LIT=as.character(2007:2019),
-											SOCIAL_STUDIES=as.character(2007:2019),
-											US_HISTORY=as.character(2007:2019),
-											ECONOMICS=as.character(2007:2019),
-											SCIENCE=as.character(2007:2019),
-											BIOLOGY=as.character(2007:2019),
-											PHYSICAL_SCIENCE=as.character(2007:2019),
-											MATHEMATICS=as.character(2007:2019),
-											COORDINATE_ALGEBRA=as.character(2007:2019),
-											ANALYTIC_GEOMETRY=as.character(2007:2019),
-											ALGEBRA_I=as.character(2007:2019),
-											GEOMETRY=as.character(2007:2019)),
+											ELA=as.character(2007:2020),
+											GRADE_9_LIT=as.character(2007:2020),
+											AMERICAN_LIT=as.character(2007:2020),
+											SOCIAL_STUDIES=as.character(2007:2020),
+											US_HISTORY=as.character(2007:2020),
+											ECONOMICS=as.character(2007:2020),
+											SCIENCE=as.character(2007:2020),
+											BIOLOGY=as.character(2007:2020),
+											PHYSICAL_SCIENCE=as.character(2007:2020),
+											MATHEMATICS=as.character(2007:2020),
+											COORDINATE_ALGEBRA=as.character(2007:2020),
+											ANALYTIC_GEOMETRY=as.character(2007:2020),
+											ALGEBRA_I=as.character(2007:2020),
+											GEOMETRY=as.character(2007:2020)),
 		Transformed_Achievement_Level_Cutscores_gaPlot = list(
-											ELA=as.character(2007:2019),
-											GRADE_9_LIT=as.character(2007:2019),
-											AMERICAN_LIT=as.character(2007:2019),
-											SOCIAL_STUDIES=as.character(2007:2019),
-											US_HISTORY=as.character(2007:2019),
-											ECONOMICS=as.character(2007:2019),
-											SCIENCE=as.character(2007:2019),
-											BIOLOGY=as.character(2007:2019),
-											PHYSICAL_SCIENCE=as.character(2007:2019),
-											MATHEMATICS=as.character(2007:2019),
-											COORDINATE_ALGEBRA=as.character(2007:2019),
-											ANALYTIC_GEOMETRY=as.character(2007:2019),
-											ALGEBRA_I=as.character(2007:2019),
-											GEOMETRY=as.character(2007:2019)),
+											ELA=as.character(2007:2020),
+											GRADE_9_LIT=as.character(2007:2020),
+											AMERICAN_LIT=as.character(2007:2020),
+											SOCIAL_STUDIES=as.character(2007:2020),
+											US_HISTORY=as.character(2007:2020),
+											ECONOMICS=as.character(2007:2020),
+											SCIENCE=as.character(2007:2020),
+											BIOLOGY=as.character(2007:2020),
+											PHYSICAL_SCIENCE=as.character(2007:2020),
+											MATHEMATICS=as.character(2007:2020),
+											COORDINATE_ALGEBRA=as.character(2007:2020),
+											ANALYTIC_GEOMETRY=as.character(2007:2020),
+											ALGEBRA_I=as.character(2007:2020),
+											GEOMETRY=as.character(2007:2020)),
 		Vertical_Scale=list(ELA=FALSE, GRADE_9_LIT=FALSE, AMERICAN_LIT=FALSE, SOCIAL_STUDIES=FALSE, US_HISTORY=FALSE,
 							ECONOMICS=FALSE, SCIENCE=FALSE, BIOLOGY=FALSE, PHYSICAL_SCIENCE=FALSE, MATHEMATICS=FALSE,
 							COORDINATE_ALGEBRA=FALSE, ANALYTIC_GEOMETRY=FALSE, ALGEBRA_I=FALSE, GEOMETRY=FALSE),
@@ -2578,6 +2578,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 	list(
 		# use.cohort.for.baseline.when.missing=TRUE,
 		# sgp.projections.baseline.max.order=4,
+		max.sgp.target.years.forward=1,
+		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
@@ -8036,12 +8038,12 @@ SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
 	sgp.less.than.sgp.cohort.size.return="<3000",
 	max.order.for.percentile=5,
-	max.order.for.projection=1,
+	max.order.for.projection=4, # All available SAGE per R.R. 8/13/18
 	sgPlot.use.alternate.student.id="SSID")
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 	list(
-		ELA = as.character(3:11),
+		ELA = as.character(3:10),
 		MATHEMATICS= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 		SEC_MATH_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 		SEC_MATH_II= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -8066,7 +8068,7 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
 	list(
-		ELA = rep("ELA", 9),
+		ELA = rep("ELA", 8),
 		MATHEMATICS= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
 		SEC_MATH_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
 		SEC_MATH_II= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
@@ -8092,7 +8094,7 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 
 SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
 	list(
-		ELA=rep(1L, 8),
+		ELA=rep(1L, 7),
 		MATHEMATICS= rep(1L, 8), # 8 is one fewer than the length of content_area.projection.sequence and grade.projection.sequence
 		SEC_MATH_I = rep(1L, 8),
 		SEC_MATH_II= rep(1L, 8),
@@ -8132,7 +8134,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 		Scale_Change=list(ELA="2014", MATHEMATICS="2014", SCIENCE="2014", EARTH_SCIENCE="2014", BIOLOGY="2014", CHEMISTRY="2014", PHYSICS="2014", SEC_MATH_I="2014", SEC_MATH_II="2014", SEC_MATH_III="2014"), # Add SEC_MATH_* so that it forces projections with the correct # of priors.
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Test_Season="Spring",
-		Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"), # 2005-2007 removed in 2013
+		Assessment_Years=c("2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"), # 2005-2007 removed in 2013
 		Test_Vendor="AIR")
 
 # SGPstateData[["UT"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
@@ -8198,19 +8200,19 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
 									MATHEMATICS=as.character(2008:2013), ### NOTE non-vertical up to 2013
 									ELA=as.character(2008:2013), ### NOTE non-vertical up to 2013
-									SCIENCE=as.character(2008:2018),
-									EARTH_SCIENCE=as.character(2008:2018),
-									BIOLOGY=as.character(2008:2018),
-									CHEMISTRY=as.character(2008:2018),
-									PHYSICS=as.character(2008:2018)),
+									SCIENCE=as.character(2008:2020),
+									EARTH_SCIENCE=as.character(2008:2020),
+									BIOLOGY=as.character(2008:2020),
+									CHEMISTRY=as.character(2008:2020),
+									PHYSICS=as.character(2008:2020)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
 									MATHEMATICS=as.character(2008:2013), ### NOTE non-vertical up to 2013
 									ELA=as.character(2008:2013), ### NOTE non-vertical up to 2013
-									SCIENCE=as.character(2008:2018),
-									EARTH_SCIENCE=as.character(2008:2018),
-									BIOLOGY=as.character(2008:2018),
-									CHEMISTRY=as.character(2008:2018),
-									PHYSICS=as.character(2008:2018)),
+									SCIENCE=as.character(2008:2020),
+									EARTH_SCIENCE=as.character(2008:2020),
+									BIOLOGY=as.character(2008:2020),
+									CHEMISTRY=as.character(2008:2020),
+									PHYSICS=as.character(2008:2020)),
 	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE, SCIENCE=FALSE, EARTH_SCIENCE=FALSE, BIOLOGY=FALSE, CHEMISTRY=FALSE, PHYSICS=FALSE),
 	Content_Areas_Labels=list(ELA = "ELA",
 		MATHEMATICS = "Math", SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",

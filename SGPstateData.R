@@ -7453,6 +7453,11 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 
 ### RHODE ISLAND
 
+load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
+SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
+		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
+			RI_SAT_Knots_Boundaries)
+
 RI_PARCC_Cutscores <- SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]][grep(".2015_2016.2", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]]))]
 RI_PARCC_Cutscores <- RI_PARCC_Cutscores[-grep("INTEGRATED_MATH", names(RI_PARCC_Cutscores))]
 names(RI_PARCC_Cutscores) <- gsub(".2015_2016.2", "", names(RI_PARCC_Cutscores))

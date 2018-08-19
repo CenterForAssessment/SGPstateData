@@ -7622,6 +7622,11 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 			ELA=c("3","4","5","6","7","8","9","EOCT"),
 			MATHEMATICS=c("3","4","5","6","7","8","EOCT")),
 		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5",
 			"Not Meeting"="Not Meeting Expectations",
 			"Partially Meeting"="Partially Meeting Expectations",
 			"Meeting"="Meeting Expectations",

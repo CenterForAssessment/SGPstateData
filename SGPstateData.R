@@ -7606,7 +7606,7 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020")),
 		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE, GEOMETRY=FALSE, ALGEBRA_I=FALSE, ALGEBRA_II=FALSE, MATHEMATICS_PSAT_10=FALSE, MATHEMATICS_SAT=FALSE),
 		Content_Areas_Labels=list(
-			ELA="English Language Arts", ELA_PSAT_10 = "ELA PSAT 10", ELA_SAT "ELA SAT",
+			ELA="English Language Arts", ELA_PSAT_10 = "ELA PSAT 10", ELA_SAT = "ELA SAT",
 			MATHEMATICS="Math", ALGEBRA_I="Algebra I", GEOMETRY="Geometry", ALGEBRA_II="Algebra II",
 			MATHEMATICS_PSAT_10 = "Math PSAT 10", MATHEMATICS_SAT = "Math SAT"),
 		Content_Areas_Domains=list(

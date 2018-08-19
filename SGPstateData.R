@@ -2578,7 +2578,6 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 	list(
 		# use.cohort.for.baseline.when.missing=TRUE,
 		# sgp.projections.baseline.max.order=4,
-		max.sgp.target.years.forward=1,
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		print.other.gp=TRUE,
@@ -2588,7 +2587,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2017 when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(
-			READING=c("3", "4", "5", "6", "7", "8"),  # Keep as long as READING used as a prior for getKnotsBoundaries function.
+			# READING=c("3", "4", "5", "6", "7", "8"),  # Keep as long as READING used as a prior for getKnotsBoundaries function.
 			# ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
 			# ELA=c("3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "EOCT", "EOCT"),
 			# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
@@ -2613,7 +2612,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			US_HISTORY=c("8", "EOCT", "EOCT"),
 			ECONOMICS=c("EOCT", "EOCT")),
 		content_area.projection.sequence = list(
-			READING=c("READING", "READING", "READING", "READING", "READING", "READING"), # Keep as long as READING used as a prior for getKnotsBoundaries function.
+			# READING=c("READING", "READING", "READING", "READING", "READING", "READING"), # Keep as long as READING used as a prior for getKnotsBoundaries function.
 			# ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
 			# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 			# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
@@ -2640,7 +2639,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 			US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 			ECONOMICS=c("US_HISTORY", "ECONOMICS")),
 		year_lags.projection.sequence = list(
-			READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
+			# READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
 			# ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
 			# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
 			# AMERICAN_LIT=as.integer(c(0, 1, 2)),
@@ -4968,8 +4967,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 		"Level 4"="Level 4"))
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
-		print.other.gp=TRUE,
-		sgp.target.scale.scores.merge="1_year_lagged_current")
+		print.other.gp=TRUE)
 
 #########################################################
 ### MICHIGAN
@@ -7455,30 +7453,42 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 
 ### RHODE ISLAND
 
-SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- list(
-	ELA =list(
+RI_PARCC_Cutscores <- SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]][grep(".2015_2016.2", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]]))]
+RI_PARCC_Cutscores <- RI_PARCC_Cutscores[-grep("INTEGRATED_MATH", names(RI_PARCC_Cutscores))]
+names(RI_PARCC_Cutscores) <- gsub(".2015_2016.2", "", names(RI_PARCC_Cutscores))
+
+SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, list(
+	ELA.2018 =list(
 		GRADE_3=c(-1.58103875, 0.011395, 1.60382875),
 		GRADE_4=c(-1.56114375, 0.030745, 1.62263375),
 		GRADE_5=c(-1.65871875, 0.03758, 1.73387875),
 		GRADE_6=c(-1.59094, -0.0106625, 1.569615),
 		GRADE_7=c(-1.55992625, 0.010925, 1.58177625),
 		GRADE_8=c(-1.4563275, 0.051195, 1.5587175)),
-	MATHEMATICS=list(
+	MATHEMATICS.2018=list(
 		GRADE_3=c(-1.37721625, 0.02747, 1.43215625),
 		GRADE_4=c(-1.37875875, 0.054015, 1.48678875),
 		GRADE_5=c(-1.55075375, 0.0249325, 1.60061875),
 		GRADE_6=c(-1.5180775, -0.00828, 1.5015175),
 		GRADE_7=c(-1.41406125, 0.0311575, 1.47637625),
 		GRADE_8=c(-1.49566, -0.008435, 1.47879)),
-	MATHEMATICS_PSAT_10=list(
+  MATHEMATICS_PSAT_10=list(
 		GRADE_EOCT=c(380, 440, 510, 620)),
+	MATHEMATICS_PSAT_10.2018=list(
+		GRADE_EOCT=c(390, 480, 600)),
 	MATHEMATICS_SAT=list(
 		GRADE_EOCT=c(390, 480, 550, 680)),
+	MATHEMATICS_SAT.2018=list(
+		GRADE_EOCT=c(420, 530, 650)),
 	ELA_PSAT_10=list(
 		GRADE_EOCT=c(370, 420, 500, 610)),
+	ELA_PSAT_10.2018=list(
+		GRADE_EOCT=c(370, 430, 590)),
 	ELA_SAT=list(
-		GRADE_EOCT=c(400, 460, 530, 660))
-	)
+		GRADE_EOCT=c(400, 460, 530, 660)),
+	ELA_SAT.2018=list(
+		GRADE_EOCT=c(420, 480, 630))
+	))
 
 SGPstateData[["RI"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
@@ -7507,36 +7517,115 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Measured Progress/Pearson")
 #		CSEM="SCALE_SCORE_CSEM")
 
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["MATHEMATICS"]] <- c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["MATHEMATICS"]] <- c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["MATHEMATICS"]] <- rep(1L, 8)
+SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
+		Assessment_Abbreviation="PARCC",
+		Assessment_Abbreviation.2018="RICAS",
+		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Name.2018="Rhode Island Comprehensive Assessment System",
+		Achievement_Levels=list(
+			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Levels.2018=list(
+			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"),
+		Achievement_Level_Labels.2018=list(
+			"Not Meeting"="Not Meeting Expectations",
+      "Partially Meeting"="Partially Meeting Expectations",
+      "Meeting"="Meeting Expectations",
+      "Exceeding"="Exceeding Expectations"),
+		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+		Content_Areas.2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
+		Content_Areas_Labels=list(
+				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+		Content_Areas_Labels.2018=list(
+				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
+				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
+		Vertical_Scale="No",
+		Vertical_Scale.2018="No",
+		Grades_Tested=c(3,4,5,6,7,8, "EOCT"),
+		Grades_Tested.2018=c(3,4,5,6,7,8, "EOCT"),
+		Year="2018"
+	)
 
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["ALGEBRA_I"]] <- c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["ALGEBRA_I"]] <- c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["ALGEBRA_I"]] <- rep(1L, 8)
+SGPstateData[["RI"]][["SGP_Configuration"]] <-
+	list(
+		grade.projection.sequence = list(
+			ELA=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
+			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
+			ELA_SAT=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			MATHEMATICS_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+			MATHEMATICS_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")),
+		content_area.projection.sequence = list(
+			ELA=c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT"),
+			ELA_PSAT_10=c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT"),
+			ELA_SAT=c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT"),
+			MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "MATHEMATICS_PSAT_10"),
+			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			MATHEMATICS_SAT=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
+		year_lags.projection.sequence = list(
+			ELA = rep(1L, 8),
+			ELA_PSAT_10=rep(1L, 8),
+			ELA_SAT=rep(1L, 8),
+			MATHEMATICS=rep(1L, 8),
+			ALGEBRA_I=rep(1L, 8),
+			GEOMETRY=rep(1L, 8),
+			MATHEMATICS_PSAT_10=rep(1L, 8),
+			MATHEMATICS_SAT=rep(1L, 8)
+		)
+	)
 
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["GEOMETRY"]] <- c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["GEOMETRY"]] <- c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "MATHEMATICS_PSAT_10")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["GEOMETRY"]] <- rep(1L, 8)
-
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["MATHEMATICS_PSAT_10"]] <- c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["MATHEMATICS_PSAT_10"]] <- c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["MATHEMATICS_PSAT_10"]] <- rep(1L, 8)
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["MATHEMATICS_SAT"]] <- c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["MATHEMATICS_SAT"]] <- c(rep("MATHEMATICS", 6), "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["MATHEMATICS_SAT"]] <- rep(1L, 8)
-
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["ELA"]] <- c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["ELA"]] <- c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["ELA"]] <- rep(1L, 8)
-
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["ELA_PSAT_10"]] <- c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["ELA_PSAT_10"]] <- c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["ELA_PSAT_10"]] <- rep(1L, 8)
-SGPstateData[["RI"]][["SGP_Configuration"]][["grade.projection.sequence"]][["ELA_SAT"]] <- c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["ELA_SAT"]] <- c(rep("ELA", 7), "ELA_PSAT_10", "ELA_SAT")
-SGPstateData[["RI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["ELA_SAT"]] <- rep(1L, 8)
-
+SGPstateData[["RI"]][["Student_Report_Information"]] <-
+	list(
+		Transformed_Achievement_Level_Cutscores=list(
+			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
+			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020")),
+		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE, GEOMETRY=FALSE, ALGEBRA_I=FALSE, ALGEBRA_II=FALSE, MATHEMATICS_PSAT_10=FALSE, MATHEMATICS_SAT=FALSE),
+		Content_Areas_Labels=list(
+			ELA="English Language Arts", ELA_PSAT_10 = "ELA PSAT 10", ELA_SAT "ELA SAT",
+			MATHEMATICS="Math", ALGEBRA_I="Algebra I", GEOMETRY="Geometry", ALGEBRA_II="Algebra II",
+			MATHEMATICS_PSAT_10 = "Math PSAT 10", MATHEMATICS_SAT = "Math SAT"),
+		Content_Areas_Domains=list(
+			ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
+			MATHEMATICS="MATHEMATICS", ALGEBRA_I="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_II="MATHEMATICS", MATHEMATICS_PSAT_10 = "MATHEMATICS", MATHEMATICS_SAT = "MATHEMATICS"),
+		Grades_Reported=list(
+			ELA=c("3","4","5","6","7","8","9"),
+			ELA_PSAT_10="EOCT", ELA_SAT="EOCT",
+			MATHEMATICS=c("3","4","5","6","7","8"),
+			MATHEMATICS_PSAT_10="EOCT", MATHEMATICS_SAT="EOCT",
+			GEOMETRY="EOCT", ALGEBRA_I="EOCT", ALGEBRA_II="EOCT"),
+		Grades_Reported_Domains=list(
+			ELA=c("3","4","5","6","7","8","9","EOCT"),
+			MATHEMATICS=c("3","4","5","6","7","8","EOCT")),
+		Achievement_Level_Labels=list(
+			"Not Meeting"="Not Meeting Expectations",
+			"Partially Meeting"="Partially Meeting Expectations",
+			"Meeting"="Meeting Expectations",
+			"Exceeding"="Exceeding Expectations"))
 
 #########################################################
 ### SOUTH DAKOTA

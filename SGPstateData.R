@@ -7463,14 +7463,14 @@ RI_PARCC_Cutscores <- RI_PARCC_Cutscores[-grep("INTEGRATED_MATH", names(RI_PARCC
 names(RI_PARCC_Cutscores) <- gsub(".2015_2016.2", "", names(RI_PARCC_Cutscores))
 
 SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, list(
-	ELA.2018 =list(
+	ELA.2017_2018 =list(
 		GRADE_3=c(-1.58103875, 0.011395, 1.60382875),
 		GRADE_4=c(-1.56114375, 0.030745, 1.62263375),
 		GRADE_5=c(-1.65871875, 0.03758, 1.73387875),
 		GRADE_6=c(-1.59094, -0.0106625, 1.569615),
 		GRADE_7=c(-1.55992625, 0.010925, 1.58177625),
 		GRADE_8=c(-1.4563275, 0.051195, 1.5587175)),
-	MATHEMATICS.2018=list(
+	MATHEMATICS.2017_2018=list(
 		GRADE_3=c(-1.37721625, 0.02747, 1.43215625),
 		GRADE_4=c(-1.37875875, 0.054015, 1.48678875),
 		GRADE_5=c(-1.55075375, 0.0249325, 1.60061875),
@@ -7479,19 +7479,19 @@ SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, li
 		GRADE_8=c(-1.49566, -0.008435, 1.47879)),
   MATHEMATICS_PSAT_10=list(
 		GRADE_EOCT=c(380, 440, 510, 620)),
-	MATHEMATICS_PSAT_10.2018=list(
+	MATHEMATICS_PSAT_10.2017_2018=list(
 		GRADE_EOCT=c(390, 480, 600)),
 	MATHEMATICS_SAT=list(
 		GRADE_EOCT=c(390, 480, 550, 680)),
-	MATHEMATICS_SAT.2018=list(
+	MATHEMATICS_SAT.2017_2018=list(
 		GRADE_EOCT=c(420, 530, 650)),
 	ELA_PSAT_10=list(
 		GRADE_EOCT=c(370, 420, 500, 610)),
-	ELA_PSAT_10.2018=list(
+	ELA_PSAT_10.2017_2018=list(
 		GRADE_EOCT=c(370, 430, 590)),
 	ELA_SAT=list(
 		GRADE_EOCT=c(400, 460, 530, 660)),
-	ELA_SAT.2018=list(
+	ELA_SAT.2017_2018=list(
 		GRADE_EOCT=c(420, 480, 630))
 	))
 
@@ -7517,7 +7517,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2015", "2016", "2017"),
+		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson")
 #		CSEM="SCALE_SCORE_CSEM")
@@ -7525,13 +7525,13 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
 		Assessment_Abbreviation="PARCC",
-		Assessment_Abbreviation.2018="RICAS",
+		Assessment_Abbreviation.2017_2018="RICAS",
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Name.2018="Rhode Island Comprehensive Assessment System",
+		Assessment_Name.2017_2018="Rhode Island Comprehensive Assessment System",
 		Achievement_Levels=list(
 			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
 			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2018=list(
+		Achievement_Levels.2017_2018=list(
 			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
 			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Achievement_Level_Labels=list(
@@ -7540,23 +7540,23 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Level 3"="Level 3",
 			"Level 4"="Level 4",
 			"Level 5"="Level 5"),
-		Achievement_Level_Labels.2018=list(
+		Achievement_Level_Labels.2017_2018=list(
 			"Not Meeting"="Not Meeting Expectations",
       "Partially Meeting"="Partially Meeting Expectations",
       "Meeting"="Meeting Expectations",
       "Exceeding"="Exceeding Expectations"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
-		Content_Areas.2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
+		Content_Areas.2017_2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
 		Content_Areas_Labels=list(
 				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
-		Content_Areas_Labels.2018=list(
+		Content_Areas_Labels.2017_2018=list(
 				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
 				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
 		Vertical_Scale="No",
-		Vertical_Scale.2018="No",
-		Grades_Tested=c(3,4,5,6,7,8, "EOCT"),
-		Grades_Tested.2018=c(3,4,5,6,7,8, "EOCT"),
-		Year="2018"
+		Vertical_Scale.2017_2018="No",
+		Grades_Tested=c(3:9, "EOCT"),
+		Grades_Tested.2017_2018=c(3:9, "EOCT"),
+		Year="2017_2018"
 	)
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-

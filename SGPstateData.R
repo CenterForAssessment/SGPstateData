@@ -8424,14 +8424,16 @@ SGPstateData[["VT"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_5=c(2455, 2528, 2579),
 			GRADE_6=c(2473, 2552, 2610),
 			GRADE_7=c(2484, 2567, 2635),
-			GRADE_8=c(2504, 2586, 2653)),
+			GRADE_8=c(2504, 2586, 2653),
+			GRADE_9=c(2517, 2601, 2676)),
 		READING=list(
 			GRADE_3=c(2367, 2432, 2490),
 			GRADE_4=c(2416, 2473, 2533),
 			GRADE_5=c(2442, 2502, 2582),
 			GRADE_6=c(2457, 2531, 2618),
 			GRADE_7=c(2479, 2552, 2649),
-			GRADE_8=c(2487, 2567, 2668)))
+			GRADE_8=c(2487, 2567, 2668),
+			GRADE_9=c(2489, 2571, 2672)))
 
 SGPstateData[["VT"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient With Distinction"),
@@ -8454,15 +8456,15 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <- list(
 		URL="http://education.vermont.gov/",
 		Contact="802-479-1305"),
 		Content_Areas=c("Mathematics", "Reading"),
-		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("2015", "2016", "2017"),
+		Grades_Tested=c(3,4,5,6,7,8,9),
+		Assessment_Years=c("2015", "2016", "2017", "2018"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 
 SGPstateData[["VT"]][["Student_Report_Information"]] <- list(
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9), READING=c(3,4,5,6,7,8,9)),
 		Achievement_Level_Labels=list(
 			"Substantially Below Proficient"="Below Proficient",
 			"Partially Proficient"="Part Proficient",

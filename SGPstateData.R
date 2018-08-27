@@ -10230,26 +10230,46 @@ SGPstateData[["WIDA_MA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
-	READING=list(
-		GRADE_0=c(493, 517, 531, 552),
-		GRADE_1=c(519, 542, 575, 595),
-		GRADE_2=c(527, 556, 595, 617),
-		GRADE_3=c(531, 572, 620, 639),
-		GRADE_4=c(536, 579, 626, 647),
-		GRADE_5=c(545, 585, 633, 653),
-		GRADE_6=c(554, 598, 635, 657),
-		GRADE_7=c(557, 607, 641, 662),
-		GRADE_8=c(564, 609, 648, 671),
-		GRADE_9=c(586, 620, 658, 681),
-		GRADE_10=c(588, 622, 662, 681),
-		GRADE_11=c(590, 632, 665, 685),
-		GRADE_12=c(593, 639, 673, 693)),
-	READING.2014=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2017=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
+                    READING=list(
+                                        GRADE_0=c(229, 261, 293, 300, 309, 325, 350),
+                                        GRADE_1=c(242, 274, 315, 321, 330, 344, 368),
+                                        GRADE_2=c(254, 289, 329, 335, 344, 359, 383),
+                                        GRADE_3=c(265, 300, 340, 347, 356, 371, 396),
+                                        GRADE_4=c(279, 309, 350, 357, 366, 382, 406),
+                                        GRADE_5=c(286, 317, 358, 365, 374, 390, 415),
+                                        GRADE_6=c(291, 324, 365, 372, 382, 399, 423),
+                                        GRADE_7=c(298, 331, 372, 379, 389, 406, 431),
+                                        GRADE_8=c(304, 337, 378, 385, 395, 412, 438),
+                                        GRADE_9=c(311, 344, 385, 392, 402, 418, 446),
+                                        GRADE_10=c(318, 350, 391, 398, 408, 424, 453),
+                                        GRADE_11=c(325, 356, 397, 404, 413, 429, 459),
+                                        GRADE_12=c(331, 362, 402, 409, 418, 434, 466)))
 
 SGPstateData[["WIDA_MI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+                    Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 4.5", "WIDA Level 5", "WIDA Level 6"),
+                    Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient"))
+
+#SGPstateData[["WIDA_MI"]][["Achievement"]][["Cutscores"]] <- list(
+#	READING=list(
+#		GRADE_0=c(493, 517, 531, 552),
+#		GRADE_1=c(519, 542, 575, 595),
+#		GRADE_2=c(527, 556, 595, 617),
+#		GRADE_3=c(531, 572, 620, 639),
+#		GRADE_4=c(536, 579, 626, 647),
+#		GRADE_5=c(545, 585, 633, 653),
+#		GRADE_6=c(554, 598, 635, 657),
+#		GRADE_7=c(557, 607, 641, 662),
+#		GRADE_8=c(564, 609, 648, 671),
+#		GRADE_9=c(586, 620, 658, 681),
+#		GRADE_10=c(588, 622, 662, 681),
+#		GRADE_11=c(590, 632, 665, 685),
+#		GRADE_12=c(593, 639, 673, 693)),
+#	READING.2014=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
+#	READING.2017=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
+
+#SGPstateData[["WIDA_MI"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
 
 SGPstateData[["WIDA_MI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 

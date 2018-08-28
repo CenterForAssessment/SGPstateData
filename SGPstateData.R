@@ -10372,45 +10372,46 @@ SGPstateData[["WIDA_MI"]][["Student_Report_Information"]] <- list(
 		"WIDA L5"="WIDA Level 5",
 		"WIDA L6"="WIDA Level 6"))
 
-SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MI-ELPA",
-		Assessment_Abbreviation.2014="WIDA",
-		Assessment_Name="Michigan English Language Proficiency Exam",
-		Assessment_Name.2014="World Class Instructional Design and Assessment",
-		Achievement_Levels=list(
-			Labels=c("MI-ELPA Level 1", "MI-ELPA Level 2", "MI-ELPA Level 3", "MI-ELPA Level 4", "MI-ELPA Level 5", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Levels.2014=list(
-			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Level_Labels=list(
-			"MI-ELPA L1"="MI-ELPA Level 1",
-			"MI-ELPA L2"="MI-ELPA Level 2",
-			"MI-ELPA L3"="MI-ELPA Level 3",
-			"MI-ELPA L4"="MI-ELPA Level 4",
-			"MI-ELPA L5"="MI-ELPA Level 5"),
-		Achievement_Level_Labels.2014=list(
-			"WIDA L1"="WIDA Level 1",
-			"WIDA L2"="WIDA Level 2",
-			"WIDA L3"="WIDA Level 3",
-			"WIDA L4"="WIDA Level 4",
-			"WIDA L5"="WIDA Level 5",
-			"WIDA L6"="WIDA Level 6"),
-		Content_Areas_Labels=list(READING="Reading"),
-		Content_Areas_Labels.2014=list(READING="Reading"),
-		Vertical_Scale="Yes",
-		Vertical_Scale.2014="Yes",
-		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Grades_Tested.2014=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Year="2014",
-		Baseline_Projections_in_Transition_Year=TRUE
-		)
+#SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MI-ELPA",
+#		Assessment_Abbreviation.2014="WIDA",
+#		Assessment_Name="Michigan English Language Proficiency Exam",
+#		Assessment_Name.2014="World Class Instructional Design and Assessment",
+#		Achievement_Levels=list(
+#			Labels=c("MI-ELPA Level 1", "MI-ELPA Level 2", "MI-ELPA Level 3", "MI-ELPA Level 4", "MI-ELPA Level 5", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Levels.2014=list(
+#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Level_Labels=list(
+#			"MI-ELPA L1"="MI-ELPA Level 1",
+#			"MI-ELPA L2"="MI-ELPA Level 2",
+#			"MI-ELPA L3"="MI-ELPA Level 3",
+#			"MI-ELPA L4"="MI-ELPA Level 4",
+#			"MI-ELPA L5"="MI-ELPA Level 5"),
+#		Achievement_Level_Labels.2014=list(
+#			"WIDA L1"="WIDA Level 1",
+#			"WIDA L2"="WIDA Level 2",
+#			"WIDA L3"="WIDA Level 3",
+#			"WIDA L4"="WIDA Level 4",
+#			"WIDA L5"="WIDA Level 5",
+#			"WIDA L6"="WIDA Level 6"),
+#		Content_Areas_Labels=list(READING="Reading"),
+#		Content_Areas_Labels.2014=list(READING="Reading"),
+#		Vertical_Scale="Yes",
+#		Vertical_Scale.2014="Yes",
+#		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Grades_Tested.2014=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Year="2014",
+#		Baseline_Projections_in_Transition_Year=TRUE
+#		)
 
 SGPstateData[["WIDA_MI"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
+	max.sgp.target.years.forward=1:7,
+	sgp.target.scale.scores.merge="1_year_lagged_current",
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
 	sgp.projections.max.forward.progression.years=7,
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

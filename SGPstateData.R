@@ -5558,21 +5558,37 @@ SGPstateData[["MO"]][["SGP_Configuration"]] <- list(state.multiple.year.summary=
 ### NCSC (National Center and State Collaborative) South Dakota
 #########################################################
 
-SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <-
-	list(MATHEMATICS=list(
+SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <- list(
+	MATHEMATICS=list(
 		GRADE_3=c(1236, 1240, 1254),
 		GRADE_4=c(1233, 1240, 1251),
 		GRADE_5=c(1231, 1240, 1255),
 		GRADE_6=c(1234, 1240, 1249),
 		GRADE_7=c(1232, 1240, 1254),
 		GRADE_8=c(1234, 1240, 1249)),
+	MATHEMATICS.2017=list(
+		GRADE_3=c(1235, 1242, 1254),
+		GRADE_4=c(1232, 1239, 1251),
+		GRADE_5=c(1232, 1240, 1253),
+		GRADE_6=c(1233, 1239, 1251),
+		GRADE_7=c(1234, 1240, 1254),
+		GRADE_8=c(1234, 1240, 1251),
+		GRADE_11=c(1235, 1240, 1250)),
 	ELA=list(
 		GRADE_3=c(1234, 1240, 1251),
 		GRADE_4=c(1234, 1240, 1258),
 		GRADE_5=c(1232, 1240, 1256),
 		GRADE_6=c(1231, 1240, 1253),
 		GRADE_7=c(1236, 1240, 1255),
-		GRADE_8=c(1230, 1240, 1250)))
+		GRADE_8=c(1230, 1240, 1250)),
+	ELA.2017=list(
+		GRADE_3=c(1234, 1240, 1254),
+		GRADE_4=c(1234, 1240, 1259),
+		GRADE_5=c(1232, 1240, 1256),
+		GRADE_6=c(1231, 1237, 1251),
+		GRADE_7=c(1236, 1240, 1255),
+		GRADE_8=c(1230, 1238, 1250),
+		GRADE_11=c(1236, 1240, 1255)))
 
 SGPstateData[["NCSC_SD"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(

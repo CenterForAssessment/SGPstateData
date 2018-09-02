@@ -1989,6 +1989,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				return.norm.group.dates=TRUE,
 				return.projection.group.scale.scores=TRUE,
 				return.projection.group.dates=TRUE,
+				sgp.target.scale.scores.merge="1_year_lagged_current",
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.projections.max.forward.progression.years=FALSE,
@@ -6064,9 +6065,11 @@ SGPstateData[["NV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #########################################################
 
 load("Knots_Boundaries/NH_SBAC_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/NH_Knots_Boundaries.Rdata")
 
 SGPstateData[["NH"]][["Achievement"]][["Knots_Boundaries"]] <-
-	c(NH_SBAC_Knots_Boundaries, # SBAC Knots/Bounds beginning in 2014_2015
+	c(NH_SBAC_Knots_Boundaries, # SBAC Knots/Boundaries beginning in 2014_2015
+	  NH_Knots_Boundaries, # Knots/Boundaries beginning in 2017_2018
 	list(
 		READING=list(
 			knots_3=c(335, 342, 348, 355),
@@ -6220,7 +6223,7 @@ SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
 			"Level 4"="Level 4"))
 
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
-		sgp.loss.hoss.adjustment="NH",
+#		sgp.loss.hoss.adjustment="NH",
 		state.multiple.year.summary=5,
 		print.other.gp=TRUE,
 		max.order.for.percentile=2)

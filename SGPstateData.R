@@ -6222,7 +6222,7 @@ SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
 			"Level 4"="Level 4"))
 
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
-		sgp.loss.hoss.adjustment="NH",
+#		sgp.loss.hoss.adjustment="NH",
 		state.multiple.year.summary=5,
 		print.other.gp=TRUE,
 		max.order.for.percentile=2)

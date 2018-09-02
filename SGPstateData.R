@@ -1989,6 +1989,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				return.norm.group.dates=TRUE,
 				return.projection.group.scale.scores=TRUE,
 				return.projection.group.dates=TRUE,
+				sgp.target.scale.scores.merge="1_year_lagged_current",
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.projections.max.forward.progression.years=FALSE,

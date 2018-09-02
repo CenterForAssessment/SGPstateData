@@ -6064,9 +6064,11 @@ SGPstateData[["NV"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 #########################################################
 
 load("Knots_Boundaries/NH_SBAC_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/NH_Knots_Boundaries.Rdata")
 
 SGPstateData[["NH"]][["Achievement"]][["Knots_Boundaries"]] <-
-	c(NH_SBAC_Knots_Boundaries, # SBAC Knots/Bounds beginning in 2014_2015
+	c(NH_SBAC_Knots_Boundaries, # SBAC Knots/Boundaries beginning in 2014_2015
+	  NH_Knots_Boundaries, # Knots/Boundaries beginning in 2017_2018
 	list(
 		READING=list(
 			knots_3=c(335, 342, 348, 355),

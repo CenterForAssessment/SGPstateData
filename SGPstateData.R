@@ -6129,6 +6129,13 @@ SGPstateData[["NH"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(2473, 2552, 2610),
 			GRADE_7=c(2484, 2567, 2635),
 			GRADE_8=c(2504, 2586, 2653)),
+		MATHEMATICS.2017_2018=list(
+			GRADE_3=c(410, 431, 455),
+			GRADE_4=c(431, 460, 492),
+			GRADE_5=c(460, 495, 522),
+			GRADE_6=c(479, 518, 556),
+			GRADE_7=c(507, 552, 587),
+			GRADE_8=c(539, 591, 625)),
 		READING=list(
 			GRADE_3=c(331, 340, 357),
 			GRADE_4=c(431, 440, 456),
@@ -6143,7 +6150,14 @@ SGPstateData[["NH"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_5=c(2442, 2502, 2582),
 			GRADE_6=c(2457, 2531, 2618),
 			GRADE_7=c(2479, 2552, 2649),
-			GRADE_8=c(2487, 2567, 2668)))
+			GRADE_8=c(2487, 2567, 2668)),
+		READING.2017_2018=list(
+			GRADE_3=c(557, 587, 616),
+			GRADE_4=c(580, 605, 635),
+			GRADE_5=c(594, 621, 664),
+			GRADE_6=c(605, 642, 688),
+			GRADE_7=c(608, 644, 697),
+			GRADE_8=c(625, 661, 711)))
 
 # SGPstateData[["NH"]][["Achievement"]][["Levels"]] <-
 # 	list(
@@ -6151,7 +6165,7 @@ SGPstateData[["NH"]][["Achievement"]][["Cutscores"]] <-
 # 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["NH"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Labels=c("Below Proficient", "Approaching Proficient", "Proficient", "Above Proficient"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["NH"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -6163,8 +6177,10 @@ SGPstateData[["NH"]][["Growth"]][["Cutscores"]] <- list(
 		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
 SGPstateData[["NH"]][["Assessment_Program_Information"]] <- list(
-		Assessment_Name="Smarter Balanced Assessment",
-		Assessment_Abbreviation="SBA",
+		Assessment_Name="New Hampshire Statewide Assessment System",
+		Assessment_Abbreviation="NH SAS",
+#		Assessment_Name="Smarter Balanced Assessment",
+#		Assessment_Abbreviation="SBA",
 		Organization=list(
 		Name="New Hampshire Department of Education",
 		Abbreviation="NHDOE",
@@ -6172,55 +6188,84 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <- list(
 		Contact="603-271-3494"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
-		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+		Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018"),
+#		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+		Scale_Change=list(MATHEMATICS="2017_2018", READING="2017_2018"),
 		Test_Season="Spring",
-		Test_Vendor="SBAC")
+		Test_Vendor="AIR")
+#		Test_Vendor="SBAC")
 		# Test_Season="Fall",
 		# Test_Vendor="Measured Progress")
 		# CSEM=NECAP_CSEM)
 
 SGPstateData[["NH"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
-	Assessment_Abbreviation="NECAP",
-	Assessment_Abbreviation.2014_2015="SBA",
-	Assessment_Name="New Hampshire NECAP",
-	Assessment_Name.2014_2015="Smarter Balanced Assessment",
+#	Assessment_Abbreviation="NECAP",
+#	Assessment_Abbreviation.2014_2015="SBA",
+	Assessment_Abbreviation="SBA",
+	Assessment_Abbreviation.2017_2018="NH SAS",
+#	Assessment_Name="New Hampshire NECAP",
+#	Assessment_Name.2014_2015="Smarter Balanced Assessment",
+	Assessment_Name="Smarter Balanced Assessment",
+	Assessment_Name.2017_2018="New Hampshire Statewide Assessment System",
+#	Achievement_Levels=list(
+#		Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient with Distinction"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#	Achievement_Levels.2014_2015=list(
+#		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	Achievement_Levels=list(
-		Labels=c("Substantially Below Proficient", "Partially Proficient", "Proficient", "Proficient with Distinction"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-	Achievement_Levels.2014_2015=list(
 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+	Achievement_Levels.2017_2018=list(
+		Labels=c("Below Proficient", "Approaching Proficient", "Proficient", "Above Proficient"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#	Achievement_Level_Labels=list(
+#		"Below Proficient"="Substantially Below Proficient",
+#		"Part Proficient"="Partially Proficient",
+#		"Proficient"="Proficient",
+#		"Distinction"="Proficient with Distinction"),
+#	Achievement_Level_Labels.2014_2015=list(
+#		"Level 1"="Level 1",
+#		"Level 2"="Level 2",
+#		"Level 3"="Level 3",
+#		"Level 4"="Level 4"),
 	Achievement_Level_Labels=list(
-		"Below Proficient"="Substantially Below Proficient",
-		"Part Proficient"="Partially Proficient",
-		"Proficient"="Proficient",
-		"Distinction"="Proficient with Distinction"),
-	Achievement_Level_Labels.2014_2015=list(
 		"Level 1"="Level 1",
 		"Level 2"="Level 2",
 		"Level 3"="Level 3",
 		"Level 4"="Level 4"),
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA"),
-	Vertical_Scale="No",
-	Vertical_Scale.2014_2015="Yes",
-	Grades_Tested=c(3,4,5,6,7,8,11),
-	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
-	Year="2014_2015")
+	Achievement_Level_Labels=list(
+		"Below Proficient"="Below Proficient",
+		"Approaching Proficient"="Approaching Proficient",
+		"Proficient"="Proficient",
+		"Above Proficient"="Above Proficient"),
+#	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+#	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
+	Content_Areas_Labels.2017_2018=list(MATHEMATICS="Math", READING="ELA"),
+#	Vertical_Scale="No",
+#	Vertical_Scale.2014_2015="Yes",
+	Vertical_Scale="Yes",
+	Vertical_Scale.2017_2018="Yes",
+#	Grades_Tested=c(3,4,5,6,7,8,11),
+#	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
+	Grades_Tested=c(3,4,5,6,7,8),
+	Grades_Tested.2017_2018=c(3,4,5,6,7,8),
+#	Year="2014_2015")
+	Year="2017_2018")
 
 
 SGPstateData[["NH"]][["Student_Report_Information"]] <- list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list( MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list( MATHEMATICS=paste(2007:2013, 2008:2014, sep="_"), READING=paste(2007:2013, 2008:2014, sep="_")),
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4"))
+			"Below Proficient"="Below Proficient",
+			"Approaching Proficient"="Approaching Proficient",
+			"Proficient"="Proficient",
+			"Above Proficient"="Above Proficient"))
 
 SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
 #		sgp.loss.hoss.adjustment="NH",

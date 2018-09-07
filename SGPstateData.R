@@ -10635,6 +10635,7 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	print.sgp.order=TRUE,
 	projcuts.digits=0,
 	percentile.cuts=c(1,35,50,65,99),
+	goodness.of.fit.minimum.n=10,
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

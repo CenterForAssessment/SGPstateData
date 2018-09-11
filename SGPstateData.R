@@ -5569,7 +5569,7 @@ SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(1234, 1240, 1249),
 		GRADE_7=c(1232, 1240, 1254),
 		GRADE_8=c(1234, 1240, 1249)),
-	MATHEMATICS.2017=list(
+	MATHEMATICS.2018=list(
 		GRADE_3=c(1235, 1242, 1254),
 		GRADE_4=c(1232, 1239, 1251),
 		GRADE_5=c(1232, 1240, 1253),
@@ -5584,7 +5584,7 @@ SGPstateData[["NCSC_SD"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(1231, 1240, 1253),
 		GRADE_7=c(1236, 1240, 1255),
 		GRADE_8=c(1230, 1240, 1250)),
-	ELA.2017=list(
+	ELA.2018=list(
 		GRADE_3=c(1234, 1240, 1254),
 		GRADE_4=c(1234, 1240, 1259),
 		GRADE_5=c(1232, 1240, 1256),
@@ -5659,18 +5659,18 @@ SGPstateData[["NCSC_SD"]][["Assessment_Program_Information"]] <-
 		Contact="DOE.Accountability@state.sd.us"),
 	Content_Areas=c("Mathematics", "ELA"),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c("2015", "2016"),
+	Assessment_Years=c("2015", "2016", "2017", "2018"),
 	Test_Vendor="Measured Progress",
 	Test_Season="Spring")
 
 SGPstateData[["NCSC_SD"]][["Student_Report_Information"]] <-
 	list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2015:2018),
-									ELA=as.character(2015:2018)),
+									MATHEMATICS=as.character(2015:2020),
+									ELA=as.character(2015:2020)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2015:2018),
-									ELA=as.character(2015:2018)),
+									MATHEMATICS=as.character(2015:2020),
+									ELA=as.character(2015:2020)),
 	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
@@ -10594,7 +10594,7 @@ SGPstateData[["WIDA_NH"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st-34th","35th-65th","66th-99th"))
 
-SGPstateData[["WIDA_NH"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["WIDA_NH"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA_NH"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="World Class Instructional Design and Assessment",
@@ -10635,6 +10635,7 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	print.sgp.order=TRUE,
 	projcuts.digits=0,
 	percentile.cuts=c(1,35,50,65,99),
+	goodness.of.fit.minimum.n=10,
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

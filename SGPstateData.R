@@ -2645,6 +2645,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# sgp.projections.baseline.max.order=4,
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
+		return.projection.group.scale.scores = TRUE,
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
@@ -7692,6 +7693,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-
 	list(
+		return.norm.group.scale.scores = TRUE,
 		grade.projection.sequence = list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
 			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),

@@ -2645,6 +2645,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# sgp.projections.baseline.max.order=4,
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
+		return.projection.group.scale.scores = TRUE,
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
@@ -7582,27 +7583,34 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 
 ### RHODE ISLAND
 
-load("CSEM/Rhode_Island/RICAS_PARCC_CSEM.Rdata")
+load("CSEM/Rhode_Island/RICAS_PARCC_CSEM-Combo.Rdata")
 load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
 
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
-		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
+		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
 			RI_SAT_Knots_Boundaries)
+names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]) <- gsub("_SS", "", names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]))
+# SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
+# 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
+# 			RI_SAT_Knots_Boundaries)
 
-RI_PARCC_Cutscores <- SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]][grep(".2015_2016.2", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]]))]
+RI_PARCC_Cutscores <- SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]]))]
 RI_PARCC_Cutscores <- RI_PARCC_Cutscores[-grep("INTEGRATED_MATH", names(RI_PARCC_Cutscores))]
-names(RI_PARCC_Cutscores) <- gsub(".2015_2016.2", "", names(RI_PARCC_Cutscores))
+names(RI_PARCC_Cutscores) <- gsub("_SS", "", names(RI_PARCC_Cutscores))
+# RI_PARCC_Cutscores <- SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]][grep(".2015_2016.2", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Cutscores"]]))]
+# RI_PARCC_Cutscores <- RI_PARCC_Cutscores[-grep("INTEGRATED_MATH", names(RI_PARCC_Cutscores))]
+# names(RI_PARCC_Cutscores) <- gsub(".2015_2016.2", "", names(RI_PARCC_Cutscores))
 
 SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, list(
 	ELA.2017_2018 =list(
-		GRADE_3=c(-1.58103875, 0.011395, 1.60382875),
+		GRADE_3=c(-1.58103875, 0.011395, 1.60382875), # c(470, 500, 530), # RICAS Scale Score Cuts for all grades/content areas
 		GRADE_4=c(-1.56114375, 0.030745, 1.62263375),
 		GRADE_5=c(-1.65871875, 0.03758, 1.73387875),
 		GRADE_6=c(-1.59094, -0.0106625, 1.569615),
 		GRADE_7=c(-1.55992625, 0.010925, 1.58177625),
 		GRADE_8=c(-1.4563275, 0.051195, 1.5587175)),
 	MATHEMATICS.2017_2018=list(
-		GRADE_3=c(-1.37721625, 0.02747, 1.43215625),
+		GRADE_3=c(-1.37721625, 0.02747, 1.43215625),  # c(470, 500, 530), # RICAS Scale Score Cuts for all grades/content areas
 		GRADE_4=c(-1.37875875, 0.054015, 1.48678875),
 		GRADE_5=c(-1.55075375, 0.0249325, 1.60061875),
 		GRADE_6=c(-1.5180775, -0.00828, 1.5015175),
@@ -7692,6 +7700,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-
 	list(
+		return.norm.group.scale.scores = TRUE,
 		grade.projection.sequence = list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
 			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),

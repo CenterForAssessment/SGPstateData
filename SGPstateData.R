@@ -9162,8 +9162,13 @@ SGPstateData[["DC"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 ### WEST VIRGINIA
 #########################################################
 
-SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
-	READING.2015_2016=list(
+load("Knots_Boundaries/WV_Knots_Boundaries_2018.Rdata")
+
+SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- c(
+	WV_Knots_Boundaries_2018,
+	list(
+#	READING.2015_2016=list(
+	READING.2016=list(
 		boundaries_3=c(1920.0, 2892.0),
 		boundaries_4=c(1948.5, 2950.5),
 		boundaries_5=c(1970.0, 3002.0),
@@ -9191,7 +9196,8 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(2102, 3032),
 		loss.hoss_10=c(2102, 3032),
 		loss.hoss_11=c(2102, 3032)),
-	READING.2014_2015=list(
+#	READING.2014_2015=list(
+	READING.2015=list(
 		boundaries_3=c(2063.1, 2673.9),
 		boundaries_4=c(2077.8, 2716.2),
 		boundaries_5=c(2151.0, 2751.0),
@@ -9247,7 +9253,8 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(148, 666),
 		loss.hoss_10=c(140, 774),
 		loss.hoss_11=c(153, 822)),
-	MATHEMATICS.2015_2016=list(
+#	MATHEMATICS.2015_2016=list(
+	MATHEMATICS.2016=list(
 		boundaries_3=c(2001.9, 2831.1),
 		boundaries_4=c(2015.6, 2908.4),
 		boundaries_5=c(2015.4, 2970.6),
@@ -9275,7 +9282,8 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_9=c(2118, 3085),
 		loss.hoss_10=c(2118, 3085),
 		loss.hoss_11=c(2118, 3085)),
-	MATHEMATICS.2014_2015=list(
+#	MATHEMATICS.2014_2015=list(
+	MATHEMATICS.2015=list(
 		boundaries_3=c(2145.8, 2664.2),
 		boundaries_4=c(2158.5, 2704.5),
 		boundaries_5=c(2170.9, 2748.1),
@@ -9330,7 +9338,7 @@ SGPstateData[["WV"]][["Achievement"]][["Knots_Boundaries"]] <- list(
 		loss.hoss_8=c(487, 880),
 		loss.hoss_9=c(513, 900),
 		loss.hoss_10=c(477, 872),
-		loss.hoss_11=c(513, 915)))
+		loss.hoss_11=c(513, 915))))
 
 SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 	MATHEMATICS=list(
@@ -9343,7 +9351,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(599, 642, 695, 730),
 		GRADE_10=c(605, 650, 702, 732),
 		GRADE_11=c(622, 660, 711, 734)),
-	MATHEMATICS.2009_2010=list(
+#	MATHEMATICS.2009_2010=list(
+	MATHEMATICS.2010=list(
 		GRADE_3=c(547, 581, 601, 623),
 		GRADE_4=c(556, 592, 622, 646),
 		GRADE_5=c(577, 611, 637, 667),
@@ -9353,7 +9362,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(642, 668, 686, 707),
 		GRADE_10=c(645, 670, 690, 714),
 		GRADE_11=c(661, 680, 702, 723)),
-	MATHEMATICS.2014_2015=list(
+#	MATHEMATICS.2014_2015=list(
+	MATHEMATICS.2015=list(
 		GRADE_3=c(2381, 2436, 2501),
 		GRADE_4=c(2411, 2485, 2549),
 		GRADE_5=c(2455, 2528, 2579),
@@ -9363,6 +9373,13 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(2515, 2599, 2676),
 		GRADE_10=c(2529, 2614, 2697),
 		GRADE_11=c(2543, 2628, 2718)),
+	MATHEMATICS.2018=list(
+		GRADE_3=c(401, 426, 448),
+		GRADE_4=c(422, 456, 478),
+		GRADE_5=c(449, 487, 513),
+		GRADE_6=c(474, 518, 550),
+		GRADE_7=c(503, 548, 583),
+		GRADE_8=c(529, 587, 617)),
 	READING=list(
 		GRADE_3=c(353, 413, 466, 502),
 		GRADE_4=c(356, 427, 467, 512),
@@ -9373,7 +9390,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(366, 474, 522, 575),
 		GRADE_10=c(368, 482, 527, 576),
 		GRADE_11=c(370, 478, 531, 576)),
-	READING.2009_2010=list(
+#	READING.2009_2010=list(
+	READING.2010=list(
 		GRADE_3=c(418, 436, 461, 487),
 		GRADE_4=c(427, 452, 475, 502),
 		GRADE_5=c(435, 460, 485, 512),
@@ -9383,7 +9401,8 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(449, 484, 517, 550),
 		GRADE_10=c(453, 492, 527, 560),
 		GRADE_11=c(454, 501, 528, 563)),
-	READING.2014_2015=list(
+#	READING.2014_2015=list(
+	READING.2015=list(
 		GRADE_3=c(2367, 2432, 2490),
 		GRADE_4=c(2416, 2473, 2533),
 		GRADE_5=c(2442, 2502, 2582),
@@ -9392,7 +9411,14 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_8=c(2487, 2567, 2668),
 		GRADE_9=c(2488, 2571, 2670),
 		GRADE_10=c(2491, 2577, 2677),
-		GRADE_11=c(2493, 2583, 2682)))
+		GRADE_11=c(2493, 2583, 2682)),
+	READING.2018=list(
+		GRADE_3=c(550, 586, 616),
+		GRADE_4=c(563, 599, 629),
+		GRADE_5=c(588, 622, 655),
+		GRADE_6=c(597, 639, 680),
+		GRADE_7=c(602, 644, 685),
+		GRADE_8=c(613, 656, 698)))
 
 #SGPstateData[["WV"]][["Achievement"]][["College_Readiness_Cutscores"]] <- list(
 #	MATHEMATICS=list(
@@ -9401,8 +9427,11 @@ SGPstateData[["WV"]][["Achievement"]][["Cutscores"]] <- list(
 #		GRADE_11=505))
 
 SGPstateData[["WV"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+	Labels=c("1", "2", "3", "4"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#SGPstateData[["WV"]][["Achievement"]][["Levels"]] <- list(
+#	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+#	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 #SGPstateData[["WV"]][["Achievement"]][["Levels"]] <- list(
 #		Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
 #		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient"))
@@ -9423,53 +9452,88 @@ SGPstateData[["WV"]][["Assessment_Program_Information"]] <- list(
 	Abbreviation="WVDE",
 		URL="wvde.state.wv.us",
 		Contact="304-558-2546 "),
-	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+#	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+	Scale_Change=list(MATHEMATICS="2018", READING="2018"),
 	Content_Areas=c("Reading", "Mathematics"),
-	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+#	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
-	Test_Vendor="SBAC/AIR")
+#	Test_Vendor="SBAC/AIR")
+	Test_Vendor="AIR")
 
 SGPstateData[["WV"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
-	Assessment_Abbreviation="WESTEST 2",
-	Assessment_Abbreviation.2014_2015="WVGSA",
-	Assessment_Name="West Virginia Educational Standards Tests",
-	Assessment_Name.2014_2015="West Virginia General Summative Assessment",
+#	Assessment_Abbreviation="WESTEST 2",
+	Assessment_Abbreviation="WVGSA",
+#	Assessment_Abbreviation.2014_2015="WVGSA",
+	Assessment_Abbreviation.2018="WVGSA",
+#	Assessment_Name="West Virginia Educational Standards Tests",
+	Assessment_Name="West Virginia General Summative Assessment",
+#	Assessment_Name.2014_2015="West Virginia General Summative Assessment",
+	Assessment_Name.2018="West Virginia General Summative Assessment",
+#	Achievement_Levels=list(
+#		Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 	Achievement_Levels=list(
-		Labels=c("Novice", "Partial Mastery", "Mastery", "Above Mastery", "Distinguished"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
-	Achievement_Levels.2014_2015=list(
-		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+		Labels=c("1", "2", "3", "4"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#	Achievement_Levels.2014_2015=list(
+#		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+	Achievement_Levels.2018=list(
+		Labels=c("1", "2", "3", "4"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#	Achievement_Level_Labels=list(
+#		"Novice"="Novice",
+#		"Partial Mastery"="Partial Mastery",
+#		"Mastery"="Mastery",
+#		"Above Mastery"="Above Mastery",
+#		"Distinguished"="Distinguished"),
 	Achievement_Level_Labels=list(
-		"Novice"="Novice",
-		"Partial Mastery"="Partial Mastery",
-		"Mastery"="Mastery",
-		"Above Mastery"="Above Mastery",
-		"Distinguished"="Distinguished"),
-	Achievement_Level_Labels.2014_2015=list(
-		"Level 1"="Level 1",
-		"Level 2"="Level 2",
-		"Level 3"="Level 3",
-		"Level 4"="Level 4"),
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA"),
-	Vertical_Scale="No",
-	Vertical_Scale.2014_2015="Yes",
-	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Grades_Tested.2014_2015=c(3,4,5,6,7,8,9,10,11),
-	Year="2014_2015"
+		"1"="Level 1",
+		"2"="Level 2",
+		"3"="Level 3",
+		"4"="Level 4"),
+#	Achievement_Level_Labels.2014_2015=list(
+#		"Level 1"="Level 1",
+#		"Level 2"="Level 2",
+#		"Level 3"="Level 3",
+#		"Level 4"="Level 4"),
+	Achievement_Level_Labels.2018=list(
+		"1"="Level 1",
+		"2"="Level 2",
+		"3"="Level 3",
+		"4"="Level 4"),
+#	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
+#	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA"),
+	Content_Areas_Labels.2018=list(MATHEMATICS="Math", READING="ELA"),
+#	Vertical_Scale="No",
+	Vertical_Scale="Yes",
+#	Vertical_Scale.2014_2015="Yes",
+	Vertical_Scale.2018="Yes",
+#	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested=c(3,4,5,6,7,8),
+#	Grades_Tested.2014_2015=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested.2018=c(3,4,5,6,7,8),
+#	Year="2014_2015"
+	Year="2018"
 )
 
 SGPstateData[["WV"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
-#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2014 and prior
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
+#	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)), ### 2017 and prior
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
 	Achievement_Level_Labels=list(
-		"Level 1"="Level 1",
-		"Level 2"="Level 2",
-		"Level 3"="Level 3",
-		"Level 4"="Level 4"))
+		"1"="Level 1",
+		"2"="Level 2",
+		"3"="Level 3",
+		"4"="Level 4"))
+#	Achievement_Level_Labels=list(
+#		"Level 1"="Level 1",
+#		"Level 2"="Level 2",
+#		"Level 3"="Level 3",
+#		"Level 4"="Level 4"))
 #	Achievement_Level_Labels=list( For 2013_2014 and prior
 #		"Novice"="Novice",
 #		"Partial Mastery"="Partial Mastery",

@@ -10339,7 +10339,7 @@ SGPstateData[["WIDA_MA"]][["Achievement"]][["Cutscores"]] <- list(
 
 SGPstateData[["WIDA_MA"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA))
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient", NA))
 
 SGPstateData[["WIDA_MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -10420,6 +10420,7 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.sgp.target.years.forward=1:5,
 		sgp.projections.max.forward.progression.years=7,
 		sgp.minimum.default.panel.years=2,
+		percentile.cuts=c(1,35,50,66,99),
 		sgp.target.scale.scores.merge="1_year_lagged_current",
 		sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

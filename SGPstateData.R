@@ -7046,17 +7046,17 @@ SGPstateData[["RLI"]][["Assessment_Program_Information"]] <-
 			Contact="(800) 338-4204"),
 		Content_Areas=c("Mathematics", "Reading", "Early Literacy"),
 		Grades_Tested=c('PK','K',1,2,3,4,5,6,7,8,9,10,11,12),
-		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
 		Test_Vendor="Renaissance Learning Incorporated",
 		Test_Season="Fall/Winter/Spring")
 
 SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(MATHEMATICS=TRUE, MATHEMATICS_RASCH=TRUE, READING=TRUE, READING_RASCH=TRUE, EARLY_LITERACY=TRUE, EARLY_LITERACY_RASCH=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, MATHEMATICS_RASCH=TRUE, READING=TRUE, READING_RASCH=TRUE, READING_UNIFIED=TRUE, EARLY_LITERACY=TRUE, EARLY_LITERACY_RASCH=TRUE),
 		Projection_Fan_Limits=c(5, 95),
-		Content_Areas_Labels=list(MATHEMATICS="Math", MATHEMATICS_RASCH="Mathematics", READING="Reading", READING_RASCH="Reading", EARLY_LITERACY="Early Literacy", EARLY_LITERACY_RASCH="Early Literacy"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", MATHEMATICS_RASCH="Mathematics", READING="Reading", READING_RASCH="Reading", READING_UNIFIED="Reading", EARLY_LITERACY="Early Literacy", EARLY_LITERACY_RASCH="Early Literacy"),
 		Grades_Reported=list(MATHEMATICS=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), MATHEMATICS_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
-							 READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")),
+							 READING=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING_RASCH=do.call(paste, c(expand.grid(1:12, 1:3), sep=".")), READING_UNIFIED=do.call(paste, c(expand.grid(c('K',1,2,3), 1:3), sep=".")),
 							 EARLY_LITERACY=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep=".")), EARLY_LITERACY_RASCH=do.call(paste, c(expand.grid(c('PK','K',1,2,3), 1:3), sep="."))),
 		Achievement_Level_Labels=list(
 			"Unsatisfactory"="Unsatisfactory",
@@ -7094,6 +7094,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		grade.projection.sequence=list(
 			READING_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 			READING_RASCH_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
+			READING_UNIFIED_FWS=paste(rep(as.character(c('K',1:3)), each=3), c(1,2,3), sep="."),
 #			READING_SS=paste(1:12, 3, sep="."),
 			MATHEMATICS_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
 			MATHEMATICS_RASCH_FWS=paste(rep(as.character(1:12), each=3), c(1,2,3), sep="."),
@@ -7103,6 +7104,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		content_area.projection.sequence=list(
 			READING_FWS=rep("READING", length(1:12)*3),
 			READING_RASCH_FWS=rep("READING_RASCH", length(1:12)*3),
+			READING_UNIFIED_FWS=rep("READING_UNIFIED", length(c('K',1:3))*3),
 #			READING_SS=rep("READING", length(1:12)),
 			MATHEMATICS_FWS=rep("MATHEMATICS", length(1:12)*3),
 			MATHEMATICS_RASCH_FWS=rep("MATHEMATICS_RASCH", length(1:12)*3),
@@ -7112,6 +7114,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		year_lags.projection.sequence=list(
 			READING_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 			READING_RASCH_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
+			READING_UNIFIED_FWS=c(rep(c(0.1, 0.1, 0.8), 3), c(0.1, 0.1)),
 #			READING_SS=c(rep(1, 11)),
 			MATHEMATICS_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
 			MATHEMATICS_RASCH_FWS=c(rep(c(0.1, 0.1, 0.8), 11), c(0.1, 0.1)),
@@ -7121,6 +7124,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		max.forward.projection.sequence=list(
 			READING_FWS=10,
 			READING_RASCH_FWS=10,
+			READING_UNIFIED_FWS=10,
 #			READING_SS=12,
 			MATHEMATICS_FWS=10,
 			MATHEMATICS_RASCH_FWS=10,

@@ -213,4 +213,66 @@ function(year,
 			names(tmp.list) <- paste(tmp.content_area.name, c("SS.config", "FS.config", "FWS.config"), sep=".")
 		return(tmp.list)
 	} ### END READING/SPRING
+
+
+	###
+	### READING_UNIFIED
+	###
+
+	if (content_area=="READING_UNIFIED" & testing.window=="FALL") {### READING_UNIFIED/FALL
+		tmp.content_area.name <- "READING_UNIFIED"
+		tmp.list <- list(
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, -2), "1", sep="."), paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
+				sgp.grade.sequences=list(c('K.1', '1.1'), c('K.1', '1.1', '2.1'), c('1.1', '2.1', '3.1')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.projection.baseline.content.areas=c(tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
+				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
+				sgp.grade.sequences=list(c('K.2', 'K.3', '1.1'), c('1.2', '1.3', '2.1'), c('2.2', '2.3', '3.1')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))))
+			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
+		return(tmp.list)
+	} ### END READING_UNIFIED/FALL
+
+	if (content_area=="READING_UNIFIED" & testing.window=="WINTER") {### READING_UNIFIED/WINTER
+		tmp.content_area.name <- "READING_UNIFIED"
+		tmp.list <- list(
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.projection.baseline.content.areas=c(tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
+				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
+				sgp.grade.sequences=list(c('K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))))
+			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")
+		return(tmp.list)
+	} ### END READING_UNIFIED/WINTER
+
+	if (content_area=="READING_UNIFIED" & testing.window=="SPRING") {### READING_UNIFIED/SPRING
+		tmp.content_area.name <- "READING_UNIFIED"
+		tmp.list <- list(
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, -2), "3", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
+				sgp.grade.sequences=list(c('K.3', '1.3'), c('K.3', '1.3', '2.3'), c('1.3', '2.3', '3.3')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
+				sgp.grade.sequences=list(c('K.1', 'K.3'), c('K.3', '1.1', '1.3'), c('1.3', '2.1', '2.3'), c('2.3', '3.1', '3.3')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))),
+			list(
+				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
+				sgp.projection.baseline.content.areas=c(tmp.content_area.name, tmp.content_area.name),
+				sgp.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
+				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "2", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
+				sgp.grade.sequences=list(c('K.1', 'K.2', 'K.3'), c('1.1', '1.2', '1.3'), c('2.1', '2.2', '2.3'), c('3.1', '3.2', '3.3')),
+				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))))
+			names(tmp.list) <- paste(tmp.content_area.name, c("SS.config", "FS.config", "FWS.config"), sep=".")
+		return(tmp.list)
+	} ### END READING_UNIFIED/SPRING
 } ### END configSGP

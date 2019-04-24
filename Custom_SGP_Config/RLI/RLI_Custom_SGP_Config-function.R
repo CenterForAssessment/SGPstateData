@@ -239,7 +239,7 @@ function(year,
 	} ### END READING_UNIFIED/FALL
 
 	if (content_area=="READING_UNIFIED" & testing.window=="WINTER") {### READING_UNIFIED/WINTER
-		tmp.content_area.name <- "READING_UNIFIED"
+		if (score.type=="RASCH") tmp.content_area.name <- "READING_UNIFIED_RASCH" else tmp.content_area.name <- "READING_UNIFIED"
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -253,7 +253,7 @@ function(year,
 	} ### END READING_UNIFIED/WINTER
 
 	if (content_area=="READING_UNIFIED" & testing.window=="SPRING") {### READING_UNIFIED/SPRING
-		tmp.content_area.name <- "READING_UNIFIED"
+		if (score.type=="RASCH") tmp.content_area.name <- "READING_UNIFIED_RASCH" else tmp.content_area.name <- "READING_UNIFIED"
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),

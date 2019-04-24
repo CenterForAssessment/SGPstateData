@@ -220,7 +220,7 @@ function(year,
 	###
 
 	if (content_area=="READING_UNIFIED" & testing.window=="FALL") {### READING_UNIFIED/FALL
-		tmp.content_area.name <- "READING_UNIFIED"
+		if (score.type=="RASCH") tmp.content_area.name <- "READING_UNIFIED_RASCH" else tmp.content_area.name <- "READING_UNIFIED"
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),

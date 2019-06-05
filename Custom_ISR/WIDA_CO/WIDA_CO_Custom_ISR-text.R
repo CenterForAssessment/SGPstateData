@@ -26,15 +26,14 @@ For more information about growth in Colorado please visit:  www.cde.state.co.us
 
 
 Report_Text_SPANISH <-
-"El prop\u{F3}sito de la evaluaci\u{F3}n \"ACCESS for ELLs 2.0\u{AE}\" para los estudiantes ELL, o sea los aprendices del Idioma Ingl\u{E9}s;
-es el de medir anualmente su progreso en el dominio del idioma ingl\u{E9}s. La evaluaci\u{F3}n sirve como un indicador que determina cuando los
-estudiantes ELL han alcanzado el nivel de competencia comparable con el nivel de sus compa\u{F1}eros proficientes en el idioma ingl\u{E9}s. Este
-informe indica el nivel actual de conocimiento y el progreso del estudiante y determina si el nivel de estudio en el que se encuentra es el
-adecuado para llegar a ser proficiente en el idioma ingl\u{E9}s.
+"El prop\u{F3}sito de la evaluaci\u{F3}n \"ACCESS for ELLs 2.0\u{AE}\" para los estudiantes ELL, o sea los aprendices del Idioma Ingl\u{E9}s; es el de medir anualmente
+su progreso en el dominio del idioma ingl\u{E9}s. La evaluaci\u{F3}n sirve como un indicador que determina cuando los estudiantes ELL han alcanzado el
+nivel de competencia comparable con el nivel de sus compa\u{F1}eros proficientes en el idioma ingl\u{E9}s. Este informe indica el nivel actual de conocimiento
+y el progreso del estudiante y determina si el nivel de estudio en el que se encuentra es el adecuado para llegar a ser proficiente en el idioma ingl\u{E9}s.
 
-Resultado: La evaluaci\u{F3}n ACCESS for ELLs\u{AE} proporciona una medida compuesta por la calificaci\u{F3}n general y el nivel de capacitaci\u{F3}n
-en el uso del idioma. La calificaci\u{F3}n general consiste en escuchar, hablar, leer y escribir. El grado de capacitaci\u{F3}n comprende seis
-niveles de competencia. Comenzando de menor a mayor rendimiento, los niveles son: Inicial, Transici\u{F3}n, Desarrollado, Elevado, Apto y Avanzado.
+Resultado: La evaluaci\u{F3}n ACCESS for ELLs\u{AE} proporciona una medida compuesta por la calificaci\u{F3}n general y el nivel de capacitaci\u{F3}n en el
+uso del idioma. La calificaci\u{F3}n general consiste en escuchar, hablar, leer y escribir. El grado de capacitaci\u{F3}n comprende seis niveles de
+competencia. Comenzando de menor a mayor rendimiento, los niveles son: Inicial, Transici\u{F3}n, Desarrollado, Elevado, Apto y Avanzado.
 
 Crecimiento: El modelo de crecimiento de Colorado mide el progreso anual de cada estudiante. Nos dice c\u{F3}mo el progreso del estudiante ELL
 se compara con el de estudiantes en los a\u{F1}os anteriores que alcanzaron similar puntuaci\u{F3}n en su evaluaci\u{F3}n ACCESS for ELL. Estos porcentajes
@@ -50,6 +49,7 @@ le podr\u{ED}a servir para discutir con los maestros de su estudiante preguntas 
     *  \u{BF}Es el crecimiento acad\u{E9}mico de mi hija suficiente para poder alcanzar el siguiente nivel el pr\u{F3}ximo a\u{F1}o?
     *  \u{BF}Qu\u{E9} necesita hacer mi estudiante para llegar al \u{FA}ltimo nivel el otro a\u{F1}o?
 
-Para obtener m\u{E1}s informaci\u{F3}n sobre el crecimiento en Colorado, visite www.cde.state.co.us/accountability/coloradogrowth o p\u{F3}ngase en contacto con 303-866-6763."
+Para obtener m\u{E1}s informaci\u{F3}n sobre el crecimiento en Colorado, visite www.cde.state.co.us/accountability/coloradogrowth
+o p\u{F3}ngase en contacto con 303-866-6763."
 
 old.text <- "Para obtener m\u{E1}s informaci\u{F3}n visite: www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar 303-866-6763."

@@ -10895,8 +10895,6 @@ SGPstateData[["WIDA_WI"]][["Student_Report_Information"]] <- list(
 		"Reaching"="L6"))
 
 SGPstateData[["WIDA_WI"]][["SGP_Configuration"]] <- list(
-	max.order.for.percentile=2,
-	max.order.for.projection=2,
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,

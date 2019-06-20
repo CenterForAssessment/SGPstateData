@@ -1612,10 +1612,10 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       ELA_PSAT_10=c("10", "11"),
       ELA_SAT  =  c("10", "11"),
 
-			MATHEMATICS    =    c("3", "4", "5", "6", "7", "8", "9"), # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "9"), # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			ALGEBRA_I = c("3", "4", "5", "6", "7", "EOCT", "9"),
-			GEOMETRY = c("7", "EOCT"),
-			ALGEBRA_II = c("8", "EOCT"),
+			GEOMETRY  = c("7", "EOCT"),
+			ALGEBRA_II= c("8", "EOCT"),
 			INTEGRATED_MATH_1 = c("7", "EOCT"),
 			MATHEMATICS_PSAT_9 =c("3", "4", "5", "6", "7", "8", "9"),
       MATHEMATICS_PSAT_10=c("10", "11"),
@@ -8360,9 +8360,9 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 		PHYSICS = rep(1L, 8),
 
 		SCIENCE_BIO = rep(1L, 5),
-		CHEM_BIO =1L,
-		PHYS_BIO =1L,
-		PHYS_CHEM =1L,
+		CHEM_BIO = 1L,
+		PHYS_BIO = 1L,
+		PHYS_CHEM= 1L,
 		BIO_PHYS = rep(1L, 7))
 
 SGPstateData[["UT"]][['SGP_Progression_Preference']] <- data.table(

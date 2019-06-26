@@ -615,7 +615,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 			Contact="1-800-352-4558"),
 		Content_Areas=c("Mathematics", "Reading", "ELA", "Algebra I", "Geometry", "Algebra II"),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"),
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
 		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
@@ -7043,7 +7043,7 @@ RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-f
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 load("Cutscores/RLI/RLI_Cutscores_testSGP.rda") ### Cutscores for testSGP('RLI1') & testSGP('RLI2')
-load("Cutscores/RLI/RLI_Cutscores_09032018.rda")
+load("Cutscores/RLI/RLI_Cutscores_06242019.rda")
 
 ### Cutscores embedded through rliCutscoreCreation.R or (if none supplied) utilize those in SGPstateData
 
@@ -9662,7 +9662,10 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_5=c(564, 610, 670),
 		GRADE_6=c(572, 622, 671),
 		GRADE_7=c(585, 638, 697),
-		GRADE_8=c(592, 652, 708)),
+		GRADE_8=c(592, 652, 708),
+		GRADE_9=c(420, 428, 436),
+		GRADE_10=c(422, 430, 437),
+		GRADE_11=c(15, 20, 28)),
 	MATHEMATICS=list(
 		GRADE_3=c(388, 438, 492),
 		GRADE_4=c(425, 474, 526),
@@ -9685,7 +9688,10 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_5=c(574, 611, 658),
 		GRADE_6=c(582, 626, 688),
 		GRADE_7=c(606, 647, 712),
-		GRADE_8=c(620, 667, 718)))
+		GRADE_8=c(620, 667, 718),
+		GRADE_9=c(420, 428, 439),
+		GRADE_10=c(422, 430, 437),
+		GRADE_11=c(17, 22, 28)))
 
 SGPstateData[["WI"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
@@ -9713,12 +9719,12 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 		Contact="800-441-4563"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
 	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #	Test_Season="Fall", 2014 and prior
 	Test_Season="Spring",
 #	Test_Vendor="CTB/McGraw Hill",
-	Test_Vendor="DRC",
+	Test_Vendor="DRC/ACT",
 	CSEM="SCALE_SCORE_CSEM")
 #	CSEM=Wisconsin_CSEM)
 
@@ -9755,7 +9761,7 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition
 SGPstateData[["WI"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8)),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
 	Achievement_Level_Labels=list(
 		"Below Basic"="Below",
 		"Basic"="Basic",

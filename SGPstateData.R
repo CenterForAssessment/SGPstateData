@@ -1575,11 +1575,11 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 				Labels=c("1 to 20", "21 to 40", "41 to 60", "61 to 80", "81 to 99"),
 				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Achievement_Level_Labels=list(
-				"Did Not Yet Meet Expectations"="Level 1",
-			  "Partially Met Expectations"="Level 2",
-			  "Approached Expectations"="Level 3",
-			  "Met Expectations"="Level 4",
-			  "Exceeded Expectations"="Level 5"),
+				"Does Not Meet"="Level 1",
+			  "Partially Met"="Level 2",
+			  "Approaching"="Level 3",
+			  "Meets Expectations"="Level 4",
+			  "Exceeds Expectations"="Level 5"),
 			Achievement_Level_Labels.9=list(
 				"1st to 20th Percentiles" = "1 to 20",
 			  "21st to 40th Percentiles"="21 to 40",
@@ -1607,12 +1607,12 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
     arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"),
     sgPlot.use.student.id = TRUE,
     grade.projection.sequence = list(
-			ELA    =    c("3", "4", "5", "6", "7", "8", "9"),  # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2018
+			ELA    =    c("3", "4", "5", "6", "7", "8"),  # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2018
       ELA_PSAT_9 =c("3", "4", "5", "6", "7", "8", "9"),
       ELA_PSAT_10=c("10", "11"),
       ELA_SAT  =  c("10", "11"),
 
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "9"), # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8"), # c("3", "4", "5", "6", "7", "8", "9", "10", "11"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			ALGEBRA_I = c("3", "4", "5", "6", "7", "EOCT", "9"),
 			GEOMETRY  = c("7", "EOCT"),
 			ALGEBRA_II= c("8", "EOCT"),
@@ -1621,12 +1621,12 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       MATHEMATICS_PSAT_10=c("10", "11"),
       MATHEMATICS_SAT  =  c("10", "11")),
     content_area.projection.sequence = list(
-			ELA = c(rep("ELA", 6), "ELA_PSAT_9"), # c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),  #  Available in 2019.  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2018
+			ELA = rep("ELA", 6), # c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),  #  Available in 2019.  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2018
       ELA_PSAT_9 =c(rep("ELA", 6), "ELA_PSAT_9"), # "ELA_PSAT_10", "ELA_SAT"),
       ELA_PSAT_10=c("ELA_PSAT_10", "ELA_SAT"), # c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
       ELA_SAT  =  c("ELA_PSAT_10", "ELA_SAT"),     # c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
 
-			MATHEMATICS = c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9"), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
+			MATHEMATICS = rep("MATHEMATICS", 6), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"), Available in 2019.  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"),
 			GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
 			ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
@@ -1635,12 +1635,12 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
       MATHEMATICS_PSAT_10=c("MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"), # c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
       MATHEMATICS_SAT  =  c("MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
     year_lags.projection.sequence = list(
-			ELA = rep(1L, 6), # rep(1L, 8)
+			ELA = rep(1L, 5), # rep(1L, 8)
       ELA_PSAT_9=rep(1L, 6),
       ELA_PSAT_10=1L,
       ELA_SAT  =  1L,
 
-			MATHEMATICS = rep(1L, 6), # rep(1L, 8)
+			MATHEMATICS = rep(1L, 5), # rep(1L, 8)
 			ALGEBRA_I =rep(1L, 6),
 			GEOMETRY = 1L,
 			ALGEBRA_II=1L,
@@ -1673,11 +1673,11 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   		MATHEMATICS_SAT = "11"),
     Proficiency_Label = "benchmark",
     Achievement_Level_Labels = list(
-			"Did Not Yet Meet Expectations"="Level 1",
-		  "Partially Met Expectations"="Level 2",
-		  "Approached Expectations"="Level 3",
-		  "Met Expectations"="Level 4",
-		  "Exceeded Expectations"="Level 5"),
+			"Does Not Meet"="Level 1",
+		  "Partially Met"="Level 2",
+		  "Approaching"="Level 3",
+		  "Meets Expectations"="Level 4",
+		  "Exceeds Expectations"="Level 5"),
     Content_Areas_Labels = list(
 			ELA = "ELA",
       ELA_PSAT_9 = "PSAT 9 ELA",

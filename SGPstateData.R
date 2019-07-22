@@ -5084,6 +5084,16 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_7=c(1680, 1700, 1717),
 		GRADE_8=c(1781, 1800, 1815),
 		GRADE_11=c(2082, 2100, 2118)),
+	MATHEMATICS.2018_2019=list(
+		GRADE_3=c(1280, 1300, 1322),
+		GRADE_4=c(1376, 1400, 1420),
+		GRADE_5=c(1479, 1500, 1515),
+		GRADE_6=c(1579, 1600, 1615),
+		GRADE_7=c(1680, 1700, 1717),
+		GRADE_8=c(370, 430, 510),
+		GRADE_9=c(450, 450, 450),
+		GRADE_10=c(480, 480, 480),
+		GRADE_11=c(430, 530, 650)),
 	READING=list(
 		GRADE_3=c(301, 324, 364),
 		GRADE_4=c(395, 419, 478),
@@ -5100,6 +5110,16 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_7=c(1680, 1700, 1727),
 		GRADE_8=c(1777, 1800, 1828),
 		GRADE_11=c(2079, 2100, 2122)),
+	READING.2018_2019=list(
+		GRADE_3=c(1280, 1300, 1318),
+		GRADE_4=c(1383, 1400, 1417),
+		GRADE_5=c(1482, 1500, 1524),
+		GRADE_6=c(1579, 1600, 1624),
+		GRADE_7=c(1680, 1700, 1727),
+		GRADE_8=c(360, 390, 440),
+		GRADE_9=c(410, 410, 410),
+		GRADE_10=c(430, 430, 430),
+		GRADE_11=c(430, 480, 630)),
 	SCIENCE=list(
 		GRADE_5=c(526, 553, 567),
 		GRADE_8=c(826, 845, 863)),
@@ -5144,57 +5164,57 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 		Contact="651-582-8200"),
 	Content_Areas=c("Mathematics", "Reading", "Social Studies", "Science"),
 #	Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
-	Grades_Tested=c(3,4,5,6,7,8,11),
-	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
 	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC/DRC",
 	CSEM="CSEM")
 
-SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="MEAP",
-		Assessment_Abbreviation.2014_2015="M-STEP",
-		Assessment_Name="Michigan Educational Assessment Program",
-		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
-		Achievement_Levels=list(
-			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2014_2015=list(
-			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Not Proficient" = "Not Proficient",
-			"Partially Proficient" = "Part Proficient",
-			"Proficient" = "Proficient",
-			"Advanced" = "Advanced"),
-		Achievement_Level_Labels.2014_2015=list(
-			"Not Proficient" = "Not Proficient",
-			"Partially Proficient" = "Part Proficient",
-			"Proficient" = "Proficient",
-			"Advanced" = "Advanced"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
-		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-		Vertical_Scale="No",
-		Vertical_Scale.2014_2015="No",
-		Grades_Tested=c(3,4,5,6,7,8),
-		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
-		Year="2014_2015"
-	)
+#SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="MEAP",
+#		Assessment_Abbreviation.2014_2015="M-STEP",
+#		Assessment_Name="Michigan Educational Assessment Program",
+#		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
+#		Achievement_Levels=list(
+#			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2014_2015=list(
+#			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Not Proficient" = "Not Proficient",
+#			"Partially Proficient" = "Part Proficient",
+#			"Proficient" = "Proficient",
+#			"Advanced" = "Advanced"),
+#		Achievement_Level_Labels.2014_2015=list(
+#			"Not Proficient" = "Not Proficient",
+#			"Partially Proficient" = "Part Proficient",
+#			"Proficient" = "Proficient",
+#			"Advanced" = "Advanced"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+#		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2014_2015="No",
+#		Grades_Tested=c(3,4,5,6,7,8),
+#		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
+#		Year="2014_2015"
+#	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=paste(2007:2017, 2008:2018, sep="_"),
-									READING=paste(2007:2017, 2008:2018, sep="_")),
+									MATHEMATICS=paste(2007:2018, 2008:2019, sep="_"),
+									READING=paste(2007:2018, 2008:2019, sep="_")),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=paste(2007:2017, 2008:2018, sep="_"),
-									READING=paste(2007:2017, 2008:2018, sep="_")),
+									MATHEMATICS=paste(2007:2018, 2008:2019, sep="_"),
+									READING=paste(2007:2018, 2008:2019, sep="_")),
 	Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
 #	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
 	Grades_Reported=list(
-		MATHEMATICS=c(3,4,5,6,7,8,11),
-		READING=c(3,4,5,6,7,8,11),
+		MATHEMATICS=c(3,4,5,6,7,8,9,10,11),
+		READING=c(3,4,5,6,7,8,9,10,11),
 		SCIENCE=c(4,7,11),
 #		SCIENCE=c(5,8,11),
 		SOCIAL_STUDIES=c(5,8,11)),

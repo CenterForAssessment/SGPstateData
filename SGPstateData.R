@@ -6056,8 +6056,8 @@ SGPstateData[["NV"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["NV"]][["Growth"]][["Cutscores"]] <-
 	list(
-		Cuts=c(40, 61),
-		Labels=list("1st - 39th", "40th - 60th", "61st - 99th"))
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
 
 SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 	list(
@@ -6074,7 +6074,7 @@ SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 #		Content_Areas=c("Mathematics", "Reading"),
 #		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("2016", "2017"),
+		Assessment_Years=c("2016", "2017", "2018", "2019"),
 		Test_Vendor="DRC",
 #		Test_Vendor="Measured Progress",
 		Test_Season="Spring")

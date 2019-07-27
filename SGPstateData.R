@@ -7712,7 +7712,8 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
-		CSEM=RICAS_PARCC_CSEM)
+#		CSEM=RICAS_PARCC_CSEM)
+		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(

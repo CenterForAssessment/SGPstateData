@@ -10481,6 +10481,7 @@ SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		sgp.projections.max.forward.progression.years=7,
 		sgp.minimum.default.panel.years=2,
 		percentile.cuts=c(1,35,50,66,99),
+		print.other.gp=TRUE,
 		sgp.target.scale.scores.merge="1_year_lagged_current",
 		sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),

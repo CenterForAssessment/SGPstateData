@@ -2038,10 +2038,12 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 ### DEMO EOCT (Necessary for some testSGP routines)
 #########################################################
 
+load("CSEM/Demonstration_EOCT/Demonstration_EOCT_CSEM.Rdata")
 SGPstateData[["DEMO_EOCT"]] <- SGPstateData[['DEMO']]
 SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.sgp"]]
 setnames(SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
 SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][-(c(9:14, 18:19, 21)),]
+SGPstateData[["DEMO_EOCT"]][["Assessment_Program_Information"]][["CSEM"]] <- Demonstration_EOCT_CSEM
 
 SGPstateData[["DEMO_EOCT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 	READING=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),

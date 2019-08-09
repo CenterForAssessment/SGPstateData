@@ -1411,7 +1411,7 @@ SGPstateData[["CELA"]][["Student_Report_Information"]] <-
 #SGPstateData[["CO_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["MATHEMATICS.BASELINE"]] <- CO_Baseline_Matrices[["MATHEMATICS.BASELINE"]]
 #SGPstateData[["CO_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["READING.BASELINE"]] <- CO_Baseline_Matrices[["READING.BASELINE"]]
 #SGPstateData[["CO_ORIGINAL"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]][["WRITING.BASELINE"]] <- CO_Baseline_Matrices[["WRITING.BASELINE"]]
-#SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 #load("SGP_Norm_Group_Preference/CO_SGP_Norm_Group_Preference.Rdata")
 #SGPstateData[["CO_ORIGINAL"]][["SGP_Norm_Group_Preference"]] <- CO_SGP_Norm_Group_Preference
 

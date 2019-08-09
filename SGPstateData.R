@@ -5238,6 +5238,11 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 		"Proficient" = "Proficient",
 		"Advanced" = "Advanced"))
 
+SGPstateData[["MI"]][["SGP_Configuration"]] <-
+	list(
+		max.sgp.target.years.forward <- 1:7,
+		sgp.target.scale.scores.merge <- "1_year_lagged_current")
+
 
 #########################################################
 ### MINNESOTA

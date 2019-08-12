@@ -7650,11 +7650,12 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 ### RHODE ISLAND
 
 load("CSEM/Rhode_Island/RICAS_PARCC_CSEM-Combo.Rdata")
+load("Knots_Boundaries/RI_RICAS_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
 
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
-			RI_SAT_Knots_Boundaries)
+			RI_RICAS_Knots_Boundaries, RI_SAT_Knots_Boundaries)
 names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]) <- gsub("_SS", "", names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]))
 # SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 # 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
@@ -7722,7 +7723,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018"),
+		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
 #		CSEM=RICAS_PARCC_CSEM)

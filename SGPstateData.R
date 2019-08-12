@@ -7650,11 +7650,12 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 ### RHODE ISLAND
 
 load("CSEM/Rhode_Island/RICAS_PARCC_CSEM-Combo.Rdata")
+load("Knots_Boundaries/RI_RICAS_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
 
 SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
-			RI_SAT_Knots_Boundaries)
+			RI_RICAS_Knots_Boundaries, RI_SAT_Knots_Boundaries)
 names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]) <- gsub("_SS", "", names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]))
 # SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 # 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],

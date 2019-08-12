@@ -7723,7 +7723,7 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018"),
+		Assessment_Years=c("2015_2016", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
 #		CSEM=RICAS_PARCC_CSEM)

@@ -5070,7 +5070,8 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 		"Level 4"="Level 4"))
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
-		print.other.gp=TRUE)
+		print.other.gp=TRUE,
+		round.digits=4L)
 
 #########################################################
 ### MICHIGAN

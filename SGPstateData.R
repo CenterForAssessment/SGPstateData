@@ -7769,7 +7769,8 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-
 	list(
-		return.norm.group.scale.scores = TRUE,
+		return.norm.group.scale.scores=TRUE,
+		round.digits=4L,
 		grade.projection.sequence = list(
 			ELA=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),
 			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "9", "EOCT", "EOCT"),

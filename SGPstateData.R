@@ -10793,7 +10793,7 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	sgp.target.scale.scores.merge="1_year_lagged_current")
 
 #SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-#SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
 
 ##########################################################################################

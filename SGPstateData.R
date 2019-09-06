@@ -6812,8 +6812,9 @@ SGPstateData[["NM_ORIGINAL"]][["Student_Report_Information"]] <- list(
 ### NEW MEXICO
 
 load("Knots_Boundaries/PARCC_NM_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/New_Mexico_Knots_Boundaries.Rdata")
 SGPstateData[["NM"]] <- SGPstateData[['PARCC']]
-SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_NM_Knots_Boundaries
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- c(New_Mexico_Knots_Boundaries, PARCC_NM_Knots_Boundaries)
 
 SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 	list(

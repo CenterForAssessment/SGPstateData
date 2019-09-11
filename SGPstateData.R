@@ -3827,6 +3827,28 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(210, 870),
 			loss.hoss_8=c(230, 890),
 			loss.hoss_10=c(100, 400)),
+		ELA.2019=list(
+			boundaries_3=c(4990, 5830),
+			boundaries_4=c(5018, 5882),
+			boundaries_5=c(5036, 5924),
+			boundaries_6=c(5056.5, 5938.5),
+			boundaries_7=c(5054, 5966),
+			boundaries_8=c(5073, 5997),
+			boundaries_10=c(85, 415),
+			knots_3=c(5390, 5434, 5470, 5509),
+			knots_4=c(5416, 5464, 5503, 5546),
+			knots_5=c(5446, 5497, 5538, 5581),
+			knots_6=c(5473, 5519, 5557, 5598),
+			knots_7=c(5493, 5545, 5586, 5629),
+			knots_8=c(5507, 5556, 5597, 5641),
+			knots_10=c(213, 244, 269, 295),
+			loss.hoss_3=c(5060, 5760),
+			loss.hoss_4=c(5090, 5810),
+			loss.hoss_5=c(5110, 5850),
+			loss.hoss_6=c(5130, 5865),
+			loss.hoss_7=c(5130, 5890),
+			loss.hoss_8=c(5150, 5920),
+			loss.hoss_10=c(100, 400)),
 		MATHEMATICS=list(
 			boundaries_2=c(94.8, 625.2),
 			boundaries_3=c(134.05, 740.95),
@@ -3851,6 +3873,28 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(240, 790),
 			loss.hoss_7=c(260, 810),
 			loss.hoss_8=c(340, 830),
+			loss.hoss_10=c(100, 400)),
+		MATHEMATICS.2019=list(
+			boundaries_3=c(6041.4, 6792.6),
+			boundaries_4=c(6030, 6870),
+			boundaries_5=c(6036, 6924),
+			boundaries_6=c(6034, 6946),
+			boundaries_7=c(6040, 7000),
+			boundaries_8=c(6037, 7033),
+			boundaries_10=c(85, 415),
+			knots_3=c(6373, 6421, 6459, 6500),
+			knots_4=c(6413, 6461, 6499, 6542),
+			knots_5=c(6431, 6483, 6524, 6571),
+			knots_6=c(6454, 6512, 6557, 6605),
+			knots_7=c(6454, 6514, 6565, 6619),
+			knots_8=c(6455, 6525, 6582, 6644),
+			knots_10=c(210, 240, 266, 297),
+			loss.hoss_3=c(6104, 6730),
+			loss.hoss_4=c(6100, 6800),
+			loss.hoss_5=c(6110, 6850),
+			loss.hoss_6=c(6110, 6870),
+			loss.hoss_7=c(6120, 6920),
+			loss.hoss_8=c(6120, 6950),
 			loss.hoss_10=c(100, 400)))
 
 SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
@@ -3870,6 +3914,14 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(516, 592),
 			GRADE_8=c(537, 617),
 			GRADE_10=c(244, 292)),
+		ELA.2019=list(
+			GRADE_3=c(5416, 5460, 5515),
+			GRADE_4=c(5444, 5493, 5547),
+			GRADE_5=c(5472, 5524, 5595),
+			GRADE_6=c(5492, 5544, 5604),
+			GRADE_7=c(5507, 5568, 5629),
+			GRADE_8=c(5511, 5577, 5638),
+			GRADE_10=c(244, 292)),
 		MATHEMATICS=list(
 			GRADE_3=c(413, 513),
 			GRADE_4=c(445, 541),
@@ -3884,12 +3936,20 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(510, 560),
 			GRADE_7=c(533, 578),
 			GRADE_8=c(554, 595),
+			GRADE_10=c(271, 339)),
+		MATHEMATICS.2019=list(
+			GRADE_3=c(6382, 6425, 6488),
+			GRADE_4=c(6429, 6474, 6541),
+			GRADE_5=c(6453, 6510, 6566),
+			GRADE_6=c(6488, 6545, 6605),
+			GRADE_7=c(6493, 6562, 6625),
+			GRADE_8=c(6509, 6590, 6651),
 			GRADE_10=c(271, 339)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 	list(
-		Labels=c("Did Not Pass", "Pass", "Pass +"),
-		Proficient=c("Not Proficient", "Proficient", "Proficient"))
+		Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -3902,46 +3962,47 @@ SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
-		Assessment_Abbreviation="ISTEP+",
+		Assessment_Name="Indiana Learning Evaluation and Readiness Network",
+		Assessment_Abbreviation="ILEARN",
 			Organization=list(
 			Name="Indiana Department of Education",
 			Abbreviation="IDOE",
 			URL="www.doe.in.gov",
 			Contact="webmaster@doe.in.gov"),
 		Content_Areas=c("English/Language Arts", "Mathematics"),
-		Scale_Change=list(MATHEMATICS="2015", ELA="2015"),
+		Scale_Change=list(MATHEMATICS="2019", ELA="2019"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
-		Test_Vendor="Pearson")
+		Test_Vendor="AIR")
 
 SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
 		Assessment_Abbreviation="ISTEP+",
-		Assessment_Abbreviation.2015="ISTEP+",
+		Assessment_Abbreviation.2019="ILEARN",
 		Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
-		Assessment_Name.2015="Indiana Statewide Testing for Educational Progress-Plus",
+		Assessment_Name.2019="Indiana Learning Evaluation and Readiness Network",
 		Achievement_Levels=list(
 			Labels=c("Did Not Pass", "Pass", "Pass +"),
 			Proficient=c("Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Did Not Pass", "Pass", "Pass +"),
-			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+		Achievement_Levels.2019=list(
+			Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Achievement_Level_Labels=list(
 			"Did Not Pass"="Did Not Pass",
 			"Pass"="Pass",
 			"Pass +"="Pass +"),
-		Achievement_Level_Labels.2015=list(
-			"Did Not Pass"="Did Not Pass",
-			"Pass"="Pass",
-			"Pass +"="Pass +"),
+		Achievement_Level_Labels.2019=list(
+			"Below Proficiency"="Below Proficiency",
+			"Approaching Proficiency"="Approaching Proficiency",
+			"At Proficiency"="At Proficiency",
+			"Above Proficient"="Above Proficient"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="Yes",
+		Content_Areas_Labels.2019=list(MATHEMATICS="Math", ELA="ELA"),
+		Vertical_Scale="Yes",
+		Vertical_Scale.2019="Yes",
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Grades_Tested.2015=c(3,4,5,6,7,8,10),
-		Year="2015"
+		Grades_Tested.2019=c(3,4,5,6,7,8,10),
+		Year="2019"
 	)
 
 SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
@@ -3949,9 +4010,10 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
 	Grades_Reported=list(ELA=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8,10)),
 	Achievement_Level_Labels=list(
-		"Did Not Pass"="Did Not Pass",
-		"Pass"="Pass",
-		"Pass +"="Pass +"))
+		"Below Proficiency"="Below Proficiency",
+		"Approaching Proficiency"="Approaching Proficiency",
+		"At Proficiency"="At Proficiency",
+		"Above Proficient"="Above Proficient"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=3,

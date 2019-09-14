@@ -4082,8 +4082,8 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 		"Above Proficient"="Above Proficient"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
-	max.order.for.percentile=3,
-	max.order.for.projection=3,
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
 	sgp.projections.baseline.max.order=2,
 	sgp.projections.lagged.baseline.max.order=2,
 	percentile.cuts=c(1,35,65,99),

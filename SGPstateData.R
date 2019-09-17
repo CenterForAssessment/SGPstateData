@@ -3981,12 +3981,18 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(537, 617),
 			GRADE_10=c(244, 292)),
 		ELA.2019=list(
-			GRADE_3=c(5416, 5460, 5515),
-			GRADE_4=c(5444, 5493, 5547),
-			GRADE_5=c(5472, 5524, 5595),
-			GRADE_6=c(5492, 5544, 5604),
-			GRADE_7=c(5507, 5568, 5629),
-			GRADE_8=c(5511, 5577, 5638),
+			GRADE_3=c(5460, 5515),
+			GRADE_4=c(5493, 5547),
+			GRADE_5=c(5524, 5595),
+			GRADE_6=c(5544, 5604),
+			GRADE_7=c(5568, 5629),
+			GRADE_8=c(5577, 5638),
+#			GRADE_3=c(5416, 5460, 5515),
+#			GRADE_4=c(5444, 5493, 5547),
+#			GRADE_5=c(5472, 5524, 5595),
+#			GRADE_6=c(5492, 5544, 5604),
+#			GRADE_7=c(5507, 5568, 5629),
+#			GRADE_8=c(5511, 5577, 5638),
 			GRADE_10=c(244, 292)),
 		MATHEMATICS=list(
 			GRADE_3=c(413, 513),
@@ -4004,18 +4010,26 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(554, 595),
 			GRADE_10=c(271, 339)),
 		MATHEMATICS.2019=list(
-			GRADE_3=c(6382, 6425, 6488),
-			GRADE_4=c(6429, 6474, 6541),
-			GRADE_5=c(6453, 6510, 6566),
-			GRADE_6=c(6488, 6545, 6605),
-			GRADE_7=c(6493, 6562, 6625),
-			GRADE_8=c(6509, 6590, 6651),
+			GRADE_3=c(6425, 6488),
+			GRADE_4=c(6474, 6541),
+			GRADE_5=c(6510, 6566),
+			GRADE_6=c(6545, 6605),
+			GRADE_7=c(6562, 6625),
+			GRADE_8=c(6590, 6651),
+#			GRADE_3=c(6382, 6425, 6488),
+#			GRADE_4=c(6429, 6474, 6541),
+#			GRADE_5=c(6453, 6510, 6566),
+#			GRADE_6=c(6488, 6545, 6605),
+#			GRADE_7=c(6493, 6562, 6625),
+#			GRADE_8=c(6509, 6590, 6651),
 			GRADE_10=c(271, 339)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 	list(
-		Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+		Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+		Proficient=c("Not Proficient", "Proficient", "Proficient"))
+#		Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -4051,15 +4065,18 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition
 			Labels=c("Did Not Pass", "Pass", "Pass +"),
 			Proficient=c("Not Proficient", "Proficient", "Proficient")),
 		Achievement_Levels.2019=list(
-			Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+			Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+#			Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 		Achievement_Level_Labels=list(
 			"Did Not Pass"="Did Not Pass",
 			"Pass"="Pass",
 			"Pass +"="Pass +"),
 		Achievement_Level_Labels.2019=list(
-			"Below Proficiency"="Below Proficiency",
-			"Approaching Proficiency"="Approaching Proficiency",
+#			"Below Proficiency"="Below Proficiency",
+#			"Approaching Proficiency"="Approaching Proficiency",
+			"Below/Approaching Proficiency"="Below/Approaching Proficiency",
 			"At Proficiency"="At Proficiency",
 			"Above Proficient"="Above Proficient"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
@@ -4076,10 +4093,13 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
 	Grades_Reported=list(ELA=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8,10)),
 	Achievement_Level_Labels=list(
-		"Below Proficiency"="Below Proficiency",
-		"Approaching Proficiency"="Approaching Proficiency",
+		"Below/Approaching Proficiency"="Below/Approaching Proficiency",
 		"At Proficiency"="At Proficiency",
 		"Above Proficient"="Above Proficient"))
+#		"Below Proficiency"="Below Proficiency",
+#		"Approaching Proficiency"="Approaching Proficiency",
+#		"At Proficiency"="At Proficiency",
+#		"Above Proficient"="Above Proficient"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,

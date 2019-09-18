@@ -3987,8 +3987,8 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(5544, 5604),
 			GRADE_7=c(5568, 5629),
 			GRADE_8=c(5577, 5638),
-#			GRADE_3=c(5416, 5460, 5515),
-#			GRADE_4=c(5444, 5493, 5547),
+#			GRADE_3=c(5416, 5460, 5515), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
+#			GRADE_4=c(5444, 5493, 5547), ### Review achievement levels annually to determine when 4 achievement levels can be supported
 #			GRADE_5=c(5472, 5524, 5595),
 #			GRADE_6=c(5492, 5544, 5604),
 #			GRADE_7=c(5507, 5568, 5629),
@@ -4016,8 +4016,8 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(6545, 6605),
 			GRADE_7=c(6562, 6625),
 			GRADE_8=c(6590, 6651),
-#			GRADE_3=c(6382, 6425, 6488),
-#			GRADE_4=c(6429, 6474, 6541),
+#			GRADE_3=c(6382, 6425, 6488), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
+#			GRADE_4=c(6429, 6474, 6541), ### Review achievement levels annually to determine when 4 achievement levels can be supported
 #			GRADE_5=c(6453, 6510, 6566),
 #			GRADE_6=c(6488, 6545, 6605),
 #			GRADE_7=c(6493, 6562, 6625),
@@ -4104,6 +4104,7 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
+	max.sgp.target.years.forward=3:4,
 	sgp.projections.baseline.max.order=2,
 	sgp.projections.lagged.baseline.max.order=2,
 	percentile.cuts=c(1,35,65,99),

@@ -8199,15 +8199,6 @@ SGPstateData[["SD"]][['SGP_Configuration']] <- list(
 
 SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
-		ELA.2019=list(
-			loss.hoss_3 =c(100, 530), # Put in as placeholder in 2019.  Verify in 2020 when Knots/Bounds established
-			loss.hoss_4 =c(135, 580),
-			loss.hoss_5 =c(165, 615),
-			loss.hoss_6 =c(185, 640),
-			loss.hoss_7 =c(190, 665),
-			loss.hoss_8 =c(190, 695),
-			loss.hoss_9 =c(100, 300),
-			loss.hoss_10=c(100, 300)),
 		ELA.2014=list(
 			boundaries_3=c(10, 1080),
 			boundaries_4=c(10, 1080),
@@ -8265,15 +8256,6 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_10=c(130, 199),
 			loss.hoss_11=c(130, 199)),
 
-		MATHEMATICS.2019=list(
-			loss.hoss_3 =c(200, 405), # Put in as placeholder in 2019.  Verify in 2020 when Knots/Bounds established
-			loss.hoss_4 =c(225, 460),
-			loss.hoss_5 =c(240, 510),
-			loss.hoss_6 =c(255, 565),
-			loss.hoss_7 =c(275, 660),
-			loss.hoss_8 =c(275, 675),
-			loss.hoss_9 =c(100, 300),
-			loss.hoss_10=c(100, 300)),
 		MATHEMATICS.2014=list(
 			boundaries_3=c(75, 975),
 			boundaries_4=c(75, 975),
@@ -8297,7 +8279,6 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_9=c(431, 486, 528, 571),
 			boundaries_9=c(75, 975),
 			loss.hoss_9=c(150, 900),
-
 			# SEC_MATH_II
 			knots_10=c(462, 518, 565, 619),
 			boundaries_10=c(75, 975),
@@ -8322,14 +8303,6 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_7=c(130, 199),
 			loss.hoss_8=c(130, 199)),
 
-		SCIENCE.2019=list( # Put in as placeholder in 2019.  Verify in 2020 when Knots/Bounds established
-			loss.hoss_4 =c(750, 915),
-			loss.hoss_5 =c(765, 915),
-			loss.hoss_6 =c(800, 915),
-			loss.hoss_7 =c(800, 915),
-			loss.hoss_8 =c(800, 915),
-			loss.hoss_9 =c(100, 300),
-			loss.hoss_10=c(100, 300)),
 		SCIENCE.2014=list(
 			boundaries_4=c(65, 1080),
 			boundaries_5=c(65, 1080),
@@ -8345,7 +8318,15 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_5=c(150, 999),
 			loss.hoss_6=c(150, 999),
 			loss.hoss_7=c(150, 999),
-			loss.hoss_8=c(150, 999)),
+			loss.hoss_8=c(150, 999),
+			# EARTH_SCIENCE
+			knots_9=c(805, 826, 843, 862),
+			boundaries_9=c(615, 1030),
+			loss.hoss_9=c(650, 999)),
+			# BIOLOGY
+			# knots_9=c(806, 826, 840, 857),
+			# boundaries_9=c(615, 1030),
+			# loss.hoss_9=c(650, 999)),
 		SCIENCE=list(
 			boundaries_4=c(123.1, 205.9),
 			boundaries_5=c(123.1, 205.9),
@@ -8361,15 +8342,7 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_5=c(130, 199),
 			loss.hoss_6=c(130, 199),
 			loss.hoss_7=c(130, 199),
-			loss.hoss_8=c(130, 199),
-			# EARTH_SCIENCE
-			knots_9=c(805, 826, 843, 862),
-			boundaries_9=c(615, 1030),
-			loss.hoss_9=c(650, 999)),
-			# BIOLOGY
-			# knots_EOCT=c(806, 826, 840, 857),
-			# boundaries_EOCT=c(615, 1030),
-			# loss.hoss_EOCT=c(650, 999)),
+			loss.hoss_8=c(130, 199)))
 
 		# PRE_ALGEBRA=list(
 		# 	knots_EOCT=c(156, 163, 168, 174),
@@ -8385,52 +8358,52 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 		# GEOMETRY=list(loss.hoss_EOCT=c(130, 199)),
 
-		SEC_MATH_I.2014=list(
-			knots_EOCT=c(431, 486, 528, 571),
-			boundaries_EOCT=c(75, 975),
-			loss.hoss_EOCT=c(150, 900)),
+		# SEC_MATH_I.2014=list(
+		# 	knots_EOCT=c(431, 486, 528, 571),
+		# 	boundaries_EOCT=c(75, 975),
+		# 	loss.hoss_EOCT=c(150, 900)),
 
-		SEC_MATH_II.2014=list(
-			knots_EOCT=c(462, 518, 565, 619),
-			boundaries_EOCT=c(75, 975),
-			loss.hoss_EOCT=c(150, 900)),
+		# SEC_MATH_II.2014=list(
+		# 	knots_EOCT=c(462, 518, 565, 619),
+		# 	boundaries_EOCT=c(75, 975),
+		# 	loss.hoss_EOCT=c(150, 900)),
 
-		SEC_MATH_III.2014=list(
-			knots_EOCT=c(502, 565, 614, 666),
-			boundaries_EOCT=c(75, 975),
-			loss.hoss_EOCT=c(150, 900)),
+		# SEC_MATH_III.2014=list(
+		# 	knots_EOCT=c(502, 565, 614, 666),
+		# 	boundaries_EOCT=c(75, 975),
+		# 	loss.hoss_EOCT=c(150, 900)),
 
-		EARTH_SCIENCE.2014=list(
-			knots_EOCT=c(805, 826, 843, 862),
-			boundaries_EOCT=c(615, 1030),
-			loss.hoss_EOCT=c(650, 999)),
+		# EARTH_SCIENCE.2014=list(
+		# 	knots_EOCT=c(805, 826, 843, 862),
+		# 	boundaries_EOCT=c(615, 1030),
+		# 	loss.hoss_EOCT=c(650, 999)),
 		# EARTH_SCIENCE=list(
 		# 	knots_EOCT=c(155, 161, 166, 172),
 		# 	boundaries_EOCT=c(123, 206),
 		# 	loss.hoss_EOCT=c(130, 199)),
 
-		BIOLOGY.2014=list(
-			knots_EOCT=c(806, 826, 840, 857),
-			boundaries_EOCT=c(615, 1030),
-			loss.hoss_EOCT=c(650, 999)),
+		# BIOLOGY.2014=list(
+		# 	knots_EOCT=c(806, 826, 840, 857),
+		# 	boundaries_EOCT=c(615, 1030),
+		# 	loss.hoss_EOCT=c(650, 999)),
 		# BIOLOGY=list(
 		# 	knots_EOCT=c(156, 162, 167, 173),
 		# 	boundaries_EOCT=c(123, 206),
 		# 	loss.hoss_EOCT=c(130, 199)),
 
-		CHEMISTRY.2014=list(
-			knots_EOCT=c(804, 829, 847, 869),
-			boundaries_EOCT=c(615, 1030),
-			loss.hoss_EOCT=c(650, 999)),
+		# CHEMISTRY.2014=list(
+		# 	knots_EOCT=c(804, 829, 847, 869),
+		# 	boundaries_EOCT=c(615, 1030),
+		# 	loss.hoss_EOCT=c(650, 999)),
 		# CHEMISTRY=list(
 		# 	knots_EOCT=c(151, 158, 163, 168),
 		# 	boundaries_EOCT=c(123, 206),
 		# 	loss.hoss_EOCT=c(130, 199)),
 
-		PHYSICS.2014=list(
-			knots_EOCT=c(804, 827, 847, 869),
-			boundaries_EOCT=c(615, 1030),
-			loss.hoss_EOCT=c(650, 999)))
+		# PHYSICS.2014=list(
+		# 	knots_EOCT=c(804, 827, 847, 869),
+		# 	boundaries_EOCT=c(615, 1030),
+		# 	loss.hoss_EOCT=c(650, 999)))
 		# PHYSICS=list(
 		# 	knots_EOCT=c(155, 161, 166, 172),
 		# 	boundaries_EOCT=c(123, 206),
@@ -8483,7 +8456,7 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(384, 416),
 		GRADE_6=c(432, 464),
 		GRADE_7=c(450, 499),
-		GRADE_8=c(499, 554)
+		GRADE_8=c(499, 554),
 		GRADE_9=c(535, 591), # SEC_MATH_I
 		GRADE_10=c(584, 648)), # SEC_MATH_II
 	MATHEMATICS=list( # Pre-SAGE
@@ -8515,7 +8488,7 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(160, 168),
 		GRADE_6=c(160, 167),
 		GRADE_7=c(160, 167),
-		GRADE_8=c(160, 167)),
+		GRADE_8=c(160, 167)))
 
 	# PRE_ALGEBRA=list(
 	# 	GRADE_EOCT=c(160, 168)),
@@ -8525,34 +8498,34 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 	# 	GRADE_EOCT=c(160, 168)),
 	# GEOMETRY=list(
 	# 	GRADE_EOCT=c(160, 168)),
-	SEC_MATH_I.2019=list(
-		GRADE_EOCT=c(478, 535, 591)),
-	SEC_MATH_I.2014=list(
-		GRADE_EOCT=c(535, 591)),
-	SEC_MATH_II.2014=list(
-		GRADE_EOCT=c(584, 648)),
-	SEC_MATH_III.2014=list(
-		GRADE_EOCT=c(611, 680)),
-
-	EARTH_SCIENCE.2014=list(
-		GRADE_EOCT=c(840, 866)),
-	EARTH_SCIENCE=list(
-		GRADE_EOCT=c(160, 167)),
-
-	BIOLOGY.2014=list(
-		GRADE_EOCT=c(840, 858)),
-	BIOLOGY=list(
-		GRADE_EOCT=c(160, 167)),
-
-	CHEMISTRY.2014=list(
-		GRADE_EOCT=c(840, 865)),
-	CHEMISTRY=list(
-		GRADE_EOCT=c(160, 166)),
-
-	PHYSICS.2014=list(
-		GRADE_EOCT=c(840, 878)),
-	PHYSICS=list(
-		GRADE_EOCT=c(160, 169)))
+	# SEC_MATH_I.2019=list(
+	# 	GRADE_EOCT=c(478, 535, 591)),
+	# SEC_MATH_I.2014=list(
+	# 	GRADE_EOCT=c(535, 591)),
+	# SEC_MATH_II.2014=list(
+	# 	GRADE_EOCT=c(584, 648)),
+	# SEC_MATH_III.2014=list(
+	# 	GRADE_EOCT=c(611, 680)),
+	#
+	# EARTH_SCIENCE.2014=list(
+	# 	GRADE_EOCT=c(840, 866)),
+	# EARTH_SCIENCE=list(
+	# 	GRADE_EOCT=c(160, 167)),
+	#
+	# BIOLOGY.2014=list(
+	# 	GRADE_EOCT=c(840, 858)),
+	# BIOLOGY=list(
+	# 	GRADE_EOCT=c(160, 167)),
+	#
+	# CHEMISTRY.2014=list(
+	# 	GRADE_EOCT=c(840, 865)),
+	# CHEMISTRY=list(
+	# 	GRADE_EOCT=c(160, 166)),
+	#
+	# PHYSICS.2014=list(
+	# 	GRADE_EOCT=c(840, 878)),
+	# PHYSICS=list(
+	# 	GRADE_EOCT=c(160, 169)))
 
 
 SGPstateData[["UT"]][["Achievement"]][["Levels"]] <-
@@ -8573,16 +8546,17 @@ SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
 	sgp.less.than.sgp.cohort.size.return="<3000",
 	max.order.for.percentile=5,
-	max.order.for.projection=4, # All available SAGE per R.R. 8/13/18
+	max.order.for.projection=5, # All available SAGE per R.R. 8/13/18
 	sgp.projections.use.only.complete.matrices=FALSE,
 	sgPlot.use.alternate.student.id="SSID")
 
-SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
-	list(
-		ELA = as.character(3:10),
-		MATHEMATICS= as.character(3:10),
-		SCIENCE= as.character(3:10)#,
-	)
+###   Exclude in 2019.  Unnecessary and causing problems with parallel projections calculations (?!?)
+# SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
+# 	list(
+# 		ELA = as.character(3:10),
+# 		MATHEMATICS= as.character(3:10),
+# 		SCIENCE= as.character(4:10)#,
+# 	)
 		# MATHEMATICS= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 		# SEC_MATH_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 		# SEC_MATH_II= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -8605,12 +8579,13 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
 		# PHYS_CHEM =c("EOCT", "EOCT"),
 		# BIO_PHYS = c("4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 
-SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
-	list(
-		ELA = rep("ELA", 8),
-		MATHEMATICS = rep("MATHEMATICS", 8),
-		SCIENCE = rep("SCIENCE", 8)#,
-	)
+###   Exclude in 2019.  Unnecessary and causing problems with parallel projections calculations (?!?)
+# SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
+# 	list(
+# 		ELA = rep("ELA", 8),
+# 		MATHEMATICS = rep("MATHEMATICS", 8),
+# 		SCIENCE = rep("SCIENCE", 7)#,
+# 	)
 		# MATHEMATICS= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
 		# SEC_MATH_I = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
 		# SEC_MATH_II= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "SEC_MATH_I", "SEC_MATH_II", "SEC_MATH_III"),
@@ -8633,13 +8608,13 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["content_area.projection.sequence"]
 		# PHYS_BIO =c('PHYSICS', 'BIOLOGY'),
 		# PHYS_CHEM =c('PHYSICS', 'CHEMISTRY'))
 
-
-SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
-	list(
-		ELA=rep(1L, 7),
-		MATHEMATICS = rep(1L, 7),
-		SCIENCE = rep(1L, 6)#,
-	)
+###   Exclude in 2019.  Unnecessary and causing problems with parallel projections calculations (?!?)
+# SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
+# 	list(
+# 		ELA=rep(1L, 7),
+# 		MATHEMATICS = rep(1L, 7),
+# 		SCIENCE = rep(1L, 6)#,
+# 	)
 		# SEC_MATH_I = rep(1L, 8),
 		# SEC_MATH_II= rep(1L, 8),
 		# SEC_MATH_III=rep(1L, 8),
@@ -8664,6 +8639,10 @@ SGPstateData[["UT"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 # SGPstateData[["UT"]][['SGP_Progression_Preference']] <- data.table(
 # 	SGP_PROJECTION_GROUP = c("EARTH_SCIENCE", "SCIENCE_BIO",    "BIOLOGY", "BIO_PHYS",    "CHEMISTRY", "CHEM_BIO",    "PHYSICS", "PHYS_BIO", "PHYS_CHEM"),
 # 	PREFERENCE = c(1,2, 1,2, 1,2, 1,2,3), key = "SGP_PROJECTION_GROUP")
+
+SGPstateData[["UT"]][['SGP_Progression_Preference']] <- data.table(
+	SGP_PROJECTION_GROUP = c("ESCI_SCIENCE", "BIO_SCIENCE"),
+	PREFERENCE = c(1,2), key = "SGP_PROJECTION_GROUP")
 
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	list(
@@ -8693,7 +8672,7 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 				Proficient=c("Not Proficient", "Proficient", "Proficient")),
 			Achievement_Levels.2019=list(
 				Labels=c("Below", "Approaching", "Proficient", "Highly"),
-				Proficient=c("Not Proficient", "Proficient", "Proficient")),
+				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Achievement_Level_Labels=list(
 				"Below Proficient"="BP",
 				"Proficient"="P",
@@ -8800,16 +8779,16 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 									# CHEMISTRY=as.character(2008:2020),
 									# PHYSICS=as.character(2008:2020)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2008:2013), ### NOTE non-vertical up to 2013
-									ELA=as.character(2008:2013), ### NOTE non-vertical up to 2013
-									SCIENCE=as.character(2008:2020)),
+									MATHEMATICS=as.character(2014:2022), ### NOTE non-vertical up to 2013
+									ELA=as.character(2014:2022), ### NOTE non-vertical up to 2013
+									SCIENCE=as.character(2014:2022)),
 									# EARTH_SCIENCE=as.character(2008:2020),
 									# BIOLOGY=as.character(2008:2020),
 									# CHEMISTRY=as.character(2008:2020),
 									# PHYSICS=as.character(2008:2020)),
 	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE, SCIENCE=FALSE), # EARTH_SCIENCE=FALSE, BIOLOGY=FALSE, CHEMISTRY=FALSE, PHYSICS=FALSE),
 	Content_Areas_Labels=list(ELA = "ELA", MATHEMATICS = "Math", SCIENCE ="Science"),
-		MATHEMATICS = "Math", SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",
+		# SEC_MATH_I = "Secondary I", SEC_MATH_II = "Secondary II", SEC_MATH_III = "Secondary III",
 		# PRE_ALGEBRA = "Pre-Algebra", ALGEBRA_I = "Algebra I", GEOMETRY = "Geometry", ALGEBRA_II = "Algebra II",
 		# SCIENCE ="Science", EARTH_SCIENCE = "Earth Science", BIOLOGY = "Biology", CHEMISTRY = "Chemistry", PHYSICS = "Physics"),
 	Content_Areas_Domains=list(ELA="ELA", MATHEMATICS="MATHEMATICS", SCIENCE="SCIENCE"),
@@ -8822,7 +8801,7 @@ SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 		# MATHEMATICS= as.character(3:8), SEC_MATH_I = "EOCT", SEC_MATH_II = "EOCT", SEC_MATH_III = "EOCT",
 		# PRE_ALGEBRA="EOCT", ALGEBRA_I= "EOCT", GEOMETRY = "EOCT", ALGEBRA_II="EOCT",
 		# SCIENCE= as.character(4:8), EARTH_SCIENCE = "EOCT", BIOLOGY = "EOCT", CHEMISTRY="EOCT", PHYSICS = "EOCT"),
-	Grades_Reported_Domains=list(ELA=as.character(3:10), MATHEMATICS=as.character(3:10), SCIENCE=as.character(3:10)),
+	Grades_Reported_Domains=list(ELA=as.character(3:10), MATHEMATICS=as.character(3:10), SCIENCE=as.character(4:10)),
 	Earliest_Year_Reported=list(ELA='2019', MATHEMATICS='2019', SCIENCE='2019'),
 				# SEC_MATH_I = "2014", SEC_MATH_II = "2014", SEC_MATH_III = "2014",
 				# SCIENCE='2014', EARTH_SCIENCE = "2014", BIOLOGY = "2014", CHEMISTRY="2014", PHYSICS = "2014"),
@@ -9395,34 +9374,34 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="SBAC",
 	CSEM=Washington_CSEM)
 
-SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
-	Assessment_Abbreviation="MSP/HSPE",
-	Assessment_Abbreviation.2014_2015="SBA",
-	Assessment_Name="Washington Comprehensive Assessment Program",
-	Assessment_Name.2014_2015="Smarter Balanced Assessment",
-	Achievement_Levels=list(
-		Labels=c("L1: Below Basic", "L2: Basic", "L3: Proficient", "L4: Advanced"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-	Achievement_Levels.2014_2015=list(
-		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
-		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-	Achievement_Level_Labels=list(
-		"L1: Below Basic"="Below Basic",
-		"L2: Basic"="Basic",
-		"L3: Proficient"="Proficient",
-		"L4: Advanced"="Advanced"),
-	Achievement_Level_Labels.2014_2015=list(
-		"Level 1"="Level 1",
-		"Level 2"="Level 2",
-		"Level 3"="Level 3",
-		"Level 4"="Level 4"),
-	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
-	Vertical_Scale="No",
-	Vertical_Scale.2014_2015="Yes",
-	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
-	Year="2014_2015")
+# SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
+# 	Assessment_Abbreviation="MSP/HSPE",
+# 	Assessment_Abbreviation.2014_2015="SBA",
+# 	Assessment_Name="Washington Comprehensive Assessment Program",
+# 	Assessment_Name.2014_2015="Smarter Balanced Assessment",
+# 	Achievement_Levels=list(
+# 		Labels=c("L1: Below Basic", "L2: Basic", "L3: Proficient", "L4: Advanced"),
+# 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+# 	Achievement_Levels.2014_2015=list(
+# 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+# 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+# 	Achievement_Level_Labels=list(
+# 		"L1: Below Basic"="Below Basic",
+# 		"L2: Basic"="Basic",
+# 		"L3: Proficient"="Proficient",
+# 		"L4: Advanced"="Advanced"),
+# 	Achievement_Level_Labels.2014_2015=list(
+# 		"Level 1"="Level 1",
+# 		"Level 2"="Level 2",
+# 		"Level 3"="Level 3",
+# 		"Level 4"="Level 4"),
+# 	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+# 	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+# 	Vertical_Scale="No",
+# 	Vertical_Scale.2014_2015="Yes",
+# 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+# 	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
+# 	Year="2014_2015")
 
 SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
 	#	Transformed_Achievement_Level_Cutscores=list(READING=c(100,200,300,400,500),

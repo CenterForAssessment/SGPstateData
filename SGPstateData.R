@@ -9338,7 +9338,7 @@ SGPstateData[["WA"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_10=c(375, 400, 443)))
 
 SGPstateData[["WA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("L1: Below Basic", "L2: Basic", "L3: Proficient", "L4: Advanced"),
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["WA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -9374,34 +9374,34 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="SBAC",
 	CSEM=Washington_CSEM)
 
-# SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
-# 	Assessment_Abbreviation="MSP/HSPE",
-# 	Assessment_Abbreviation.2014_2015="SBA",
-# 	Assessment_Name="Washington Comprehensive Assessment Program",
-# 	Assessment_Name.2014_2015="Smarter Balanced Assessment",
-# 	Achievement_Levels=list(
-# 		Labels=c("L1: Below Basic", "L2: Basic", "L3: Proficient", "L4: Advanced"),
-# 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-# 	Achievement_Levels.2014_2015=list(
-# 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
-# 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-# 	Achievement_Level_Labels=list(
-# 		"L1: Below Basic"="Below Basic",
-# 		"L2: Basic"="Basic",
-# 		"L3: Proficient"="Proficient",
-# 		"L4: Advanced"="Advanced"),
-# 	Achievement_Level_Labels.2014_2015=list(
-# 		"Level 1"="Level 1",
-# 		"Level 2"="Level 2",
-# 		"Level 3"="Level 3",
-# 		"Level 4"="Level 4"),
-# 	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
-# 	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
-# 	Vertical_Scale="No",
-# 	Vertical_Scale.2014_2015="Yes",
-# 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-# 	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
-# 	Year="2014_2015")
+SGPstateData[["WA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <- list(
+	Assessment_Abbreviation="MSP/HSPE",
+	Assessment_Abbreviation.2014_2015="SBA",
+	Assessment_Name="Washington Comprehensive Assessment Program",
+	Assessment_Name.2014_2015="Smarter Balanced Assessment",
+	Achievement_Levels=list(
+		Labels=c("L1: Below Basic", "L2: Basic", "L3: Proficient", "L4: Advanced"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+	Achievement_Levels.2014_2015=list(
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+	Achievement_Level_Labels=list(
+		"L1: Below Basic"="Below Basic",
+		"L2: Basic"="Basic",
+		"L3: Proficient"="Proficient",
+		"L4: Advanced"="Advanced"),
+	Achievement_Level_Labels.2014_2015=list(
+		"Level 1"="Level 1",
+		"Level 2"="Level 2",
+		"Level 3"="Level 3",
+		"Level 4"="Level 4"),
+	Content_Areas_Labels =list(READING = "Reading", MATHEMATICS = "Math", EOC_MATHEMATICS_1 = "EOC Math 1", EOC_MATHEMATICS_2 = "EOC Math 2"),
+	Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="Reading"),
+	Vertical_Scale="No",
+	Vertical_Scale.2014_2015="Yes",
+	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+	Grades_Tested.2014_2015=c(3,4,5,6,7,8),
+	Year="2014_2015")
 
 SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
 	#	Transformed_Achievement_Level_Cutscores=list(READING=c(100,200,300,400,500),

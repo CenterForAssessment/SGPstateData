@@ -5376,7 +5376,7 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition
 #		Year="2014_2015"
 		Year="2018_2019",
 		Equated_Content_Areas_and_Grades=list(MATHEMATICS=c("8"), READING=c("8"))
-#	)
+	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(

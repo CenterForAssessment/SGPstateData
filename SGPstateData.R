@@ -5329,35 +5329,53 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="SBAC/DRC",
 	CSEM="CSEM")
 
-#SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-#	list(
+SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
 #		Assessment_Abbreviation="MEAP",
+		Assessment_Abbreviation="M-STEP",
 #		Assessment_Abbreviation.2014_2015="M-STEP",
+		Assessment_Abbreviation.2018_2019="M-STEP",
 #		Assessment_Name="Michigan Educational Assessment Program",
+		Assessment_Name="Michigan Student Test of Educational Progress",
 #		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
-#		Achievement_Levels=list(
-#			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Assessment_Name.2018_2019="Michigan Student Test of Educational Progress",
+		Achievement_Levels=list(
+			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 #		Achievement_Levels.2014_2015=list(
 #			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
 #			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-#		Achievement_Level_Labels=list(
-#			"Not Proficient" = "Not Proficient",
-#			"Partially Proficient" = "Part Proficient",
-#			"Proficient" = "Proficient",
-#			"Advanced" = "Advanced"),
+		Achievement_Levels.2018_2019=list(
+			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Not Proficient" = "Not Proficient",
+			"Partially Proficient" = "Part Proficient",
+			"Proficient" = "Proficient",
+			"Advanced" = "Advanced"),
 #		Achievement_Level_Labels.2014_2015=list(
 #			"Not Proficient" = "Not Proficient",
 #			"Partially Proficient" = "Part Proficient",
 #			"Proficient" = "Proficient",
 #			"Advanced" = "Advanced"),
-#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+		Achievement_Level_Labels.2018_2019=list(
+			"Not Proficient" = "Not Proficient",
+			"Partially Proficient" = "Part Proficient",
+			"Proficient" = "Proficient",
+			"Advanced" = "Advanced"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
 #		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-#		Vertical_Scale="No",
+		Content_Areas_Labels.2018_2019=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+		Vertical_Scale="No",
 #		Vertical_Scale.2014_2015="No",
-#		Grades_Tested=c(3,4,5,6,7,8),
+		Vertical_Scale.2018_2019="No",
+		Grades_Tested=c(3,4,5,6,7,8),
+#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 #		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
+		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
 #		Year="2014_2015"
+		Year="2018_2019",
+		Equated_Content_Areas_and_Grades=list(MATHEMATICS=c("8"), READING=c("8"))
 #	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(

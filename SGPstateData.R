@@ -3554,10 +3554,10 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 #		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Achievement_Level_Labels=list(
-			"1"="Level 1",
-			"2"="Level 2",
-			"3"="Level 3",
-			"4"="Level 4"))
+			"Level 1"="1",
+			"Level 2"="2",
+			"Level 3"="3",
+			"Level 4"="4"))
 
 SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
@@ -3577,10 +3577,10 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"),
 		Achievement_Level_Labels.2015=list(
-			"1"="Level 1",
-			"2"="Level 2",
-			"3"="Level 3",
-			"4"="Level 4"),
+			"Level 1"="1",
+			"Level 2"="2",
+			"Level 3"="3",
+			"Level 4"="4"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
 		Vertical_Scale="No",

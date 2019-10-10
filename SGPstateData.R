@@ -9454,6 +9454,8 @@ SGPstateData[["WA"]][["Student_Report_Information"]] <- list(
 	#		"L4: Advanced"="Advanced"))
 
 SGPstateData[['WA']][['SGP_Configuration']] <- list(
+	max.order.for.percentile=3,
+	max.order.for.projection=3,
 	max.sgp.target.years.forward=2,
 	gPlot.sgp.targets.timeframe=2,
 	sgPlot.use.student.school.name=TRUE,

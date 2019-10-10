@@ -3554,10 +3554,10 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 #		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 		Achievement_Level_Labels=list(
-			"1"="Level 1",
-			"2"="Level 2",
-			"3"="Level 3",
-			"4"="Level 4"))
+			"Level 1"="1",
+			"Level 2"="2",
+			"Level 3"="3",
+			"Level 4"="4"))
 
 SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(
@@ -3577,10 +3577,10 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]][["Assessment_Transition
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"),
 		Achievement_Level_Labels.2015=list(
-			"1"="Level 1",
-			"2"="Level 2",
-			"3"="Level 3",
-			"4"="Level 4"),
+			"Level 1"="1",
+			"Level 2"="2",
+			"Level 3"="3",
+			"Level 4"="4"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
 		Vertical_Scale="No",
@@ -5231,72 +5231,82 @@ SGPstateData[["MI"]][["Achievement"]][["Knots_Boundaries"]] <- MI_Knots_Boundari
 
 SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 	MATHEMATICS=list(
-		GRADE_3=c(322, 336, 371),
-		GRADE_4=c(423, 434, 470),
-		GRADE_5=c(516, 531, 584),
-		GRADE_6=c(614, 629, 675),
-		GRADE_7=c(714, 731, 776),
-		GRADE_8=c(809, 830, 865),
-		GRADE_EOCT=c(1093, 1116, 1138)),
-	MATHEMATICS.2014_2015=list(
 		GRADE_3=c(1280, 1300, 1322),
 		GRADE_4=c(1376, 1400, 1420),
 		GRADE_5=c(1479, 1500, 1515),
 		GRADE_6=c(1579, 1600, 1615),
 		GRADE_7=c(1680, 1700, 1717),
 		GRADE_8=c(1781, 1800, 1815),
-		GRADE_11=c(2082, 2100, 2118)),
-	MATHEMATICS_PSAT_8=list(
-		GRADE_8=c(370, 430, 510)),
-	MATHEMATICS_PSAT_9=list(
-		GRADE_9=c(450, 450, 450)),
-	MATHEMATICS_PSAT_10=list(
-		GRADE_10=c(480, 480, 480)),
-	MATHEMATICS_SAT_11=list(
+		GRADE_9=c(450, 450, 450),
+		GRADE_10=c(480, 480, 480),
+#``		GRADE_11=c(2082, 2100, 2118)),
+		GRADE_11=c(430, 530, 650)),
+	MATHEMATICS.2018_2019=list(
+		GRADE_3=c(1280, 1300, 1322),
+		GRADE_4=c(1376, 1400, 1420),
+		GRADE_5=c(1479, 1500, 1515),
+		GRADE_6=c(1579, 1600, 1615),
+		GRADE_7=c(1680, 1700, 1717),
+		GRADE_8=c(370, 430, 510),
+		GRADE_9=c(450, 450, 450),
+		GRADE_10=c(480, 480, 480),
 		GRADE_11=c(430, 530, 650)),
 	READING=list(
-		GRADE_3=c(301, 324, 364),
-		GRADE_4=c(395, 419, 478),
-		GRADE_5=c(501, 521, 565),
-		GRADE_6=c(602, 619, 653),
-		GRADE_7=c(698, 721, 760),
-		GRADE_8=c(796, 818, 853),
-		GRADE_EOCT=c(1081, 1108, 1141)),
-	READING.2014_2015=list(
 		GRADE_3=c(1280, 1300, 1318),
 		GRADE_4=c(1383, 1400, 1417),
 		GRADE_5=c(1482, 1500, 1524),
 		GRADE_6=c(1579, 1600, 1624),
 		GRADE_7=c(1680, 1700, 1727),
 		GRADE_8=c(1777, 1800, 1828),
-		GRADE_11=c(2079, 2100, 2122)),
-	READING_PSAT_8=list(
-		GRADE_8=c(360, 390, 440)),
-	READING_PSAT_9=list(
-		GRADE_9=c(410, 410, 410)),
-	READING_PSAT_10=list(
-		GRADE_10=c(430, 430, 430)),
-	READING_SAT_11=list(
+		GRADE_9=c(410, 410, 410),
+		GRADE_10=c(430, 430, 430),
+#		GRADE_11=c(2079, 2100, 2122)),
 		GRADE_11=c(430, 480, 630)),
-	SCIENCE=list(
-		GRADE_5=c(526, 553, 567),
-		GRADE_8=c(826, 845, 863)),
-	SCIENCE.2014_2015=list(
-		GRADE_4=c(1374, 1400, 1410),
-		GRADE_7=c(1681, 1700, 1717),
-		GRADE_11=c(2079, 2100, 2120)),
-	SOCIAL_STUDIES=list(
-		GRADE_6=c(593, 625, 649),
-		GRADE_9=c(899, 928, 960),
-		GRADE_EOCT=c(1097, 1129, 1158)),
-	SOCIAL_STUDIES.2014_2015=list(
-		GRADE_5=c(1458, 1500, 1530),
-		GRADE_8=c(1771, 1800, 1831),
-		GRADE_11=c(2069, 2100, 2131)),
-	WRITING=list(
-		GRADE_4=c(362, 400, 429),
-		GRADE_7=c(666, 700, 733),
-		GRADE_EOCT=c(1097, 1129, 1158))) ### THIS ROW NEEDS TO BE CHECKED
+	READING.2018_2019=list(
+		GRADE_3=c(1280, 1300, 1318),
+		GRADE_4=c(1383, 1400, 1417),
+		GRADE_5=c(1482, 1500, 1524),
+		GRADE_6=c(1579, 1600, 1624),
+		GRADE_7=c(1680, 1700, 1727),
+		GRADE_8=c(360, 390, 440),
+		GRADE_9=c(410, 410, 410),
+		GRADE_10=c(430, 430, 430),
+		GRADE_11=c(430, 480, 630)))
+#	MATHEMATICS=list(
+#		GRADE_3=c(322, 336, 371),
+#		GRADE_4=c(423, 434, 470),
+#		GRADE_5=c(516, 531, 584),
+#		GRADE_6=c(614, 629, 675),
+#		GRADE_7=c(714, 731, 776),
+#		GRADE_8=c(809, 830, 865),
+#		GRADE_EOCT=c(1093, 1116, 1138)),
+#	READING=list(
+#		GRADE_3=c(301, 324, 364),
+#		GRADE_4=c(395, 419, 478),
+#		GRADE_5=c(501, 521, 565),
+#		GRADE_6=c(602, 619, 653),
+#		GRADE_7=c(698, 721, 760),
+#		GRADE_8=c(796, 818, 853),
+#		GRADE_EOCT=c(1081, 1108, 1141)),
+#	SCIENCE=list(
+#		GRADE_5=c(526, 553, 567),
+#		GRADE_8=c(826, 845, 863)),
+#	SCIENCE.2014_2015=list(
+#		GRADE_4=c(1374, 1400, 1410),
+#		GRADE_7=c(1681, 1700, 1717),
+#		GRADE_11=c(2079, 2100, 2120)),
+#	SOCIAL_STUDIES=list(
+#		GRADE_6=c(593, 625, 649),
+#		GRADE_9=c(899, 928, 960),
+#		GRADE_EOCT=c(1097, 1129, 1158)),
+#	SOCIAL_STUDIES.2014_2015=list(
+#		GRADE_5=c(1458, 1500, 1530),
+#		GRADE_8=c(1771, 1800, 1831),
+#		GRADE_11=c(2069, 2100, 2131)),
+#	WRITING=list(
+#		GRADE_4=c(362, 400, 429),
+#		GRADE_7=c(666, 700, 733),
+#		GRADE_EOCT=c(1097, 1129, 1158))) ### THIS ROW NEEDS TO BE CHECKED
 
 SGPstateData[["MI"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
@@ -5329,36 +5339,54 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Test_Vendor="SBAC/DRC",
 	CSEM="CSEM")
 
-#SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-#	list(
+SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+	list(
 #		Assessment_Abbreviation="MEAP",
+		Assessment_Abbreviation="M-STEP",
 #		Assessment_Abbreviation.2014_2015="M-STEP",
+		Assessment_Abbreviation.2018_2019="M-STEP",
 #		Assessment_Name="Michigan Educational Assessment Program",
+		Assessment_Name="Michigan Student Test of Educational Progress",
 #		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
-#		Achievement_Levels=list(
-#			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Assessment_Name.2018_2019="Michigan Student Test of Educational Progress",
+		Achievement_Levels=list(
+			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 #		Achievement_Levels.2014_2015=list(
 #			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
 #			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-#		Achievement_Level_Labels=list(
-#			"Not Proficient" = "Not Proficient",
-#			"Partially Proficient" = "Part Proficient",
-#			"Proficient" = "Proficient",
-#			"Advanced" = "Advanced"),
+		Achievement_Levels.2018_2019=list(
+			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+		Achievement_Level_Labels=list(
+			"Not Proficient" = "Not Proficient",
+			"Partially Proficient" = "Part Proficient",
+			"Proficient" = "Proficient",
+			"Advanced" = "Advanced"),
 #		Achievement_Level_Labels.2014_2015=list(
 #			"Not Proficient" = "Not Proficient",
 #			"Partially Proficient" = "Part Proficient",
 #			"Proficient" = "Proficient",
 #			"Advanced" = "Advanced"),
-#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+		Achievement_Level_Labels.2018_2019=list(
+			"Not Proficient" = "Not Proficient",
+			"Partially Proficient" = "Part Proficient",
+			"Proficient" = "Proficient",
+			"Advanced" = "Advanced"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
 #		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-#		Vertical_Scale="No",
+		Content_Areas_Labels.2018_2019=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+		Vertical_Scale="No",
 #		Vertical_Scale.2014_2015="No",
-#		Grades_Tested=c(3,4,5,6,7,8),
+		Vertical_Scale.2018_2019="No",
+		Grades_Tested=c(3,4,5,6,7,8),
+#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 #		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
+		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
 #		Year="2014_2015"
-#	)
+		Year="2018_2019",
+		Equated_Content_Areas_and_Grades=list(MATHEMATICS=c("8"), READING=c("8"))
+	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(

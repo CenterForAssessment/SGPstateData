@@ -5391,7 +5391,7 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		Vertical_Scale="No",
 #		Vertical_Scale.2014_2015="No",
 		Vertical_Scale.2018_2019="No",
-		Grades_Tested=c(3,4,5,6,7,8),
+		Grades_Tested=c(3,4,5,6,7,8,0,10,11),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 #		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
 		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
@@ -5427,6 +5427,7 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MI"]][["SGP_Configuration"]] <-
 	list(
 		max.sgp.target.years.forward <- 1:7,
+		sgp.projections.max.forward.progression.grade=11,
 		sgp.target.scale.scores.merge <- "1_year_lagged_current")
 
 

@@ -5426,9 +5426,9 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["MI"]][["SGP_Configuration"]] <-
 	list(
-		max.sgp.target.years.forward <- 1:7,
+		max.sgp.target.years.forward=1:7,
 		sgp.projections.max.forward.progression.grade=11,
-		sgp.target.scale.scores.merge <- "1_year_lagged_current")
+		sgp.target.scale.scores.merge="1_year_lagged_current")
 
 
 #########################################################

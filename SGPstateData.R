@@ -5392,7 +5392,6 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition
 #		Vertical_Scale.2014_2015="No",
 		Vertical_Scale.2018_2019="No",
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 #		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
 		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
 #		Year="2014_2015"

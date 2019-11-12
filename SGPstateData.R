@@ -5248,8 +5248,8 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(1579, 1600, 1615),
 		GRADE_7=c(1680, 1700, 1717),
 		GRADE_8=c(370, 430, 510),
-		GRADE_9=c(450, 450, 450),
-		GRADE_10=c(480, 480, 480),
+		GRADE_9=c(400, 450, 540), ### Temporary Level 1-2 Cut set at 32nd percentile/Temporary Level 3-4 Cut set at 88th percentile
+		GRADE_10=c(410, 480, 570), ### Temporary Level 1-2 Cut set at 34th percentile/Temporary Level 3-4 Cut set at 90th percentile
 		GRADE_11=c(430, 530, 650)),
 	READING=list(
 		GRADE_3=c(1280, 1300, 1318),
@@ -5269,8 +5269,8 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(1579, 1600, 1624),
 		GRADE_7=c(1680, 1700, 1727),
 		GRADE_8=c(360, 390, 440),
-		GRADE_9=c(410, 410, 410),
-		GRADE_10=c(430, 430, 430),
+		GRADE_9=c(380, 410, 500), ### Temporary Level 1-2 Cut set at 28th percentile/Temporary Level 3-4 Cut set at 70th percentile
+		GRADE_10=c(390, 430, 550), ### Temporary Level 1-2 Cut set at 29th percentile/Temporary Level 3-4 Cut set at 80th percentile
 		GRADE_11=c(430, 480, 630)),
 	SOCIAL_STUDIES=list( ### A combination of Social Studies cuts over the last several years
 		GRADE_5=c(1458, 1500, 1530),

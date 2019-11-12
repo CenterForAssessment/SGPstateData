@@ -5324,6 +5324,12 @@ SGPstateData[["MI"]][["Achievement"]][["Levels"]] <- list(
 	Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
+SGPstateData[["MI"]][["Achievement"]][["College_Readiness_Cutscores"]] <- list(
+	MATHEMATICS=list(
+		GRADE_11=530),
+	READING=list(
+		GRADE_11=480))
+
 SGPstateData[["MI"]][["Growth"]][["Levels"]] <- c("Low", "Medium", "High")
 
 SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
@@ -9408,7 +9414,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 					  # WRITING="2009_2010"),
 #	Grades_Tested=c(3,4,5,6,7,8,9,10),
 	Grades_Tested=c(3,4,5,6,7,8),
-	Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC",
 	CSEM=Washington_CSEM)

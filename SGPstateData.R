@@ -3541,7 +3541,7 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 	#	Content_Areas=c("Language Usage", "Mathematics", "Reading"), ## Changed to SBAC in 2015
 		Content_Areas=c("Mathematics", "Reading"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Test_Season="Spring",
 		Test_Vendor="SBAC/AIR",
 		CSEM="SCALE_SCORE_CSEM")
@@ -4121,8 +4121,8 @@ SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### IOWA
 #########################################################
 
-#load("Knots_Boundaries/IOWA_Knots_Boundaries.Rdata")
-#SGPstateData[["IA"]][["Achievement"]][["Knots_Boundaries"]] <- IA_Knots_Boundaries
+load("Knots_Boundaries/IA_Knots_Boundaries.Rdata")
+SGPstateData[["IA"]][["Achievement"]][["Knots_Boundaries"]] <- IA_Knots_Boundaries
 
 SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -4145,7 +4145,27 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(236,291),
 			GRADE_9=c(249,311),
 			GRADE_10=c(257,320),
-			GRADE_11=c(263,327)))
+			GRADE_11=c(263,327)),
+		ELA.2019=list(
+      		GRADE_3=c(398, 447),
+      		GRADE_4=c(414, 478),
+      		GRADE_5=c(437, 513),
+      		GRADE_6=c(456, 541),
+      		GRADE_7=c(475, 569),
+      		GRADE_8=c(494, 594),
+      		GRADE_9=c(505, 618),
+      		GRADE_10=c(530, 642),
+      		GRADE_11=c(561, 660)),
+    	MATHEMATICS.2019=list(
+      		GRADE_3=c(390, 443),
+      		GRADE_4=c(409, 476),
+      		GRADE_5=c(429, 503),
+      		GRADE_6=c(450, 532),
+      		GRADE_7=c(469, 575),
+      		GRADE_8=c(490, 606),
+      		GRADE_9=c(513, 626),
+      		GRADE_10=c(537, 654),
+      		GRADE_11=c(559, 675)))
 
 SGPstateData[["IA"]][["Achievement"]][["Levels"]] <-
     list(

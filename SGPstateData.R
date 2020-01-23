@@ -8975,10 +8975,10 @@ SGPstateData[["VT"]][["Assessment_Program_Information"]] <- list(
 		Name="Vermont Agency of Education",
 		Abbreviation="VTAOE",
 		URL="http://education.vermont.gov/",
-		Contact="802-479-1305"),
+		Contact="802-828-0583"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,9),
-		Assessment_Years=c("2015", "2016", "2017", "2018"),
+		Assessment_Years=c("2015", "2016", "2017", "2018", "2019"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 
@@ -11125,8 +11125,70 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
 	sgp.target.scale.scores.merge="1_year_lagged_current")
 
-#SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+	SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
+		max.order.for.percentile=3,
+		sgp.minimum.default.panel.years=2,
+		arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+	#SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+	SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+
+	##  Custom ISR Meta Data
+	source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-text.R')
+	WIDA_NH_Custom_ISR_Function <- source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-function.R')
+
+	# require(png)
+	CDE.img <- readPNG("Custom_ISR/WIDA_NH/CDE.png")
+
+	# require(grid)
+	SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(
+		report.width=8.5,
+		report.height= 11,
+		Custom_ISR_Function = WIDA_NH_Custom_ISR_Function,
+		Report_Text_ENGLISH = Report_Text_ENGLISH,
+		Report_Text_SPANISH = Report_Text_SPANISH,
+		Report_Logo = CDE.img,
+		Grid_Objects = list(
+			report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
+				heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+
+			top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
+			top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
+			top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
+			top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
+			report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
+			color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
+			report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
+			color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
+			report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
+
+			content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
+
+			left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
+			bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
+		)
+	)
+
+#	Spanish ISR Version Info:
+
+  SGPstateData[["WIDA_NH_SPANISH"]] <- SGPstateData[["WIDA_NH"]]
+  SGPstateData[["WIDA_NH_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
+  SGPstateData[["WIDA_NH_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_NH"]][["SGP_Configuration"]]
+
+  SGPstateData[["WIDA_NH_SPANISH"]][["Student_Report_Information"]] <- list(
+  	sgPlot.year.span = 3,
+  	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+  	Vertical_Scale=list(READING=TRUE),
+  	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),
+  	Earliest_Year_Reported=list(READING = '2013'),
+  	Achievement_Level_Labels=list(
+  		"Inicial"="L1",
+  		"En Transici\u{F3}n"="L2",
+  		"Desarrollado"="L3",
+  		"Elevado"="L4",
+  		"Apto"="L5",
+  		"Avanzado"="L6"))
 
 
 ##########################################################################################

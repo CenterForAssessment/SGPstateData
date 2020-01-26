@@ -11125,7 +11125,7 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
 	sgp.target.scale.scores.merge="1_year_lagged_current")
 
-	SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
+	SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=3,
 		sgp.minimum.default.panel.years=2,
 		arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),

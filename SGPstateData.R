@@ -11140,7 +11140,7 @@ source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-text.R')
 WIDA_NH_Custom_ISR_Function <- source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-function.R')
 
 # require(png)
-CDE.img <- readPNG("Custom_ISR/WIDA_NH/CDE.png")
+NHDOE.img <- readPNG("Custom_ISR/WIDA_NH/NHDOE.png")
 
 # require(grid)
 SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(
@@ -11149,7 +11149,7 @@ SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(
 	Custom_ISR_Function = WIDA_NH_Custom_ISR_Function,
 	Report_Text_ENGLISH = Report_Text_ENGLISH,
 	Report_Text_SPANISH = Report_Text_SPANISH,
-	Report_Logo = CDE.img,
+	Report_Logo = NHDOE.img,
 	Grid_Objects = list(
 		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
 			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),

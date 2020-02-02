@@ -11081,31 +11081,38 @@ SGPstateData[["WIDA_NH"]][["Growth"]][["Cutscores"]] <- list(
 SGPstateData[["WIDA_NH"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA_NH"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="World Class Instructional Design and Assessment",
-	Assessment_Abbreviation="WIDA",
+	Assessment_Name="ACCESS",
+	Assessment_Abbreviation="ACCESS",
 	Organization=list(
-		Name="World Class Instructional Design and Assessment",
-		Abbreviation="WIDA",
-		URL="http://www.wida.us/",
+		Name="New Hampshire Department of Education",
+		Abbreviation="NHDOE",
+		URL="https://www.education.nh.gov/",
 		Contact="1-866-276-7735"),
 	Content_Areas="Reading",
 	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-	Assessment_Years=c("2017", "2018"),
+	Assessment_Years=c("2017", "2018", "2019"),
 	Test_Season="Spring",
 	Test_Vendor="WIDA")
 
 SGPstateData[["WIDA_NH"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(READING=TRUE),
-	Content_Areas_Labels=list(READING="Reading"),
+	Content_Areas_Labels=list(READING="Overall ELP"),
 	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
 	Achievement_Level_Labels=list(
-		"Entering"="WIDA Level 1",
-		"Emerging"="WIDA Level 2",
-		"Developing"="WIDA Level 3",
-		"Expanding"="WIDA Level 4",
-		"Bridging 4.5"="WIDA Level 4.5",
-		"Bridging 5.0"="WIDA Level 5",
-		"Reaching"="WIDA Level 6"))
+		"WIDA Level 1"="WIDA Level 1",
+		"WIDA Level 2"="WIDA Level 2",
+		"WIDA Level 3"="WIDA Level 3",
+		"WIDA Level 4"="WIDA Level 4",
+		"Benchmark"="WIDA Level 4.5",
+		"WIDA Level 5"="WIDA Level 5",
+		"WIDA Level 6"="WIDA Level 6"))
+#		"Entering"="WIDA Level 1",
+#		"Emerging"="WIDA Level 2",
+#		"Developing"="WIDA Level 3",
+#		"Expanding"="WIDA Level 4",
+#		"Bridging 4.5"="WIDA Level 4.5",
+#		"Bridging 5.0"="WIDA Level 5",
+#		"Reaching"="WIDA Level 6"))
 
 SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
@@ -11125,70 +11132,70 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
 	sgp.target.scale.scores.merge="1_year_lagged_current")
 
-	SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
-		max.order.for.percentile=3,
-		sgp.minimum.default.panel.years=2,
-		arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"),
-		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+#SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
+SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
-	#SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-	SGPstateData[["WIDA_NH"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+##  Custom ISR Meta Data
+source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-text.R')
+WIDA_NH_Custom_ISR_Function <- source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-function.R')
 
-	##  Custom ISR Meta Data
-	source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-text.R')
-	WIDA_NH_Custom_ISR_Function <- source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-function.R')
+# require(png)
+NHDOE.img <- readPNG("Custom_ISR/WIDA_NH/NHDOE.png")
 
-	# require(png)
-	CDE.img <- readPNG("Custom_ISR/WIDA_NH/CDE.png")
+# require(grid)
+SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(
+	report.width=8.5,
+	report.height= 11,
+	Custom_ISR_Function = WIDA_NH_Custom_ISR_Function,
+	Report_Text_ENGLISH = Report_Text_ENGLISH,
+	Report_Text_SPANISH = Report_Text_SPANISH,
+	Report_Logo = NHDOE.img,
+	Grid_Objects = list(
+		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
+			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
+		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
+		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
+		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
+		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
+		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
+		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
+		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
+		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
 
-	# require(grid)
-	SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(
-		report.width=8.5,
-		report.height= 11,
-		Custom_ISR_Function = WIDA_NH_Custom_ISR_Function,
-		Report_Text_ENGLISH = Report_Text_ENGLISH,
-		Report_Text_SPANISH = Report_Text_SPANISH,
-		Report_Logo = CDE.img,
-		Grid_Objects = list(
-			report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
-				heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
 
-			top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
-			top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
-			top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
-			top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
-			report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
-			color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
-			report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
-			color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
-			report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
-
-			content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
-
-			left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
-			bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
-		)
+		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
+		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
 	)
+)
 
 #	Spanish ISR Version Info:
 
-  SGPstateData[["WIDA_NH_SPANISH"]] <- SGPstateData[["WIDA_NH"]]
-  SGPstateData[["WIDA_NH_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
-  SGPstateData[["WIDA_NH_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_NH"]][["SGP_Configuration"]]
+SGPstateData[["WIDA_NH_SPANISH"]] <- SGPstateData[["WIDA_NH"]]
+SGPstateData[["WIDA_NH_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
+SGPstateData[["WIDA_NH_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_NH"]][["SGP_Configuration"]]
 
-  SGPstateData[["WIDA_NH_SPANISH"]][["Student_Report_Information"]] <- list(
+SGPstateData[["WIDA_NH_SPANISH"]][["Student_Report_Information"]] <- list(
   	sgPlot.year.span = 3,
   	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
   	Vertical_Scale=list(READING=TRUE),
   	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),
   	Earliest_Year_Reported=list(READING = '2013'),
   	Achievement_Level_Labels=list(
-  		"Inicial"="L1",
-  		"En Transici\u{F3}n"="L2",
-  		"Desarrollado"="L3",
-  		"Elevado"="L4",
-  		"Apto"="L5",
-  		"Avanzado"="L6"))
+		"WIDA Level 1"="WIDA Level 1",
+		"WIDA Level 2"="WIDA Level 2",
+		"WIDA Level 3"="WIDA Level 3",
+		"WIDA Level 4"="WIDA Level 4",
+		"Benchmark"="WIDA Level 4.5",
+		"WIDA Level 5"="WIDA Level 5",
+		"WIDA Level 6"="WIDA Level 6"))
+#  		"Inicial"="WIDA Level 1",
+#  		"En Transici\u{F3}n"="WIDA Level 2",
+#  		"Desarrollado"="WIDA Level 3",
+#  		"Elevado"="WIDA Level 4",
+#  		"Apto"="WIDA Level 5",
+#  		"Avanzado"="WIDA Level 6"))
 
 
 ##########################################################################################

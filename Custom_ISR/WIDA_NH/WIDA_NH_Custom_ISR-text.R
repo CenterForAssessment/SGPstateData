@@ -4,7 +4,7 @@ The assessment serves as an indicator of when English Learners (ELs) have enough
 out language development support. The report addresses your child's English proficiency level, how much your student progressed in their
 development of English and if they are on track to be proficient in English.
 
-Achievement: The ACCESS for ELLs assessment provides a composite (overall) score and proficiency level. The overall score consists of
+Proficiency: The ACCESS for ELLs assessment provides a composite (overall) score and proficiency level. The overall score consists of
 listening, speaking, reading, and writing components. The performance is described in terms of six proficiency levels. From lowest to
 highest performance, the levels are: Entering, Emerging, Developing, Expanding, Bridging, and Reaching. The overall score and proficiency
 level by year are presented for your student in this report.

@@ -2797,6 +2797,65 @@ SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
 
 
 #########################################################
+###   GWINNETT COUNTY PUBLIC SCHOOLS
+#########################################################
+
+###  Knots and Boundaries - wait for official ones from GCPS
+# load("Knots_Boundaries/gcps_sim_kbs.rda") # Temporary Simulated Data KBs
+# SGPstateData[["GCPS"]][["Achievement"]][["Knots_Boundaries"]] <- gcps_sim_kbs
+
+###   Temporary/Fake Achievement Cutscores - ACHIEVEMENT_LEVEL variable needed for summarizeSGP
+SGPstateData[["GCPS"]][["Achievement"]][["Cutscores"]] <-
+	list(
+    LANGUAGE_ARTS=list(
+      GRADE_1=c(40, 60),
+      GRADE_2=c(40, 60),
+      GRADE_3=c(40, 60),
+      GRADE_4=c(40, 60),
+      GRADE_5=c(40, 60),
+      GRADE_6=c(40, 60),
+      GRADE_7=c(40, 60),
+      GRADE_8=c(40, 60)),
+		MATHEMATICS=list(
+			GRADE_K=c(40, 60),
+			GRADE_1=c(40, 60),
+			GRADE_2=c(40, 60),
+			GRADE_3=c(40, 60),
+			GRADE_4=c(40, 60),
+			GRADE_5=c(40, 60),
+			GRADE_6=c(40, 60),
+			GRADE_7=c(40, 60)),
+    ACC_MATHEMATICS=list(
+			GRADE_6=c(40, 60),
+			GRADE_7=c(40, 60)),
+		ALGEBRA_I=list(
+			GRADE_EOCT=c(40, 60))
+	)
+
+SGPstateData[["GCPS"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+SGPstateData[["GCPS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["GCPS"]][["Growth"]][["Cutscores"]] <- list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["GCPS"]][["Achievement"]][["Levels"]] <- list(
+    Labels=c("Low", "Typical", "High"),
+		Proficient=c("Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["GCPS"]][["Assessment_Program_Information"]] <- list(CSEM = "SCALE_SCORE_CSEM")
+
+SGPstateData[["GCPS"]][["Student_Report_Information"]] <- list(
+		Content_Areas_Labels=list(LANGUAGE_ARTS="Language Arts", MATHEMATICS="Math", ACC_MATHEMATICS="Accelerated Math", ALGEBRA_I="Algebra I"),
+		Content_Areas_Domains=list(LANGUAGE_ARTS="LANGUAGE_ARTS", MATHEMATICS="MATHEMATICS", ACC_MATHEMATICS="MATHEMATICS", ALGEBRA_I="MATHEMATICS"),
+		Grades_Reported=list(LANGUAGE_ARTS=c(1,2,3,4,5,6,7,8), MATHEMATICS=c("K", 1,2,3,4,5,6,7), ACC_MATHEMATICS=c(6,7), ALGEBRA_I="EOCT"),
+		Grades_Reported_Domains=list(ELA=c("1","2","3","4","5","6","7","8"), MATHEMATICS=c("1","2","3","4","5","6","7")),
+		Achievement_Level_Labels=list(
+			"Low"="Low",
+      "Typical"="Typical",
+      "High"="High"))
+
+
+#########################################################
 ### HAWAII
 #########################################################
 

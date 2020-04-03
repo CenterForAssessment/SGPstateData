@@ -1533,17 +1533,17 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   c(SGPstateData[["CO"]][["Achievement"]][["Cutscores"]],
   	list(  ###  PSAT/SAT "Percentile" Cutscores Based on Knots/Bounds
       ELA_PSAT_9= list(
-        GRADE_9 = c(370, 420, 480, 540)),
+        GRADE_9 = c(370, 410, 570)),
       ELA_PSAT_10=list(
-        GRADE_10= c(390, 440, 500, 560)),
+        GRADE_10= c(390, 430, 600)),
       ELA_SAT  =  list(
-        GRADE_11= c(420, 480, 540, 610)),
+        GRADE_11= c(440, 480, 640)),
       MATHEMATICS_PSAT_9=list(
-  			GRADE_9 = c(370, 420, 470, 520)),
+  			GRADE_9 = c(410, 450, 560)),
   		MATHEMATICS_PSAT_10=list(
-  			GRADE_10= c(390, 430, 480, 540)),
+  			GRADE_10= c(430, 480, 590)),
   		MATHEMATICS_SAT=list(
-  			GRADE_11= c(400, 470, 530, 590))
+  			GRADE_11= c(460, 530, 660))
   	)
   )
 
@@ -1572,8 +1572,9 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 				Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "No Score"),
 				Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
 			Achievement_Levels.9=list(
-				Labels=c("1 to 20", "21 to 40", "41 to 60", "61 to 80", "81 to 99"),
-				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
+				# Labels=c("1 to 20", "21 to 40", "41 to 60", "61 to 80", "81 to 99"),
+				Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Achievement_Level_Labels=list(
 				"Level 1"="Level 1",
 			  "Level 2"="Level 2",
@@ -1586,11 +1587,15 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			  # "Meets Expectations"="Level 4",
 			  # "Exceeds Expectations"="Level 5"),
 			Achievement_Level_Labels.9=list(
-				"1st to 20th Percentiles" = "1 to 20",
-			  "21st to 40th Percentiles"="21 to 40",
-			  "41st to 60th Percentiles"="41 to 60",
-			  "61st to 80th Percentiles"="61 to 80",
-			  "81st to 99th Percentiles"="81 to 99"),
+				"Level 1"="Level 1",
+			  "Level 2"="Level 2",
+			  "Level 3"="Level 3",
+			  "Level 4"="Level 4"),
+				# "1st to 20th Percentiles" = "1 to 20",
+			  # "21st to 40th Percentiles"="21 to 40",
+			  # "41st to 60th Percentiles"="41 to 60",
+			  # "61st to 80th Percentiles"="61 to 80",
+			  # "81st to 99th Percentiles"="81 to 99"),
 			Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Geometry"),
 			Content_Areas.9=c("PSAT 9 ELA", "PSAT 10 ELA", "SAT ELA", "PSAT 9 Math", "PSAT 10 Math", "SAT Math"),
 			Content_Areas_Labels=list(
@@ -1755,8 +1760,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			INTEGRATED_MATH_3 = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
       MATHEMATICS_PSAT_9 = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
       MATHEMATICS_PSAT_10= c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
-      MATHEMATICS_SAT    = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022")
-    ),
+      MATHEMATICS_SAT    = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022")),
     Transformed_Achievement_Level_Cutscores_gaPlot = list(
       ELA = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
       ELA_PSAT_9 = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
@@ -1766,8 +1770,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			ALGEBRA_I = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
       MATHEMATICS_PSAT_9 = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
       MATHEMATICS_PSAT_10= c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
-      MATHEMATICS_SAT    = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022")
-    )
+      MATHEMATICS_SAT    = c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"))
   )
 
 SGPstateData[["CO"]][["Variable_Name_Lookup"]] <- SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]]

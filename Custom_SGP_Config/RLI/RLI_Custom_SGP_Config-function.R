@@ -24,8 +24,8 @@ function(year,
 	### EARLY_LITERACY
 	###
 
-	if (content_area=="EARLY_LITERACY" & testing.window=="FALL") {### EARLY_LITERACY/FALL
-		if (score.type=="RASCH") tmp.content_area.name <- "EARLY_LITERACY_RASCH" else tmp.content_area.name <- "EARLY_LITERACY"
+	if (content_area %in% c("EARLY_LITERACY", "EARLY_LITERACY_SPANISH") & testing.window=="FALL") {### EARLY_LITERACY/FALL
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -44,8 +44,8 @@ function(year,
 		return(tmp.list)
 	} ### END EARLY_LITERACY/FALL
 
-	if (content_area=="EARLY_LITERACY" & testing.window=="WINTER") {### EARLY_LITERACY/WINTER
-		if (score.type=="RASCH") tmp.content_area.name <- "EARLY_LITERACY_RASCH" else tmp.content_area.name <- "EARLY_LITERACY"
+	if (content_area %in% c("EARLY_LITERACY", "EARLY_LITERACY_SPANISH") & testing.window=="WINTER") {### EARLY_LITERACY/WINTER
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -59,8 +59,8 @@ function(year,
 		return(tmp.list)
 	} ### END EARLY_LITERACY/WINTER
 
-	if (content_area=="EARLY_LITERACY" & testing.window=="SPRING") {### EARLY_LITERACY/SPRING
-		if (score.type=="RASCH") tmp.content_area.name <- "EARLY_LITERACY_RASCH" else tmp.content_area.name <- "EARLY_LITERACY"
+	if (content_area %in% c("EARLY_LITERACY", "EARLY_LITERACY_SPANISH") & testing.window=="SPRING") {### EARLY_LITERACY/SPRING
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -89,8 +89,8 @@ function(year,
 	### MATHEMATICS
 	###
 
-	if (content_area=="MATHEMATICS" & testing.window=="FALL") {### MATHEMATICS/FALL
-		if (score.type=="RASCH") tmp.content_area.name <- "MATHEMATICS_RASCH" else tmp.content_area.name <- "MATHEMATICS"
+	if (content_area %in% c("MATHEMATICS", "MATHEMATICS_SPANISH") & testing.window=="FALL") {### MATHEMATICS/FALL
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -109,8 +109,8 @@ function(year,
 		return(tmp.list)
 	} ### END MATHEMATICS/FALL
 
-	if (content_area=="MATHEMATICS" & testing.window=="WINTER") {### MATHEMATICS/WINTER
-		if (score.type=="RASCH") tmp.content_area.name <- "MATHEMATICS_RASCH" else tmp.content_area.name <- "MATHEMATICS"
+	if (content_area %in% c("MATHEMATICS", "MATHEMATICS_SPANISH") & testing.window=="WINTER") {### MATHEMATICS/WINTER
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -124,8 +124,8 @@ function(year,
 		return(tmp.list)
 	} ### END MATHEMATICS/WINTER
 
-	if (content_area=="MATHEMATICS" & testing.window=="SPRING") {### MATHEMATICS/SPRING
-		if (score.type=="RASCH") tmp.content_area.name <- "MATHEMATICS_RASCH" else tmp.content_area.name <- "MATHEMATICS"
+	if (content_area %in% c("MATHEMATICS", "MATHEMATICS_SPANISH") & testing.window=="SPRING") {### MATHEMATICS/SPRING
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -154,8 +154,8 @@ function(year,
 	### READING
 	###
 
-	if (content_area=="READING" & testing.window=="FALL") {### READING/FALL
-		if (score.type=="RASCH") tmp.content_area.name <- "READING_RASCH" else tmp.content_area.name <- "READING"
+	if (content_area %in% c("READING", "READING_SPANISH") & testing.window=="FALL") {### READING/FALL
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -174,8 +174,8 @@ function(year,
 		return(tmp.list)
 	} ### END READING/FALL
 
-	if (content_area=="READING" & testing.window=="WINTER") {### READING/WINTER
-		if (score.type=="RASCH") tmp.content_area.name <- "READING_RASCH" else tmp.content_area.name <- "READING"
+	if (content_area %in% c("READING", "READING_SPANISH") & testing.window=="WINTER") {### READING/WINTER
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -189,8 +189,8 @@ function(year,
 		return(tmp.list)
 	} ### END READING/WINTER
 
-	if (content_area=="READING" & testing.window=="SPRING") {### READING/SPRING
-		if (score.type=="RASCH") tmp.content_area.name <- "READING_RASCH" else tmp.content_area.name <- "READING"
+	if (content_area %in% c("READING", "READING_SPANISH") & testing.window=="SPRING") {### READING/SPRING
+		if (score.type=="RASCH") tmp.content_area.name <- paste(content_area, "RASCH", sep="_") else tmp.content_area.name <- content_area
 		tmp.list <- list(
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),

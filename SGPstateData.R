@@ -1533,17 +1533,23 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   c(SGPstateData[["CO"]][["Achievement"]][["Cutscores"]],
   	list(  ###  PSAT/SAT "Percentile" Cutscores Based on Knots/Bounds
       ELA_PSAT_9= list(
-        GRADE_9 = c(370, 410, 570)),
+				# GRADE_9 = c(370, 410, 570)),
+        GRADE_9 = c(370, 390, 410, 570)),
       ELA_PSAT_10=list(
-        GRADE_10= c(390, 430, 600)),
+				# GRADE_10= c(390, 430, 600)),
+        GRADE_10= c(390, 410, 430, 600)),
       ELA_SAT  =  list(
-        GRADE_11= c(440, 480, 640)),
+				# GRADE_11= c(440, 480, 640)),
+        GRADE_11= c(440, 460, 480, 640)),
       MATHEMATICS_PSAT_9=list(
-  			GRADE_9 = c(410, 450, 560)),
+				# GRADE_9 = c(410, 450, 560)),
+  			GRADE_9 = c(410, 430, 450, 560)),
   		MATHEMATICS_PSAT_10=list(
-  			GRADE_10= c(430, 480, 590)),
+				# GRADE_10= c(430, 480, 590)),
+  			GRADE_10= c(430, 450, 480, 590)),
   		MATHEMATICS_SAT=list(
-  			GRADE_11= c(460, 530, 660))
+				# GRADE_11= c(460, 530, 660))
+  			GRADE_11= c(460, 500, 530, 660))
   	)
   )
 
@@ -1573,8 +1579,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 				Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
 			Achievement_Levels.9=list(
 				# Labels=c("1 to 20", "21 to 40", "41 to 60", "61 to 80", "81 to 99"),
-				Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
-				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+				Labels=c("Level 1", "Level 2", "Level 2+", "Level 3", "Level 4"),
+				Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 			Achievement_Level_Labels=list(
 				"Level 1"="Level 1",
 			  "Level 2"="Level 2",
@@ -1588,7 +1594,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			  # "Exceeds Expectations"="Level 5"),
 			Achievement_Level_Labels.9=list(
 				"Level 1"="Level 1",
-			  "Level 2"="Level 2",
+				"Level 2"="Level 2",
+			  "Level 2+"="Level 2+",
 			  "Level 3"="Level 3",
 			  "Level 4"="Level 4"),
 				# "1st to 20th Percentiles" = "1 to 20",
@@ -1614,6 +1621,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
     sgp.cohort.size = 2000,
     sgp.less.than.sgp.cohort.size.return = "<2000",
     return.norm.group.scale.scores = TRUE,
+		print.other.gp = TRUE,
+		print.sgp.order = TRUE,
     arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"),
     sgPlot.use.student.id = TRUE,
     grade.projection.sequence = list(

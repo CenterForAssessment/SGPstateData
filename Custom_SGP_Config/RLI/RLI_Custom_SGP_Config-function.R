@@ -320,7 +320,7 @@ function(year,
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "3", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
-				sgp.grade.sequences=list(c('K.3', '1.3'), c('K.3', '1.3', '2.3'), c('1.3', '2.3', '3.3')),
+				sgp.grade.sequences=list(c('K.3', '1.3'), c('1.3', '2.3'), c('2.3', '3.3')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -381,7 +381,7 @@ function(year,
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "3", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
-				sgp.grade.sequences=list(c('1.3', '2.3'), c('1.3', '2.3', '3.3'), c('2.3', '3.3', '4.3'), c('3.3', '4.3', '5.3'), c('4.3', '5.3', '6.3'), c('5.3', '6.3', '7.3'), c('6.3', '7.3', '8.3')),
+				sgp.grade.sequences=list(c('1.3', '2.3'), c('2.3', '3.3'), c('3.3', '4.3'), c('4.3', '5.3'), c('5.3', '6.3'), c('6.3', '7.3'), c('7.3', '8.3')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 7))),
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -442,7 +442,7 @@ function(year,
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "3", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "3", sep=".")),
-				sgp.grade.sequences=list(c('1.3', '2.3'), c('1.3', '2.3', '3.3'), c('2.3', '3.3', '4.3'), c('3.3', '4.3', '5.3'), c('4.3', '5.3', '6.3'), c('5.3', '6.3', '7.3'), c('6.3', '7.3', '8.3')),
+				sgp.grade.sequences=list(c('1.3', '2.3'), c('2.3', '3.3'), c('3.3', '4.3'), c('4.3', '5.3'), c('5.3', '6.3'), c('6.3', '7.3'), c('7.3', '8.3')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 7))),
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),

@@ -348,7 +348,7 @@ function(year,
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "1", sep="."), paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
-				sgp.grade.sequences=list(c('1.1', '2.1'), c('1.1', '2.1', '3.1'), c('2.1', '3.1', '4.1'), c('3.1', '4.1', '5.1'), c('4.1', '5.1', '6.1'), c('5.1', '6.1', '7.1'), c('6.1', '7.1', '8.1')),
+				sgp.grade.sequences=list(c('1.1', '2.1'), c('2.1', '3.1'), c('3.1', '4.1'), c('4.1', '5.1'), c('5.1', '6.1'), c('6.1', '7.1'), c('7.1', '8.1')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 7))),
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),

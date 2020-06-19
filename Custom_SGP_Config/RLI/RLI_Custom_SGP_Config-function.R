@@ -295,7 +295,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('K.2', 'K.3', '1.1'), c('1.2', '1.3', '2.1'), c('2.3', '3.1')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))))
+				sgp.projection.baseline.grade.sequences=list(c('K.3', '1.1'), c('1.3', '2.1'), c('3.1')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
 		return(tmp.list)
 	} ### END EARLY_LITERACY_SPANISH/FALL
@@ -309,7 +310,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.grade.sequences=list(c('K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('3.1', '3.2')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))))
+				sgp.projection.baseline.grade.sequences=list(c('K.2'), c('1.1', '1.2'), c('2.1', '2.2'), c('3.2')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")
 		return(tmp.list)
 	} ### END EARLY_LITERACY_SPANISH/WINTER
@@ -357,7 +359,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('1.2', '1.3', '2.1'), c('2.2', '2.3', '3.1'), c('3.2', '3.3', '4.1'), c('4.2', '4.3', '5.1'), c('5.2', '5.3', '6.1'), c('6.2', '6.3', '7.1'), c('7.2', '7.3', '8.1')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 7))))
+				sgp.projection.baseline.grade.sequences=list(c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
 		return(tmp.list)
 	} ### END MATHEMATICS_SPANISH/FALL
@@ -371,7 +374,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.grade.sequences=list(c('1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2'), c('3.3', '4.1', '4.2'), c('4.3', '5.1', '5.2'), c('6.1', '6.2'), c('7.1', '7.2'), c('8.1', '8.2')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 8))))
+				sgp.projection.baseline.grade.sequences=list(c('1.2'), c('2.1', '2.2'), c('3.1', '3.2'), c('4.1', '4.2'), c('5.1', '5.2'), c('6.1', '6.2'), c('7.1', '7.2'), c('8.2')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, "SFW.config", sep=".")
 		return(tmp.list)
 	} ### END MATHEMATICS_SPANISH/WINTER
@@ -419,7 +423,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('1.2', '1.3', '2.1'), c('2.2', '2.3', '3.1'), c('3.2', '3.3', '4.1'), c('4.2', '4.3', '5.1'), c('5.2', '5.3', '6.1'), c('6.2', '6.3', '7.1'), c('7.2', '7.3', '8.1')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 8))))
+				sgp.projection.baseline.grade.sequences=list(c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
 		return(tmp.list)
 	} ### END READING_SPANISH/FALL
@@ -433,7 +438,8 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.grade.sequences=list(c('1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2'), c('3.3', '4.1', '4.2'), c('4.3', '5.1', '5.2'), c('5.3', '6.1', '6.2'), c('6.3', '7.1', '7.2'), c('7.3', '8.1', '8.2')),
-				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 8))))
+				sgp.projection.baseline.grade.sequences=list(c('1.2'), c('2.1', '2.2'), c('3.1', '3.2'), c('4.1', '4.2'), c('5.1', '5.2'), c('6.1', '6.2'), c('7.1', '7.2'), c('8.1', '8.2')),
+				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, "SFW.config", sep=".")
 		return(tmp.list)
 	} ### END READING_SPANISH/WINTER

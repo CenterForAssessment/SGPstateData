@@ -1654,12 +1654,12 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			MATHEMATICS = c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
 			MATHEMATICS_PSAT_9 =c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
 			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_SAT  =  c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
+			MATHEMATICS_SAT  =  c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
 			# MATHEMATICS_SAT  =  c("MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),#  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018 - use 2017 Algebra I -- Add MATHEMATICS_PSAT_9 in 2020
-			# ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"),
-			# GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
-			# ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
-			# INTEGRATED_MATH_1 = c("MATHEMATICS", "INTEGRATED_MATH_1"),
+			ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"), #  Keep these for getKnotsBoundaries (historical analyses)
+			GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
+			ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
+			INTEGRATED_MATH_1 = c("MATHEMATICS", "INTEGRATED_MATH_1")),
     year_lags.projection.sequence = list(
 			ELA = rep(1L, 8), # rep(1L, 5)
 			ELA_PSAT_9 = rep(1L, 8),
@@ -2830,32 +2830,8 @@ SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
 # SGPstateData[["GCPS"]][["Achievement"]][["Knots_Boundaries"]] <- gcps_sim_kbs
 
 ###   Temporary/Fake Achievement Cutscores - ACHIEVEMENT_LEVEL variable needed for summarizeSGP
-SGPstateData[["GCPS"]][["Achievement"]][["Cutscores"]] <-
-	list(
-    LANGUAGE_ARTS=list(
-      GRADE_1=c(40, 60),
-      GRADE_2=c(40, 60),
-      GRADE_3=c(40, 60),
-      GRADE_4=c(40, 60),
-      GRADE_5=c(40, 60),
-      GRADE_6=c(40, 60),
-      GRADE_7=c(40, 60),
-      GRADE_8=c(40, 60)),
-		MATHEMATICS=list(
-			GRADE_K=c(40, 60),
-			GRADE_1=c(40, 60),
-			GRADE_2=c(40, 60),
-			GRADE_3=c(40, 60),
-			GRADE_4=c(40, 60),
-			GRADE_5=c(40, 60),
-			GRADE_6=c(40, 60),
-			GRADE_7=c(40, 60)),
-    ACC_MATHEMATICS=list(
-			GRADE_6=c(40, 60),
-			GRADE_7=c(40, 60)),
-		ALGEBRA_I=list(
-			GRADE_EOCT=c(40, 60))
-	)
+load("Cutscores/GCPS/GCPS_Cutscores.Rdata")
+SGPstateData[["GCPS"]][["Achievement"]][["Cutscores"]] <- GCPS_Cutscores
 
 SGPstateData[["GCPS"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 SGPstateData[["GCPS"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"

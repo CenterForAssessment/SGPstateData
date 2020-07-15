@@ -22,7 +22,7 @@ conversations with your child's school and teachers, to discuss questions such a
       *  Is my daughter's academic growth enough to move her to \"Expanding\" level next year?
       *  What will it take for my student to move up to the \"Emerging\" level next year?
 
-For more information about growth in Colorado please visit:  www.cde.state.co.us/coloradogrowth or contact 303-866-6763."
+For more information about growth in Colorado please visit:  http://www.cde.state.co.us/accountability/coloradogrowth or contact 303-866-6763."
 
 
 Report_Text_SPANISH <-
@@ -49,7 +49,7 @@ le podr\u{ED}a servir para discutir con los maestros de su estudiante preguntas 
     *  \u{BF}Es el crecimiento acad\u{E9}mico de mi hija suficiente para poder alcanzar el siguiente nivel el pr\u{F3}ximo a\u{F1}o?
     *  \u{BF}Qu\u{E9} necesita hacer mi estudiante para llegar al \u{FA}ltimo nivel el otro a\u{F1}o?
 
-Para obtener m\u{E1}s informaci\u{F3}n sobre el crecimiento en Colorado, visite www.cde.state.co.us/accountability/coloradogrowth
+Para obtener m\u{E1}s informaci\u{F3}n sobre el crecimiento en Colorado, visite http://www.cde.state.co.us/accountability/coloradogrowth
 o p\u{F3}ngase en contacto con 303-866-6763."
 
 old.text <- "Para obtener m\u{E1}s informaci\u{F3}n visite: www.cde.state.co.us/accountability/englishlanguageproficiencygrowth o llamar 303-866-6763."

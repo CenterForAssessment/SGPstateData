@@ -1,12 +1,12 @@
 Report_Text_ENGLISH <-
 "The purpose of the ACCESS for ELLs 2.0\u{AE} assessment is to measure student progress toward English Language Proficiency on a yearly basis.
-The assessment serves as an indicator of when English Learners (ELs) have enough English language skills to participate in academics with
-out language development support. The report addresses your child's English proficiency level, how much your student progressed in their
+The assessment serves as an indicator of when English Learners (ELs) have enough English language skills to participate in academics
+without language development support. The report addresses your child's English proficiency level, how much your student progressed in their
 development of English and if they are on track to be proficient in English.
 
 Achievement: The ACCESS for ELLs assessment provides a composite (overall) score and proficiency level. The overall score consists of
-listening, speaking, reading, and writing components. The performance is described in terms of six proficiency levels. From lowest to
-highest performance, the levels are: Entering, Emerging, Developing, Expanding, Bridging, and Reaching. The overall score and proficiency
+listening, speaking, reading and writing components. The performance is described in terms of six proficiency levels. From lowest to
+highest performance, the levels are: Entering, Emerging, Developing, Expanding, Bridging and Reaching. The overall score and proficiency
 level by year are presented for your student in this report.
 
 Growth: The Colorado Growth Model measures the progress each student makes in a year. The model tells us how an EL student's progress

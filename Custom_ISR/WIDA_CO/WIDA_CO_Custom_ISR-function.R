@@ -40,7 +40,9 @@ function() {
 					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
 					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
-					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]]),
+					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
+					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
+					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1", sep="_")]]),
@@ -212,7 +214,9 @@ function() {
 					CUKU=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
 					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
-					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]]),
+					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
+					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
+					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1", sep="_")]]),

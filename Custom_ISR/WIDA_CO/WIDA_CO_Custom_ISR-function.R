@@ -41,8 +41,8 @@ function() {
 					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
 					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
-					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
-					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
+					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
+					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1", sep="_")]]),
@@ -53,9 +53,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3", sep="_")]])),
 					CUSTOM_TRAJECTORY=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][3])),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][3])),
 					CUKU_Current=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT", sep="_")]]),
@@ -65,9 +65,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT", sep="_")]])),
 					CUSTOM_TRAJECTORY_Current=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][3]))),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][3]))),
 				Plotting_SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_TRANSFORMED", sep="_")]]),
@@ -78,9 +78,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_TRANSFORMED", sep="_")]])),
 					CUSTOM_TRAJECTORY=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][3])),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][3])),
 					CUKU_Current=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT_TRANSFORMED", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
@@ -90,9 +90,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT_TRANSFORMED", sep="_")]])),
 					CUSTOM_TRAJECTORY_Current=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][3]))),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][3]))),
 				Cutscores=sgPlot.cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO", SGP_Targets=sgPlot.sgp.targets,
@@ -215,8 +215,8 @@ function() {
 					CUKU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
 					MUSU=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], sep="_"), last.year, sep=".")]],
 					MUSU_Current=tmp_student_data[[paste(paste(my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "CURRENT", sep="_"), last.year, sep=".")]],
-					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
-					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
+					CUSTOM_TRAJECTORY=tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_AGP']][1],
+					CUSTOM_TRAJECTORY_Current=tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_AGP']][1]),
 				SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1", sep="_")]]),
@@ -227,9 +227,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3", sep="_")]])),
 					CUSTOM_TRAJECTORY=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][3])),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET']][3])),
 					CUKU_Current=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT", sep="_")]]),
@@ -239,9 +239,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT", sep="_")]])),
 					CUSTOM_TRAJECTORY_Current=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][3]))),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET']][3]))),
 				Plotting_SGP_Scale_Score_Targets=list(
 					CUKU=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_TRANSFORMED", sep="_")]]),
@@ -252,9 +252,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_TRANSFORMED", sep="_")]])),
 					CUSTOM_TRAJECTORY=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][3])),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['LAGGED_SS_TARGET_PLOTTING']][3])),
 					CUKU_Current=list(
 						NY1=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_1_CURRENT_TRANSFORMED", sep="_")]]),
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
@@ -264,9 +264,9 @@ function() {
 						NY2=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_2_CURRENT_TRANSFORMED", sep="_")]]),
 						NY3=as.numeric(tmp_student_data[[paste('SCALE_SCORE', my.sgp.target.label[1], "MOVE_UP_STAY_UP", my.sgp.target.label[2], "PROJ_YEAR_3_CURRENT_TRANSFORMED", sep="_")]])),
 					CUSTOM_TRAJECTORY_Current=list(
-						NY1=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][1]),
-						NY2=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][2]),
-						NY3=as.numeric(tmp_student_data[[paste('ISR_INTERIM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][3]))),
+						NY1=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][1]),
+						NY2=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][2]),
+						NY3=as.numeric(tmp_student_data[[paste('ISR_CUSTOM_DATA', last.year, sep=".")]][[1]][['CURRENT_SS_TARGET_PLOTTING']][3]))),
 				Cutscores=sgPlot.cutscores[[content_areas[vp]]],
 				Years=rev(sgPlot.years),
 				Report_Parameters=list(Current_Year=last.year, Content_Area=content_areas[vp], State="WIDA_CO_SPANISH", SGP_Targets=sgPlot.sgp.targets,

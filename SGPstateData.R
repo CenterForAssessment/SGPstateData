@@ -10840,7 +10840,7 @@ SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="ESE",
 		URL="http://www.doe.mass.edu/",
 		Contact="781-338-3000"),
-	Scale_Change=list(READING="2016"),
+#	Scale_Change=list(READING="2016"),
 	Assessment_Years=c("2011", "2012", "2013", "2014", "2015", "2016", "2017"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
@@ -10859,43 +10859,43 @@ SGPstateData[["WIDA_MA"]][["Student_Report_Information"]] <- list(
 		"WIDA L5"="WIDA Level 5",
 		"WIDA L6"="WIDA Level 6"))
 
-SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="ACCESS",
-		Assessment_Abbreviation.2017="ACCESS 2.0",
-		Assessment_Name="ACCESS",
-		Assessment_Name.2017="ACCESS 2.0",
-		Achievement_Levels=list(
-			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
-		Achievement_Levels.2017=list(
-			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-			Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA)),
-		Achievement_Level_Labels=list(
-			"WIDA L1"="WIDA Level 1",
-			"WIDA L2"="WIDA Level 2",
-			"WIDA L3"="WIDA Level 3",
-			"WIDA L4"="WIDA Level 4",
-			"WIDA L5"="WIDA Level 5",
-			"WIDA L6"="WIDA Level 6"),
-		Achievement_Level_Labels.2017=list(
-			"WIDA L1"="WIDA Level 1",
-			"WIDA L2"="WIDA Level 2",
-			"WIDA L3"="WIDA Level 3",
-			"WIDA L4"="WIDA Level 4",
-			"WIDA L4.2"="WIDA Level 4.2",
-			"WIDA L5"="WIDA Level 5",
-			"WIDA L6"="WIDA Level 6"),
-		Content_Areas_Labels=list(READING="Reading"),
-		Content_Areas_Labels.2017=list(READING="Reading"),
-		Vertical_Scale="Yes",
-		Vertical_Scale.2017="Yes",
-		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Grades_Tested.2017=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-		Year="2017",
-		Preequated_by_Contractor=TRUE#,
+#SGPstateData[["WIDA_MA"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="ACCESS",
+#		Assessment_Abbreviation.2017="ACCESS 2.0",
+#		Assessment_Name="ACCESS",
+#		Assessment_Name.2017="ACCESS 2.0",
+#		Achievement_Levels=list(
+#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
+#		Achievement_Levels.2017=list(
+#			Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+#			Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient", "Proficient", "Proficient","Proficient",NA)),
+#		Achievement_Level_Labels=list(
+#			"WIDA L1"="WIDA Level 1",
+#			"WIDA L2"="WIDA Level 2",
+#			"WIDA L3"="WIDA Level 3",
+#			"WIDA L4"="WIDA Level 4",
+#			"WIDA L5"="WIDA Level 5",
+#			"WIDA L6"="WIDA Level 6"),
+#		Achievement_Level_Labels.2017=list(
+#			"WIDA L1"="WIDA Level 1",
+#			"WIDA L2"="WIDA Level 2",
+#			"WIDA L3"="WIDA Level 3",
+#			"WIDA L4"="WIDA Level 4",
+#			"WIDA L4.2"="WIDA Level 4.2",
+#			"WIDA L5"="WIDA Level 5",
+#			"WIDA L6"="WIDA Level 6"),
+#		Content_Areas_Labels=list(READING="Reading"),
+#		Content_Areas_Labels.2017=list(READING="Reading"),
+#		Vertical_Scale="Yes",
+#		Vertical_Scale.2017="Yes",
+#		Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Grades_Tested.2017=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+#		Year="2017",
+#		Preequated_by_Contractor=TRUE#,
 #		Baseline_Projections_in_Transition_Year=TRUE
-		)
+#		)
 
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,

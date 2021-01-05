@@ -2602,6 +2602,11 @@ SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 	list(
+		Organization=list(
+			Name="Georgia Department of Education",
+			Abbreviation="GaDOE",
+			URL="https://www.gadoe.org",
+			Contact=NULL),
 		Assessment_Name="Georgia Milestones Assessment System",
 		Assessment_Abbreviation="Milestones",
 		Content_Areas=c("Mathematics", "ELA", "Science", "Social Studies"),
@@ -8783,13 +8788,13 @@ SGPstateData[["UT"]][['SGP_Progression_Preference']] <- data.table(
 
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="RISE/Utah Aspire Plus",
-		Assessment_Abbreviation="RISE",
+		Assessment_Name=c("Readiness Improvement Success Empowerment", "Utah Aspire Plus"),
+		Assessment_Abbreviation=c("RISE", "UA+"),
 		Organization=list(
-		Name="Utah State Board of Education",
-		Abbreviation="USOE",
-		URL="www.schools.utah.gov",
-		Contact="(801) 538-7811"),
+			Name="Utah State Board of Education",
+			Abbreviation="USBE",
+			URL="www.schools.utah.gov",
+			Contact="(801) 538-7811"),
 		Content_Areas=c("ELA", "MATHEMATICS", "SCIENCE"),
 		Scale_Change=list(ELA="2019", MATHEMATICS="2019", SCIENCE="2019"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10),

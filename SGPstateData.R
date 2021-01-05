@@ -5300,7 +5300,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
-		round.digits=4L)
+		round.digits=5L)
 
 #########################################################
 ### MICHIGAN

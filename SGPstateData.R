@@ -2128,6 +2128,9 @@ SGPstateData[["DEMO_EOCT"]][["Student_Report_Information"]] <- list(
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"))
 
+#########################################################
+### DEMO_COVID
+#########################################################
 
 #########################################################
 ### GUATEMALA/GUA
@@ -5305,7 +5308,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
-		round.digits=5L)
+		round.digits=6L)
 
 #########################################################
 ### MICHIGAN

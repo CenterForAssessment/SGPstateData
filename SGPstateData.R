@@ -2024,7 +2024,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Assessment_Years=c("2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)
@@ -2074,7 +2074,7 @@ SGPstateData[["DEMO"]][["SGP_Norm_Group_Preference"]] <- DEMO_SGP_Norm_Group_Pre
 #########################################################
 
 load("CSEM/Demonstration_EOCT/Demonstration_EOCT_CSEM.Rdata")
-SGPstateData[["DEMO_EOCT"]] <- SGPstateData[['DEMO']]
+SGPstateData[["DEMO_EOCT"]] <- SGPstateData[["DEMO"]]
 SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][["names.sgp"]]
 setnames(SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
 SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]] <- SGPstateData[["DEMO_EOCT"]][["Variable_Name_Lookup"]][-(c(9:14, 18:19, 21)),]
@@ -2131,6 +2131,49 @@ SGPstateData[["DEMO_EOCT"]][["Student_Report_Information"]] <- list(
 #########################################################
 ### DEMO_COVID
 #########################################################
+
+load("Knots_Boundaries/DEMO_COVID_Knots_Boundaries.rda")
+load("Cutscores/DEMO_COVID/DEMO_COVID_Cutscores.rda")
+
+SGPstateData[["DEMO_COVID"]] <- SGPstateData[["DEMO"]]
+SGPstateData[["DEMO_COVID"]][["Baseline_splineMatrix"]] <- NULL
+SGPstateData[["DEMO_COVID"]][["Achievement"]][["Knots_Boundaries"]] <- DEMO_COVID_Knots_Bounds
+SGPstateData[["DEMO_COVID"]][["Achievement"]][["Cutscores"]] <- DEMO_COVID_Cutscores
+SGPstateData[["DEMO_COVID"]][["Assessment_Program_Information"]][["CSEM"]] <- NULL
+SGPstateData[["DEMO_COVID"]][["SGP_Configuration"]][["gaPlot.back.extrapolated.cuts"]] <- list(MATHEMATICS=TRUE, ELA=TRUE)
+
+SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]][["names.sgp"]]
+setnames(SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
+# which(!SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]][["names.sgp"]] %in% names(sgpData_LONG_COVID))
+# all(names(sgpData_LONG_COVID) %in% SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]][-(c(2,3,14,17,20,21,22)),][["names.sgp"]]) # TRUE
+SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]] <- SGPstateData[["DEMO_COVID"]][["Variable_Name_Lookup"]][-(c(2,3,14,17,20,21,22)),]
+
+SGPstateData[["DEMO_COVID"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="Demonstration Student Assessment Program",
+	Assessment_Abbreviation="DEMO_COVID",
+	Organization=list(
+		Name="Student Growth Percentiles Package",
+		Abbreviation="the SGP Package",
+		URL="www.sgp.io",
+		Contact="dbetebenner@nciea.org"),
+	Content_Areas=c("Mathematics", "ELA"),
+	Grades_Tested=c(3,4,5,6,7,8,9,10),
+	Assessment_Years=c("2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024"),
+	Test_Vendor="NCIEA",
+	Test_Season="Spring")
+
+SGPstateData[["DEMO_COVID"]][["Student_Report_Information"]] <-
+	list(
+	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+	Projection_Fan_Limits=c(5, 95),
+	Content_Areas_Labels=list(MATHEMATICS="Mathematics", ELA="ELA"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+	Achievement_Level_Labels=list(
+		"Unsatisfactory"="Unsatisfactory",
+		"Part Proficient"="Partially Proficient",
+		"Proficient"="Proficient",
+		"Advanced"="Advanced"))
 
 #########################################################
 ### GUATEMALA/GUA

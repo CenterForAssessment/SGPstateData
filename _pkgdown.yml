@@ -32,7 +32,7 @@ navbar:
       - text: "September 2017"
         href: articles/releases/SGPstateData_September_2017_Notes.html
     right:
-      - icon: fa-github fa-2x
+      - icon: fab fa-github
         href: https://github.com/centerforassessment/SGPstateData
-      - icon: fa-twitter
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPstateData%2F&via=NCIEA1&text=SGPstateData:%20State%20assessment%20meta-data%20for%20SGP%20analyses&hashtags=rstats%2C%20SGP
+      - icon: fab fa-twitter
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPstateData%2F&via=NCIEA1&text=SGPstateData:%20State%20assessment%20meta-data%20for%20SGP%20analyses&hashtags=rstats%2CSGP

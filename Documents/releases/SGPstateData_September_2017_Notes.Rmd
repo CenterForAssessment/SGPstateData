@@ -1,0 +1,17 @@
+---
+title: "SGPstateData Release Notes"
+date: "September 17th, 2017"
+---
+
+```{r, echo = FALSE}
+is_html_output = function() {
+  knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+}
+knitr::opts_chunk$set(collapse = TRUE, comment = "", prompt=TRUE, fig.dpi = 96)
+if (is_html_output()) {
+    options(width=1000)
+}
+```
+
+
+These are the inital release notes for the `SGPstateData` meta-data GitHub repo. `SGPstateData` is an R environment that is embedded in the [SGP package](www.sgp.io).

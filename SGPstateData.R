@@ -3911,78 +3911,13 @@ SGPstateData[["IL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <
 ### INDIANA
 #########################################################
 
+## Pre-COVID Knots and Boundaries established in 2019 with ILEARN can be accessed
+## by uncommenting the following two lines and commenting out the the other lines.
+#load("Knots_Boundaries/IN_Knots_Boundaries_Pre_COVID_2019.Rdata")
+#SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <- IN_Knots_Boundaries_Pre_COVID_2019
 SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 		ELA=list(
-			boundaries_2=c(94.1, 695.9),
-			boundaries_3=c(103.3, 786.7),
-			boundaries_4=c(113.2, 806.8),
-			boundaries_5=c(128.15, 826.85),
-			boundaries_6=c(173.3, 856.7),
-			boundaries_7=c(203.4, 876.6),
-			boundaries_8=c(223.4, 896.6),
-			boundaries_10=c(85, 415),
-			knots_2=c(402, 432, 458, 490),
-			knots_3=c(422, 452, 478, 507),
-			knots_4=c(440, 473, 498, 528),
-			knots_5=c(461, 490, 514, 541),
-			knots_6=c(468, 509, 543, 582),
-			knots_7=c(496, 526, 551, 580),
-			knots_8=c(494, 530, 561, 598),
-			knots_10=c(213, 244, 269, 295),
-			loss.hoss_2=c(100, 690),
-			loss.hoss_3=c(110, 780),
-			loss.hoss_4=c(115, 800),
-			loss.hoss_5=c(130, 820),
-			loss.hoss_6=c(175, 850),
-			loss.hoss_7=c(210, 870),
-			loss.hoss_8=c(230, 890),
-			loss.hoss_10=c(100, 400)),
-		ELA.2017=list(
-			boundaries_3=c(103.3, 786.7),
-			boundaries_4=c(113.2, 806.8),
-			boundaries_5=c(128.15, 826.85),
-			boundaries_6=c(173.3, 856.7),
-			boundaries_7=c(203.4, 876.6),
-			boundaries_8=c(181, 1009),
-			boundaries_10=c(85, 415),
-			knots_3=c(422, 452, 478, 507),
-			knots_4=c(440, 473, 498, 528),
-			knots_5=c(461, 490, 514, 541),
-			knots_6=c(468, 509, 543, 582),
-			knots_7=c(496, 526, 551, 580),
-			knots_8=c(497, 540, 573, 610),
-			knots_10=c(213, 244, 269, 295),
-			loss.hoss_3=c(110, 780),
-			loss.hoss_4=c(115, 800),
-			loss.hoss_5=c(130, 820),
-			loss.hoss_6=c(175, 850),
-			loss.hoss_7=c(210, 870),
-			loss.hoss_8=c(250, 940),
-			loss.hoss_10=c(100, 400)),
-		ELA.2018=list(
-			boundaries_3=c(140, 860),
-			boundaries_4=c(146, 914),
-			boundaries_5=c(128.15, 826.85),
-			boundaries_6=c(173.3, 856.7),
-			boundaries_7=c(203.4, 876.6),
-			boundaries_8=c(181, 1009),
-			boundaries_10=c(85, 415),
-			knots_3=c(407, 438, 465, 494),
-			knots_4=c(428, 461, 490, 522),
-			knots_5=c(461, 490, 514, 541),
-			knots_6=c(468, 509, 543, 582),
-			knots_7=c(496, 526, 551, 580),
-			knots_8=c(499, 543, 576, 614),
-			knots_10=c(213, 244, 269, 295),
-			loss.hoss_3=c(200, 800),
-			loss.hoss_4=c(210, 850),
-			loss.hoss_5=c(130, 820),
-			loss.hoss_6=c(175, 850),
-			loss.hoss_7=c(210, 870),
-			loss.hoss_8=c(250, 940),
-			loss.hoss_10=c(100, 400)),
-		ELA.2019=list(
 			boundaries_3=c(4990, 5830),
 			boundaries_4=c(5018, 5882),
 			boundaries_5=c(5036, 5924),
@@ -4005,53 +3940,6 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_8=c(5150, 5920),
 			loss.hoss_10=c(100, 400)),
 		MATHEMATICS=list(
-			boundaries_2=c(94.8, 625.2),
-			boundaries_3=c(134.05, 740.95),
-			boundaries_4=c(174.3, 755.7),
-			boundaries_5=c(214.45, 780.55),
-			boundaries_6=c(234.5, 795.5),
-			boundaries_7=c(254.5, 815.5),
-			boundaries_8=c(335.1, 834.9),
-			boundaries_10=c(85, 415),
-			knots_2=c(379, 414, 441, 472),
-			knots_3=c(409, 447, 478, 515),
-			knots_4=c(434, 471, 501, 536),
-			knots_5=c(471, 507, 536, 568),
-			knots_6=c(486, 521, 551, 585),
-			knots_7=c(503, 541, 575, 614),
-			knots_8=c(530, 571, 604, 641),
-			knots_10=c(210, 240, 266, 297),
-			loss.hoss_2=c(100, 620),
-			loss.hoss_3=c(140, 735),
-			loss.hoss_4=c(180, 750),
-			loss.hoss_5=c(220, 775),
-			loss.hoss_6=c(240, 790),
-			loss.hoss_7=c(260, 810),
-			loss.hoss_8=c(340, 830),
-			loss.hoss_10=c(100, 400)),
-		MATHEMATICS.2017=list(### 2017 knots/boundaries same as before EXCEPT for grade 8, used as prior in 2019.
-			boundaries_3=c(134.05, 740.95),
-			boundaries_4=c(174.3, 755.7),
-			boundaries_5=c(214.45, 780.55),
-			boundaries_6=c(234.5, 795.5),
-			boundaries_7=c(254.5, 815.5),
-			boundaries_8=c(277.5, 847.5),
-			boundaries_10=c(85, 415),
-			knots_3=c(409, 447, 478, 515),
-			knots_4=c(434, 471, 501, 536),
-			knots_5=c(471, 507, 536, 568),
-			knots_6=c(486, 521, 551, 585),
-			knots_7=c(503, 541, 575, 614),
-			knots_8=c(516, 547, 572, 600),
-			knots_10=c(210, 240, 266, 297),
-			loss.hoss_3=c(140, 735),
-			loss.hoss_4=c(180, 750),
-			loss.hoss_5=c(220, 775),
-			loss.hoss_6=c(240, 790),
-			loss.hoss_7=c(260, 810),
-			loss.hoss_8=c(325, 830),
-			loss.hoss_10=c(100, 400)),
-		MATHEMATICS.2019=list(
 			boundaries_3=c(6041.4, 6792.6),
 			boundaries_4=c(6030, 6870),
 			boundaries_5=c(6036, 6924),
@@ -4092,18 +3980,18 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(537, 617),
 			GRADE_10=c(244, 292)),
 		ELA.2019=list(
-			GRADE_3=c(5460, 5515),
-			GRADE_4=c(5493, 5547),
-			GRADE_5=c(5524, 5595),
-			GRADE_6=c(5544, 5604),
-			GRADE_7=c(5568, 5629),
-			GRADE_8=c(5577, 5638),
-#			GRADE_3=c(5416, 5460, 5515), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
-#			GRADE_4=c(5444, 5493, 5547), ### Review achievement levels annually to determine when 4 achievement levels can be supported
-#			GRADE_5=c(5472, 5524, 5595),
-#			GRADE_6=c(5492, 5544, 5604),
-#			GRADE_7=c(5507, 5568, 5629),
-#			GRADE_8=c(5511, 5577, 5638),
+#			GRADE_3=c(5460, 5515),
+#			GRADE_4=c(5493, 5547),
+#			GRADE_5=c(5524, 5595),
+#			GRADE_6=c(5544, 5604),
+#			GRADE_7=c(5568, 5629),
+#			GRADE_8=c(5577, 5638),
+			GRADE_3=c(5416, 5460, 5515), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
+			GRADE_4=c(5444, 5493, 5547), ### Review achievement levels annually to determine when 4 achievement levels can be supported
+			GRADE_5=c(5472, 5524, 5595),
+			GRADE_6=c(5492, 5544, 5604),
+			GRADE_7=c(5507, 5568, 5629),
+			GRADE_8=c(5511, 5577, 5638),
 			GRADE_10=c(244, 292)),
 		MATHEMATICS=list(
 			GRADE_3=c(413, 513),
@@ -4121,26 +4009,26 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_8=c(554, 595),
 			GRADE_10=c(271, 339)),
 		MATHEMATICS.2019=list(
-			GRADE_3=c(6425, 6488),
-			GRADE_4=c(6474, 6541),
-			GRADE_5=c(6510, 6566),
-			GRADE_6=c(6545, 6605),
-			GRADE_7=c(6562, 6625),
-			GRADE_8=c(6590, 6651),
-#			GRADE_3=c(6382, 6425, 6488), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
-#			GRADE_4=c(6429, 6474, 6541), ### Review achievement levels annually to determine when 4 achievement levels can be supported
-#			GRADE_5=c(6453, 6510, 6566),
-#			GRADE_6=c(6488, 6545, 6605),
-#			GRADE_7=c(6493, 6562, 6625),
-#			GRADE_8=c(6509, 6590, 6651),
+#			GRADE_3=c(6425, 6488),
+#			GRADE_4=c(6474, 6541),
+#			GRADE_5=c(6510, 6566),
+#			GRADE_6=c(6545, 6605),
+#			GRADE_7=c(6562, 6625),
+#			GRADE_8=c(6590, 6651),
+			GRADE_3=c(6382, 6425, 6488), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
+			GRADE_4=c(6429, 6474, 6541), ### Review achievement levels annually to determine when 4 achievement levels can be supported
+			GRADE_5=c(6453, 6510, 6566),
+			GRADE_6=c(6488, 6545, 6605),
+			GRADE_7=c(6493, 6562, 6625),
+			GRADE_8=c(6509, 6590, 6651),
 			GRADE_10=c(271, 339)))
 
 SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 	list(
-		Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
-		Proficient=c("Not Proficient", "Proficient", "Proficient"))
-#		Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
-#		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+#		Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+#		Proficient=c("Not Proficient", "Proficient", "Proficient"))
+		Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -5327,10 +5215,12 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 			Contact="781-338-3000"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
-		Assessment_Years=c("2015", "2016", "2017", "2018"),
+		Assessment_Years=c("2015", "2016", "2017", "2018", "2019"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
-		CSEM="SCALE_SCORE_CSEM")
+		CSEM="SCALE_SCORE_CSEM",
+		Scale_Change=list(MATHEMATICS="2017", ELA="2017")
+	)
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
@@ -8066,7 +7956,9 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
 #		CSEM=RICAS_PARCC_CSEM)
-		CSEM="SCALE_SCORE_CSEM")
+		CSEM="SCALE_SCORE_CSEM",
+		Scale_Change=list(ELA="2017_2018", MATHEMATICS="2017_2018")
+		)
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
 	list(

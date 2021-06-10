@@ -32,7 +32,7 @@ SGPstateData[["PARCC"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["PARCC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["PARCC"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -595,7 +595,7 @@ SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["AZ"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["AZ"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["AZ"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -1519,7 +1519,7 @@ SGPstateData[["CO"]][["Growth"]][["Cutscores"]] <- list(
 
 SGPstateData[["CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["CO"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["CO"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 load("Knots_Boundaries/CO_CMAS_Knots_Boundaries.Rdata")
 SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <- CO_CMAS_Knots_Boundaries
@@ -1621,8 +1621,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
     sgp.cohort.size = 2000,
     sgp.less.than.sgp.cohort.size.return = "<2000",
     return.norm.group.scale.scores = TRUE,
-		print.other.gp = TRUE,
-		print.sgp.order = TRUE,
+	print.other.gp = TRUE,
+	print.sgp.order = TRUE,
     arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"),
     sgPlot.use.student.id = TRUE,
     grade.projection.sequence = list(
@@ -2639,7 +2639,7 @@ SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" # "Cohort and Baseline Referenced"
+SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -3212,7 +3212,7 @@ SGPstateData[["HI"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["HI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["HI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["HI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["HI"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -3289,6 +3289,7 @@ SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	output.groups=c("COMPLEX", "SCHOOL"),
 	outputSGP.translate.names=FALSE,
 	state.multiple.year.summary=3,
+	return.norm.group.scale.scores=TRUE,
 	output.column.order=list(SGP_Data_LONG=
 		c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
 		  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER",
@@ -4032,7 +4033,7 @@ SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -4108,6 +4109,7 @@ SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	sgp.projections.lagged.baseline.max.order=2,
 	percentile.cuts=c(1,35,65,99),
 	sgp.loss.hoss.adjustment="IN",
+	return.norm.group.scale.scores=TRUE,
 	lagged.percentile.trajectory.values=c(1,35,65,99))
 
 SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -5201,7 +5203,7 @@ SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 SGPstateData[["MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
@@ -5241,6 +5243,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
+		return.norm.group.scale.scores=TRUE,
 		round.digits=6L)
 
 #########################################################
@@ -5353,7 +5356,7 @@ SGPstateData[["MI"]][["Achievement"]][["College_Readiness_Cutscores"]] <- list(
 
 SGPstateData[["MI"]][["Growth"]][["Levels"]] <- c("Low", "Medium", "High")
 
-SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["MI"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
@@ -6447,7 +6450,7 @@ SGPstateData[["NH"]][["Achievement"]][["Levels"]] <- list(
 
 SGPstateData[["NH"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["NH"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["NH"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["NH"]][["Growth"]][["Cutscores"]] <- list(
 		Cuts=c(35, 66),
@@ -6549,6 +6552,7 @@ SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
 		state.multiple.year.summary=5,
 		print.other.gp=TRUE,
 		max.order.for.percentile=2,
+		return.norm.group.scale.scores=TRUE,
 		sgp.target.scale.scores.merge="1_year_lagged_current")
 
 SGPstateData[["NH"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NH_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -7681,7 +7685,7 @@ SGPstateData[["RI_ORIGINAL"]][["Growth"]][["Cutscores"]] <-
 		Cuts=c(31, 46, 56, 71),
 		Labels=c("1st-30th", "31st-45th", "46th-55th", "56th-70th", "71st-99th"))
 
-SGPstateData[["RI_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["RI_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["RI_ORIGINAL"]][["Assessment_Program_Information"]] <-
 	list(
@@ -8620,10 +8624,11 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 		Cuts=c(40, 60),
 		Labels=c("1st - 39th", "40th - 60th", "61st - 99th")) #  Changed to 60th percentile cut per conversation with Elena and Chris D. 10/01/12
 
-SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
+	return.norm.group.scale.scores=TRUE,
 	sgp.less.than.sgp.cohort.size.return="<3000",
 	max.order.for.percentile=5,
 	max.order.for.projection=5, # All available SAGE per R.R. 8/13/18
@@ -10232,9 +10237,9 @@ SGPstateData[["VI"]][["SGP_Configuration"]] <- list(
 
 
 
-##########################################################################################
+#########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA)
-##########################################################################################
+#########################################################################################
 
 load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
@@ -10313,6 +10318,7 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	return.norm.group.scale.scores=TRUE,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")

@@ -1621,8 +1621,8 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
     sgp.cohort.size = 2000,
     sgp.less.than.sgp.cohort.size.return = "<2000",
     return.norm.group.scale.scores = TRUE,
-		print.other.gp = TRUE,
-		print.sgp.order = TRUE,
+	print.other.gp = TRUE,
+	print.sgp.order = TRUE,
     arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"),
     sgPlot.use.student.id = TRUE,
     grade.projection.sequence = list(
@@ -3289,6 +3289,7 @@ SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	output.groups=c("COMPLEX", "SCHOOL"),
 	outputSGP.translate.names=FALSE,
 	state.multiple.year.summary=3,
+	return.norm.group.scale.scores=TRUE,
 	output.column.order=list(SGP_Data_LONG=
 		c("VALID_CASE", "YEAR", "CONTENT_AREA", "GRADE", "ID", "LAST_NAME", "FIRST_NAME", "SCALE_SCORE", "ACHIEVEMENT_LEVEL",
 		  "SCHOOL_NUMBER", "SCHOOL_NAME", "EMH_LEVEL", "GRADE_RANGE", "SCHOOL_TYPE", "SCHOOL_LEVEL", "DISTRICT_NUMBER",
@@ -4108,6 +4109,7 @@ SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	sgp.projections.lagged.baseline.max.order=2,
 	percentile.cuts=c(1,35,65,99),
 	sgp.loss.hoss.adjustment="IN",
+	return.norm.group.scale.scores=TRUE,
 	lagged.percentile.trajectory.values=c(1,35,65,99))
 
 SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -5241,6 +5243,7 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
+		return.norm.group.scale.scores=TRUE,
 		round.digits=6L)
 
 #########################################################
@@ -6549,6 +6552,7 @@ SGPstateData[["NH"]][["SGP_Configuration"]] <- list(
 		state.multiple.year.summary=5,
 		print.other.gp=TRUE,
 		max.order.for.percentile=2,
+		return.norm.group.scale.scores=TRUE,
 		sgp.target.scale.scores.merge="1_year_lagged_current")
 
 SGPstateData[["NH"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NH_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -8624,6 +8628,7 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,
+	return.norm.group.scale.scores=TRUE,
 	sgp.less.than.sgp.cohort.size.return="<3000",
 	max.order.for.percentile=5,
 	max.order.for.projection=5, # All available SAGE per R.R. 8/13/18
@@ -10232,9 +10237,9 @@ SGPstateData[["VI"]][["SGP_Configuration"]] <- list(
 
 
 
-##########################################################################################
+#########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA)
-##########################################################################################
+#########################################################################################
 
 load("Knots_Boundaries/WIDA_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
@@ -10313,6 +10318,7 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years=2,
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
+	return.norm.group.scale.scores=TRUE,
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")

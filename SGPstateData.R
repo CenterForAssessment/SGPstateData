@@ -32,7 +32,7 @@ SGPstateData[["PARCC"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["PARCC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["PARCC"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -595,7 +595,7 @@ SGPstateData[["AZ"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["AZ"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["AZ"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["AZ"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["AZ"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -1519,7 +1519,7 @@ SGPstateData[["CO"]][["Growth"]][["Cutscores"]] <- list(
 
 SGPstateData[["CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["CO"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["CO"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 load("Knots_Boundaries/CO_CMAS_Knots_Boundaries.Rdata")
 SGPstateData[["CO"]][["Achievement"]][["Knots_Boundaries"]] <- CO_CMAS_Knots_Boundaries
@@ -2639,7 +2639,7 @@ SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" # "Cohort and Baseline Referenced"
+SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -3212,7 +3212,7 @@ SGPstateData[["HI"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["HI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["HI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["HI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["HI"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -4033,7 +4033,7 @@ SGPstateData[["IN"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["IN"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["IN"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["IN"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -5203,7 +5203,7 @@ SGPstateData[["MA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 SGPstateData[["MA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
@@ -5356,7 +5356,7 @@ SGPstateData[["MI"]][["Achievement"]][["College_Readiness_Cutscores"]] <- list(
 
 SGPstateData[["MI"]][["Growth"]][["Levels"]] <- c("Low", "Medium", "High")
 
-SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["MI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["MI"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
@@ -6450,7 +6450,7 @@ SGPstateData[["NH"]][["Achievement"]][["Levels"]] <- list(
 
 SGPstateData[["NH"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["NH"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["NH"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["NH"]][["Growth"]][["Cutscores"]] <- list(
 		Cuts=c(35, 66),
@@ -7685,7 +7685,7 @@ SGPstateData[["RI_ORIGINAL"]][["Growth"]][["Cutscores"]] <-
 		Cuts=c(31, 46, 56, 71),
 		Labels=c("1st-30th", "31st-45th", "46th-55th", "56th-70th", "71st-99th"))
 
-SGPstateData[["RI_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["RI_ORIGINAL"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["RI_ORIGINAL"]][["Assessment_Program_Information"]] <-
 	list(
@@ -8624,7 +8624,7 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 		Cuts=c(40, 60),
 		Labels=c("1st - 39th", "40th - 60th", "61st - 99th")) #  Changed to 60th percentile cut per conversation with Elena and Chris D. 10/01/12
 
-SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
 	sgp.cohort.size=3000,

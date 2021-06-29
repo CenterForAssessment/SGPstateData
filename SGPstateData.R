@@ -4017,7 +4017,7 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 #			GRADE_6=c(6545, 6605),
 #			GRADE_7=c(6562, 6625),
 #			GRADE_8=c(6590, 6651),
-		MATHEMATICS.2019=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 ILEARN cutscores for prior years as well
+		MATHEMATICS=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 ILEARN cutscores for prior years as well
 			GRADE_3=c(6382, 6425, 6488), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
 			GRADE_4=c(6429, 6474, 6541), ### Review achievement levels annually to determine when 4 achievement levels can be supported
 			GRADE_5=c(6453, 6510, 6566),

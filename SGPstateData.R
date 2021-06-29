@@ -4101,7 +4101,7 @@ SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 		"Below Proficiency"="Below Proficiency",
 		"Approaching Proficiency"="Approaching Proficiency",
 		"At Proficiency"="At Proficiency",
-		"Above Proficient"="Above Proficient"))
+		"Above Proficiency"="Above Proficiency"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,

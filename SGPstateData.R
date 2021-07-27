@@ -3965,28 +3965,29 @@ SGPstateData[["IN"]][["Achievement"]][["Knots_Boundaries"]] <-
 
 SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 	list(
-		ELA=list(
-			GRADE_3=c(417, 521),
-			GRADE_4=c(437, 535),
-			GRADE_5=c(468, 548),
-			GRADE_6=c(478, 579),
-			GRADE_7=c(501, 584),
-			GRADE_8=c(508, 627)),
-		ELA.2015=list(
-			GRADE_3=c(428, 500),
-			GRADE_4=c(456, 529),
-			GRADE_5=c(486, 546),
-			GRADE_6=c(502, 572),
-			GRADE_7=c(516, 592),
-			GRADE_8=c(537, 617),
-			GRADE_10=c(244, 292)),
-		ELA.2019=list(
+#		ELA=list(
+#			GRADE_3=c(417, 521),
+#			GRADE_4=c(437, 535),
+#			GRADE_5=c(468, 548),
+#			GRADE_6=c(478, 579),
+#			GRADE_7=c(501, 584),
+#			GRADE_8=c(508, 627)),
+#		ELA.2015=list(
+#			GRADE_3=c(428, 500),
+#			GRADE_4=c(456, 529),
+#			GRADE_5=c(486, 546),
+#			GRADE_6=c(502, 572),
+#			GRADE_7=c(516, 592),
+#			GRADE_8=c(537, 617),
+#			GRADE_10=c(244, 292)),
+#		ELA.2019=list(
 #			GRADE_3=c(5460, 5515),
 #			GRADE_4=c(5493, 5547),
 #			GRADE_5=c(5524, 5595),
 #			GRADE_6=c(5544, 5604),
 #			GRADE_7=c(5568, 5629),
-#			GRADE_8=c(5577, 5638),
+#			GRADE_8=c(5577, 5638)),
+		ELA=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 ILEARN cutscores for prior years as well
 			GRADE_3=c(5416, 5460, 5515), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
 			GRADE_4=c(5444, 5493, 5547), ### Review achievement levels annually to determine when 4 achievement levels can be supported
 			GRADE_5=c(5472, 5524, 5595),
@@ -3994,28 +3995,29 @@ SGPstateData[["IN"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(5507, 5568, 5629),
 			GRADE_8=c(5511, 5577, 5638),
 			GRADE_10=c(244, 292)),
-		MATHEMATICS=list(
-			GRADE_3=c(413, 513),
-			GRADE_4=c(445, 541),
-			GRADE_5=c(463, 556),
-			GRADE_6=c(487, 590),
-			GRADE_7=c(511, 603),
-			GRADE_8=c(537, 641)),
-		MATHEMATICS.2015=list(
-			GRADE_3=c(425, 480),
-			GRADE_4=c(458, 508),
-			GRADE_5=c(480, 536),
-			GRADE_6=c(510, 560),
-			GRADE_7=c(533, 578),
-			GRADE_8=c(554, 595),
-			GRADE_10=c(271, 339)),
-		MATHEMATICS.2019=list(
+#		MATHEMATICS=list(
+#			GRADE_3=c(413, 513),
+#			GRADE_4=c(445, 541),
+#			GRADE_5=c(463, 556),
+#			GRADE_6=c(487, 590),
+#			GRADE_7=c(511, 603),
+#			GRADE_8=c(537, 641)),
+#		MATHEMATICS.2015=list(
+#			GRADE_3=c(425, 480),
+#			GRADE_4=c(458, 508),
+#			GRADE_5=c(480, 536),
+#			GRADE_6=c(510, 560),
+#			GRADE_7=c(533, 578),
+#			GRADE_8=c(554, 595),
+#			GRADE_10=c(271, 339)),
+#		MATHEMATICS.2019=list(
 #			GRADE_3=c(6425, 6488),
 #			GRADE_4=c(6474, 6541),
 #			GRADE_5=c(6510, 6566),
 #			GRADE_6=c(6545, 6605),
 #			GRADE_7=c(6562, 6625),
 #			GRADE_8=c(6590, 6651),
+		MATHEMATICS=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 ILEARN cutscores for prior years as well
 			GRADE_3=c(6382, 6425, 6488), ### NOTE: 9/17/2019 -- 2019 4 achievement level standards were reduced to 3 levels to permit equated SGP targets to be calculated
 			GRADE_4=c(6429, 6474, 6541), ### Review achievement levels annually to determine when 4 achievement levels can be supported
 			GRADE_5=c(6453, 6510, 6566),
@@ -4055,51 +4057,51 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 
-SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="ISTEP+",
-		Assessment_Abbreviation.2019="ILEARN",
-		Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
-		Assessment_Name.2019="Indiana Learning Evaluation and Readiness Network",
-		Achievement_Levels=list(
-			Labels=c("Did Not Pass", "Pass", "Pass +"),
-			Proficient=c("Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2019=list(
-			Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
-			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+#SGPstateData[["IN"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="ISTEP+",
+#		Assessment_Abbreviation.2019="ILEARN",
+#		Assessment_Name="Indiana Statewide Testing for Educational Progress-Plus",
+#		Assessment_Name.2019="Indiana Learning Evaluation and Readiness Network",
+#		Achievement_Levels=list(
+#			Labels=c("Did Not Pass", "Pass", "Pass +"),
+#			Proficient=c("Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2019=list(
+#			Labels=c("Below/Approaching Proficiency", "At Proficiency", "Above Proficiency"),
+#			Proficient=c("Not Proficient", "Proficient", "Proficient")),
 #			Labels=c("Below Proficiency", "Approaching Proficiency", "At Proficiency", "Above Proficiency"),
 #			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Did Not Pass"="Did Not Pass",
-			"Pass"="Pass",
-			"Pass +"="Pass +"),
-		Achievement_Level_Labels.2019=list(
+#		Achievement_Level_Labels=list(
+#			"Did Not Pass"="Did Not Pass",
+#			"Pass"="Pass",
+#			"Pass +"="Pass +"),
+#		Achievement_Level_Labels.2019=list(
 #			"Below Proficiency"="Below Proficiency",
 #			"Approaching Proficiency"="Approaching Proficiency",
-			"Below/Approaching Proficiency"="Below/Approaching Proficiency",
-			"At Proficiency"="At Proficiency",
-			"Above Proficient"="Above Proficient"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
-		Content_Areas_Labels.2019=list(MATHEMATICS="Math", ELA="ELA"),
-		Vertical_Scale="Yes",
-		Vertical_Scale.2019="Yes",
-		Grades_Tested=c(3,4,5,6,7,8,10),
-		Grades_Tested.2019=c(3,4,5,6,7,8,10),
-		Year="2019"
-	)
+#			"Below/Approaching Proficiency"="Below/Approaching Proficiency",
+#			"At Proficiency"="At Proficiency",
+#			"Above Proficient"="Above Proficient"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#		Content_Areas_Labels.2019=list(MATHEMATICS="Math", ELA="ELA"),
+#		Vertical_Scale="Yes",
+#		Vertical_Scale.2019="Yes",
+#		Grades_Tested=c(3,4,5,6,7,8,10),
+#		Grades_Tested.2019=c(3,4,5,6,7,8,10),
+#		Year="2019"
+#	)
 
 SGPstateData[["IN"]][["Student_Report_Information"]] <- list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
 	Content_Areas_Labels=list(ELA="ELA", MATHEMATICS="Math"),
 	Grades_Reported=list(ELA=c(3,4,5,6,7,8,10), MATHEMATICS=c(3,4,5,6,7,8,10)),
 	Achievement_Level_Labels=list(
-		"Below/Approaching Proficiency"="Below/Approaching Proficiency",
-		"At Proficiency"="At Proficiency",
-		"Above Proficient"="Above Proficient"))
-#		"Below Proficiency"="Below Proficiency",
-#		"Approaching Proficiency"="Approaching Proficiency",
+#		"Below/Approaching Proficiency"="Below/Approaching Proficiency",
 #		"At Proficiency"="At Proficiency",
 #		"Above Proficient"="Above Proficient"))
+		"Below Proficiency"="Below Proficiency",
+		"Approaching Proficiency"="Approaching Proficiency",
+		"At Proficiency"="At Proficiency",
+		"Above Proficiency"="Above Proficiency"))
 
 SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
@@ -7883,13 +7885,15 @@ SGPstateData[["RI_PARCC"]][["SGP_Configuration"]][["year_lags.projection.sequenc
 ### RHODE ISLAND
 
 load("CSEM/Rhode_Island/RICAS_PARCC_CSEM-Combo.Rdata")
-load("Knots_Boundaries/RI_RICAS_Knots_Boundaries.Rdata")
-load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/RI_RICAS_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/RI_SAT_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/RI_RICAS_PSAT_SAT_Knots_Boundaries.Rdata")
 
-SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
-		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
-			RI_RICAS_Knots_Boundaries, RI_SAT_Knots_Boundaries)
-names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]) <- gsub("_SS", "", names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]))
+SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <- RI_RICAS_PSAT_SAT_Knots_Boundaries
+#SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
+#		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
+#			RI_RICAS_Knots_Boundaries, RI_SAT_Knots_Boundaries)
+#names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]) <- gsub("_SS", "", names(SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]]))
 # SGPstateData[["RI"]][["Achievement"]][["Knots_Boundaries"]] <-
 # 		c(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]][-grep("_SS", names(SGPstateData[["RI_PARCC"]][["Achievement"]][["Knots_Boundaries"]]))],
 # 			RI_SAT_Knots_Boundaries)
@@ -7935,7 +7939,7 @@ SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, li
 	))
 
 SGPstateData[["RI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+	Labels=c("Not Meeting Expectations", "Partially Meeting Expectations", "Meeting Expectations", "Exceeding Expectations"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["RI"]][["Growth"]][["Cutscores"]] <- list(
@@ -7960,46 +7964,46 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
 #		CSEM=RICAS_PARCC_CSEM)
-		CSEM="SCALE_SCORE_CSEM",
-		Scale_Change=list(ELA="2017_2018", MATHEMATICS="2017_2018")
+		CSEM="SCALE_SCORE_CSEM"#,
+#		Scale_Change=list(ELA="2017_2018", MATHEMATICS="2017_2018")
 		)
 
-SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="PARCC",
-		Assessment_Abbreviation.2017_2018="RICAS",
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Name.2017_2018="Rhode Island Comprehensive Assessment System",
-		Achievement_Levels=list(
-			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2017_2018=list(
-			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"),
-		Achievement_Level_Labels.2017_2018=list(
-			"Not Meeting"="Not Meeting Expectations",
-      "Partially Meeting"="Partially Meeting Expectations",
-      "Meeting"="Meeting Expectations",
-      "Exceeding"="Exceeding Expectations"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
-		Content_Areas.2017_2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
-		Content_Areas_Labels=list(
-				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
-		Content_Areas_Labels.2017_2018=list(
-				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
-				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
-		Vertical_Scale="No",
-		Vertical_Scale.2017_2018="No",
-		Grades_Tested=c(3,4,5,6,7,8,9, "EOCT"),
-		Grades_Tested.2017_2018=c(3,4,5,6,7,8,9, "EOCT"),
-		Year="2017_2018"
-	)
+#SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="PARCC",
+#		Assessment_Abbreviation.2017_2018="RICAS",
+#		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+#		Assessment_Name.2017_2018="Rhode Island Comprehensive Assessment System",
+#		Achievement_Levels=list(
+#			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2017_2018=list(
+#			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Level 1"="Level 1",
+#			"Level 2"="Level 2",
+#			"Level 3"="Level 3",
+#			"Level 4"="Level 4",
+#			"Level 5"="Level 5"),
+#		Achievement_Level_Labels.2017_2018=list(
+#			"Not Meeting"="Not Meeting Expectations",
+#      "Partially Meeting"="Partially Meeting Expectations",
+#      "Meeting"="Meeting Expectations",
+#      "Exceeding"="Exceeding Expectations"),
+#		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+#		Content_Areas.2017_2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
+#		Content_Areas_Labels=list(
+#				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+#		Content_Areas_Labels.2017_2018=list(
+#				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
+#				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2017_2018="No",
+#		Grades_Tested=c(3,4,5,6,7,8,9, "EOCT"),
+#		Grades_Tested.2017_2018=c(3,4,5,6,7,8,9, "EOCT"),
+#		Year="2017_2018"
+#	)
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-
 	list(
@@ -8071,11 +8075,11 @@ SGPstateData[["RI"]][["Student_Report_Information"]] <-
 			ELA=c("3","4","5","6","7","8","9","EOCT"),
 			MATHEMATICS=c("3","4","5","6","7","8","EOCT")),
 		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5",
+#			"Level 1"="Level 1",
+#			"Level 2"="Level 2",
+#			"Level 3"="Level 3",
+#			"Level 4"="Level 4",
+#			"Level 5"="Level 5",
 			"Not Meeting"="Not Meeting Expectations",
 			"Partially Meeting"="Partially Meeting Expectations",
 			"Meeting"="Meeting Expectations",

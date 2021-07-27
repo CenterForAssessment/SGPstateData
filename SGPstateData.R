@@ -7966,42 +7966,42 @@ SGPstateData[["RI"]][["Assessment_Program_Information"]] <-
 		Scale_Change=list(ELA="2017_2018", MATHEMATICS="2017_2018")
 		)
 
-SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="PARCC",
-		Assessment_Abbreviation.2017_2018="RICAS",
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Name.2017_2018="Rhode Island Comprehensive Assessment System",
-		Achievement_Levels=list(
-			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
-			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2017_2018=list(
-			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Level 1"="Level 1",
-			"Level 2"="Level 2",
-			"Level 3"="Level 3",
-			"Level 4"="Level 4",
-			"Level 5"="Level 5"),
-		Achievement_Level_Labels.2017_2018=list(
-			"Not Meeting"="Not Meeting Expectations",
-      "Partially Meeting"="Partially Meeting Expectations",
-      "Meeting"="Meeting Expectations",
-      "Exceeding"="Exceeding Expectations"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
-		Content_Areas.2017_2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
-		Content_Areas_Labels=list(
-				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
-		Content_Areas_Labels.2017_2018=list(
-				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
-				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
-		Vertical_Scale="No",
-		Vertical_Scale.2017_2018="No",
-		Grades_Tested=c(3,4,5,6,7,8,9, "EOCT"),
-		Grades_Tested.2017_2018=c(3,4,5,6,7,8,9, "EOCT"),
-		Year="2017_2018"
-	)
+#SGPstateData[["RI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="PARCC",
+#		Assessment_Abbreviation.2017_2018="RICAS",
+#		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
+#		Assessment_Name.2017_2018="Rhode Island Comprehensive Assessment System",
+#		Achievement_Levels=list(
+#			Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2017_2018=list(
+#			Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Level 1"="Level 1",
+#			"Level 2"="Level 2",
+#			"Level 3"="Level 3",
+#			"Level 4"="Level 4",
+#			"Level 5"="Level 5"),
+#		Achievement_Level_Labels.2017_2018=list(
+#			"Not Meeting"="Not Meeting Expectations",
+#      "Partially Meeting"="Partially Meeting Expectations",
+#      "Meeting"="Meeting Expectations",
+#      "Exceeding"="Exceeding Expectations"),
+#		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+#		Content_Areas.2017_2018=c("English Language Arts", "Mathematics", "ELA PSAT 10", "Math PSAT 10", "ELA SAT", "Math SAT"),
+#		Content_Areas_Labels=list(
+#				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+#		Content_Areas_Labels.2017_2018=list(
+#				ELA="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
+#				MATHEMATICS="Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2017_2018="No",
+#		Grades_Tested=c(3,4,5,6,7,8,9, "EOCT"),
+#		Grades_Tested.2017_2018=c(3,4,5,6,7,8,9, "EOCT"),
+#		Year="2017_2018"
+#	)
 
 SGPstateData[["RI"]][["SGP_Configuration"]] <-
 	list(

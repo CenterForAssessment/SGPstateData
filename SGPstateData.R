@@ -7939,7 +7939,7 @@ SGPstateData[["RI"]][["Achievement"]][["Cutscores"]] <- c(RI_PARCC_Cutscores, li
 	))
 
 SGPstateData[["RI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Not Meeting", "Partially Meeting", "Meeting", "Exceeding"),
+	Labels=c("Not Meeting Expectations", "Partially Meeting Expectations", "Meeting Expectations", "Exceeding Expectations"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["RI"]][["Growth"]][["Cutscores"]] <- list(

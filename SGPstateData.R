@@ -6286,7 +6286,7 @@ SGPstateData[["NV"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["NV"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["NV"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["NV"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["NV"]][["Growth"]][["Cutscores"]] <-
 	list(

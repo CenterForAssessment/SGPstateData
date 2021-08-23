@@ -3234,36 +3234,36 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 #		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Season="Spring")
 
-SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="HSA",
-		Assessment_Abbreviation.2015="SBA",
-		Assessment_Name="Hawaii State Assesment",
-		Assessment_Name.2015="Smarter Balanced Assessment",
-		Achievement_Levels=list(
-			Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Well Below"="Well Below Proficiency",
-			"Approaches"="Approaches Proficiency",
-			"Meets"="Meets Proficiency",
-			"Exceeds"="Exceeds Proficiency"),
-		Achievement_Level_Labels.2015=list(
-			"Not Met"="Not Met Standard",
-			"Nearly Met"="Nearly Met Standard",
-			"Met"="Met Standard",
-			"Exceeded"="Exceeded Standard"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="Yes",
-		Grades_Tested=c(3,4,5,6,7,8,10),
-		Grades_Tested.2015=c(3,4,5,6,7,8,11),
-		Year="2015"
-	)
+#SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="HSA",
+#		Assessment_Abbreviation.2015="SBA",
+#		Assessment_Name="Hawaii State Assesment",
+#		Assessment_Name.2015="Smarter Balanced Assessment",
+#		Achievement_Levels=list(
+#			Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2015=list(
+#			Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Well Below"="Well Below Proficiency",
+#			"Approaches"="Approaches Proficiency",
+#			"Meets"="Meets Proficiency",
+#			"Exceeds"="Exceeds Proficiency"),
+#		Achievement_Level_Labels.2015=list(
+#			"Not Met"="Not Met Standard",
+#			"Nearly Met"="Nearly Met Standard",
+#			"Met"="Met Standard",
+#			"Exceeded"="Exceeded Standard"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+#		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2015="Yes",
+#		Grades_Tested=c(3,4,5,6,7,8,10),
+#		Grades_Tested.2015=c(3,4,5,6,7,8,11),
+#		Year="2015"
+#	)
 
 SGPstateData[["HI"]][["Student_Report_Information"]] <-
 	list(

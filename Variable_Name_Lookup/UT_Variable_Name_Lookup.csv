@@ -1,1 +1,26 @@
-names.provided,names.sgp,names.type,names.info,names.outputStudentID,ID,individual,Unique student identifier,SSID,SSID,misc,Unique student identifier - Used in Individual Student Reports (ISRs),LAST_NAME,LAST_NAME,label,Student last name,FIRST_NAME,FIRST_NAME,label,Student first name,CONTENT_AREA,CONTENT_AREA,content,Content area associated with record,SchoolYear,YEAR,time,Year associated with record,GRADE,GRADE,institution_level,Grade/Test level associated with record,SCALE_SCORE,SCALE_SCORE,measure,Scale score,VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,TestSubjectID,TestSubjectID,misc,Assessment Number,TestSubject,TestSubject,misc,Assessment Name/Label,school_name,SCHOOL_NAME,label,School name,school_id,school_id,misc,School number,school_number,SCHOOL_NUMBER,institution,School number,district_name,DISTRICT_NAME,label,School name,district_id,DISTRICT_NUMBER,institution,District number,STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,gender,GENDER,demographic,Student gender,TRUErace_merged,ETHNICITY,demographic,Student ethnicity,TRUEFRL_STATUS,FRL_STATUS,demographic,Student FRL status,TRUEIEP_STATUS,IEP_STATUS,demographic,Student IEP status,TRUEELL_STATUS,ELL_STATUS,demographic,Student ELL status,TRUE
+names.provided,names.sgp,names.type,names.info,names.output
+student_id,ID,individual,Unique student identifier,
+SSID,SSID,misc,Unique student identifier - Used in Individual Student Reports (ISRs),
+LAST_NAME,LAST_NAME,label,Student last name,
+FIRST_NAME,FIRST_NAME,label,Student first name,
+CONTENT_AREA,CONTENT_AREA,content,Content area associated with record,
+school_year,YEAR,time,Year associated with record,
+GRADE,GRADE,institution_level,Grade/Test level associated with record,
+SCALE_SCORE,SCALE_SCORE,measure,Scale score,
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,
+TestSubjectID,TestSubjectID,misc,Assessment Number,
+TestSubject,TestSubject,misc,Assessment Name/Label,
+school_name,SCHOOL_NAME,label,School name,
+school_id,school_id,misc,School number,
+school_number,SCHOOL_NUMBER,institution,School number,
+district_name,DISTRICT_NAME,label,School name,
+district_id,DISTRICT_NUMBER,institution,District number,
+STATE_ENROLLMENT_STATUS,STATE_ENROLLMENT_STATUS,institution_inclusion,State inclusion/accountability indicator,
+DISTRICT_ENROLLMENT_STATUS,DISTRICT_ENROLLMENT_STATUS,institution_inclusion,District inclusion/accountability indicator,
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,
+gender,GENDER,demographic,Student gender,TRUE
+race_merged,ETHNICITY,demographic,Student ethnicity,TRUE
+IsFRL,FRL_STATUS,demographic,Student FRL status,TRUE
+IsSpecialEd,IEP_STATUS,demographic,Student IEP status,TRUE
+IsELL,ELL_STATUS,demographic,Student ELL status,TRUE

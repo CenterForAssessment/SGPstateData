@@ -616,41 +616,41 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "Reading", "ELA", "Algebra I", "Geometry", "Algebra II"),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
-		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
+#		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 #		Test_Vendor="CTB/McGraw Hill")
 
-SGPstateData[["AZ"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="AIMS",
-		Assessment_Abbreviation.2015="AzMERIT",
-		Assessment_Name="Arizona's Instrument to Measure Standards",
-		Assessment_Name.2015="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics",
-		Achievement_Levels=list(
-			Labels=c("Falls Far Below", "Approaches", "Meets", "Exceeds"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Minimally Proficient", "Partially Proficient", "Proficient", "Highly Proficient"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Far Below"="Falls Far Below",
-			"Approaches"="Approaches",
-			"Meets"="Meets",
-			"Exceeds"="Exceeds"),
-		Achievement_Level_Labels.2015=list(
-			"Min Proficient"="Minimally Proficient",
-			"Part Proficient"="Partially Proficient",
-			"Proficient"="Proficient",
-			"Highly Proficient"="Highly Proficient"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="Yes",
-		Grades_Tested=c(2,3,4,5,6,7,8,9,10),
-		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,12),
-		Year="2015"
-	)
+#SGPstateData[["AZ"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="AIMS",
+#		Assessment_Abbreviation.2015="AzMERIT",
+#		Assessment_Name="Arizona's Instrument to Measure Standards",
+#		Assessment_Name.2015="Arizona Statewide Achievement Assessment for English Language Arts and Mathematics",
+#		Achievement_Levels=list(
+#			Labels=c("Falls Far Below", "Approaches", "Meets", "Exceeds"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2015=list(
+#			Labels=c("Minimally Proficient", "Partially Proficient", "Proficient", "Highly Proficient"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Far Below"="Falls Far Below",
+#			"Approaches"="Approaches",
+#			"Meets"="Meets",
+#			"Exceeds"="Exceeds"),
+#		Achievement_Level_Labels.2015=list(
+#			"Min Proficient"="Minimally Proficient",
+#			"Part Proficient"="Partially Proficient",
+#			"Proficient"="Proficient",
+#			"Highly Proficient"="Highly Proficient"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+#		Content_Areas_Labels.2015=list(MATHEMATICS="Math", ELA="ELA", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2015="Yes",
+#		Grades_Tested=c(2,3,4,5,6,7,8,9,10),
+#		Grades_Tested.2015=c(3,4,5,6,7,8,9,10,11,12),
+#		Year="2015"
+#	)
 
 SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 	list(
@@ -2657,11 +2657,11 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Abbreviation="Milestones",
 		Content_Areas=c("Mathematics", "ELA", "Science", "Social Studies"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'),
+		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
-		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
-			AMERICAN_LIT='2015', ANALYTIC_GEOMETRY='2015', BIOLOGY='2015', COORDINATE_ALGEBRA='2015', ALGEBRA_I='2015', ECONOMICS='2015', GRADE_9_LIT='2015', PHYSICAL_SCIENCE='2015', US_HISTORY='2015'),
+#		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
+#			AMERICAN_LIT='2015', ANALYTIC_GEOMETRY='2015', BIOLOGY='2015', COORDINATE_ALGEBRA='2015', ALGEBRA_I='2015', ECONOMICS='2015', GRADE_9_LIT='2015', PHYSICAL_SCIENCE='2015', US_HISTORY='2015'),
 		CSEM="SCALE_SCORE_CSEM")
 		# CSEM=Georgia_CSEM)
 
@@ -3230,40 +3230,40 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			Contact="808-586-3230"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
-		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
-		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021"),
+#		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Season="Spring")
 
-SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-		Assessment_Abbreviation="HSA",
-		Assessment_Abbreviation.2015="SBA",
-		Assessment_Name="Hawaii State Assesment",
-		Assessment_Name.2015="Smarter Balanced Assessment",
-		Achievement_Levels=list(
-			Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2015=list(
-			Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Well Below"="Well Below Proficiency",
-			"Approaches"="Approaches Proficiency",
-			"Meets"="Meets Proficiency",
-			"Exceeds"="Exceeds Proficiency"),
-		Achievement_Level_Labels.2015=list(
-			"Not Met"="Not Met Standard",
-			"Nearly Met"="Nearly Met Standard",
-			"Met"="Met Standard",
-			"Exceeded"="Exceeded Standard"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
-		Vertical_Scale="No",
-		Vertical_Scale.2015="Yes",
-		Grades_Tested=c(3,4,5,6,7,8,10),
-		Grades_Tested.2015=c(3,4,5,6,7,8,11),
-		Year="2015"
-	)
+#SGPstateData[["HI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+#		Assessment_Abbreviation="HSA",
+#		Assessment_Abbreviation.2015="SBA",
+#		Assessment_Name="Hawaii State Assesment",
+#		Assessment_Name.2015="Smarter Balanced Assessment",
+#		Achievement_Levels=list(
+#			Labels=c("Well Below Proficiency", "Approaches Proficiency", "Meets Proficiency", "Exceeds Proficiency"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2015=list(
+#			Labels=c("Not Met Standard", "Nearly Met Standard", "Met Standard", "Exceeded Standard"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
+#			"Well Below"="Well Below Proficiency",
+#			"Approaches"="Approaches Proficiency",
+#			"Meets"="Meets Proficiency",
+#			"Exceeds"="Exceeds Proficiency"),
+#		Achievement_Level_Labels.2015=list(
+#			"Not Met"="Not Met Standard",
+#			"Nearly Met"="Nearly Met Standard",
+#			"Met"="Met Standard",
+#			"Exceeded"="Exceeded Standard"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
+#		Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="ELA"),
+#		Vertical_Scale="No",
+#		Vertical_Scale.2015="Yes",
+#		Grades_Tested=c(3,4,5,6,7,8,10),
+#		Grades_Tested.2015=c(3,4,5,6,7,8,11),
+#		Year="2015"
+#	)
 
 SGPstateData[["HI"]][["Student_Report_Information"]] <-
 	list(
@@ -3650,8 +3650,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 			Abbreviation="IDOE",
 			URL="www.sde.idaho.gov/",
 			Contact="support@sde.idaho.gov"),
-		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
-	#	Content_Areas=c("Language Usage", "Mathematics", "Reading"), ## Changed to SBAC in 2015
+#		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+#		Content_Areas=c("Language Usage", "Mathematics", "Reading"), ## Changed to SBAC in 2015
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Test_Season="Spring",
@@ -3842,9 +3842,9 @@ SGPstateData[["IL_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="866-262-6663"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c("1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
+		Assessment_Years=c("1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021"),
 		Test_Season="Spring",
-		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+#		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 		Test_Vendor="ISBE Division of Assessment",
 		CSEM=Illinois_CSEM)
 
@@ -4052,7 +4052,7 @@ SGPstateData[["IN"]][["Assessment_Program_Information"]] <-
 			URL="www.doe.in.gov",
 			Contact="webmaster@doe.in.gov"),
 		Content_Areas=c("English/Language Arts", "Mathematics"),
-		Scale_Change=list(MATHEMATICS="2019", ELA="2019"),
+#		Scale_Change=list(MATHEMATICS="2019", ELA="2019"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
@@ -4457,7 +4457,7 @@ SGPstateData[["ME"]][["Assessment_Program_Information"]] <-
 			URL="www.maine.gov/education",
 			Contact="207-624-6600"),
 		Content_Areas=c("Mathematics", "Reading"),
-		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+#		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 		Grades_Tested=c(3,4,5,6,7,8),
 		Test_Season="Fall",
 		Test_Vendor="Measured Progress")
@@ -5222,8 +5222,8 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 		Assessment_Years=c("2015", "2016", "2017", "2018", "2019"),
 		Test_Season="Spring",
 		Test_Vendor="Measured Progress/Pearson",
-		CSEM="SCALE_SCORE_CSEM",
-		Scale_Change=list(MATHEMATICS="2017", ELA="2017")
+#		Scale_Change=list(MATHEMATICS="2017", ELA="2017",
+		CSEM="SCALE_SCORE_CSEM"
 	)
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
@@ -5377,59 +5377,59 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading", "Social Studies", "Science"),
 #	Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019"),
-	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
+	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019", "2020_2021"),
+#	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC/DRC",
 	CSEM="CSEM")
 
-SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
-	list(
-#		Assessment_Abbreviation="MEAP",
-		Assessment_Abbreviation="M-STEP",
-#		Assessment_Abbreviation.2014_2015="M-STEP",
-		Assessment_Abbreviation.2018_2019="M-STEP",
-#		Assessment_Name="Michigan Educational Assessment Program",
-		Assessment_Name="Michigan Student Test of Educational Progress",
-#		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
-		Assessment_Name.2018_2019="Michigan Student Test of Educational Progress",
-		Achievement_Levels=list(
-			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-#		Achievement_Levels.2014_2015=list(
+#SGPstateData[["MI"]][["Assessment_Program_Information"]][["Assessment_Transition"]] <-
+#	list(
+##		Assessment_Abbreviation="MEAP",
+#		Assessment_Abbreviation="M-STEP",
+##		Assessment_Abbreviation.2014_2015="M-STEP",
+#		Assessment_Abbreviation.2018_2019="M-STEP",
+##		Assessment_Name="Michigan Educational Assessment Program",
+#		Assessment_Name="Michigan Student Test of Educational Progress",
+##		Assessment_Name.2014_2015="Michigan Student Test of Educational Progress",
+#		Assessment_Name.2018_2019="Michigan Student Test of Educational Progress",
+#		Achievement_Levels=list(
 #			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
 #			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Levels.2018_2019=list(
-			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
-			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
-		Achievement_Level_Labels=list(
-			"Not Proficient" = "Not Proficient",
-			"Partially Proficient" = "Part Proficient",
-			"Proficient" = "Proficient",
-			"Advanced" = "Advanced"),
-#		Achievement_Level_Labels.2014_2015=list(
+##		Achievement_Levels.2014_2015=list(
+##			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+##			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Levels.2018_2019=list(
+#			Labels=c("Not Proficient", "Partially Proficient", "Proficient", "Advanced"),
+#			Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+#		Achievement_Level_Labels=list(
 #			"Not Proficient" = "Not Proficient",
 #			"Partially Proficient" = "Part Proficient",
 #			"Proficient" = "Proficient",
 #			"Advanced" = "Advanced"),
-		Achievement_Level_Labels.2018_2019=list(
-			"Not Proficient" = "Not Proficient",
-			"Partially Proficient" = "Part Proficient",
-			"Proficient" = "Proficient",
-			"Advanced" = "Advanced"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
-#		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-		Content_Areas_Labels.2018_2019=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
-		Vertical_Scale="No",
-#		Vertical_Scale.2014_2015="No",
-		Vertical_Scale.2018_2019="No",
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-#		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
-		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
-#		Year="2014_2015"
-		Year="2018_2019",
-		Equated_Content_Areas_and_Grades=list(MATHEMATICS=c("8"), READING=c("8"))
-	)
+##		Achievement_Level_Labels.2014_2015=list(
+##			"Not Proficient" = "Not Proficient",
+##			"Partially Proficient" = "Part Proficient",
+##			"Proficient" = "Proficient",
+##			"Advanced" = "Advanced"),
+#		Achievement_Level_Labels.2018_2019=list(
+#			"Not Proficient" = "Not Proficient",
+#			"Partially Proficient" = "Part Proficient",
+#			"Proficient" = "Proficient",
+#			"Advanced" = "Advanced"),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
+##		Content_Areas_Labels.2014_2015=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+#		Content_Areas_Labels.2018_2019=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
+#		Vertical_Scale="No",
+##		Vertical_Scale.2014_2015="No",
+#		Vertical_Scale.2018_2019="No",
+#		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+##		Grades_Tested.2014_2015=c(3,4,5,6,7,8,11),
+#		Grades_Tested.2018_2019=c(3,4,5,6,7,8,9,10,11),
+##		Year="2014_2015"
+#		Year="2018_2019",
+#		Equated_Content_Areas_and_Grades=list(MATHEMATICS=c("8"), READING=c("8"))
+#	)
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
@@ -5532,7 +5532,7 @@ SGPstateData[["MN"]][["Assessment_Program_Information"]] <- list(
 		Content_Areas=c("Mathematics", "Reading", "Science"),
 		Grades_Tested=c(3,4,5,6,7,8,10,11),
 		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"),
-		Scale_Change=list(MATHEMATICS="2015", READING="2015", SCIENCE="2015"),
+#		Scale_Change=list(MATHEMATICS="2015", READING="2015", SCIENCE="2015"),
 		Test_Season="Spring",
 		Test_Vendor="Pearson")
 #			CSEM=Minnesota_CSEM)
@@ -5697,7 +5697,7 @@ SGPstateData[["MS"]][["Assessment_Program_Information"]] <-
 	Content_Areas=c("Reading Language Arts", "Mathematics"),
 	Grades_Tested=c(3,4,5,6,7,8),
 	Test_Season="Spring",
-	Scale_Change=list(READING="2014_2015", MATHEMATICS="2014_2015"),
+#	Scale_Change=list(READING="2014_2015", MATHEMATICS="2014_2015"),
 	Test_Vendor="Pearson")
 
 SGPstateData[["MS"]][["Student_Report_Information"]] <-
@@ -6472,7 +6472,7 @@ SGPstateData[["NH"]][["Assessment_Program_Information"]] <- list(
 		Grades_Tested=c(3,4,5,6,7,8),
 		Assessment_Years=c("2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018"),
 #		Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
-		Scale_Change=list(MATHEMATICS="2017_2018", READING="2017_2018"),
+#		Scale_Change=list(MATHEMATICS="2017_2018", READING="2017_2018"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
 #		Test_Vendor="SBAC")
@@ -6839,7 +6839,7 @@ SGPstateData[["NJ_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="877-900-6960"),
 		Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Geometry", "Algebra II"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
+	#	Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="PARCC",
 		CSEM="SCALE_SCORE_CSEM")
@@ -7245,7 +7245,7 @@ SGPstateData[["OR"]][["Assessment_Program_Information"]] <- list(
 		Contact="503-947-5600"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,11),
-	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
+#	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 	Test_Season="Spring",
 #	Test_Vendor="Oregon Department of Education")
 	Test_Vendor="SBAC")
@@ -7700,7 +7700,7 @@ SGPstateData[["RI_ORIGINAL"]][["Assessment_Program_Information"]] <-
 			Contact="401-222-4600"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Scale_Change=list(MATHEMATICS="2014_2015", ELA="2014_2015"),
+#		Scale_Change=list(MATHEMATICS="2014_2015", ELA="2014_2015"),
 		Test_Season="Fall",
 		Test_Vendor="PARCC",
 		CSEM="SCALE_SCORE_CSEM")
@@ -9451,7 +9451,7 @@ SGPstateData[["WA"]][["Assessment_Program_Information"]] <- list(
 #	Content_Areas=c("Mathematics", "Reading", "Science"),
 	Content_Areas=c("Mathematics", "Reading"),
 	# # The assessment changed from WASL to MSP/HSPE (WCAP), but the scale basically stayed the same...
-	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
+#	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015"),
 	# Scale_Change=list(MATHEMATICS=c("2009_2010", "2010_2011"),
 					  # SCIENCE="2009_2010",
 					  # READING="2009_2010",
@@ -10393,8 +10393,8 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="CDE",
 		URL="www.schoolview.org",
 		Contact="303-866-6763"),
-	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"),
+#	Scale_Change=list(READING="2013"),
+	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"),
 	Content_Areas=c("READING", "LITERACY"),
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring")
@@ -11014,8 +11014,8 @@ SGPstateData[["WIDA_MI"]][["Assessment_Program_Information"]] <- list(
 		Abbreviation="MDE",
 		URL="www.michigan.gov/mde",
 		Contact="517-373-3324"),
-	Scale_Change=list(READING="2014"),
-	Assessment_Years=c("2012", "2013", "2014", "2015", "2016", "2017"),
+#	Scale_Change=list(READING="2014"),
+	Assessment_Years=c("2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"),
 	Content_Areas="READING",
 	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season="Spring",

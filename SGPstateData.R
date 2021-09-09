@@ -4149,7 +4149,7 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(249,311),
 			GRADE_10=c(257,320),
 			GRADE_11=c(263,327)),
-		ELA.2019=list(
+		ELA.2018_2019=list(
       		GRADE_3=c(398, 447),
       		GRADE_4=c(414, 478),
       		GRADE_5=c(437, 513),
@@ -4159,7 +4159,7 @@ SGPstateData[["IA"]][["Achievement"]][["Cutscores"]] <-
       		GRADE_9=c(505, 618),
       		GRADE_10=c(530, 642),
       		GRADE_11=c(561, 660)),
-    	MATHEMATICS.2019=list(
+    	MATHEMATICS.2018_2019=list(
       		GRADE_3=c(390, 443),
       		GRADE_4=c(409, 476),
       		GRADE_5=c(429, 503),

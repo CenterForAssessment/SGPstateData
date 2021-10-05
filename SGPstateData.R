@@ -1531,25 +1531,20 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <- cmas.cs
 
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   c(SGPstateData[["CO"]][["Achievement"]][["Cutscores"]],
-  	list(  ###  PSAT/SAT "Percentile" Cutscores Based on Knots/Bounds
+  	list( ### Official cutscores based upon data from Marie Huchton 9/21. Previous cuts were quantile based placeholder cuts.
+		### NOTE: 4th cut is fictious as PSAT9, PSAT10, SAT have only 4 achievement levels.
       ELA_PSAT_9= list(
-				# GRADE_9 = c(370, 410, 570)),
-        GRADE_9 = c(370, 390, 410, 570)),
+        GRADE_9 = c(370, 410, 570, 650)),
       ELA_PSAT_10=list(
-				# GRADE_10= c(390, 430, 600)),
-        GRADE_10= c(390, 410, 430, 600)),
+        GRADE_10= c(390, 430, 600, 700)),
       ELA_SAT  =  list(
-				# GRADE_11= c(440, 480, 640)),
-        GRADE_11= c(440, 460, 480, 640)),
+        GRADE_11= c(440, 480, 640, 750)),
       MATHEMATICS_PSAT_9=list(
-				# GRADE_9 = c(410, 450, 560)),
-  			GRADE_9 = c(410, 430, 450, 560)),
-  		MATHEMATICS_PSAT_10=list(
-				# GRADE_10= c(430, 480, 590)),
-  			GRADE_10= c(430, 450, 480, 590)),
+  			GRADE_9 = c(410, 450, 560, 650)),
+	  MATHEMATICS_PSAT_10=list(
+  			GRADE_10= c(430, 480, 590, 700)),
   		MATHEMATICS_SAT=list(
-				# GRADE_11= c(460, 530, 660))
-  			GRADE_11= c(460, 500, 530, 660))
+  			GRADE_11= c(460, 530, 660, 750))
   	)
   )
 

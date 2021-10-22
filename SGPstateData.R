@@ -7945,7 +7945,7 @@ SGPstateData[["RI"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts=c(35, 66),
 	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
-SGPstateData[["RI"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["RI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 SGPstateData[["RI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["RI"]][["Assessment_Program_Information"]] <-

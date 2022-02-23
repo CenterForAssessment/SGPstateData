@@ -10040,11 +10040,25 @@ SGPstateData[["WIDA_DPS"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
-SGPstateData[["WIDA_GA"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
+SGPstateData[["WIDA_GA"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0 = c(229, 261, 293, 303, 325, 350),
+		GRADE_1 = c(242, 274, 315, 324, 344, 368),
+		GRADE_2 = c(254, 289, 329, 338, 359, 383),
+		GRADE_3 = c(265, 300, 340, 350, 371, 396),
+		GRADE_4 = c(279, 309, 350, 360, 382, 406),
+		GRADE_5 = c(286, 317, 358, 368, 390, 415),
+		GRADE_6 = c(291, 324, 365, 376, 399, 423),
+		GRADE_7 = c(298, 331, 372, 383, 406, 431),
+		GRADE_8 = c(304, 337, 378, 389, 412, 438),
+		GRADE_9 = c(311, 344, 385, 395, 418, 446),
+		GRADE_10= c(318, 350, 391, 401, 424, 453),
+		GRADE_11= c(325, 356, 397, 407, 429, 459),
+		GRADE_12= c(331, 362, 402, 412, 434, 466)))
 
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 4.3", "Level 5", "Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient", "Proficient", "Proficient",NA))
 
 SGPstateData[["WIDA_GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -10058,32 +10072,34 @@ SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
 	Assessment_Name="World Class Instructional Design and Assessment",
 	Assessment_Abbreviation="WIDA",
 	Organization=list(
-		Name="World Class Instructional Design and Assessment",
-		Abbreviation="WIDA",
-		URL="http://www.wida.us/",
-		Contact="1-866-276-7735"),
+		Name="Georgia Department of Education",
+		Abbreviation="GaDOE",
+		URL="https://www.gadoe.org",
+		Contact="470-XYZ-ABCD"),
 	Content_Areas="Reading",
-	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"),
+	Grades_Tested=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"),
 	Test_Season="Spring",
 	Test_Vendor="WIDA")
 
 SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
 	Vertical_Scale=list(READING=TRUE),
-	Content_Areas_Labels=list(READING="Reading"),
-	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
+	Content_Areas_Labels=list(READING="Overall Composite"),
+	Grades_Reported=list(READING = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Achievement_Level_Labels=list(
-		"Entering"="WIDA Level 1",
-		"Emerging"="WIDA Level 2",
-		"Developing"="WIDA Level 3",
-		"Expanding"="WIDA Level 4",
-		"Bridging"="WIDA Level 5",
-		"Reaching"="WIDA Level 6"))
+		"Entering"="Level 1",
+		"Emerging"="Level 2",
+		"Developing"="Level 3",
+		"Expanding"="Level 4",
+		"Expanding 4.3"="Level 4.3",
+		"Bridging"="Level 5",
+		"Reaching"="Level 6"))
 
 SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
+	max.sgp.target.years.forward=1:7,
 	sgp.minimum.default.panel.years=2,
 	sgp.projections.max.forward.progression.years=7,
 	return.norm.group.scale.scores=TRUE,
@@ -10092,12 +10108,71 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	projcuts.digits=0,
 	percentile.cuts=c(1,35,50,65,99),
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
-	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
+	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
+	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 #SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
+
+##  Custom ISR Meta Data
+source('Custom_ISR/WIDA_GA/WIDA_GA_Custom_ISR-text.R')
+WIDA_GA_Custom_ISR_Function <- source('Custom_ISR/WIDA_GA/WIDA_GA_Custom_ISR-function.R')
+
+# require(png)
+GaDOE.img <- readPNG("Custom_ISR/WIDA_GA/GaDOE.png")
+
+# require(grid)
+SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
+	report.width=8.5,
+	report.height= 11,
+
+	Custom_ISR_Function = WIDA_GA_Custom_ISR_Function,
+	Report_Text_ENGLISH = Report_Text_ENGLISH,
+	Report_Text_SPANISH = Report_Text_SPANISH,
+	Report_Logo = GaDOE.img,
+	Grid_Objects = list(
+		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
+			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+
+		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
+		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
+		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
+		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
+		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
+		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
+		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
+		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
+		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
+
+		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
+
+		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
+		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
+	)
+)
+
+#  Spanish ISR Version Info:
+
+SGPstateData[["WIDA_GA_SPANISH"]] <- SGPstateData[["WIDA_GA"]]
+SGPstateData[["WIDA_GA_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
+SGPstateData[["WIDA_GA_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_GA"]][["SGP_Configuration"]]
+
+SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
+	sgPlot.year.span = 3,
+	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale=list(READING=TRUE),
+	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),
+	# Earliest_Year_Reported=list(READING = '2019'),
+	Achievement_Level_Labels=list(
+		"Inicial"="Level 1",
+		"En Transici\u{F3}n"="Level 2",
+		"Desarrollado"="Level 3",
+		"Elevado"="Level 4",
+		"Elevado 4.3"="Level 4.3",
+		"Apto"="Level 5",
+		"Avanzado"="Level 6"))
 
 
 ##########################################################################################

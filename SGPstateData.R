@@ -12,7 +12,7 @@ SGPstateData <- new.env()
 ###  Load required packages
 require(data.table)
 require(grid)
-require(png)
+# require(png)
 
 
 #########################################################
@@ -9893,8 +9893,7 @@ SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
 WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 
-# require(png)
-CDE.img <- readPNG("Custom_ISR/WIDA_CO/CDE.png")
+CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/CDE.png")
 
 # require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
@@ -10108,9 +10107,10 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	projcuts.digits=0,
 	percentile.cuts=c(1,35,50,65,99),
 	lagged.percentile.trajectory.values=c(1,35,50,65,99),
+	arrow.legend.color=c("#1A4A0A", "#4A8D29", "#D6F9D1"), # "#4D6308", "#AFD622", "#ECF9C1" # MB email 5/11/22
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
-	# sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+    # sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 #SGPstateData[["WIDA_GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
@@ -10120,36 +10120,34 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 source('Custom_ISR/WIDA_GA/WIDA_GA_Custom_ISR-text.R')
 WIDA_GA_Custom_ISR_Function <- source('Custom_ISR/WIDA_GA/WIDA_GA_Custom_ISR-function.R')
 
-# require(png)
-GaDOE.img <- readPNG("Custom_ISR/WIDA_GA/GaDOE.png")
+GaDOE_img <- png::readPNG("Custom_ISR/WIDA_GA/GaDOE.png") # , native=T)
 
-# require(grid)
 SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 	report.width=8.5,
 	report.height= 11,
 
 	Custom_ISR_Function = WIDA_GA_Custom_ISR_Function,
-	Report_Text_ENGLISH = Report_Text_ENGLISH,
+	Report_Text = Report_Text_ENGLISH,
 	Report_Text_SPANISH = Report_Text_SPANISH,
-	Report_Logo = GaDOE.img,
+	Report_Logo = GaDOE_img,
 	Grid_Objects = list(
 		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
 			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
 
-		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
-		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
-		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
-		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
-		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
-		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
-		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
-		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
-		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
+		top.school.name.vp =   viewport(layout.pos.row=2, layout.pos.col=2:5),
+		top.student.name.vp =  viewport(layout.pos.row=3, layout.pos.col=2:4),
+		top.student.id.vp =    viewport(layout.pos.row=3, layout.pos.col=5),
+		top.border.cde.vp =    viewport(layout.pos.row=1:3,layout.pos.col=7:8),
+		report_title.vp =      viewport(layout.pos.row=4, layout.pos.col=3:7),
+		color_block_1.vp =     viewport(layout.pos.row=5, layout.pos.col=3:7),
+		report_text.vp =       viewport(layout.pos.row=7, layout.pos.col=3:7),
+		color_block_2.vp =     viewport(layout.pos.row=8, layout.pos.col=3:7),
+	#   report.student.name.vp=viewport(layout.pos.row=10,layout.pos.col=2:5),
 
-		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
+		content_area_1.vp =    viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
 
-		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
-		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
+		left.border.vp =       viewport(layout.pos.row=1:13,layout.pos.col=1),
+		bottom.border.vp =     viewport(layout.pos.row=13, layout.pos.col=2:7)
 	)
 )
 
@@ -10787,8 +10785,7 @@ SGPstateData[["WIDA_NH"]][["SGP_Configuration"]] <- list(
 source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-text.R')
 WIDA_NH_Custom_ISR_Function <- source('Custom_ISR/WIDA_NH/WIDA_NH_Custom_ISR-function.R')
 
-# require(png)
-NHDOE.img <- readPNG("Custom_ISR/WIDA_NH/NHDOE.png")
+NHDOE.img <- png::readPNG("Custom_ISR/WIDA_NH/NHDOE.png")
 
 # require(grid)
 SGPstateData[["WIDA_NH"]][["Custom_Student_Report"]] <- list(

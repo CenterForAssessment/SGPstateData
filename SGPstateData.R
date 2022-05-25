@@ -362,6 +362,91 @@ SGPstateData[["ABQ"]][["Student_Report_Information"]] <- list(
 
 SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ABQ_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
+#########################################################
+### ALABAMA
+#########################################################
+
+SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- 
+	list(MATHEMATICS=list(
+		loss.hoss_2=c(275, 700),
+		loss.hoss_3=c(275, 700),
+		loss.hoss_4=c(275, 700),
+		loss.hoss_5=c(300, 710),
+		loss.hoss_6=c(300, 710),
+		loss.hoss_7=c(300, 750),
+		loss.hoss_8=c(300, 780)),
+	ELA=list(
+		loss.hoss_2=c(250, 730),
+		loss.hoss_3=c(250, 780),
+		loss.hoss_4=c(240, 780),
+		loss.hoss_5=c(220, 820),
+		loss.hoss_6=c(200, 800),
+		loss.hoss_7=c(200, 800),
+		loss.hoss_8=c(200, 750)))
+
+SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <- 
+	list(MATHEMATICS=list(
+		GRADE_2=c(476, 523, 565),
+		GRADE_3=c(479, 530, 581),
+		GRADE_4=c(477, 538, 580),
+		GRADE_5=c(478, 537, 585),
+		GRADE_6=c(470, 541, 585),
+		GRADE_7=c(485, 553, 604),
+		GRADE_8=c(470, 555, 610)),
+	ELA=list(
+		GRADE_2=c(445, 506, 569),
+		GRADE_3=c(422, 495, 559),
+		GRADE_4=c(427, 496, 567),
+		GRADE_5=c(427, 502, 580),
+		GRADE_6=c(429, 501, 576),
+		GRADE_7=c(425, 500, 581),
+		GRADE_8=c(412, 492, 564)))
+	
+SGPstateData[["AL"]][["Achievement"]][["Levels"]] <- 
+	list(
+	Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "No Score"),
+	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
+
+SGPstateData[["AL"]][["Growth"]][["Levels"]] <- c("C1", "C2", "C3", "C4")
+
+SGPstateData[["AL"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["AL"]][["Growth"]][["Cutscores"]] <- 
+	list(
+	Cuts=c(21, 41, 61), 
+	Labels=c("1st - 20th", "21st - 40th", "41st - 60th", "61st-99th"))
+
+SGPstateData[["AL"]][["Assessment_Program_Information"]][["CSEM"]] <- "AL_CSEM"
+
+SGPstateData[["AL"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+	Content_Areas_Labels=list(MATHEMATICS="Mathematics", ELA="ELA"),
+	Grades_Reported=list(MATHEMATICS=c("2","3","4","5","6","7","8"), ELA=c("2","3","4","5","6","7","8")),
+	Achievement_Level_Labels=list(
+		"L1"="L1",
+		"L2"="L2",
+		"L3"="L3",
+		"L4"="L4"))
+
+SGPstateData[["AL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	ELA=c("2", "3", "4", "5", "6", "7", "8"),
+	MATHEMATICS=c("2", "3", "4", "5", "6", "7", "8"))
+SGPstateData[["AL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS"))
+SGPstateData[["AL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	ELA=rep(1L, 6),
+	MATHEMATICS=rep(1L, 6))
+SGPstateData[["AL"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	ELA=2,
+	MATHEMATICS=2)
+SGPstateData[["AL"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- FALSE
+SGPstateData[["AL"]][["SGP_Norm_Group_Preference"]] <- NULL
+
+#SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.sgp"]]
+#setnames(SGPstateData[["AL"]][["Variable_Name_Lookup"]], c("names.sgp.type","names.sgp.info","names.sgp.output"), c("names.type","names.info","names.output"))
+#SGPstateData[["AL"]][["Variable_Name_Lookup"]] <- SGPstateData[["AL"]][["Variable_Name_Lookup"]][-(c(9:14, 18:19, 21)),]
+
 
 #########################################################
 ### ARCHDIOCESE OF BALTIMORE

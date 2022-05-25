@@ -837,19 +837,20 @@ SGPstateData[["BI"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_BIA_Knots_B
 
 SGPstateData[["BI"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
-		Organization=list(
-			Name="Bureau of Indian Affairs",
-			Abbreviation="BI",
-			URL="www.indianaffairs.gov",
-			Contact="202-208-3710"),
-			Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-			Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-			Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2"),
-			Test_Season="Fall & Spring",
-			Test_Vendor="Pearson",
-			CSEM="SCALE_SCORE_CSEM")
+		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation = "PARCC",
+		Organization = list(
+			Name = "Bureau of Indian Affairs",
+			Abbreviation = "BI",
+			URL = "www.indianaffairs.gov",
+			Contact = "202-208-3710"),
+			Content_Areas = c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
+			Grades_Tested = c(3, 4, 5, 6, 7, 8, 9, 10, 11),
+			Assessment_Years = c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2",
+		                         "2020_2021.2", "2021_2022.2"),
+			Test_Season = "Fall & Spring",
+			Test_Vendor = "Pearson",
+			CSEM = "SCALE_SCORE_CSEM")
 
 #########################################################
 ### CALIFORNIA
@@ -1951,29 +1952,29 @@ SGPstateData[["CT"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))
 
 
-		#########################################################
-		###   Department of Defense Education Agency (DoDEA)
-		#########################################################
+#########################################################
+###   Department of Defense Education Agency (DoDEA)
+#########################################################
 
-		load("Knots_Boundaries/PARCC_DD_Knots_Boundaries.Rdata")
-		SGPstateData[["DD"]] <- SGPstateData[['PARCC']]
-		SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_DD_Knots_Boundaries
+load("Knots_Boundaries/PARCC_DD_Knots_Boundaries.Rdata")
+SGPstateData[["DD"]] <- SGPstateData[['PARCC']]
+SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_DD_Knots_Boundaries
 
-		SGPstateData[["DD"]][["Assessment_Program_Information"]] <-
-			list(
-				Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-				Assessment_Abbreviation="PARCC",
-				Organization=list(
-					Name="Department of Defense",
-					Abbreviation="DD",
-					URL="https://www.dodea.edu",
-					Contact="assessmentsupport@hq.dodea.edu"),
-					Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
-					Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-					Assessment_Years=c("2017_2018.2", "2018_2019.2"),
-					Test_Season="Spring",
-					Test_Vendor="Pearson",
-					CSEM="SCALE_SCORE_CSEM")
+SGPstateData[["DD"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation = "PARCC",
+		Organization = list(
+			Name = "Department of Defense",
+			Abbreviation = "DD",
+			URL = "https://www.dodea.edu",
+			Contact = "assessmentsupport@hq.dodea.edu"),
+			Content_Areas = c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II"),
+			Grades_Tested = c(3, 4, 5, 6, 7, 8, 9, 10, 11),
+			Assessment_Years = c("2017_2018.2", "2018_2019.2", "2020_2021.2", "2021_2022.2"),
+			Test_Season = "Spring",
+			Test_Vendor = "Pearson",
+			CSEM = "SCALE_SCORE_CSEM")
 
 
 #########################################################
@@ -3960,32 +3961,35 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_IL_Knots_Bo
 
 SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
-		Organization=list(
-			Name="Illinois State Board of Education",
-			Abbreviation="ISBE",
-			URL="www.isbe.net",
-			Contact="866-262-6663"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2"),
-		Test_Season="Fall & Spring",
-		Test_Vendor="Pearson",
-		CSEM="SCALE_SCORE_CSEM")
+		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation = "PARCC",
+		Organization = list(
+			Name = "Illinois State Board of Education",
+			Abbreviation = "ISBE",
+			URL = "www.isbe.net",
+			Contact = "866-262-6663"),
+		Content_Areas = c("English Language Arts", "Mathematics"), # "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
+		Grades_Tested = c(3, 4, 5, 6, 7, 8), # ,9,10,11
+		Assessment_Years = c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2",
+		                     "2019_2020.2", "2020_2021.2", "2021_2022.2"),
+		Test_Season = "Spring", # Fall & 
+		Test_Vendor = "Pearson",
+		CSEM = "SCALE_SCORE_CSEM")
 
 SGPstateData[["IL"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-		ELA=c("3", "4", "5", "6", "7", "8", "9"),
-		ELA_SS=c("3", "4", "5", "6", "7", "8", "9"),
-		MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-		MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"))
+		ELA = c("3", "4", "5", "6", "7", "8"),
+		ELA_SS = c("3", "4", "5", "6", "7", "8"),
+		MATHEMATICS = c("3", "4", "5", "6", "7", "8"),
+		MATHEMATICS_SS = c("3", "4", "5", "6", "7", "8"))
 SGPstateData[["IL"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-		ELA=rep("ELA", 7), ELA_SS=rep("ELA_SS", 7),
-		MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY"),
-		MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS"))
+		ELA = rep("ELA", 6),
+		ELA_SS = rep("ELA_SS", 6),
+		MATHEMATICS = c(rep("MATHEMATICS", 6)),
+		MATHEMATICS_SS = c(rep("MATHEMATICS_SS", 6)))
 SGPstateData[["IL"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-		ELA=rep(1L, 6), ELA_SS=rep(1L, 6),
-		MATHEMATICS=rep(1L, 7), MATHEMATICS_SS=rep(1L, 7))
+		ELA = rep(1L, 5),
+		ELA_SS = rep(1L, 5),
+		MATHEMATICS = rep(1L, 5), MATHEMATICS_SS = rep(1L, 5))
 
 
 #########################################################
@@ -7030,19 +7034,20 @@ SGPstateData[["NJ"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_NJ_Knots_Bo
 
 SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation="PARCC",
-		Organization=list(
-			Name="New Jersey Department of Education",
-			Abbreviation="NJDOE",
-			URL="www.state.nj.us/education",
-			Contact="877-900-6960"),
-		Content_Areas=c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2"),
-		Test_Season="Fall & Spring",
-		Test_Vendor="Pearson",
-		CSEM="SCALE_SCORE_CSEM")
+		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
+		Assessment_Abbreviation = "PARCC",
+		Organization = list(
+			Name = "New Jersey Department of Education",
+			Abbreviation = "NJDOE",
+			URL = "www.state.nj.us/education",
+			Contact = "877-900-6960"),
+		Content_Areas = c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
+		Grades_Tested = c(3, 4, 5, 6, 7, 8, 9, 10, 11),
+		Assessment_Years = c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2",
+		                     "2020_2021.2", "2021_2022.1", "2021_2022.2"), # 2021_2022.1 was NJ Start Strong...
+		Test_Season = "Fall & Spring",
+		Test_Vendor = "Pearson",
+		CSEM = "SCALE_SCORE_CSEM")
 
 
 #########################################################
@@ -9890,86 +9895,89 @@ SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2016"
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["LITERACY"]] <- WIDA_CO_Knots_Boundaries[['LITERACY']]
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]] <- list(
-	LITERACY=list(
-		GRADE_0=c(238, 265, 295, 328, 350),
-		GRADE_1=c(251, 281, 321, 349, 370),
-		GRADE_2=c(263, 293, 334, 363, 383),
-		GRADE_3=c(272, 303, 344, 373, 394),
-		GRADE_4=c(287, 312, 353, 383, 404),
-		GRADE_5=c(292, 319, 360, 390, 412),
-		GRADE_6=c(296, 326, 367, 398, 420),
-		GRADE_7=c(301, 333, 374, 404, 428),
-		GRADE_8=c(308, 339, 379, 410, 436),
-		GRADE_9=c(315, 346, 385, 416, 444),
-		GRADE_10=c(321, 352, 391, 421, 451),
-		GRADE_11=c(328, 359, 397, 426, 459),
-		GRADE_12=c(335, 365, 403, 431, 467)),
-	READING=list(
-		GRADE_0=c(382, 426, 451, 515),
-		GRADE_1=c(411, 435, 469, 522),
-		GRADE_2=c(431, 465, 491, 546),
-		GRADE_3=c(445, 478, 509, 562),
-		GRADE_4=c(458, 490, 526, 578),
-		GRADE_5=c(460, 493, 533, 584),
-		GRADE_6=c(463, 496, 539, 590),
-		GRADE_7=c(465, 499, 546, 596),
-		GRADE_8=c(469, 503, 549, 598),
-		GRADE_9=c(473, 507, 551, 600),
-		GRADE_10=c(477, 510, 553, 603),
-		GRADE_11=c(481, 514, 556, 605),
-		GRADE_12=c(485, 518, 559, 607)),
-	READING.2013=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
-	READING.2017=SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
+	LITERACY = list(
+		GRADE_0 = c(238, 265, 295, 328, 350),
+		GRADE_1 = c(251, 281, 321, 349, 370),
+		GRADE_2 = c(263, 293, 334, 363, 383),
+		GRADE_3 = c(272, 303, 344, 373, 394),
+		GRADE_4 = c(287, 312, 353, 383, 404),
+		GRADE_5 = c(292, 319, 360, 390, 412),
+		GRADE_6 = c(296, 326, 367, 398, 420),
+		GRADE_7 = c(301, 333, 374, 404, 428),
+		GRADE_8 = c(308, 339, 379, 410, 436),
+		GRADE_9 = c(315, 346, 385, 416, 444),
+		GRADE_10 = c(321, 352, 391, 421, 451),
+		GRADE_11 = c(328, 359, 397, 426, 459),
+		GRADE_12 = c(335, 365, 403, 431, 467)),
+	READING = list(
+		GRADE_0 = c(382, 426, 451, 515),
+		GRADE_1 = c(411, 435, 469, 522),
+		GRADE_2 = c(431, 465, 491, 546),
+		GRADE_3 = c(445, 478, 509, 562),
+		GRADE_4 = c(458, 490, 526, 578),
+		GRADE_5 = c(460, 493, 533, 584),
+		GRADE_6 = c(463, 496, 539, 590),
+		GRADE_7 = c(465, 499, 546, 596),
+		GRADE_8 = c(469, 503, 549, 598),
+		GRADE_9 = c(473, 507, 551, 600),
+		GRADE_10 = c(477, 510, 553, 603),
+		GRADE_11 = c(481, 514, 556, 605),
+		GRADE_12 = c(485, 518, 559, 607)),
+	READING.2013 = SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING"]],
+	READING.2017 = SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]][["READING.2017"]])
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient","Proficient",NA))
+	Labels = c("L1", "L2", "L3", "L4", "L5", "L6", "NO SCORE"),
+	Proficient = c("Not Proficient", "Not Proficient", "Not Proficient",
+                   "Proficient", "Proficient", "Proficient", NA))
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["Cutscores"]] <- list(
-	Cuts=c(35, 66),
-	Labels=c("1st-34th","35th-65th","66th-99th"))
+	Cuts = c(35, 66),
+	Labels = c("1st-34th","35th-65th","66th-99th"))
 
 SGPstateData[["WIDA_CO"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="WIDA ACCESS",
-	Assessment_Abbreviation="ACCESS",
-	Organization=list(
-		Name="Colorado Department of Education",
-		Abbreviation="CDE",
-		URL="www.schoolview.org",
-		Contact="303-866-6763"),
-#	Scale_Change=list(READING="2013"),
-	Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"),
-	Content_Areas=c("READING", "LITERACY"),
-	Grades_Tested= c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Test_Season="Spring")
+	Assessment_Name = "WIDA ACCESS",
+	Assessment_Abbreviation = "ACCESS",
+	Organization = list(
+		Name = "Colorado Department of Education",
+		Abbreviation = "CDE",
+		URL = "www.schoolview.org",
+		Contact = "303-866-6763"),
+#	Scale_Change = list(READING = "2013"),
+	Assessment_Years = c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
+	Content_Areas = c("READING", "LITERACY"),
+	Grades_Tested =  c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	Test_Season = "Spring")
 
 SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
-	sgPlot.year.span = 3,
-	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), LITERACY=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
-	Vertical_Scale=list(READING=TRUE, LITERACY=TRUE),
-	Content_Areas_Labels=list(READING="Overall", LITERACY="Overall"),
-	Earliest_Year_Reported=list(READING = '2013', LITERACY = '2016'),
-	Achievement_Level_Labels=list(
-		"Entering"="L1",
-		"Emerging"="L2",
-		"Developing"="L3",
-		"Expanding"="L4",
-		"Bridging"="L5",
-		"Reaching"="L6"))
+	sgPlot.year.span  =  3,
+	Grades_Reported = list(
+		READING = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+		LITERACY = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale = list(READING = TRUE, LITERACY = TRUE),
+	Content_Areas_Labels = list(READING = "Overall", LITERACY = "Overall"),
+	Earliest_Year_Reported = list(READING = '2013', LITERACY = '2016'),
+	Achievement_Level_Labels = list(
+		"Entering" = "L1",
+		"Emerging" = "L2",
+		"Developing" = "L3",
+		"Expanding" = "L4",
+		"Bridging" = "L5",
+		"Reaching" = "L6"))
 
-SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses = c(rep("character",4), "logical"))
 
 SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
-	max.order.for.percentile=3,
-	sgp.minimum.default.panel.years=2,
-#	arrow.legend.color=c("#FD5050", "#FDBF1A", "#07B806"), ##OLD RED/YELLOW/GREEN
-	arrow.legend.color=c("#CC79A7", "#F0E442", "#56B4E9"), ##COLOR-BLIND COLORS
-	sgPlot.sgp.targets="CUSTOM",
-	sgp.target.types=c("Scale_Score_Targets_CUSTOM", "Scale_Score_Targets_Current_CUSTOM"))
+	max.order.for.percentile = 3,
+	sgp.minimum.default.panel.years = 2,
+#	arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"), ##OLD RED/YELLOW/GREEN
+	arrow.legend.color = c("#CC79A7", "#F0E442", "#56B4E9"), ##COLOR-BLIND COLORS
+	sgPlot.sgp.targets = "CUSTOM",
+	sgp.target.types = c("Scale_Score_Targets_CUSTOM", "Scale_Score_Targets_Current_CUSTOM"))
 
 #SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 #SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
@@ -9982,8 +9990,8 @@ CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/CDE.png")
 
 # require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
-	report.width=8.5,
-	report.height= 11,
+	report.width = 8.5,
+	report.height = 11,
 
 	Custom_ISR_Function = WIDA_CO_Custom_ISR_Function,
 	Report_Text_ENGLISH = Report_Text_ENGLISH,
@@ -9993,20 +10001,20 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
 			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
 
-		top.school.name.vp = viewport(layout.pos.row=2, layout.pos.col=2:5),
-		top.student.name.vp = viewport(layout.pos.row=3, layout.pos.col=2:4),
-		top.student.id.vp = viewport(layout.pos.row=3, layout.pos.col=5),
-		top.border.cde.vp = viewport(layout.pos.row=1:3, layout.pos.col=7:8),
-		report_title.vp = viewport(layout.pos.row=4, layout.pos.col=3:7),
-		color_block_1.vp = viewport(layout.pos.row=5, layout.pos.col=3:7),
-		report_text.vp = viewport(layout.pos.row=7, layout.pos.col=3:7),
-		color_block_2.vp = viewport(layout.pos.row=8, layout.pos.col=3:7),
-		report.student.name.vp = viewport(layout.pos.row=10, layout.pos.col=2:5),
+		top.school.name.vp = viewport(layout.pos.row = 2, layout.pos.col = 2:5),
+		top.student.name.vp = viewport(layout.pos.row = 3, layout.pos.col = 2:4),
+		top.student.id.vp = viewport(layout.pos.row = 3, layout.pos.col = 5),
+		top.border.cde.vp = viewport(layout.pos.row = 1:3, layout.pos.col = 7:8),
+		report_title.vp = viewport(layout.pos.row = 4, layout.pos.col = 3:7),
+		color_block_1.vp = viewport(layout.pos.row = 5, layout.pos.col = 3:7),
+		report_text.vp = viewport(layout.pos.row = 7, layout.pos.col = 3:7),
+		color_block_2.vp = viewport(layout.pos.row = 8, layout.pos.col = 3:7),
+		report.student.name.vp = viewport(layout.pos.row = 10, layout.pos.col = 2:5),
 
-		content_area_1.vp = viewport(layout.pos.row=12, layout.pos.col=3:7), #4:7 with left.legend (could delete 3rd column too)
+		content_area_1.vp = viewport(layout.pos.row = 12, layout.pos.col = 3:7), #4:7 with left.legend (could delete 3rd column too)
 
-		left.border.vp = viewport(layout.pos.row=1:13, layout.pos.col=1),
-		bottom.border.vp = viewport(layout.pos.row=13, layout.pos.col=2:7)
+		left.border.vp = viewport(layout.pos.row = 1:13, layout.pos.col = 1),
+		bottom.border.vp = viewport(layout.pos.row = 13, layout.pos.col = 2:7)
 	)
 )
 
@@ -10018,17 +10026,17 @@ SGPstateData[["WIDA_CO_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA
 
 SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 	sgPlot.year.span = 3,
-	Grades_Reported=list(READING=c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
-	Vertical_Scale=list(READING=TRUE),
-	Content_Areas_Labels=list(READING = "Calificaci\u{F3}n General"),
-	Earliest_Year_Reported=list(READING = '2013'),
-	Achievement_Level_Labels=list(
-		"Inicial"="L1",
-		"En Transici\u{F3}n"="L2",
-		"Desarrollado"="L3",
-		"Elevado"="L4",
-		"Apto"="L5",
-		"Avanzado"="L6"))
+	Grades_Reported = list(READING = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+	Vertical_Scale = list(READING = TRUE),
+	Content_Areas_Labels = list(READING = "Calificaci\u{F3}n General"),
+	Earliest_Year_Reported = list(READING = '2013'),
+	Achievement_Level_Labels = list(
+		"Inicial" = "L1",
+		"En Transici\u{F3}n" = "L2",
+		"Desarrollado" = "L3",
+		"Elevado" = "L4",
+		"Apto" = "L5",
+		"Avanzado" = "L6"))
 
 
 ##########################################################################################
@@ -10142,13 +10150,14 @@ SGPstateData[["WIDA_GA"]][["Achievement"]][["Cutscores"]] <- list(
 
 SGPstateData[["WIDA_GA"]][["Achievement"]][["Levels"]] <- list(
 	Labels = c("Level 1", "Level 2", "Level 3", "Level 4", "Level 4.3", "Level 5", "Level 6", "NO SCORE"),
-	Proficient = c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient", "Proficient", "Proficient",NA))
+	Proficient = c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient",
+                   "Proficient", "Proficient", "Proficient", NA))
 
 SGPstateData[["WIDA_GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["WIDA_GA"]][["Growth"]][["Cutscores"]] <- list(
 	Cuts = c(35, 66),
-	Labels = c("1st-34th","35th-65th","66th-99th"))
+	Labels = c("1st-34th", "35th-65th", "66th-99th"))
 
 SGPstateData[["WIDA_GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
@@ -10161,7 +10170,7 @@ SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
 		URL = "https://www.gadoe.org"),
 	Content_Areas = "Reading",
 	Grades_Tested = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Assessment_Years = c("2019", "2020", "2021"),
+	Assessment_Years = c("2019", "2020", "2021", "2022"),
 	Test_Season = "Spring",
 	Test_Vendor = "WIDA")
 
@@ -10175,7 +10184,7 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
 		"Level 2 Emerging" = "Level 2",
 		"Level 3 Developing" = "Level 3",
 		"Level 4 Expanding" = "Level 4",
-		"Level 4 Expanding" = "Level 4.3",
+		"Level 4 Expanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
 		"Level 5 Bridging" = "Level 5",
 		"Level 6 Reaching" = "Level 6"))
 
@@ -10189,8 +10198,8 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	print.other.gp = TRUE,
 	print.sgp.order = TRUE,
 	projcuts.digits = 0,
-	percentile.cuts = c(1,35,50,65,99),
-	lagged.percentile.trajectory.values = c(1,35,50,65,99),
+	percentile.cuts = c(1, 35, 50, 65 ,99),
+	lagged.percentile.trajectory.values = c(1, 35, 50, 65 ,99),
 	arrow.legend.color = c("#D6F9D1", "#4A8D29", "#1A4A0A"), # "#ECF9C1", "#AFD622", "#4D6308" # MB email 5/11/22
 	sgPlot.fan.condition = "head(Achievement_Levels, 1) %in% paste('Level', 1:4)")#,
 	# sgPlot.sgp.targets = c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
@@ -10217,7 +10226,7 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
     Language = list(Custom = list(
 		achievement.label = "Proficiency",
 		achievement_level.label = "Proficiency Level",
-		# achievement_target.label = "Proficiency Target",
+		# achievement_target.label = "Proficiency Target", # commented out code in this section only used if target scale scores shown
 		growth.label = "Growth",
 		growth_percentile.label = "Growth Percentile",
 		growth_level.label = "Growth Level",
@@ -10266,7 +10275,7 @@ SGPstateData[["WIDA_GA_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Language"]] <- list(Custom = list( # "SPANISH"
     achievement.label = "Competencia",
     achievement_level.label = "Nivel de Competencia",
-    # achievement_target.label = "Meta de Competencia",
+    # achievement_target.label = "Meta de Competencia", # commented out - only used if target scale scores shown
     growth.label = "Desarrollo",
     growth_percentile.label = "Porcentaje de Desarrollo",
     growth_level.label = "Nivel de Desarrollo",

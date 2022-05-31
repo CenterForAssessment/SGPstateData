@@ -10186,7 +10186,8 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
 		"Level 4 Expanding" = "Level 4",
 		"Level 4 Expanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
 		"Level 5 Bridging" = "Level 5",
-		"Level 6 Reaching" = "Level 6"))
+		"Level 6 Reaching" = "Level 6"),
+    catalog_name = "paste(i, j, tmp_district_name, 'ACCESS_SGP', year_folder, 'ISR.pdf', sep = '_')")
 
 SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile = 2,
@@ -10200,7 +10201,7 @@ SGPstateData[["WIDA_GA"]][["SGP_Configuration"]] <- list(
 	projcuts.digits = 0,
 	percentile.cuts = c(1, 35, 50, 65 ,99),
 	lagged.percentile.trajectory.values = c(1, 35, 50, 65 ,99),
-	arrow.legend.color = c("#D6F9D1", "#4A8D29", "#1A4A0A"), # "#ECF9C1", "#AFD622", "#4D6308" # MB email 5/11/22
+	arrow.legend.color = c("#0066B2", "#E20177", "#4A8D29"), # c("#D6F9D1", "#4A8D29", "#1A4A0A"), # "#ECF9C1", "#AFD622", "#4D6308" # MB email 5/11/22
 	sgPlot.fan.condition = "head(Achievement_Levels, 1) %in% paste('Level', 1:4)")#,
 	# sgPlot.sgp.targets = c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
     # sgPlot.sgp.targets = c("sgp.projections", "sgp.projections.lagged"),
@@ -10223,6 +10224,7 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 	report.height = 11,
 
 	Custom_ISR_Function = WIDA_GA_Custom_ISR_Function,
+ 	Zero_to_K = "K",
     Language = list(Custom = list(
 		achievement.label = "Proficiency",
 		achievement_level.label = "Proficiency Level",
@@ -10244,12 +10246,12 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 	Report_Text = Report_Text_ENGLISH,
 	Report_Logo = GaDOE_img,
 	Grid_Objects = list(
-		report.vp = viewport(layout = grid.layout(13, 6, widths = unit(c(0.55, 0.1, 1.9, 4.0, 1.6, 0.35), rep("inches", 6)),
+		report.vp = viewport(layout = grid.layout(13, 6, widths = unit(c(0.55, 0.1, 2.4, 3.5, 1.6, 0.35), rep("inches", 6)), # , 1.9, 4.0
 			heights = unit(c(0.1, 0.25, 0.25, 0.25, 0.35, 0.05, 0.025, 5.5, 0.05, 0.025, 0.05, 3.75, 0.35), rep("inches", 13)))),
 
-		top.student.id.vp    = viewport(layout.pos.row = 2, layout.pos.col = 2:3),
-		top.student.fname.vp = viewport(layout.pos.row = 3, layout.pos.col = 2:3),
-		top.student.lname.vp = viewport(layout.pos.row = 4, layout.pos.col = 2:3),
+		top.student.fname.vp = viewport(layout.pos.row = 2, layout.pos.col = 2:3),
+		top.student.lname.vp = viewport(layout.pos.row = 3, layout.pos.col = 2:3),
+		top.student.id.vp    = viewport(layout.pos.row = 4, layout.pos.col = 2:3),
 		top.student.bdate.vp = viewport(layout.pos.row = 2, layout.pos.col = 4),
 		top.system.name.vp   = viewport(layout.pos.row = 3, layout.pos.col = 4),
 		top.school.name.vp   = viewport(layout.pos.row = 4, layout.pos.col = 4),
@@ -10270,26 +10272,29 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 #  Spanish ISR Version Info:
 
 SGPstateData[["WIDA_GA_SPANISH"]] <- SGPstateData[["WIDA_GA"]]
-SGPstateData[["WIDA_GA_SPANISH"]][["Growth"]][["Levels"]] <- c("Bajo", "T\u{ED}pico", "Alto")
+SGPstateData[["WIDA_GA_SPANISH"]][["Growth"]][["Levels"]] <- c("Menor", "T\u{ED}pico", "Major")
 SGPstateData[["WIDA_GA_SPANISH"]][["SGP_Configuration"]]  <- SGPstateData[["WIDA_GA"]][["SGP_Configuration"]]
+SGPstateData[["WIDA_GA_SPANISH"]][["Assessment_Program_Information"]][["Assessment_Abbreviation"]] <- NULL
+
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Language"]] <- list(Custom = list( # "SPANISH"
     achievement.label = "Competencia",
-    achievement_level.label = "Nivel de Competencia",
+    achievement_level.label = "Nivel de competencia",
     # achievement_target.label = "Meta de Competencia", # commented out - only used if target scale scores shown
     growth.label = "Desarrollo",
-    growth_percentile.label = "Porcentaje de Desarrollo",
-    growth_level.label = "Nivel de Desarrollo",
+    growth_percentile.label = "Percentil de desarrollo",
+    growth_level.label = "Nivel de desarrollo",
     # growth_target.label = "Meta de Desarrollo",
     level.label = "Niveles",
-    percentiles.label = "El Percentil",
-    scale_score.label = "Escala",
-    grade.label = "Grado"))#,
+    percentiles.label = "Percentiles",
+    scale_score.label = "Puntaje por escala",
+    grade.label = "Grado escolar"))#,
     # CU.label = "Alcanzar",
     # KU.label = "Guadar",
     # MU.label = "Avanzar",
     # SU.label = "Mantener",
     # target.label = "Meta"))
 
+SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Zero_to_K"]] <- "J"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Text"]] <- Report_Text_SPANISH
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Title"]] <- 
                     "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2022"
@@ -10301,14 +10306,14 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
 	Content_Areas_Labels = list(READING = "Conjunto"),
 	# Earliest_Year_Reported = list(READING = '2019'),
 	Achievement_Level_Labels = list(
-		"1-Nivel Entrada" = "Level 1",
-		"2-Nivel Emergente" = "Level 2",
-		"3-Nivel Desarrollo" = "Level 3",
-		"4-Nivel Extensi\u{F3}n" = "Level 4",
-		"4-Nivel Extensi\u{F3}n" = "Level 4.3",
-		"5-Nivel Transformaci\u{F3}n" = "Level 5",
-		"6-Nivel Trascendencia" = "Level 6"))
-
+		"1-Nivel\nde entrada" = "Level 1",
+		"2-Nivel\nemergente" = "Level 2",
+		"3-Nivel\nde desarrollo" = "Level 3",
+		"4-Nivel\nde extensi\u{F3}n" = "Level 4",
+		"4-Nivel\nde extensi\u{F3}n" = "Level 4.3",
+		"5-Nivel\nde transformaci\u{F3}n" = "Level 5",
+		"6-Nivel\nde trascendencia" = "Level 6"))
+	
 
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) HAWAII

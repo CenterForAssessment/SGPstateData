@@ -98,10 +98,10 @@
             Content_Area_Title = tmp_student_data[[paste("CONTENT_AREA_LABELS", last.year, sep = ".")]],
             Configuration = list(Language = custom.isr$Language,
                                 Zero_to_K = custom.isr$Zero_to_K,
-                                # Font_Family = "Arial",
+                                Font_Family = custom.isr$Font_Family,
                                 Font_Size = list(
-                                    title.ca.size = 1.6, legend.size = 0.6, left.vp.size = 0.75,
-                                    bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.6))))
+                                    title.ca.size = 1.6, legend.size = 0.6, legend.lheight = 0.7,
+                                    left.vp.size = 0.75, bottom.right.vp.size = 1.2, bottom.left.vp.size = 0.6))))
 
     popViewport()
 
@@ -109,47 +109,45 @@
     ##    Left Column
     pushViewport(custom.isr$Grid_Objects$top.student.fname.vp)
     # grid.rect(gp = gpar(fill = "#51B898", col = "#51B898"))
-    grid.text(x = 0.05, y = 0.5, paste("First Name:", FIRST_NAME),
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-              just = "left", default.units = "native")
+    grid.text(label = paste("First Name:", FIRST_NAME),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native",
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.student.lname.vp)
     # grid.rect(gp = gpar(fill = "#B8EADC", col = "#B8EADC"))
-    grid.text(x = 0.05, y = 0.5, paste("Last Name:", LAST_NAME), # gsub(" ", "-", LAST_NAME)),
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-              just = "left", default.units = "native")
+    grid.text(label = paste("Last Name:", LAST_NAME), # gsub(" ", "-", LAST_NAME)),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native", 
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
     # grid.rect(gp = gpar(fill = "#004331", col = "#004331"))
-    grid.text(
-        x = 0.05, y = 0.5, paste("GTID:", student_number),
-        gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-        just = "left", default.units = "native"
-    )
+    grid.text(label = paste("GTID:", student_number),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native",
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     ##    Right Column
     pushViewport(custom.isr$Grid_Objects$top.student.bdate.vp)
     # grid.rect(gp = gpar(fill = "#004331", col = "#004331"))
-    grid.text(x = 0.05, y = 0.5, paste("Birth Date:", BIRTH_DATE),
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-              just = "left", default.units = "native")
+    grid.text(label = paste("Birth Date:", BIRTH_DATE),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native", 
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.system.name.vp)
     # grid.rect(gp = gpar(fill = "#51B898", col = "#51B898"))
-    grid.text(x = 0.05, y = 0.5, paste("System:", tmp_district_name),
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-              just = "left", default.units = "native")
+    grid.text(label = paste("System:", tmp_district_name),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native",
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
     # grid.rect(gp = gpar(fill = "#B8EADC", col = "#B8EADC"))
-    grid.text(x = 0.05, y = 0.5, paste("School:", tmp_school_name),
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "black", cex = 0.9),
-              just = "left", default.units = "native")
+    grid.text(label = paste("School:", tmp_school_name),
+              x = 0.0125, y = 0.5, just = "left", default.units = "native",
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.border.logo.vp)
@@ -158,8 +156,8 @@
 
     ##  Report Title
     pushViewport(custom.isr$Grid_Objects$report_title.vp)
-    grid.text(custom.isr$Report_Title,
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica", col = "black", cex = 1.35),
+    grid.text(label = custom.isr$Report_Title,
+              gp = gpar(fontface = "bold", fontfamily = "Helvetica", col = "black", cex = 1.25),
               just = "top", default.units = "native") # Helvetica-Narrow
     popViewport()
 
@@ -170,9 +168,9 @@
 
     ##  Report Text
     pushViewport(custom.isr$Grid_Objects$report_text.vp)
-    grid.text(x = 0.025, y = 0.5, custom.isr$Report_Text,
-              gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.8), # cex = 0.825
-              just = "left", default.units = "native")
+    grid.text(label = custom.isr$Report_Text,
+              x = 0.0125, y = 0.5, just = "left", default.units = "native",
+              gp = gpar(fontfamily = custom.isr$Font_Family, col = "black", cex = 0.8)) # cex = 0.825
     popViewport()
 
     ##  Color block 2
@@ -181,20 +179,18 @@
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$left.border.vp)
-    grid.rect(gp = gpar(fill = "#0066B2", col = "#0066B2")) # sgPlot.header.footer.color = "#0066B2"
-    grid.text(custom.isr$Report_Title,
-              gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2),
-              rot = 270, just = "center", default.units = "native")
+    grid.rect(gp = gpar(fill = "#0066B2", col = "#0066B2"))
+    grid.text(label = custom.isr$Report_Title, rot = 270, just = "center", default.units = "native",
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "white", cex = 2))
     popViewport()
 
     ## Bottom Legend
     pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
     copyright.text <- paste0("Cooperatively developed by the ", tmp.organization$Name, " (",
                              tmp.organization$Abbreviation, ") & the Center for Assessment, Inc.")
-    grid.text(x = 0.02, y = 0.75,
-              paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."),
-              gp = gpar(cex = 0.85, col = "black", fontface = "bold", fontfamily = "Helvetica-Narrow"),
-              default.units = "native", just = c("left", "top"))
+    grid.text(label = paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."),
+              x = 0.02, y = 0.75, default.units = "native", just = c("left", "top"),
+              gp = gpar(cex = 0.85, col = "black", fontface = "bold", fontfamily = custom.isr$Font_Family))
     popViewport()
 
   popViewport()

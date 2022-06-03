@@ -111,21 +111,21 @@
     # grid.rect(gp = gpar(fill = "#51B898", col = "#51B898"))
     grid.text(label = paste("First Name:", FIRST_NAME),
               x = 0.0125, y = 0.5, just = "left", default.units = "native",
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.student.lname.vp)
     # grid.rect(gp = gpar(fill = "#B8EADC", col = "#B8EADC"))
     grid.text(label = paste("Last Name:", LAST_NAME), # gsub(" ", "-", LAST_NAME)),
               x = 0.0125, y = 0.5, just = "left", default.units = "native", 
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
     # grid.rect(gp = gpar(fill = "#004331", col = "#004331"))
     grid.text(label = paste("GTID:", student_number),
               x = 0.0125, y = 0.5, just = "left", default.units = "native",
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     ##    Right Column
@@ -133,21 +133,21 @@
     # grid.rect(gp = gpar(fill = "#004331", col = "#004331"))
     grid.text(label = paste("Birth Date:", BIRTH_DATE),
               x = 0.0125, y = 0.5, just = "left", default.units = "native", 
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.system.name.vp)
     # grid.rect(gp = gpar(fill = "#51B898", col = "#51B898"))
-    grid.text(label = paste("System:", tmp_district_name),
+    grid.text(label = paste("System Name:", tmp_district_name),
               x = 0.0125, y = 0.5, just = "left", default.units = "native",
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
     # grid.rect(gp = gpar(fill = "#B8EADC", col = "#B8EADC"))
-    grid.text(label = paste("School:", tmp_school_name),
+    grid.text(label = paste("School Name:", tmp_school_name),
               x = 0.0125, y = 0.5, just = "left", default.units = "native",
-              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.85))
+              gp = gpar(fontface = "bold", fontfamily = custom.isr$Font_Family, col = "black", cex = 0.825))
     popViewport()
 
     pushViewport(custom.isr$Grid_Objects$top.border.logo.vp)

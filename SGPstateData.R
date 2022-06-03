@@ -9967,7 +9967,15 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		"Developing" = "L3",
 		"Expanding" = "L4",
 		"Bridging" = "L5",
-		"Reaching" = "L6"))
+		"Reaching" = "L6"),
+	Fan_Extra = c("gridpattern::grid.pattern(pattern = 'stripe', x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+                		size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025, gp = gpar(fill = 'transparent'))",
+				  "gridpattern::grid.pattern(pattern = 'circle', x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+                        size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.015, gp = gpar(fill = 'transparent'))",
+				  "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.025, x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+                        size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.075, gp = gpar(fill = 'transparent'))")
+)
+
 
 SGPstateData[["WIDA_CO"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/WIDA_CO_Variable_Name_Lookup.csv", colClasses = c(rep("character",4), "logical"))
 
@@ -9976,15 +9984,19 @@ SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years = 2,
 #	arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"), ##OLD RED/YELLOW/GREEN
 	arrow.legend.color = c("#CC79A7", "#F0E442", "#56B4E9"), ##COLOR-BLIND COLORS
-	sgPlot.sgp.targets = "CUSTOM",
-	sgp.target.types = c("Scale_Score_Targets_CUSTOM", "Scale_Score_Targets_Current_CUSTOM"))
+    sgPlot.sgp.targets = c("sgp.projections", "sgp.projections.lagged"),
+    sgp.target.types = c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+	# sgPlot.sgp.targets = "CUSTOM",
+	# sgp.target.types = c("Scale_Score_Targets_CUSTOM", "Scale_Score_Targets_Current_CUSTOM"))
 
 #SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 #SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
 ##  Custom ISR Meta Data
 source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
-WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
+
+# WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
+WIDA_CO_Custom_ISR_Function <- source("Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function_pre_cust_trjcts.R")
 
 CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/CDE.png")
 

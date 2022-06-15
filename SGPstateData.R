@@ -9968,12 +9968,21 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		"Expanding" = "L4",
 		"Bridging" = "L5",
 		"Reaching" = "L6"),
-	Fan_Extra = c("gridpattern::grid.pattern(pattern = 'stripe', x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-                		size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025, gp = gpar(fill = 'transparent'))",
-				  "gridpattern::grid.pattern(pattern = 'circle', x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-                        size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.015, gp = gpar(fill = 'transparent'))",
-				  "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.025, x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-                        size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.075, gp = gpar(fill = 'transparent'))")
+    Fan_Extra = c(
+        ###   Patterns in fans use `gridpattern` package
+        #   remotes::install_github("trevorld/gridpattern")
+        "gridpattern::grid.pattern(pattern = 'stripe',
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+            gp = gpar(fill = 'transparent'))",
+        "gridpattern::grid.pattern(pattern = 'circle',
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+            gp = gpar(fill = 'transparent'))",
+        "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+            gp = gpar(fill = 'transparent'))")
 )
 
 
@@ -10048,7 +10057,21 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 		"Desarrollado" = "L3",
 		"Elevado" = "L4",
 		"Apto" = "L5",
-		"Avanzado" = "L6"))
+		"Avanzado" = "L6"),
+    Fan_Extra = c(
+        "gridpattern::grid.pattern(pattern = 'stripe',
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+            gp = gpar(fill = 'transparent'))",
+        "gridpattern::grid.pattern(pattern = 'circle',
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+            gp = gpar(fill = 'transparent'))",
+        "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+            size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+            gp = gpar(fill = 'transparent'))")
+)
 
 
 ##########################################################################################

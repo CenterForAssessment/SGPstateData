@@ -123,7 +123,7 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		fix.duplicates="KEEP.ALL",
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		percentile.cuts=c(1,35,50,66,99),
+		# percentile.cuts=c(1,35,50,66,99),
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.projections.max.forward.progression.years=FALSE,
 		gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, ELA=TRUE),
@@ -9993,8 +9993,8 @@ SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 	sgp.minimum.default.panel.years = 2,
 #	arrow.legend.color = c("#FD5050", "#FDBF1A", "#07B806"), ##OLD RED/YELLOW/GREEN
 	arrow.legend.color = c("#CC79A7", "#F0E442", "#56B4E9"), ##COLOR-BLIND COLORS
-    sgPlot.sgp.targets = c("sgp.projections", "sgp.projections.lagged"),
     sgp.target.types = c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+    # sgPlot.sgp.targets = c("sgp.projections", "sgp.projections.lagged"),
 	# sgPlot.sgp.targets = "CUSTOM",
 	# sgp.target.types = c("Scale_Score_Targets_CUSTOM", "Scale_Score_Targets_Current_CUSTOM"))
 
@@ -10220,6 +10220,20 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
 		"grid.text(x = 0.7, y = 0.675, label = 'Level 4.3', gp = gpar(col = border.color, cex = legend.size), default.units = 'native')",
 		"grid.text(x = 0.5, y = 0.635, label = '(Minimum EL Exit Criterion)', gp = gpar(col = border.color, cex = 0.55), default.units = 'native')"
 	),
+    # Fan_Extra = c(
+    #     "gridpattern::grid.pattern(pattern = 'stripe',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'circle',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+    #         gp = gpar(fill = 'transparent'))"
+    # ),
 	Achievement_Level_Labels = list(
 		"Level 1\nEntering" = "Level 1",
 		"Level 2\nEmerging" = "Level 2",
@@ -10356,7 +10370,20 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
 		"grid.text(x = 0.7, y = 0.675, label = 'Nivel 4.3', gp = gpar(col = border.color, cex = legend.size), default.units = 'native')",
 		"grid.text(x = 0.5, y = 0.635, label = '(Criterio minimo para reclasificar)', gp = gpar(col = border.color, cex = 0.525), default.units = 'native')"
 	),
-	# Earliest_Year_Reported = list(READING = '2019'),
+    # Fan_Extra = c(
+    #     "gridpattern::grid.pattern(pattern = 'stripe',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'circle',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+    #         gp = gpar(fill = 'transparent'))"
+    # ),
 	Achievement_Level_Labels = list(
 		"1-Nivel\nde entrada" = "Level 1",
 		"2-Nivel\nemergente" = "Level 2",

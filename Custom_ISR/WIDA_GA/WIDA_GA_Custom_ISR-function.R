@@ -188,6 +188,7 @@
     pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
     copyright.text <- paste0("Cooperatively developed by the ", tmp.organization$Name, " (",
                              tmp.organization$Abbreviation, ") & the Center for Assessment, Inc.")
+    # grid.text(label = "Copyright \u{00A9} 2022 Georgia Department of Education.", x = 0.29,
     grid.text(label = paste0(copyright.text, " Distributed by ", tmp.organization$Abbreviation, "."),
               x = 0.02, y = 0.75, default.units = "native", just = c("left", "top"),
               gp = gpar(cex = 0.85, col = "black", fontface = "bold", fontfamily = custom.isr$Font_Family))

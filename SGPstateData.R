@@ -2297,7 +2297,11 @@ SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year'
 SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st-2929th", "30th-70th", "71st-99th"))
 
-SGPstateData[["ERB"]][["Assessment_Program_Information"]][["Grades_Tested"]] <- c(1,2,3,4,5,6,7,8,9,10,11)
+SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
+	list(
+		Grades_Tested=c(1,2,3,4,5,6,7,8,9,10,11),
+		Test_Vendor="ERB",
+		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 	list(

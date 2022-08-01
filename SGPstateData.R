@@ -2257,6 +2257,66 @@ SGPstateData[["DEMO_COVID"]][["Student_Report_Information"]] <-
 		"Advanced"="Advanced"))
 
 #########################################################
+### ERB
+#########################################################
+load("Knots_Boundaries/ERB_Knots_Boundaries.Rdata")
+SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Boundaries
+
+SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
+	list(
+		READING_COMPREHENSION=list(
+			GRADE_1.1=c(264,333,385,466),
+			GRADE_1.2=c(264,333,385,466),
+			GRADE_2.1=c(328,385,440,519),
+			GRADE_2.2=c(394,449,493,535),
+			GRADE_3.1=c(427,475,525,564),
+			GRADE_3.2=c(436,497,546,614),
+			GRADE_4.1=c(475,528,592,663),
+			GRADE_4.2=c(498,538,577,636),
+			GRADE_5.1=c(521,560,606,667),
+			GRADE_5.2=c(536,584,630,691),
+			GRADE_6.1=c(549,596,646,713),
+			GRADE_6.2=c(564,607,657,711),
+			GRADE_7.1=c(584,631,672,746),
+			GRADE_7.2=c(602,649,686,746),
+			GRADE_8.1=c(614,652,700,764),
+			GRADE_8.2=c(615,670,710,780),
+			GRADE_9.1=c(615,670,710,780),
+			GRADE_9.2=c(606,670,736,819),
+			GRADE_10.1=c(584,650,708,785),
+			GRADE_10.2=c(578,670,740,811),
+			GRADE_11.1=c(522,617,677,780),
+			GRADE_11.2=c(522,617,677,780)))
+
+SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
+	list(
+	 	Labels=c("1st Quintile", "2nd Quintile", "3rd Quintile", "4th Quintile", "5th Quintile"),
+		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year's Growth", "Above Year's Growth")
+SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st-29th", "30th-70th", "71st-99th"))
+
+SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
+	list(
+		Grades_Tested=c(1,2,3,4,5,6,7,8,9,10,11),
+		Test_Vendor="ERB",
+		CSEM="SCALE_SCORE_CSEM")
+
+SGPstateData[["ERB"]][["Student_Report_Information"]] <-
+	list(
+		Vertical_Scale=list(READING_COMPREHENSION=FALSE),
+		Content_Areas_Labels=list(READING_COMPREHENSION="Reading"),
+		Grades_Reported=list(READING_COMPREHENSION=c(1,2,3,4,5,6,7,8,9,10,11)),
+		Achievement_Level_Labels=list(
+			"1st Quintile"="1st Quintile",
+			"2nd Quintile"="2nd Quintile",
+			"3rd Quintile"="3rd Quintile",
+			"4th Quintile"="4th Quintile",
+			"5th Quintile"="5th Quintile"))
+
+
+#########################################################
 ### GUATEMALA/GUA
 #########################################################
 

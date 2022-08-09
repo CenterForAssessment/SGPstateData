@@ -8442,28 +8442,32 @@ SGPstateData[["SD"]][['SGP_Configuration']] <- list(
 # SCIENCE grades 4 & 5 changed scale in 2021 (range at least) so NEW knots/bounds needed in 2022
 
 load("Knots_Boundaries/UT_Knots_Boundaries-RISE_UAp.Rdata")
-SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <- UT_Knots_Boundaries
+load("Knots_Boundaries/UT_Science_Knots_Bounds_2021.rda")
+SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
+    c(UT_Knots_Boundaries,
+	  UT_Science_Knots_Bounds_2021
+	 )
 
 SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 	list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 RISE cutscores for prior years as well
 	# ELA.2019=list(
 	ELA=list(
-	  GRADE_3=c(291, 334, 406),
-	  GRADE_4=c(323, 378, 442),
-	  GRADE_5=c(361, 410, 465),
-	  GRADE_6=c(394, 434, 493),
-	  GRADE_7=c(404, 450, 514),
-	  GRADE_8=c(416, 471, 533),
-	  GRADE_9=c(166, 203, 237),
-	  GRADE_10=c(168, 202, 240)), # NOTE:  Proficient/Highly cut is corrected per Marc Johnson email 9/16/2019
+	    GRADE_3=c(291, 334, 406),
+	    GRADE_4=c(323, 378, 442),
+	    GRADE_5=c(361, 410, 465),
+	    GRADE_6=c(394, 434, 493),
+	    GRADE_7=c(404, 450, 514),
+	    GRADE_8=c(416, 471, 533),
+	    GRADE_9=c(166, 203, 237),
+	    GRADE_10=c(168, 202, 240)), # NOTE:  Proficient/Highly cut is corrected per Marc Johnson email 9/16/2019
 	# MATHEMATICS.2019=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 RISE cutscores for prior years as well
 	MATHEMATICS = list(
 		GRADE_3=c(297, 317, 337),
 		GRADE_4=c(326, 349, 376),
 		GRADE_5=c(360, 384, 416),
 		GRADE_6=c(397, 432, 464),
-	  GRADE_7=c(415, 450, 499),
-	  GRADE_8=c(447, 499, 554),
+        GRADE_7=c(415, 450, 499),
+	    GRADE_8=c(447, 499, 554),
 		GRADE_9=c(172, 206, 233),
 		GRADE_10=c(181, 210, 236)),
 	# SCIENCE.2019=list(
@@ -8471,16 +8475,16 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_4=c(820, 840, 856),
 		GRADE_5=c(820, 840, 856),
 		GRADE_6=c(841, 849, 862),
-	  GRADE_7=c(841, 851, 861),
-	  GRADE_8=c(842, 851, 861),
+	    GRADE_7=c(841, 851, 861),
+	    GRADE_8=c(842, 851, 861),
 		GRADE_9=c(164, 211, 239),
 		GRADE_10=c(168, 213, 239)),
 	SCIENCE.2021 = list(
 		GRADE_4=c(543, 553, 562),
 		GRADE_5=c(543, 552, 563),
 		GRADE_6=c(841, 849, 862), # Same as old
-	  GRADE_7=c(841, 851, 861), # Same as old
-	  GRADE_8=c(842, 851, 861), # Same as old
+	    GRADE_7=c(841, 851, 861), # Same as old
+	    GRADE_8=c(842, 851, 861), # Same as old
 		GRADE_9=c(187, 211, 237),
 		GRADE_10=c(187, 210, 240)),
 	SEC_MATH_I=list(
@@ -8500,14 +8504,17 @@ SGPstateData[["UT"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
-SGPstateData[["UT"]][["SGP_Configuration"]] <- list(
-	sgp.cohort.size=3000,
-	return.norm.group.scale.scores=TRUE,
-	sgp.less.than.sgp.cohort.size.return="<3000",
-	max.order.for.percentile=5,
-	max.order.for.projection=5, # All available SAGE per R.R. 8/13/18
-	sgp.projections.use.only.complete.matrices=FALSE,
-	sgPlot.use.alternate.student.id="SSID")
+SGPstateData[["UT"]][["SGP_Configuration"]] <-
+    list(
+		sgp.cohort.size=3000,
+		print.other.gp = TRUE,
+		return.norm.group.scale.scores=TRUE,
+		sgp.less.than.sgp.cohort.size.return="<3000",
+		max.order.for.percentile=5,
+		max.order.for.projection=5, # All available SAGE per R.R. 8/13/18
+		sgp.projections.use.only.complete.matrices=FALSE,
+		sgPlot.use.alternate.student.id="SSID"
+	)
 
 SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 	list(

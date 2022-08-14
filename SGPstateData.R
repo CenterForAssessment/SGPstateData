@@ -2269,29 +2269,30 @@ SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Bounda
 
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 	list(
-		READING_COMPREHENSION=list(
-			GRADE_1.1=c(264,333,385,466),
-			GRADE_1.2=c(264,333,385,466),
-			GRADE_2.1=c(328,385,440,519),
-			GRADE_2.2=c(394,449,493,535),
-			GRADE_3.1=c(427,475,525,564),
-			GRADE_3.2=c(436,497,546,614),
-			GRADE_4.1=c(475,528,592,663),
-			GRADE_4.2=c(498,538,577,636),
-			GRADE_5.1=c(521,560,606,667),
-			GRADE_5.2=c(536,584,630,691),
-			GRADE_6.1=c(549,596,646,713),
-			GRADE_6.2=c(564,607,657,711),
-			GRADE_7.1=c(584,631,672,746),
-			GRADE_7.2=c(602,649,686,746),
-			GRADE_8.1=c(614,652,700,764),
-			GRADE_8.2=c(615,670,710,780),
-			GRADE_9.1=c(615,670,710,780),
-			GRADE_9.2=c(606,670,736,819),
-			GRADE_10.1=c(584,650,708,785),
-			GRADE_10.2=c(578,670,740,811),
-			GRADE_11.1=c(522,617,677,780),
-			GRADE_11.2=c(522,617,677,780)))
+		READING_COMPREHENSION_FALL=list(
+			GRADE_1=c(264,333,385,466),
+			GRADE_2=c(328,385,440,519),
+			GRADE_3=c(427,475,525,564),
+			GRADE_4=c(475,528,592,663),
+			GRADE_5=c(521,560,606,667),
+			GRADE_6=c(549,596,646,713),
+			GRADE_7=c(584,631,672,746),
+			GRADE_8=c(614,652,700,764),
+			GRADE_9=c(615,670,710,780),
+			GRADE_10=c(584,650,708,785),
+			GRADE_11=c(522,617,677,780)),
+		READING_COMPREHENSION_SPRING=list(
+			GRADE_1=c(264,333,385,466),
+			GRADE_2=c(394,449,493,535),
+			GRADE_3=c(436,497,546,614),
+			GRADE_4=c(498,538,577,636),
+			GRADE_5=c(536,584,630,691),
+			GRADE_6=c(564,607,657,711),
+			GRADE_7=c(602,649,686,746),
+			GRADE_8=c(615,670,710,780),
+			GRADE_9=c(606,670,736,819),
+			GRADE_10=c(578,670,740,811),
+			GRADE_11=c(522,617,677,780)))
 
 SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -2310,9 +2311,9 @@ SGPstateData[["ERB"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(READING_COMPREHENSION=FALSE),
-		Content_Areas_Labels=list(READING_COMPREHENSION="Reading"),
-		Grades_Reported=list(READING_COMPREHENSION=c(1,2,3,4,5,6,7,8,9,10,11)),
+		Vertical_Scale=list(READING_COMPREHENSION_FALL=TRUE, READING_COMPREHENSION_SPRING=TRUE),
+		Content_Areas_Labels=list(READING_COMPREHENSION_FALL="Reading (Fall)", READING_COMPREHENSION_SPRING="Reading (Spring)"),
+		Grades_Reported=list(READING_COMPREHENSION_FALL=c(1,2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10,11)),
 		Achievement_Level_Labels=list(
 			"1st Quintile"="1st Quintile",
 			"2nd Quintile"="2nd Quintile",

@@ -2301,7 +2301,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year's Growth", "Above Year's Growth")
 SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=c("1st-29th", "30th-70th", "71st-99th"))
+SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st - 29th", "30th - 70th", "71st - 99th"))
 
 SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
 	list(
@@ -2314,12 +2314,17 @@ SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 		Vertical_Scale=list(READING_COMPREHENSION_FALL=TRUE, READING_COMPREHENSION_SPRING=TRUE),
 		Content_Areas_Labels=list(READING_COMPREHENSION_FALL="Reading (Fall)", READING_COMPREHENSION_SPRING="Reading (Spring)"),
 		Grades_Reported=list(READING_COMPREHENSION_FALL=c(2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
+		Projection_Fan_Limits=c(5, 95),
 		Achievement_Level_Labels=list(
 			"1st Quintile"="1st Quintile",
 			"2nd Quintile"="2nd Quintile",
 			"3rd Quintile"="3rd Quintile",
 			"4th Quintile"="4th Quintile",
-			"5th Quintile"="5th Quintile"))
+			"5th Quintile"="5th Quintile"),
+		Growth_Level_Labels=list(
+			"< Year's Growth"="Below Year's Growth",
+			"A Year's Growth"="Year's Growth",
+			"> Year's Growth"="Above Year's Growth"))
 
 
 #########################################################

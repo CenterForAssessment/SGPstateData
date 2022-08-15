@@ -2270,7 +2270,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Bounda
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING_COMPREHENSION_FALL=list(
-			GRADE_1=c(264,333,385,466),
+#			GRADE_1=c(264,333,385,466),
 			GRADE_2=c(328,385,440,519),
 			GRADE_3=c(427,475,525,564),
 			GRADE_4=c(475,528,592,663),
@@ -2291,8 +2291,8 @@ SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(602,649,686,746),
 			GRADE_8=c(615,670,710,780),
 			GRADE_9=c(606,670,736,819),
-			GRADE_10=c(578,670,740,811),
-			GRADE_11=c(522,617,677,780)))
+			GRADE_10=c(578,670,740,811)))#,
+#			GRADE_11=c(522,617,677,780)))
 
 SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -2301,7 +2301,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year's Growth", "Above Year's Growth")
 SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st-29th", "30th-70th", "71st-99th"))
+SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=c("1st-29th", "30th-70th", "71st-99th"))
 
 SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
 	list(
@@ -2313,7 +2313,7 @@ SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale=list(READING_COMPREHENSION_FALL=TRUE, READING_COMPREHENSION_SPRING=TRUE),
 		Content_Areas_Labels=list(READING_COMPREHENSION_FALL="Reading (Fall)", READING_COMPREHENSION_SPRING="Reading (Spring)"),
-		Grades_Reported=list(READING_COMPREHENSION_FALL=c(1,2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10,11)),
+		Grades_Reported=list(READING_COMPREHENSION_FALL=c(2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
 		Achievement_Level_Labels=list(
 			"1st Quintile"="1st Quintile",
 			"2nd Quintile"="2nd Quintile",

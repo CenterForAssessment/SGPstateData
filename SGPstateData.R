@@ -745,12 +745,18 @@ SGPstateData[["AZ"]][["Student_Report_Information"]] <-
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
 								MATHEMATICS=as.character(2009:2014),
 								READING=as.character(2009:2014)),
-		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE, ALGEBRA_I=TRUE, GEOMETRY=TRUE, ALGEBRA_II=TRUE),
-		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", READING="Reading"),
-		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
-		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
-		Earliest_Year_Reported=list(ELA='2015', MATHEMATICS='2015', ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
+#		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE, ALGEBRA_I=TRUE, GEOMETRY=TRUE, ALGEBRA_II=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+#		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II", READING="Reading"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+#		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS"),
+		Content_Areas_Domains=list(MATHEMATICS="MATHEMATICS", ELA="ELA"),
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8,9,10,11), ALGEBRA_I="EOCT", GEOMETRY="EOCT", ALGEBRA_II="EOCT"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,11), ELA=c(3,4,5,6,7,8,9,11)),
+#		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","EOCT"), ELA=c("3","4","5","6","7","8","9","10","11")),
+		Grades_Reported_Domains=list(MATHEMATICS=c("3","4","5","6","7","8","9","11"), ELA=c("3","4","5","6","7","8","9","11")),
+#		Earliest_Year_Reported=list(ELA='2015', MATHEMATICS='2015', ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
+		Earliest_Year_Reported=list(ELA='2015', MATHEMATICS='2015'),
 		Achievement_Level_Labels=list(
 			"Min Proficient"="Minimally Proficient",
 			"Part Proficient"="Partially Proficient",
@@ -773,37 +779,39 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 	sgp.target.scale.scores.merge="1_year_lagged_current")
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
-	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
-	ALGEBRA_I_FROM_7=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
-	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
+#	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
+	ELA=c("3", "4", "5", "6", "7", "8", "9"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "0"))
+#	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+#	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+#	ALGEBRA_I_FROM_7=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
+#	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	ELA=rep("ELA", 9),
-	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-	ALGEBRA_I_FROM_7=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
-	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
+	ELA=rep("ELA", 7),
+	MATHEMATICS=rep("ELA", 7))
+#	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+#	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+#	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+#	ALGEBRA_I_FROM_7=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+#	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	ELA=rep(1L, 8),
-	MATHEMATICS=rep(1L, 8),
-	GEOMETRY=rep(1L, 8),
-	ALGEBRA_I=rep(1L, 8),
-	ALGEBRA_I_FROM_7=rep(1L, 7),
-	ALGEBRA_II=rep(1L, 8))
+	ELA=rep(1L, 6),
+	MATHEMATICS=rep(1L, 6))
+#	GEOMETRY=rep(1L, 8),
+#	ALGEBRA_I=rep(1L, 8),
+#	ALGEBRA_I_FROM_7=rep(1L, 7),
+#	ALGEBRA_II=rep(1L, 8))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
 	ELA=3,
-	MATHEMATICS=3,
-	GEOMETRY=3,
-	ALGEBRA_I=3,
-	ALGEBRA_I_FROM_7=3,
-	ALGEBRA_II=3)
+	MATHEMATICS=3)
+#	GEOMETRY=3,
+#	ALGEBRA_I=3,
+#	ALGEBRA_I_FROM_7=3,
+#	ALGEBRA_II=3)
 
-SGPstateData[["AZ"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("MATHEMATICS", "ALGEBRA_I_FROM_7"),
-	PREFERENCE = c(1, 2), key = "SGP_PROJECTION_GROUP")
+#SGPstateData[["AZ"]][['SGP_Progression_Preference']] <- data.table(
+#	SGP_PROJECTION_GROUP = c("MATHEMATICS", "ALGEBRA_I_FROM_7"),
+#	PREFERENCE = c(1, 2), key = "SGP_PROJECTION_GROUP")
 
 load("SGP_Norm_Group_Preference/AZ_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["AZ"]][["SGP_Norm_Group_Preference"]] <- AZ_SGP_Norm_Group_Preference
@@ -2269,29 +2277,30 @@ SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Bounda
 
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 	list(
-		READING_COMPREHENSION=list(
-			GRADE_1.1=c(264,333,385,466),
-			GRADE_1.2=c(264,333,385,466),
-			GRADE_2.1=c(328,385,440,519),
-			GRADE_2.2=c(394,449,493,535),
-			GRADE_3.1=c(427,475,525,564),
-			GRADE_3.2=c(436,497,546,614),
-			GRADE_4.1=c(475,528,592,663),
-			GRADE_4.2=c(498,538,577,636),
-			GRADE_5.1=c(521,560,606,667),
-			GRADE_5.2=c(536,584,630,691),
-			GRADE_6.1=c(549,596,646,713),
-			GRADE_6.2=c(564,607,657,711),
-			GRADE_7.1=c(584,631,672,746),
-			GRADE_7.2=c(602,649,686,746),
-			GRADE_8.1=c(614,652,700,764),
-			GRADE_8.2=c(615,670,710,780),
-			GRADE_9.1=c(615,670,710,780),
-			GRADE_9.2=c(606,670,736,819),
-			GRADE_10.1=c(584,650,708,785),
-			GRADE_10.2=c(578,670,740,811),
-			GRADE_11.1=c(522,617,677,780),
-			GRADE_11.2=c(522,617,677,780)))
+		READING_COMPREHENSION_FALL=list(
+#			GRADE_1=c(264,333,385,466),
+			GRADE_2=c(328,385,440,519),
+			GRADE_3=c(427,475,525,564),
+			GRADE_4=c(475,528,592,663),
+			GRADE_5=c(521,560,606,667),
+			GRADE_6=c(549,596,646,713),
+			GRADE_7=c(584,631,672,746),
+			GRADE_8=c(614,652,700,764),
+			GRADE_9=c(615,670,710,780),
+			GRADE_10=c(584,650,708,785),
+			GRADE_11=c(522,617,677,780)),
+		READING_COMPREHENSION_SPRING=list(
+			GRADE_1=c(264,333,385,466),
+			GRADE_2=c(394,449,493,535),
+			GRADE_3=c(436,497,546,614),
+			GRADE_4=c(498,538,577,636),
+			GRADE_5=c(536,584,630,691),
+			GRADE_6=c(564,607,657,711),
+			GRADE_7=c(602,649,686,746),
+			GRADE_8=c(615,670,710,780),
+			GRADE_9=c(606,670,736,819),
+			GRADE_10=c(578,670,740,811)))#,
+#			GRADE_11=c(522,617,677,780)))
 
 SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 	list(
@@ -2300,7 +2309,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year's Growth", "Above Year's Growth")
 SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st-29th", "30th-70th", "71st-99th"))
+SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st - 29th", "30th - 70th", "71st - 99th"))
 
 SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
 	list(
@@ -2310,15 +2319,20 @@ SGPstateData[["ERB"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(READING_COMPREHENSION=FALSE),
-		Content_Areas_Labels=list(READING_COMPREHENSION="Reading"),
-		Grades_Reported=list(READING_COMPREHENSION=c(1,2,3,4,5,6,7,8,9,10,11)),
+		Vertical_Scale=list(READING_COMPREHENSION_FALL=TRUE, READING_COMPREHENSION_SPRING=TRUE),
+		Content_Areas_Labels=list(READING_COMPREHENSION_FALL="Reading (Fall)", READING_COMPREHENSION_SPRING="Reading (Spring)"),
+		Grades_Reported=list(READING_COMPREHENSION_FALL=c(2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
+		Projection_Fan_Limits=c(5, 95),
 		Achievement_Level_Labels=list(
 			"1st Quintile"="1st Quintile",
 			"2nd Quintile"="2nd Quintile",
 			"3rd Quintile"="3rd Quintile",
 			"4th Quintile"="4th Quintile",
-			"5th Quintile"="5th Quintile"))
+			"5th Quintile"="5th Quintile"),
+		Growth_Level_Labels=list(
+			"< Year's Growth"="Below Year's Growth",
+			"A Year's Growth"="Year's Growth",
+			"> Year's Growth"="Above Year's Growth"))
 
 
 #########################################################
@@ -4261,6 +4275,7 @@ SGPstateData[["IN"]][["SGP_Configuration"]] <- list(
 	percentile.cuts=c(1,35,65,99),
 	sgp.loss.hoss.adjustment="IN",
 	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
 	lagged.percentile.trajectory.values=c(1,35,65,99))
 
 SGPstateData[["IN"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/IN_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
@@ -5607,6 +5622,7 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MI"]][["SGP_Configuration"]] <-
 	list(
 		max.sgp.target.years.forward=1:7,
+		print.other.gp=TRUE,
 		sgp.target.scale.scores.merge="1_year_lagged_current")
 
 

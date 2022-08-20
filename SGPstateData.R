@@ -788,7 +788,7 @@ SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- li
 #	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
 	ELA=rep("ELA", 6),
-	MATHEMATICS=rep("ELA", 6))
+	MATHEMATICS=rep("MATHEMATICS", 6))
 #	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),

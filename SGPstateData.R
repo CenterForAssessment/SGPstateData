@@ -9626,7 +9626,7 @@ SGPstateData[["WV"]][["SGP_Configuration"]] <- list(
 ### WISCONSIN
 #########################################################
 
-load("Knots_Boundaries/WI_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/WI_Knots_Boundaries_2022.Rdata")
 SGPstateData[["WI"]][["Achievement"]][["Knots_Boundaries"]] <- WI_Knots_Boundaries
 
 #SGPstateData[["WI"]][["Achievement"]][["Knots_Boundaries"]] <- list(

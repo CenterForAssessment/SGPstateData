@@ -5623,7 +5623,7 @@ SGPstateData[["MI"]][["SGP_Configuration"]] <-
 	list(
 		max.sgp.target.years.forward=1:7,
 		print.other.gp=TRUE,
-		sgp.target.scale.scores.merge="1_year_lagged_current")
+		sgp.target.scale.scores.merge="all_years_lagged_current")
 
 
 #########################################################

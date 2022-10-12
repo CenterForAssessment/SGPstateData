@@ -5392,11 +5392,11 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2009:2018),
-									ELA=as.character(2009:2018)),
+									MATHEMATICS=as.character(2009:2022),
+									ELA=as.character(2009:2022)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2009:2018),
-									ELA=as.character(2009:2018)),
+									MATHEMATICS=as.character(2009:2022),
+									ELA=as.character(2009:2022)),
 	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
 	Projection_Fan_Limits=c(5, 95),
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible

@@ -7518,6 +7518,7 @@ SGPstateData[["RLI"]][["Student_Report_Information"]] <-
 SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 	list(
 		print.other.gp=TRUE,
+		round.digits=4L,
 		percentile.cuts=50, ### For within window projections
 		SGPt.max.time=TRUE,
 #		max.sgp.target.years.forward=9,

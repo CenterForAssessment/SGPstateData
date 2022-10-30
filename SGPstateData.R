@@ -3708,7 +3708,7 @@ SGPstateData[["ID"]][["Achievement"]][["Knots_Boundaries"]] <-
 #			loss.hoss_9=c(2288, 2795),
 #			loss.hoss_10=c(2288, 2795),
 #			loss.hoss_11=c(2299, 2795)),
-		READING=list( ### WAS READING.2015
+		ELA=list( ### WAS READING.2015
 			boundaries_3=c(1920.0, 2892.0),
 			boundaries_4=c(1948.5, 2950.5),
 			boundaries_5=c(1970.0, 3002.0),
@@ -3776,7 +3776,7 @@ SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 #			GRADE_8=c(207, 214, 229),
 #			GRADE_9=c(211, 220, 235),
 #			GRADE_10=c(211, 220, 235)),
-		READING=list(  ### WAS READING.2015
+		ELA=list(  ### WAS READING.2015
 			GRADE_3=c(2367, 2432, 2490),
 			GRADE_4=c(2416, 2473, 2533),
 			GRADE_5=c(2442, 2502, 2582),
@@ -3794,7 +3794,7 @@ SGPstateData[["ID"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["ID"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["ID"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+SGPstateData[["ID"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
 SGPstateData[["ID"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -3812,7 +3812,7 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 			Contact="support@sde.idaho.gov"),
 #		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #		Content_Areas=c("Language Usage", "Mathematics", "Reading"), ## Changed to SBAC in 2015
-		Content_Areas=c("Mathematics", "Reading"),
+		Content_Areas=c("Mathematics", "ELA"),
 		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
 		Test_Season="Spring",
 		Test_Vendor="SBAC/AIR",
@@ -3822,9 +3822,10 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 	list(
 		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
 #		Content_Areas_Labels=list(LANGUAGE_USAGE="Language", MATHEMATICS="Math", READING="Read"),
-		Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA"),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 #		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
-		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), READING=c(3,4,5,6,7,8,9,10,11)),
+#		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10,11), ELA=c(3,4,5,6,7,8,9,10,11)),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
 		Achievement_Level_Labels=list(
 			"Level 1"="1",
 			"Level 2"="2",
@@ -10568,6 +10569,83 @@ SGPstateData[["WIDA_HI"]][["SGP_Configuration"]] <- list(
 #SGPstateData[["WIDA_HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
 #SGPstateData[["WIDA_HI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
+##########################################################################################
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) IDAHO
+##########################################################################################
+
+SGPstateData[["WIDA_ID"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_ID"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(229, 261, 293, 300, 325, 350),
+		GRADE_1=c(242, 274, 315, 321, 344, 368),
+		GRADE_2=c(254, 289, 329, 335, 359, 383),
+		GRADE_3=c(265, 300, 340, 347, 371, 396),
+		GRADE_4=c(279, 309, 350, 357, 382, 406),
+		GRADE_5=c(286, 317, 358, 365, 390, 415),
+		GRADE_6=c(291, 324, 365, 372, 399, 423),
+		GRADE_7=c(298, 331, 372, 379, 406, 431),
+		GRADE_8=c(304, 337, 378, 385, 412, 438),
+		GRADE_9=c(311, 344, 385, 392, 418, 446),
+		GRADE_10=c(318, 350, 391, 398, 424, 453),
+		GRADE_11=c(325, 356, 397, 404, 429, 459),
+		GRADE_12=c(331, 362, 402, 409, 434, 466)))
+
+SGPstateData[["WIDA_ID"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.2", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient","Proficient",NA))
+
+SGPstateData[["WIDA_ID"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_ID"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_ID"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+
+SGPstateData[["WIDA_ID"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
+	Organization=list(
+		Name="World Class Instructional Design and Assessment",
+		Abbreviation="WIDA",
+		URL="http://www.wida.us/",
+		Contact="1-866-276-7735"),
+	Content_Areas="Reading",
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2017", "2018", "2019", "2020", "2021", "2022"),
+	Test_Season="Spring",
+	Test_Vendor="WIDA")
+
+SGPstateData[["WIDA_ID"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(READING=TRUE),
+	Content_Areas_Labels=list(READING="Reading"),
+	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
+	Achievement_Level_Labels=list(
+		"Entering"="WIDA Level 1",
+		"Emerging"="WIDA Level 2",
+		"Developing"="WIDA Level 3",
+		"Expanding"="WIDA Level 4",
+		"Bridging 4.2"="WIDA Level 4.2",
+		"Bridging 5.0"="WIDA Level 5",
+		"Reaching"="WIDA Level 6"))
+
+SGPstateData[["WIDA_ID"]][["SGP_Configuration"]] <- list(
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	max.sgp.target.years.forward=1:6,
+	sgp.minimum.default.panel.years=2,
+	sgp.projections.max.forward.progression.years=7,
+	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
+	print.sgp.order=TRUE,
+	projcuts.digits=0,
+	percentile.cuts=c(1,35,50,65,99),
+	lagged.percentile.trajectory.values=c(1,35,50,65,99),
+	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
+	sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
+	sgp.target.scale.scores.merge="1_year_lagged_current")
 
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) INDIANA

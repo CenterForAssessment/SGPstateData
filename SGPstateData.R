@@ -3446,6 +3446,7 @@ SGPstateData[["HI"]][["Student_Report_Information"]] <-
 
 SGPstateData[["HI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan=TRUE,
+	print.other.gp=TRUE,
 	output.groups=c("COMPLEX", "SCHOOL"),
 	outputSGP.translate.names=FALSE,
 	state.multiple.year.summary=3,
@@ -3813,14 +3814,14 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 #		Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #		Content_Areas=c("Language Usage", "Mathematics", "Reading"), ## Changed to SBAC in 2015
 		Content_Areas=c("Mathematics", "ELA"),
-		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
-		Test_Vendor="SBAC/AIR",
-		CSEM="SCALE_SCORE_CSEM")
+		Test_Vendor="SBAC/AIR")
+#		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["ID"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
+		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
 #		Content_Areas_Labels=list(LANGUAGE_USAGE="Language", MATHEMATICS="Math", READING="Read"),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 #		Grades_Reported=list(LANGUAGE_USAGE=c(3,4,5,6,7,8,9,10), MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
@@ -3864,11 +3865,30 @@ SGPstateData[["ID"]][["Student_Report_Information"]] <-
 
 #SGPstateData[["ID"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/ID_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
-#SGPstateData[["ID"]][["SGP_Configuration"]] <- list(
-#	gaPlot.back.extrapolated.cuts=list(MATHEMATICS=TRUE, READING=TRUE),
-#	sgp.projections.max.forward.progression.years=FALSE
-#)
+SGPstateData[["ID"]][["SGP_Configuration"]] <- list(
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	sgp.projections.baseline.max.order=2,
+	sgp.projections.lagged.baseline.max.order=2,
+	percentile.cuts=c(1,35,65,99),
+	lagged.percentile.trajectory.values=c(1,35,50,65,99),
+	sgp.loss.hoss.adjustment="ID",
+	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
+	lagged.percentile.trajectory.values=c(1,35,65,99))
 
+SGPstateData[["ID"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
+	ELA=c("3", "4", "5", "6", "7", "8", "10"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "10"))
+SGPstateData[["ID"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
+	ELA=rep("ELA", 7),
+	MATHEMATICS=rep("MATHEMATICS", 7))
+SGPstateData[["ID"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
+	ELA=c(rep(1L, 5), 2),
+	MATHEMATICS=c(rep(1L, 5), 2))
+SGPstateData[["ID"]][["SGP_Configuration"]][["max.forward.projection.sequence"]] <- list(
+	ELA=3,
+	MATHEMATICS=3)
 
 #########################################################
 ### ILLINOIS

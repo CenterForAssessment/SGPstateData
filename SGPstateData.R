@@ -2278,38 +2278,78 @@ SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Bounda
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		READING_COMPREHENSION_FALL=list(
-#			GRADE_1=c(264,333,385,466),
-			GRADE_2=c(328,385,440,519),
-			GRADE_3=c(427,475,525,564),
-			GRADE_4=c(475,528,592,663),
-			GRADE_5=c(521,560,606,667),
-			GRADE_6=c(549,596,646,713),
-			GRADE_7=c(584,631,672,746),
-			GRADE_8=c(614,652,700,764),
-			GRADE_9=c(615,670,710,780),
-			GRADE_10=c(584,650,708,785),
-			GRADE_11=c(522,617,677,780)),
+			GRADE_1=c(335, 650),
+			GRADE_2=c(430, 535),
+			GRADE_3=c(455, 565),
+			GRADE_4=c(480, 570),
+			GRADE_5=c(625, 740),
+			GRADE_6=c(650, 755),
+			GRADE_7=c(650, 760),
+			GRADE_8=c(660, 760),
+			GRADE_9=c(670, 770), ### Grade 9 interpolated from Grades 1 to 8
+			GRADE_10=c(670, 770), ### Grade 10 interpolated from grades 1 to 8
+			GRADE_11=c(680, 780)), ### Grade 11 interpolated from grades 1 to 8
 		READING_COMPREHENSION_SPRING=list(
-			GRADE_1=c(264,333,385,466),
-			GRADE_2=c(394,449,493,535),
-			GRADE_3=c(436,497,546,614),
-			GRADE_4=c(498,538,577,636),
-			GRADE_5=c(536,584,630,691),
-			GRADE_6=c(564,607,657,711),
-			GRADE_7=c(602,649,686,746),
-			GRADE_8=c(615,670,710,780),
-			GRADE_9=c(606,670,736,819),
-			GRADE_10=c(578,670,740,811)))#,
-#			GRADE_11=c(522,617,677,780)))
+			GRADE_1=c(335, 650),
+			GRADE_2=c(430, 535),
+			GRADE_3=c(455, 565),
+			GRADE_4=c(480, 570),
+			GRADE_5=c(625, 740),
+			GRADE_6=c(650, 755),
+			GRADE_7=c(650, 760),
+			GRADE_8=c(660, 760),
+			GRADE_9=c(670,770), ### Grade 9 interpolated from Grades 1 to 8
+			GRADE_10=c(670,770), ### Grade 10 interpolated from grades 1 to 8
+			GRADE_11=c(680,780)), ### Grade 11 interpolated from grades 1 to 8
+		MATHEMATICS_FALL=list(
+			GRADE_1=c(225, 560),
+			GRADE_2=c(335, 520),
+			GRADE_3=c(380, 540),
+			GRADE_4=c(425, 615),
+			GRADE_5=c(510, 645),
+			GRADE_6=c(555, 675),
+			GRADE_7=c(675, 815),
+			GRADE_8=c(720, 845),
+			GRADE_9=c(740, 865), ### Grade 9 interpolated from Grades 1 to 8
+			GRADE_10=c(760, 885), ### Grade 10 interpolated from grades 1 to 8
+			GRADE_11=c(780, 905)), ### Grade 11 interpolated from grades 1 to 8
+		MATHEMATICS_SPRING=list(
+			GRADE_1=c(225, 560),
+			GRADE_2=c(335, 520),
+			GRADE_3=c(380, 540),
+			GRADE_4=c(425, 615),
+			GRADE_5=c(510, 645),
+			GRADE_6=c(555, 675),
+			GRADE_7=c(675, 815),
+			GRADE_8=c(720, 845),
+			GRADE_9=c(740, 865), ### Grade 9 interpolated from Grades 1 to 8
+			GRADE_10=c(760, 885), ### Grade 10 interpolated from grades 1 to 8
+			GRADE_11=c(780, 905)), ### Grade 11 interpolated from grades 1 to 8
+		AUDITORY_COMPREHENSION_FALL=list(
+			GRADE_1=c(115, 240),
+			GRADE_2=c(175, 260)),
+		AUDITORY_COMPREHENSION_SPRING=list(
+			GRADE_1=c(115, 240),
+			GRADE_2=c(175, 260)),
+		WORD_ANALYSIS_FALL=list(
+			GRADE_1=c(130, 225),
+			GRADE_2=c(185, 240)),
+		WORD_ANALYSIS_SPRING=list(
+			GRADE_1=c(130, 225),
+			GRADE_2=c(185, 240)),
+		WRITING_MECHANICS_FALL=list(
+			GRADE_2=c(510, 695)),
+		WRITING_MECHANICS_FALL=list(
+			GRADE_2=c(510, 695)))
 
 SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
 	list(
-	 	Labels=c("1st Quintile", "2nd Quintile", "3rd Quintile", "4th Quintile", "5th Quintile"),
-		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+	 	Labels=c("Does Not Meet Expectations", "Meets Expectations", "Exceeds Expectations"),
+		Proficient=c("Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "Year's Growth", "Above Year's Growth")
+SGPstateData[["ERB"]][["Growth"]][["Levels"]] <- c("Below Year's Growth", "At or Near Year's Growth", "Above Year's Growth")
 SGPstateData[["ERB"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
-SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(30, 70), Labels=list("1st - 29th", "30th - 70th", "71st - 99th"))
+SGPstateData[["ERB"]][["Growth"]][["Cutscores"]] <- list(Cuts=c(23, 76), Labels=list("1st - 22nd", "23rd - 76th", "77th - 99th"))
 
 SGPstateData[["ERB"]][["Assessment_Program_Information"]] <- 
 	list(

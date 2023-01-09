@@ -2277,7 +2277,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Bounda
 
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 	list(
-		READING_COMPREHENSION_FALL=list(
+		READING_COMPREHENSION_CTP_FALL=list(
 			GRADE_1=c(335, 650),
 			GRADE_2=c(430, 535),
 			GRADE_3=c(455, 565),
@@ -2289,7 +2289,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(670, 770), ### Grade 9 interpolated from Grades 1 to 8
 			GRADE_10=c(670, 770), ### Grade 10 interpolated from grades 1 to 8
 			GRADE_11=c(680, 780)), ### Grade 11 interpolated from grades 1 to 8
-		READING_COMPREHENSION_SPRING=list(
+		READING_COMPREHENSION_CTP_SPRING=list(
 			GRADE_1=c(335, 650),
 			GRADE_2=c(430, 535),
 			GRADE_3=c(455, 565),
@@ -2301,7 +2301,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(670,770), ### Grade 9 interpolated from Grades 1 to 8
 			GRADE_10=c(670,770), ### Grade 10 interpolated from grades 1 to 8
 			GRADE_11=c(680,780)), ### Grade 11 interpolated from grades 1 to 8
-		MATHEMATICS_FALL=list(
+		MATHEMATICS_CTP_FALL=list(
 			GRADE_1=c(225, 560),
 			GRADE_2=c(335, 520),
 			GRADE_3=c(380, 540),
@@ -2313,7 +2313,7 @@ SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(740, 865), ### Grade 9 interpolated from Grades 1 to 8
 			GRADE_10=c(760, 885), ### Grade 10 interpolated from grades 1 to 8
 			GRADE_11=c(780, 905)), ### Grade 11 interpolated from grades 1 to 8
-		MATHEMATICS_SPRING=list(
+		MATHEMATICS_CTP_SPRING=list(
 			GRADE_1=c(225, 560),
 			GRADE_2=c(335, 520),
 			GRADE_3=c(380, 540),
@@ -2325,21 +2325,21 @@ SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(740, 865), ### Grade 9 interpolated from Grades 1 to 8
 			GRADE_10=c(760, 885), ### Grade 10 interpolated from grades 1 to 8
 			GRADE_11=c(780, 905)), ### Grade 11 interpolated from grades 1 to 8
-		AUDITORY_COMPREHENSION_FALL=list(
+		AUDITORY_COMPREHENSION_CTP_FALL=list(
 			GRADE_1=c(115, 240),
 			GRADE_2=c(175, 260)),
-		AUDITORY_COMPREHENSION_SPRING=list(
+		AUDITORY_COMPREHENSION_CTP_SPRING=list(
 			GRADE_1=c(115, 240),
 			GRADE_2=c(175, 260)),
-		WORD_ANALYSIS_FALL=list(
+		WORD_ANALYSIS_CTP_FALL=list(
 			GRADE_1=c(130, 225),
 			GRADE_2=c(185, 240)),
-		WORD_ANALYSIS_SPRING=list(
+		WORD_ANALYSIS_CTP_SPRING=list(
 			GRADE_1=c(130, 225),
 			GRADE_2=c(185, 240)),
-		WRITING_MECHANICS_FALL=list(
+		WRITING_MECHANICS_CTP_FALL=list(
 			GRADE_2=c(510, 695)),
-		WRITING_MECHANICS_FALL=list(
+		WRITING_MECHANICS_CTP_FALL=list(
 			GRADE_2=c(510, 695)))
 
 SGPstateData[["ERB"]][["Achievement"]][["Levels"]] <-
@@ -2359,16 +2359,14 @@ SGPstateData[["ERB"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(READING_COMPREHENSION_FALL=TRUE, READING_COMPREHENSION_SPRING=TRUE),
-		Content_Areas_Labels=list(READING_COMPREHENSION_FALL="Reading (Fall)", READING_COMPREHENSION_SPRING="Reading (Spring)"),
-		Grades_Reported=list(READING_COMPREHENSION_FALL=c(2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
+		Vertical_Scale=list(READING_COMPREHENSION_CTP_FALL=TRUE, READING_COMPREHENSION_CTP_SPRING=TRUE),
+		Content_Areas_Labels=list(READING_COMPREHENSION_CTP_FALL="Reading (Fall)", READING_COMPREHENSION_CTP_SPRING="Reading (Spring)"),
+		Grades_Reported=list(READING_COMPREHENSION_CTP_FALL=c(2,3,4,5,6,7,8,9,10,11), READING_COMPREHENSION_CTP_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
 		Projection_Fan_Limits=c(5, 95),
 		Achievement_Level_Labels=list(
-			"1st Quintile"="1st Quintile",
-			"2nd Quintile"="2nd Quintile",
-			"3rd Quintile"="3rd Quintile",
-			"4th Quintile"="4th Quintile",
-			"5th Quintile"="5th Quintile"),
+			"Does Not Meet Expectations"="Does Not Meet",
+			"Meets Expectations"="Meets Expectations",
+			"Exceeds Expectations"="Exceeds Expectations"),
 		Growth_Level_Labels=list(
 			"< Year's Growth"="Below Year's Growth",
 			"A Year's Growth"="Year's Growth",

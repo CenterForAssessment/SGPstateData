@@ -2364,7 +2364,7 @@ SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 		Grades_Reported=list(READING_COMPREHENSION_CTP_FALL=c(2,3,4,5,6,7,8,9,10), READING_COMPREHENSION_CTP_SPRING=c(1,2,3,4,5,6,7,8,9,10)),
 		Projection_Fan_Limits=c(5, 95),
 		Achievement_Level_Labels=list(
-			"Does Not Meet Expectations"="Does Not Meet",
+			"Does Not Meet"="Does Not Meet Expectations",
 			"Meets Expectations"="Meets Expectations",
 			"Exceeds Expectations"="Exceeds Expectations"),
 		Growth_Level_Labels=list(

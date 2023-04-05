@@ -441,6 +441,7 @@ SGPstateData[["AL"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	ELA=2,
 	MATHEMATICS=2)
 SGPstateData[["AL"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- FALSE
+SGPstateData[["AL"]][["SGP_Configuration"]][['sgp.loss.hoss.adjustment']] <- "AL"
 SGPstateData[["AL"]][["SGP_Norm_Group_Preference"]] <- NULL
 
 #SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.sgp"]]
@@ -2961,6 +2962,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
 		sgp.less.than.sgp.cohort.size.return="<1500",
+		sgp.target.scale.scores.merge="all_years_lagged_current",
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		# max.order.for.percentile = 2, # Can't use this until 2017 when CRCT ELA/READING combo is no longer used for EOCT Lits priors
 		grade.projection.sequence = list(

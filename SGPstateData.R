@@ -2837,7 +2837,7 @@ SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
 
 SGPstateData[["GA"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
-SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+SGPstateData[["GA"]][["Growth"]][["System_Type"]] <- "Cohort Referenced" # "Cohort and Baseline Referenced"
 
 SGPstateData[["GA"]][["Growth"]][["Cutscores"]] <-
 	list(
@@ -2957,117 +2957,125 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		return.projection.group.scale.scores = TRUE,
+		rq.method = "qfnb",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
 		sgp.less.than.sgp.cohort.size.return="<1500",
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
-		# max.order.for.percentile = 2, # Can't use this until 2017 when CRCT ELA/READING combo is no longer used for EOCT Lits priors
-		grade.projection.sequence = list(
-			# READING=c("3", "4", "5", "6", "7", "8"),  # Keep as long as READING used as a prior for getKnotsBoundaries function.
-			# ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
-			# ELA=c("3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "EOCT", "EOCT"),
-			# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
-			# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
-			# AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
-			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
-			MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATH_ALG_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # Add GEOMETRY in 2017
-			COORDINATE_ALGEBRA= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ANALYTIC_GEOMETRY = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add ALGEBRA_I to GEOMETRY in 2017
-			GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
-			SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
-			SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
-			PHYSICAL_SCIENCE_BIO=c("7", "8", "EOCT", "EOCT"),
-			SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			US_HISTORY=c("8", "EOCT", "EOCT"),
-			ECONOMICS=c("EOCT", "EOCT")),
-		content_area.projection.sequence = list(
-			# READING=c("READING", "READING", "READING", "READING", "READING", "READING"), # Keep as long as READING used as a prior for getKnotsBoundaries function.
-			# ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
-			# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
-			# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-			# AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
-			GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
-			AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+		max.order.for.percentile = 2
+	)
+		# grade.projection.sequence = list(
+		# 	##  CRCT
+		# 	# READING=c("3", "4", "5", "6", "7", "8"),  # Keep as long as READING used as a prior for getKnotsBoundaries function.
+		# 	# ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
+		# 	# ELA=c("3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "EOCT", "EOCT"),
+		# 	# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
+		# 	# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
+		# 	# AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
+		# 	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+		# 	MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	MATH_ALG_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # Add GEOMETRY in 2017
+		# 	COORDINATE_ALGEBRA= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	ANALYTIC_GEOMETRY = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add ALGEBRA_I to GEOMETRY in 2017
+		# 	GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
+		# 	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
+		# 	SCIENCE_PHYSCI=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	SCIENCE_BIO=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	BIOLOGY_PHYSCI=c("7", "8", "EOCT", "EOCT"),
+		# 	PHYSICAL_SCIENCE_BIO=c("7", "8", "EOCT", "EOCT"),
+		# 	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		# 	US_HISTORY=c("8", "EOCT", "EOCT"),
+		# 	ECONOMICS=c("EOCT", "EOCT")),
+		# content_area.projection.sequence = list(
+		# 	# READING=c("READING", "READING", "READING", "READING", "READING", "READING"), # Keep as long as READING used as a prior for getKnotsBoundaries function.
+		# 	# ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+		# 	# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+		# 	# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+		# 	# AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+		# 	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+		# 	GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
+		# 	AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 
-			MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # CANONICAL for growthAchievementPlot
-			MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
-			MATH_ALG_I =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),# Add GEOMETRY in 2017
-			COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
-			ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
-			ALGEBRA_I= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
-			GEOMETRY = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
+		# 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # CANONICAL for growthAchievementPlot
+		# 	MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+		# 	MATH_ALG_I =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),# Add GEOMETRY in 2017
+		# 	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+		# 	ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+		# 	ALGEBRA_I= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
+		# 	GEOMETRY = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
 
-			SCIENCE = c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
-			SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
-			SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
-			BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # Max 2 Priors
-			PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"), # Max 2 Priors
+		# 	SCIENCE = c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # CANONICAL for growthAchievementPlot
+		# 	SCIENCE_PHYSCI=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"),
+		# 	SCIENCE_BIO=c("SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"),
+		# 	BIOLOGY_PHYSCI=c("SCIENCE", "SCIENCE", "BIOLOGY", "PHYSICAL_SCIENCE"), # Max 2 Priors
+		# 	PHYSICAL_SCIENCE_BIO=c("SCIENCE", "SCIENCE", "PHYSICAL_SCIENCE", "BIOLOGY"), # Max 2 Priors
 
-			SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-			US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-			ECONOMICS=c("US_HISTORY", "ECONOMICS")),
-		year_lags.projection.sequence = list(
-			# READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
-			# ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
-			# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
-			# AMERICAN_LIT=as.integer(c(0, 1, 2)),
-			ELA = c(rep(1L, 6), 2),
-			GRADE_9_LIT =c(rep(1L, 6), 2),
-			AMERICAN_LIT=c(rep(1L, 6), 2),
-			MATHEMATICS=rep(1L, 7), # CANONICAL for growthAchievementPlot
-			MATH_COORD_ALG=rep(1L, 7),
-			MATH_ALG_I = rep(1L, 7),
-			COORDINATE_ALGEBRA=rep(1L, 7),
-			ANALYTIC_GEOMETRY =rep(1L, 7),
-			ALGEBRA_I=rep(1L, 7),
-			GEOMETRY =rep(1L, 7),
-			SCIENCE=rep(1L, 7),
-			SCIENCE_PHYSCI=rep(1L, 7),
-			SCIENCE_BIO=rep(1L, 7),
-			BIOLOGY_PHYSCI=rep(1L, 3),
-			PHYSICAL_SCIENCE_BIO=rep(1L, 3),
-			SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
-			US_HISTORY=as.integer(c(3,1)),
-			ECONOMICS=1L),
-		max.forward.projection.sequence = list(
-			READING=3, # Keep as long as READING used as a prior for getKnotsBoundaries function.
-			ELA=3,
-			GRADE_9_LIT=3,
-			AMERICAN_LIT=3,
-			MATHEMATICS=3, # CANONICAL for growthAchievementPlot
-			MATH_COORD_ALG=3,
-			MATH_ALG_I=3,
-			COORDINATE_ALGEBRA=3,
-			ANALYTIC_GEOMETRY=3,
-			ALGEBRA_I=3,
-			GEOMETRY=3,
-			SCIENCE=3,
-			SCIENCE_PHYSCI=3,
-			SCIENCE_BIO=3,
-			BIOLOGY_PHYSCI=3,
-			PHYSICAL_SCIENCE_BIO=3,
-			SOCIAL_STUDIES=3,
-			US_HISTORY=3,
-			ECONOMICS=3))
+		# 	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+		# 	US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
+		# 	ECONOMICS=c("US_HISTORY", "ECONOMICS")),
+		# year_lags.projection.sequence = list(
+		# 	# READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
+		# 	# ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
+		# 	# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
+		# 	# AMERICAN_LIT=as.integer(c(0, 1, 2)),
+		# 	ELA = c(rep(1L, 6), 2),
+		# 	GRADE_9_LIT =c(rep(1L, 6), 2),
+		# 	AMERICAN_LIT=c(rep(1L, 6), 2),
+		# 	MATHEMATICS=rep(1L, 7), # CANONICAL for growthAchievementPlot
+		# 	MATH_COORD_ALG=rep(1L, 7),
+		# 	MATH_ALG_I = rep(1L, 7),
+		# 	COORDINATE_ALGEBRA=rep(1L, 7),
+		# 	ANALYTIC_GEOMETRY =rep(1L, 7),
+		# 	ALGEBRA_I=rep(1L, 7),
+		# 	GEOMETRY =rep(1L, 7),
+		# 	SCIENCE=rep(1L, 7),
+		# 	SCIENCE_PHYSCI=rep(1L, 7),
+		# 	SCIENCE_BIO=rep(1L, 7),
+		# 	BIOLOGY_PHYSCI=rep(1L, 3),
+		# 	PHYSICAL_SCIENCE_BIO=rep(1L, 3),
+		# 	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
+		# 	US_HISTORY=as.integer(c(3,1)),
+		# 	ECONOMICS=1L),
+		# max.forward.projection.sequence = list(
+		# 	READING=3, # Keep as long as READING used as a prior for getKnotsBoundaries function.
+		# 	ELA=3,
+		# 	GRADE_9_LIT=3,
+		# 	AMERICAN_LIT=3,
+		# 	MATHEMATICS=3, # CANONICAL for growthAchievementPlot
+		# 	MATH_COORD_ALG=3,
+		# 	MATH_ALG_I=3,
+		# 	COORDINATE_ALGEBRA=3,
+		# 	ANALYTIC_GEOMETRY=3,
+		# 	ALGEBRA_I=3,
+		# 	GEOMETRY=3,
+		# 	SCIENCE=3,
+		# 	SCIENCE_PHYSCI=3,
+		# 	SCIENCE_BIO=3,
+		# 	BIOLOGY_PHYSCI=3,
+		# 	PHYSICAL_SCIENCE_BIO=3,
+		# 	SOCIAL_STUDIES=3,
+		# 	US_HISTORY=3,
+		# 	ECONOMICS=3))
 
-SGPstateData[["GA"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
+SGPstateData[["GA"]][["Variable_Name_Lookup"]] <-
+     read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup_2023.csv",
+	          colClasses=c(rep("character", 4), "logical"))
 #load("Baseline_Coefficient_Matrices/GA/GA_Baseline_Matrices.Rdata")
 #SGPstateData[["GA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- GA_Baseline_Matrices
 load("SGP_Norm_Group_Preference/GA_SGP_Norm_Group_Preference.Rdata")
 SGPstateData[["GA"]][["SGP_Norm_Group_Preference"]] <- GA_SGP_Norm_Group_Preference
 
-SGPstateData[["GA"]][['SGP_Progression_Preference']] <- data.table(
-	SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "PHYSICAL_SCIENCE_BIO", "MATH_ALG_I", "MATH_COORD_ALG"),
-	PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
+SGPstateData[["GA"]][['SGP_Progression_Preference']] <-
+	data.table(
+		SGP_PROJECTION_GROUP = c("MATH_ALG_I", "MATH_COORD_ALG"),
+		PREFERENCE = c(1, 2), key = "SGP_PROJECTION_GROUP")
+	# SGP_PROJECTION_GROUP = c("SCIENCE_BIO", "SCIENCE_PHYSCI", "BIOLOGY_PHYSCI", "PHYSICAL_SCIENCE_BIO", "MATH_ALG_I", "MATH_COORD_ALG"),
+	# PREFERENCE = c(1, 2, 1, 2, 1, 2), key = "SGP_PROJECTION_GROUP")
 
 
 #########################################################

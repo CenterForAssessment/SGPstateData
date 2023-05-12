@@ -1,0 +1,15 @@
+names.provided,names.sgp,names.type,names.info,names.output
+VALID_CASE,VALID_CASE,individual_inclusion,Valid Case Identifier,
+SUBJECT_CODE,CONTENT_AREA,content,Content area of assessment,
+SCHOOL_YEAR,YEAR,time,Year (testing year) associated with record,
+GRADE,GRADE,institution_level,Grade level of test taken except EOC,
+SCALE_SCORE,SCALE_SCORE,measure,Scale score,
+SCALE_SCORE_CSEM,SCALE_SCORE_CSEM,measure,Scale score CSEM,
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level associated with student score,
+ID,ID,individual,Unique student identifier,
+YEAR_WITHIN,YEAR_WITHIN,other - time,Administrative time associated with record (integer),
+ADMINISTRATION_ID,ADMINISTRATION_ID,other,DRC Administraion ID,TRUE
+DRC_UNIQUE_STUDENT_ID,DRC_UNIQUE_STUDENT_ID,individual,DRC unique student identifier,TRUE
+RptFlag,RptFlag,other,Reporting Identifier,TRUE
+ID_Invalid,ID_Invalid,other,Invalid student identifier,TRUE
+ID_Dup,ID_Dup,other,Duplicate  student identifier,TRUE

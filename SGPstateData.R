@@ -701,7 +701,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 			Contact="1-800-352-4558"),
 		Content_Areas=c("Mathematics", "Reading", "ELA", "Algebra I", "Geometry", "Algebra II"),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023"),
 #		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
@@ -7284,6 +7284,73 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+
+### NEW MEXICO (for MSR)
+
+load("Knots_Boundaries/NM_MSR_Knots_Boundaries.Rdata")
+load("Cutscores/PARCC/PARCC_Cutscores.Rdata")
+SGPstateData[["NM_MSR"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSR_Knots_Boundaries
+
+SGPstateData[["NM_MSR"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores
+
+SGPstateData[["NM_MSR"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NM_MSR"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NM_MSR"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NM_MSR"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NM_MSR"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="New Mexico State Summative Assessment",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
+		Content_Areas=c("English Language Arts", "Mathematics"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2018", "2019", "2022"),
+		Test_Season="Spring",
+		Test_Vendor="Pearson")
+
+SGPstateData[["NM_MSR"]][["Student_Report_Information"]] <-
+	list(
+		Transformed_Achievement_Level_Cutscores=list(
+			MATHEMATICS=c("2018", "2019", "2022"),
+			ELA=c("2018", "2019", "2022")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+			MATHEMATICS=c("2018", "2019", "2022"),
+			ELA=c("2018", "2019", "2022")),
+		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
+		Content_Areas_Labels=list(
+				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II",
+				INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3",
+				ELA_SS="English Language Arts", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
+				INTEGRATED_MATH_1_SS="Integrated Math 1", INTEGRATED_MATH_2_SS="Integrated Math 2", INTEGRATED_MATH_3_SS="Integrated Math 3"),
+		Content_Areas_Domains=list(
+				ELA="ELA", MATHEMATICS="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS",
+				INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS",
+				ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS",
+				INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
+		Grades_Reported=list(
+			ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8","9","10","11")),
+		Grades_Reported_Domains=list(
+			ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8","9","10","11")),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"))
 
 #########################################################
 ### NEW YORK

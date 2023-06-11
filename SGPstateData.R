@@ -7332,15 +7332,9 @@ SGPstateData[["NM_MSR"]][["Student_Report_Information"]] <-
 			ELA=c("2018", "2019", "2022")),
 		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
 		Content_Areas_Labels=list(
-				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I", ALGEBRA_II="Algebra II",
-				INTEGRATED_MATH_1="Integrated Math 1", INTEGRATED_MATH_2="Integrated Math 2", INTEGRATED_MATH_3="Integrated Math 3",
-				ELA_SS="English Language Arts", MATHEMATICS_SS="Math", GEOMETRY_SS="Geometry", ALGEBRA_I_SS="Algebra I", ALGEBRA_II_SS="Algebra II",
-				INTEGRATED_MATH_1_SS="Integrated Math 1", INTEGRATED_MATH_2_SS="Integrated Math 2", INTEGRATED_MATH_3_SS="Integrated Math 3"),
+				ELA="English Language Arts", MATHEMATICS="Math"), 
 		Content_Areas_Domains=list(
-				ELA="ELA", MATHEMATICS="MATHEMATICS", GEOMETRY="MATHEMATICS", ALGEBRA_I="MATHEMATICS", ALGEBRA_II="MATHEMATICS",
-				INTEGRATED_MATH_1="MATHEMATICS", INTEGRATED_MATH_2="MATHEMATICS", INTEGRATED_MATH_3="MATHEMATICS",
-				ELA_SS="ELA_SS", MATHEMATICS_SS="MATHEMATICS_SS", GEOMETRY_SS="MATHEMATICS_SS", ALGEBRA_I_SS="MATHEMATICS_SS", ALGEBRA_II_SS="MATHEMATICS_SS",
-				INTEGRATED_MATH_1_SS="MATHEMATICS_SS", INTEGRATED_MATH_2_SS="MATHEMATICS_SS", INTEGRATED_MATH_3_SS="MATHEMATICS_SS"),
+				ELA="ELA", MATHEMATICS="MATHEMATICS"), 
 		Grades_Reported=list(
 			ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8","9","10","11")),
 		Grades_Reported_Domains=list(

@@ -10163,7 +10163,7 @@ source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
 # WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 WIDA_CO_Custom_ISR_Function <- source("Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function_pre_cust_trjcts.R")
 
-CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/CDE.png")
+CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/cde_logo_fullColor-hor.png")
 
 # require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(

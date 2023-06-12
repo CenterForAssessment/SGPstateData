@@ -7288,10 +7288,10 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 ### NEW MEXICO (for MSR)
 
 load("Knots_Boundaries/NM_MSR_Knots_Boundaries.Rdata")
-load("Cutscores/PARCC/PARCC_Cutscores.Rdata")
+load("Cutscores/NM_MSR/NM_MSR_Cutscores.Rdata")
 SGPstateData[["NM_MSR"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSR_Knots_Boundaries
 
-SGPstateData[["NM_MSR"]][["Achievement"]][["Cutscores"]] <- PARCC_Cutscores
+SGPstateData[["NM_MSR"]][["Achievement"]][["Cutscores"]] <- NM_MSR_Cutscores
 
 SGPstateData[["NM_MSR"]][["Achievement"]][["Levels"]] <-
 	list(

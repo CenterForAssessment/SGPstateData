@@ -366,23 +366,8 @@ SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 ### ALABAMA
 #########################################################
 
-SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- 
-	list(MATHEMATICS=list(
-		loss.hoss_2=c(275, 700),
-		loss.hoss_3=c(275, 700),
-		loss.hoss_4=c(275, 700),
-		loss.hoss_5=c(300, 710),
-		loss.hoss_6=c(300, 710),
-		loss.hoss_7=c(300, 750),
-		loss.hoss_8=c(300, 780)),
-	ELA=list(
-		loss.hoss_2=c(250, 730),
-		loss.hoss_3=c(250, 780),
-		loss.hoss_4=c(240, 780),
-		loss.hoss_5=c(220, 820),
-		loss.hoss_6=c(200, 800),
-		loss.hoss_7=c(200, 800),
-		loss.hoss_8=c(200, 750)))
+load("Knots_Boundaries/AL_Knots_Boundaries.Rdata")
+SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- AL_Knots_Boundaries
 
 SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(

@@ -366,23 +366,8 @@ SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 ### ALABAMA
 #########################################################
 
-SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- 
-	list(MATHEMATICS=list(
-		loss.hoss_2=c(275, 700),
-		loss.hoss_3=c(275, 700),
-		loss.hoss_4=c(275, 700),
-		loss.hoss_5=c(300, 710),
-		loss.hoss_6=c(300, 710),
-		loss.hoss_7=c(300, 750),
-		loss.hoss_8=c(300, 780)),
-	ELA=list(
-		loss.hoss_2=c(250, 730),
-		loss.hoss_3=c(250, 780),
-		loss.hoss_4=c(240, 780),
-		loss.hoss_5=c(220, 820),
-		loss.hoss_6=c(200, 800),
-		loss.hoss_7=c(200, 800),
-		loss.hoss_8=c(200, 750)))
+load("Knots_Boundaries/AL_Knots_Boundaries.Rdata")
+SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- AL_Knots_Boundaries
 
 SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <- 
 	list(MATHEMATICS=list(
@@ -441,6 +426,7 @@ SGPstateData[["AL"]][["SGP_Configuration"]][["max.forward.projection.sequence"]]
 	ELA=2,
 	MATHEMATICS=2)
 SGPstateData[["AL"]][["SGP_Configuration"]][["sgPlot.show.content_area.progression"]] <- FALSE
+SGPstateData[["AL"]][["SGP_Configuration"]][['sgp.loss.hoss.adjustment']] <- "AL"
 SGPstateData[["AL"]][["SGP_Norm_Group_Preference"]] <- NULL
 
 #SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.provided"]] <- SGPstateData[["AL"]][["Variable_Name_Lookup"]][["names.sgp"]]
@@ -700,7 +686,7 @@ SGPstateData[["AZ"]][["Assessment_Program_Information"]] <-
 			Contact="1-800-352-4558"),
 		Content_Areas=c("Mathematics", "Reading", "ELA", "Algebra I", "Geometry", "Algebra II"),
 #		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
+		Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023"),
 #		Scale_Change=list(ELA="2015", MATHEMATICS="2015", ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015"),
 		Test_Season="Spring",
 		Test_Vendor="AIR")
@@ -2962,6 +2948,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
 		sgp.less.than.sgp.cohort.size.return="<1500",
+		sgp.target.scale.scores.merge="all_years_lagged_current",
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
 		max.order.for.percentile = 2
 	)
@@ -7290,6 +7277,67 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 		Test_Vendor="Pearson",
 		CSEM="SCALE_SCORE_CSEM")
 
+
+### NEW MEXICO (for MSR)
+
+load("Knots_Boundaries/NM_MSR_Knots_Boundaries.Rdata")
+load("Cutscores/NM_MSR/NM_MSR_Cutscores.Rdata")
+SGPstateData[["NM_MSR"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSR_Knots_Boundaries
+
+SGPstateData[["NM_MSR"]][["Achievement"]][["Cutscores"]] <- NM_MSR_Cutscores
+
+SGPstateData[["NM_MSR"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NM_MSR"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NM_MSR"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NM_MSR"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NM_MSR"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="New Mexico State Summative Assessment",
+		Assessment_Abbreviation="PARCC",
+		Organization=list(
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
+		Content_Areas=c("English Language Arts", "Mathematics"),
+		Grades_Tested=c(3,4,5,6,7,8,9,10,11),
+		Assessment_Years=c("2018", "2019", "2022"),
+		Test_Season="Spring",
+		Test_Vendor="Pearson")
+
+SGPstateData[["NM_MSR"]][["Student_Report_Information"]] <-
+	list(
+		Transformed_Achievement_Level_Cutscores=list(
+			MATHEMATICS=c("2018", "2019", "2022"),
+			ELA=c("2018", "2019", "2022")),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+			MATHEMATICS=c("2018", "2019", "2022"),
+			ELA=c("2018", "2019", "2022")),
+		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
+		Content_Areas_Labels=list(
+				ELA="English Language Arts", MATHEMATICS="Math"), 
+		Content_Areas_Domains=list(
+				ELA="ELA", MATHEMATICS="MATHEMATICS"), 
+		Grades_Reported=list(
+			ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8","9","10","11")),
+		Grades_Reported_Domains=list(
+			ELA=c("3","4","5","6","7","8","9","10","11"), MATHEMATICS=c("3","4","5","6","7","8","9","10","11")),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4",
+			"Level 5"="Level 5"))
 
 #########################################################
 ### NEW YORK

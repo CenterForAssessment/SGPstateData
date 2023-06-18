@@ -385,7 +385,23 @@ SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(427, 502, 580),
 		GRADE_6=c(429, 501, 576),
 		GRADE_7=c(425, 500, 581),
-		GRADE_8=c(412, 492, 564)))
+		GRADE_8=c(412, 492, 564)),
+    MATHEMATICS.2023=list(
+		GRADE_2=c(476, 523, 565),
+		GRADE_3=c(479, 530, 581),
+		GRADE_4=c(477, 538, 580),
+		GRADE_5=c(478, 537, 585),
+		GRADE_6=c(470, 541, 585),
+		GRADE_7=c(485, 553, 604),
+		GRADE_8=c(470, 555, 610)),
+    ELA.2023=list(
+		GRADE_2=c(440, 501, 550),
+		GRADE_3=c(431, 496, 553),
+		GRADE_4=c(449, 493, 545),
+		GRADE_5=c(445, 486, 537),
+		GRADE_6=c(444, 502, 543),
+		GRADE_7=c(433, 491, 527),
+		GRADE_8=c(420, 491, 538)))
 	
 SGPstateData[["AL"]][["Achievement"]][["Levels"]] <- 
 	list(

@@ -10104,7 +10104,9 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		URL = "www.schoolview.org",
 		Contact = "303-866-6763"),
 #	Scale_Change = list(READING = "2013"),
-	Assessment_Years = c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
+	Assessment_Years =
+		c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
+		  "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"),
 	Content_Areas = c("READING", "LITERACY"),
 	Grades_Tested =  c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season = "Spring")
@@ -10361,7 +10363,7 @@ SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
 		URL = "https://www.gadoe.org"),
 	Content_Areas = "Reading",
 	Grades_Tested = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Assessment_Years = c("2019", "2020", "2021", "2022"),
+	Assessment_Years = c("2019", "2020", "2021", "2022", "2023"),
 	Test_Season = "Spring",
 	Test_Vendor = "WIDA")
 
@@ -10391,13 +10393,13 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
     #         gp = gpar(fill = 'transparent'))"
     # ),
 	Achievement_Level_Labels = list(
-		"Level 1\nEntering" = "Level 1",
-		"Level 2\nEmerging" = "Level 2",
-		"Level 3\nDeveloping" = "Level 3",
-		"Level 4\nExpanding" = "Level 4",
-		"Level 4\nExpanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
-		"Level 5\nBridging" = "Level 5",
-		"Level 6\nReaching" = "Level 6"),
+		"Level 1 Entering" = "Level 1",
+		"Level 2 Emerging" = "Level 2",
+		"Level 3 Developing" = "Level 3",
+		"Level 4 Expanding" = "Level 4",
+		"Level 4 Expanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
+		"Level 5 Bridging" = "Level 5",
+		"Level 6 Reaching" = "Level 6"),
 	file_remove_pattern = "",
     catalog_name = 
 		"file.path(sgPlot.folder, year_folder, 'All_Schools', paste(i, j, gsub('/', '-', tmp_school_name), 'ACCESS_SGP', year_folder, 'ISR.pdf', sep = '_'))")
@@ -10456,7 +10458,7 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 		# MU.label = "Move Up",
 		# SU.label = "Stay Up",
 		# target.label = "Target")),
-	Report_Title = "Student English Language Proficiency Growth Report 2022",
+	Report_Title = "Student English Language Proficiency Growth Report 2023",
 	Report_Text = Report_Text_ENGLISH,
 	Report_Logo = GaDOE_img,
 	Grid_Objects = list(
@@ -10513,7 +10515,7 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Zero_to_K"]] <- "
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Font_Family"]] <- "Helvetica-Narrow"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Text"]] <- Report_Text_SPANISH
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Title"]] <- 
-                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2022"
+                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2023"
 
 SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
 	sgPlot.year.span = 3,
@@ -10541,13 +10543,13 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
     #         gp = gpar(fill = 'transparent'))"
     # ),
 	Achievement_Level_Labels = list(
-		"1-Nivel\nde entrada" = "Level 1",
-		"2-Nivel\nemergente" = "Level 2",
-		"3-Nivel\nde desarrollo" = "Level 3",
-		"4-Nivel\nde extensi\u{F3}n" = "Level 4",
-		"4-Nivel\nde extensi\u{F3}n" = "Level 4.3",
-		"5-Nivel\nde transformaci\u{F3}n" = "Level 5",
-		"6-Nivel\nde trascendencia" = "Level 6"),
+		"1-Nivel de entrada" = "Level 1",
+		"2-Nivel emergente" = "Level 2",
+		"3-Nivel de desarrollo" = "Level 3",
+		"4-Nivel de extensi\u{F3}n" = "Level 4",
+		"4-Nivel de extensi\u{F3}n" = "Level 4.3",
+		"5-Nivel de transformaci\u{F3}n" = "Level 5",
+		"6-Nivel de trascendencia" = "Level 6"),
 	file_remove_pattern = "",
     catalog_name = 
 		"file.path(sgPlot.folder, year_folder, 'All_Schools', paste(i, j, gsub('/', '-', tmp_school_name), 'ACCESS_SGP', year_folder, 'ISR.pdf', sep = '_'))")

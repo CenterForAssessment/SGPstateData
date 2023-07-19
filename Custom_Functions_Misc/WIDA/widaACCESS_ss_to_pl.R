@@ -671,6 +671,7 @@ wida.access.ss.to.pl.lookup <- data.table::fread(
 12,462.8,466,5.9
 12,466,999,6")
 
+wida.access.ss.to.pl.lookup[,GRADE:=as.character(GRADE)]
 tmp.dt <- wida.access.ss.to.pl.lookup[data.table(GRADE=grade, SCALE_SCORE=scale_score), on=.(GRADE, LOW_SCORE <= SCALE_SCORE, HIGH_SCORE > SCALE_SCORE)]
 return(tmp.dt[['WIDA_ACCESS_PROFICIENCY_LEVEL']])
 }

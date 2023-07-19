@@ -2278,7 +2278,7 @@ load("Knots_Boundaries/ERB_Knots_Boundaries.Rdata")
 SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Boundaries
 
 SGPstateData[["ERB"]][["Achievement"]][["Cutscores"]] <-
-	list(
+	list( ### NOTE: All GRADES indiccated are LEVEL OF THE TEST!!!
 		READING_COMPREHENSION_CTP_FALL=list(
 			GRADE_1=c(335, 650),
 			GRADE_2=c(430, 535),
@@ -10089,6 +10089,7 @@ SGPstateData[["WIDA"]][["Student_Report_Information"]] <- list(
 		"Bridging"="L5",
 		"Reaching"="L6"))
 
+widaACCESS_ss_to_pl <- source("Custom_Functions_Misc/WIDA/widaACCESS_ss_to_pl.R")
 SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
@@ -10096,7 +10097,8 @@ SGPstateData[["WIDA"]][["SGP_Configuration"]] <- list(
 	max.sgp.target.years.forward=5,
 	sgp.projections.max.forward.progression.years=7,
 	return.norm.group.scale.scores=TRUE,
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
+	ss_to_pl_function=widaACCESS_ss_to_pl)
 
 #load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
 #SGPstateData[["WIDA"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices

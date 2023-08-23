@@ -5,6 +5,15 @@ widaACCESS_ss_to_pl <- function(
 
 require(data.table)
 
+### Utility functions
+
+strhead <- function(s,n=1) {
+            if (n < 0) substr(s, 1, nchar(s)+n)
+            else substr(s, 1, n)                
+}
+
+### Lookup table
+
 wida.access.ss.to.pl.lookup <- data.table::fread(
 "GRADE,LOW_SCORE,HIGH_SCORE,WIDA_ACCESS_PROFICIENCY_LEVEL
 0,100,112.9,1

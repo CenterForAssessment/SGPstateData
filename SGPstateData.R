@@ -1790,7 +1790,7 @@ SGPstateData[["CO"]][['SGP_Progression_Preference']] <-
           MATHEMATICS = c("3", "4", "5", "6", "7", "8"), # "EOCT" while ALGEBRA_I in ISRs
           MATHEMATICS_PSAT_9 = "9",
           MATHEMATICS_PSAT_10 = "10",
-          MATHEMATICS_SAT = "11"),
+          MATHEMATICS_SAT = "11"#,
         #   ALGEBRA_I = "EOCT",
         #   GEOMETRY = "EOCT",
         #   INTEGRATED_MATH_1 = "EOCT",

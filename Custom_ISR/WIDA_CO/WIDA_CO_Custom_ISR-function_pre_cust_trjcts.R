@@ -111,19 +111,19 @@
 
         ## Top Border/Banner
         pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
-        grid.rect(gp = gpar(fill = "#006666", col = "#006666"))
+        grid.rect(gp = gpar(fill = "#232c67", col = "#232c67"))
         grid.text(x = 0.05, y = 0.5, tmp_school_name, gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.2), just = "left", default.units = "native")
         popViewport()
 
         pushViewport(custom.isr$Grid_Objects$top.student.name.vp)
-        grid.rect(gp = gpar(fill = "#8FC9C1", col = "#8FC9C1"))
+        grid.rect(gp = gpar(fill = "#235e39", col = "#235e39"))
         grid.text(
             x = 0.075, y = 0.5, paste(FIRST_NAME, " ", LAST_NAME, sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.1), just = "left", default.units = "native"
         )
         popViewport()
         pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
-        grid.rect(gp = gpar(fill = "#339933", col = "#339933"))
+        grid.rect(gp = gpar(fill = "#00953a", col = "#00953a"))
         grid.text(
             x = 0.09, y = 0.5, paste("(", student_number, ")", sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.1), just = "left", default.units = "native"
@@ -143,7 +143,7 @@
 
         ##  Color block 1
         pushViewport(custom.isr$Grid_Objects$color_block_1.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
         popViewport()
 
         ##  Report Text
@@ -156,11 +156,11 @@
 
         ##  Color block 2
         pushViewport(custom.isr$Grid_Objects$color_block_2.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
         popViewport()
 
         pushViewport(custom.isr$Grid_Objects$report.student.name.vp)
-        grid.rect(gp = gpar(fill = "#8FC9C1", col = "#8FC9C1"))
+        grid.rect(gp = gpar(fill = "#235e39", col = "#235e39"))
         grid.text(
             x = 0.05, y = 0.5, paste(FIRST_NAME, " ", LAST_NAME, sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.15), just = "left", default.units = "native"
@@ -172,8 +172,8 @@
         # popViewport()
 
         pushViewport(custom.isr$Grid_Objects$left.border.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
-        grid.text("2022 English Language Proficiency and Student Growth Report",
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
+        grid.text("2023 English Language Proficiency and Student Growth Report",
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
         )
         popViewport()
@@ -300,19 +300,19 @@
 
         ## Top Border/Banner
         pushViewport(custom.isr$Grid_Objects$top.school.name.vp)
-        grid.rect(gp = gpar(fill = "#006666", col = "#006666"))
+        grid.rect(gp = gpar(fill = "#232c67", col = "#232c67"))
         grid.text(x = 0.05, y = 0.5, tmp_school_name, gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.2), just = "left", default.units = "native")
         popViewport()
 
         pushViewport(custom.isr$Grid_Objects$top.student.name.vp)
-        grid.rect(gp = gpar(fill = "#8FC9C1", col = "#8FC9C1"))
+        grid.rect(gp = gpar(fill = "#235e39", col = "#235e39"))
         grid.text(
             x = 0.075, y = 0.5, paste(FIRST_NAME, " ", LAST_NAME, sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.1), just = "left", default.units = "native"
         )
         popViewport()
         pushViewport(custom.isr$Grid_Objects$top.student.id.vp)
-        grid.rect(gp = gpar(fill = "#339933", col = "#339933"))
+        grid.rect(gp = gpar(fill = "#00953a", col = "#00953a"))
         grid.text(
             x = 0.09, y = 0.5, paste("(", student_number, ")", sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.1), just = "left", default.units = "native"
@@ -332,7 +332,7 @@
 
         ##  Color block 1
         pushViewport(custom.isr$Grid_Objects$color_block_1.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
         popViewport()
 
         ##  Report Text
@@ -346,11 +346,11 @@
 
         ##  Color block 2
         pushViewport(custom.isr$Grid_Objects$color_block_2.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
         popViewport()
 
         pushViewport(custom.isr$Grid_Objects$report.student.name.vp)
-        grid.rect(gp = gpar(fill = "#8FC9C1", col = "#8FC9C1"))
+        grid.rect(gp = gpar(fill = "#235e39", col = "#235e39"))
         grid.text(
             x = 0.05, y = 0.5, paste(FIRST_NAME, " ", LAST_NAME, sep = ""),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 1.25), just = "left", default.units = "native"
@@ -362,8 +362,8 @@
         # popViewport()
 
         pushViewport(custom.isr$Grid_Objects$left.border.vp)
-        grid.rect(gp = gpar(fill = sgPlot.header.footer.color, col = sgPlot.header.footer.color))
-        grid.text("2022 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
+        grid.text("2023 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
         )
         popViewport()

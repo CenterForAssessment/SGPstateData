@@ -1628,7 +1628,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <- cmas.cs
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   c(SGPstateData[["CO"]][["Achievement"]][["Cutscores"]],
   	list( ### Official cutscores based upon data from Marie Huchton 9/21. Previous cuts were quantile based placeholder cuts.
-		  ### NOTE: 4th cut is fictious as PSAT9, PSAT10, SAT have only 4 achievement levels.
+		  ### NOTE: 4th cut is fictitious as PSAT9, PSAT10, SAT have only 4 achievement levels.
       ELA_PSAT_9= list(
         GRADE_9 = c(370, 410, 570, 650)),
       ELA_PSAT_10=list(
@@ -1694,10 +1694,10 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			  # "41st to 60th Percentiles"="41 to 60",
 			  # "61st to 80th Percentiles"="61 to 80",
 			  # "81st to 99th Percentiles"="81 to 99"),
-			Content_Areas=c("English Language Arts", "Mathematics", "Algebra I", "Geometry"),
+			Content_Areas=c("English Language Arts", "Mathematics"), # "Algebra I", "Geometry"),
 			Content_Areas.9=c("PSAT 9 ELA", "PSAT 10 ELA", "SAT ELA", "PSAT 9 Math", "PSAT 10 Math", "SAT Math"),
 			Content_Areas_Labels=list(
-				ELA="English Language Arts", MATHEMATICS="Math", GEOMETRY="Geometry", ALGEBRA_I="Algebra I"),
+				ELA="English Language Arts", MATHEMATICS="Math"), # GEOMETRY="Geometry", ALGEBRA_I="Algebra I"),
 			Content_Areas_Labels.9=list(
 				ELA_PSAT_9="ELA", ELA_PSAT_10="ELA", ELA_SAT="ELA",
 				MATHEMATICS_PSAT_9 = "Math", MATHEMATICS_PSAT_10 = "Math", MATHEMATICS_SAT = "Math"),
@@ -1708,21 +1708,20 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			Grade="9" # DON'T INCLUDE "Year" !!!
 		)
 
-  SGPstateData[["CO"]][["SGP_Configuration"]] = list(
-    sgp.cohort.size = 2000,
-    sgp.less.than.sgp.cohort.size.return = "<2000",
-    return.norm.group.scale.scores = TRUE,
-	print.other.gp = TRUE,
-	print.sgp.order = TRUE,
-    arrow.legend.color = c("#CC79A7", "#F0E442", "#56B4E9"), # c("#FD5050", "#FDBF1A", "#07B806"),
-    sgPlot.use.student.id = TRUE,
-    grade.projection.sequence = list(
+    SGPstateData[["CO"]][["SGP_Configuration"]] = list(
+		sgp.cohort.size = 2000,
+		sgp.less.than.sgp.cohort.size.return = "<2000",
+		return.norm.group.scale.scores = TRUE,
+		print.other.gp = TRUE,
+		print.sgp.order = TRUE,
+		arrow.legend.color = c("#CC79A7", "#F0E442", "#56B4E9"), # c("#FD5050", "#FDBF1A", "#07B806"),
+		sgPlot.use.student.id = TRUE,
+		grade.projection.sequence = list(
 			# ELA    =    c("3", "4", "5", "6", "7", "8"),  # No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2018
 			ELA    =    c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			ELA_PSAT_9 =c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			ELA_SAT  =  c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
-
 			# MATHEMATICS=c("3", "4", "5", "6", "7", "8"), # No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
 			MATHEMATICS_PSAT_9 =c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
@@ -1733,33 +1732,31 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			# GEOMETRY  = c("7", "EOCT"),
 			# ALGEBRA_II= c("8", "EOCT"),
 			# INTEGRATED_MATH_1 = c("7", "EOCT"),
-    content_area.projection.sequence = list(
+        content_area.projection.sequence = list(
 			# ELA = rep("ELA", 6),
 			ELA = c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
 			ELA_PSAT_9 =c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
 			ELA_PSAT_10=c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
 			ELA_SAT  =  c(rep("ELA", 6), "ELA_PSAT_9", "ELA_PSAT_10", "ELA_SAT"),
-      # ELA_SAT  =  c(rep("ELA", 4), "ELA_PSAT_10", "ELA_SAT"), #  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2019 - use 2017 9th Grade ELA -- Add ELA_PSAT_9 in 2020
-
+            # ELA_SAT  =  c(rep("ELA", 4), "ELA_PSAT_10", "ELA_SAT"), #  No "ELA_PSAT_9" to "ELA_PSAT_10" available in 2019 - use 2017 9th Grade ELA -- Add ELA_PSAT_9 in 2020
 			# MATHEMATICS = rep("MATHEMATICS", 6), # No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018
 			MATHEMATICS = c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
 			MATHEMATICS_PSAT_9 =c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
 			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_SAT  =  c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			MATHEMATICS_SAT  =  c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_9", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
 			# MATHEMATICS_SAT  =  c("MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),#  No "MATHEMATICS_PSAT_9" to "MATHEMATICS_PSAT_10" available in 2018 - use 2017 Algebra I -- Add MATHEMATICS_PSAT_9 in 2020
-			ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"), #  Keep these for getKnotsBoundaries (historical analyses)
-			GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
-			ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
-			INTEGRATED_MATH_1 = c("MATHEMATICS", "INTEGRATED_MATH_1")),
-    year_lags.projection.sequence = list(
+			# ALGEBRA_I= c(rep("MATHEMATICS", 5), "ALGEBRA_I", "MATHEMATICS_PSAT_9"), #  Keep these for getKnotsBoundaries (historical analyses)
+			# GEOMETRY = c("MATHEMATICS", "GEOMETRY"),
+			# ALGEBRA_II=c("MATHEMATICS", "ALGEBRA_II"),
+			# INTEGRATED_MATH_1 = c("MATHEMATICS", "INTEGRATED_MATH_1")),
+        year_lags.projection.sequence = list(
 			ELA = rep(1L, 8), # rep(1L, 5)
 			ELA_PSAT_9 = rep(1L, 8),
 			ELA_PSAT_10= rep(1L, 8),
 			ELA_SAT  =   rep(1L, 8),
-      # ELA_PSAT_9=rep(1L, 6),
-      # ELA_PSAT_10=1L,
-      # ELA_SAT  =  1L,
-
+            # ELA_PSAT_9=rep(1L, 6),
+            # ELA_PSAT_10=1L,
+            # ELA_SAT  =  1L,
 			MATHEMATICS = rep(1L, 8), # rep(1L, 5)
 			MATHEMATICS_PSAT_9 = rep(1L, 8),
 			MATHEMATICS_PSAT_10= rep(1L, 8),
@@ -1771,14 +1768,16 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 			# MATHEMATICS_PSAT_9=rep(1L, 6),
 			# MATHEMATICS_PSAT_10=1L,
 			# MATHEMATICS_SAT  =  1L)
-  )
+    )
 
-  SGPstateData[["CO"]][['SGP_Progression_Preference']] <- data.table(
-      SGP_PROJECTION_GROUP = c("MATHEMATICS", "MATHEMATICS_PSAT_9", "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-      PREFERENCE = c(1, 2, 3, 1, 1), key = "SGP_PROJECTION_GROUP")
+SGPstateData[["CO"]][['SGP_Progression_Preference']] <-
+    data.table(
+        SGP_PROJECTION_GROUP = c("MATHEMATICS", "MATHEMATICS_PSAT_9", "ALGEBRA_I", "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+        PREFERENCE = c(1, 2, 3, 1, 1),
+		key = "SGP_PROJECTION_GROUP"
+	)
 
-  talc.dates <- c("2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024")
-#   talc.dates <- c("2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022")
+  talc.dates <- c("2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025")
 
   SGPstateData[["CO"]][["Student_Report_Information"]] = list(
       Include_Front_Page_in_School_Catalog = FALSE,
@@ -1788,15 +1787,16 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
           ELA_PSAT_9 = "9",
           ELA_PSAT_10 = "10",
           ELA_SAT = "11",
-          MATHEMATICS = c("3", "4", "5", "6", "7", "8", "EOCT"), # "EOCT" while ALGEBRA_I in ISRs
-          ALGEBRA_I = "EOCT",
-          GEOMETRY = "EOCT",
-          INTEGRATED_MATH_1 = "EOCT",
-          INTEGRATED_MATH_2 = "EOCT",
-          INTEGRATED_MATH_3 = "EOCT",
+          MATHEMATICS = c("3", "4", "5", "6", "7", "8"), # "EOCT" while ALGEBRA_I in ISRs
           MATHEMATICS_PSAT_9 = "9",
           MATHEMATICS_PSAT_10 = "10",
-          MATHEMATICS_SAT = "11"),
+          MATHEMATICS_SAT = "11"#,
+        #   ALGEBRA_I = "EOCT",
+        #   GEOMETRY = "EOCT",
+        #   INTEGRATED_MATH_1 = "EOCT",
+        #   INTEGRATED_MATH_2 = "EOCT",
+        #   INTEGRATED_MATH_3 = "EOCT",
+	  ),
       Proficiency_Label = "benchmark",
       Achievement_Level_Labels = list(
           "Level 1"="Level 1",
@@ -1809,86 +1809,101 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 		  # "Approached"="Level 3",
 		  # "Met Expectations"="Level 4",
 		  # "Exceeded Expectations"="Level 5"),
+    Fan_Extra =
+        c(###   Patterns in fans use `gridpattern` package
+          #   remotes::install_github("trevorld/gridpattern")
+          "gridpattern::grid.pattern(pattern = 'stripe',
+              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+              size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+              gp = gpar(fill = 'transparent'))",
+          "gridpattern::grid.pattern(pattern = 'circle',
+              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+              size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+              gp = gpar(fill = 'transparent'))",
+          "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+              size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+              gp = gpar(fill = 'transparent'))"
+        ),
       Content_Areas_Labels = list(
-          ELA = "ELA",
-          ELA_PSAT_9 = "PSAT 9 ELA",
-          ELA_PSAT_10= "PSAT 10 ELA",
-          ELA_SAT    = "SAT ELA",
+          ELA         = "ELA",
+          ELA_PSAT_9  = "PSAT 9 ELA",
+          ELA_PSAT_10 = "PSAT 10 ELA",
+          ELA_SAT     = "SAT ELA",
           MATHEMATICS = "Mathematics",
-          ALGEBRA_I = "Algebra I",
-          ALGEBRA_II = "Algebra II",
-          GEOMETRY = "Geometry",
-          INTEGRATED_MATH_1 = "Int Math 1",
-          INTEGRATED_MATH_2 = "Int Math 2",
-          INTEGRATED_MATH_3 = "Int Math 3",
-          MATHEMATICS_PSAT_9 = "PSAT 9 Math",
-          MATHEMATICS_PSAT_10= "PSAT 10 Math",
-          MATHEMATICS_SAT    = "SAT Math"),
+          MATHEMATICS_PSAT_9  = "PSAT 9 Math",
+          MATHEMATICS_PSAT_10 = "PSAT 10 Math",
+          MATHEMATICS_SAT     = "SAT Math"),        #   ALGEBRA_I = "Algebra I",
+        #   ALGEBRA_II = "Algebra II",
+        #   GEOMETRY = "Geometry",
+        #   INTEGRATED_MATH_1 = "Int Math 1",
+        #   INTEGRATED_MATH_2 = "Int Math 2",
+        #   INTEGRATED_MATH_3 = "Int Math 3",
       Content_Areas_Domains = list(
-          ELA = "ELA",
-          ELA_PSAT_9 = "ELA",
-          ELA_PSAT_10= "ELA",
-          ELA_SAT    = "ELA",
+          ELA         = "ELA",
+          ELA_PSAT_9  = "ELA",
+          ELA_PSAT_10 = "ELA",
+          ELA_SAT     = "ELA",
           MATHEMATICS = "MATHEMATICS",
-          ALGEBRA_I = "MATHEMATICS",
-          ALGEBRA_II = "MATHEMATICS",
-          GEOMETRY = "MATHEMATICS",
-          INTEGRATED_MATH_1 = "MATHEMATICS",
-          INTEGRATED_MATH_2 = "MATHEMATICS",
-          INTEGRATED_MATH_3 = "MATHEMATICS",
-          MATHEMATICS_PSAT_9 = "MATHEMATICS",
-          MATHEMATICS_PSAT_10= "MATHEMATICS",
-          MATHEMATICS_SAT    = "MATHEMATICS"),
+          MATHEMATICS_PSAT_9  = "MATHEMATICS",
+          MATHEMATICS_PSAT_10 = "MATHEMATICS",
+          MATHEMATICS_SAT     = "MATHEMATICS"),
+        #   ALGEBRA_I = "MATHEMATICS",
+        #   ALGEBRA_II = "MATHEMATICS",
+        #   GEOMETRY = "MATHEMATICS",
+        #   INTEGRATED_MATH_1 = "MATHEMATICS",
+        #   INTEGRATED_MATH_2 = "MATHEMATICS",
+        #   INTEGRATED_MATH_3 = "MATHEMATICS",
       Grades_Reported_Domains = list(
-          ELA = c("3","4","5","6","7","8","9","10","11"),
-          ELA_PSAT_9 = c("3","4","5","6","7","8","9","10","11"),
-          ELA_PSAT_10= c("3","4","5","6","7","8","9","10","11"),
-          ELA_SAT    = c("3","4","5","6","7","8","9","10","11"),
+          ELA         = c("3","4","5","6","7","8","9","10","11"),
+          ELA_PSAT_9  = c("3","4","5","6","7","8","9","10","11"),
+          ELA_PSAT_10 = c("3","4","5","6","7","8","9","10","11"),
+          ELA_SAT     = c("3","4","5","6","7","8","9","10","11"),
           MATHEMATICS = c("3","4","5","6","7","8","9","10","11", "EOCT"),
-          ALGEBRA_I = c("3","4","5","6","7", "EOCT", "9"),
-          ALGEBRA_II = "EOCT",
-          GEOMETRY = c("3","4","5","6","7", "EOCT", "9"),
-          INTEGRATED_MATH_1 = "EOCT",
-          INTEGRATED_MATH_2 = "EOCT",
-          INTEGRATED_MATH_3 = "EOCT",
           MATHEMATICS_PSAT_9 = c("3","4","5","6","7","8","9","10","11", "EOCT"),
           MATHEMATICS_PSAT_10= c("3","4","5","6","7","8","9","10","11", "EOCT"),
           MATHEMATICS_SAT    = c("3","4","5","6","7","8","9","10","11", "EOCT")),
+        #   ALGEBRA_I = c("3","4","5","6","7", "EOCT", "9"),
+        #   ALGEBRA_II = "EOCT",
+        #   GEOMETRY = c("3","4","5","6","7", "EOCT", "9"),
+        #   INTEGRATED_MATH_1 = "EOCT",
+        #   INTEGRATED_MATH_2 = "EOCT",
+        #   INTEGRATED_MATH_3 = "EOCT",
       Vertical_Scale = list(
           ELA=FALSE, ELA_PSAT_9=FALSE, ELA_PSAT_10=FALSE, ELA_SAT=FALSE,
-          MATHEMATICS=FALSE, MATHEMATICS_PSAT_9=FALSE, MATHEMATICS_PSAT_10=FALSE, MATHEMATICS_SAT=FALSE,
-          GEOMETRY=FALSE, ALGEBRA_I=FALSE, ALGEBRA_II=FALSE,
-          INTEGRATED_MATH_1=FALSE, INTEGRATED_MATH_2=FALSE, INTEGRATED_MATH_3=FALSE),
+          MATHEMATICS=FALSE, MATHEMATICS_PSAT_9=FALSE, MATHEMATICS_PSAT_10=FALSE, MATHEMATICS_SAT=FALSE),
+        #   GEOMETRY=FALSE, ALGEBRA_I=FALSE, ALGEBRA_II=FALSE,
+        #   INTEGRATED_MATH_1=FALSE, INTEGRATED_MATH_2=FALSE, INTEGRATED_MATH_3=FALSE),
       Earliest_Year_Reported = list(
           ELA="2015", ELA_PSAT_9 = "2018", ELA_PSAT_10 = "2016", ELA_SAT = "2017",
-          MATHEMATICS="2015", MATHEMATICS_PSAT_9="2018", MATHEMATICS_PSAT_10 = "2016", MATHEMATICS_SAT = "2017",
-          ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015",
-          INTEGRATED_MATH_1="2015", INTEGRATED_MATH_2="2015", INTEGRATED_MATH_3="2015"),
+          MATHEMATICS="2015", MATHEMATICS_PSAT_9="2018", MATHEMATICS_PSAT_10 = "2016", MATHEMATICS_SAT = "2017"),
+        #   ALGEBRA_I="2015", GEOMETRY="2015", ALGEBRA_II="2015",
+        #   INTEGRATED_MATH_1="2015", INTEGRATED_MATH_2="2015", INTEGRATED_MATH_3="2015"),
       Transformed_Achievement_Level_Cutscores = list(
-          ELA    =     talc.dates,
-          ELA_PSAT_9 = talc.dates,
-          ELA_PSAT_10= talc.dates,
-          ELA_SAT    = talc.dates,
+          ELA         = talc.dates,
+          ELA_PSAT_9  = talc.dates,
+          ELA_PSAT_10 = talc.dates,
+          ELA_SAT     = talc.dates,
           MATHEMATICS = talc.dates,
-          ALGEBRA_I  = talc.dates,
-          ALGEBRA_II = talc.dates,
-          GEOMETRY  =  talc.dates,
-          INTEGRATED_MATH_1 = talc.dates,
-          INTEGRATED_MATH_2 = talc.dates,
-          INTEGRATED_MATH_3 = talc.dates,
-          MATHEMATICS_PSAT_9 = talc.dates,
-          MATHEMATICS_PSAT_10= talc.dates,
-          MATHEMATICS_SAT    = talc.dates),
+          MATHEMATICS_PSAT_9  = talc.dates,
+          MATHEMATICS_PSAT_10 = talc.dates,
+          MATHEMATICS_SAT     = talc.dates),
+        #   ALGEBRA_I  = talc.dates,
+        #   ALGEBRA_II = talc.dates,
+        #   GEOMETRY  =  talc.dates,
+        #   INTEGRATED_MATH_1 = talc.dates,
+        #   INTEGRATED_MATH_2 = talc.dates,
+        #   INTEGRATED_MATH_3 = talc.dates,
       Transformed_Achievement_Level_Cutscores_gaPlot = list(
-          ELA    =     talc.dates,
-          ELA_PSAT_9 = talc.dates,
-          ELA_PSAT_10= talc.dates,
-          ELA_SAT   =  talc.dates,
+          ELA         = talc.dates,
+          ELA_PSAT_9  = talc.dates,
+          ELA_PSAT_10 = talc.dates,
+          ELA_SAT     = talc.dates,
           MATHEMATICS = talc.dates,
-          ALGEBRA_I  =  talc.dates,
-          MATHEMATICS_PSAT_9 = talc.dates,
-          MATHEMATICS_PSAT_10= talc.dates,
-          MATHEMATICS_SAT    = talc.dates)
+        #   ALGEBRA_I  =  talc.dates,
+          MATHEMATICS_PSAT_9  = talc.dates,
+          MATHEMATICS_PSAT_10 = talc.dates,
+          MATHEMATICS_SAT     = talc.dates)
   )
 
 SGPstateData[["CO"]][["Variable_Name_Lookup"]] <- SGPstateData[["CO_ORIGINAL"]][["Variable_Name_Lookup"]]
@@ -10171,7 +10186,9 @@ SGPstateData[["WIDA_CO"]][["Assessment_Program_Information"]] <- list(
 		URL = "www.schoolview.org",
 		Contact = "303-866-6763"),
 #	Scale_Change = list(READING = "2013"),
-	Assessment_Years = c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"),
+	Assessment_Years =
+		c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
+		  "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"),
 	Content_Areas = c("READING", "LITERACY"),
 	Grades_Tested =  c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
 	Test_Season = "Spring")
@@ -10230,7 +10247,7 @@ source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
 # WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 WIDA_CO_Custom_ISR_Function <- source("Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function_pre_cust_trjcts.R")
 
-CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/CDE.png")
+CDE.img <- png::readPNG("Custom_ISR/WIDA_CO/cde_logo_fullColor-hor.png")
 
 # require(grid)
 SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
@@ -10428,7 +10445,7 @@ SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
 		URL = "https://www.gadoe.org"),
 	Content_Areas = "Reading",
 	Grades_Tested = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Assessment_Years = c("2019", "2020", "2021", "2022"),
+	Assessment_Years = c("2019", "2020", "2021", "2022", "2023"),
 	Test_Season = "Spring",
 	Test_Vendor = "WIDA")
 
@@ -10458,13 +10475,13 @@ SGPstateData[["WIDA_GA"]][["Student_Report_Information"]] <- list(
     #         gp = gpar(fill = 'transparent'))"
     # ),
 	Achievement_Level_Labels = list(
-		"Level 1\nEntering" = "Level 1",
-		"Level 2\nEmerging" = "Level 2",
-		"Level 3\nDeveloping" = "Level 3",
-		"Level 4\nExpanding" = "Level 4",
-		"Level 4\nExpanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
-		"Level 5\nBridging" = "Level 5",
-		"Level 6\nReaching" = "Level 6"),
+		"Level 1 Entering" = "Level 1",
+		"Level 2 Emerging" = "Level 2",
+		"Level 3 Developing" = "Level 3",
+		"Level 4 Expanding" = "Level 4",
+		"Level 4 Expanding" = "Level 4.3", # Collapse state minimum exit criteria (used for projections, but not shown in ISRs)
+		"Level 5 Bridging" = "Level 5",
+		"Level 6 Reaching" = "Level 6"),
 	file_remove_pattern = "",
     catalog_name = 
 		"file.path(sgPlot.folder, year_folder, 'All_Schools', paste(i, j, gsub('/', '-', tmp_school_name), 'ACCESS_SGP', year_folder, 'ISR.pdf', sep = '_'))")
@@ -10523,7 +10540,7 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 		# MU.label = "Move Up",
 		# SU.label = "Stay Up",
 		# target.label = "Target")),
-	Report_Title = "Student English Language Proficiency Growth Report 2022",
+	Report_Title = "Student English Language Proficiency Growth Report 2023",
 	Report_Text = Report_Text_ENGLISH,
 	Report_Logo = GaDOE_img,
 	Grid_Objects = list(
@@ -10580,7 +10597,7 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Zero_to_K"]] <- "
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Font_Family"]] <- "Helvetica-Narrow"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Text"]] <- Report_Text_SPANISH
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Title"]] <- 
-                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2022"
+                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2023"
 
 SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
 	sgPlot.year.span = 3,
@@ -10608,13 +10625,13 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
     #         gp = gpar(fill = 'transparent'))"
     # ),
 	Achievement_Level_Labels = list(
-		"1-Nivel\nde entrada" = "Level 1",
-		"2-Nivel\nemergente" = "Level 2",
-		"3-Nivel\nde desarrollo" = "Level 3",
-		"4-Nivel\nde extensi\u{F3}n" = "Level 4",
-		"4-Nivel\nde extensi\u{F3}n" = "Level 4.3",
-		"5-Nivel\nde transformaci\u{F3}n" = "Level 5",
-		"6-Nivel\nde trascendencia" = "Level 6"),
+		"1-Nivel de entrada" = "Level 1",
+		"2-Nivel emergente" = "Level 2",
+		"3-Nivel de desarrollo" = "Level 3",
+		"4-Nivel de extensi\u{F3}n" = "Level 4",
+		"4-Nivel de extensi\u{F3}n" = "Level 4.3",
+		"5-Nivel de transformaci\u{F3}n" = "Level 5",
+		"6-Nivel de trascendencia" = "Level 6"),
 	file_remove_pattern = "",
     catalog_name = 
 		"file.path(sgPlot.folder, year_folder, 'All_Schools', paste(i, j, gsub('/', '-', tmp_school_name), 'ACCESS_SGP', year_folder, 'ISR.pdf', sep = '_'))")

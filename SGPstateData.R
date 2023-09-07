@@ -1626,7 +1626,7 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <- cmas.cs
 SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
   c(SGPstateData[["CO"]][["Achievement"]][["Cutscores"]],
   	list( ### Official cutscores based upon data from Marie Huchton 9/21. Previous cuts were quantile based placeholder cuts.
-		  ### NOTE: 4th cut is fictious as PSAT9, PSAT10, SAT have only 4 achievement levels.
+		  ### NOTE: 4th cut is fictitious as PSAT9, PSAT10, SAT have only 4 achievement levels.
       ELA_PSAT_9= list(
         GRADE_9 = c(370, 410, 570, 650)),
       ELA_PSAT_10=list(

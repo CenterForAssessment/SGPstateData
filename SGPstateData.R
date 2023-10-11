@@ -11386,6 +11386,82 @@ SGPstateData[["WIDA_NH_SPANISH"]][["Student_Report_Information"]] <- list(
 
 
 ##########################################################################################
+### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) NEW MEXICO
+##########################################################################################
+
+SGPstateData[["WIDA_NM"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
+
+SGPstateData[["WIDA_NM"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(229, 261, 293, 316, 325, 350),
+		GRADE_1=c(242, 274, 315, 336, 344, 368),
+		GRADE_2=c(254, 289, 329, 350, 359, 383),
+		GRADE_3=c(265, 300, 340, 362, 371, 396),
+		GRADE_4=c(279, 309, 350, 373, 382, 406),
+		GRADE_5=c(286, 317, 358, 381, 390, 415),
+		GRADE_6=c(291, 324, 365, 389, 399, 423),
+		GRADE_7=c(298, 331, 372, 396, 406, 431),
+		GRADE_8=c(304, 337, 378, 402, 412, 438),
+		GRADE_9=c(311, 344, 385, 409, 418, 446),
+		GRADE_10=c(318, 350, 391, 415, 424, 453),
+		GRADE_11=c(325, 356, 397, 420, 429, 459),
+		GRADE_12=c(331, 362, 402, 425, 434, 466)))
+
+SGPstateData[["WIDA_NM"]][["Achievement"]][["Levels"]] <- list(
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.7", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient", NA))
+
+SGPstateData[["WIDA_NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["WIDA_NM"]][["Growth"]][["Cutscores"]] <- list(
+	Cuts=c(35, 66),
+	Labels=c("1st-34th","35th-65th","66th-99th"))
+
+SGPstateData[["WIDA_NM"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
+
+SGPstateData[["WIDA_NM"]][["Assessment_Program_Information"]] <- list(
+	Assessment_Name="World Class Instructional Design and Assessment",
+	Assessment_Abbreviation="WIDA",
+	Organization=list(
+		Name="World Class Instructional Design and Assessment",
+		Abbreviation="WIDA",
+		URL="http://www.wida.us/",
+		Contact="1-866-276-7735"),
+	Content_Areas="Reading",
+	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
+	Assessment_Years=c("2018", "2019", "2020", "2021", "2022", "2023"),
+	Test_Season="Spring",
+	Test_Vendor="WIDA")
+
+SGPstateData[["WIDA_NM"]][["Student_Report_Information"]] <- list(
+	Vertical_Scale=list(READING=TRUE),
+	Content_Areas_Labels=list(READING="Overall ELP"),
+	Grades_Reported=list(READING=c(0,1,2,3,4,5,6,7,8,9,10,11,12)),
+	Achievement_Level_Labels=list(
+		"WIDA Level 1"="WIDA Level 1",
+		"WIDA Level 2"="WIDA Level 2",
+		"WIDA Level 3"="WIDA Level 3",
+		"WIDA Level 4"="WIDA Level 4",
+		"Benchmark"="WIDA Level 4.7",
+		"WIDA Level 5"="WIDA Level 5",
+		"WIDA Level 6"="WIDA Level 6"))
+
+SGPstateData[["WIDA_NM"]][["SGP_Configuration"]] <- list(
+	max.order.for.percentile=2,
+	max.order.for.projection=2,
+	max.sgp.target.years.forward=5,
+	sgp.minimum.default.panel.years=2,
+	sgp.projections.max.forward.progression.years=7,
+	return.norm.group.scale.scores=TRUE,
+	print.other.gp=TRUE,
+	print.sgp.order=TRUE,
+	projcuts.digits=0,
+	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
+	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
+	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
+
+
+##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) RHODE ISLAND
 ##########################################################################################
 
@@ -11444,9 +11520,6 @@ SGPstateData[["WIDA_RI"]][["SGP_Configuration"]] <- list(
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
-
-#SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-#SGPstateData[["WIDA_RI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
 
 ##########################################################################################
@@ -11533,11 +11606,6 @@ SGPstateData[["WIDA_WI"]][["SGP_Configuration"]] <- list(
 	print.other.gp=TRUE,
 	calculate.confidence.intervals=list(confidence.quantiles=c(0.025, 0.975)),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
-
-#load("Baseline_Coefficient_Matrices/WIDA/WIDA_Baseline_Matrices.Rdata")
-#SGPstateData[["WIDA_WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Baseline_Matrices
-#load("Baseline_Coefficient_Matrices/WIDA/WIDA_Cohort_Referenced_Matrices_2017.Rdata")
-#SGPstateData[["WIDA_WI"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
 
 #########################################################

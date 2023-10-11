@@ -11456,6 +11456,7 @@ SGPstateData[["WIDA_NM"]][["SGP_Configuration"]] <- list(
 	print.other.gp=TRUE,
 	print.sgp.order=TRUE,
 	projcuts.digits=0,
+	sgp.target.scale.scores.merge="1_year_lagged_current",
 	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
 	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))

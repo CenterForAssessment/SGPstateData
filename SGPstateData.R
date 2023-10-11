@@ -11449,7 +11449,7 @@ SGPstateData[["WIDA_NM"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA_NM"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
+	max.sgp.target.years.forward=1:5,
 	sgp.minimum.default.panel.years=2,
 	sgp.projections.max.forward.progression.years=7,
 	return.norm.group.scale.scores=TRUE,

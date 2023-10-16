@@ -5495,6 +5495,10 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
 		return.norm.group.scale.scores=TRUE,
+		max.sgp.target.years.forward=1:5,
+		sgp.target.scale.scores.merge="1_year_lagged_current",
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
 		round.digits=6L)
 
 #########################################################
@@ -11447,19 +11451,19 @@ SGPstateData[["WIDA_NM"]][["Student_Report_Information"]] <- list(
 		"WIDA Level 6"="WIDA Level 6"))
 
 SGPstateData[["WIDA_NM"]][["SGP_Configuration"]] <- list(
-	max.order.for.percentile=2,
-	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
-	sgp.minimum.default.panel.years=2,
-	sgp.projections.max.forward.progression.years=7,
-	return.norm.group.scale.scores=TRUE,
-	print.other.gp=TRUE,
-	print.sgp.order=TRUE,
-	projcuts.digits=0,
-	sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('WIDA Level', 1:4)",
-	sgPlot.sgp.targets=c("sgp.projections.baseline", "sgp.projections.lagged.baseline"),
-	sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
-
+		max.order.for.percentile=2,
+		max.order.for.projection=2,
+		max.sgp.target.years.forward=1:5,
+		sgp.projections.max.forward.progression.years=7,
+		sgp.minimum.default.panel.years=2,
+		percentile.cuts=c(1,35,50,66,99),
+		print.other.gp=TRUE,
+		print.sgp.order=TRUE,
+		projcuts.digits=0,
+		sgp.target.scale.scores.merge="1_year_lagged_current",
+		sgPlot.fan.condition="head(Achievement_Levels, 1) %in% paste('Level', 1:4)",
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"))
 
 ##########################################################################################
 ### WORLD CLASS INSTRUCTIONAL DESIGN and ASSESSMENT (WIDA) RHODE ISLAND

@@ -2389,6 +2389,12 @@ SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 			"A Year's Growth"="Year's Growth",
 			"> Year's Growth"="Above Year's Growth"))
 
+SGPstateData[["ERB"]][["SGP_Configuration"]] <-
+	list(
+		rq.method="fn",
+		sgp.minimum.default.panel.years=2
+	)
+
 
 #########################################################
 ### GUATEMALA/GUA

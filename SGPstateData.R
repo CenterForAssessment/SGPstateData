@@ -2393,7 +2393,7 @@ SGPstateData[["ERB"]][["SGP_Configuration"]] <-
 	list(
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		round.digits=6L
+		round.digits=4L
 	)
 
 

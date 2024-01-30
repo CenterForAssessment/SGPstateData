@@ -2289,6 +2289,7 @@ SGPstateData[["DEMO_COVID"]][["Student_Report_Information"]] <-
 #########################################################
 ### ERB
 #########################################################
+ERB_Utility_Functions <- source("Custom_Functions_Misc/ERB/ERB_Utility_Functions.R")
 load("Knots_Boundaries/ERB_Knots_Boundaries.Rdata")
 SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Boundaries
 
@@ -2393,7 +2394,8 @@ SGPstateData[["ERB"]][["SGP_Configuration"]] <-
 	list(
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		round.digits=4L
+		round.digits=4L,
+		erb.utility.functions=ERB_Utility_Functions
 	)
 
 

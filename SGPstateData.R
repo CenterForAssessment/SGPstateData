@@ -2394,7 +2394,7 @@ SGPstateData[["ERB"]][["SGP_Configuration"]] <-
 	list(
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		round.digits=4L,
+		round.digits=3L,
 		erb.utility.functions=ERB_Utility_Functions
 	)
 
@@ -5504,7 +5504,8 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
 		return.norm.group.scale.scores=TRUE,
-		max.sgp.target.years.forward=1:6,
+		max.sgp.target.years.forward=1:5,
+		sgp.projections.max.forward.progression.years=5,
 		sgp.target.scale.scores.merge="1_year_lagged_current",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),

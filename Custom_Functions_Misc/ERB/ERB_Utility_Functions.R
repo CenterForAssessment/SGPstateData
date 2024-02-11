@@ -54,9 +54,9 @@ function(state,
     }
     if (length(tmp.list)==1L) tmp.all <- tmp.list[[1]] else tmp.all <- rbindlist(tmp.list)
     tmp.final <- csem_table[tmp.all, on=c("CONTENT_AREA_CSEM_LABEL", "GRADE", "MODALITY", "DIFFICULTY", "SCALE_SCORE")]
-    tmp.final[,ID:=paste(ID, MODALITY, DIFFICULTY, sep="_")][,c("MODALITY", "DIFFICULTY"):=NULL]
+    tmp.final[,ID:=paste(ID, MODALITY, DIFFICULTY, sep="_")]
     
-    return(tmp.final[,c("VALID_CASE", "CONTENT_AREA", "YEAR", "ID", "GRADE", "SCALE_SCORE", "SCALE_SCORE_CSEM"), with=FALSE])
+    return(tmp.final[,c("VALID_CASE", "CONTENT_AREA", "YEAR", "ID", "GRADE", "SCALE_SCORE", "SCALE_SCORE_CSEM", "MODALITY", "DIFFICULTY", "CONTENT_AREA_CSEM_LABEL"), with=FALSE])
 } ### END createSGPLookupTable
 
 ,

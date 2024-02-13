@@ -5506,6 +5506,7 @@ SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		return.norm.group.scale.scores=TRUE,
 		max.sgp.target.years.forward=1:5,
 		sgp.projections.max.forward.progression.years=5,
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.target.scale.scores.merge="1_year_lagged_current",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 		round.digits=6L)

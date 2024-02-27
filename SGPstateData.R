@@ -2289,6 +2289,7 @@ SGPstateData[["DEMO_COVID"]][["Student_Report_Information"]] <-
 #########################################################
 ### ERB
 #########################################################
+ERB_Utility_Functions <- source("Custom_Functions_Misc/ERB/ERB_Utility_Functions.R")
 load("Knots_Boundaries/ERB_Knots_Boundaries.Rdata")
 SGPstateData[["ERB"]][["Achievement"]][["Knots_Boundaries"]] <- ERB_Knots_Boundaries
 
@@ -2388,6 +2389,14 @@ SGPstateData[["ERB"]][["Student_Report_Information"]] <-
 			"< Year's Growth"="Below Year's Growth",
 			"A Year's Growth"="Year's Growth",
 			"> Year's Growth"="Above Year's Growth"))
+
+SGPstateData[["ERB"]][["SGP_Configuration"]] <-
+	list(
+		rq.method="fn",
+		sgp.minimum.default.panel.years=2,
+		round.digits=3L,
+		erb.utility.functions=ERB_Utility_Functions
+	)
 
 
 #########################################################
@@ -5495,10 +5504,11 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
 		return.norm.group.scale.scores=TRUE,
-		max.sgp.target.years.forward=1:6,
+		max.sgp.target.years.forward=1:5,
+		sgp.projections.max.forward.progression.years=5,
+		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.target.scale.scores.merge="1_year_lagged_current",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
-		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU"),
 		round.digits=6L)
 
 #########################################################
@@ -11472,11 +11482,25 @@ SGPstateData[["WIDA_NM"]][["SGP_Configuration"]] <- list(
 
 SGPstateData[["WIDA_RI"]][["Achievement"]][["Knots_Boundaries"]] <- WIDA_Knots_Boundaries
 
-SGPstateData[["WIDA_RI"]][["Achievement"]][["Cutscores"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Cutscores"]]
+SGPstateData[["WIDA_RI"]][["Achievement"]][["Cutscores"]] <- list(
+	READING=list(
+		GRADE_0=c(229, 261, 293, 319, 325, 350),
+		GRADE_1=c(242, 274, 315, 339, 344, 368),
+		GRADE_2=c(254, 289, 329, 353, 359, 383),
+		GRADE_3=c(265, 300, 340, 365, 371, 396),
+		GRADE_4=c(279, 309, 350, 376, 382, 406),
+		GRADE_5=c(286, 317, 358, 384, 390, 415),
+		GRADE_6=c(291, 324, 365, 393, 399, 423),
+		GRADE_7=c(298, 331, 372, 400, 406, 431),
+		GRADE_8=c(304, 337, 378, 406, 412, 438),
+		GRADE_9=c(311, 344, 385, 412, 418, 446),
+		GRADE_10=c(318, 350, 391, 418, 424, 453),
+		GRADE_11=c(325, 356, 397, 423, 429, 459),
+		GRADE_12=c(331, 362, 402, 428, 434, 466)))
 
 SGPstateData[["WIDA_RI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
-	Proficient=c("Not Proficient","Not Proficient","Not Proficient","Not Proficient","Proficient","Proficient",NA))
+	Labels=c("WIDA Level 1", "WIDA Level 2", "WIDA Level 3", "WIDA Level 4", "WIDA Level 4.8", "WIDA Level 5", "WIDA Level 6", "NO SCORE"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient", NA))
 
 SGPstateData[["WIDA_RI"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
@@ -11496,7 +11520,7 @@ SGPstateData[["WIDA_RI"]][["Assessment_Program_Information"]] <- list(
 		Contact="1-866-276-7735"),
 	Content_Areas="Reading",
 	Grades_Tested=c(0,1,2,3,4,5,6,7,8,9,10,11,12),
-	Assessment_Years=c("2011", "2012", "2013", "2014", "2015", "2016", "2017"),
+	Assessment_Years=c("2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"),
 	Test_Season="Spring",
 	Test_Vendor="WIDA")
 
@@ -11509,13 +11533,14 @@ SGPstateData[["WIDA_RI"]][["Student_Report_Information"]] <- list(
 		"Emerging"="WIDA Level 2",
 		"Developing"="WIDA Level 3",
 		"Expanding"="WIDA Level 4",
+		"Benchmark"="WIDA Level 4.8",
     	"Bridging"="WIDA Level 5",
     	"Reaching"="WIDA Level 6"))
 
 SGPstateData[["WIDA_RI"]][["SGP_Configuration"]] <- list(
 	max.order.for.percentile=2,
 	max.order.for.projection=2,
-	max.sgp.target.years.forward=5,
+	max.sgp.target.years.forward=1:6,
 	sgp.minimum.default.panel.years=2,
 	sgp.projections.max.forward.progression.years=7,
 	return.norm.group.scale.scores=TRUE,

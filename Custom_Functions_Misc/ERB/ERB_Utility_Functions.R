@@ -69,7 +69,7 @@ function(state,
 }, ### END createSGPLookupTable
 
 
-get.csem.lookup = 
+getCSEMLookup = 
 function(SCALE_SCORE,
         CSEM
 ) {

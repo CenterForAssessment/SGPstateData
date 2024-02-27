@@ -1,4 +1,5 @@
-`createSGPLookupTable` <- 
+list(
+createSGPLookupTable = 
 function(state,
     sgp.config,
     csem_table,
@@ -65,10 +66,10 @@ function(state,
     }
 
     return(tmp.data.subsets.list)
-} ### END createSGPLookupTable
+}, ### END createSGPLookupTable
 
 
-`get.csem.lookup` <- 
+get.csem.lookup = 
 function(SCALE_SCORE,
         CSEM
 ) {
@@ -82,3 +83,4 @@ function(SCALE_SCORE,
 
         return(my.tmp)
 } ### END get.csem.lookup 
+)

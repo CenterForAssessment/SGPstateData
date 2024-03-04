@@ -2974,7 +2974,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		return.projection.group.scale.scores = TRUE,
-		rq.method = "qfnb",
+		rq.method = "fn",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)

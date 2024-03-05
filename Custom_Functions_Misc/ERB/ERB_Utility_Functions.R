@@ -20,15 +20,16 @@ function(state,
     }
 
     permutation_subsets <- function(tmp.dt.combos.list) {
-        tmp.list <- list()
+        tmp.list <- tmp.list.wo.grade <- list()
         for (grade.iter in names(tmp.dt.combos.list)) {
             tmp.grades <- unlist(strsplit(grade.iter, "_"))
             tmp.grid <- as.data.table(expand.grid(which(tmp.dt.combos.list[[grade.iter]]$GRADE==tmp.grades[1]), which(tmp.dt.combos.list[[grade.iter]]$GRADE==tmp.grades[2])))
             for (row.iter in seq(nrow(tmp.grid))) {
                 tmp.list[[grade.iter]][[row.iter]] <- tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence]
+                tmp.list.wo.grade[[grade.iter]][[row.iter]] <- tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence][,GRADE:=NULL]
             }
         }
-        return(tmp.list)
+        return(list(Permutation_Tables=unlist(tmp.list, recursive=FALSE), Unique_Permutation_Tables_WO_Grade=unique(unlist(tmp.list.wo.grade, recursive=FALSE))))
     }
 
     ### Create table with all scale score permutations 
@@ -60,11 +61,12 @@ function(state,
     ### Create permutation subsets
     tmp.data.subsets.list <- list()
     tmp.permutation.subsets <- permutation_subsets(tmp.dt.combos.list)
-    for (permutations.iter in seq(max(sapply(tmp.permutation.subsets, function(x) length(x))))) {
-            subset.list <- rbindlist(lapply(tmp.permutation.subsets, function(x) if(!is.null(unlist(x[permutations.iter]))) return(x[[permutations.iter]]) else return(data.table(NULL))))
-            tmp.data.subsets.list[[permutations.iter]] <- tmp.final[subset.list, on=c("CONTENT_AREA_CSEM_LABEL", "GRADE", "MODALITY", "DIFFICULTY", "YEAR")][, c("VALID_CASE", "CONTENT_AREA", "YEAR", "ID", "GRADE", "SCALE_SCORE", "SCALE_SCORE_CSEM", "MODALITY", "DIFFICULTY", "CONTENT_AREA_CSEM_LABEL"), with=FALSE]
+    for (permutations.iter in seq(length(tmp.permutation.subsets[["Unique_Permutation_Tables_WO_Grade"]]))) {
+            tmp.index <- which(sapply(tmp.permutation.subsets[['Permutation_Tables']], function(x) identical(x[,c("CONTENT_AREA_CSEM_LABEL", "MODALITY", "DIFFICULTY", "YEAR"), with=FALSE], tmp.permutation.subsets[['Unique_Permutation_Tables_WO_Grade']][[permutations.iter]])))
+            subset.list <- rbindlist(tmp.permutation.subsets[['Permutation_Tables']][tmp.index])
+            tmp.label <- paste(paste(tmp.permutation.subsets[['Unique_Permutation_Tables_WO_Grade']][[permutations.iter]]$MODALITY, tmp.permutation.subsets[['Unique_Permutation_Tables_WO_Grade']][[permutations.iter]]$DIFFICULTY, sep="/"), collapse="/")
+            tmp.data.subsets.list[[tmp.label]] <- tmp.final[subset.list, on=c("CONTENT_AREA_CSEM_LABEL", "GRADE", "MODALITY", "DIFFICULTY", "YEAR")][, c("VALID_CASE", "CONTENT_AREA", "YEAR", "ID", "GRADE", "SCALE_SCORE", "SCALE_SCORE_CSEM", "MODALITY", "DIFFICULTY", "CONTENT_AREA_CSEM_LABEL"), with=FALSE]
     }
-
     return(tmp.data.subsets.list)
 }, ### END createSGPLookupTable
 

@@ -25,8 +25,8 @@ function(state,
             tmp.grades <- unlist(strsplit(grade.iter, "_"))
             tmp.grid <- as.data.table(expand.grid(which(tmp.dt.combos.list[[grade.iter]]$GRADE==tmp.grades[1]), which(tmp.dt.combos.list[[grade.iter]]$GRADE==tmp.grades[2])))
             for (row.iter in seq(nrow(tmp.grid))) {
-                tmp.list[[grade.iter]][[row.iter]] <- tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence]
-                tmp.list.wo.grade[[grade.iter]][[row.iter]] <- tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence][,GRADE:=NULL]
+                tmp.list[[grade.iter]][[row.iter]] <- data.table(tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence], key=c("CONTENT_AREA_CSEM_LABEL", "YEAR"))
+                tmp.list.wo.grade[[grade.iter]][[row.iter]] <- data.table(tmp.dt.combos.list[[grade.iter]][as.numeric(tmp.grid[row.iter])][,YEAR:=year_sequence][,GRADE:=NULL], key=c("CONTENT_AREA_CSEM_LABEL", "YEAR"))
             }
         }
         return(list(Permutation_Tables=unlist(tmp.list, recursive=FALSE), Unique_Permutation_Tables_WO_Grade=unique(unlist(tmp.list.wo.grade, recursive=FALSE))))
@@ -85,4 +85,4 @@ function(SCALE_SCORE,
 
         return(my.tmp)
 } ### END get.csem.lookup 
-)
+) ### END list

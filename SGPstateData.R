@@ -2394,7 +2394,7 @@ SGPstateData[["ERB"]][["SGP_Configuration"]] <-
 	list(
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		round.digits=3L,
+		round.digits=5L,
 		erb.utility.functions=ERB_Utility_Functions
 	)
 

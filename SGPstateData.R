@@ -2162,7 +2162,7 @@ SGPstateData[["DEMO"]][["SGP_Configuration"]] <- list(
 				return.norm.group.dates=TRUE,
 				return.projection.group.scale.scores=TRUE,
 				return.projection.group.dates=TRUE,
-				sgp.target.scale.scores.merge="1_year_lagged_current",
+				sgp.target.scale.scores.merge="all_year_lagged_current",
 				sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
 				sgPlot.output.format=c("PDF", "PDF_PIECES"),
 				sgp.projections.max.forward.progression.years=FALSE,
@@ -2394,7 +2394,7 @@ SGPstateData[["ERB"]][["SGP_Configuration"]] <-
 	list(
 		rq.method="fn",
 		sgp.minimum.default.panel.years=2,
-		round.digits=3L,
+		round.digits=5L,
 		erb.utility.functions=ERB_Utility_Functions
 	)
 
@@ -5507,8 +5507,8 @@ SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		max.sgp.target.years.forward=1:5,
 		sgp.projections.max.forward.progression.years=5,
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_MUSU"),
-		sgp.target.scale.scores.merge="1_year_lagged_current",
-		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged"),
+		sgp.target.scale.scores.merge="all_year_lagged_current",
+		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged", "sgp.projections.baseline", "sgp.projections.lagged.baseline"),
 		round.digits=6L)
 
 #########################################################

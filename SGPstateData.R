@@ -366,7 +366,8 @@ SGPstateData[["ABQ"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Looku
 ### ALABAMA
 #########################################################
 
-load("Knots_Boundaries/AL_Knots_Boundaries.Rdata")
+#load("Knots_Boundaries/AL_Knots_Boundaries.Rdata")
+load("Knots_Boundaries/AL_Knots_Boundaries_052224.Rdata")
 SGPstateData[["AL"]][["Achievement"]][["Knots_Boundaries"]] <- AL_Knots_Boundaries
 
 SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <- 
@@ -401,7 +402,16 @@ SGPstateData[["AL"]][["Achievement"]][["Cutscores"]] <-
 		GRADE_5=c(445, 486, 537),
 		GRADE_6=c(444, 502, 543),
 		GRADE_7=c(433, 491, 527),
-		GRADE_8=c(420, 491, 538)))
+		GRADE_8=c(420, 491, 538)),
+	ELA.2023_2024=list(
+	    GRADE_2=c(440, 501, 550),
+	    GRADE_3=c(431, 496, 553),
+	    GRADE_4=c(449, 493, 545),
+	    GRADE_5=c(445, 486, 537),
+	    GRADE_6=c(444, 502, 543),
+	    GRADE_7=c(433, 491, 527),
+	    GRADE_8=c(420, 491, 538)))
+
 	
 SGPstateData[["AL"]][["Achievement"]][["Levels"]] <- 
 	list(

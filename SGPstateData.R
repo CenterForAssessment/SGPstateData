@@ -4144,8 +4144,8 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_IL_Knots_Bo
 
 SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation = "PARCC",
+		Assessment_Name = "Illinois Assessment of Readiness",
+		Assessment_Abbreviation = "IAR",
 		Organization = list(
 			Name = "Illinois State Board of Education",
 			Abbreviation = "ISBE",

@@ -2993,7 +2993,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		return.projection.group.scale.scores = TRUE,
-		rq.method = "qfnb",
+		rq.method = "fn",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
@@ -4144,8 +4144,8 @@ SGPstateData[["IL"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_IL_Knots_Bo
 
 SGPstateData[["IL"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
-		Assessment_Abbreviation = "PARCC",
+		Assessment_Name = "Illinois Assessment of Readiness",
+		Assessment_Abbreviation = "IAR",
 		Organization = list(
 			Name = "Illinois State Board of Education",
 			Abbreviation = "ISBE",

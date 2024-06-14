@@ -173,7 +173,7 @@
 
         pushViewport(custom.isr$Grid_Objects$left.border.vp)
         grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
-        grid.text("2023 English Language Proficiency and Student Growth Report",
+        grid.text("2024 English Language Proficiency and Student Growth Report",
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
         )
         popViewport()
@@ -363,7 +363,7 @@
 
         pushViewport(custom.isr$Grid_Objects$left.border.vp)
         grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
-        grid.text("2023 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+        grid.text("2024 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
             gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
         )
         popViewport()

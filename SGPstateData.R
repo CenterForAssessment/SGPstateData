@@ -636,8 +636,7 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <-
 #########################################################
 
 load("Knots_Boundaries/AZ_Knots_Boundaries.Rdata")
-load("Knots_Boundaries/AZ_Knots_Boundaries_PRE_2015.Rdata")
-SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- c(AZ_Knots_Boundaries_PRE_2015, AZ_Knots_Boundaries)
+SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- AZ_Knots_Boundaries
 
 SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -648,6 +647,15 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(3602, 3629, 3663),
 			GRADE_7=c(3629, 3652, 3680),
 			GRADE_8=c(3650, 3673, 3705)),
+		MATHEMATICS.2022=list(
+			GRADE_3=c(3495, 3531, 3573),
+			GRADE_4=c(3530, 3562, 3606),
+			GRADE_5=c(3563, 3595, 3635),
+			GRADE_6=c(3602, 3629, 3663),
+			GRADE_7=c(3629, 3652, 3680),
+			GRADE_8=c(3650, 3673, 3705),
+			GRADE_9=c(422, 428, 434),
+			GRADE_11=c(16, 19, 25)),
 		MATHEMATICS.2010=list(
 			GRADE_3=c(303, 347, 406),
 			GRADE_4=c(331, 366, 416),
@@ -673,6 +681,15 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(2555, 2577, 2606),
 			GRADE_10=c(2567, 2581, 2606),
 			GRADE_11=c(2569, 2585, 2608)),
+		ELA.2022=list(
+			GRADE_3=c(2497, 2509, 2541),
+			GRADE_4=c(2510, 2523, 2559),
+			GRADE_5=c(2520, 2543, 2578),
+			GRADE_6=c(2532, 2553, 2597),
+			GRADE_7=c(2543, 2561, 2600),
+			GRADE_8=c(2551, 2572, 2604),
+			GRADE_9=c(419, 426, 433),
+			GRADE_11=c(15, 19, 25)),
 		READING.2012=list(
 			GRADE_3=c(379, 431, 516),
 			GRADE_4=c(402, 450, 536),

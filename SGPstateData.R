@@ -809,23 +809,23 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 #	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
-	ELA=c("3", "4", "5", "6", "7", "8"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8"))
+	ELA=c("3", "4", "5", "6", "7", "8", "9", "11"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "9", "11"))
 #	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_I_FROM_7=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	ELA=rep("ELA", 6),
-	MATHEMATICS=rep("MATHEMATICS", 6))
+	ELA=rep("ELA", 8),
+	MATHEMATICS=rep("MATHEMATICS", 8))
 #	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_I_FROM_7=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	ELA=rep(1L, 5),
-	MATHEMATICS=rep(1L, 5))
+	ELA=c(rep(1L, 6), 2),
+	MATHEMATICS=c(rep(1L, 6), 2))
 #	GEOMETRY=rep(1L, 8),
 #	ALGEBRA_I=rep(1L, 8),
 #	ALGEBRA_I_FROM_7=rep(1L, 7),

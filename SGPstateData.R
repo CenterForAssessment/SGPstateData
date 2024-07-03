@@ -636,8 +636,7 @@ SGPstateData[["AR"]][["Student_Report_Information"]] <-
 #########################################################
 
 load("Knots_Boundaries/AZ_Knots_Boundaries.Rdata")
-load("Knots_Boundaries/AZ_Knots_Boundaries_PRE_2015.Rdata")
-SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- c(AZ_Knots_Boundaries_PRE_2015, AZ_Knots_Boundaries)
+SGPstateData[["AZ"]][["Achievement"]][["Knots_Boundaries"]] <- AZ_Knots_Boundaries
 
 SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -648,6 +647,15 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(3602, 3629, 3663),
 			GRADE_7=c(3629, 3652, 3680),
 			GRADE_8=c(3650, 3673, 3705)),
+		MATHEMATICS.2022=list(
+			GRADE_3=c(3495, 3531, 3573),
+			GRADE_4=c(3530, 3562, 3606),
+			GRADE_5=c(3563, 3595, 3635),
+			GRADE_6=c(3602, 3629, 3663),
+			GRADE_7=c(3629, 3652, 3680),
+			GRADE_8=c(3650, 3673, 3705),
+			GRADE_9=c(422, 428, 434),
+			GRADE_11=c(16, 19, 25)),
 		MATHEMATICS.2010=list(
 			GRADE_3=c(303, 347, 406),
 			GRADE_4=c(331, 366, 416),
@@ -673,6 +681,15 @@ SGPstateData[["AZ"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_9=c(2555, 2577, 2606),
 			GRADE_10=c(2567, 2581, 2606),
 			GRADE_11=c(2569, 2585, 2608)),
+		ELA.2022=list(
+			GRADE_3=c(2497, 2509, 2541),
+			GRADE_4=c(2510, 2523, 2559),
+			GRADE_5=c(2520, 2543, 2578),
+			GRADE_6=c(2532, 2553, 2597),
+			GRADE_7=c(2543, 2561, 2600),
+			GRADE_8=c(2551, 2572, 2604),
+			GRADE_9=c(419, 426, 433),
+			GRADE_11=c(15, 19, 25)),
 		READING.2012=list(
 			GRADE_3=c(379, 431, 516),
 			GRADE_4=c(402, 450, 536),
@@ -792,23 +809,23 @@ SGPstateData[["AZ"]][['SGP_Configuration']] <- list(
 
 SGPstateData[["AZ"]][["SGP_Configuration"]][["grade.projection.sequence"]] <- list(
 #	ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
-	ELA=c("3", "4", "5", "6", "7", "8"),
-	MATHEMATICS=c("3", "4", "5", "6", "7", "8"))
+	ELA=c("3", "4", "5", "6", "7", "8", "9", "11"),
+	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "9", "11"))
 #	GEOMETRY=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_I_FROM_7=c("3", "4", "5", "6", "7", "EOCT", "EOCT", "EOCT"),
 #	ALGEBRA_II=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <- list(
-	ELA=rep("ELA", 6),
-	MATHEMATICS=rep("MATHEMATICS", 6))
+	ELA=rep("ELA", 8),
+	MATHEMATICS=rep("MATHEMATICS", 8))
 #	MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	GEOMETRY=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_I=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_I_FROM_7=c(rep("MATHEMATICS", 5), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 #	ALGEBRA_II=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"))
 SGPstateData[["AZ"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <- list(
-	ELA=rep(1L, 5),
-	MATHEMATICS=rep(1L, 5))
+	ELA=c(rep(1L, 6), 2),
+	MATHEMATICS=c(rep(1L, 6), 2))
 #	GEOMETRY=rep(1L, 8),
 #	ALGEBRA_I=rep(1L, 8),
 #	ALGEBRA_I_FROM_7=rep(1L, 7),

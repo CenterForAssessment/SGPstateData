@@ -10559,12 +10559,21 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 		level.label = "Level",
 		percentiles.label = "Percentiles",
 		scale_score.label = "Scale Score",
-		grade.label = "Grade")),
+		grade.label = "Grade"
 		# CU.label = "Catch Up",
 		# KU.label = "Keep Up",
 		# MU.label = "Move Up",
 		# SU.label = "Stay Up",
-		# target.label = "Target")),
+		# target.label = "Target",
+	)),
+	Student_Info = list(
+		student.fname = "First Name:",
+		student.lname = "Last Name:",
+		student.id    = "GTID:",
+		student.bdate = "Birth Date:",
+		system.name   = "System Name:",
+		school.name   = "School Name:"
+	),
 	Report_Title = "Student English Language Proficiency Growth Report 2024",
 	Report_Text = Report_Text_ENGLISH,
 	Report_Logo = GaDOE_img,
@@ -10611,13 +10620,22 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Language"]] <- li
     level.label = "Niveles",
     percentiles.label = "Percentiles",
     scale_score.label = "Puntaje\npor escala",
-    grade.label = "Grado escolar"))#,
+    grade.label = "Grado escolar")
     # CU.label = "Alcanzar",
     # KU.label = "Guadar",
     # MU.label = "Avanzar",
     # SU.label = "Mantener",
-    # target.label = "Meta"))
-
+    # target.label = "Meta")
+)
+SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Student_Info"]] <-
+	list(
+		student.fname = "Nombres:",
+		student.lname = "Apellidos:",
+		student.id    = "ID examenes Georgia:",
+		student.bdate = "Fecha nacimiento:",
+		system.name   = "Sistema escolar:",
+		school.name   = "Escuela:"
+	)
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Zero_to_K"]] <- "J"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Font_Family"]] <- "Helvetica-Narrow"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Text"]] <- Report_Text_SPANISH

@@ -52,8 +52,8 @@ de crecimiento altos si su dominio ha mejorado significativamente en comparaci\u
 
 Padres y Tutores: Este informe de crecimiento le ayudar\u{E1} a comprender el desarrollo del ingl\u{E9}s acad\u{E9}mico de su hijo/a y a conversar con los
 maestros de su hijo/a sobre preguntas relacionadas.
-    *   \u{BF}Cu\u{E1}l Cu\u{E1}nto tiempo le tomar\u{E1} a mi hijo/a para dominar el ingl\u{E9}s?
-    *   \u{BF}Cu\u{E1}l Cu\u{E1}nto crecimiento necesita mi hijo/a para alcanzar el nivel de dominio del ingl\u{E9}s para ser reclasificado?
-    *   \u{BF}Cu\u{E1}l Qu\u{E9} puedo hacer en casa para ayudar a mi hijo/a a aprender m\u{E1}s ingl\u{E9}s?
+    *   \u{BF}Cu\u{E1}nto tiempo le tomar\u{E1} a mi hijo/a para dominar el ingl\u{E9}s?
+    *   \u{BF}Cu\u{E1}nto crecimiento necesita mi hijo/a para alcanzar el nivel de dominio del ingl\u{E9}s para ser reclasificado?
+    *   \u{BF}Qu\u{E9} puedo hacer en casa para ayudar a mi hijo/a a aprender m\u{E1}s ingl\u{E9}s?
 Para obtener m\u{E1}s informaci\u{F3}n sobre el crecimiento en el dominio del ingl\u{E9}s acad\u{E9}mico de los estudiantes en Georgia, favor de entrar a la
 p\u{E1}gina web https://bit.ly/GSGM4ELP."

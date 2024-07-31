@@ -30,14 +30,14 @@ SGPstateData[["PARCC"]][["Achievement"]][["Levels"]] <-
 		Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
 		Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["PARCC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+# SGPstateData[["PARCC"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
 
 SGPstateData[["PARCC"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Referenced"
 
-SGPstateData[["PARCC"]][["Growth"]][["Cutscores"]] <-
-	list(
-		Cuts=c(35, 66),
-		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+# SGPstateData[["PARCC"]][["Growth"]][["Cutscores"]] <-
+# 	list(
+# 		Cuts=c(35, 66),
+# 		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
 
 SGPstateData[["PARCC"]][["Assessment_Program_Information"]] <-
 	list(
@@ -2017,6 +2017,27 @@ load("Knots_Boundaries/PARCC_DD_Knots_Boundaries.Rdata")
 SGPstateData[["DD"]] <- SGPstateData[['PARCC']]
 SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]] <- PARCC_DD_Knots_Boundaries
 
+##    Add knots and boundaries for previously untested grade/subjects
+ela.kbs <-
+    SGPstateData[["PARCC"]][["Achievement"]][["Knots_Boundaries"]][["ELA"]]
+math.kbs <-
+    SGPstateData[["PARCC"]][["Achievement"]][["Knots_Boundaries"]][["MATHEMATICS"]]
+
+SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["ELA"]] <-
+    c(SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["ELA"]],
+      ela.kbs[
+        names(ela.kbs)[!names(ela.kbs) %in%
+        names(SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["ELA"]])]
+      ]
+    )
+SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["MATHEMATICS"]] <-
+    c(SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["MATHEMATICS"]],
+      math.kbs[
+        names(math.kbs)[!names(math.kbs) %in%
+        names(SGPstateData[["DD"]][["Achievement"]][["Knots_Boundaries"]][["MATHEMATICS"]])]
+      ]
+    )
+
 SGPstateData[["DD"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name = "Partnership for Assessment of Readiness for College and Careers",
@@ -2032,6 +2053,14 @@ SGPstateData[["DD"]][["Assessment_Program_Information"]] <-
 			Test_Season = "Spring",
 			Test_Vendor = "Pearson",
 			CSEM = "SCALE_SCORE_CSEM")
+
+#     No 9th Grade ELA (2022 - 2024)
+SGPstateData[["DD"]][["SGP_Configuration"]][["grade.projection.sequence"]][["ELA"]] <-
+    c("3", "4", "5", "6", "7", "8", "10")
+SGPstateData[["DD"]][["SGP_Configuration"]][["content_area.projection.sequence"]][["ELA"]] <-
+    rep("ELA", 7)
+SGPstateData[["DD"]][["SGP_Configuration"]][["year_lags.projection.sequence"]][["ELA"]] <-
+    c(rep(1L, 5), 2L)
 
 
 #########################################################
@@ -7249,7 +7278,7 @@ SGPstateData[["NJ"]][["Assessment_Program_Information"]] <-
 			URL = "www.state.nj.us/education",
 			Contact = "877-900-6960"),
 		Content_Areas = c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-		Grades_Tested = c(3, 4, 5, 6, 7, 8, 9, 10, 11),
+		Grades_Tested = c(3, 4, 5, 6, 7, 8, 9),
 		Assessment_Years = c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2",
 		                     "2020_2021.2", "2021_2022.1", "2021_2022.2"), # 2021_2022.1 was NJ Start Strong...
 		Test_Season = "Fall & Spring",

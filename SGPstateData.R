@@ -2793,7 +2793,11 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		MATHEMATICS_II=list(
 			knots_EOCT=c(382, 396, 409, 430),
 			boundaries_EOCT=c(160, 640),
-			loss.hoss_EOCT=c(200, 600)))
+			loss.hoss_EOCT=c(200, 600)),
+		ALGEBRA_CC=list(
+			knots_EOCT=c(385, 460, 500, 535),
+			boundaries_EOCT=c(160, 825),
+			loss.hoss_EOCT=c(200, 785)))
 
 SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -2905,7 +2909,9 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 		MATHEMATICS_I=list(
 			GRADE_EOCT=c(400, 450)),
 		MATHEMATICS_II=list(
-			GRADE_EOCT=c(400, 450)))
+			GRADE_EOCT=c(400, 450)),
+		ALGEBRA_CC=list(
+      		GRADE_EOCT=c(475, 525, 580)))
 
 
 SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-
@@ -3014,16 +3020,16 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 							COORDINATE_ALGEBRA=FALSE, ANALYTIC_GEOMETRY=FALSE, ALGEBRA_I=FALSE, GEOMETRY=FALSE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", ELA="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies",
 			GRADE_9_LIT = "Grade 9 Lit", AMERICAN_LIT = "Amer Lit", US_HISTORY = "US Hist", ECONOMICS = "Economics",
-			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", ALGEBRA_I ="Algebra I", GEOMETRY = "Geometry", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
+			BIOLOGY = "Biology", PHYSICAL_SCIENCE = "Phys Sci", ALGEBRA_I ="Algebra I", GEOMETRY = "Geometry", COORDINATE_ALGEBRA = "Coord Alg", ANALYTIC_GEOMETRY= "Analytic Geom", ALGEBRA_CC="Algebra CC"), #MATHEMATICS_I = "Math I", MATHEMATICS_II = "Math II"),
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 			ELA="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA", # READING="ELA",
 			SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
-			MATHEMATICS="MATHEMATICS", ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", # COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
+			MATHEMATICS="MATHEMATICS", ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_CC = "MATHEMATICS", # COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 		Grades_Reported=list(
 			ELA=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), GRADE_9_LIT = "EOCT", AMERICAN_LIT = "EOCT",
 			SOCIAL_STUDIES=c(3,4,5,6,7,8), US_HISTORY = "EOCT", ECONOMICS = "EOCT",
-			MATHEMATICS=c(3,4,5,6,7,8), ALGEBRA_I ="EOCT", GEOMETRY = "EOCT", COORDINATE_ALGEBRA ="EOCT", ANALYTIC_GEOMETRY = "EOCT",
+			MATHEMATICS=c(3,4,5,6,7,8), ALGEBRA_I ="EOCT", GEOMETRY = "EOCT", COORDINATE_ALGEBRA ="EOCT", ANALYTIC_GEOMETRY = "EOCT", ALGEBRA_CC = "EOCT",
 			SCIENCE=c(3,4,5,6,7,8), PHYSICAL_SCIENCE = "EOCT", BIOLOGY = "EOCT"),
 		Grades_Reported_Domains=list(ELA=c(3:8, "EOCT", "EOCT"), MATHEMATICS=c(3:8, "EOCT", "EOCT"), SCIENCE= c(3:8, "EOCT", "EOCT"), SOCIAL_STUDIES = c(3:8, "EOCT", "EOCT")),
 		Achievement_Level_Labels=list(
@@ -9948,6 +9954,13 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(420, 428, 436),
 		GRADE_10=c(422, 430, 437),
 		GRADE_11=c(15, 20, 28)),
+	READING.2024=list(
+		GRADE_3=c(1511, 1560, 1622),
+		GRADE_4=c(1532, 1581, 1646),
+		GRADE_5=c(1549, 1599, 1658),
+		GRADE_6=c(1570, 1613, 1671),
+		GRADE_7=c(1572, 1623, 1696),
+		GRADE_8=c(1587, 1641, 1715)),
 	MATHEMATICS=list(
 		GRADE_3=c(388, 438, 492),
 		GRADE_4=c(425, 474, 526),
@@ -9973,10 +9986,18 @@ SGPstateData[["WI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_8=c(620, 667, 718),
 		GRADE_9=c(420, 428, 439),
 		GRADE_10=c(422, 430, 437),
-		GRADE_11=c(17, 22, 28)))
+		GRADE_11=c(17, 22, 28)),
+	MATHEMATICS.2024=list(
+		GRADE_3=c(1506, 1548, 1597),
+		GRADE_4=c(1529, 1576, 1625),
+		GRADE_5=c(1558, 1598, 1641),
+		GRADE_6=c(1583, 1619, 1656),
+		GRADE_7=c(1590, 1633, 1684),
+		GRADE_8=c(1603, 1653, 1701)))
 
 SGPstateData[["WI"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+#	Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
+	Labels=c("Developing", "Approaching", "Meeting", "Advanced"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
 SGPstateData[["WI"]][["Growth"]][["Cutscores"]] <- list(
@@ -10001,7 +10022,7 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]] <- list(
 		Contact="800-441-4563"),
 	Content_Areas=c("Mathematics", "Reading"),
 	Grades_Tested=c(3,4,5,6,7,8,10),
-	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"),
+	Assessment_Years=c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024"),
 	Scale_Change=list(MATHEMATICS="2015", READING="2015"),
 #	Test_Season="Fall", 2014 and prior
 	Test_Season="Spring",
@@ -10021,6 +10042,9 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition
 	Achievement_Levels.2015=list(
 		Labels=c("Below Basic", "Basic", "Proficient", "Advanced"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+	Achievement_Levels.2024=list(
+		Labels=c("Developing", "Approaching", "Meeting", "Advanced"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient")),
 	Achievement_Level_Labels=list(
 		"Minimal"="Minimal Performance",
 		"Basic"="Basic",
@@ -10031,12 +10055,19 @@ SGPstateData[["WI"]][["Assessment_Program_Information"]][["Assessment_Transition
 		"Basic"="Basic",
 		"Proficient"="Proficient",
 		"Advanced"="Advanced"),
+	Achievement_Level_Labels.2024=list(
+		"Developing"="Developing",
+		"Approaching"="Approaching",
+		"Meeting"="Meeting",
+		"Advanced"="Advanced"),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
 	Content_Areas_Labels.2015=list(MATHEMATICS="Math", READING="Reading"),
 	Vertical_Scale="No",
 	Vertical_Scale.2015="Yes",
+	Vertical_Scale.2024="Yes",
 	Grades_Tested=c(3,4,5,6,7,8,10),
 	Grades_Tested.2015=c(3,4,5,6,7,8),
+	Grades_Tested.2024=c(3,4,5,6,7,8),
 	Year="2015"
 )
 
@@ -11131,6 +11162,8 @@ SGPstateData[["WIDA_MA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["WIDA_MA"]][["SGP_Configuration"]] <- list(
 		max.order.for.percentile=2,
 		max.order.for.projection=2,
+        	sgp.projections.baseline.max.order=2,
+        	sgp.projections.lagged.baseline.max.order=2,
 		max.sgp.target.years.forward=1:5,
 		sgp.projections.max.forward.progression.years=7,
 		sgp.minimum.default.panel.years=2,

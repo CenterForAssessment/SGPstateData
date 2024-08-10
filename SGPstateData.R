@@ -3051,7 +3051,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		return.projection.group.scale.scores = TRUE,
-#		rq.method = "fn",
+		rq.method = "fn",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1000, ## Decreased to 1000 in 2024 

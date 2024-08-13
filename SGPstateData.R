@@ -8423,26 +8423,34 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <-
 		return.norm.group.scale.scores=TRUE,
 		round.digits=4L,
 		grade.projection.sequence = list(
-			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ELA_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
+#			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			ELA=c("3", "4", "5", "6", "7", "8"),
+#			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			ELA_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8")
+#			MATHEMATICS_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			MATHEMATICS_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")
+		),
 		content_area.projection.sequence = list(
-			ELA=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			ELA_PSAT_10=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			ELA_SAT=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			MATHEMATICS=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_SAT=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
+#			ELA=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+			ELA=rep("ELA", 6),
+#			ELA_PSAT_10=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+#			ELA_SAT=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+#			MATHEMATICS=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			MATHEMATICS=rep("MATHEMATICS", 6)
+#			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+#			MATHEMATICS_SAT=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
+		),
 		year_lags.projection.sequence = list(
-			ELA = c(rep(1L, 5), 2, 1),
-			ELA_PSAT_10=c(rep(1L, 5), 2, 1),
-			ELA_SAT=c(rep(1L, 5), 2, 1),
-			MATHEMATICS=c(rep(1L, 5), 2, 1),
-			MATHEMATICS_PSAT_10=c(rep(1L, 5), 2, 1),
-			MATHEMATICS_SAT=c(rep(1L, 5), 2, 1)
+#			ELA = c(rep(1L, 5), 2, 1),
+			ELA = rep(1L, 5),
+#			ELA_PSAT_10=c(rep(1L, 5), 2, 1),
+#			ELA_SAT=c(rep(1L, 5), 2, 1),
+#			MATHEMATICS=c(rep(1L, 5), 2, 1),
+			MATHEMATICS=rep(1L, 5)
+#			MATHEMATICS_PSAT_10=c(rep(1L, 5), 2, 1),
+#			MATHEMATICS_SAT=c(rep(1L, 5), 2, 1)
 		)
 	)
 

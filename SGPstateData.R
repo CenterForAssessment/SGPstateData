@@ -2818,7 +2818,7 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_EOCT=c(382, 396, 409, 430),
 			boundaries_EOCT=c(160, 640),
 			loss.hoss_EOCT=c(200, 600)),
-		ALGEBRA_CC=list(
+		ALGEBRA_CC.2024=list(
 			knots_EOCT=c(385, 460, 500, 535),
 			boundaries_EOCT=c(160, 825),
 			loss.hoss_EOCT=c(200, 785)))
@@ -2833,12 +2833,18 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_7=c(800, 850),
 			GRADE_8=c(800, 850)),
 		MATHEMATICS.2015=list(
-			GRADE_3=c(475, 525, 580),
-			GRADE_4=c(475, 525, 585),
-			GRADE_5=c(475, 525, 580),
-			GRADE_6=c(475, 525, 580),
-			GRADE_7=c(475, 525, 580),
-			GRADE_8=c(475, 525, 579)),
+#			GRADE_3=c(475, 525, 580), Level 3/4 cutscore updated for 2024
+			GRADE_3=c(475, 525, 575),
+#			GRADE_4=c(475, 525, 585),
+			GRADE_4=c(475, 525, 577),
+#			GRADE_5=c(475, 525, 580),
+			GRADE_5=c(475, 525, 578),
+#			GRADE_6=c(475, 525, 580),
+			GRADE_6=c(475, 525, 578),
+#			GRADE_7=c(475, 525, 580),
+			GRADE_7=c(475, 525, 590),
+#			GRADE_8=c(475, 525, 579)),
+			GRADE_8=c(475, 525, 571)),
 		READING=list(
 			GRADE_3=c(800, 850),
 			GRADE_4=c(800, 850),
@@ -2934,7 +2940,7 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_EOCT=c(400, 450)),
 		MATHEMATICS_II=list(
 			GRADE_EOCT=c(400, 450)),
-		ALGEBRA_CC=list(
+		ALGEBRA_CC.2024=list(
       		GRADE_EOCT=c(475, 525, 580)))
 
 
@@ -2967,7 +2973,7 @@ SGPstateData[["GA"]][["Assessment_Program_Information"]] <-
 		Assessment_Abbreviation="Milestones",
 		Content_Areas=c("Mathematics", "ELA", "Science", "Social Studies"),
 		Grades_Tested=c(3,4,5,6,7,8),
-		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021'),
+		Assessment_Years=c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021', '2022', '2023', '2024'),
 		Test_Season="Spring",
 		Test_Vendor="CTB/McGraw Hill",
 #		Scale_Change=list(MATHEMATICS='2015', ELA='2015', SCIENCE='2015', SOCIAL_STUDIES='2015',
@@ -3048,7 +3054,7 @@ SGPstateData[["GA"]][["Student_Report_Information"]] <-
 		Content_Areas_Domains=list( ## Each Domain should be in CANONICAL PROGRESSION ORDER
 			ELA="ELA", GRADE_9_LIT = "ELA", AMERICAN_LIT = "ELA", # READING="ELA",
 			SOCIAL_STUDIES= "SOCIAL_STUDIES", US_HISTORY = "SOCIAL_STUDIES", ECONOMICS = "SOCIAL_STUDIES",
-			MATHEMATICS="MATHEMATICS", ALGEBRA_I ="MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_CC = "MATHEMATICS", # COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
+			MATHEMATICS="MATHEMATICS", ALGEBRA_I = "MATHEMATICS", GEOMETRY = "MATHEMATICS", ALGEBRA_CC = "MATHEMATICS", # COORDINATE_ALGEBRA ="MATHEMATICS", ANALYTIC_GEOMETRY = "MATHEMATICS", # MATHEMATICS_II = "MATHEMATICS", # MATHEMATICS_I = "MATHEMATICS",
 			SCIENCE="SCIENCE", PHYSICAL_SCIENCE = "SCIENCE", BIOLOGY = "SCIENCE"),
 		Grades_Reported=list(
 			ELA=c(3,4,5,6,7,8), READING=c(3,4,5,6,7,8), GRADE_9_LIT = "EOCT", AMERICAN_LIT = "EOCT",
@@ -3072,16 +3078,15 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		rq.method = "fn",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
-		sgp.cohort.size=1500, #  Winnow out all course progressions with fewer than 1,500 kids (per discussion on 1/27/16)
-		sgp.less.than.sgp.cohort.size.return="<1500",
+		sgp.cohort.size=1000, ## Decreased to 1000 in 2024 
+		sgp.less.than.sgp.cohort.size.return="<1000",
 		sgp.target.scale.scores.merge="all_years_lagged_current",
 		# goodness.of.fit.minimum.n = 1, #  No longer needed with 'sgp.cohort.size' set.
-		max.order.for.percentile = 2
-	)
-		# grade.projection.sequence = list(
+		max.order.for.percentile = 2,
+		grade.projection.sequence = list(
 		# 	##  CRCT
 		# 	# READING=c("3", "4", "5", "6", "7", "8"),  # Keep as long as READING used as a prior for getKnotsBoundaries function.
-		# 	# ELA=c("3", "4", "5", "6", "7", "8"), # Same for ELA.  End up projecting 7th grade ONLY to 8th grade, and then in 8th grade start to use both ELA and READING priors from 7th and 8th grades.
+		 	ELA=c("3", "4", "5", "6", "7", "8"),
 		# 	# ELA=c("3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "EOCT", "EOCT"),
 		# 	# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
 		# 	# GRADE_9_LIT=c("7", "7", "8", "8", "EOCT", "EOCT"),
@@ -3089,11 +3094,13 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
 		# 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	MATH_ALG_I = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # Add GEOMETRY in 2017
 		# 	COORDINATE_ALGEBRA= c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	ANALYTIC_GEOMETRY = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT"),
 		# 	ALGEBRA_I=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add ALGEBRA_I to GEOMETRY in 2017
 		# 	GEOMETRY =c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),  # Add GEOMETRY in 2017 - in 2016 no matrices going from Alg I to Geom to complete progression.
 		# 	SCIENCE=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
@@ -3103,10 +3110,11 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	PHYSICAL_SCIENCE_BIO=c("7", "8", "EOCT", "EOCT"),
 		# 	SOCIAL_STUDIES=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	US_HISTORY=c("8", "EOCT", "EOCT"),
-		# 	ECONOMICS=c("EOCT", "EOCT")),
-		# content_area.projection.sequence = list(
+		# 	ECONOMICS=c("EOCT", "EOCT"),
+			ALGEBRA_CC=c("3", "4", "5", "6", "7", "8", "EOCT")),
+		content_area.projection.sequence = list(
 		# 	# READING=c("READING", "READING", "READING", "READING", "READING", "READING"), # Keep as long as READING used as a prior for getKnotsBoundaries function.
-		# 	# ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+		 	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
 		# 	# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	# AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
@@ -3114,11 +3122,13 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 
+		 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_CC"),
 		# 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 		# 	MATH_ALG_I =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"),# Add GEOMETRY in 2017
 		# 	COORDINATE_ALGEBRA=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
 		# 	ANALYTIC_GEOMETRY =c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
+		 	ALGEBRA_I= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I"),
 		# 	ALGEBRA_I= c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017 - Might need to add in MATHEMATICS priors, but might also duplicate the MATH_ALG_I analyses
 		# 	GEOMETRY = c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # Add GEOMETRY in 2017
 
@@ -3130,21 +3140,22 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 
 		# 	SOCIAL_STUDIES=c("SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
 		# 	US_HISTORY=c("SOCIAL_STUDIES", "US_HISTORY", "ECONOMICS"),
-		# 	ECONOMICS=c("US_HISTORY", "ECONOMICS")),
-		# year_lags.projection.sequence = list(
+		# 	ECONOMICS=c("US_HISTORY", "ECONOMICS"),
+			ALGEBRA_CC=	c(rep("MATHEMATICS", 6), "ALGEBRA_CC")),
+		year_lags.projection.sequence = list(
 		# 	# READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
-		# 	# ELA = rep(1L, 5), # c(1,1,1,1,1,0,1,2)
+		 	ELA = rep(1L, 5),
 		# 	# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
 		# 	# AMERICAN_LIT=as.integer(c(0, 1, 2)),
 		# 	ELA = c(rep(1L, 6), 2),
 		# 	GRADE_9_LIT =c(rep(1L, 6), 2),
 		# 	AMERICAN_LIT=c(rep(1L, 6), 2),
-		# 	MATHEMATICS=rep(1L, 7), # CANONICAL for growthAchievementPlot
+		 	MATHEMATICS=rep(1L, 6),
 		# 	MATH_COORD_ALG=rep(1L, 7),
 		# 	MATH_ALG_I = rep(1L, 7),
 		# 	COORDINATE_ALGEBRA=rep(1L, 7),
 		# 	ANALYTIC_GEOMETRY =rep(1L, 7),
-		# 	ALGEBRA_I=rep(1L, 7),
+		 	ALGEBRA_I=rep(1L, 6),
 		# 	GEOMETRY =rep(1L, 7),
 		# 	SCIENCE=rep(1L, 7),
 		# 	SCIENCE_PHYSCI=rep(1L, 7),
@@ -3153,18 +3164,19 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	PHYSICAL_SCIENCE_BIO=rep(1L, 3),
 		# 	SOCIAL_STUDIES=as.integer(c(1,1,1,1,1,3,1)),
 		# 	US_HISTORY=as.integer(c(3,1)),
-		# 	ECONOMICS=1L),
-		# max.forward.projection.sequence = list(
+		# 	ECONOMICS=1L,
+			ALGEBRA_CC=rep(1L, 6)),
+		max.forward.projection.sequence = list(
 		# 	READING=3, # Keep as long as READING used as a prior for getKnotsBoundaries function.
-		# 	ELA=3,
+		 	ELA=3,
 		# 	GRADE_9_LIT=3,
 		# 	AMERICAN_LIT=3,
-		# 	MATHEMATICS=3, # CANONICAL for growthAchievementPlot
+		 	MATHEMATICS=3, # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=3,
 		# 	MATH_ALG_I=3,
 		# 	COORDINATE_ALGEBRA=3,
 		# 	ANALYTIC_GEOMETRY=3,
-		# 	ALGEBRA_I=3,
+		 	ALGEBRA_I=3,
 		# 	GEOMETRY=3,
 		# 	SCIENCE=3,
 		# 	SCIENCE_PHYSCI=3,
@@ -3173,7 +3185,8 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	PHYSICAL_SCIENCE_BIO=3,
 		# 	SOCIAL_STUDIES=3,
 		# 	US_HISTORY=3,
-		# 	ECONOMICS=3))
+		# 	ECONOMICS=3,
+			ALGEBRA_CC=3))
 
 SGPstateData[["GA"]][["Variable_Name_Lookup"]] <-
      read.csv("Variable_Name_Lookup/GA_Variable_Name_Lookup_2023.csv",
@@ -7392,14 +7405,14 @@ SGPstateData[["NM_ORIGINAL"]][["Student_Report_Information"]] <- list(
 		"Advanced"="Advanced"))
 
 
-### NEW MEXICO
+### NEW MEXICO (PARCC)
 
 load("Knots_Boundaries/PARCC_NM_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/New_Mexico_Knots_Boundaries.Rdata")
-SGPstateData[["NM"]] <- SGPstateData[['PARCC']]
-SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- c(New_Mexico_Knots_Boundaries, PARCC_NM_Knots_Boundaries)
+SGPstateData[["NM_PARCC"]] <- SGPstateData[['PARCC']]
+SGPstateData[["NM_PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- c(New_Mexico_Knots_Boundaries, PARCC_NM_Knots_Boundaries)
 
-SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
+SGPstateData[["NM_PARCC"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
@@ -7417,7 +7430,6 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 
 
 ### NEW MEXICO (for MSR)
-
 load("Knots_Boundaries/NM_MSR_Knots_Boundaries.Rdata")
 load("Cutscores/NM_MSR/NM_MSR_Cutscores.Rdata")
 SGPstateData[["NM_MSR"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSR_Knots_Boundaries
@@ -7476,6 +7488,60 @@ SGPstateData[["NM_MSR"]][["Student_Report_Information"]] <-
 			"Level 3"="Level 3",
 			"Level 4"="Level 4",
 			"Level 5"="Level 5"))
+
+
+### NEW MEXICO (for MSSA)
+load("Knots_Boundaries/NM_MSSA_Knots_Boundaries.Rdata")
+load("Cutscores/NM_MSSA/NM_MSSA_Cutscores.Rdata")
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSSA_Knots_Boundaries
+
+SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- NM_MSSA_Cutscores
+
+SGPstateData[["NM"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Novice", "Nearing Proficiency", "Proficient", "Advanced"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NM"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NM"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="New Mexico Measures of Student Success & Achievement",
+		Assessment_Abbreviation="MSSA",
+		Organization=list(
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
+		Content_Areas=c("English Language Arts", "Mathematics"),
+		Grades_Tested=c(3,4,5,6,7,8),
+		Assessment_Years=c("2022", "2023", "2024"),
+		Test_Season="Spring",
+		Test_Vendor="Cambium")
+
+SGPstateData[["NM"]][["Student_Report_Information"]] <-
+	list(
+		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
+		Content_Areas_Labels=list(
+				ELA="English Language Arts", MATHEMATICS="Math"), 
+		Content_Areas_Domains=list(
+				ELA="ELA", MATHEMATICS="MATHEMATICS"), 
+		Grades_Reported=list(
+			ELA=c("3","4","5","6","7","8"), MATHEMATICS=c("3","4","5","6","7","8")),
+		Grades_Reported_Domains=list(
+			ELA=c("3","4","5","6","7","8"), MATHEMATICS=c("3","4","5","6","7","8")),
+		Achievement_Level_Labels=list(
+			"Novice"="Novice",
+			"Near Proficient"="Nearing Proficiency",
+			"Proficient"="Proficient",
+			"Advanced"="Advanced"))
 
 #########################################################
 ### NEW YORK
@@ -8434,26 +8500,34 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <-
 		return.norm.group.scale.scores=TRUE,
 		round.digits=4L,
 		grade.projection.sequence = list(
-			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			ELA_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-			MATHEMATICS_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")),
+#			ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			ELA=c("3", "4", "5", "6", "7", "8"),
+#			ELA_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			ELA_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+			MATHEMATICS=c("3", "4", "5", "6", "7", "8")
+#			MATHEMATICS_PSAT_10=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+#			MATHEMATICS_SAT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT")
+		),
 		content_area.projection.sequence = list(
-			ELA=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			ELA_PSAT_10=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			ELA_SAT=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
-			MATHEMATICS=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
-			MATHEMATICS_SAT=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")),
+#			ELA=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+			ELA=rep("ELA", 6),
+#			ELA_PSAT_10=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+#			ELA_SAT=c(rep("ELA", 6), "ELA_PSAT_10", "ELA_SAT"),
+#			MATHEMATICS=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+			MATHEMATICS=rep("MATHEMATICS", 6)
+#			MATHEMATICS_PSAT_10=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT"),
+#			MATHEMATICS_SAT=c(rep("MATHEMATICS", 6), "MATHEMATICS_PSAT_10", "MATHEMATICS_SAT")
+		),
 		year_lags.projection.sequence = list(
-			ELA = c(rep(1L, 5), 2, 1),
-			ELA_PSAT_10=c(rep(1L, 5), 2, 1),
-			ELA_SAT=c(rep(1L, 5), 2, 1),
-			MATHEMATICS=c(rep(1L, 5), 2, 1),
-			MATHEMATICS_PSAT_10=c(rep(1L, 5), 2, 1),
-			MATHEMATICS_SAT=c(rep(1L, 5), 2, 1)
+#			ELA = c(rep(1L, 5), 2, 1),
+			ELA = rep(1L, 5),
+#			ELA_PSAT_10=c(rep(1L, 5), 2, 1),
+#			ELA_SAT=c(rep(1L, 5), 2, 1),
+#			MATHEMATICS=c(rep(1L, 5), 2, 1),
+			MATHEMATICS=rep(1L, 5)
+#			MATHEMATICS_PSAT_10=c(rep(1L, 5), 2, 1),
+#			MATHEMATICS_SAT=c(rep(1L, 5), 2, 1)
 		)
 	)
 

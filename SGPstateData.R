@@ -138,8 +138,8 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 		sgp.projections.use.only.complete.matrices=FALSE,
 		null.output.string="",
 		grade.projection.sequence=list(
-			ELA=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
-			ELA_SS=c("3", "4", "5", "6", "7", "8", "9", "10", "11"),
+			ELA=c("3", "4", "5", "6", "7", "8", "9", "10"), # only BIE has 11th grade after 2021
+			ELA_SS=c("3", "4", "5", "6", "7", "8", "9", "10"),
 			MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			MATHEMATICS_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			MATHEMATICS_INTGRT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
@@ -157,8 +157,8 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 			INTEGRATED_MATH_3=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
 			INTEGRATED_MATH_3_SS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")),
 		content_area.projection.sequence=list(
-			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
-			ELA_SS=c("ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS"),
+			ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
+			ELA_SS=c("ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS", "ELA_SS"),
 			MATHEMATICS=c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
 			MATHEMATICS_SS=c(rep("MATHEMATICS_SS", 6), "ALGEBRA_I_SS", "GEOMETRY_SS", "ALGEBRA_II_SS"),
 			MATHEMATICS_INTGRT=c(rep("MATHEMATICS", 6), "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
@@ -176,8 +176,8 @@ SGPstateData[["PARCC"]][["SGP_Configuration"]] <-
 			INTEGRATED_MATH_3=c(rep("MATHEMATICS", 6), "INTEGRATED_MATH_1", "INTEGRATED_MATH_2", "INTEGRATED_MATH_3"),
 			INTEGRATED_MATH_3_SS= c(rep("MATHEMATICS_SS", 6), "INTEGRATED_MATH_1_SS", "INTEGRATED_MATH_2_SS", "INTEGRATED_MATH_3_SS")), #
 		year_lags.projection.sequence=list(
-			ELA=rep(1L, 8),
-			ELA_SS=rep(1L, 8),
+			ELA=rep(1L, 7),
+			ELA_SS=rep(1L, 7),
 			MATHEMATICS=rep(1L, 8),
 			MATHEMATICS_SS=rep(1L, 8),
 			MATHEMATICS_INTGRT=rep(1L, 8),
@@ -882,12 +882,36 @@ SGPstateData[["BI"]][["Assessment_Program_Information"]] <-
 			URL = "www.indianaffairs.gov",
 			Contact = "202-208-3710"),
 			Content_Areas = c("English Language Arts", "Mathematics", "Geometry", "Algebra I", "Algebra II", "Integrated Math 1", "Integrated Math 2", "Integrated Math 3"),
-			Grades_Tested = c(3, 4, 5, 6, 7, 8, 9, 10, 11),
+			Grades_Tested = c(3, 4, 5, 6, 7, 8, 11, "EOCT"),
 			Assessment_Years = c("2014_2015.1", "2014_2015.2", "2015_2016.1", "2015_2016.2", "2016_2017.1", "2016_2017.2", "2017_2018.1", "2017_2018.2", "2018_2019.1", "2018_2019.2",
 		                         "2020_2021.2", "2021_2022.2"),
 			Test_Season = "Fall & Spring",
 			Test_Vendor = "Pearson",
 			CSEM = "SCALE_SCORE_CSEM")
+
+SGPstateData[["BI"]][["SGP_Configuration"]][["grade.projection.sequence"]] <-
+    list(
+        ELA         = c("3", "4", "5", "6", "7", "8"),
+        MATHEMATICS = c("3", "4", "5", "6", "7", "8")
+        # MATHEMATICS = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+        # ALGEBRA_I   = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT"),
+        # GEOMETRY    = c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT", "EOCT")
+    )
+SGPstateData[["BI"]][["SGP_Configuration"]][["content_area.projection.sequence"]] <-
+    list(
+        ELA         = rep("ELA", 6),
+        MATHEMATICS = c(rep("MATHEMATICS", 6))
+        # MATHEMATICS = c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+        # ALGEBRA_I   = c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II"),
+        # GEOMETRY    = c(rep("MATHEMATICS", 6), "ALGEBRA_I", "GEOMETRY", "ALGEBRA_II")
+    )
+SGPstateData[["BI"]][["SGP_Configuration"]][["year_lags.projection.sequence"]] <-
+    list(
+        ELA         = rep(1L, 5),
+        MATHEMATICS = rep(1L, 5)
+        # ALGEBRA_I   = rep(1L, 8),
+        # GEOMETRY    = rep(1L, 8)
+    )
 
 #########################################################
 ### CALIFORNIA

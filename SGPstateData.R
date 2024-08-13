@@ -7381,14 +7381,14 @@ SGPstateData[["NM_ORIGINAL"]][["Student_Report_Information"]] <- list(
 		"Advanced"="Advanced"))
 
 
-### NEW MEXICO
+### NEW MEXICO (PARCC)
 
 load("Knots_Boundaries/PARCC_NM_Knots_Boundaries.Rdata")
 load("Knots_Boundaries/New_Mexico_Knots_Boundaries.Rdata")
-SGPstateData[["NM"]] <- SGPstateData[['PARCC']]
-SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- c(New_Mexico_Knots_Boundaries, PARCC_NM_Knots_Boundaries)
+SGPstateData[["NM_PARCC"]] <- SGPstateData[['PARCC']]
+SGPstateData[["NM_PARCC"]][["Achievement"]][["Knots_Boundaries"]] <- c(New_Mexico_Knots_Boundaries, PARCC_NM_Knots_Boundaries)
 
-SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
+SGPstateData[["NM_PARCC"]][["Assessment_Program_Information"]] <-
 	list(
 		Assessment_Name="Partnership for Assessment of Readiness for College and Careers",
 		Assessment_Abbreviation="PARCC",
@@ -7406,7 +7406,6 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 
 
 ### NEW MEXICO (for MSR)
-
 load("Knots_Boundaries/NM_MSR_Knots_Boundaries.Rdata")
 load("Cutscores/NM_MSR/NM_MSR_Cutscores.Rdata")
 SGPstateData[["NM_MSR"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSR_Knots_Boundaries
@@ -7465,6 +7464,60 @@ SGPstateData[["NM_MSR"]][["Student_Report_Information"]] <-
 			"Level 3"="Level 3",
 			"Level 4"="Level 4",
 			"Level 5"="Level 5"))
+
+
+### NEW MEXICO (for MSSA)
+load("Knots_Boundaries/NM_MSSA_Knots_Boundaries.Rdata")
+load("Cutscores/NM_MSSA/NM_MSSA_Cutscores.Rdata")
+SGPstateData[["NM"]][["Achievement"]][["Knots_Boundaries"]] <- NM_MSSA_Knots_Boundaries
+
+SGPstateData[["NM"]][["Achievement"]][["Cutscores"]] <- NM_MSSA_Cutscores
+
+SGPstateData[["NM"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Novice", "Nearing Proficiency", "Proficient", "Advanced"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["NM"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["NM"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="New Mexico Measures of Student Success & Achievement",
+		Assessment_Abbreviation="MSSA",
+		Organization=list(
+			Name="New Mexico Public Education Department",
+			Abbreviation="NMPED",
+			URL="http://ped.state.nm.us",
+			Contact="505-827-5800"),
+		Content_Areas=c("English Language Arts", "Mathematics"),
+		Grades_Tested=c(3,4,5,6,7,8),
+		Assessment_Years=c("2022", "2023", "2024"),
+		Test_Season="Spring",
+		Test_Vendor="Cambium")
+
+SGPstateData[["NM"]][["Student_Report_Information"]] <-
+	list(
+		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
+		Content_Areas_Labels=list(
+				ELA="English Language Arts", MATHEMATICS="Math"), 
+		Content_Areas_Domains=list(
+				ELA="ELA", MATHEMATICS="MATHEMATICS"), 
+		Grades_Reported=list(
+			ELA=c("3","4","5","6","7","8"), MATHEMATICS=c("3","4","5","6","7","8")),
+		Grades_Reported_Domains=list(
+			ELA=c("3","4","5","6","7","8"), MATHEMATICS=c("3","4","5","6","7","8")),
+		Achievement_Level_Labels=list(
+			"Novice"="Novice",
+			"Near Proficient"="Nearing Proficiency",
+			"Proficient"="Proficient",
+			"Advanced"="Advanced"))
 
 #########################################################
 ### NEW YORK

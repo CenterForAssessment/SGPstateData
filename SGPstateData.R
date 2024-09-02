@@ -1398,6 +1398,9 @@ SGPstateData[["CFU"]][["Student_Report_Information"]] <-
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
 
+SGPstateData[["CFU"]][["SGP_Configuration"]] <- list(
+				sgp.minimum.default.panel.years=2)
+
 #########################################################
 ### COLORADO
 #########################################################

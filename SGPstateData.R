@@ -1399,7 +1399,8 @@ SGPstateData[["CFU"]][["Student_Report_Information"]] <-
 			"Advanced"="Advanced"))
 
 SGPstateData[["CFU"]][["SGP_Configuration"]] <- list(
-				sgp.minimum.default.panel.years=2)
+				sgp.minimum.default.panel.years=2,
+				rq.method="fn")
 
 #########################################################
 ### COLORADO

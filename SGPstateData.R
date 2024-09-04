@@ -2111,6 +2111,69 @@ SGPstateData[["CT"]][["Student_Report_Information"]] <-
 		"Goal"="Goal",
 		"Advanced"="Advanced"))
 
+#########################################################
+### DELAWARE 
+#########################################################
+
+load("Knots_Boundaries/DE_Knots_Boundaries.Rdata")
+SGPstateData[["DE"]][["Achievement"]][["Knots_Boundaries"]] <- DE_Knots_Boundaries
+
+SGPstateData[["DE"]][["Achievement"]][["Cutscores"]] <-
+		list(
+			MATHEMATICS=list(
+				GRADE_3=c(2381, 2436, 2501),
+				GRADE_4=c(2411, 2485, 2549),
+				GRADE_5=c(2455, 2528, 2579),
+				GRADE_6=c(2473, 2552, 2610),
+				GRADE_7=c(2484, 2567, 2635),
+				GRADE_8=c(2504, 2586, 2653)),
+			ELA=list(
+				GRADE_3=c(2367, 2432, 2490),
+				GRADE_4=c(2416, 2473, 2533),
+				GRADE_5=c(2442, 2502, 2582),
+				GRADE_6=c(2457, 2531, 2618),
+				GRADE_7=c(2479, 2552, 2649),
+				GRADE_8=c(2487, 2567, 2668)))
+
+SGPstateData[["DE"]][["Achievement"]][["Levels"]] <-
+	list(
+		Labels=c("Level 1", "Level 2", "Level 3", "Level 4"),
+		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
+
+SGPstateData[["DE"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["DE"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["DE"]][["Growth"]][["Cutscores"]] <-
+	list(
+		Cuts=c(35, 66),
+		Labels=list("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["DE"]][["Assessment_Program_Information"]] <-
+	list(
+		Assessment_Name="Smarter Balanced Assessment",
+		Assessment_Abbreviation="SBAC",
+		Organization=list(
+			Name="Delaware Department of Education",
+			Abbreviation="DDE",
+			URL="www.doe.DE.gov",
+			Contact="info@doe.DE.gov"),
+		Content_Areas=c("Mathematics", "ELA"),
+		Grades_Tested=c(3,4,5,6,7,8),
+		Assessment_Years=c("2017", "2018", "2019", "2020", "2021", "2022", "2023"),
+		Test_Vendor="SBA",
+		Test_Season="Spring")
+
+SGPstateData[["DE"]][["Student_Report_Information"]] <-
+	list(
+		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
+		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+		Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8), ELA=c(3,4,5,6,7,8)),
+		Achievement_Level_Labels=list(
+			"Level 1"="Level 1",
+			"Level 2"="Level 2",
+			"Level 3"="Level 3",
+			"Level 4"="Level 4"))
 
 #########################################################
 ###   Department of Defense Education Agency (DoDEA)

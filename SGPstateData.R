@@ -7670,7 +7670,7 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NM"]][["Student_Report_Information"]] <-
 	list(
-		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
+		Vertical_Scale=list(ELA=TRUE, MATHEMATICS=TRUE),
 		Content_Areas_Labels=list(
 				ELA="English Language Arts", MATHEMATICS="Math"), 
 		Content_Areas_Domains=list(

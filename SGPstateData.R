@@ -7683,6 +7683,10 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <-
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
 
+SGPstateData[["NM"]][["Student_Report_Information"]] <-
+	list(
+		Projection_Fan_Limits=c(5, 95))
+
 #########################################################
 ### NEW YORK
 #########################################################

@@ -7670,8 +7670,8 @@ SGPstateData[["NM"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NM"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2022:2024), ELA=as.character(2022:2024)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=as.character(2022:2024), ELA=as.character(2022:2024)),
+		Transformed_Achievement_Level_Cutscores=list(MATHEMATICS=as.character(2022:2023), ELA=as.character(2022:2023)),
+		Transformed_Achievement_Level_Cutscores_gaPlot=list(MATHEMATICS=as.character(2022:2023), ELA=as.character(2022:2023)),
 		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE),
 		Content_Areas_Labels=list(
 				ELA="English Language Arts", MATHEMATICS="Math"), 

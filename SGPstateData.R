@@ -7677,15 +7677,12 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <-
 				ELA="English Language Arts", MATHEMATICS="Math"), 
 		Grades_Reported=list(
 			ELA=c("3","4","5","6","7","8"), MATHEMATICS=c("3","4","5","6","7","8")),
+		Projection_Fan_Limits=c(5, 95),
 		Achievement_Level_Labels=list(
 			"Novice"="Novice",
 			"Near Proficient"="Nearing Proficiency",
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
-
-SGPstateData[["NM"]][["Student_Report_Information"]] <-
-	list(
-		Projection_Fan_Limits=c(5, 95))
 
 #########################################################
 ### NEW YORK

@@ -2357,7 +2357,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 		Contact="dbetebenner@nciea.org"),
 	Content_Areas=c("Mathematics", "Reading", "Grade 9 Literature", "American Literature", "Algebra I", "Algebra II"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10),
-	Assessment_Years=c("2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022"),
+	Assessment_Years=c("2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024"),
 	Test_Vendor="CTB/McGraw Hill",
 	Test_Season="Spring",
 	CSEM=Demonstration_CSEM)
@@ -2365,7 +2365,7 @@ SGPstateData[["DEMO"]][["Assessment_Program_Information"]] <-
 SGPstateData[["DEMO"]][["Student_Report_Information"]] <-
 	list(
 	Vertical_Scale=list(MATHEMATICS=TRUE, READING=TRUE),
-	Projection_Fan_Limits=c(5, 95),
+	Projection_Fan_Limits=c(10, 90),
 	Content_Areas_Labels=list(MATHEMATICS="Mathematics", READING="Reading"),
 	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,9,10), READING=c(3,4,5,6,7,8,9,10)),
 	# Use_EOCT_Label = TRUE, # Use this (non-NULL) to print 'EOCT' instead of CONTENT_AREA in first row of
@@ -5727,11 +5727,11 @@ SGPstateData[["MA"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2009:2022),
-									ELA=as.character(2009:2022)),
+									MATHEMATICS=as.character(2009:2028),
+									ELA=as.character(2009:2028)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2009:2022),
-									ELA=as.character(2009:2022)),
+									MATHEMATICS=as.character(2009:2028),
+									ELA=as.character(2009:2028)),
 	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
 	Projection_Fan_Limits=c(5, 95),
 	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"), ### NOTE Algebra I not equated so no charts possible
@@ -5937,11 +5937,11 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 
 SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=paste(2007:2018, 2008:2019, sep="_"),
-									READING=paste(2007:2018, 2008:2019, sep="_")),
+									MATHEMATICS=paste(2007:2026, 2008:2027, sep="_"),
+									READING=paste(2007:2026, 2008:2027, sep="_")),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=paste(2007:2018, 2008:2019, sep="_"),
-									READING=paste(2007:2018, 2008:2019, sep="_")),
+									MATHEMATICS=paste(2007:2026, 2008:2027, sep="_"),
+									READING=paste(2007:2026, 2008:2027, sep="_")),
 	Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
 #	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading", SCIENCE="Science", SOCIAL_STUDIES="Social Studies", WRITING="Writing"),
 	Content_Areas_Labels=list(MATHEMATICS="Math", READING="ELA", SCIENCE="Science", SOCIAL_STUDIES="Social Studies"),
@@ -6820,12 +6820,12 @@ SGPstateData[["NV"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["NV"]][["Student_Report_Information"]] <-
 	list(
-		Transformed_Achievement_Level_Cutscores=list(
-										MATHEMATICS=as.character(2008:2014),
-										READING=as.character(2008:2014)),
-		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-										MATHEMATICS=as.character(2008:2014),
-										READING=as.character(2008:2014)),
+#		Transformed_Achievement_Level_Cutscores=list(
+#										MATHEMATICS=as.character(2008:2014),
+#										READING=as.character(2008:2014)),
+#		Transformed_Achievement_Level_Cutscores_gaPlot=list(
+#										MATHEMATICS=as.character(2008:2014),
+#										READING=as.character(2008:2014)),
 		Vertical_Scale=list(MATHEMATICS=TRUE, ELA=TRUE),
 		Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
 #		Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
@@ -8675,21 +8675,21 @@ SGPstateData[["RI"]][["SGP_Configuration"]] <-
 SGPstateData[["RI"]][["Student_Report_Information"]] <-
 	list(
 		Transformed_Achievement_Level_Cutscores=list(
-			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020")),
+			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025")),
 		Transformed_Achievement_Level_Cutscores_gaPlot=list(
-			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020")),
+			ELA=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			GEOMETRY=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			ALGEBRA_I=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			ALGEBRA_II=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS_PSAT_10=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+			MATHEMATICS_SAT=c("2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025")),
 		Vertical_Scale=list(ELA=FALSE, MATHEMATICS=FALSE, GEOMETRY=FALSE, ALGEBRA_I=FALSE, ALGEBRA_II=FALSE, MATHEMATICS_PSAT_10=FALSE, MATHEMATICS_SAT=FALSE),
 		Content_Areas_Labels=list(
 			ELA="English Language Arts", ELA_PSAT_10 = "ELA PSAT 10", ELA_SAT = "ELA SAT",
@@ -9019,13 +9019,13 @@ SGPstateData[["UT"]][["Assessment_Program_Information"]] <-
 
 SGPstateData[["UT"]][["Student_Report_Information"]] <- list(
 	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=as.character(2014:2022), ### NOTE non-vertical up to 2013
-									ELA=as.character(2014:2022), ### NOTE non-vertical up to 2013
-									SCIENCE=as.character(2014:2022)),
+									MATHEMATICS=as.character(2014:2025), ### NOTE non-vertical up to 2013
+									ELA=as.character(2014:2025), ### NOTE non-vertical up to 2013
+									SCIENCE=as.character(2014:2025)),
 	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=as.character(2014:2022), ### NOTE non-vertical up to 2013
-									ELA=as.character(2014:2022), ### NOTE non-vertical up to 2013
-									SCIENCE=as.character(2014:2022)),
+									MATHEMATICS=as.character(2014:2025), ### NOTE non-vertical up to 2013
+									ELA=as.character(2014:2025), ### NOTE non-vertical up to 2013
+									SCIENCE=as.character(2014:2025)),
 	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE, SCIENCE=FALSE), # EARTH_SCIENCE=FALSE, BIOLOGY=FALSE, CHEMISTRY=FALSE, PHYSICS=FALSE),
 	Content_Areas_Labels=list(ELA = "ELA", MATHEMATICS = "Math", SCIENCE ="Science"),
 	Content_Areas_Domains=list(ELA="ELA", MATHEMATICS="MATHEMATICS", SCIENCE="SCIENCE"),

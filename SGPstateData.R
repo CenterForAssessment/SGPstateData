@@ -7644,7 +7644,7 @@ SGPstateData[["NM"]][["Achievement"]][["Levels"]] <-
 		Labels=c("Novice", "Nearing Proficiency", "Proficient", "Advanced"),
 		Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient"))
 
-SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+SGPstateData[["NM"]][["Growth"]][["Levels"]] <- c("< 1 Year", "About 1 Year", "> 1 Year")
 
 SGPstateData[["NM"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
 

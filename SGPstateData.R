@@ -5745,8 +5745,8 @@ SGPstateData[["MA"]][["Student_Report_Information"]] <- list(
 SGPstateData[["MA"]][["SGP_Configuration"]] <- list(
 		print.other.gp=TRUE,
 		return.norm.group.scale.scores=TRUE,
-		max.sgp.target.years.forward=1:5,
-		sgp.projections.max.forward.progression.years=5,
+		max.sgp.target.years.forward=1:6,
+		sgp.projections.max.forward.progression.years=6,
 		sgp.target.types=c("Scale_Score_Targets_CUKU", "Scale_Score_Targets_Current_CUKU", "Scale_Score_Targets_MUSU", "Scale_Score_Targets_Current_MUSU"),
 		sgp.target.scale.scores.merge="all_year_lagged_current",
 		sgPlot.sgp.targets=c("sgp.projections", "sgp.projections.lagged", "sgp.projections.baseline", "sgp.projections.lagged.baseline"),
@@ -7683,6 +7683,8 @@ SGPstateData[["NM"]][["Student_Report_Information"]] <-
 			"Near Proficient"="Nearing Proficiency",
 			"Proficient"="Proficient",
 			"Advanced"="Advanced"))
+
+SGPstateData[["NM"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/NM_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
 
 #########################################################
 ### NEW YORK

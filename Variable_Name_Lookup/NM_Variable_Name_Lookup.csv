@@ -1,0 +1,37 @@
+names.provided,names.sgp,names.type,names.info,names.output
+VALID_CASE,VALID_CASE,individual_inclusion,Valid case indicator,NA
+CONTENT_AREA,CONTENT_AREA,content,Content area associated with record,NA
+YEAR,YEAR,time,Year associated with record,NA
+ID,ID,individual,Unique student identifier,NA
+GRADE_ENROLLED,NA,NA,NA,NA
+SCALE_SCORE,SCALE_SCORE,measure,Scale score,NA
+ACHIEVEMENT_LEVEL,ACHIEVEMENT_LEVEL,measure,Achievement level,NA
+GRADE,GRADE,institution_level,Grade/Test level associated with record,NA
+SCHOOL_NUMBER,SCHOOL_NUMBER,institution,School number,NA
+AccountabilityModel,NA,NA,NA,NA
+ExclAccountabiltyReason,NA,NA,NA,NA
+Test,NA,NA,NA,NA
+Female.2,NA,NA,NA,NA
+Male.3,NA,NA,NA,NA
+Hispanic.4,NA,NA,NA,NA
+White.5,NA,NA,NA,NA
+Black.6,NA,NA,NA,NA
+Asian.7,NA,NA,NA,NA
+Native.8,NA,NA,NA,NA
+Multirace.9,NA,NA,NA,NA
+FRL.10,NA,NA,NA,NA
+NotFRL.11,NA,NA,NA,NA
+DirectCert.12,NA,NA,NA,NA
+NotDirectCert.13,NA,NA,NA,NA
+SwD.14,NA,NA,NA,NA
+NotSwD.15,NA,NA,NA,NA
+EL.16,NA,NA,NA,NA
+NotEL.17,NA,NA,NA,NA
+Migrant.18,NA,NA,NA,NA
+Homeless.19,NA,NA,NA,NA
+Military.20,NA,NA,NA,NA
+Any_Native.22,NA,NA,NA,NA
+Any_Black.23,NA,NA,NA,NA
+Foster.21,NA,NA,NA,NA
+SCHOOL_NAME,SCHOOL_NAME,label,School name,NA
+SCHOOL_ENROLLMENT_STATUS,SCHOOL_ENROLLMENT_STATUS,institution_inclusion,School inclusion/accountability indicator,NA

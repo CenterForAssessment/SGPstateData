@@ -2163,7 +2163,8 @@ SGPstateData[["DE"]][["Assessment_Program_Information"]] <-
 		Grades_Tested=c(3,4,5,6,7,8),
 		Assessment_Years=c("2017", "2018", "2019", "2020", "2021", "2022", "2023"),
 		Test_Vendor="SBA",
-		Test_Season="Spring")
+		Test_Season="Spring",
+		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["DE"]][["Student_Report_Information"]] <-
 	list(

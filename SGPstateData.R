@@ -1800,8 +1800,9 @@ SGPstateData[["CO"]][["Achievement"]][["Cutscores"]] <-
 				Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA)),
 			Achievement_Levels.9=list(
 				# Labels=c("1 to 20", "21 to 40", "41 to 60", "61 to 80", "81 to 99"),
-				Labels=c("Level 1", "Level 2", "Level 2+", "Level 3", "Level 4"),
-				Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient")),
+				# Labels=c("Level 1", "Level 2", "Level 2+", "Level 3", "Level 4"),
+				Labels=c("Level 1", "Level 2", "Level 3", "Level 4", "Level 5"),
+				Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient")),
 			Achievement_Level_Labels=list(
 			  "Level 1"="Level 1",
 			  "Level 2"="Level 2",

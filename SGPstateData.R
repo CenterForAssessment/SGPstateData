@@ -3703,7 +3703,7 @@ SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 			Name="Hawaii State Department of Education",
 			Abbreviation="HIDOE",
 			URL="www.doe.k12.hi.us",
-			Contact="808-586-3230"),
+			Contact="808-307-3650"),
 		Content_Areas=c("Mathematics", "Reading"),
 		Grades_Tested=c(3,4,5,6,7,8,11),
 		Assessment_Years=c("2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024"),

@@ -7951,17 +7951,17 @@ SGPstateData[["RLI"]][["Growth"]][["Cutscores"]] <-
 
 SGPstateData[["RLI"]][["Assessment_Program_Information"]] <-
 	list(
-		Assessment_Name="Renaissance Learning Incorporated",
+		Assessment_Name="Renaissance Star",
 		Assessment_Abbreviation="RLI",
 		Organization=list(
-			Name="Renaissance Learning Incorporated",
+			Name="Renaissance",
 			Abbreviation="RLI",
 			URL="www.renaissance.com",
 			Contact="(800) 338-4204"),
 		Content_Areas=c("Mathematics", "Reading", "Early Literacy"),
 		Grades_Tested=c('PK','K',1,2,3,4,5,6,7,8,9,10,11,12),
-		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020"),
-		Test_Vendor="Renaissance Learning Incorporated",
+		Assessment_Years=c("2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019", "2019_2020", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
+		Test_Vendor="Renaissance",
 		Test_Season="Fall/Winter/Spring")
 
 SGPstateData[["RLI"]][["Student_Report_Information"]] <-

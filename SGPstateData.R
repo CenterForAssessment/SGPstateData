@@ -3788,6 +3788,8 @@ SGPstateData[["HI"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup
 ### IDAHO
 #########################################################
 
+load("Knots_Boundaries/ID_IRI_Knots_Boundaries.Rdata")
+
 SGPstateData[["ID"]][["Achievement"]][["Knots_Boundaries"]] <-
 	list(
 #		MATHEMATICS=list(
@@ -4052,6 +4054,8 @@ SGPstateData[["ID"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_9=c(2102, 3032),
 			loss.hoss_10=c(2102, 3032),
 			loss.hoss_11=c(2102, 3032)))
+
+SGPstateData[["ID"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- ID_IRI_Knots_Boundaries[["READING"]]
 
 SGPstateData[["ID"]][["Achievement"]][["Cutscores"]] <-
 	list(

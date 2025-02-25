@@ -287,7 +287,7 @@ function(year,
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -2), "1", sep="."), paste(yearIncrement(year, -1), "1", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
-				sgp.grade.sequences=list(c('K.1', '1.1'), c('K.1', '1.1', '2.1'), c('1.1', '2.1', '3.1')),
+				sgp.grade.sequences=list(c('PK.1', 'K.1'), c('PK.1', 'K.1', '1.1'), c('K.1', '1.1', '2.1'), c('1.1', '2.1', '3.1')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 3))),
 			list(
 				sgp.content.areas=c(tmp.content_area.name, tmp.content_area.name, tmp.content_area.name),
@@ -309,7 +309,7 @@ function(year,
 				sgp.projection.baseline.content.areas=c(tmp.content_area.name, tmp.content_area.name),
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
-				sgp.grade.sequences=list(c('K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
+				sgp.grade.sequences=list(c('PK.1', 'PK.2'), c('PK.3', 'K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
 				sgp.projection.baseline.grade.sequences=list(c('PK.1', 'PK.2'), c('K.1', 'K.2'), c('1.1', '1.2'), c('2.1', '2.2'), c('3.1', '3.2')),
 				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")

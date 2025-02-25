@@ -4135,8 +4135,8 @@ SGPstateData[["ID"]][["Assessment_Program_Information"]] <-
 		Content_Areas=c("Mathematics", "ELA"),
 		Grades_Tested=c(3,4,5,6,7,8,10),
 		Test_Season="Spring",
-		Test_Vendor="SBAC/AIR")
-#		CSEM="SCALE_SCORE_CSEM")
+		Test_Vendor="SBAC/Cambium",
+		CSEM="SCALE_SCORE_CSEM")
 
 SGPstateData[["ID"]][["Student_Report_Information"]] <-
 	list(

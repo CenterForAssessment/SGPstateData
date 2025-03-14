@@ -55,7 +55,7 @@ function(year,
 				sgp.grade.sequences=list(c('PK.1', 'PK.2'), c('PK.3', 'K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
 				sgp.projection.baseline.grade.sequences=list(c('PK.1', 'PK.2'), c('K.1', 'K.2'), c('1.1', '1.2'), c('2.1', '2.2'), c('3.1', '3.2')),
 				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
-			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")
+			names(tmp.list) <- paste(tmp.content_area.name, "SFW.config", sep=".")
 		return(tmp.list)
 	} ### END EARLY_LITERACY/WINTER
 
@@ -248,7 +248,7 @@ function(year,
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, 0), "1", sep="."), paste(yearIncrement(year, 0), "2", sep=".")),
 				sgp.grade.sequences=list(c('K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
 				sgp.projection.baseline.grade.sequences=as.list(rep("NO_PROJECTIONS", 4))))
-			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")
+			names(tmp.list) <- paste(tmp.content_area.name, "SFW.config", sep=".")
 		return(tmp.list)
 	} ### END READING_UNIFIED/WINTER
 
@@ -312,7 +312,7 @@ function(year,
 				sgp.grade.sequences=list(c('PK.1', 'PK.2'), c('PK.3', 'K.1', 'K.2'), c('K.3', '1.1', '1.2'), c('1.3', '2.1', '2.2'), c('2.3', '3.1', '3.2')),
 				sgp.projection.baseline.grade.sequences=list(c('PK.1', 'PK.2'), c('K.1', 'K.2'), c('1.1', '1.2'), c('2.1', '2.2'), c('3.1', '3.2')),
 				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
-			names(tmp.list) <- paste(tmp.content_area.name, "SWF.config", sep=".")
+			names(tmp.list) <- paste(tmp.content_area.name, "SFW.config", sep=".")
 		return(tmp.list)
 	} ### END EARLY_LITERACY_SPANISH/WINTER
 

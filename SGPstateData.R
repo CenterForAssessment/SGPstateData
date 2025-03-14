@@ -3691,8 +3691,8 @@ SGPstateData[["HI"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Refere
 
 SGPstateData[["HI"]][["Growth"]][["Cutscores"]] <-
 	list(
-		Cuts=c(35, 66),
-		Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+		Cuts=c(40, 61),
+		Labels=c("1st - 39th", "40th - 60th", "61st - 99th"))
 
 SGPstateData[["HI"]][["Assessment_Program_Information"]] <-
 	list(

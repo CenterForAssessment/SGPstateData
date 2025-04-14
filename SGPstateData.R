@@ -7937,7 +7937,7 @@ RLI_SGP_Config_Function <- source('Custom_SGP_Config/RLI/RLI_Custom_SGP_Config-f
 load("Knots_Boundaries/RLI_Knots_Boundaries.Rdata")
 SGPstateData[["RLI"]][["Achievement"]][["Knots_Boundaries"]] <- RLI_Knots_Boundaries
 load("Cutscores/RLI/RLI_Cutscores_testSGP.rda") ### Cutscores for testSGP('RLI1') & testSGP('RLI2')
-load("Cutscores/RLI/RLI_Cutscores_06242019.rda")
+load("Cutscores/RLI/RLI_Cutscores_03302025.rda")
 
 ### Cutscores embedded through rliCutscoreCreation.R or (if none supplied) utilize those in SGPstateData
 

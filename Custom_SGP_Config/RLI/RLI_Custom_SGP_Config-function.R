@@ -168,7 +168,7 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('K.2', 'K.3', '1.1'), c('1.2', '1.3', '2.1'), c('2.2', '2.3', '3.1'), c('3.2', '3.3', '4.1'), c('4.2', '4.3', '5.1'), c('5.2', '5.3', '6.1'), c('6.2', '6.3', '7.1'), c('7.2', '7.3', '8.1'), c('8.2', '8.3', '9.1'), c('9.2', '9.3', '10.1'), c('10.2', '10.3', '11.1'), c('11.2', '11.3', '12.1'), "NO_PERCENTILES"),
-				sgp.projection.baseline.grade.sequences=list(c('K.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
+				sgp.projection.baseline.grade.sequences=list("K.1", c('K.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
 				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
 		return(tmp.list)
@@ -359,7 +359,7 @@ function(year,
 				sgp.panel.years=c(paste(yearIncrement(year, -1), "2", sep="."), paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.projection.baseline.panel.years=c(paste(yearIncrement(year, -1), "3", sep="."), paste(yearIncrement(year, 0), "1", sep=".")),
 				sgp.grade.sequences=list(c('K.2', 'K.3', '1.1'), c('1.2', '1.3', '2.1'), c('2.2', '2.3', '3.1'), c('3.2', '3.3', '4.1'), c('4.2', '4.3', '5.1'), c('5.2', '5.3', '6.1'), c('6.2', '6.3', '7.1'), c('7.2', '7.3', '8.1'), c('8.2', '8.3', '9.1'), c('9.2', '9.3', '10.1'), c('10.2', '10.3', '11.1'), c('11.2', '11.3', '12.1'), "NO_PERCENTILES"),
-				sgp.projection.baseline.grade.sequences=list(c('K.1'), c('K.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
+				sgp.projection.baseline.grade.sequences=list('K.1', c('K.3', '1.1'), c('1.3', '2.1'), c('2.3', '3.1'), c('3.3', '4.1'), c('4.3', '5.1'), c('5.3', '6.1'), c('6.3', '7.1'), c('7.3', '8.1'), c('8.3', '9.1'), c('9.3', '10.1'), c('10.3', '11.1'), c('11.3', '12.1')),
 				sgp.projection.sequence=paste(tmp.content_area.name, "FWS", sep="_")))
 			names(tmp.list) <- paste(tmp.content_area.name, c("FF.config", "WSF.config"), sep=".")
 		return(tmp.list)

@@ -7988,6 +7988,7 @@ SGPstateData[["RLI"]][["SGP_Configuration"]] <-
 		print.other.gp=TRUE,
 		round.digits=4L,
 		percentile.cuts=50, ### For within window projections
+		percentile.cuts.round.digits=10L,
 		SGPt.max.time=TRUE,
 #		max.sgp.target.years.forward=9,
 #		sgp.projections.max.forward.progression.years=9,

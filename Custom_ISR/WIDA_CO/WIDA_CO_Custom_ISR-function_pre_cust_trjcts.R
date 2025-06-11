@@ -152,7 +152,7 @@
         # popViewport()
         pushViewport(custom.isr$Grid_Objects$report_text.vp)
         grid.text(
-            x = 0.005, y = 0.5, # x = 0.025,
+            x = 0.01, y = 0.5, # x = 0.025,
             label = custom.isr$Report_Text_ENGLISH,
             gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825),
             just = "left", default.units = "native"
@@ -347,7 +347,7 @@
         pushViewport(custom.isr$Grid_Objects$report_text.vp)
         # grid.draw(splitTextGrob(custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.75), hjust="top", vjust="left", default.units="native"))
         grid.text(
-            x = 0.005, y = 0.5, # x = 0.015,
+            x = 0.01, y = 0.5, # x = 0.015,
             label = custom.isr$Report_Text_SPANISH,
             gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825),
             just = "left", default.units = "native"

@@ -136,7 +136,7 @@
 
         ##  Report Title
         pushViewport(custom.isr$Grid_Objects$report_title.vp)
-        grid.text("English Language Proficiency and Student Growth Report",
+        grid.text(paste(last.year,"English Language Proficiency and Student Growth Report"),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica", col = "black", cex = 1.125), just = "top", default.units = "native"
         ) # Helvetica-Narrow
         popViewport()
@@ -151,7 +151,12 @@
         # grid.raster(custom.isr$Report_Text_ENGLISH)
         # popViewport()
         pushViewport(custom.isr$Grid_Objects$report_text.vp)
-        grid.text(x = 0.025, y = 0.5, custom.isr$Report_Text_ENGLISH, gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825), just = "left", default.units = "native")
+        grid.text(
+            x = 0.01, y = 0.5, # x = 0.025,
+            label = custom.isr$Report_Text_ENGLISH,
+            gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825),
+            just = "left", default.units = "native"
+        )
         popViewport()
 
         ##  Color block 2
@@ -171,12 +176,12 @@
         # grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
         # popViewport()
 
-        pushViewport(custom.isr$Grid_Objects$left.border.vp)
-        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
-        grid.text("2024 English Language Proficiency and Student Growth Report",
-            gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
-        )
-        popViewport()
+        # pushViewport(custom.isr$Grid_Objects$left.border.vp)
+        # grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
+        # grid.text("2024 English Language Proficiency and Student Growth Report",
+        #     gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
+        # )
+        # popViewport()
 
         ## Bottom Legend
         pushViewport(custom.isr$Grid_Objects$bottom.border.vp)
@@ -325,7 +330,7 @@
 
         ##  Report Title
         pushViewport(custom.isr$Grid_Objects$report_title.vp)
-        grid.text("Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+        grid.text(paste(last.year,"Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s"),
             gp = gpar(fontface = "bold", fontfamily = "Helvetica", col = "black", cex = 1.125), just = "top", default.units = "native"
         ) # Helvetica-Narrow
         popViewport()
@@ -341,7 +346,12 @@
         # popViewport()
         pushViewport(custom.isr$Grid_Objects$report_text.vp)
         # grid.draw(splitTextGrob(custom.isr$Report_Text_SPANISH, gp=gpar(fontfamily="Helvetica-Narrow", col="black", cex=0.75), hjust="top", vjust="left", default.units="native"))
-        grid.text(x = 0.015, y = 0.5, custom.isr$Report_Text_SPANISH, gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825), just = "left", default.units = "native")
+        grid.text(
+            x = 0.01, y = 0.5, # x = 0.015,
+            label = custom.isr$Report_Text_SPANISH,
+            gp = gpar(fontfamily = "Helvetica-Narrow", col = "black", cex = 0.825),
+            just = "left", default.units = "native"
+        )
         popViewport()
 
         ##  Color block 2
@@ -361,12 +371,12 @@
         # grid.text(x= 0.125, y=0.5, tmp_school_name, gp=gpar(fontface="bold", fontfamily="Helvetica-Narrow", col="white", cex=1.25), just="left", default.units="native")
         # popViewport()
 
-        pushViewport(custom.isr$Grid_Objects$left.border.vp)
-        grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
-        grid.text("2024 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
-            gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
-        )
-        popViewport()
+        # pushViewport(custom.isr$Grid_Objects$left.border.vp)
+        # grid.rect(gp = gpar(fill = "#2c3384", col = "#2c3384"))
+        # grid.text("2024 Reporte del Crecimiento Estudiantil en el Dominio del Idioma Ingl\u{E9}s",
+        #     gp = gpar(fontface = "bold", fontfamily = "Helvetica-Narrow", col = "white", cex = 2), rot = 270, just = "center", default.units = "native"
+        # )
+        # popViewport()
 
         ## Bottom Legend
         pushViewport(custom.isr$Grid_Objects$bottom.border.vp)

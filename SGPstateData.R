@@ -1940,22 +1940,22 @@ SGPstateData[["CO"]][['SGP_Progression_Preference']] <-
 		  # "Approached"="Level 3",
 		  # "Met Expectations"="Level 4",
 		  # "Exceeded Expectations"="Level 5"),
-    Fan_Extra =
-        c(###   Patterns in fans use `gridpattern` package
-          #   remotes::install_github("trevorld/gridpattern")
-          "gridpattern::grid.pattern(pattern = 'stripe',
-              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-              size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
-              gp = gpar(fill = 'transparent'))",
-          "gridpattern::grid.pattern(pattern = 'circle',
-              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-              size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
-              gp = gpar(fill = 'transparent'))",
-          "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
-              x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-              size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
-              gp = gpar(fill = 'transparent'))"
-        ),
+    # Fan_Extra =
+    #     c(###   Patterns in fans use `gridpattern` package
+    #       #   remotes::install_github("trevorld/gridpattern")
+    #       "gridpattern::grid.pattern(pattern = 'stripe',
+    #           x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #           size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+    #           gp = gpar(fill = 'transparent'))",
+    #       "gridpattern::grid.pattern(pattern = 'circle',
+    #           x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #           size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+    #           gp = gpar(fill = 'transparent'))",
+    #       "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+    #           x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #           size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+    #           gp = gpar(fill = 'transparent'))"
+    #     ),
       Content_Areas_Labels = list(
           ELA         = "ELA",
           ELA_PSAT_9  = "PSAT 9 ELA",
@@ -10532,7 +10532,7 @@ load("Knots_Boundaries/WIDA_CO_Knots_Boundaries.Rdata")
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING"]] <- SGPstateData[["CELA"]][["Achievement"]][["Knots_Boundaries"]][["CELA"]]
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2013"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING"]]
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["READING.2016"]] <- SGPstateData[["WIDA"]][["Achievement"]][["Knots_Boundaries"]][["READING.2016"]]
-SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["LITERACY"]] <- WIDA_CO_Knots_Boundaries[['LITERACY']]
+SGPstateData[["WIDA_CO"]][["Achievement"]][["Knots_Boundaries"]][["LITERACY"]] <- WIDA_CO_Knots_Boundaries[["LITERACY"]]
 
 SGPstateData[["WIDA_CO"]][["Achievement"]][["Cutscores"]] <- list(
 	LITERACY = list(
@@ -10602,29 +10602,29 @@ SGPstateData[["WIDA_CO"]][["Student_Report_Information"]] <- list(
 		LITERACY = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale = list(READING = TRUE, LITERACY = TRUE),
 	Content_Areas_Labels = list(READING = "Overall", LITERACY = "Overall"),
-	Earliest_Year_Reported = list(READING = '2013', LITERACY = '2016'),
+	Earliest_Year_Reported = list(READING = "2013", LITERACY = "2016"),
 	Achievement_Level_Labels = list(
 		"Entering" = "L1",
 		"Emerging" = "L2",
 		"Developing" = "L3",
 		"Expanding" = "L4",
 		"Bridging" = "L5",
-		"Reaching" = "L6"),
-    Fan_Extra = c(
-        ###   Patterns in fans use `gridpattern` package
-        #   remotes::install_github("trevorld/gridpattern")
-        "gridpattern::grid.pattern(pattern = 'stripe',
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
-            gp = gpar(fill = 'transparent'))",
-        "gridpattern::grid.pattern(pattern = 'circle',
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
-            gp = gpar(fill = 'transparent'))",
-        "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
-            gp = gpar(fill = 'transparent'))")
+		"Reaching" = "L6")#,
+    # Fan_Extra = c(
+    #     ###   Patterns in fans use `gridpattern` package
+    #     #   remotes::install_github("trevorld/gridpattern")
+    #     "gridpattern::grid.pattern(pattern = 'stripe',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'circle',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+    #         gp = gpar(fill = 'transparent'))")
 )
 
 
@@ -10644,7 +10644,7 @@ SGPstateData[["WIDA_CO"]][["SGP_Configuration"]] <- list(
 #SGPstateData[["WIDA_CO"]][["Baseline_splineMatrix"]][["Coefficient_Matrices"]] <- WIDA_Cohort_Referenced_Matrices_2017
 
 ##  Custom ISR Meta Data
-source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R')
+source("Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-text.R")
 
 # WIDA_CO_Custom_ISR_Function <- source('Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function.R')
 WIDA_CO_Custom_ISR_Function <- source("Custom_ISR/WIDA_CO/WIDA_CO_Custom_ISR-function_pre_cust_trjcts.R")
@@ -10662,23 +10662,27 @@ SGPstateData[["WIDA_CO"]][["Custom_Student_Report"]] <- list(
 	Report_Text_SPANISH = Report_Text_SPANISH,
 	Report_Logo = CDE.img,
 	Grid_Objects = list(
-		report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
-			heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+        report.vp = viewport(
+          layout = grid.layout(13, 9,
+            heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)),
+            widths  = unit(c(0.35, 0.15, 1.1, 1.5, 1.5, 0.25, 3.15, 0.15, 0.35), rep("inches", 9))),
+        ),
+        # report.vp = viewport(layout = grid.layout(13, 9, widths = unit(c(0.55, 0.1, 1.1, 1.5, 1.5, 0.35, 3.05, 0.25, 0.1), rep("inches", 9)),
+        #     heights = unit(c(0.1, 0.3, 0.3, 0.4, 0.05, 0.15, 5.0, 0.05, 0.1, 0.25, 0.1, 3.7, 0.5), rep("inches", 13)))),
+        top.school.name.vp     = viewport(layout.pos.row = 2,   layout.pos.col = 2:5),
+        top.student.name.vp    = viewport(layout.pos.row = 3,   layout.pos.col = 2:4),
+        top.student.id.vp      = viewport(layout.pos.row = 3,   layout.pos.col = 5),
+        top.border.cde.vp      = viewport(layout.pos.row = 1:3, layout.pos.col = 7:8),
+        report_title.vp        = viewport(layout.pos.row = 4,   layout.pos.col = 3:7),
+        color_block_1.vp       = viewport(layout.pos.row = 5,   layout.pos.col = 2:8),
+        report_text.vp         = viewport(layout.pos.row = 7,   layout.pos.col = 3:7),
+        color_block_2.vp       = viewport(layout.pos.row = 8,   layout.pos.col = 2:8),
+        report.student.name.vp = viewport(layout.pos.row = 10,  layout.pos.col = 2:5),
 
-		top.school.name.vp = viewport(layout.pos.row = 2, layout.pos.col = 2:5),
-		top.student.name.vp = viewport(layout.pos.row = 3, layout.pos.col = 2:4),
-		top.student.id.vp = viewport(layout.pos.row = 3, layout.pos.col = 5),
-		top.border.cde.vp = viewport(layout.pos.row = 1:3, layout.pos.col = 7:8),
-		report_title.vp = viewport(layout.pos.row = 4, layout.pos.col = 3:7),
-		color_block_1.vp = viewport(layout.pos.row = 5, layout.pos.col = 3:7),
-		report_text.vp = viewport(layout.pos.row = 7, layout.pos.col = 3:7),
-		color_block_2.vp = viewport(layout.pos.row = 8, layout.pos.col = 3:7),
-		report.student.name.vp = viewport(layout.pos.row = 10, layout.pos.col = 2:5),
+        content_area_1.vp      = viewport(layout.pos.row = 12,  layout.pos.col = 3:7),
 
-		content_area_1.vp = viewport(layout.pos.row = 12, layout.pos.col = 3:7), #4:7 with left.legend (could delete 3rd column too)
-
-		left.border.vp = viewport(layout.pos.row = 1:13, layout.pos.col = 1),
-		bottom.border.vp = viewport(layout.pos.row = 13, layout.pos.col = 2:7)
+        # left.border.vp    =   viewport(layout.pos.row = 1:13, layout.pos.col = 1),
+        bottom.border.vp       = viewport(layout.pos.row = 13,  layout.pos.col = 2:8)
 	)
 )
 
@@ -10693,27 +10697,27 @@ SGPstateData[["WIDA_CO_SPANISH"]][["Student_Report_Information"]] <- list(
 	Grades_Reported = list(READING = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
 	Vertical_Scale = list(READING = TRUE),
 	Content_Areas_Labels = list(READING = "Calificaci\u{F3}n General"),
-	Earliest_Year_Reported = list(READING = '2013'),
+	Earliest_Year_Reported = list(READING = "2013"),
 	Achievement_Level_Labels = list(
 		"Inicial" = "L1",
 		"En Transici\u{F3}n" = "L2",
 		"Desarrollado" = "L3",
 		"Elevado" = "L4",
 		"Apto" = "L5",
-		"Avanzado" = "L6"),
-    Fan_Extra = c(
-        "gridpattern::grid.pattern(pattern = 'stripe',
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
-            gp = gpar(fill = 'transparent'))",
-        "gridpattern::grid.pattern(pattern = 'circle',
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
-            gp = gpar(fill = 'transparent'))",
-        "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
-            x = fan.extra.x, y = fan.extra.y, default.units = 'native',
-            size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
-            gp = gpar(fill = 'transparent'))")
+		"Avanzado" = "L6")#,
+    # Fan_Extra = c(
+    #     "gridpattern::grid.pattern(pattern = 'stripe',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.15, colour = 'grey50', alpha = 0.45, spacing = 0.025,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'circle',
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.175, colour = 'grey50', alpha = 0.45, spacing = 0.025, angle = 160,
+    #         gp = gpar(fill = 'transparent'))",
+    #     "gridpattern::grid.pattern(pattern = 'wave', type = 'sine', amplitude = 0.0125,
+    #         x = fan.extra.x, y = fan.extra.y, default.units = 'native',
+    #         size = 0.1, colour = 'grey50', alpha = 0.45, spacing = 0.05, angle = 20,
+    #         gp = gpar(fill = 'transparent'))")
 )
 
 

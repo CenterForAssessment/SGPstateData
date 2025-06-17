@@ -2962,7 +2962,7 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 			knots_EOCT=c(382, 396, 409, 430),
 			boundaries_EOCT=c(160, 640),
 			loss.hoss_EOCT=c(200, 600)),
-		ALGEBRA_CC.2024=list(
+		ALGEBRA_CC=list(
 			knots_EOCT=c(385, 460, 500, 535),
 			boundaries_EOCT=c(160, 825),
 			loss.hoss_EOCT=c(200, 785)))
@@ -3084,7 +3084,7 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_EOCT=c(400, 450)),
 		MATHEMATICS_II=list(
 			GRADE_EOCT=c(400, 450)),
-		ALGEBRA_CC.2024=list(
+		ALGEBRA_CC=list(
       		GRADE_EOCT=c(475, 525, 580)))
 
 

@@ -10853,7 +10853,7 @@ SGPstateData[["WIDA_GA"]][["Assessment_Program_Information"]] <- list(
 		URL = "https://www.gadoe.org"),
 	Content_Areas = "Reading",
 	Grades_Tested = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	Assessment_Years = c("2019", "2020", "2021", "2022", "2023", "2024"),
+	Assessment_Years = c("2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"),
 	Test_Season = "Spring",
 	Test_Vendor = "WIDA")
 
@@ -10957,7 +10957,7 @@ SGPstateData[["WIDA_GA"]][["Custom_Student_Report"]] <- list(
 		system.name   = "System Name:",
 		school.name   = "School Name:"
 	),
-	Report_Title = "Student English Language Proficiency Growth Report 2024",
+	Report_Title = "Student English Language Proficiency Growth Report 2025",
 	Report_Text = Report_Text_ENGLISH,
 	Report_Logo = GaDOE_img,
 	Grid_Objects = list(
@@ -11023,7 +11023,7 @@ SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Zero_to_K"]] <- "
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Font_Family"]] <- "Helvetica-Narrow"
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Text"]] <- Report_Text_SPANISH
 SGPstateData[["WIDA_GA_SPANISH"]][["Custom_Student_Report"]][["Report_Title"]] <- 
-                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2024"
+                "Reporte estudiantil sobre el desarrollo ling\u{FC}\u{ED}stico en ingl\u{E9}s, 2025"
 
 SGPstateData[["WIDA_GA_SPANISH"]][["Student_Report_Information"]] <- list(
 	sgPlot.year.span = 3,

@@ -3265,7 +3265,6 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
-
 		 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_CC"),
 		# 	MATHEMATICS=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "ALGEBRA_I", "GEOMETRY"), # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=c("MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "MATHEMATICS", "COORDINATE_ALGEBRA", "ANALYTIC_GEOMETRY"),
@@ -5808,6 +5807,10 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_9=c(380, 410, 500), ### Temporary Level 1-2 Cut set at 28th percentile/Temporary Level 3-4 Cut set at 70th percentile
 		GRADE_10=c(390, 430, 550), ### Temporary Level 1-2 Cut set at 29th percentile/Temporary Level 3-4 Cut set at 80th percentile
 		GRADE_11=c(430, 480, 630)),
+	SCIENCE.2021_2022=list(
+		GRADE_5=c(1477, 1500, 1517),
+        GRADE_8=c(1778, 1800, 1825),
+        GRADE_11=c(2090, 2100, 2120)),
 	SOCIAL_STUDIES=list( ### A combination of Social Studies cuts over the last several years
 		GRADE_5=c(1458, 1500, 1530),
 		GRADE_6=c(593, 625, 649),

@@ -5786,7 +5786,7 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_8=c(1781, 1800, 1815),
 		GRADE_9=c(450, 450, 450),
 		GRADE_10=c(480, 480, 480),
-#``		GRADE_11=c(2082, 2100, 2118)),
+#		GRADE_11=c(2082, 2100, 2118)),
 		GRADE_11=c(430, 530, 650)),
 	MATHEMATICS.2018_2019=list(
 		GRADE_3=c(1280, 1300, 1322),
@@ -5902,7 +5902,7 @@ SGPstateData[["MI"]][["Assessment_Program_Information"]] <- list(
 	Content_Areas=c("Mathematics", "Reading", "Social Studies", "Science"),
 #	Content_Areas=c("Mathematics", "Reading", "Writing", "Social Studies", "Science"),
 	Grades_Tested=c(3,4,5,6,7,8,9,10,11),
-	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019", "2020_2021"),
+	Assessment_Years=c("2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016", "2016_2017", "2017_2018", "2018_2019", "2020_2021", "2021_2022", "2022_2023", "2023_2024", "2024_2025"),
 #	Scale_Change=list(MATHEMATICS="2014_2015", READING="2014_2015", SOCIAL_STUDIES="2014_2015", SCIENCE="2014_2015"),
 	Test_Season="Spring",
 	Test_Vendor="SBAC/DRC",
@@ -5969,8 +5969,8 @@ SGPstateData[["MI"]][["Student_Report_Information"]] <- list(
 	Grades_Reported=list(
 		MATHEMATICS=c(3,4,5,6,7,8,9,10,11),
 		READING=c(3,4,5,6,7,8,9,10,11),
-		SCIENCE=c(4,7,11),
-#		SCIENCE=c(5,8,11),
+#		SCIENCE=c(4,7,11),
+		SCIENCE=c(5,8,11),
 		SOCIAL_STUDIES=c(5,8,11)),
 #		SOCIAL_STUDIES=c(6,9,11),
 #		WRITING=c(4,7,11)),

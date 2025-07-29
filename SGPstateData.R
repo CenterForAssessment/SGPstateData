@@ -5821,8 +5821,8 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_11=c(430, 480, 630)),
 	SCIENCE.2021_2022=list(
 		GRADE_5=c(1477, 1500, 1517),
-        GRADE_8=c(1778, 1800, 1825),
-        GRADE_11=c(2090, 2100, 2120)),
+		GRADE_8=c(1778, 1800, 1825),
+		GRADE_11=c(2090, 2100, 2120)),
 	SOCIAL_STUDIES=list( ### A combination of Social Studies cuts over the last several years
 		GRADE_5=c(1458, 1500, 1530),
 		GRADE_6=c(593, 625, 649),
@@ -5834,7 +5834,11 @@ SGPstateData[["MI"]][["Achievement"]][["Cutscores"]] <- list(
 		GRADE_6=c(593, 625, 649),
 		GRADE_8=c(1771, 1800, 1831),
 		GRADE_9=c(899, 928, 960),
-		GRADE_11=c(2069, 2100, 2131)))
+		GRADE_11=c(2069, 2100, 2131)),
+	SOCIAL_STUDIES.2021_2022=list(
+		GRADE_5=c(1469, 1500, 1517),
+		GRADE_8=c(1787, 1800, 1832),
+		GRADE_11=c(2082, 2100, 2131)))
 #	MATHEMATICS=list(
 #		GRADE_3=c(322, 336, 371),
 #		GRADE_4=c(423, 434, 470),

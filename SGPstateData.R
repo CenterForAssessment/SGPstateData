@@ -9004,8 +9004,8 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
         GRADE_6 = c(1417, 1487, 1564),
         GRADE_7 = c(1435, 1500, 1576),
         GRADE_8 = c(1447, 1512, 1597),
-        GRADE_9 = c(166, 203, 237),    #  Same as old
-        GRADE_10 = c(168, 202, 240)),  #  Same as old
+        GRADE_9 = c(166, 204, 231),    #  Updated cuts -- "READING ONLY" test as of 2025
+        GRADE_10 = c(175, 204, 235)),  #  Updated cuts -- "READING ONLY" test as of 2025
 	# MATHEMATICS.2019=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 RISE cutscores for prior years as well
 	MATHEMATICS = list(
 		GRADE_3=c(297, 317, 337),

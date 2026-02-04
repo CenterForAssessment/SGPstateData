@@ -8996,7 +8996,7 @@ SGPstateData[["UT"]][["Achievement"]][["Knots_Boundaries"]] <-
 SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 	list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 RISE cutscores for prior years as well
 	# ELA.2019=list(
-	ELA=list(
+	ELA = list(
 	    GRADE_3=c(291, 334, 406),
 	    GRADE_4=c(323, 378, 442),
 	    GRADE_5=c(361, 410, 465),
@@ -9005,6 +9005,15 @@ SGPstateData[["UT"]][["Achievement"]][["Cutscores"]] <-
 	    GRADE_8=c(416, 471, 533),
 	    GRADE_9=c(166, 203, 237),
 	    GRADE_10=c(168, 202, 240)), # NOTE:  Proficient/Highly cut is corrected per Marc Johnson email 9/16/2019
+    ELA.2025 = list(
+        GRADE_3 = c(1318, 1380, 1443),
+        GRADE_4 = c(1356, 1422, 1490),
+        GRADE_5 = c(1392, 1459, 1527),
+        GRADE_6 = c(1417, 1487, 1564),
+        GRADE_7 = c(1435, 1500, 1576),
+        GRADE_8 = c(1447, 1512, 1597),
+        GRADE_9 = c(166, 204, 231),    #  Updated cuts -- "READING ONLY" test as of 2025
+        GRADE_10 = c(175, 204, 235)),  #  Updated cuts -- "READING ONLY" test as of 2025
 	# MATHEMATICS.2019=list( ### MOVING forward in 2021 with equated scores for 2018, 2017, and 2016 so using 2019 RISE cutscores for prior years as well
 	MATHEMATICS = list(
 		GRADE_3=c(297, 317, 337),
@@ -9051,7 +9060,7 @@ SGPstateData[["UT"]][["Growth"]][["System_Type"]] <- "Cohort and Baseline Refere
 
 SGPstateData[["UT"]][["SGP_Configuration"]] <-
     list(
-		sgp.cohort.size=3000,
+		sgp.cohort.size = 2000, # per A. Brough 9/19/25 email
 		print.other.gp = TRUE,
 		return.norm.group.scale.scores=TRUE,
 		sgp.less.than.sgp.cohort.size.return="<3000",

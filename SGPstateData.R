@@ -4727,29 +4727,46 @@ SGPstateData[["IA"]][["Student_Report_Information"]] <- list(
 #########################################################
 
 load("Knots_Boundaries/KS_Knots_Boundaries.Rdata")
-SGPstateData[["KS"]][["Achievement"]][["Knots_Boundaries"]] <- KS_Knots_Boundaries
+load("Knots_Boundaries/KS_Knots_Boundaries_2025.Rdata")
+SGPstateData[["KS"]][["Achievement"]][["Knots_Boundaries"]] <- c(KS_Knots_Boundaries, KS_Knots_Boundaries_2025)
 
 SGPstateData[["KS"]][["Achievement"]][["Cutscores"]] <-
 	list(
 		MATHEMATICS=list(
-			GRADE_3=c(58, 70, 85, 93),
-			GRADE_4=c(54, 63, 80, 89),
-			GRADE_5=c(54, 62, 78, 88),
-			GRADE_6=c(53, 63, 79, 90),
-			GRADE_7=c(44, 56, 71, 84),
-			GRADE_8=c(45, 58, 73, 86),
-			GRADE_11=c(38, 50, 68, 82)),
-		READING=list(
-			GRADE_3=c(55, 67, 80, 89),
-			GRADE_4=c(57, 68, 81, 89),
-			GRADE_5=c(57, 68, 80, 88),
-			GRADE_6=c(52, 64, 79, 88),
-			GRADE_7=c(50, 63, 77, 87),
-			GRADE_8=c(50, 64, 79, 89),
-			GRADE_11=c(54, 68, 81, 89)))
+			GRADE_3 = c(276, 300, 329),
+			GRADE_4 = c(266, 300, 331),
+			GRADE_5 = c(273, 300, 326),
+			GRADE_6 = c(273, 300, 329),
+			GRADE_7 = c(266, 300, 342),
+			GRADE_8 = c(274, 300, 336),
+			GRADE_10 = c(273, 300, 329)),
+		MATHEMATICS.2025=list(
+			GRADE_3=c(510, 540, 570),
+			GRADE_4=c(510, 540, 579),
+			GRADE_5=c(510, 540, 599),
+			GRADE_6=c(510, 540, 596),
+			GRADE_7=c(510, 540, 603),
+			GRADE_8=c(510, 540, 594),
+			GRADE_10=c(510, 540, 600)),
+		ELA=list(
+			GRADE_3 = c(276, 300, 327),
+			GRADE_4 = c(271, 300, 335),
+			GRADE_5 = c(275, 300, 326),
+			GRADE_6 = c(277, 300, 336),
+			GRADE_7 = c(275, 300, 335),
+			GRADE_8 = c(265, 300, 334),
+			GRADE_10 = c(269, 300, 334)),
+		ELA.2025=list(
+			GRADE_3=c(510, 540, 609),
+			GRADE_4=c(510, 540, 607),
+			GRADE_5=c(510, 540, 600),
+			GRADE_6=c(510, 540, 593),
+			GRADE_7=c(510, 540, 600),
+			GRADE_8=c(510, 540, 594),
+			GRADE_10=c(510, 540, 588)))
 
 SGPstateData[["KS"]][["Achievement"]][["Levels"]] <- list(
-	Labels=c("Academic Warning (Unsatisfactory)", "Approaching Standard (Basic)", "Meets Standard (Proficient)", "Exceeds Standard (Advanced)", "Exemplary", "Not Tested or Missing"),
+	Labels=c("Academic Warning", "Approaching Standard", "Meets Standard", "Exceeds Standard", "Not Tested"),
 	Proficient=c("Not Proficient", "Not Proficient", "Proficient", "Proficient", "Proficient", NA))
 
 SGPstateData[["KS"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
@@ -4761,34 +4778,25 @@ SGPstateData[["KS"]][["Growth"]][["Cutscores"]] <- list(
 	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
 
 SGPstateData[["KS"]][["Assessment_Program_Information"]] <- list(
-	Assessment_Name="Kansas General Education Assessments",
-	Assessment_Abbreviation="KS-GEA",
-	Content_Areas=c("Mathematics", "Reading"),
-	Grades_Tested=c(3,4,5,6,7,8,11),
+	Assessment_Name="Kansas Assessment Program",
+	Assessment_Abbreviation="KAP",
+	Content_Areas=c("Mathematics", "ELA"),
+	Grades_Tested=c(3,4,5,6,7,8,10),
 	Test_Season="Spring",
-	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+#	Assessment_Years=c("2005_2006", "2006_2007", "2007_2008", "2008_2009", "2009_2010", "2010_2011", "2011_2012", "2012_2013", "2013_2014", "2014_2015", "2015_2016"),
+	Assessment_Years=c("2016", "2017", "2018", "2019", "2021", "2022", "2023", "2024", "2025"),
 	Test_Vendor="The Center for Educational Testing and Evaluation (CETE) at The University of Kansas")
 ######  Grades and Assessment Years need to be verified - based on Sheng's sample data
 
 SGPstateData[["KS"]][["Student_Report_Information"]] <- list(
-	Transformed_Achievement_Level_Cutscores=list(
-									MATHEMATICS=paste(2005:2015, 2006:2018, sep="_"),
-									READING=paste(2005:2015, 2006:2018, sep="_")),
-	Transformed_Achievement_Level_Cutscores_gaPlot=list(
-									MATHEMATICS=paste(2005:2015, 2006:2018, sep="_"),
-									READING=paste(2005:2015, 2006:2018, sep="_")),
-	Vertical_Scale=list(MATHEMATICS=FALSE, READING=FALSE),
-	Content_Areas_Labels=list(MATHEMATICS="Math", READING="Reading"),
-	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,11), READING=c(3,4,5,6,7,8,11)),
+	Vertical_Scale=list(MATHEMATICS=FALSE, ELA=FALSE),
+	Content_Areas_Labels=list(MATHEMATICS="Math", ELA="ELA"),
+	Grades_Reported=list(MATHEMATICS=c(3,4,5,6,7,8,10), ELA=c(3,4,5,6,7,8,10)),
 	Achievement_Level_Labels=list(
-		"Warning"="Academic Warning (Unsatisfactory)",
-		"Approaches"="Approaching Standard (Basic)",
-		"Meets"="Meets Standard (Proficient)",
-		"Exceeds"="Exceeds Standard (Advanced)",
-		"Exemplary"="Exemplary"))
-
-SGPstateData[["AOB"]][["Variable_Name_Lookup"]] <- read.csv("Variable_Name_Lookup/AOB_Variable_Name_Lookup.csv", colClasses=c(rep("character",4), "logical"))
-
+		"Warning"="Academic Warning",
+		"Approaches"="Approaching Standard",
+		"Meets"="Meets Standard",
+		"Exceeds"="Exceeds Standard"))
 
 #########################################################
 ### KENTUCKY

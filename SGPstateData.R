@@ -9025,6 +9025,92 @@ SGPstateData[["SD"]][['SGP_Configuration']] <- list(
 )
 
 #########################################################
+###     TIMSS_L (TIMSS 2023 Longitudinal follow-up: 2023 G4/G8 -> 2024 G5/G9)
+#########################################################
+
+### Knots_Boundaries were derived from the LINKED TIMSS-L sample (9 countries at grades 4/5,
+### 3 countries at grades 8/9), all five plausible values pooled, weighted equal-country by
+### TOTWGT: knots = weighted 20/40/60/80th percentiles; loss.hoss = observed PV range rounded
+### outward to 25; boundaries = loss.hoss extended 10%. They describe that linked sample, NOT
+### the full TIMSS 2023 grade 4/8 populations. Do not reuse them for general TIMSS data.
+### Source: SGPc-foundry TIMSS/longitudinal-assessment/contexts/timss-l-sgp-knots-boundaries.json
+### (build/author_sgp_knots_boundaries.R, 2026-09-26).
+
+SGPstateData[["TIMSS_L"]][["Achievement"]][["Knots_Boundaries"]] <- list(
+	MATHEMATICS=list(
+		boundaries_4=c(-5, 955),
+		boundaries_5=c(-67.5, 1042.5),
+		boundaries_8=c(-70, 1070),
+		boundaries_9=c(42.5, 1032.5),
+		knots_4=c(418.721, 477.592, 524.829, 576.511),
+		knots_5=c(437.396, 502.096, 553.376, 609.503),
+		knots_8=c(388.732, 467.456, 537.388, 609.916),
+		knots_9=c(399.172, 477.827, 549.989, 624.855),
+		loss.hoss_4=c(75, 875),
+		loss.hoss_5=c(25, 950),
+		loss.hoss_8=c(25, 975),
+		loss.hoss_9=c(125, 950)))
+
+### IEA TIMSS International Benchmarks (Low 400, Intermediate 475, High 550, Advanced 625),
+### constant since TIMSS 2003 and the same at every grade (TIMSS 2023 Technical Report, Ch. 14).
+### TIMSS-L reports on the TIMSS 2023 scales, so grades 5 and 9 inherit them; IEA set no
+### separate TIMSS-L cut scores.
+
+SGPstateData[["TIMSS_L"]][["Achievement"]][["Cutscores"]] <-
+	list(
+		MATHEMATICS=list(
+			GRADE_4=c(400, 475, 550, 625),
+			GRADE_5=c(400, 475, 550, 625),
+			GRADE_8=c(400, 475, 550, 625),
+			GRADE_9=c(400, 475, 550, 625)))
+
+### "Below Low" is not an IEA label (the floor below 400). Proficient from High (>= 550) is not an
+### IEA designation either: a maintainer decision (2026-09-02) for consistency with four-level
+### US achievement systems.
+
+SGPstateData[["TIMSS_L"]][["Achievement"]][["Levels"]] <-
+	list(
+	Labels=c("Below Low", "Low", "Intermediate", "High", "Advanced", "No Score"),
+	Proficient=c("Not Proficient", "Not Proficient", "Not Proficient", "Proficient", "Proficient", NA))
+
+SGPstateData[["TIMSS_L"]][["Growth"]][["Levels"]] <- c("Low", "Typical", "High")
+
+SGPstateData[["TIMSS_L"]][["Growth"]][["System_Type"]] <- "Cohort Referenced"
+
+SGPstateData[["TIMSS_L"]][["Growth"]][["Cutscores"]] <-
+	list(
+	Cuts=c(35, 66),
+	Labels=c("1st - 34th", "35th - 65th", "66th - 99th"))
+
+SGPstateData[["TIMSS_L"]][["Assessment_Program_Information"]] <-
+	list(
+	Assessment_Name="Trends in International Mathematics and Science Study, Longitudinal follow-up (TIMSS-L)",
+	Assessment_Abbreviation="TIMSS-L",
+	Organization=list(
+		Name="International Association for the Evaluation of Educational Achievement (IEA), TIMSS & PIRLS International Study Center",
+		Abbreviation="IEA",
+		URL="https://timss2023.org"),
+	Content_Areas="Mathematics",
+	Grades_Tested=c(4,5,8,9),
+	Assessment_Years=c("2023", "2024"),
+	Test_Vendor="IEA / TIMSS & PIRLS International Study Center")
+### Scale: TIMSS mathematics scale, centerpoint 500 and SD 100, one scale per grade band (the grade 4
+### scale carries grades 4-5, the grade 8 scale grades 8-9; not vertical). Scores are plausible
+### values, so no CSEM is supplied.
+
+SGPstateData[["TIMSS_L"]][["Student_Report_Information"]] <-
+	list(
+	Vertical_Scale=list(MATHEMATICS=FALSE),
+	Content_Areas_Labels=list(MATHEMATICS="Mathematics"),
+	Grades_Reported=list(MATHEMATICS=c(4,5,8,9)),
+	Achievement_Level_Labels=list(
+		"Below Low"="Below Low",
+		"Low"="Low",
+		"Intermediate"="Intermediate",
+		"High"="High",
+		"Advanced"="Advanced"))
+
+#########################################################
 ###     UTAH
 #########################################################
 

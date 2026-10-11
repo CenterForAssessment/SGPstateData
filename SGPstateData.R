@@ -2810,6 +2810,25 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 			loss.hoss_6=c(140, 820),
 			loss.hoss_7=c(165, 785),
 			loss.hoss_8=c(225, 730)),
+		ELA.2026=list(
+			knots_3=c(617, 654, 691, 734),
+			knots_4=c(627, 664, 697, 736),
+			knots_5=c(634, 665, 691, 720),
+			knots_6=c(633, 660, 685, 712),
+			knots_7=c(631, 660, 685, 711),
+			knots_8=c(636, 663, 686, 712),
+			boundaries_3=c(377.5, 1055.5),
+			boundaries_4=c(376.4, 1055.6),
+			boundaries_5=c(435.8, 1050.2),
+			boundaries_6=c(424.8, 1051.2),
+			boundaries_7=c(435.8, 1050.2),
+			boundaries_8=c(432.5, 1050.5),
+			loss.hoss_3=c(434, 999),
+			loss.hoss_4=c(433, 999),
+			loss.hoss_5=c(487, 999),
+			loss.hoss_6=c(477, 999),
+			loss.hoss_7=c(487, 999),
+			loss.hoss_8=c(484, 999)),
 		SCIENCE=list(
 			knots_3=c(795, 817, 837, 858),
 			knots_4=c(794, 818, 840, 865),
@@ -2977,7 +2996,11 @@ SGPstateData[["GA"]][["Achievement"]][["Knots_Boundaries"]] <-
 		ALGEBRA_CC=list(
 			knots_EOCT=c(385, 460, 500, 535),
 			boundaries_EOCT=c(160, 825),
-			loss.hoss_EOCT=c(200, 785)))
+			loss.hoss_EOCT=c(200, 785)),
+		LIT_COMP_II=list(
+			knots_EOCT=c(635, 660, 681, 705),
+			boundaries_EOCT=c(230.1, 1068.9),
+			loss.hoss_EOCT=c(300, 999)))
 
 SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 	list(
@@ -3022,6 +3045,13 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 			GRADE_6=c(475, 525, 599),
 			GRADE_7=c(475, 525, 592),
 			GRADE_8=c(475, 525, 581)),
+		ELA.2026=list(
+			GRADE_3 = c(625, 675, 750),
+			GRADE_4 = c(625, 675, 748),
+			GRADE_5 = c(625, 675, 729),
+			GRADE_6 = c(625, 675, 720),
+			GRADE_7 = c(625, 675, 723),
+			GRADE_8 = c(625, 675, 721)),
 		SCIENCE=list(
 			GRADE_3=c(800, 850),
 			GRADE_4=c(800, 850),
@@ -3097,7 +3127,9 @@ SGPstateData[["GA"]][["Achievement"]][["Cutscores"]] <-
 		MATHEMATICS_II=list(
 			GRADE_EOCT=c(400, 450)),
 		ALGEBRA_CC=list(
-      		GRADE_EOCT=c(475, 525, 580)))
+      		GRADE_EOCT=c(475, 525, 580)),
+		LIT_COMP_II = list(
+			GRADE_EOCT=c(625, 675, 715)))
 
 
 SGPstateData[["GA"]][["Achievement"]][["Levels"]] <-

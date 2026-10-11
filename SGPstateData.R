@@ -3263,7 +3263,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		sgp.loss.hoss.adjustment = "GA",
 		return.norm.group.scale.scores=TRUE,
 		return.projection.group.scale.scores = TRUE,
-		rq.method = "fn",
+		#rq.method = "fn",
 		print.other.gp=TRUE,
 		print.sgp.order=TRUE,
 		sgp.cohort.size=1000, ## Decreased to 1000 in 2024
@@ -3281,7 +3281,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	# AMERICAN_LIT=c("8", "8", "EOCT", "EOCT"),
 		# 	ELA=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
 		# 	GRADE_9_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
-		# 	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
+		 	AMERICAN_LIT=c("3", "4", "5", "6", "7", "8", "EOCT"),
 		 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT"),
 		# 	MATHEMATICS=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"), # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=c("3", "4", "5", "6", "7", "8", "EOCT", "EOCT"),
@@ -3305,7 +3305,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		 	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA"),
 		# 	# ELA=c("ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "READING", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	# GRADE_9_LIT=c("ELA", "READING", "ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
-		# 	# AMERICAN_LIT=c("ELA", "READING", "GRADE_9_LIT", "AMERICAN_LIT"),
+		 	AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "AMERICAN_LIT"),
 		# 	ELA=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	GRADE_9_LIT =c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
 		# 	AMERICAN_LIT=c("ELA", "ELA", "ELA", "ELA", "ELA", "ELA", "GRADE_9_LIT", "AMERICAN_LIT"),
@@ -3333,7 +3333,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	# READING=rep(1L, 5), # Keep as long as READING used as a prior for getKnotsBoundaries function.
 		 	ELA = rep(1L, 5),
 		# 	# GRADE_9_LIT= as.integer(c(0, 1, 0, 1, 2)),
-		# 	# AMERICAN_LIT=as.integer(c(0, 1, 2)),
+		 	AMERICAN_LIT = rep(1L, 6),
 		# 	ELA = c(rep(1L, 6), 2),
 		# 	GRADE_9_LIT =c(rep(1L, 6), 2),
 		# 	AMERICAN_LIT=c(rep(1L, 6), 2),
@@ -3357,7 +3357,7 @@ SGPstateData[["GA"]][["SGP_Configuration"]] <-
 		# 	READING=3, # Keep as long as READING used as a prior for getKnotsBoundaries function.
 		 	ELA=3,
 		# 	GRADE_9_LIT=3,
-		# 	AMERICAN_LIT=3,
+		 	AMERICAN_LIT=3,
 		 	MATHEMATICS=3, # CANONICAL for growthAchievementPlot
 		# 	MATH_COORD_ALG=3,
 		# 	MATH_ALG_I=3,

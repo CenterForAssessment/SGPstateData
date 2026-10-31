@@ -48,15 +48,21 @@ build_state_data <- function(out = "SGPstateData.rda", root = NULL) {
 
 .resolve_path <- function(path) {
   if (file.exists(path)) return(path)
-  parts <- strsplit(path, "/", fixed = TRUE)[[1]]
-  cur <- if (startsWith(path, "/")) "/" else "."
-  for (part in parts[nzchar(parts)]) {
+  # Two directories that differ only in case (e.g. SGP_Norm_Group_Preference/ and
+  # SGP_NORM_GROUP_PREFERENCE/) are both tracked, and a macOS checkout merges them. Search every
+  # case-insensitive match for each component, so the file is found whichever directory holds it.
+  walk <- function(cur, parts) {
+    if (!length(parts)) return(cur)
     hits <- list.files(cur, all.files = TRUE, no.. = TRUE)
-    m <- hits[tolower(hits) == tolower(part)]
-    if (!length(m)) return(path)
-    cur <- file.path(cur, if (part %in% m) part else m[1])
+    for (m in hits[tolower(hits) == tolower(parts[1L])]) {
+      res <- walk(file.path(cur, m), parts[-1L])
+      if (!is.null(res)) return(res)
+    }
+    NULL
   }
-  sub("^\\./", "", cur)
+  parts <- strsplit(path, "/", fixed = TRUE)[[1L]]
+  res <- walk(if (startsWith(path, "/")) "/" else ".", parts[nzchar(parts)])
+  if (is.null(res)) path else sub("^\\./", "", res)
 }
 
 .repo_root <- function() {

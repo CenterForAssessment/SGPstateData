@@ -35,8 +35,28 @@ build_state_data <- function(out = "SGPstateData.rda", root = NULL) {
   old_opts <- options(keep.source = FALSE)
   on.exit(options(old_opts), add = TRUE)
   env <- new.env(parent = globalenv())
+  # The script was written on a case-insensitive file system and loads
+  # "SGP_Norm_Group_Preference/PARCC_..." from a directory tracked as SGP_NORM_GROUP_PREFERENCE/.
+  # On Linux that path does not exist, so resolve each load() path case-insensitively. This only
+  # changes how a file is located, never what is read or what the script computes.
+  env$load <- function(file, envir = parent.frame(), ...) {
+    base::load(.resolve_path(file), envir = envir, ...)
+  }
   eval(parse(text = src, keep.source = FALSE), envir = env)
   invisible(out)
+}
+
+.resolve_path <- function(path) {
+  if (file.exists(path)) return(path)
+  parts <- strsplit(path, "/", fixed = TRUE)[[1]]
+  cur <- if (startsWith(path, "/")) "/" else "."
+  for (part in parts[nzchar(parts)]) {
+    hits <- list.files(cur, all.files = TRUE, no.. = TRUE)
+    m <- hits[tolower(hits) == tolower(part)]
+    if (!length(m)) return(path)
+    cur <- file.path(cur, if (part %in% m) part else m[1])
+  }
+  sub("^\\./", "", cur)
 }
 
 .repo_root <- function() {

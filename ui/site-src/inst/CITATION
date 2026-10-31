@@ -1,0 +1,12 @@
+bibentry(
+  "Manual",
+  title = "SGPstateData: State Assessment Program Meta-Data for the SGP Package",
+  author = c(
+    person("Damian W.", "Betebenner"),
+    person("Adam R.", "Van Iwaarden")
+  ),
+  organization = "Center for Assessment",
+  year = format(Sys.Date(), "%Y"),
+  url = "https://github.com/CenterForAssessment/SGPstateData",
+  note = "Meta-data repository; the built object ships in the SGP package"
+)

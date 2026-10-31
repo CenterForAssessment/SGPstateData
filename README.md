@@ -4,6 +4,8 @@ SGPstateData
 
 # State assessment program meta-data for the SGP package
 
+**Website: <https://centerforassessment.github.io/SGPstateData/>.** To rebuild `SGPstateData.rda` or verify it, see [BUILD.md](BUILD.md).
+
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active) [![Join the chat at https://gitter.im/CenterForAssessment/SGPstateData](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPstateData?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPstateData/blob/master/LICENSE.md)
 
 SGPstateData is an environment (an **R** object of class environment) embedded as part of the [SGP package](https://sgp.io) containing information on state assessment

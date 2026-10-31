@@ -14,4 +14,4 @@ if (is_html_output()) {
 ```
 
 
-These are the inital release notes for the `SGPstateData` meta-data GitHub repo. `SGPstateData` is an R environment that is embedded in the [SGP package](www.sgp.io).
+These are the inital release notes for the `SGPstateData` meta-data GitHub repo. `SGPstateData` is an R environment that is embedded in the [SGP package](https://sgp.io).

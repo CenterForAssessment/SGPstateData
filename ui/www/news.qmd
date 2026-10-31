@@ -1,0 +1,16 @@
+---
+title: "News"
+toc: true
+toc-depth: 2
+---
+
+## SGPstateData (development)
+
+* A website built with Quarto at <https://centerforassessment.github.io/SGPstateData/> replaces the old pkgdown pages.
+* `scripts/build.R` rebuilds `SGPstateData.rda` from `SGPstateData.R`, which is not changed.
+* `scripts/check.R` fails when a fresh build does not reproduce the committed `SGPstateData.rda`, and continuous integration runs it. See [BUILD.md](https://github.com/CenterForAssessment/SGPstateData/blob/master/BUILD.md).
+
+## SGPstateData, September 2017
+
+* First release notes. `SGPstateData` is an R environment embedded in the SGP package; this repository holds its source.
+

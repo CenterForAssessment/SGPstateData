@@ -1,0 +1,78 @@
+---
+title: "SGPstateData"
+subtitle: "State assessment program meta-data"
+toc: true
+---
+
+## Description
+
+`SGPstateData` is an environment holding one entry per assessment program (a state, a consortium, or an organization), keyed by an abbreviation such as `"GA"` or `"WIDA"`. The SGP package reads it to find achievement level cutscores, the knots and boundaries for the B-spline fits, assessment names and labels for reports, and the rules for the order of prior scores. It is built from the source files in this repository by `SGPstateData.R`.
+
+## Usage
+
+``` R
+SGPstateData
+```
+
+## Format
+
+An environment. Each program entry is a named list; entries are optional, and which ones are present depends on the program. Names that are used for merges are in ALL CAPS (content areas, `GRADE_3`); other names use `Camel_Case`.
+
+`Assessment_Program_Information`
+
+:   Names and abbreviations (`Assessment_Name`, `Assessment_Abbreviation`, `Organization`, `Test_Vendor`), `Content_Areas`, `Grades_Tested`, `Assessment_Years`, `Test_Season`, `CSEM` (conditional standard errors of measurement), and, where the assessment changed, `Assessment_Transition` and `Scale_Change`.
+
+`Achievement`
+
+:   `Cutscores` (by content area, or content area and year, then grade; each value is the *lower bound* of the next performance level), `Levels` (labels, and which levels count as proficient) and `Knots_Boundaries` (knots, boundaries and loss/hoss values by content area and grade).
+
+`Growth`
+
+:   `Levels`, `Cutscores` and `System_Type`, for programs that classify growth.
+
+`SGP_Configuration`
+
+:   Switches and functions that tailor an analysis, for example `sgp.cohort.size`, `grade.projection.sequence` and `sgp.loss.hoss.adjustment`.
+
+`SGP_Norm_Group_Preference`, `SGP_Progression_Preference`
+
+:   Which prior scores are used when more than one sequence is available.
+
+`Student_Report_Information`
+
+:   Labels, scale and reporting choices used by the student growth report generators.
+
+`Custom_Student_Report`, `Variable_Name_Lookup`, `Baseline_splineMatrix`
+
+:   Present for some programs only.
+
+`digest`
+
+:   A hash stamped on the object when it is built.
+
+## Details
+
+The object is a faithful record of each program's published cutscores and its configuration for SGP analyses. Do not edit entries to “fix” a result: the SGP package relies on the object exactly as built, and `scripts/check.R` in the repository fails when a build no longer reproduces the committed file.
+
+## Source
+
+The files in this repository: `Cutscores/`, `Knots_Boundaries/`, `CSEM/`, `Linkages/`, `Custom_SGP_Config/`, `Variable_Name_Lookup/` and the others read by `SGPstateData.R`. <https://github.com/CenterForAssessment/SGPstateData>
+
+## See Also
+
+<https://sgp.io> for the SGP package that embeds the object.
+
+## Examples
+
+``` R
+## Not run: 
+# From the SGP package:
+library(SGP)
+names(SGPstateData)[1:6]
+SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Name"]]
+SGPstateData[["GA"]][["Achievement"]][["Levels"]][["Labels"]]
+SGPstateData[["GA"]][["Achievement"]][["Cutscores"]][["MATHEMATICS"]][["GRADE_4"]]
+
+## End(Not run)
+```
+

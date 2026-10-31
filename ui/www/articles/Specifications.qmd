@@ -1,0 +1,45 @@
+---
+title: "SGPstateData specifications"
+toc: true
+---
+
+
+`SGPstateData` is an R environment. Each entry is the meta-data for one assessment program, and the SGP package looks entries up by their abbreviation (`"GA"`, `"WIDA"`, `"SBAC"`, ...).
+
+## Conventions
+
+* Names that are used for merges are in **ALL CAPS**: content areas (`MATHEMATICS`, `ELA`), grades (`GRADE_3`) and years (`2015_2016`). Everything else is `Camel_Case`.
+* Cutscores are the **lower bound** of a performance level. A student at a cutscore is in the level it opens.
+* When a program changes its assessment, the old and new cutscores sit side by side, keyed by the content area with the year the change took effect, for example `ELA.2015` and `ELA.2026`.
+
+## What is in an entry
+
+| Component | What it holds |
+|:--|:--|
+| `Assessment_Program_Information` | Names, abbreviations, organization, vendor, content areas, grades tested, assessment years, test season, CSEM, transitions |
+| `Achievement` | `Cutscores`, `Levels` (labels and which count as proficient) and `Knots_Boundaries` |
+| `Growth` | Growth `Levels`, `Cutscores` and `System_Type` |
+| `SGP_Configuration` | Cohort size, projection sequences, loss/hoss adjustment and other analysis switches, sometimes functions |
+| `SGP_Norm_Group_Preference`, `SGP_Progression_Preference` | Which prior scores to use when several sequences are available |
+| `Student_Report_Information` | Labels and choices for student growth reports |
+| `Variable_Name_Lookup`, `Custom_Student_Report`, `Baseline_splineMatrix` | Only for some programs |
+
+The reference page for [`SGPstateData`](../reference/SGPstateData.html) describes each component.
+
+## Looking something up
+
+```r
+library(SGP)
+
+SGPstateData[["GA"]][["Assessment_Program_Information"]][["Assessment_Name"]]
+SGPstateData[["GA"]][["Achievement"]][["Levels"]][["Labels"]]
+SGPstateData[["GA"]][["Achievement"]][["Cutscores"]][["MATHEMATICS"]][["GRADE_4"]]
+```
+
+## Having your organization added
+
+Open an [issue on GitHub](https://github.com/CenterForAssessment/SGPstateData/issues) or write to the maintainers. Send the cutscores, the content areas and grades tested, and the assessment's name and abbreviation. Knots and boundaries are produced from your data by the SGP package.
+
+## Keeping the object trustworthy
+
+The SGP package relies on `SGPstateData` exactly as built. To change a program's entry, edit its source files and `SGPstateData.R`, rebuild with `scripts/build.R`, and commit the new `SGPstateData.rda`. `scripts/check.R` rebuilds from source and compares with the committed file, so a file that was edited by hand, or a build that is out of date, is caught.

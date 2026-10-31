@@ -1,0 +1,11 @@
+Package: SGPstateData
+Title: State Assessment Program Meta-Data for the SGP Package
+Version: 0.0.0.9000
+Date: 2026-10-31
+Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
+    person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut"))
+Description: The SGPstateData environment records, for each assessment program, the achievement level cutscores and labels, assessment names, growth cutscores, vertical scale information and the knots and boundaries used in Student Growth Percentile analyses. It is built from this repository and embedded in the SGP package.
+License: GPL-3
+URL: https://centerforassessment.github.io/SGPstateData/
+BugReports: https://github.com/CenterForAssessment/SGPstateData/issues
+Encoding: UTF-8

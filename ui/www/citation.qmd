@@ -1,0 +1,39 @@
+---
+title: "Citation and authors"
+toc: false
+---
+
+## Citation
+
+To cite this package in publications, please use:
+
+Betebenner D, Van Iwaarden A (2026). _SGPstateData: State Assessment Program Meta-Data for the SGP
+Package_. Center for Assessment. Meta-data repository; the built object ships in the SGP package,
+<https://github.com/CenterForAssessment/SGPstateData>.
+
+A BibTeX entry:
+
+```bibtex
+@Manual{,
+  title = {SGPstateData: State Assessment Program Meta-Data for the SGP Package},
+  author = {Damian W. Betebenner and Adam R. {Van Iwaarden}},
+  organization = {Center for Assessment},
+  year = {2026},
+  url = {https://github.com/CenterForAssessment/SGPstateData},
+  note = {Meta-data repository; the built object ships in the SGP package},
+}
+```
+
+## Authors
+
+- Damian, W.     (aut, cre)
+- Betebenner (aut, cre)
+- aut, cre (aut, cre)
+- dbetebenner@nciea.org (aut, cre)
+- NULL (aut, cre)
+- Adam, R.   (aut)
+- Van Iwaarden (aut)
+- aut (aut)
+- avaniwaarden@gmail.com (aut)
+- NULL (aut)
+
